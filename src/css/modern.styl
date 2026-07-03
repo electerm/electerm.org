@@ -1024,136 +1024,184 @@ a:hover
   box-shadow 0 4px 12px rgba(37,99,235,0.3)
 
 /* ===== Aliyun Cloud ===== */
-.aliyun-cloud-section
-  padding 24px 0
+/* ===== Cloud Slider (shared) ===== */
+
+// Outer wrapper — provides padding and background, hidden until any child shows
+.cloud-banners-section
+  padding 16px 0
   background var(--color-bg-alt)
   border-top 1px solid var(--color-border)
   border-bottom 1px solid var(--color-border)
 
-.aliyun-cloud-slider
-  position relative
-  border-radius var(--radius-lg)
-  overflow hidden
-  box-shadow var(--shadow-lg)
+// Flex row placing sliders side-by-side
+.cloud-banners
+  display flex
+  flex-direction column
+  gap 12px
 
-.aliyun-cloud-track
+@media (min-width: 768px)
+  .cloud-banners
+    flex-direction row
+
+  .cloud-banners .cloud-slider-section
+    flex 1
+    min-width 0   // prevent flex overflow
+
+// Each individual slider section
+.cloud-slider-section
+  // No padding/border — provided by .cloud-banners-section
+  position relative
+
+.cloud-slider
+  position relative
+  border-radius var(--radius-md)
+  overflow hidden
+  box-shadow var(--shadow-md)
+
+.cloud-track
   display flex
   transition transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
   will-change transform
 
-.aliyun-cloud-slide
+.cloud-slide
   flex 0 0 100%
   min-width 100%
   display flex
   align-items center
   text-decoration none
   color white
-  padding 32px 28px
+  padding 16px 16px
   position relative
   overflow hidden
-  min-height 130px
+  min-height 70px
 
-.aliyun-cloud-slide:hover
+.cloud-slide:hover
   color white
 
-.aliyun-cloud-slide:hover .aliyun-cloud-cta
+.cloud-slide:hover .cloud-cta
   background white
   transform translateY(-1px)
 
-.aliyun-cloud-slide::before
+.cloud-slide::before
   content ''
   position absolute
-  top -40%
-  right -8%
-  width 220px
-  height 220px
+  top -30%
+  right -6%
+  width 140px
+  height 140px
   border-radius 50%
   background rgba(255, 255, 255, 0.08)
   pointer-events none
 
-.aliyun-cloud-slide::after
+.cloud-slide::after
   content ''
   position absolute
-  bottom -50%
-  left -4%
-  width 180px
-  height 180px
+  bottom -40%
+  left -3%
+  width 110px
+  height 110px
   border-radius 50%
   background rgba(255, 255, 255, 0.05)
   pointer-events none
 
-.aliyun-cloud-slide-1
+// Aliyun slide gradients
+[data-provider="aliyun"] .cloud-slide[data-slide="1"]
   background linear-gradient(135deg, #FF6A00 0%, #FF9A3D 50%, #1677FF 100%)
 
-.aliyun-cloud-slide-2
+[data-provider="aliyun"] .cloud-slide[data-slide="2"]
   background linear-gradient(135deg, #0A2E6C 0%, #1677FF 55%, #00C6FB 100%)
 
-.aliyun-cloud-slide-3
+[data-provider="aliyun"] .cloud-slide[data-slide="3"]
   background linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #1677FF 100%)
 
-.aliyun-cloud-slide-4
+[data-provider="aliyun"] .cloud-slide[data-slide="4"]
   background linear-gradient(135deg, #064E3B 0%, #10B981 50%, #1677FF 100%)
 
-.aliyun-cloud-slide-5
+[data-provider="aliyun"] .cloud-slide[data-slide="5"]
   background linear-gradient(135deg, #7C2D12 0%, #EA580C 50%, #F59E0B 100%)
 
-.aliyun-cloud-slide-content
+// Tencent slide gradients
+[data-provider="tencent"] .cloud-slide[data-slide="1"]
+  background linear-gradient(135deg, #0052D9 0%, #006EFF 50%, #00A870 100%)
+
+[data-provider="tencent"] .cloud-slide[data-slide="2"]
+  background linear-gradient(135deg, #1C2F5D 0%, #0052D9 55%, #00C6FB 100%)
+
+[data-provider="tencent"] .cloud-slide[data-slide="3"]
+  background linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #00ACC1 100%)
+
+[data-provider="tencent"] .cloud-slide[data-slide="4"]
+  background linear-gradient(135deg, #004BA0 0%, #1976D2 50%, #4FC3F7 100%)
+
+[data-provider="tencent"] .cloud-slide[data-slide="5"]
+  background linear-gradient(135deg, #1A237E 0%, #283593 50%, #5C6BC0 100%)
+
+// Provider-specific CTA colors
+[data-provider="aliyun"] .cloud-cta
+  color #1677FF
+
+[data-provider="tencent"] .cloud-cta
+  color #0052D9
+
+.cloud-slide-content
   position relative
   z-index 1
-  max-width 720px
+  max-width 90%
 
-.aliyun-cloud-badge
+.cloud-badge
   display inline-block
-  padding 3px 12px
+  padding 2px 10px
   background rgba(255, 255, 255, 0.25)
   border-radius 20px
-  font-size 0.72rem
+  font-size 0.62rem
   font-weight 600
-  letter-spacing 0.05em
-  margin-bottom 10px
+  letter-spacing 0.04em
+  margin-bottom 6px
   backdrop-filter blur(4px)
+  text-transform uppercase
 
-.aliyun-cloud-title
-  font-size 1.5rem
+.cloud-title
+  font-size 0.95rem
   font-weight 700
-  margin-bottom 8px
+  margin-bottom 4px
   line-height 1.3
   letter-spacing -0.01em
 
-.aliyun-cloud-desc
-  font-size 0.92rem
+.cloud-desc
+  font-size 0.72rem
   opacity 0.92
-  margin-bottom 14px
-  line-height 1.5
+  margin-bottom 8px
+  line-height 1.4
 
-.aliyun-cloud-cta
+.cloud-cta
   display inline-flex
   align-items center
-  gap 6px
-  padding 8px 18px
+  gap 4px
+  padding 5px 12px
   background rgba(255, 255, 255, 0.95)
-  color #1677FF
-  border-radius var(--radius-md)
-  font-size 0.88rem
+  border-radius var(--radius-sm)
+  font-size 0.72rem
   font-weight 600
   transition all 0.2s
 
-.aliyun-cloud-cta:hover
+.cloud-cta:hover
   background white
   transform translateY(-1px)
 
-.aliyun-cloud-arrow
+.cloud-arrow
   transition transform 0.2s
+  width 14px
+  height 14px
 
-.aliyun-cloud-slide:hover .aliyun-cloud-arrow
+.cloud-slide:hover .cloud-arrow
   transform translateX(3px)
 
-.aliyun-cloud-nav
+.cloud-nav
   position absolute
   top 50%
   transform translateY(-50%)
-  width 38px
-  height 38px
+  width 28px
+  height 28px
   border none
   border-radius 50%
   background rgba(255, 255, 255, 0.85)
@@ -1167,30 +1215,30 @@ a:hover
   transition opacity 0.2s, background 0.2s
   backdrop-filter blur(4px)
 
-.aliyun-cloud-slider:hover .aliyun-cloud-nav
+.cloud-slider:hover .cloud-nav
   opacity 1
 
-.aliyun-cloud-nav:hover
+.cloud-nav:hover
   background white
 
-.aliyun-cloud-prev
-  left 10px
+.cloud-prev
+  left 6px
 
-.aliyun-cloud-next
-  right 10px
+.cloud-next
+  right 6px
 
-.aliyun-cloud-dots
+.cloud-dots
   position absolute
-  bottom 10px
+  bottom 6px
   left 50%
   transform translateX(-50%)
   display flex
-  gap 6px
+  gap 4px
   z-index 2
 
-.aliyun-cloud-dot
-  width 7px
-  height 7px
+.cloud-dot
+  width 5px
+  height 5px
   border-radius 50%
   border none
   background rgba(255, 255, 255, 0.45)
@@ -1198,27 +1246,53 @@ a:hover
   padding 0
   transition all 0.2s
 
-.aliyun-cloud-dot.active
+.cloud-dot.active
   background white
-  width 20px
-  border-radius 4px
+  width 14px
+  border-radius 3px
 
+// Tablet+ adjustments
 @media (min-width: 768px)
-  .aliyun-cloud-slide
-    padding 40px 44px
-    min-height 150px
+  .cloud-banners-section
+    padding 16px 0
 
-  .aliyun-cloud-title
-    font-size 1.8rem
+  .cloud-slide
+    padding 20px 18px
+    min-height 80px
 
-  .aliyun-cloud-desc
-    font-size 1rem
+  .cloud-title
+    font-size 1.05rem
 
-  .aliyun-cloud-prev
-    left 14px
+  .cloud-desc
+    font-size 0.78rem
 
-  .aliyun-cloud-next
-    right 14px
+  .cloud-badge
+    font-size 0.66rem
+
+  .cloud-nav
+    width 30px
+    height 30px
+
+  .cloud-prev
+    left 8px
+
+  .cloud-next
+    right 8px
+
+// Desktop - larger banners
+@media (min-width: 1024px)
+  .cloud-slide
+    padding 24px 22px
+    min-height 90px
+
+  .cloud-title
+    font-size 1.1rem
+
+  .cloud-desc
+    font-size 0.82rem
+
+  .cloud-badge
+    font-size 0.68rem
 
 /* ===== Privacy Policy ===== */
 .privacy-page

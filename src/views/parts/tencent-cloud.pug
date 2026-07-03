@@ -1,90 +1,90 @@
-//- Aliyun cloud service showcase
+//- Tencent Cloud service showcase
 //- Shown when /api/country returns CN (China), OR always on zh-CN locale pages
-//- All text in Chinese, links to minisite with 10% discount
-- var aliyunUrl = 'https://www.aliyun.com/minisite/goods?userCode=sr98yroe'
-.cloud-slider-section#aliyun-cloud(style='display:none', data-lang-code=langCode, data-provider='aliyun')
-  .cloud-slider#aliyun-slider
-      .cloud-track#aliyun-track
-        //- Slide 1
+//- All text in Chinese, links to CPS redirect with promotion content
+- var txcps = 'https://cloud.tencent.com/act/cps/redirect?cps_key=71420a6b477a42c1917d811755d8cc4c&from=console&redirect='
+.cloud-slider-section#tencent-cloud(style='display:none', data-lang-code=langCode, data-provider='tencent')
+  .cloud-slider#tencent-slider
+      .cloud-track#tencent-track
+        //- Slide 1: 轻量应用服务器 新人特惠
         a.cloud-slide(
-          href=aliyunUrl,
+          href=txcps + '1079',
           target='_blank', rel='nofollow noreferrer',
           data-slide='1'
         )
           .cloud-slide-content
-            .cloud-badge 爆款特惠
-            h3.cloud-title 阿里云新人专享
-            p.cloud-desc 轻量应用服务器 2核2G，200M峰值带宽，新人低至 1 折
+            .cloud-badge 新人专享
+            h3.cloud-title 轻量应用服务器
+            p.cloud-desc 4核4G3M 新用户首年仅需 79 元/年，一键开服即刻畅玩
             .cloud-cta
-              span 立即领取 10% 折扣
+              span 立即选购
               svg.cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
                 path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
 
-        //- Slide 2
+        //- Slide 2: AI 焕新 · 智启新局
         a.cloud-slide(
-          href=aliyunUrl,
+          href=txcps + '6351',
           target='_blank', rel='nofollow noreferrer',
           data-slide='2'
         )
           .cloud-slide-content
-            .cloud-badge AI 降本提效
-            h3.cloud-title 旗舰大模型最高直降 88%
-            p.cloud-desc 通义千问、DeepSeek、GLM 等 150+ 模型全适用，超值特惠价格直降
+            .cloud-badge AI 焕新
+            h3.cloud-title 语音识别限时特惠
+            p.cloud-desc 准确率高，支持多语种、多场景，最低 14.9 元起
             .cloud-cta
-              span 享受额外 10% 折扣
+              span 了解详情
               svg.cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
                 path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
 
-        //- Slide 3
+        //- Slide 3: 即时通信 IM 专业版
         a.cloud-slide(
-          href=aliyunUrl,
+          href=txcps + '1058',
           target='_blank', rel='nofollow noreferrer',
           data-slide='3'
         )
           .cloud-slide-content
-            .cloud-badge 限时特惠
-            h3.cloud-title Token Plan 直省 55%
-            p.cloud-desc 全模型通用节省计划，包季低至 4.5 折，加速 AI 生产力
+            .cloud-badge 爆款推荐
+            h3.cloud-title 即时通信 IM 专业版
+            p.cloud-desc 首购只要 99.9 元，套餐包低至 5 折，接入 AI 高效构建智能聊天
             .cloud-cta
-              span 领取专属 10% 折扣
+              span 立即抢购
               svg.cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
                 path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
 
-        //- Slide 4
+        //- Slide 4: 云产品特惠热卖
         a.cloud-slide(
-          href=aliyunUrl,
+          href=txcps + '5878',
           target='_blank', rel='nofollow noreferrer',
           data-slide='4'
         )
           .cloud-slide-content
-            .cloud-badge AI 编程
-            h3.cloud-title Qoder CN 编程智能体
-            p.cloud-desc 开启 AI 编程之旅，个人版 Pro 仅 ¥59/月，企业标准版 ¥99/席位/月
+            .cloud-badge 热卖套餐
+            h3.cloud-title 云产品特惠热卖
+            p.cloud-desc 云服务器、数据库、COS、CDN 全线产品，配置低至 32 元/月起
             .cloud-cta
-              span 通过链接享 10% 折扣
+              span 查看热卖套餐
               svg.cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
                 path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
 
-        //- Slide 5
+        //- Slide 5: 视频通信一站式方案
         a.cloud-slide(
-          href=aliyunUrl,
+          href=txcps + '1051',
           target='_blank', rel='nofollow noreferrer',
           data-slide='5'
         )
           .cloud-slide-content
-            .cloud-badge 百万补贴
-            h3.cloud-title OPC 创新助力计划
-            p.cloud-desc 至高百万 Token 补贴加速 AI 生产力，新老同享最低 1000 元起
+            .cloud-badge 限时优惠
+            h3.cloud-title 视频通信爆款 9.9 元起
+            p.cloud-desc 覆盖电商、教育、社交娱乐等行业，最快 1 天布局火爆赛道
             .cloud-cta
-              span 立即申请享 10% 折扣
+              span 了解更多
               svg.cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
                 path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
 
       //- Navigation
-      button.cloud-nav.cloud-prev#aliyun-prev(type='button', aria-label='上一张')
+      button.cloud-nav.cloud-prev#tencent-prev(type='button', aria-label='上一张')
         svg(width='22', height='22', viewBox='0 0 24 24', fill='none')
           path(d='M15 6l-6 6 6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
-      button.cloud-nav.cloud-next#aliyun-next(type='button', aria-label='下一张')
+      button.cloud-nav.cloud-next#tencent-next(type='button', aria-label='下一张')
         svg(width='22', height='22', viewBox='0 0 24 24', fill='none')
           path(d='M9 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
-      .cloud-dots#aliyun-dots
+      .cloud-dots#tencent-dots

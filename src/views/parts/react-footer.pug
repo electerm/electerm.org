@@ -12,35 +12,13 @@ script(type='module').
 
 script.
   (function(){
-    var REGULATED = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','CH','GB'];
-    var consent = localStorage.getItem('cookie-consent');
-    if (consent === 'accepted') {
-      loadGoogleScripts();
-      return;
-    }
-    if (consent === 'rejected') {
-      return;
-    }
-    fetch('/api/country').then(function(r){ return r.json(); }).then(function(d){
-      var cc = (d.country || '').toUpperCase();
-      if (cc && REGULATED.indexOf(cc) === -1) {
-        localStorage.setItem('cookie-consent', 'accepted');
-        loadGoogleScripts();
-      } else {
-        document.getElementById('cookie-consent').style.display = 'block';
-      }
-    }).catch(function(){
-      document.getElementById('cookie-consent').style.display = 'block';
-    });
-    document.getElementById('cookie-accept').addEventListener('click', function() {
-      localStorage.setItem('cookie-consent', 'accepted');
-      document.getElementById('cookie-consent').style.display = 'none';
-      loadGoogleScripts();
-    });
-    document.getElementById('cookie-reject').addEventListener('click', function() {
-      localStorage.setItem('cookie-consent', 'rejected');
-      document.getElementById('cookie-consent').style.display = 'none';
-    });
+    // === Shared single country fetch for all consumers ===
+    window.__countryPromise = fetch('/api/country')
+      .then(function(r){ return r.json(); })
+      .then(function(d){ return (d.country || '').toUpperCase(); })
+      .catch(function(){ return null; });
+
+    // === Google Analytics loader ===
     function loadGoogleScripts() {
       var s1 = document.createElement('script');
       s1.async = true;
@@ -56,4 +34,166 @@ script.
       gtag('js', new Date());
       gtag('config', 'G-LCY5SM7M8J');
     }
+
+    // === Cookie consent (GDPR) ===
+    (function(){
+      var REGULATED = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','CH','GB'];
+      var consent = localStorage.getItem('cookie-consent');
+      if (consent === 'accepted') {
+        loadGoogleScripts();
+        return;
+      }
+      if (consent === 'rejected') {
+        return;
+      }
+      window.__countryPromise.then(function(cc){
+        if (cc && REGULATED.indexOf(cc) === -1) {
+          localStorage.setItem('cookie-consent', 'accepted');
+          loadGoogleScripts();
+        } else {
+          document.getElementById('cookie-consent').style.display = 'block';
+        }
+      });
+      document.getElementById('cookie-accept').addEventListener('click', function() {
+        localStorage.setItem('cookie-consent', 'accepted');
+        document.getElementById('cookie-consent').style.display = 'none';
+        loadGoogleScripts();
+      });
+      document.getElementById('cookie-reject').addEventListener('click', function() {
+        localStorage.setItem('cookie-consent', 'rejected');
+        document.getElementById('cookie-consent').style.display = 'none';
+      });
+    })();
+
+    // === Cloud slider init (reusable across Aliyun, Tencent, etc.) ===
+    window.initCloudSlider = function(idMap) {
+      var slider = document.getElementById(idMap.slider);
+      if (!slider) return null;
+      var track = document.getElementById(idMap.track);
+      if (!track) return null;
+      var slides = track.children;
+      var total = slides.length;
+      if (!total) return null;
+      var current = 0;
+      var timer = null;
+      var DURATION = 5000;
+
+      var dotsContainer = document.getElementById(idMap.dots);
+      for (var i = 0; i < total; i++) {
+        (function(idx){
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'cloud-dot';
+          dot.setAttribute('aria-label', '第 ' + (idx + 1) + ' 张');
+          dot.addEventListener('click', function(){ goTo(idx); resetTimer(); });
+          dotsContainer.appendChild(dot);
+        })(i);
+      }
+      var dots = dotsContainer.children;
+
+      function update() {
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        for (var i = 0; i < dots.length; i++) {
+          if (dots[i]) dots[i].classList.toggle('active', i === current);
+        }
+      }
+
+      function goTo(idx) { current = (idx + total) % total; update(); }
+      function nextSlide() { goTo(current + 1); }
+      function prevSlide() { goTo(current - 1); }
+
+      function startTimer() { stopTimer(); timer = setInterval(nextSlide, DURATION); }
+      function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
+      function resetTimer() { startTimer(); }
+
+      document.getElementById(idMap.next).addEventListener('click', function(){ nextSlide(); resetTimer(); });
+      document.getElementById(idMap.prev).addEventListener('click', function(){ prevSlide(); resetTimer(); });
+
+      slider.addEventListener('mouseenter', stopTimer);
+      slider.addEventListener('mouseleave', startTimer);
+
+      // Touch swipe
+      var touchStartX = 0;
+      track.addEventListener('touchstart', function(e){ touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+      track.addEventListener('touchend', function(e){
+        var diff = touchStartX - e.changedTouches[0].screenX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) nextSlide(); else prevSlide();
+          resetTimer();
+        }
+      }, { passive: true });
+
+      return {
+        goTo: goTo,
+        total: total,
+        update: update,
+        startTimer: startTimer,
+        stopTimer: stopTimer
+      };
+    };
+
+    // Storage for initialized cloud slider instances
+    window.__cloudSliders = [];
+
+    // Desired visibility (set by client-side toggles before init is done)
+    window.__cloudBannerDesired = null;
+
+    // Toggle cloud banners visibility (for client-side lang switches like video pages)
+    window.toggleCloudBanners = function(show) {
+      window.__cloudBannerDesired = show;
+      var list = window.__cloudSliders;
+      for (var i = 0; i < list.length; i++) {
+        var item = list[i];
+        if (show) {
+          item.section.style.display = '';
+          item.bannerParent.style.display = '';
+          item.slider.goTo(Math.floor(Math.random() * item.slider.total));
+          item.slider.startTimer();
+        } else {
+          item.section.style.display = 'none';
+          item.bannerParent.style.display = 'none';
+          item.slider.stopTimer();
+        }
+      }
+    };
+
+    // === Init all cloud sliders on the page ===
+    window.__countryPromise.then(function(cc){
+      var sections = document.querySelectorAll('.cloud-slider-section');
+      for (var i = 0; i < sections.length; i++) {
+        (function(section){
+          var provider = section.getAttribute('data-provider') || '';
+          var s = window.initCloudSlider({
+            slider: provider + '-slider',
+            track: provider + '-track',
+            dots: provider + '-dots',
+            prev: provider + '-prev',
+            next: provider + '-next'
+          });
+          if (!s) return;
+
+          var bannerParent = section.closest('.cloud-banners-section');
+          // Store for later toggling
+          window.__cloudSliders.push({
+            section: section,
+            slider: s,
+            bannerParent: bannerParent
+          });
+
+          // Initial show/hide based on page lang + country
+          var langCode = section.getAttribute('data-lang-code') || '';
+          var htmlLang = document.documentElement.getAttribute('lang') || '';
+          var isChinesePage = langCode === 'zh-CN' || langCode === 'zh-TW' || htmlLang === 'zh-CN' || htmlLang === 'zh-TW' || htmlLang.indexOf('zh') === 0;
+          if (isChinesePage || cc === 'CN') {
+            s.goTo(Math.floor(Math.random() * s.total));
+            section.style.display = '';
+            if (bannerParent) bannerParent.style.display = '';
+          }
+        })(sections[i]);
+      }
+      // Apply any client-side lang override that was set before init completed
+      if (window.__cloudBannerDesired !== null) {
+        window.toggleCloudBanners(window.__cloudBannerDesired);
+      }
+    });
   })();
