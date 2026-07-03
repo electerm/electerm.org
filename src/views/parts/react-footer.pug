@@ -132,33 +132,8 @@ script.
       };
     };
 
-    // Storage for initialized cloud slider instances
-    window.__cloudSliders = [];
-
-    // Desired visibility (set by client-side toggles before init is done)
-    window.__cloudBannerDesired = null;
-
-    // Toggle cloud banners visibility (for client-side lang switches like video pages)
-    window.toggleCloudBanners = function(show) {
-      window.__cloudBannerDesired = show;
-      var list = window.__cloudSliders;
-      for (var i = 0; i < list.length; i++) {
-        var item = list[i];
-        if (show) {
-          item.section.style.display = '';
-          item.bannerParent.style.display = '';
-          item.slider.goTo(Math.floor(Math.random() * item.slider.total));
-          item.slider.startTimer();
-        } else {
-          item.section.style.display = 'none';
-          item.bannerParent.style.display = 'none';
-          item.slider.stopTimer();
-        }
-      }
-    };
-
     // === Init all cloud sliders on the page ===
-    window.__countryPromise.then(function(cc){
+    (function(){
       var sections = document.querySelectorAll('.cloud-slider-section');
       for (var i = 0; i < sections.length; i++) {
         (function(section){
@@ -171,29 +146,8 @@ script.
             next: provider + '-next'
           });
           if (!s) return;
-
-          var bannerParent = section.closest('.cloud-banners-section');
-          // Store for later toggling
-          window.__cloudSliders.push({
-            section: section,
-            slider: s,
-            bannerParent: bannerParent
-          });
-
-          // Initial show/hide based on page lang + country
-          var langCode = section.getAttribute('data-lang-code') || '';
-          var htmlLang = document.documentElement.getAttribute('lang') || '';
-          var isChinesePage = langCode === 'zh-CN' || langCode === 'zh-TW' || htmlLang === 'zh-CN' || htmlLang === 'zh-TW' || htmlLang.indexOf('zh') === 0;
-          if (isChinesePage || cc === 'CN') {
-            s.goTo(Math.floor(Math.random() * s.total));
-            section.style.display = '';
-            if (bannerParent) bannerParent.style.display = '';
-          }
+          s.goTo(Math.floor(Math.random() * s.total));
         })(sections[i]);
       }
-      // Apply any client-side lang override that was set before init completed
-      if (window.__cloudBannerDesired !== null) {
-        window.toggleCloudBanners(window.__cloudBannerDesired);
-      }
-    });
+    })();
   })();
