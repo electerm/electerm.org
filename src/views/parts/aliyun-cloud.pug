@@ -1,0 +1,187 @@
+//- Aliyun cloud service showcase
+//- Shown when /api/country returns CN (China), OR always on zh-CN locale pages
+//- All text in Chinese, links to minisite with 10% discount
+section.aliyun-cloud-section#aliyun-cloud(style='display:none', data-lang-code=langCode)
+  .container
+    .aliyun-cloud-slider#aliyun-cloud-slider
+      //- Slider track
+      .aliyun-cloud-track#aliyun-cloud-track
+        //- Slide 1: 爆款特惠 新人专享
+        a.aliyun-cloud-slide.aliyun-cloud-slide-1(
+          href='https://www.aliyun.com/minisite/goods?userCode=sr98yroe',
+          target='_blank', rel='nofollow noreferrer'
+        )
+          .aliyun-cloud-slide-content
+            .aliyun-cloud-badge 爆款特惠
+            h3.aliyun-cloud-title 阿里云新人专享
+            p.aliyun-cloud-desc 轻量应用服务器 2核2G，200M峰值带宽，新人低至 1 折
+            .aliyun-cloud-cta
+              span 立即领取 10% 折扣
+              svg.aliyun-cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
+                path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
+
+        //- Slide 2: AI 大模型直降
+        a.aliyun-cloud-slide.aliyun-cloud-slide-2(
+          href='https://www.aliyun.com/minisite/goods?userCode=sr98yroe',
+          target='_blank', rel='nofollow noreferrer'
+        )
+          .aliyun-cloud-slide-content
+            .aliyun-cloud-badge AI 降本提效
+            h3.aliyun-cloud-title 旗舰大模型最高直降 88%
+            p.aliyun-cloud-desc 通义千问、DeepSeek、GLM 等 150+ 模型全适用，超值特惠价格直降
+            .aliyun-cloud-cta
+              span 享受额外 10% 折扣
+              svg.aliyun-cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
+                path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
+
+        //- Slide 3: Token Plan 节省计划
+        a.aliyun-cloud-slide.aliyun-cloud-slide-3(
+          href='https://www.aliyun.com/minisite/goods?userCode=sr98yroe',
+          target='_blank', rel='nofollow noreferrer'
+        )
+          .aliyun-cloud-slide-content
+            .aliyun-cloud-badge 限时特惠
+            h3.aliyun-cloud-title Token Plan 直省 55%
+            p.aliyun-cloud-desc 全模型通用节省计划，包季低至 4.5 折，加速 AI 生产力
+            .aliyun-cloud-cta
+              span 领取专属 10% 折扣
+              svg.aliyun-cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
+                path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
+
+        //- Slide 4: Qoder CN AI 编程智能体
+        a.aliyun-cloud-slide.aliyun-cloud-slide-4(
+          href='https://www.aliyun.com/minisite/goods?userCode=sr98yroe',
+          target='_blank', rel='nofollow noreferrer'
+        )
+          .aliyun-cloud-slide-content
+            .aliyun-cloud-badge AI 编程
+            h3.aliyun-cloud-title Qoder CN 编程智能体
+            p.aliyun-cloud-desc 开启 AI 编程之旅，个人版 Pro 仅 ¥59/月，企业标准版 ¥99/席位/月
+            .aliyun-cloud-cta
+              span 通过链接享 10% 折扣
+              svg.aliyun-cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
+                path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
+
+        //- Slide 5: OPC 创新助力计划
+        a.aliyun-cloud-slide.aliyun-cloud-slide-5(
+          href='https://www.aliyun.com/minisite/goods?userCode=sr98yroe',
+          target='_blank', rel='nofollow noreferrer'
+        )
+          .aliyun-cloud-slide-content
+            .aliyun-cloud-badge 百万补贴
+            h3.aliyun-cloud-title OPC 创新助力计划
+            p.aliyun-cloud-desc 至高百万 Token 补贴加速 AI 生产力，新老同享最低 1000 元起
+            .aliyun-cloud-cta
+              span 立即申请享 10% 折扣
+              svg.aliyun-cloud-arrow(width='18', height='18', viewBox='0 0 24 24', fill='none')
+                path(d='M5 12h14M13 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
+
+      //- Navigation arrows
+      button.aliyun-cloud-nav.aliyun-cloud-prev#aliyun-cloud-prev(type='button', aria-label='上一张')
+        svg(width='22', height='22', viewBox='0 0 24 24', fill='none')
+          path(d='M15 6l-6 6 6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
+      button.aliyun-cloud-nav.aliyun-cloud-next#aliyun-cloud-next(type='button', aria-label='下一张')
+        svg(width='22', height='22', viewBox='0 0 24 24', fill='none')
+          path(d='M9 6l6 6-6 6', stroke='currentColor', stroke-width='2.5', stroke-linecap='round', stroke-linejoin='round')
+
+      //- Dot indicators
+      .aliyun-cloud-dots#aliyun-cloud-dots
+
+  //- Slider logic + country detection
+  script.
+    (function(){
+      var slider = document.getElementById('aliyun-cloud-slider');
+      if (!slider) return;
+      var track = document.getElementById('aliyun-cloud-track');
+      var slides = track ? track.children : [];
+      var total = slides.length;
+      var current = 0;
+      var timer = null;
+      var DURATION = 5000;
+
+      // Build dot indicators
+      var dotsContainer = document.getElementById('aliyun-cloud-dots');
+      for (var i = 0; i < total; i++) {
+        (function(idx){
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'aliyun-cloud-dot';
+          dot.setAttribute('aria-label', '第 ' + (idx + 1) + ' 张');
+          dot.addEventListener('click', function(){ goTo(idx); resetTimer(); });
+          dotsContainer.appendChild(dot);
+        })(i);
+      }
+      var dots = dotsContainer.children;
+
+      function update() {
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        for (var i = 0; i < dots.length; i++) {
+          if (dots[i]) dots[i].classList.toggle('active', i === current);
+        }
+      }
+
+      function goTo(idx) {
+        current = (idx + total) % total;
+        update();
+      }
+
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
+
+      function startTimer() {
+        stopTimer();
+        timer = setInterval(next, DURATION);
+      }
+      function stopTimer() {
+        if (timer) { clearInterval(timer); timer = null; }
+      }
+      function resetTimer() {
+        startTimer();
+      }
+
+      document.getElementById('aliyun-cloud-next').addEventListener('click', function(){ next(); resetTimer(); });
+      document.getElementById('aliyun-cloud-prev').addEventListener('click', function(){ prev(); resetTimer(); });
+
+      // Pause on hover
+      slider.addEventListener('mouseenter', stopTimer);
+      slider.addEventListener('mouseleave', startTimer);
+
+      // Touch swipe support
+      var touchStartX = 0;
+      var touchEndX = 0;
+      track.addEventListener('touchstart', function(e){ touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+      track.addEventListener('touchend', function(e){
+        touchEndX = e.changedTouches[0].screenX;
+        var diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) { next(); } else { prev(); }
+          resetTimer();
+        }
+      }, { passive: true });
+
+      // Show for China visitors, or always on Chinese locale pages (zh-CN)
+      var section = document.getElementById('aliyun-cloud');
+      var langCodeAttr = section ? (section.getAttribute('data-lang-code') || '') : '';
+      var isChinesePage = langCodeAttr === 'zh-CN' || langCodeAttr === 'zh-TW';
+
+      function reveal() {
+        // Random starting slide so different visitors see different content
+        current = Math.floor(Math.random() * total);
+        update();
+        if (section) section.style.display = '';
+        startTimer();
+      }
+
+      if (isChinesePage) {
+        // Chinese locale page — always show, skip country check
+        reveal();
+      } else {
+        // Other locales — only show for China visitors
+        fetch('/api/country').then(function(r){ return r.json(); }).then(function(d){
+          var cc = (d.country || '').toUpperCase();
+          if (cc === 'CN') {
+            reveal();
+          }
+        }).catch(function(){ /* hide on error */ });
+      }
+    })();

@@ -1023,7 +1023,203 @@ a:hover
   transform translateY(-1px)
   box-shadow 0 4px 12px rgba(37,99,235,0.3)
 
-/* ===== Deb Page ===== */
+/* ===== Aliyun Cloud ===== */
+.aliyun-cloud-section
+  padding 24px 0
+  background var(--color-bg-alt)
+  border-top 1px solid var(--color-border)
+  border-bottom 1px solid var(--color-border)
+
+.aliyun-cloud-slider
+  position relative
+  border-radius var(--radius-lg)
+  overflow hidden
+  box-shadow var(--shadow-lg)
+
+.aliyun-cloud-track
+  display flex
+  transition transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
+  will-change transform
+
+.aliyun-cloud-slide
+  flex 0 0 100%
+  min-width 100%
+  display flex
+  align-items center
+  text-decoration none
+  color white
+  padding 32px 28px
+  position relative
+  overflow hidden
+  min-height 130px
+
+.aliyun-cloud-slide:hover
+  color white
+
+.aliyun-cloud-slide:hover .aliyun-cloud-cta
+  background white
+  transform translateY(-1px)
+
+.aliyun-cloud-slide::before
+  content ''
+  position absolute
+  top -40%
+  right -8%
+  width 220px
+  height 220px
+  border-radius 50%
+  background rgba(255, 255, 255, 0.08)
+  pointer-events none
+
+.aliyun-cloud-slide::after
+  content ''
+  position absolute
+  bottom -50%
+  left -4%
+  width 180px
+  height 180px
+  border-radius 50%
+  background rgba(255, 255, 255, 0.05)
+  pointer-events none
+
+.aliyun-cloud-slide-1
+  background linear-gradient(135deg, #FF6A00 0%, #FF9A3D 50%, #1677FF 100%)
+
+.aliyun-cloud-slide-2
+  background linear-gradient(135deg, #0A2E6C 0%, #1677FF 55%, #00C6FB 100%)
+
+.aliyun-cloud-slide-3
+  background linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #1677FF 100%)
+
+.aliyun-cloud-slide-4
+  background linear-gradient(135deg, #064E3B 0%, #10B981 50%, #1677FF 100%)
+
+.aliyun-cloud-slide-5
+  background linear-gradient(135deg, #7C2D12 0%, #EA580C 50%, #F59E0B 100%)
+
+.aliyun-cloud-slide-content
+  position relative
+  z-index 1
+  max-width 720px
+
+.aliyun-cloud-badge
+  display inline-block
+  padding 3px 12px
+  background rgba(255, 255, 255, 0.25)
+  border-radius 20px
+  font-size 0.72rem
+  font-weight 600
+  letter-spacing 0.05em
+  margin-bottom 10px
+  backdrop-filter blur(4px)
+
+.aliyun-cloud-title
+  font-size 1.5rem
+  font-weight 700
+  margin-bottom 8px
+  line-height 1.3
+  letter-spacing -0.01em
+
+.aliyun-cloud-desc
+  font-size 0.92rem
+  opacity 0.92
+  margin-bottom 14px
+  line-height 1.5
+
+.aliyun-cloud-cta
+  display inline-flex
+  align-items center
+  gap 6px
+  padding 8px 18px
+  background rgba(255, 255, 255, 0.95)
+  color #1677FF
+  border-radius var(--radius-md)
+  font-size 0.88rem
+  font-weight 600
+  transition all 0.2s
+
+.aliyun-cloud-cta:hover
+  background white
+  transform translateY(-1px)
+
+.aliyun-cloud-arrow
+  transition transform 0.2s
+
+.aliyun-cloud-slide:hover .aliyun-cloud-arrow
+  transform translateX(3px)
+
+.aliyun-cloud-nav
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  width 38px
+  height 38px
+  border none
+  border-radius 50%
+  background rgba(255, 255, 255, 0.85)
+  color #0f172a
+  display flex
+  align-items center
+  justify-content center
+  cursor pointer
+  z-index 2
+  opacity 0
+  transition opacity 0.2s, background 0.2s
+  backdrop-filter blur(4px)
+
+.aliyun-cloud-slider:hover .aliyun-cloud-nav
+  opacity 1
+
+.aliyun-cloud-nav:hover
+  background white
+
+.aliyun-cloud-prev
+  left 10px
+
+.aliyun-cloud-next
+  right 10px
+
+.aliyun-cloud-dots
+  position absolute
+  bottom 10px
+  left 50%
+  transform translateX(-50%)
+  display flex
+  gap 6px
+  z-index 2
+
+.aliyun-cloud-dot
+  width 7px
+  height 7px
+  border-radius 50%
+  border none
+  background rgba(255, 255, 255, 0.45)
+  cursor pointer
+  padding 0
+  transition all 0.2s
+
+.aliyun-cloud-dot.active
+  background white
+  width 20px
+  border-radius 4px
+
+@media (min-width: 768px)
+  .aliyun-cloud-slide
+    padding 40px 44px
+    min-height 150px
+
+  .aliyun-cloud-title
+    font-size 1.8rem
+
+  .aliyun-cloud-desc
+    font-size 1rem
+
+  .aliyun-cloud-prev
+    left 14px
+
+  .aliyun-cloud-next
+    right 14px
+
 /* ===== Privacy Policy ===== */
 .privacy-page
   padding 80px 0 100px

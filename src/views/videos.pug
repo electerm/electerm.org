@@ -151,6 +151,7 @@ html(lang=langCode)
                 .video-duration-badge #{Math.floor(video.duration / 60)}:#{String(video.duration % 60).padStart(2, '0')}
               .video-card-content
                 h3.video-card-title(data-title-en=video.titleEn data-title-zh=video.title)= video.titleEn
+    include ./parts/aliyun-cloud
     include ./parts/footer
     include ./parts/video-script
     include ./parts/react-footer
