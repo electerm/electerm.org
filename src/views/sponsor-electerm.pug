@@ -147,6 +147,148 @@ html(lang=langCode)
         font-size: 0.85rem;
         color: var(--color-text-secondary);
       }
+      /* ===== Sponsorship Tiers ===== */
+      .tiers-section {
+        padding: 60px 0;
+        background: var(--color-bg-alt);
+      }
+      .tiers-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .tiers-header h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .tiers-header p {
+        color: var(--color-text-secondary);
+        font-size: 0.95rem;
+        max-width: 520px;
+        margin: 0 auto;
+      }
+      .tiers-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 900px;
+        margin: 0 auto 40px;
+      }
+      @media (min-width: 640px) {
+        .tiers-grid { grid-template-columns: repeat(3, 1fr); }
+      }
+      .tier-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 32px 20px;
+        background: var(--color-bg);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        transition: all 0.25s;
+      }
+      .tier-card.featured {
+        border-color: var(--color-primary);
+        border-width: 2px;
+        box-shadow: var(--shadow-md);
+        position: relative;
+      }
+      .tier-card.featured::before {
+        content: '★';
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--color-primary);
+        color: #fff;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        box-shadow: 0 2px 6px rgba(37,99,235,0.3);
+      }
+      .tier-card:hover {
+        border-color: var(--color-primary);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px);
+      }
+      .tier-icon {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-md);
+        background: var(--color-primary-light);
+      }
+      .tier-price {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--color-primary);
+        margin-bottom: 12px;
+      }
+      .tier-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--color-text);
+      }
+      .tier-card p {
+        font-size: 0.85rem;
+        color: var(--color-text-secondary);
+        line-height: 1.5;
+        flex: 1;
+      }
+      .tier-badge {
+        display: inline-block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 3px 10px;
+        border-radius: 999px;
+        margin-bottom: 12px;
+      }
+      .tier-badge-small {
+        background: #f0f0f0;
+        color: #666;
+      }
+      .tier-badge-medium {
+        background: #dbeafe;
+        color: #2563eb;
+      }
+      .tier-badge-large {
+        background: #fef3c7;
+        color: #d97706;
+      }
+      .tiers-cta {
+        text-align: center;
+      }
+      .tiers-cta a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 32px;
+        background: var(--color-primary);
+        color: #fff;
+        border-radius: var(--radius-md);
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s;
+        box-shadow: 0 2px 8px rgba(37,99,235,0.2);
+      }
+      .tiers-cta a:hover {
+        background: var(--color-primary-dark);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+      }
   body
     include ./parts/header
     section.sponsor-hero
@@ -174,6 +316,26 @@ html(lang=langCode)
             .sponsor-icon 🌍
             h3 #{lang.lang.sponsorOpenCollective}
             p #{lang.lang.sponsorOpenCollectiveDesc}
+    section.tiers-section
+      .container
+        .tiers-header
+          h2 #{lang.lang.sponsorTiersTitle}
+          p #{lang.lang.sponsorTiersSubtitle}
+        .tiers-grid
+          a.tier-card(href='https://github.com/sponsors/electerm', target='_blank', rel='noreferrer')
+            .tier-icon 🌱
+            .tier-badge.tier-badge-small #{lang.lang.sponsorTierSmallTitle}
+            h3 #{lang.lang.sponsorTierSmallDesc}
+          a.tier-card.featured(href='https://github.com/sponsors/electerm', target='_blank', rel='noreferrer')
+            .tier-icon 🚀
+            .tier-badge.tier-badge-medium #{lang.lang.sponsorTierMediumTitle}
+            h3 #{lang.lang.sponsorTierMediumDesc}
+          a.tier-card(href='https://github.com/sponsors/electerm', target='_blank', rel='noreferrer')
+            .tier-icon 👑
+            .tier-badge.tier-badge-large #{lang.lang.sponsorTierLargeTitle}
+            h3 #{lang.lang.sponsorTierLargeDesc}
+        .tiers-cta
+          a(href='https://github.com/sponsors/electerm', target='_blank', rel='noreferrer') #{lang.lang.sponsorBecomeSponsor}
     include ./parts/sponsors
     include ./parts/cloud
     include ./parts/footer
