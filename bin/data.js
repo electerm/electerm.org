@@ -104,6 +104,7 @@ function createLocaleData () {
 
 function createReleaseData () {
   const data = releaseData
+  const starCount = data.starCount
   const assets = data.release.assets
   const version = data.release.tag_name
   const releaseNote = data.release.body.replace(/\r?\n-{3,}\r?\n\r?\nDownload下载:.*$/, '')
@@ -290,6 +291,7 @@ function createReleaseData () {
   return {
     assets: arr,
     version,
+    starCount,
     releaseDate: dt,
     releaseDateISO: dtISO
   }

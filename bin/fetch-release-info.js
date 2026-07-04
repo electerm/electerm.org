@@ -30,14 +30,31 @@ async function fetchReleaseInfo () {
   }
 }
 
+async function fetchRepoInfo () {
+  const response = await axios.get('https://api.github.com/repos/electerm/electerm', {
+    headers: {
+      'User-Agent': 'electerm-website',
+      Authorization: `token ${token}`,
+      Accept: 'application/vnd.github.v3+json'
+    }
+  })
+
+  return {
+    starCount: response.data.stargazers_count
+  }
+}
+
 async function main () {
   console.log('Fetching latest release info from GitHub...')
   const releaseInfo = await fetchReleaseInfo()
   if (releaseInfo.release.body) {
     releaseInfo.release.body = releaseInfo.release.body.replace(/\r\n\r\n-------\r\n\r\nDownload下载: \[https:\/\/electerm\.html5beta\.com\]\(https:\/\/electerm\.html5beta\.com\)$/, '')
   }
+  console.log('Fetching repository info from GitHub...')
+  const repoInfo = await fetchRepoInfo()
+  const output = { ...releaseInfo, ...repoInfo }
   // Write to file
-  await fs.writeFile(outputPath, JSON.stringify(releaseInfo, null, 2))
+  await fs.writeFile(outputPath, JSON.stringify(output, null, 2))
   console.log(`Release info saved to ${outputPath}`)
 }
 
