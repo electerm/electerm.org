@@ -46,7 +46,7 @@ async function buildVideoPages () {
       duration: `PT${Math.floor(video.duration / 60)}M${video.duration % 60}S`,
       contentUrl: `${h}/videos/${videoSlug}/`,
       embedUrl: `https://player.bilibili.com/player.html?bvid=${video.bvid}&page=1&high_quality=1`,
-      uploadDate: video.uploadDate || data.releaseDate
+      uploadDate: video.publishDate || data.releaseDateISO
     })
 
     // Generate unique keywords per video based on title and slug

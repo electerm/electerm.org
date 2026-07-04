@@ -109,6 +109,7 @@ function createReleaseData () {
   const releaseNote = data.release.body.replace(/\r?\n-{3,}\r?\n\r?\nDownload下载:.*$/, '')
   console.log('version:', version)
   const dt = dayjs(assets[0].created_at).format('YYYY-MM-DD')
+  const dtISO = dayjs(assets[0].created_at).toISOString()
   const arr = assets.reduce((prev, curr) => {
     const nr = {
       ...curr,
@@ -289,7 +290,8 @@ function createReleaseData () {
   return {
     assets: arr,
     version,
-    releaseDate: dt
+    releaseDate: dt,
+    releaseDateISO: dtISO
   }
 }
 
