@@ -3,6 +3,9 @@ import { buildPug } from './build-bug.js'
 import { resolve } from 'path'
 import { cwd } from './common.js'
 import fs from 'fs/promises'
+import { readFileSync } from 'fs'
+
+let cssFilename = '/index.bundle.css'
 
 const REDIRECT_TEMPLATE = (target) => `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${target}"><script>location.replace("${target}")</script></head><body></body></html>`
 
@@ -25,7 +28,7 @@ async function buildVideoPages () {
     keywords: lang.lang.videosTitle + ', electerm video, terminal tutorial, ssh tutorial, sftp tutorial',
     desc: lang.lang.videosTitle + ' - Watch tutorial videos and demos for electerm terminal client',
     url: `${h}/videos/`,
-    cssUrl: '/index.bundle.css',
+    cssUrl: cssFilename,
     videos
   })
 
@@ -61,7 +64,7 @@ async function buildVideoPages () {
       keywords: videoKeywords,
       desc: `${video.titleEn} - electerm video tutorial. Learn how to use ${video.titleEn.toLowerCase()} in electerm terminal client.`,
       url: `${h}/videos/${videoSlug}/`,
-      cssUrl: '/index.bundle.css',
+      cssUrl: cssFilename,
       video: { ...video, structuredData }
     })
   }
@@ -116,6 +119,15 @@ function generateVideoKeywords (video) {
 }
 
 async function main () {
+  cssFilename = '/index.bundle.css'
+  try {
+    const assetsPath = resolve(cwd, 'data/assets.json')
+    const assets = JSON.parse(readFileSync(assetsPath, 'utf-8'))
+    cssFilename = '/' + assets.css
+  } catch (e) {
+    console.warn('Warning: data/assets.json not found, using fallback CSS filename')
+  }
+
   const { langs, pages } = data
   const from = resolve(cwd, 'src/views/index.pug')
   const h = process.env.HOST
@@ -138,7 +150,7 @@ async function main () {
         desc: lang.lang.desc,
         url: h,
         hreflangLinks,
-        cssUrl: '/index.bundle.css'
+        cssUrl: cssFilename
       })
     } else {
       // Other locales → public/{slug}/index.html + public/index-{id}.html redirect
@@ -159,7 +171,7 @@ async function main () {
         desc: lang.lang.desc,
         url: h + '/' + slug + '/',
         hreflangLinks,
-        cssUrl: '/index.bundle.css'
+        cssUrl: cssFilename
       })
 
       // Build redirect page at old path
@@ -206,7 +218,7 @@ async function main () {
             desc: l.lang[descKey] || l.lang.desc,
             url: `${h}/faq/`,
             hreflangLinks,
-            cssUrl: '/index.bundle.css'
+            cssUrl: cssFilename
           })
           // Redirect from old /faq.html
           const redirectFrom = resolve(cwd, 'public/faq.html')
@@ -229,7 +241,7 @@ async function main () {
             desc: l.lang[descKey] || l.lang.desc,
             url: `${h}/faq/${lslug}/`,
             hreflangLinks,
-            cssUrl: '/index.bundle.css'
+            cssUrl: cssFilename
           })
         }
       }
@@ -250,7 +262,7 @@ async function main () {
       keywords: lang.lang.keywords,
       desc: lang.lang[descKey] || lang.lang.desc,
       url: `${h}/${item}/`,
-      cssUrl: '/index.bundle.css'
+      cssUrl: cssFilename
     })
 
     // Redirect from old /{item}.html
@@ -282,7 +294,7 @@ async function build404Page () {
     keywords: lang.lang.keywords,
     desc: 'Page not found on electerm website',
     url: `${h}/404.html`,
-    cssUrl: '/index.bundle.css',
+    cssUrl: cssFilename,
     robotsContent: 'noindex, follow'
   })
   console.log('✅ Built 404 page')

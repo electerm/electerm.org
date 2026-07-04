@@ -3,13 +3,6 @@ script(type='module').
   var heroEl = document.getElementById('hero-anim')
   if (heroEl) new HeroAnimate(heroEl)
 
-#cookie-consent(style='display:none')
-  .cookie-consent-inner
-    p.cookie-consent-text This website uses cookies for analytics and personalized ads. By clicking "Accept", you consent to the use of cookies for analytics and advertising purposes, including Google's use of IP-based solutions as described in our #[a(href='/privacy-policy/') Privacy Policy].
-    .cookie-consent-actions
-      button#cookie-reject Reject
-      button#cookie-accept Accept
-
 script.
   (function(){
     // === Shared single country fetch for all consumers ===
@@ -18,52 +11,15 @@ script.
       .then(function(d){ return (d.country || '').toUpperCase(); })
       .catch(function(){ return null; });
 
-    // === Google Analytics loader ===
-    function loadGoogleScripts() {
-      var s1 = document.createElement('script');
-      s1.async = true;
-      s1.src = 'https://www.googletagmanager.com/gtag/js?id=G-LCY5SM7M8J';
-      document.head.appendChild(s1);
-      //- var s2 = document.createElement('script');
-      //- s2.async = true;
-      //- s2.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3871790631789822';
-      //- s2.crossOrigin = 'anonymous';
-      //- document.head.appendChild(s2);
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-LCY5SM7M8J');
-    }
-
-    // === Cookie consent (GDPR) ===
-    (function(){
-      var REGULATED = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','CH','GB'];
-      var consent = localStorage.getItem('cookie-consent');
-      if (consent === 'accepted') {
-        loadGoogleScripts();
-        return;
-      }
-      if (consent === 'rejected') {
-        return;
-      }
-      window.__countryPromise.then(function(cc){
-        if (cc && REGULATED.indexOf(cc) === -1) {
-          localStorage.setItem('cookie-consent', 'accepted');
-          loadGoogleScripts();
-        } else {
-          document.getElementById('cookie-consent').style.display = 'block';
-        }
-      });
-      document.getElementById('cookie-accept').addEventListener('click', function() {
-        localStorage.setItem('cookie-consent', 'accepted');
-        document.getElementById('cookie-consent').style.display = 'none';
-        loadGoogleScripts();
-      });
-      document.getElementById('cookie-reject').addEventListener('click', function() {
-        localStorage.setItem('cookie-consent', 'rejected');
-        document.getElementById('cookie-consent').style.display = 'none';
-      });
-    })();
+    // === Google Analytics ===
+    var s1 = document.createElement('script');
+    s1.async = true;
+    s1.src = 'https://www.googletagmanager.com/gtag/js?id=G-LCY5SM7M8J';
+    document.head.appendChild(s1);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LCY5SM7M8J');
 
     // === Cloud slider init (reusable across Aliyun, Tencent, etc.) ===
     window.initCloudSlider = function(idMap) {
