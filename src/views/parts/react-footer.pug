@@ -90,16 +90,14 @@ script.
 
     // === EthicalAds — only for non-CN visitors ===
     window.__countryPromise.then(function(cc){
-      if (cc) {
-        // Show the ad container before loading the script
-        // so ethicalads finds the elements when it initialises
-        var adWrapper = document.querySelector('.ethical-ad-wrapper');
-        if (adWrapper) adWrapper.classList.add('ethical-ad-active');
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://media.ethicalads.io/media/client/ethicalads.min.js';
-        document.body.appendChild(s);
-      }
+      // Show the ad container before loading the script
+      // so ethicalads finds the elements when it initialises
+      var adWrapper = document.querySelector('.ethical-ad-wrapper');
+      if (adWrapper) adWrapper.classList.add('ethical-ad-active');
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://media.ethicalads.io/media/client/ethicalads.min.js';
+      document.body.appendChild(s);
     });
 
     // === EthicalAds spacing: keep the fixed ad bar/card from covering footer content ===
