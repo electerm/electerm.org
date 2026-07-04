@@ -90,7 +90,7 @@ script.
 
     // === EthicalAds — only for non-CN visitors ===
     window.__countryPromise.then(function(cc){
-      if (cc !== 'CN') {
+      if (cc) {
         // Show the ad container before loading the script
         // so ethicalads finds the elements when it initialises
         var adWrapper = document.querySelector('.ethical-ad-wrapper');
