@@ -70,7 +70,7 @@ async function buildSiteMap () {
 
   // Videos index
   urls.push({
-    loc: host + '/videos',
+    loc: host + '/videos/',
     lastmod: dayjs().format(fmt),
     changefreq: 'weekly',
     priority: 0.9

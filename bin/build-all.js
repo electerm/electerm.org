@@ -76,19 +76,6 @@ function buildHreflangLinks (langs, host) {
   }))
 }
 
-function buildPageHreflangLinks (langs, host, pagePath) {
-  return langs.map(item => {
-    const slug = item.slug
-    const url = slug === ''
-      ? `${host}/${pagePath}/`
-      : `${host}/${pagePath}/${slug}/`
-    return {
-      hreflang: item.langCode === 'en-US' ? 'x-default' : item.langCode,
-      url
-    }
-  })
-}
-
 function generateVideoKeywords (video) {
   const base = 'electerm'
   const slug = video.videoSlug || ''
@@ -254,7 +241,6 @@ async function main () {
     await fs.mkdir(dir, { recursive: true })
     const titleKey = item.replace(/-/g, '') + 'Title'
     const descKey = item === 'sponsor-electerm' ? 'sponsorTitle' : (lang.lang[titleKey] ? titleKey : 'privacyPolicy')
-    const pageHreflangLinks = buildPageHreflangLinks(langs, h, item)
     await buildPug(f, resolve(dir, 'index.html'), {
       ...data,
       langCode,
@@ -264,8 +250,7 @@ async function main () {
       keywords: lang.lang.keywords,
       desc: lang.lang[descKey] || lang.lang.desc,
       url: `${h}/${item}/`,
-      cssUrl: '/index.bundle.css',
-      hreflangLinks: pageHreflangLinks
+      cssUrl: '/index.bundle.css'
     })
 
     // Redirect from old /{item}.html

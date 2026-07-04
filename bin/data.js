@@ -314,7 +314,7 @@ export default {
       title: 'Atlas Cloud'
     },
     {
-      url: 'https://electerm.org/videos',
+      url: 'https://electerm.org/videos/',
       title: 'Electerm Video guide'
     },
     {
@@ -358,7 +358,7 @@ export default {
       title: 'Discussion'
     },
     {
-      url: 'https://electerm.org/sponsor-electerm.html',
+      url: 'https://electerm.org/sponsor-electerm/',
       title: 'Sponsor Electerm'
     },
     {
