@@ -132,6 +132,78 @@ script.
       };
     };
 
+    // === EthicalAds — only for non-CN visitors ===
+    window.__countryPromise.then(function(cc){
+      if (cc !== 'CN') {
+        // Show the ad container before loading the script
+        // so ethicalads finds the elements when it initialises
+        var adWrapper = document.querySelector('.ethical-ad-wrapper');
+        if (adWrapper) adWrapper.classList.add('ethical-ad-active');
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://media.ethicalads.io/media/client/ethicalads.min.js';
+        document.body.appendChild(s);
+      }
+    });
+
+    // === EthicalAds spacing: keep the fixed ad bar/card from covering footer content ===
+    (function(){
+      var wrapper = document.querySelector('.ethical-ad-wrapper');
+      var footer = document.querySelector('footer.site-footer');
+      if (!wrapper) return;
+      var BP = 1420;
+      function apply() {
+        var h = wrapper.offsetHeight || 0;
+        var vw = window.innerWidth || document.documentElement.clientWidth;
+        if (vw < BP) {
+          // < 1420px: full-width fixed bar pinned to viewport bottom.
+          // Reserve space on <body> so the bar never hides the footer.
+          document.body.style.paddingBottom = h + 'px';
+          if (footer) {
+            footer.style.paddingBottom = '';
+            footer.style.setProperty('--watermark-height', '0px');
+            footer.style.setProperty('--watermark-bottom', '0px');
+            footer.style.setProperty('--watermark-bg-size', '0px');
+          }
+        } else {
+          // >= 1420px: corner card fixed 24px above the viewport bottom-right.
+          // Reserve space inside the footer and show watermark in the reserved area.
+          document.body.style.paddingBottom = '';
+          if (footer) {
+            if (h > 0) {
+              var ph = (h + 32);            // total extra padding
+              // watermark element takes 60% of padding, centred
+              var wh = Math.round(ph * 0.6);
+              var wb = Math.round((ph - wh) / 2);
+              // logo bg-width ~1.2x of padding height (~42% of watermark el height × 2.88 ratio)
+              var bg = Math.round(ph * 1.2);
+              footer.style.paddingBottom = ph + 'px';
+              footer.style.setProperty('--watermark-height', wh + 'px');
+              footer.style.setProperty('--watermark-bottom', wb + 'px');
+              footer.style.setProperty('--watermark-bg-size', bg + 'px');
+            } else {
+              footer.style.paddingBottom = '';
+              footer.style.setProperty('--watermark-height', '0px');
+              footer.style.setProperty('--watermark-bottom', '0px');
+              footer.style.setProperty('--watermark-bg-size', '0px');
+            }
+          }
+        }
+      }
+      if (window.ResizeObserver) {
+        new ResizeObserver(function(){ apply(); }).observe(wrapper);
+      }
+      var rt = null;
+      window.addEventListener('resize', function(){
+        if (rt) clearTimeout(rt);
+        rt = setTimeout(apply, 100);
+      });
+      apply();
+      // ethicalads loads async; re-measure once creatives likely rendered
+      setTimeout(apply, 1500);
+      setTimeout(apply, 3000);
+    })();
+
     // === Init all cloud sliders on the page ===
     (function(){
       var sections = document.querySelectorAll('.cloud-slider-section');

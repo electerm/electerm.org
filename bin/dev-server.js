@@ -183,7 +183,7 @@ function createServer () {
 
   // API routes
   app.get('/api/country', (req, res) => {
-    const country = (req.headers['cf-ipcountry'] || 'BG').toUpperCase()
+    const country = (req.headers['cf-ipcountry'] || 'us').toUpperCase()
     res.json({ country })
   })
 
