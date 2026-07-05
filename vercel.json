@@ -33,13 +33,7 @@
     { "source": "/privacy-policy", "destination": "/privacy-policy/", "statusCode": 301 },
     { "source": "/sponsor-electerm", "destination": "/sponsor-electerm/", "statusCode": 301 }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/((index\..*\.css|android-chrome-.*\.png|apple-touch-icon\.png|favicon-.*\.png|.*\.jpg|sitemap\.xml|robots\.txt|llms\.txt|site\.webmanifest|ads\.txt|ai\.txt|.*\.svg|.*\.webp|.*\.gif|.*\.jpeg|.*\.woff|.*\.woff2|.*\.ttf|.*\.eot|.*\.txt|.*\.html|.*\.ico|.*\.js))$", "dest": "/$2" },
-    { "src": "/((data|js|video-thumb|scripts)/.*)", "dest": "/$2/" },
-    { "src": "/(zh-cn|zh-tw|ja|ko|de|fr|es|pt-br|ru|ar|tr|pl|id)/(.*)", "dest": "/$1/$2" },
-    { "src": "/((about|faq|videos|contact|terms|privacy-policy|sponsor-electerm)/(.*))", "dest": "/$2/$3" },
-    { "src": "/404.html", "status": 200 },
-    { "src": "/(.*)", "dest": "/404.html", "status": 404 }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/404" }
   ]
 }
