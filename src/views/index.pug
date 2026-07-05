@@ -1,12 +1,12 @@
 doctype html
 html(lang=langCode)
   head
-    title= 'electerm - ' + (lang.lang.siteTitleShort || 'Terminal/SSH/SFTP Client')
+    title= lang.lang.heroH1 || 'electerm'
     meta(name='description', content=desc)
     meta(name='keywords', content=keywords)
-    meta(property='og:title' content='electerm - ' + (lang.lang.siteTitleShort || 'Terminal/SSH/SFTP Client'))
+    meta(property='og:title' content=lang.lang.heroH1 || 'electerm')
     meta(property='og:description' content=desc)
-    meta(name='twitter:title' content='electerm - ' + (lang.lang.siteTitleShort || 'Terminal/SSH/SFTP Client'))
+    meta(name='twitter:title' content=lang.lang.heroH1 || 'electerm')
     meta(name='twitter:description' content=desc)
     include ./parts/react-header
     script(type='application/ld+json').

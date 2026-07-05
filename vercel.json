@@ -32,5 +32,8 @@
     { "source": "/terms", "destination": "/terms/", "statusCode": 301 },
     { "source": "/privacy-policy", "destination": "/privacy-policy/", "statusCode": 301 },
     { "source": "/sponsor-electerm", "destination": "/sponsor-electerm/", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/404.html" }
   ]
 }
