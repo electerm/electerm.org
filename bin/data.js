@@ -404,6 +404,7 @@ export default {
       links: [
         { title: 'Electerm Online', url: 'https://cloud.electerm.org', external: true },
         { title: 'APT Repository', url: 'https://repos.electerm.org/deb', external: true },
+        { title: 'RPM Repository', url: 'https://sync.electerm.org/rpm', external: true },
         { title: 'electerm-web', url: 'https://github.com/electerm/electerm-web', external: true },
         { title: 'electerm-web-docker', url: 'https://github.com/electerm/electerm-web-docker', external: true },
         { title: 'electerm-locales', url: 'https://github.com/electerm/electerm-locales', external: true },

@@ -6,7 +6,7 @@
 
 
 - Works as a terminal/file manager or ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client
-- Support Window 7+(X64/ARM64), Mac OS 10.15+(x64/arm64), Linux(x64/arm64), even old Linux with glibc 2.17+ like UOS/Kylin/Ubuntu 18.04 etc
+- Supports Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), including older Linux with glibc 2.17+ (UOS, Kylin, Ubuntu 18.04, etc.)
 - Global hotkey to toggle window visibility (similar to guake, default is `ctrl + 2`)
 - Multi platform(linux, mac, win)
 - 🇺🇸 🇨🇳 🇧🇷 🇷🇺 🇪🇸 🇫🇷 🇹🇷 🇭🇰 🇯🇵 🇸🇦 🇩🇪 🇰🇷 🇮🇩 🇵🇱 Multi-language support([electerm-locales](https://github.com/electerm/electerm-locales), contributions/fixes welcome)
@@ -30,9 +30,11 @@
 ## Main Pages
 
 - [Home Page](https://electerm.org/) - Main landing page with download links
-- [Video Guides](https://electerm.org/videos) - Tutorial videos and demos
-- [Debian Repository](https://electerm.org/deb) - APT repository setup for Debian/Ubuntu
-- [Sponsor](https://electerm.org/sponsor-electerm.html) - Support electerm development
+- [About](https://electerm.org/about/) - About electerm
+- [Video Guides](https://electerm.org/videos/) - Tutorial videos and demos
+- [Debian Repository](https://repos.electerm.org/deb) - APT repository setup for Debian/Ubuntu
+- [RPM Repository](https://sync.electerm.org/rpm) - RPM repository setup for RHEL/CentOS/Fedora
+- [Sponsor](https://electerm.org/sponsor-electerm/) - Support electerm development
 
 ## Download Links
 
@@ -54,10 +56,74 @@
 - [electerm-web-docker](https://github.com/electerm/electerm-web-docker) - Docker deployment
 - [electerm-locales](https://github.com/electerm/electerm-locales) - Language packs
 
+## Install
+
+### macOS
+
+```
+brew install --cask electerm
+```
+
+### Windows
+
+Via winget:
+```
+winget install electerm.electerm
+```
+
+Or via Scoop:
+```
+scoop bucket add dorado https://github.com/chawyehsu/dorado
+scoop install dorado/electerm
+```
+
+### Linux
+
+Via Snap:
+```
+sudo snap install electerm --classic
+```
+
+From Debian repository (Debian/Ubuntu-based systems): https://repos.electerm.org/deb
+
+From RPM repository (RHEL/CentOS/Fedora-based systems): https://sync.electerm.org/rpm
+
+From npm:
+```
+npm i -g electerm
+```
+
 ## Store Links
 
 - [Windows Store](https://www.microsoft.com/store/apps/9NCN7272GTFF) - Microsoft Store listing
 - [Snap Store](https://snapcraft.io/electerm) - Snap package
+
+## Support the Project
+
+- [GitHub Sponsors](https://github.com/sponsors/electerm)
+- [Ko-fi](https://ko-fi.com/zhaoxudong)
+- WeChat donation (scan QR code on the home page)
+
+## Development
+
+electerm is built with Node.js and Electron. Requirements: Node.js 24.x.
+
+```
+git clone git@github.com:electerm/electerm.git
+cd electerm
+npm config set legacy-peer-deps true
+npm i
+
+# start vite dev server (requires port 5570)
+npm start
+
+# in a separate terminal session run app
+npm run app
+```
+
+## License
+
+electerm is released under the [MIT License](https://github.com/electerm/electerm/blob/master/LICENSE).
 
 ## Contact
 
