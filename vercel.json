@@ -33,7 +33,10 @@
     { "source": "/privacy-policy", "destination": "/privacy-policy/", "statusCode": 301 },
     { "source": "/sponsor-electerm", "destination": "/sponsor-electerm/", "statusCode": 301 }
   ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/404.html" }
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(zh-cn|zh-tw|ja|ko|de|fr|es|pt-br|ru|ar|tr|pl|id)/.*", "dest": "/$1/" },
+    { "src": "/((about|faq|videos|contact|terms|privacy-policy|sponsor-electerm)/.*)", "dest": "/$2/" },
+    { "src": "/(.*)", "dest": "/404.html", "status": 404 }
   ]
 }
