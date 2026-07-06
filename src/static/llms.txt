@@ -33,7 +33,7 @@
 - [About](https://electerm.org/about/) - About electerm
 - [Video Guides](https://electerm.org/videos/) - Tutorial videos and demos
 - [Debian Repository](https://repos.electerm.org/deb) - APT repository setup for Debian/Ubuntu
-- [RPM Repository](https://sync.electerm.org/rpm) - RPM repository setup for RHEL/CentOS/Fedora
+- [RPM Repository](https://repos.electerm.org/rpm) - RPM repository setup for RHEL/CentOS/Fedora
 - [Sponsor](https://electerm.org/sponsor-electerm/) - Support electerm development
 
 ## Download Links
@@ -86,7 +86,7 @@ sudo snap install electerm --classic
 
 From Debian repository (Debian/Ubuntu-based systems): https://repos.electerm.org/deb
 
-From RPM repository (RHEL/CentOS/Fedora-based systems): https://sync.electerm.org/rpm
+From RPM repository (RHEL/CentOS/Fedora-based systems): https://repos.electerm.org/rpm
 
 From npm:
 ```
