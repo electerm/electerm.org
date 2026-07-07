@@ -90,14 +90,79 @@ script.
 
     // === EthicalAds — only for non-CN visitors ===
     window.__countryPromise.then(function(cc){
-      // Show the ad container before loading the script
-      // so ethicalads finds the elements when it initialises
       var adWrapper = document.querySelector('.ethical-ad-wrapper');
-      if (adWrapper) adWrapper.classList.add('ethical-ad-active');
+      if (!adWrapper) return;
+
+      var adUnit = adWrapper.querySelector('.ethical-ad-unit');
+      if (!adUnit) return;
+
+      var BP_MOBILE = 480;
+      var BP_WIDE = 1420;
+      var currentMode = null;
+
+      // Three ad modes:
+      //  'v-image'  → >= 1420px: vertical image ad (corner card)
+      //  'h-image'  → 480px-1419px: horizontal image ad (bottom bar)
+      //  'text'     → < 480px: text ad (bottom bar)
+      function getMode(vw) {
+        if (vw < BP_MOBILE) return 'text';
+        if (vw < BP_WIDE) return 'h-image';
+        return 'v-image';
+      }
+
+      function updateAd() {
+        var vw = window.innerWidth || document.documentElement.clientWidth;
+        var mode = getMode(vw);
+
+        // Set the ad type attribute and horizontal class.
+        // reload() re-reads data-ea-type so the correct ad type loads.
+        var newType = (mode === 'text') ? 'text' : 'image';
+        var oldType = adUnit.getAttribute('data-ea-type');
+
+        if (mode === 'h-image') {
+          adUnit.classList.add('horizontal');
+        } else {
+          adUnit.classList.remove('horizontal');
+        }
+
+        // Reload when mode changes (different ad type or layout).
+        // EthicalAds reload() clears the element and re-fetches an ad.
+        if (mode !== currentMode) {
+          currentMode = mode;
+          if (newType !== oldType) {
+            adUnit.setAttribute('data-ea-type', newType);
+          }
+          if (window.ethicalads && window.ethicalads.reload) {
+            window.ethicalads.reload();
+          }
+        }
+      }
+
+      // Show the ad container and load EthicalAds script.
+      adWrapper.classList.add('ethical-ad-active');
       var s = document.createElement('script');
       s.async = true;
       s.src = 'https://media.ethicalads.io/media/client/ethicalads.min.js';
       document.body.appendChild(s);
+
+      // Set initial mode before EthicalAds loads.
+      // The initial data-ea-type is already "image"; if we're on mobile,
+      // switch to "text" before the ad script scans the element.
+      var initVw = window.innerWidth || document.documentElement.clientWidth;
+      var initMode = getMode(initVw);
+      currentMode = initMode;
+      if (initMode === 'text') {
+        adUnit.setAttribute('data-ea-type', 'text');
+      } else if (initMode === 'h-image') {
+        adUnit.classList.add('horizontal');
+      }
+
+      // Re-evaluate on resize (debounced)
+      var adRt = null;
+      window.addEventListener('resize', function(){
+        if (adRt) clearTimeout(adRt);
+        adRt = setTimeout(updateAd, 150);
+      });
     });
 
     // === EthicalAds spacing: keep the fixed ad bar/card from covering footer content ===

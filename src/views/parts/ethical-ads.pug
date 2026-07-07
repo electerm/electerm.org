@@ -1,4 +1,6 @@
-// EthicalAds — fixed corner on desktop, in-footer on mobile
+// EthicalAds — single element; JS toggles data-ea-type and .horizontal class.
+//  >= 1420px: vertical image ad (corner card)
+//  480px-1419px: horizontal image ad (bottom bar)
+//  < 480px: text ad (bottom bar)
 #ethical-ad.ethical-ad-wrapper
-  .ethical-ad-desktop(data-ea-publisher="electermorg", data-ea-type="image")
-  .ethical-ad-mobile(data-ea-publisher="electermorg", data-ea-type="text")
+  .ethical-ad-unit(data-ea-publisher="electermorg", data-ea-type="image")
