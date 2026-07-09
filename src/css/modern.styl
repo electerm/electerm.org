@@ -1191,16 +1191,23 @@ justify-content space-between
 [data-provider="tencent"] .cloud-cta
   color #0052D9
 
-// Vultr static banner (single slide, no slider)
-.cloud-vultr-banner
+// Static banner (Vultr, Pixverse, etc.) — shared layout, only bg differs per provider
+.cloud-banner
   flex 1
   min-width 0
+  position relative
   border-radius var(--radius-md)
   overflow hidden
   box-shadow var(--shadow-md)
+
+// Per-provider background gradients (the only special style per card)
+.cloud-banner[data-provider="vultr"]
   background linear-gradient(135deg, #7C3AED 0%, #A78BFA 50%, #0EA5E9 100%)
 
-.cloud-vultr-link
+.cloud-banner[data-provider="pixverse"]
+  background linear-gradient(135deg, #E11D48 0%, #F43F5E 50%, #8B5CF6 100%)
+
+.cloud-banner-link
   display flex
   align-items center
   text-decoration none
@@ -1213,12 +1220,12 @@ justify-content space-between
     opacity 0.92
     color white
 
-.cloud-vultr-content
+.cloud-banner-content
   position relative
   z-index 1
   max-width 90%
 
-.cloud-vultr-badge
+.cloud-banner-badge
   display inline-block
   padding 2px 10px
   background rgba(255, 255, 255, 0.25)
@@ -1229,19 +1236,19 @@ justify-content space-between
   text-transform uppercase
   margin-bottom 4px
 
-.cloud-vultr-title
+.cloud-banner-title
   font-size 15px
   font-weight 700
   margin 0 0 2px
   line-height 1.3
 
-.cloud-vultr-desc
+.cloud-banner-desc
   font-size 12px
   margin 0 0 6px
   opacity 0.9
   line-height 1.4
 
-.cloud-vultr-cta
+.cloud-banner-cta
   display inline-flex
   align-items center
   gap 4px
