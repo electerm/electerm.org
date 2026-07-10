@@ -409,6 +409,7 @@ export default {
         { title: 'electerm-web-docker', url: 'https://github.com/electerm/electerm-web-docker', external: true },
         { title: 'electerm-locales', url: 'https://github.com/electerm/electerm-locales', external: true },
         { title: 'electerm cloud', url: 'https://sync.electerm.org/', external: true }
+        { title: 'AI Dream', url: 'https://ai-dream.html5beta.com', external: true }
       ]
     },
     {

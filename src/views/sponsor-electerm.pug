@@ -105,6 +105,75 @@ html(lang=langCode)
           text-align: center;
         }
       }
+      .sponsor-card .sponsor-qr {
+        flex-shrink: 0;
+        width: 160px;
+        height: 160px;
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+        margin-bottom: 16px;
+      }
+      .sponsor-card .sponsor-qr img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .sponsor-card .sponsor-address {
+        font-family: monospace;
+        font-size: 0.8rem;
+        word-break: break-all;
+        margin: 8px 0;
+        padding: 8px;
+        background: var(--color-bg-alt);
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--color-border);
+      }
+      .address-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .address-wrapper .sponsor-address {
+        flex: 1;
+        margin: 0;
+        min-width: 0;
+      }
+      .copy-btn {
+        background: var(--color-bg);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        padding: 6px 10px;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1;
+        transition: all 0.2s;
+        flex-shrink: 0;
+      }
+      .copy-btn:hover {
+        background: var(--color-bg-alt);
+        border-color: var(--color-primary);
+      }
+      .copy-btn:active {
+        transform: scale(0.95);
+      }
+      .copy-btn.success {
+        background: #dcfce7;
+        border-color: #16a34a;
+        color: #16a34a;
+      }
+      .copy-status {
+        font-size: 0.8rem;
+        color: #16a34a;
+        opacity: 0;
+        transition: opacity 0.3s;
+        flex-shrink: 0;
+      }
+      .copy-status.show {
+        opacity: 1;
+      }
       .sponsor-card.featured .sponsor-badge {
         display: inline-block;
         font-size: 0.7rem;
@@ -316,6 +385,16 @@ html(lang=langCode)
             .sponsor-icon 🌍
             h3 #{lang.lang.sponsorOpenCollective}
             p #{lang.lang.sponsorOpenCollectiveDesc}
+          .sponsor-card
+            .sponsor-qr
+              img(src='https://github.com/electerm/electerm-resource/blob/master/static/images/trn20.png?raw=true' alt='TRN20 QR Code', loading='lazy')
+            h3 #{lang.lang.sponsorTRN20}
+            p #{lang.lang.sponsorTRN20Desc}
+            .address-wrapper
+              p.sponsor-address#trn20-address TXk3pQNmQu1vihH76RaEFnK9wg13x4LLCZ
+              button.copy-btn(data-clipboard-target='#trn20-address' title='Copy address') 📋
+              span.copy-status#copy-status ✓ Copied!
+            small Scan QR code or copy address to donate via TRN20
     section.tiers-section
       .container
         .tiers-header
@@ -341,3 +420,47 @@ html(lang=langCode)
     include ./parts/ethical-ads
     include ./parts/footer
     include ./parts/react-footer
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        var copyBtn = document.querySelector('.copy-btn');
+        var copyStatus = document.getElementById('copy-status');
+        if (copyBtn) {
+          copyBtn.addEventListener('click', function() {
+            var address = document.getElementById('trn20-address').textContent.trim();
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(address).then(function() {
+                showCopySuccess();
+              }).catch(function() {
+                fallbackCopy(address);
+              });
+            } else {
+              fallbackCopy(address);
+            }
+          });
+        }
+        function fallbackCopy(text) {
+          var textarea = document.createElement('textarea');
+          textarea.value = text;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+            document.execCommand('copy');
+            showCopySuccess();
+          } catch (e) {
+            alert('Failed to copy address');
+          }
+          document.body.removeChild(textarea);
+        }
+        function showCopySuccess() {
+          copyBtn.classList.add('success');
+          copyBtn.textContent = '✓';
+          copyStatus.classList.add('show');
+          setTimeout(function() {
+            copyBtn.classList.remove('success');
+            copyBtn.textContent = '📋';
+            copyStatus.classList.remove('show');
+          }, 2000);
+        }
+      });
