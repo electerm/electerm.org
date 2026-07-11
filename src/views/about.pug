@@ -146,7 +146,23 @@ html(lang=langCode)
               a(href='https://github.com/sponsors/electerm', target='_blank', rel='noreferrer') GitHub Sponsors
             li
               a(href='https://ko-fi.com/zhaoxudong', target='_blank', rel='noreferrer') Ko-fi
-            li WeChat donation (scan QR code on the home page)
+
+          .about-donate-grid
+            .about-donate-card
+              .about-donate-qr
+                img(src='https://electerm.org/electerm-wechat-donate.png' alt='WeChat Donate QR Code', loading='lazy')
+              h3 WeChat Donate
+              p Scan the QR code with WeChat to donate directly
+            .about-donate-card
+              .about-donate-qr
+                img(src='https://github.com/electerm/electerm-resource/blob/master/static/images/trn20.png?raw=true' alt='TRN20 QR Code', loading='lazy')
+              h3 TRON (TRN20)
+              p Cryptocurrency donation via TRON TRN20
+              .about-address-wrapper
+                p.about-donate-address#trn20-address TXk3pQNmQu1vihH76RaEFnK9wg13x4LLCZ
+                button.about-copy-btn(data-clipboard-target='#trn20-address' title='Copy address') 📋
+                span.about-copy-status#copy-status ✓ Copied!
+              small Scan QR code or copy address to donate via TRN20
 
           h2 License
 
@@ -155,3 +171,51 @@ html(lang=langCode)
     include ./parts/ethical-ads
     include ./parts/footer
     include ./parts/react-footer
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        var copyBtn = document.querySelector('.about-copy-btn');
+        var copyStatus = document.getElementById('copy-status');
+        if (copyBtn) {
+          copyBtn.addEventListener('click', function() {
+            var address = document.getElementById('trn20-address').textContent.trim();
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(address).then(function() {
+                showCopySuccess();
+              }).catch(function() {
+                fallbackCopy(address);
+              });
+            } else {
+              fallbackCopy(address);
+            }
+          });
+        }
+        function fallbackCopy(text) {
+          var textarea = document.createElement('textarea');
+          textarea.value = text;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+            document.execCommand('copy');
+            showCopySuccess();
+          } catch (e) {
+            alert('Failed to copy address');
+          }
+          document.body.removeChild(textarea);
+        }
+        function showCopySuccess() {
+          if (copyStatus) {
+            copyStatus.classList.add('show');
+            if (copyBtn) {
+              copyBtn.classList.add('success');
+            }
+            setTimeout(function() {
+              copyStatus.classList.remove('show');
+              if (copyBtn) {
+                copyBtn.classList.remove('success');
+              }
+            }, 2000);
+          }
+        }
+      });

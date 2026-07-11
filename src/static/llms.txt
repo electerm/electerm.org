@@ -102,7 +102,8 @@ npm i -g electerm
 
 - [GitHub Sponsors](https://github.com/sponsors/electerm)
 - [Ko-fi](https://ko-fi.com/zhaoxudong)
-- WeChat donation (scan QR code on the home page)
+- WeChat donation (scan QR code: https://electerm.org/electerm-wechat-donate.png)
+- TRON (TRN20) donation (scan QR code: https://github.com/electerm/electerm-resource/blob/master/static/images/trn20.png?raw=true, Address: TXk3pQNmQu1vihH76RaEFnK9wg13x4LLCZ)
 
 ## Development
 

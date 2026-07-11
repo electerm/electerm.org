@@ -1631,6 +1631,115 @@ justify-content space-between
   background var(--color-primary-dark)
   color white
 
+/* ===== About Page Donate Cards ===== */
+.about-donate-grid
+  display grid
+  grid-template-columns 1fr
+  gap 20px
+  margin-bottom 24px
+
+@media (min-width: 600px)
+  .about-donate-grid
+    grid-template-columns repeat(2, 1fr)
+
+.about-donate-card
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+  padding 24px
+  border 1px solid var(--color-border)
+  border-radius var(--radius-lg)
+  background var(--color-bg-alt)
+  transition all .25s
+
+.about-donate-card:hover
+  border-color var(--color-primary)
+  box-shadow var(--shadow-md)
+  transform translateY(-2px)
+
+.about-donate-card h3
+  font-size 1rem
+  font-weight 600
+  margin-top 0
+  margin-bottom 8px
+
+.about-donate-card p
+  font-size .85rem
+  color var(--color-text-secondary)
+  margin-bottom 12px
+
+.about-donate-qr
+  flex-shrink 0
+  width 160px
+  height 160px
+  border-radius var(--radius-md)
+  overflow hidden
+  box-shadow var(--shadow-md)
+  margin-bottom 16px
+
+.about-donate-qr img
+  width 100%
+  height 100%
+  object-fit cover
+  display block
+
+.about-address-wrapper
+  display flex
+  align-items center
+  gap 8px
+  flex-wrap wrap
+  width 100%
+
+.about-donate-address
+  font-family var(--font-mono)
+  font-size .8rem
+  word-break break-all
+  padding 6px 10px
+  background var(--color-bg)
+  border-radius var(--radius-sm)
+  border 1px solid var(--color-border)
+  flex 1
+  margin 0
+  min-width 0
+
+.about-copy-btn
+  background var(--color-bg)
+  border 1px solid var(--color-border)
+  border-radius var(--radius-sm)
+  padding 6px 10px
+  cursor pointer
+  font-size .85rem
+  transition all .2s
+  flex-shrink 0
+
+.about-copy-btn:hover
+  background var(--color-bg-alt)
+  border-color var(--color-primary)
+
+.about-copy-btn:active
+  transform scale(.95)
+
+.about-copy-btn.success
+  background #dcfce7
+  border-color #16a34a
+  color #16a34a
+
+.about-copy-status
+  font-size .8rem
+  color #16a34a
+  opacity 0
+  transition opacity .3s
+  flex-shrink 0
+
+.about-copy-status.show
+  opacity 1
+
+.about-donate-card small
+  font-size .75rem
+  color var(--color-text-secondary)
+  margin-top 8px
+
 /* ===== Home FAQ Section ===== */
 .home-faq
   padding 60px 0
