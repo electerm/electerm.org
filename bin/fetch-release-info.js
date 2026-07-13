@@ -48,7 +48,7 @@ async function main () {
   console.log('Fetching latest release info from GitHub...')
   const releaseInfo = await fetchReleaseInfo()
   if (releaseInfo.release.body) {
-    releaseInfo.release.body = releaseInfo.release.body.replace(/\r\n\r\n-------\r\n\r\nDownload下载: \[https:\/\/electerm\.html5beta\.com\]\(https:\/\/electerm\.html5beta\.com\)$/, '')
+    releaseInfo.release.body = releaseInfo.release.body.replace(/[\r\n]+-{3,}[\r\n]+Download下载: \[https:\/\/electerm\.html5beta\.com\]\(https:\/\/electerm\.html5beta\.com\)\s*$/, '')
   }
   console.log('Fetching repository info from GitHub...')
   const repoInfo = await fetchRepoInfo()
