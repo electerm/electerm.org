@@ -24,6 +24,7 @@
     "featureAllInOneDesc": "ターミナル、ファイルマネージャー、SSH/SFTP/FTP/Telnet/シリアルポート/RDP/VNC/Spiceクライアントを一つのアプリに。",
     "featureAiAssistantTitle": "AIアシスタント",
     "featureAiAssistantDesc": "OpenAI互換のLLM APIで動作します。自然言語からコマンドの生成、コマンドの説明、スクリプト生成、ブックマーク作成、そしてAgentモードでのタスク実行が可能です。",
+    "featureAiAssistantLink": "electermユーザー向け無料AI →",
     "featureSecureAuthTitle": "安全な認証",
     "featureSecureAuthDesc": "公開鍵+パスワード認証、グローバルおよびセッションごとのプロキシ、SSHトンネリング、Agent転送、ポート転送、X11転送、接続ホッピングをサポート。",
     "featureRemoteFileEditingTitle": "リモートファイル編集",

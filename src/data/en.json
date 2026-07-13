@@ -24,6 +24,7 @@
     "featureAllInOneDesc": "Free and open-sourced terminal, file manager, and SSH/SFTP/FTP/Telnet/Serial port/RDP/VNC/Spice client in one app.",
     "featureAiAssistantTitle": "AI Assistant",
     "featureAiAssistantDesc": "Works with any OpenAI-compatible LLM API. Generate commands, explain commands, generate scripts, create bookmarks from natural language, and run tasks directly in Agent mode.",
+    "featureAiAssistantLink": "Free AI for electerm users →",
     "featureSecureAuthTitle": "Secure Auth",
     "featureSecureAuthDesc": "Supports publicKey + password authentication, global and per-session proxy, SSH tunneling, Agent forwarding, port forwarding, X11 forwarding, and connection hopping.",
     "featureRemoteFileEditingTitle": "Remote File Editing",

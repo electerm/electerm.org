@@ -24,6 +24,7 @@
     "featureAllInOneDesc": "集终端、文件管理器、SSH/SFTP/FTP/Telnet/串口/RDP/VNC/Spice 客户端于一体。",
     "featureAiAssistantTitle": "AI 助手",
     "featureAiAssistantDesc": "兼容任意 OpenAI 兼容的 LLM API。可以通过自然语言生成命令、解释命令、生成脚本、创建书签，并直接在 Agent 模式下执行任务。",
+    "featureAiAssistantLink": "为 electerm 用户提供免费 AI →",
     "featureSecureAuthTitle": "安全认证",
     "featureSecureAuthDesc": "支持公钥+密码认证、全局和会话级代理、SSH 隧道、Agent 转发、端口转发、X11 转发及连接跳转。",
     "featureRemoteFileEditingTitle": "远程文件编辑",

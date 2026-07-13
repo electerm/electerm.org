@@ -24,6 +24,7 @@
     "featureAllInOneDesc": "Funktioniert als Terminal, Dateimanager und SSH/SFTP/FTP/Telnet/Seriellport/RDP/VNC/Spice-Client in einer App.",
     "featureAiAssistantTitle": "KI-Assistent",
     "featureAiAssistantDesc": "Funktioniert mit jeder OpenAI-kompatiblen LLM-API. Generieren Sie Befehle, erklären Sie Befehle, erstellen Sie Skripte, legen Sie Lesezeichen aus natürlicher Sprache an und führen Sie Aufgaben direkt im Agent-Modus aus.",
+    "featureAiAssistantLink": "Kostenlose KI für electerm-Nutzer →",
     "featureSecureAuthTitle": "Sichere Authentifizierung",
     "featureSecureAuthDesc": "Unterstützt Public-Key-+Passwort-Authentifizierung, globale und sitzungsbezogene Proxy-Einstellungen, SSH-Tunneling, Agent-Weiterleitung, Port-Weiterleitung, X11-Weiterleitung und Connection-Hopping.",
     "featureRemoteFileEditingTitle": "Remote-Dateibearbeitung",

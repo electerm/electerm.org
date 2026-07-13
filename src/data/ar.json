@@ -24,6 +24,7 @@
     "featureAllInOneDesc": "يعمل كطرفية وמנהל ملفات وعميل SSH/SFTP/FTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice في تطبيق واحد.",
     "featureAiAssistantTitle": "مساعد الذكاء الاصطناعي",
     "featureAiAssistantDesc": "يعمل مع أي واجهة برمجة تطبيقات LLM متوافقة مع OpenAI. قم بإنشاء الأوامر وشرح الأوامر وإنشاء البرامج النصية وإنشاء الإشارات المرجعية من اللغة الطبيعية وتشغيل المهام مباشرة في وضع Agent.",
+    "featureAiAssistantLink": "ذكاء اصطناعي مجاني لمستخدمي electerm →",
     "featureSecureAuthTitle": "مصادقة آمنة",
     "featureSecureAuthDesc": "يدعم المصادقة بالمفتاح العام + كلمة المرور، والوكيل العام لكل جلسة، ونفق SSH، وإعادة توجيه Agent، وإعادة توجيه المنفذ، وإعادة توجيه X11، والقفز بين الاتصالات.",
     "featureRemoteFileEditingTitle": "تحرير الملفات البعيدة",

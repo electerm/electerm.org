@@ -24,6 +24,7 @@
     "featureAllInOneDesc": "Funciona como terminal, gestor de archivos y cliente SSH/SFTP/FTP/Telnet/puerto serie/RDP/VNC/Spice en una sola aplicación.",
     "featureAiAssistantTitle": "Asistente IA",
     "featureAiAssistantDesc": "Funciona con cualquier API de LLM compatible con OpenAI. Genere comandos, explique comandos, genere scripts, cree marcadores a partir del lenguaje natural y ejecute tareas directamente en modo Agent.",
+    "featureAiAssistantLink": "IA gratuita para usuarios de electerm →",
     "featureSecureAuthTitle": "Autenticación segura",
     "featureSecureAuthDesc": "Soporta autenticación con clave pública + contraseña, proxy global y por sesión, túnel SSH, reenvío de Agent, reenvío de puertos, reenvío X11 y salto de conexión.",
     "featureRemoteFileEditingTitle": "Edición de archivos remotos",

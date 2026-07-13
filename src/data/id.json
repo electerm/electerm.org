@@ -24,6 +24,7 @@
     "featureAllInOneDesc": "Berfungsi sebagai terminal, manajer file, dan klien SSH/SFTP/FTP/Telnet/port serial/RDP/VNC/Spice dalam satu aplikasi.",
     "featureAiAssistantTitle": "Asisten AI",
     "featureAiAssistantDesc": "Bekerja dengan API LLM apa pun yang kompatibel dengan OpenAI. Hasilkan perintah, jelaskan perintah, hasilkan skrip, buat bookmark dari bahasa alami, dan jalankan tugas langsung dalam mode Agent.",
+    "featureAiAssistantLink": "AI gratis untuk pengguna electerm →",
     "featureSecureAuthTitle": "Autentikasi aman",
     "featureSecureAuthDesc": "Mendukung autentikasi kunci publik + kata sandi, proxy global dan per sesi, tunneling SSH, penerusan Agent, penerusan port, penerusan X11, dan lompatan koneksi.",
     "featureRemoteFileEditingTitle": "Pengeditan file jarak jauh",
