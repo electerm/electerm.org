@@ -192,7 +192,8 @@
     "homeAuthorGithub": "عرض الملف الشخصي على GitHub ←",
     "homeAuthorResume": "عرض السيرة الذاتية ←",
     "homeAuthorContact": "التواصل مع المؤلف ←",
-    "heroH1": "electerm — عميل طرفية و SSH مجاني ومفتوح المصدر",
-    "siteTitleShort": "عميل طرفية/SSH/SFTP مجاني"
+    "heroH1": "electerm — عميل طرفية/SSH/SFTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice/FTP مجاني ومفتوح المصدر",
+    "homePageTitle": "عميل طرفية/ssh/sftp/telnet/منفذ تسلسلي/RDP/VNC/Spice/ftp مجاني ومفتوح المصدر (linux, mac, win)",
+    "siteTitleShort": "عميل طرفية/SSH/SFTP/Telnet/تسلسلي/RDP/VNC/Spice/FTP مجاني"
   }
 }

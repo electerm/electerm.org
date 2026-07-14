@@ -192,7 +192,8 @@
     "homeAuthorGithub": "查看 GitHub 個人主頁 →",
     "homeAuthorResume": "查看履歷 →",
     "homeAuthorContact": "聯絡作者 →",
-    "heroH1": "electerm — 免費開源終端/SSH客戶端",
-    "siteTitleShort": "免費終端/SSH/SFTP客戶端"
+    "heroH1": "electerm — 免費開源終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice/FTP客戶端",
+    "homePageTitle": "免費開源終端/ssh/sftp/telnet/序列埠/RDP/VNC/Spice/ftp客戶端 (linux, mac, win)",
+    "siteTitleShort": "免費終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice/FTP客戶端"
   }
 }

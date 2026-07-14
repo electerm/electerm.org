@@ -192,7 +192,8 @@
     "homeAuthorGithub": "GitHub 프로필 보기 →",
     "homeAuthorResume": "이력서 보기 →",
     "homeAuthorContact": "저자에게 연락 →",
-    "heroH1": "electerm — 무료 오픈소스 터미널 & SSH 클라이언트",
-    "siteTitleShort": "무료 터미널/SSH/SFTP"
+    "heroH1": "electerm — 무료 오픈소스 터미널/SSH/SFTP/Telnet/시리얼 포트/RDP/VNC/Spice/FTP 클라이언트",
+    "homePageTitle": "무료 오픈소스 터미널/ssh/sftp/telnet/시리얼 포트/RDP/VNC/Spice/ftp 클라이언트 (linux, mac, win)",
+    "siteTitleShort": "무료 터미널/SSH/SFTP/Telnet/시리얼/RDP/VNC/Spice/FTP"
   }
 }

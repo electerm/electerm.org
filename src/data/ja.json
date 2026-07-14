@@ -192,7 +192,8 @@
     "homeAuthorGithub": "GitHubプロフィールを見る →",
     "homeAuthorResume": "履歴書を見る →",
     "homeAuthorContact": "作者に連絡 →",
-    "heroH1": "electerm — 無料オープンソースターミナル＆SSHクライアント",
-    "siteTitleShort": "無料ターミナル/SSH/SFTP"
+    "heroH1": "electerm — 無料オープンソースターミナル/SSH/SFTP/Telnet/シリアルポート/RDP/VNC/Spice/FTPクライアント",
+    "homePageTitle": "無料オープンソースターミナル/ssh/sftp/telnet/シリアルポート/RDP/VNC/Spice/ftpクライアント (linux, mac, win)",
+    "siteTitleShort": "無料ターミナル/SSH/SFTP/Telnet/シリアル/RDP/VNC/Spice/FTP"
   }
 }

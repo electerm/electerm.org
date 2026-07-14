@@ -192,7 +192,8 @@
     "homeAuthorGithub": "GitHub-Profil anzeigen →",
     "homeAuthorResume": "Lebenslauf ansehen →",
     "homeAuthorContact": "Autor kontaktieren →",
-    "heroH1": "electerm — Kostenloser Open-Source Terminal- & SSH-Client",
-    "siteTitleShort": "Terminal/SSH/SFTP (Open Source)"
+    "heroH1": "electerm — Kostenloser Open-Source Terminal-/SSH-/SFTP-/Telnet-/Seriell-/RDP-/VNC-/Spice-/FTP-Client",
+    "homePageTitle": "Kostenloser Open-Source Terminal-/SSH-/SFTP-/Telnet-/Seriell-/RDP-/VNC-/Spice-/FTP-Client (linux, mac, win)",
+    "siteTitleShort": "Terminal/SSH/SFTP/Telnet/Seriell/RDP/VNC/Spice/FTP (Open Source)"
   }
 }

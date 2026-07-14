@@ -194,9 +194,10 @@
     "homeAuthorGithub": "View GitHub Profile →",
     "homeAuthorResume": "View Resume →",
     "homeAuthorContact": "Contact Author →",
-    "heroH1": "electerm — Free Open-Source Terminal & SSH Client",
+    "heroH1": "electerm — Free Open-Source Terminal/SSH/SFTP/Telnet/Serial Port/RDP/VNC/Spice/FTP Client",
+    "homePageTitle": "Free and open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client (linux, mac, win)",
     "contactTitle": "Contact Us",
     "termsTitle": "Terms & Conditions",
-    "siteTitleShort": "Terminal/SSH/SFTP Client"
+    "siteTitleShort": "Terminal/SSH/SFTP/Telnet/Serial/RDP/VNC/Spice/FTP Client"
   }
 }

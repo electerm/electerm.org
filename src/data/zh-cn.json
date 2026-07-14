@@ -194,7 +194,8 @@
     "homeAuthorGithub": "查看 GitHub 个人主页 →",
     "homeAuthorResume": "查看简历 →",
     "homeAuthorContact": "联系作者 →",
-    "heroH1": "electerm — 免费开源终端/SSH客户端",
-    "siteTitleShort": "免费终端/SSH/SFTP客户端"
+    "heroH1": "electerm — 免费开源终端/SSH/SFTP/Telnet/串口/RDP/VNC/Spice/FTP客户端",
+    "homePageTitle": "免费开源终端/ssh/sftp/telnet/串口/RDP/VNC/Spice/ftp客户端 (linux, mac, win)",
+    "siteTitleShort": "免费终端/SSH/SFTP/Telnet/串口/RDP/VNC/Spice/FTP客户端"
   }
 }

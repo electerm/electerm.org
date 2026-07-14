@@ -192,7 +192,8 @@
     "homeAuthorGithub": "GitHub Profilini Görüntüle →",
     "homeAuthorResume": "Özgeçmişi Görüntüle →",
     "homeAuthorContact": "Yazarla İletişime Geç →",
-    "heroH1": "electerm — Ücretsiz Açık Kaynak Terminal ve SSH İstemcisi",
-    "siteTitleShort": "Terminal/SSH/SFTP İstemcisi"
+    "heroH1": "electerm — Ücretsiz Açık Kaynak Terminal/SSH/SFTP/Telnet/Seri Port/RDP/VNC/Spice/FTP İstemcisi",
+    "homePageTitle": "Ücretsiz açık kaynak terminal/ssh/sftp/telnet/seri port/RDP/VNC/Spice/ftp istemcisi (linux, mac, win)",
+    "siteTitleShort": "Terminal/SSH/SFTP/Telnet/Seri/RDP/VNC/Spice/FTP İstemcisi"
   }
 }

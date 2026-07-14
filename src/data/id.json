@@ -192,7 +192,8 @@
     "homeAuthorGithub": "Lihat Profil GitHub →",
     "homeAuthorResume": "Lihat Resume →",
     "homeAuthorContact": "Hubungi Penulis →",
-    "heroH1": "electerm — Klien Terminal & SSH Gratis dan Open Source",
-    "siteTitleShort": "Klien Terminal/SSH/SFTP"
+    "heroH1": "electerm — Klien Terminal/SSH/SFTP/Telnet/Port Serial/RDP/VNC/Spice/FTP Gratis dan Open Source",
+    "homePageTitle": "Klien terminal/ssh/sftp/telnet/port serial/RDP/VNC/Spice/ftp gratis dan open source (linux, mac, win)",
+    "siteTitleShort": "Klien Terminal/SSH/SFTP/Telnet/Serial/RDP/VNC/Spice/FTP"
   }
 }

@@ -192,7 +192,8 @@
     "homeAuthorGithub": "Посмотреть профиль на GitHub →",
     "homeAuthorResume": "Посмотреть резюме →",
     "homeAuthorContact": "Связаться с автором →",
-    "heroH1": "electerm — Бесплатный открытый терминал и SSH-клиент",
-    "siteTitleShort": "Терминал/SSH/SFTP клиент"
+    "heroH1": "electerm — Бесплатный открытый клиент терминал/SSH/SFTP/Telnet/последовательный порт/RDP/VNC/Spice/FTP",
+    "homePageTitle": "Бесплатный открытый клиент терминал/ssh/sftp/telnet/последовательный порт/RDP/VNC/Spice/ftp (linux, mac, win)",
+    "siteTitleShort": "Терминал/SSH/SFTP/Telnet/последовательный/RDP/VNC/Spice/FTP клиент"
   }
 }
