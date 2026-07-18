@@ -517,6 +517,7 @@ justify-content space-between
 
 .download-tabs-bar
   display flex
+  flex-wrap wrap
   gap 4px
   background var(--color-border-light)
   border-radius var(--radius-md)
@@ -525,6 +526,9 @@ justify-content space-between
   max-width 400px
   margin-left auto
   margin-right auto
+
+  @media (max-width: 479px)
+    max-width 100%
 
 .download-tab-btn
   flex 1
@@ -537,6 +541,12 @@ justify-content space-between
   color var(--color-text-secondary)
   cursor pointer
   transition all 0.2s
+  white-space nowrap
+  min-width fit-content
+
+  @media (max-width: 479px)
+    flex 0 0 calc(50% - 2px)
+    padding 8px 12px
 
 .download-tab-btn.active
   background var(--color-bg)
