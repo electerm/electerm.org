@@ -4,7 +4,7 @@
   "flag": "🇯🇵",
   "match": "ja",
   "lang": {
-    "desc": "ターミナル/SSH/SFTP/FTP/Telnet/シリアルポート/RDP/VNC/Spiceクライアント（Linux、Mac、Windows対応）",
+    "desc": "ターミナル/SSH/SFTP/FTP/Telnet/シリアルポート/RDP/VNC/Spiceクライアント（Linux、Mac、Windows、Android対応）",
     "keywords": "electerm,ターミナル,SSH,SFTP,FTP,Telnet,シリアルポート,RDP,VNC,Spice,ファイルマネージャー,オープンソース,無料ターミナル,SSHクライアント,SFTPクライアント,リモートデスクトップ,Linux,Mac,Windows,クロスプラットフォーム",
     "siteTitle": "electerm - 無料オープンソースターミナル/SSH/SFTP/Telnet/シリアルポート/VNC/RDP/Spiceクライアント",
     "headerHome": "ホーム",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem＆Trzsz",
     "featureZmodemTrzszDesc": "Zmodem（rz/sz）とTrzsz（trz/tsz）ファイル転送をサポート、tmux互換。",
     "featureCrossPlatformTitle": "クロスプラットフォーム",
-    "featureCrossPlatformDesc": "Windows 7+（x64/ARM64）、macOS 10.15+（x64/arm64）、Linux（x64/arm64/Loong64）glibc 2.17+対応。",
+    "featureCrossPlatformDesc": "Windows 7+（x64/ARM64）、macOS 10.15+（x64/arm64）、Linux（x64/arm64/Loong64）、Android、glibc 2.17+対応。",
     "downloadTitle": "ダウンロード",
     "downloadSubtitle": "無料でオープンソース — お使いのプラットフォームを選択",
     "downloadViewAll": "GitHubですべてのリリースを表示 →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "最新バージョンの新機能",
     "communityTitle": "コミュニティに参加",
     "communityWechatDesc": "サポートと更新情報のためにWeChatコミュニティに参加",
-    "footerBrandDesc": "Linux、macOS、Windows向けターミナル/SSH/SFTP/Telnet/シリアルポート/RDP/VNC/Spiceクライアント。",
+    "footerBrandDesc": "Linux、macOS、Windows、Android向けターミナル/SSH/SFTP/Telnet/シリアルポート/RDP/VNC/Spiceクライアント。",
     "footerProduct": "製品",
     "footerCommunity": "コミュニティ",
     "footerRelated": "関連",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "履歴書を見る →",
     "homeAuthorContact": "作者に連絡 →",
     "heroH1": "electerm — 無料オープンソースターミナル/SSH/SFTP/Telnet/シリアルポート/RDP/VNC/Spice/FTPクライアント",
-    "homePageTitle": "無料オープンソースターミナル/ssh/sftp/telnet/シリアルポート/RDP/VNC/Spice/ftpクライアント (linux, mac, win)",
+    "homePageTitle": "無料オープンソースターミナル/ssh/sftp/telnet/シリアルポート/RDP/VNC/Spice/ftpクライアント (linux, mac, win, android)",
     "siteTitleShort": "無料ターミナル/SSH/SFTP/Telnet/シリアル/RDP/VNC/Spice/FTP"
   }
 }

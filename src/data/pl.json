@@ -4,7 +4,7 @@
   "flag": "🇵🇱",
   "match": "pl",
   "lang": {
-    "desc": "Klient terminala/SSH/SFTP/FTP/Telnet/portu szeregowego/RDP/VNC/Spice (Linux, Mac, Windows)",
+    "desc": "Klient terminala/SSH/SFTP/FTP/Telnet/portu szeregowego/RDP/VNC/Spice (Linux, Mac, Windows, Android)",
     "keywords": "electerm,terminal,SSH,SFTP,FTP,Telnet,port szeregowy,RDP,VNC,Spice,menedżer plików,otwarte źródło,darmowy klient terminala,klient SSH,klient SFTP,zdalny pulpit,Linux,Mac,Windows,wieloplatformowy",
     "siteTitle": "electerm - Darmowy klient terminala/SSH/SFTP/Telnet/VNC/RDP/Spice open source",
     "headerHome": "Strona główna",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem i Trzsz",
     "featureZmodemTrzszDesc": "Obsługuje przesyłanie plików Zmodem (rz/sz) i Trzsz (trz/tsz), kompatybilny z tmux.",
     "featureCrossPlatformTitle": "Wieloplatformowość",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64) w tym glibc 2.17+.",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), Android, w tym glibc 2.17+.",
     "downloadTitle": "Pobierz",
     "downloadSubtitle": "Darmowy i open source — wybierz swoją platformę",
     "downloadViewAll": "Zobacz wszystkie wydania na GitHub →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "Co nowego w najnowszej wersji",
     "communityTitle": "Dołącz do społeczności",
     "communityWechatDesc": "Dołącz do naszej społeczności WeChat, aby uzyskać wsparcie i aktualizacje",
-    "footerBrandDesc": "Klient terminala/SSH/SFTP/Telnet/portu szeregowego/RDP/VNC/Spice dla Linux, macOS i Windows.",
+    "footerBrandDesc": "Klient terminala/SSH/SFTP/Telnet/portu szeregowego/RDP/VNC/Spice dla Linux, macOS, Windows i Android.",
     "footerProduct": "Produkt",
     "footerCommunity": "Społeczność",
     "footerRelated": "Powiązane",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "Zobacz CV →",
     "homeAuthorContact": "Kontakt z autorem →",
     "heroH1": "electerm — Darmowy otwartoźródłowy klient terminala/SSH/SFTP/Telnet/Portu szeregowego/RDP/VNC/Spice/FTP",
-    "homePageTitle": "Darmowy otwartoźródłowy klient terminala/ssh/sftp/telnet/portu szeregowego/RDP/VNC/Spice/ftp (linux, mac, win)",
+    "homePageTitle": "Darmowy otwartoźródłowy klient terminala/ssh/sftp/telnet/portu szeregowego/RDP/VNC/Spice/ftp (linux, mac, win, android)",
     "siteTitleShort": "Terminal/SSH/SFTP/Telnet/Szeregowy/RDP/VNC/Spice/FTP klient"
   }
 }

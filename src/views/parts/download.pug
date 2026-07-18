@@ -12,6 +12,7 @@ section.downloads#downloads
         if (p.includes('mac') || u.includes('mac')) return 'mac';
         if (p.includes('win') || u.includes('windows')) return 'windows';
         if (p.includes('linux') || u.includes('linux')) return 'linux';
+        if (p.includes('android') || u.includes('android')) return 'android';
         return 'windows';
       }
       function switchTab(os) {
@@ -48,7 +49,7 @@ section.downloads#downloads
         a.download-card-link.primary(href=obj.browser_download_url) GitHub
         a.download-card-link(href=obj.sourceforgeUrl) SourceForge
         a.download-card-link(href='https://mirror.electerm.org/' + obj.browser_download_url) gh-proxy
-        a.download-card-link(href='https://r2.electerm.org/r/' + obj.browser_download_url.split('/').pop()) R2
+        a.download-card-link(href=obj.r2Url) R2
 
     mixin dlCard(obj)
       .download-card
@@ -62,6 +63,8 @@ section.downloads#downloads
       button.download-tab-btn.active(data-tab='windows') Windows
       button.download-tab-btn(data-tab='mac') macOS
       button.download-tab-btn(data-tab='linux') Linux
+      button.download-tab-btn(data-tab='android') Android
+        sup.beta-tag beta
 
     //- Windows
     .download-panel.active(data-tab='windows')
@@ -174,6 +177,13 @@ section.downloads#downloads
           - if (assets.linux.loong64_legacy && assets.linux.loong64_legacy.items.length > 0)
             each obj in assets.linux.loong64_legacy.items
               +dlCard(obj)
+
+    //- Android
+    - if (assets.android && assets.android.items.length > 0)
+      .download-panel(data-tab='android')
+        .download-grid
+          each obj in assets.android.items
+            +dlCard(obj)
 
     .download-more
       a(href='https://github.com/electerm/electerm/releases', target='_blank', rel='noreferrer')

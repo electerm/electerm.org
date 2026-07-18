@@ -4,7 +4,7 @@
   "flag": "🇹🇼",
   "match": "zh",
   "lang": {
-    "desc": "終端/SSH/SFTP/FTP/Telnet/串列埠/RDP/VNC/Spice客戶端(支援Linux、Mac、Windows)",
+    "desc": "終端/SSH/SFTP/FTP/Telnet/串列埠/RDP/VNC/Spice客戶端(支援Linux、Mac、Windows、Android)",
     "keywords": "electerm,終端,SSH,SFTP,FTP,Telnet,串列埠,序列埠,RDP,VNC,Spice,檔案管理器,開源,免費終端客戶端,SSH客戶端,SFTP客戶端,遠端桌面,Linux,Mac,Windows,跨平台",
     "siteTitle": "electerm - 免費開源終端/SSH/SFTP/Telnet/序列埠/VNC/RDP/Spice客戶端",
     "headerHome": "首頁",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem 與 Trzsz",
     "featureZmodemTrzszDesc": "支援 Zmodem (rz/sz) 和 Trzsz (trz/tsz) 檔案傳輸，相容 tmux。",
     "featureCrossPlatformTitle": "跨平台",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)、macOS 10.15+ (x64/arm64)、Linux (x64/arm64/Loong64)，支援 glibc 2.17+。",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)、macOS 10.15+ (x64/arm64)、Linux (x64/arm64/Loong64)、Android，支援 glibc 2.17+。",
     "downloadTitle": "下載",
     "downloadSubtitle": "免費開源 — 選擇您的平台",
     "downloadViewAll": "在 GitHub 上查看所有版本 →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "最新版本的新內容",
     "communityTitle": "加入社群",
     "communityWechatDesc": "加入我們的微信社群獲取支援和更新",
-    "footerBrandDesc": "適用於 Linux、macOS 和 Windows 的終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice 客戶端。",
+    "footerBrandDesc": "適用於 Linux、macOS、Windows 和 Android 的終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice 客戶端。",
     "footerProduct": "產品",
     "footerCommunity": "社群",
     "footerRelated": "相關",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "查看履歷 →",
     "homeAuthorContact": "聯絡作者 →",
     "heroH1": "electerm — 免費開源終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice/FTP客戶端",
-    "homePageTitle": "免費開源終端/ssh/sftp/telnet/序列埠/RDP/VNC/Spice/ftp客戶端 (linux, mac, win)",
+    "homePageTitle": "免費開源終端/ssh/sftp/telnet/序列埠/RDP/VNC/Spice/ftp客戶端 (linux, mac, win, android)",
     "siteTitleShort": "免費終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice/FTP客戶端"
   }
 }

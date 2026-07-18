@@ -4,7 +4,7 @@
   "flag": "🇷🇺",
   "match": "ru",
   "lang": {
-    "desc": "Клиент для терминала/SSH/SFTP/Telnet/последовательного порта/RDP/VNC/Spice (Linux, Mac, Windows)",
+    "desc": "Клиент для терминала/SSH/SFTP/Telnet/последовательного порта/RDP/VNC/Spice (Linux, Mac, Windows, Android)",
     "keywords": "electerm,терминал,SSH,SFTP,FTP,Telnet,последовательный порт,RDP,VNC,Spice,файловый менеджер,открытый исходный код,бесплатный терминал,SSH клиент,SFTP клиент,удалённый рабочий стол,Linux,Mac,Windows,кроссплатформенный",
     "siteTitle": "electerm - Бесплатный терминал/SSH/SFTP/Telnet/VNC/RDP/Spice клиент с открытым исходным кодом",
     "headerHome": "Главная",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem и Trzsz",
     "featureZmodemTrzszDesc": "Поддержка передачи файлов Zmodem (rz/sz) и Trzsz (trz/tsz), совместимость с tmux.",
     "featureCrossPlatformTitle": "Кроссплатформенность",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64) включая glibc 2.17+.",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), Android, включая glibc 2.17+.",
     "downloadTitle": "Скачать",
     "downloadSubtitle": "Бесплатный и с открытым исходным кодом — выберите свою платформу",
     "downloadViewAll": "Смотреть все релизы на GitHub →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "Что нового в последней версии",
     "communityTitle": "Присоединяйтесь к сообществу",
     "communityWechatDesc": "Присоединяйтесь к нашему сообществу WeChat для поддержки и обновлений",
-    "footerBrandDesc": "Терминал/SSH/SFTP/Telnet/последовательный порт/RDP/VNC/Spice клиент для Linux, macOS и Windows.",
+    "footerBrandDesc": "Терминал/SSH/SFTP/Telnet/последовательный порт/RDP/VNC/Spice клиент для Linux, macOS, Windows и Android.",
     "footerProduct": "Продукт",
     "footerCommunity": "Сообщество",
     "footerRelated": "Связанное",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "Посмотреть резюме →",
     "homeAuthorContact": "Связаться с автором →",
     "heroH1": "electerm — Бесплатный открытый клиент терминал/SSH/SFTP/Telnet/последовательный порт/RDP/VNC/Spice/FTP",
-    "homePageTitle": "Бесплатный открытый клиент терминал/ssh/sftp/telnet/последовательный порт/RDP/VNC/Spice/ftp (linux, mac, win)",
+    "homePageTitle": "Бесплатный открытый клиент терминал/ssh/sftp/telnet/последовательный порт/RDP/VNC/Spice/ftp (linux, mac, win, android)",
     "siteTitleShort": "Терминал/SSH/SFTP/Telnet/последовательный/RDP/VNC/Spice/FTP клиент"
   }
 }

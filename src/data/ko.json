@@ -4,7 +4,7 @@
   "flag": "🇰🇷",
   "match": "ko",
   "lang": {
-    "desc": "터미널/SSH/SFTP/FTP/Telnet/시리얼 포트/RDP/VNC/Spice 클라이언트(Linux, Mac, Windows 지원)",
+    "desc": "터미널/SSH/SFTP/FTP/Telnet/시리얼 포트/RDP/VNC/Spice 클라이언트(Linux, Mac, Windows, Android 지원)",
     "keywords": "electerm,터미널,SSH,SFTP,FTP,Telnet,시리얼 포트,RDP,VNC,Spice,파일 관리자,오픈소스,무료 터미널,SSH 클라이언트,SFTP 클라이언트,원격 데스크톱,Linux,Mac,Windows,크로스 플랫폼",
     "siteTitle": "electerm - 무료 오픈소스 터미널/SSH/SFTP/Telnet/시리얼포트/VNC/RDP/Spice 클라이언트",
     "headerHome": "홈",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem 및 Trzsz",
     "featureZmodemTrzszDesc": "Zmodem(rz/sz) 및 Trzsz(trz/tsz) 파일 전송 지원, tmux 호환.",
     "featureCrossPlatformTitle": "크로스 플랫폼",
-    "featureCrossPlatformDesc": "Windows 7+(x64/ARM64), macOS 10.15+(x64/arm64), Linux(x64/arm64/Loong64) glibc 2.17+ 지원.",
+    "featureCrossPlatformDesc": "Windows 7+(x64/ARM64), macOS 10.15+(x64/arm64), Linux(x64/arm64/Loong64), Android, glibc 2.17+ 지원.",
     "downloadTitle": "다운로드",
     "downloadSubtitle": "무료 오픈 소스 — 플랫폼을 선택하세요",
     "downloadViewAll": "GitHub에서 모든 릴리스 보기 →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "최신 버전의 새로운 기능",
     "communityTitle": "커뮤니티 참여",
     "communityWechatDesc": "지원과 업데이트를 위해 WeChat 커뮤니티에 참여하세요",
-    "footerBrandDesc": "Linux, macOS, Windows용 터미널/SSH/SFTP/Telnet/시리얼 포트/RDP/VNC/Spice 클라이언트.",
+    "footerBrandDesc": "Linux, macOS, Windows, Android용 터미널/SSH/SFTP/Telnet/시리얼 포트/RDP/VNC/Spice 클라이언트.",
     "footerProduct": "제품",
     "footerCommunity": "커뮤니티",
     "footerRelated": "관련",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "이력서 보기 →",
     "homeAuthorContact": "저자에게 연락 →",
     "heroH1": "electerm — 무료 오픈소스 터미널/SSH/SFTP/Telnet/시리얼 포트/RDP/VNC/Spice/FTP 클라이언트",
-    "homePageTitle": "무료 오픈소스 터미널/ssh/sftp/telnet/시리얼 포트/RDP/VNC/Spice/ftp 클라이언트 (linux, mac, win)",
+    "homePageTitle": "무료 오픈소스 터미널/ssh/sftp/telnet/시리얼 포트/RDP/VNC/Spice/ftp 클라이언트 (linux, mac, win, android)",
     "siteTitleShort": "무료 터미널/SSH/SFTP/Telnet/시리얼/RDP/VNC/Spice/FTP"
   }
 }

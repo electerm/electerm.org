@@ -4,7 +4,7 @@
   "flag": "🇮🇩",
   "match": "id",
   "lang": {
-    "desc": "Klien terminal/SSH/SFTP/FTP/Telnet/port serial/RDP/VNC/Spice (Linux, Mac, Windows)",
+    "desc": "Klien terminal/SSH/SFTP/FTP/Telnet/port serial/RDP/VNC/Spice (Linux, Mac, Windows, Android)",
     "keywords": "electerm,terminal,SSH,SFTP,FTP,Telnet,port serial,RDP,VNC,Spice,manajer file,sumber terbuka,klien terminal gratis,klien SSH,klien SFTP,remote desktop,Linux,Mac,Windows,lintas platform",
     "siteTitle": "electerm - Klien Terminal/SSH/SFTP/Telnet/VNC/RDP/Spice Gratis dan Open Source",
     "headerHome": "Beranda",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem & Trzsz",
     "featureZmodemTrzszDesc": "Mendukung transfer file Zmodem (rz/sz) dan Trzsz (trz/tsz), kompatibel dengan tmux.",
     "featureCrossPlatformTitle": "Lintas platform",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64) termasuk glibc 2.17+.",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), Android, termasuk glibc 2.17+.",
     "downloadTitle": "Unduh",
     "downloadSubtitle": "Gratis dan open source — pilih platform Anda",
     "downloadViewAll": "Lihat semua rilis di GitHub →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "Apa yang baru di versi terbaru",
     "communityTitle": "Bergabung dengan komunitas",
     "communityWechatDesc": "Bergabunglah dengan komunitas WeChat kami untuk dukungan dan pembaruan",
-    "footerBrandDesc": "Klien Terminal/SSH/SFTP/Telnet/port serial/RDP/VNC/Spice untuk Linux, macOS, dan Windows.",
+    "footerBrandDesc": "Klien Terminal/SSH/SFTP/Telnet/port serial/RDP/VNC/Spice untuk Linux, macOS, Windows, dan Android.",
     "footerProduct": "Produk",
     "footerCommunity": "Komunitas",
     "footerRelated": "Terkait",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "Lihat Resume →",
     "homeAuthorContact": "Hubungi Penulis →",
     "heroH1": "electerm — Klien Terminal/SSH/SFTP/Telnet/Port Serial/RDP/VNC/Spice/FTP Gratis dan Open Source",
-    "homePageTitle": "Klien terminal/ssh/sftp/telnet/port serial/RDP/VNC/Spice/ftp gratis dan open source (linux, mac, win)",
+    "homePageTitle": "Klien terminal/ssh/sftp/telnet/port serial/RDP/VNC/Spice/ftp gratis dan open source (linux, mac, win, android)",
     "siteTitleShort": "Klien Terminal/SSH/SFTP/Telnet/Serial/RDP/VNC/Spice/FTP"
   }
 }

@@ -4,7 +4,7 @@
   "flag": "🇩🇪",
   "match": "de",
   "lang": {
-    "desc": "Terminal-/SSH-/SFTP-/FTP-/Telnet-/Seriellport-/RDP-/VNC-/Spice-Client (Linux, Mac, Windows)",
+    "desc": "Terminal-/SSH-/SFTP-/FTP-/Telnet-/Seriellport-/RDP-/VNC-/Spice-Client (Linux, Mac, Windows, Android)",
     "keywords": "electerm,Terminal,SSH,SFTP,FTP,Telnet,Seriellport,RDP,VNC,Spice,Dateimanager,Open Source,kostenloser Terminal-Client,SSH-Client,SFTP-Client,Remote-Desktop,Linux,Mac,Windows,plattformübergreifend",
     "siteTitle": "electerm - Kostenloser Open-Source Terminal/SSH/SFTP/Telnet/VNC/RDP/Spice-Client",
     "headerHome": "Startseite",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem & Trzsz",
     "featureZmodemTrzszDesc": "Unterstützt Zmodem (rz/sz) und Trzsz (trz/tsz) Dateiübertragung, kompatibel mit tmux.",
     "featureCrossPlatformTitle": "Plattformübergreifend",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64) einschließlich glibc 2.17+.",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), Android, einschließlich glibc 2.17+.",
     "downloadTitle": "Download",
     "downloadSubtitle": "Frei und Open Source — wählen Sie Ihre Plattform",
     "downloadViewAll": "Alle Releases auf GitHub ansehen →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "Was ist neu in der neuesten Version",
     "communityTitle": "Der Community beitreten",
     "communityWechatDesc": "Treten Sie unserer WeChat-Community für Support und Updates bei",
-    "footerBrandDesc": "Terminal/SSH/SFTP/Telnet/Seriellport/RDP/VNC/Spice-Client für Linux, macOS und Windows.",
+    "footerBrandDesc": "Terminal/SSH/SFTP/Telnet/Seriellport/RDP/VNC/Spice-Client für Linux, macOS, Windows und Android.",
     "footerProduct": "Produkt",
     "footerCommunity": "Community",
     "footerRelated": "Verwandt",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "Lebenslauf ansehen →",
     "homeAuthorContact": "Autor kontaktieren →",
     "heroH1": "electerm — Kostenloser Open-Source Terminal-/SSH-/SFTP-/Telnet-/Seriell-/RDP-/VNC-/Spice-/FTP-Client",
-    "homePageTitle": "Kostenloser Open-Source Terminal-/SSH-/SFTP-/Telnet-/Seriell-/RDP-/VNC-/Spice-/FTP-Client (linux, mac, win)",
+    "homePageTitle": "Kostenloser Open-Source Terminal-/SSH-/SFTP-/Telnet-/Seriell-/RDP-/VNC-/Spice-/FTP-Client (linux, mac, win, android)",
     "siteTitleShort": "Terminal/SSH/SFTP/Telnet/Seriell/RDP/VNC/Spice/FTP (Open Source)"
   }
 }

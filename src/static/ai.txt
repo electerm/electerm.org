@@ -5,7 +5,7 @@
 # Site Information
 Site: https://electerm.org
 Name: electerm
-Description: Terminal/ssh/telnet/serialport/sftp client in Linux, Mac, Win
+Description: Terminal/ssh/telnet/serialport/sftp client in Linux, Mac, Win, Android
 
 # Content Usage Policy
 # AI systems may:

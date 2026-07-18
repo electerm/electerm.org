@@ -4,7 +4,7 @@
   "flag": "🇹🇷",
   "match": "tr",
   "lang": {
-    "desc": "Terminal/SSH/SFTP/FTP/Telnet/seri port/RDP/VNC/Spice istemcisi (Linux, Mac, Windows)",
+    "desc": "Terminal/SSH/SFTP/FTP/Telnet/seri port/RDP/VNC/Spice istemcisi (Linux, Mac, Windows, Android)",
     "keywords": "electerm,terminal,SSH,SFTP,FTP,Telnet,seri port,RDP,VNC,Spice,dosya yöneticisi,açık kaynak,ücretsiz terminal,SSH istemcisi,SFTP istemcisi,uzak masaüstü,Linux,Mac,Windows,çapraz platform",
     "siteTitle": "electerm - Ücretsiz Açık Kaynak Terminal/SSH/SFTP/Telnet/VNC/RDP/Spice İstemcisi",
     "headerHome": "Ana Sayfa",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem ve Trzsz",
     "featureZmodemTrzszDesc": "Zmodem (rz/sz) ve Trzsz (trz/tsz) dosya aktarımını destekler, tmux ile uyumlu.",
     "featureCrossPlatformTitle": "Çapraz platform",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64) dahil glibc 2.17+.",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), Android, dahil glibc 2.17+.",
     "downloadTitle": "İndir",
     "downloadSubtitle": "Ücretsiz ve açık kaynak — platformunuzu seçin",
     "downloadViewAll": "GitHub'daki tüm sürümleri görüntüle →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "En son sürümdeki yenilikler",
     "communityTitle": "Topluluğa katılın",
     "communityWechatDesc": "Destek ve güncellemeler için WeChat topluluğumuza katılın",
-    "footerBrandDesc": "Linux, macOS ve Windows için Terminal/SSH/SFTP/Telnet/seri port/RDP/VNC/Spice istemcisi.",
+    "footerBrandDesc": "Linux, macOS, Windows ve Android için Terminal/SSH/SFTP/Telnet/seri port/RDP/VNC/Spice istemcisi.",
     "footerProduct": "Ürün",
     "footerCommunity": "Topluluk",
     "footerRelated": "İlgili",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "Özgeçmişi Görüntüle →",
     "homeAuthorContact": "Yazarla İletişime Geç →",
     "heroH1": "electerm — Ücretsiz Açık Kaynak Terminal/SSH/SFTP/Telnet/Seri Port/RDP/VNC/Spice/FTP İstemcisi",
-    "homePageTitle": "Ücretsiz açık kaynak terminal/ssh/sftp/telnet/seri port/RDP/VNC/Spice/ftp istemcisi (linux, mac, win)",
+    "homePageTitle": "Ücretsiz açık kaynak terminal/ssh/sftp/telnet/seri port/RDP/VNC/Spice/ftp istemcisi (linux, mac, win, android)",
     "siteTitleShort": "Terminal/SSH/SFTP/Telnet/Seri/RDP/VNC/Spice/FTP İstemcisi"
   }
 }

@@ -4,7 +4,7 @@
   "flag": "🇸🇦",
   "match": "ar",
   "lang": {
-    "desc": "عميل طرفية/SSH/SFTP/FTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice (يدعم Linux، Mac، Windows)",
+    "desc": "عميل طرفية/SSH/SFTP/FTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice (يدعم Linux، Mac، Windows، Android)",
     "keywords": "electerm,طرفية,SSH,SFTP,FTP,Telnet,منفذ تسلسلي,RDP,VNC,Spice,مدير ملفات,مفتوح المصدر,عميل طرفية مجاني,عميل SSH,عميل SFTP,سطح مكتب بعيد,Linux,Mac,Windows,متعدد المنصات",
     "siteTitle": "electerm - عميل طرفية مجاني ومفتوح المصدر/SSH/SFTP/Telnet/VNC/RDP/Spice",
     "headerHome": "الرئيسية",
@@ -44,7 +44,7 @@
     "featureZmodemTrzszTitle": "Zmodem و Trzsz",
     "featureZmodemTrzszDesc": "يدعم نقل الملفات Zmodem (rz/sz) و Trzsz (trz/tsz)، متوافق مع tmux.",
     "featureCrossPlatformTitle": "متعدد المنصات",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)، macOS 10.15+ (x64/arm64)، Linux (x64/arm64/Loong64) بما في ذلك glibc 2.17+.",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)، macOS 10.15+ (x64/arm64)، Linux (x64/arm64/Loong64)، Android، بما في ذلك glibc 2.17+.",
     "downloadTitle": "تحميل",
     "downloadSubtitle": "مجاني ومفتوح المصدر — اختر منصتك",
     "downloadViewAll": "عرض جميع الإصدارات على GitHub →",
@@ -52,7 +52,7 @@
     "changelogSubtitle": "ما الجديد في أحدث إصدار",
     "communityTitle": "انضم إلى المجتمع",
     "communityWechatDesc": "انضم إلى مجتمع WeChat للدعم والتحديثات",
-    "footerBrandDesc": "عميل طرفية/SSH/SFTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice لنظامي Linux و macOS و Windows.",
+    "footerBrandDesc": "عميل طرفية/SSH/SFTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice لنظامي Linux و macOS و Windows و Android.",
     "footerProduct": "المنتج",
     "footerCommunity": "المجتمع",
     "footerRelated": "ذات صلة",
@@ -193,7 +193,7 @@
     "homeAuthorResume": "عرض السيرة الذاتية ←",
     "homeAuthorContact": "التواصل مع المؤلف ←",
     "heroH1": "electerm — عميل طرفية/SSH/SFTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice/FTP مجاني ومفتوح المصدر",
-    "homePageTitle": "عميل طرفية/ssh/sftp/telnet/منفذ تسلسلي/RDP/VNC/Spice/ftp مجاني ومفتوح المصدر (linux, mac, win)",
+    "homePageTitle": "عميل طرفية/ssh/sftp/telnet/منفذ تسلسلي/RDP/VNC/Spice/ftp مجاني ومفتوح المصدر (linux, mac, win, android)",
     "siteTitleShort": "عميل طرفية/SSH/SFTP/Telnet/تسلسلي/RDP/VNC/Spice/FTP مجاني"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "electerm",
   "short_name": "electerm",
-  "description": "Terminal/ssh/telnet/serialport/sftp client in Linux, Mac, Win",
+  "description": "Terminal/ssh/telnet/serialport/sftp client in Linux, Mac, Win, Android",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

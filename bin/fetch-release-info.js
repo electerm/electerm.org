@@ -30,6 +30,18 @@ async function fetchReleaseInfo () {
   }
 }
 
+async function fetchAndroidReleaseInfo () {
+  const response = await axios.get('https://api.github.com/repos/electerm/electerm-android/releases/latest', {
+    headers: {
+      'User-Agent': 'electerm-website',
+      Authorization: `token ${token}`,
+      Accept: 'application/vnd.github.v3+json'
+    }
+  })
+
+  return response.data.assets || []
+}
+
 async function fetchRepoInfo () {
   const response = await axios.get('https://api.github.com/repos/electerm/electerm', {
     headers: {
@@ -48,8 +60,11 @@ async function main () {
   console.log('Fetching latest release info from GitHub...')
   const releaseInfo = await fetchReleaseInfo()
   if (releaseInfo.release.body) {
-    releaseInfo.release.body = releaseInfo.release.body.replace(/[\r\n]+-{3,}[\r\n]+Download下载: \[https:\/\/electerm\.html5beta\.com\]\(https:\/\/electerm\.html5beta\.com\)\s*$/, '')
+    releaseInfo.release.body = releaseInfo.release.body.replace(/[\r\n]+-{3,}[\r\n]+Download下载: \[https:\/\/electerm\.org\]\(https:\/\/electerm\.org\)\s*$/, '')
   }
+  console.log('Fetching Android release assets from GitHub...')
+  const androidAssets = await fetchAndroidReleaseInfo()
+  releaseInfo.release.assets = [...(releaseInfo.release.assets || []), ...androidAssets]
   console.log('Fetching repository info from GitHub...')
   const repoInfo = await fetchRepoInfo()
   const output = { ...releaseInfo, ...repoInfo }

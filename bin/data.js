@@ -19,6 +19,15 @@ function getCdnUrl (url) {
   return url.replace('github.com', 'r2.electerm.org')
 }
 
+function getR2Url (url, isAndroid) {
+  const prefix = isAndroid ? '/r1/' : '/r/'
+  return 'https://r2.electerm.org' + prefix + url.split('/').pop()
+}
+
+function isAndroidAsset (fileName, downloadUrl) {
+  return fileName.endsWith('.apk') || downloadUrl.includes('electerm-android')
+}
+
 function convertToProperLangCode (code) {
   const langMappings = {
     ar_ar: 'ar',
@@ -112,10 +121,13 @@ function createReleaseData () {
   const dt = dayjs(assets[0].created_at).format('YYYY-MM-DD')
   const dtISO = dayjs(assets[0].created_at).toISOString()
   const arr = assets.reduce((prev, curr) => {
+    const androidFlag = isAndroidAsset(curr.name, curr.browser_download_url)
     const nr = {
       ...curr,
       sourceforgeUrl: getSourceforgeUrl(curr.browser_download_url),
-      cdnUrl: getCdnUrl(curr.browser_download_url)
+      cdnUrl: getCdnUrl(curr.browser_download_url),
+      r2Url: getR2Url(curr.browser_download_url, androidFlag),
+      isAndroid: androidFlag
     }
     const cname = curr.name
     if (
@@ -232,6 +244,23 @@ function createReleaseData () {
       prev.linux[category].releaseDate = dt
       prev.linux[category].releaseNote = releaseNote
       prev.linux[category].items.push(nr)
+    } else if (androidFlag) {
+      if (cname.includes('arm64-v8a') || cname.includes('arm64')) {
+        nr.desc = 'for ARM64 devices (most modern phones)'
+      } else if (cname.includes('armeabi-v7a') || cname.includes('armv7') || cname.includes('arm-')) {
+        nr.desc = 'for older ARM devices'
+      } else if (cname.includes('x86_64') || cname.includes('x64')) {
+        nr.desc = 'for x86_64 devices (emulators, some tablets)'
+      } else if (cname.includes('x86')) {
+        nr.desc = 'for x86 devices'
+      } else if (cname.includes('universal')) {
+        nr.desc = 'universal (all architectures)'
+      } else {
+        nr.desc = 'Android APK'
+      }
+      prev.android.releaseNote = releaseNote
+      prev.android.releaseDate = dt
+      prev.android.items.push(nr)
     }
     return prev
   }, {
@@ -286,6 +315,10 @@ function createReleaseData () {
         name: 'Windows 7 Legacy',
         items: []
       }
+    },
+    android: {
+      name: 'Android',
+      items: []
     }
   })
   return {
@@ -298,7 +331,7 @@ function createReleaseData () {
 }
 
 export default {
-  desc: 'Free and open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client (linux, mac, win)',
+  desc: 'Free and open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client (linux, mac, win, android)',
   siteName: 'electerm',
   host: process.env.HOST,
   videos: videos.videos,
@@ -414,7 +447,8 @@ export default {
         { title: 'electerm-locales', url: 'https://github.com/electerm/electerm-locales', external: true },
         { title: 'electerm cloud', url: 'https://sync.electerm.org/', external: true },
         { title: 'electerm AI — Free AI for electerm users', url: 'https://ai.electerm.org', external: true },
-        { title: 'AI Dream', url: 'https://ai-dream.html5beta.com', external: true }
+        { title: 'AI Dream', url: 'https://ai-dream.html5beta.com', external: true },
+        { title: 'electerm-android', url: 'https://github.com/electerm/electerm-android', external: true }
       ]
     },
     {
