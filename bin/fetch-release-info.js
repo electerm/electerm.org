@@ -39,7 +39,10 @@ async function fetchAndroidReleaseInfo () {
     }
   })
 
-  return response.data.assets || []
+  return {
+    tagName: response.data.tag_name,
+    assets: response.data.assets || []
+  }
 }
 
 async function fetchRepoInfo () {
@@ -62,12 +65,12 @@ async function main () {
   if (releaseInfo.release.body) {
     releaseInfo.release.body = releaseInfo.release.body.replace(/[\r\n]+-{3,}[\r\n]+Download下载: \[https:\/\/electerm\.org\]\(https:\/\/electerm\.org\)\s*$/, '')
   }
-  console.log('Fetching Android release assets from GitHub...')
-  const androidAssets = await fetchAndroidReleaseInfo()
-  releaseInfo.release.assets = [...(releaseInfo.release.assets || []), ...androidAssets]
+  console.log('Fetching Android release info from GitHub...')
+  const androidInfo = await fetchAndroidReleaseInfo()
+  releaseInfo.release.assets = [...(releaseInfo.release.assets || []), ...androidInfo.assets]
   console.log('Fetching repository info from GitHub...')
   const repoInfo = await fetchRepoInfo()
-  const output = { ...releaseInfo, ...repoInfo }
+  const output = { ...releaseInfo, ...repoInfo, androidVersion: androidInfo.tagName }
   // Write to file
   await fs.writeFile(outputPath, JSON.stringify(output, null, 2))
   console.log(`Release info saved to ${outputPath}`)

@@ -28,6 +28,18 @@ function isAndroidAsset (fileName, downloadUrl) {
   return fileName.endsWith('.apk') || downloadUrl.includes('electerm-android')
 }
 
+function extractAndroidVersionFromAssets (assets) {
+  const re = /\/download\/(v\d+\.\d+\.\d+)\//
+  for (const a of assets || []) {
+    const url = a.browser_download_url || ''
+    const m = url.match(re)
+    if (m) {
+      return m[1]
+    }
+  }
+  return ''
+}
+
 function convertToProperLangCode (code) {
   const langMappings = {
     ar_ar: 'ar',
@@ -116,8 +128,10 @@ function createReleaseData () {
   const starCount = data.starCount
   const assets = data.release.assets
   const version = data.release.tag_name
+  const androidVersion = data.androidVersion || extractAndroidVersionFromAssets(assets)
   const releaseNote = data.release.body.replace(/\r?\n-{3,}\r?\n\r?\nDownload下载:.*$/, '')
   console.log('version:', version)
+  console.log('androidVersion:', androidVersion)
   const dt = dayjs(assets[0].created_at).format('YYYY-MM-DD')
   const dtISO = dayjs(assets[0].created_at).toISOString()
   const arr = assets.reduce((prev, curr) => {
@@ -324,6 +338,7 @@ function createReleaseData () {
   return {
     assets: arr,
     version,
+    androidVersion,
     starCount,
     releaseDate: dt,
     releaseDateISO: dtISO

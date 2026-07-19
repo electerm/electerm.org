@@ -183,8 +183,9 @@ async function main () {
 
   console.log(`✅ Built index pages for ${langs.length} languages`)
 
-  const { version } = data
+  const { version, androidVersion } = data
   await fs.writeFile(resolve(cwd, 'public/version.html'), version)
+  await fs.writeFile(resolve(cwd, 'public/version-android.html'), androidVersion)
 
   // Build static pages (English only)
   const enLang = langs.find(l => l.id === 'en_us')
