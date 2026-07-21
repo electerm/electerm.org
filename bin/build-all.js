@@ -7,7 +7,7 @@ import { readFileSync } from 'fs'
 
 let cssFilename = '/index.bundle.css'
 
-const REDIRECT_TEMPLATE = (target) => `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="${target}"><script>location.replace("${target}")</script></head><body></body></html>`
+const REDIRECT_TEMPLATE = (target) => `<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="canonical" href="${target}"><script>location.replace("${target}")</script></head><body></body></html>`
 
 async function buildVideoPages () {
   const { videos } = data
@@ -295,8 +295,7 @@ async function build404Page () {
     keywords: lang.lang.keywords,
     desc: 'Page not found on electerm website',
     url: `${h}/404.html`,
-    cssUrl: cssFilename,
-    robotsContent: 'noindex, follow'
+    cssUrl: cssFilename
   })
   console.log('✅ Built 404 page')
 }
