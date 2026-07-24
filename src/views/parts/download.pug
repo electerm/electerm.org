@@ -32,6 +32,61 @@ section.downloads#downloads
           p.classList.toggle('active', p.getAttribute('data-arch')===arch);
         });
       }
+      function isAndroidDevice() {
+        var u = navigator.userAgent.toLowerCase();
+        var p = (navigator.platform || '').toLowerCase();
+        return p.includes('android') || u.includes('android');
+      }
+      var qrLibLoaded = false;
+      function loadQrLib(cb) {
+        if (qrLibLoaded) { cb(); return; }
+        if (window.qrcode) { qrLibLoaded = true; cb(); return; }
+        var s = document.createElement('script');
+        s.src = '#{host}/js/qrcode-generator.min.js';
+        s.onload = function() { qrLibLoaded = true; cb(); };
+        s.onerror = function() { cb(new Error('Failed to load QR library')); };
+        document.head.appendChild(s);
+      }
+      function showQrModal(url, source) {
+        var modal = document.getElementById('androidQrModal');
+        var codeEl = document.getElementById('androidQrCode');
+        var urlEl = document.getElementById('androidQrUrl');
+        var dlEl = document.getElementById('androidQrDownload');
+        var srcEl = document.getElementById('androidQrSource');
+        if (!modal) return;
+        urlEl.textContent = url;
+        dlEl.href = url;
+        if (srcEl && source) srcEl.textContent = source;
+        codeEl.innerHTML = '<div class="android-qr-loading">Generating QR code…</div>';
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        loadQrLib(function(err) {
+          if (err) {
+            codeEl.innerHTML = '<div class="android-qr-error">Failed to generate QR code</div>';
+            return;
+          }
+          try {
+            var qr = qrcode(0, 'M');
+            qr.addData(url);
+            qr.make();
+            codeEl.innerHTML = qr.createSvgTag({
+              cellSize: 4,
+              margin: 4,
+              scalable: true,
+              alt: 'QR code for ' + url
+            });
+          } catch(e) {
+            codeEl.innerHTML = '<div class="android-qr-error">Failed to generate QR code</div>';
+          }
+        });
+      }
+      function hideQrModal() {
+        var modal = document.getElementById('androidQrModal');
+        if (modal) {
+          modal.classList.remove('active');
+          modal.setAttribute('aria-hidden', 'true');
+        }
+      }
       document.addEventListener('DOMContentLoaded', function(){
         switchTab(detectOS());
         document.querySelectorAll('.download-tab-btn').forEach(function(b){
@@ -42,6 +97,25 @@ section.downloads#downloads
             b.addEventListener('click', function(){ switchArch(this, this.getAttribute('data-arch')); });
           });
         });
+        // Android QR modal — desktop only
+        if (!isAndroidDevice()) {
+          var androidPanel = document.querySelector('.download-panel[data-tab="android"]');
+          if (androidPanel) {
+            androidPanel.querySelectorAll('.download-card-link').forEach(function(link) {
+              link.addEventListener('click', function(e) {
+                e.preventDefault();
+                showQrModal(this.href, this.textContent.trim());
+              });
+            });
+          }
+          var closeBtn = document.getElementById('androidQrClose');
+          if (closeBtn) closeBtn.addEventListener('click', hideQrModal);
+          var overlay = document.querySelector('.android-qr-overlay');
+          if (overlay) overlay.addEventListener('click', hideQrModal);
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') hideQrModal();
+          });
+        }
       });
 
     mixin dlLinks(obj)
@@ -184,6 +258,19 @@ section.downloads#downloads
         .download-grid
           each obj in assets.android.items
             +dlCard(obj)
+
+    //- Android QR modal (desktop mode)
+    .android-qr-modal#androidQrModal(aria-hidden='true', role='dialog')
+      .android-qr-overlay
+      .android-qr-dialog
+        button.android-qr-close#androidQrClose(type='button', aria-label='Close') &times;
+        .android-qr-title Scan to download
+        .android-qr-desc
+          | Scan the QR code with your phone to download
+          | via <span id="androidQrSource">GitHub</span>, or download directly below.
+        .android-qr-code#androidQrCode
+        .android-qr-url#androidQrUrl
+        a.android-qr-download#androidQrDownload Download directly
 
     .download-more
       a(href='https://github.com/electerm/electerm/releases', target='_blank', rel='noreferrer')
