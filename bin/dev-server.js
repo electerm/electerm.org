@@ -11,6 +11,7 @@ const host = env.SERVER_HOST || '127.0.0.1'
 const h = `http://${host}:${devPort}`
 
 // Override locale and page URLs to use dev host
+const enLang = data.langs.find(l => l.slug === '') || data.langs[0]
 data.langs = data.langs.map(l => ({
   ...l,
   url: l.slug === '' ? h : h + '/' + l.slug + '/'
@@ -56,7 +57,7 @@ function handleLocale (req, res) {
 
 function handlePage (req, res) {
   const page = req.params.param || req.params.page
-  const { langCode, lang } = data.langs[2]
+  const { langCode, lang } = enLang
   res.render(page, {
     ...data,
     host: h,
@@ -70,7 +71,7 @@ function handlePage (req, res) {
 }
 
 function handleIndex (req, res) {
-  const { langCode, lang } = data.langs[2]
+  const { langCode, lang } = enLang
   res.render('index', {
     ...data,
     host: h,
@@ -84,7 +85,7 @@ function handleIndex (req, res) {
 }
 
 function handleVideo (req, res) {
-  const { langCode, lang } = data.langs[2]
+  const { langCode, lang } = enLang
   const videoSlug = req.params.videoSlug
   const video = data.videos.find(v => v.videoSlug === videoSlug)
   if (!video) {

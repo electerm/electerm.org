@@ -20,13 +20,11 @@ header.site-header
     .header-actions
       .lang-dropdown
         button.lang-toggle(type='button', onclick='this.parentElement.classList.toggle("open")')
-          span.flag #{lang.flag}
-          span #{langCode}
+          span #{lang.name}
           span.arrow ▾
         .lang-menu
           each item in langs
             a(href=item.url)
-              span.flag #{item.lang.flag}
               span #{item.lang.name}
       button.mobile-menu-btn(type='button', onclick='document.querySelector(".mobile-nav").classList.toggle("open")')
         svg(width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2')
