@@ -86,20 +86,20 @@ function createLocaleData () {
   const dataFolder = resolve(cwd, 'src/data')
   const pre = process.env.HOST
   const idToFileMap = {
-    ar_ar: 'ar',
-    de_de: 'de',
     en_us: 'en',
+    zh_cn: 'zh-cn',
+    zh_tw: 'zh-tw',
     es_es: 'es',
     fr_fr: 'fr',
-    id_id: 'id',
-    ja_jp: 'ja',
-    ko_kr: 'ko',
-    pl_pl: 'pl',
+    ar_ar: 'ar',
     pt_br: 'pt-br',
     ru_ru: 'ru',
+    id_id: 'id',
+    de_de: 'de',
+    ja_jp: 'ja',
     tr_tr: 'tr',
-    zh_cn: 'zh-cn',
-    zh_tw: 'zh-tw'
+    ko_kr: 'ko',
+    pl_pl: 'pl'
   }
   return Object.entries(idToFileMap).reduce((prev, [id, fileName]) => {
     const filePath = resolve(dataFolder, fileName + '.json')
