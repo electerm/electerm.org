@@ -462,6 +462,7 @@ export default {
         { title: 'electerm-locales', url: 'https://github.com/electerm/electerm-locales', external: true },
         { title: 'electerm cloud', url: 'https://sync.electerm.org/', external: true },
         { title: 'electerm AI — Free AI for electerm users', url: 'https://ai.electerm.org', external: true },
+        { title: 'electerm theme — Create/share theme site with live preview and AI creation', url: 'https://theme.electerm.org', external: true },
         { title: 'AI Dream', url: 'https://ai-dream.html5beta.com', external: true },
         { title: 'electerm-android', url: 'https://github.com/electerm/electerm-android', external: true }
       ]
