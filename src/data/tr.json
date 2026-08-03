@@ -18,6 +18,7 @@
     "headerLanguages": "Diller",
     "heroTryDemo": "Demoyu dene",
     "heroViewOnGithub": "GitHub'da görüntüle",
+    "heroSupports": "Yaygın Windows/macOS/Linux/Android sistemlerinin yanı sıra electerm; Ubuntu 18, Windows 7, macOS 10+ ve UOS, Kylin ile LoongArch (hem old-world hem new-world) gibi özel Çin Linux dağıtımlarını da destekler.",
     "featuresTitle": "Özellikler",
     "featuresSubtitle": "Bir terminal istemcisinde ihtiyacınız olan her şey",
     "featureAllInOneTitle": "Açık kaynaklı hepsi bir arada istemci",

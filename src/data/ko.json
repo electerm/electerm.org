@@ -18,6 +18,7 @@
     "headerLanguages": "언어",
     "heroTryDemo": "데모 체험",
     "heroViewOnGithub": "GitHub에서 보기",
+    "heroSupports": "주요 Windows/macOS/Linux/Android 외에도 electerm은 Ubuntu 18, Windows 7, macOS 10+와 UOS, Kylin, LoongArch(old-world 및 new-world 모두)와 같은 특수 중국 Linux 배포판 등 이전 시스템도 지원합니다.",
     "featuresTitle": "기능",
     "featuresSubtitle": "터미널 클라이언트에 필요한 모든 것",
     "featureAllInOneTitle": "오픈소스 올인원 클라이언트",

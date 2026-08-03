@@ -18,6 +18,7 @@
     "headerLanguages": "Bahasa",
     "heroTryDemo": "Coba demo",
     "heroViewOnGithub": "Lihat di GitHub",
+    "heroSupports": "Selain Windows/macOS/Linux/Android utama, electerm juga mendukung sistem yang lebih lama — Ubuntu 18, Windows 7, macOS 10+, serta distribusi Linux Tiongkok khusus seperti UOS, Kylin, dan LoongArch (baik old-world maupun new-world).",
     "featuresTitle": "Fitur",
     "featuresSubtitle": "Semua yang Anda butuhkan dalam klien terminal",
     "featureAllInOneTitle": "Klien all-in-one sumber terbuka",

@@ -18,6 +18,7 @@
     "headerLanguages": "اللغات",
     "heroTryDemo": "جرب العرض التوضيحي",
     "heroViewOnGithub": "عرض على GitHub",
+    "heroSupports": "بالإضافة إلى Windows/macOS/Linux/Android السائدة، يدعم electerm أيضًا الأنظمة القديمة — Ubuntu 18 و Windows 7 و macOS 10+ وتوزيعات Linux الصينية الخاصة مثل UOS و Kylin و LoongArch (سواء old-world أو new-world).",
     "featuresTitle": "الميزات",
     "featuresSubtitle": "كل ما تحتاجه في عميل طرفية",
     "featureAllInOneTitle": "عميل شامل مفتوح المصدر",

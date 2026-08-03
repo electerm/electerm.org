@@ -18,6 +18,7 @@
     "headerLanguages": "语言",
     "heroTryDemo": "在线演示",
     "heroViewOnGithub": "在 GitHub 上查看",
+    "heroSupports": "除主流的 Windows/macOS/Linux/Android 外，electerm 还支持较旧的系统 —— Ubuntu 18、Windows 7、macOS 10+，以及统信 UOS、银河麒麟等国产 Linux 发行版和龙芯 LoongArch（新旧世界均支持）。",
     "featuresTitle": "功能特性",
     "featuresSubtitle": "终端客户端所需的一切",
     "featureAllInOneTitle": "开源多合一客户端",

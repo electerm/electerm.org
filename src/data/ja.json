@@ -18,6 +18,7 @@
     "headerLanguages": "言語",
     "heroTryDemo": "デモを試す",
     "heroViewOnGithub": "GitHub で見る",
+    "heroSupports": "主流の Windows/macOS/Linux/Android に加え、electerm は Ubuntu 18、Windows 7、macOS 10+、さらに UOS、Kylin、LoongArch（old-world および new-world の両方）などの中国製 Linux ディストリビューションといった古いシステムもサポートしています。",
     "featuresTitle": "機能",
     "featuresSubtitle": "ターミナルクライアントに必要なすべて",
     "featureAllInOneTitle": "オープンソース オールインワンクライアント",

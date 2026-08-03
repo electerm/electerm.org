@@ -4,6 +4,8 @@ section.hero
     img.hero-logo(src=host + '/electerm.png', alt='electerm', fetchpriority='high')
     h1.hero-title= lang.lang.heroH1 || 'electerm'
     p.hero-tagline #{desc}
+    if lang.lang.heroSupports
+      p.hero-supports #{lang.lang.heroSupports}
     .hero-version
       span.dot
       span Version #{version}

@@ -18,6 +18,7 @@
     "headerLanguages": "Языки",
     "heroTryDemo": "Попробовать демо",
     "heroViewOnGithub": "Смотреть на GitHub",
+    "heroSupports": "Помимо основных Windows/macOS/Linux/Android, electerm также поддерживает старые системы — Ubuntu 18, Windows 7, macOS 10+, а также специальные китайские дистрибутивы Linux, такие как UOS, Kylin и LoongArch (как old-world, так и new-world).",
     "featuresTitle": "Возможности",
     "featuresSubtitle": "Всё, что вам нужно в терминальном клиенте",
     "featureAllInOneTitle": "Открытый универсальный клиент",
