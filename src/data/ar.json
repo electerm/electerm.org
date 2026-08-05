@@ -4,7 +4,7 @@
   "flag": "🇸🇦",
   "match": "ar",
   "lang": {
-    "desc": "عميل طرفية/SSH/SFTP/FTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice (يدعم Linux، Mac، Windows، Android)",
+    "desc": "عميل طرفية/SSH/SFTP/FTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice (يدعم Linux، Mac، Windows، Android، HarmonyOS)",
     "keywords": "electerm,طرفية,SSH,SFTP,FTP,Telnet,منفذ تسلسلي,RDP,VNC,Spice,مدير ملفات,مفتوح المصدر,عميل طرفية مجاني,عميل SSH,عميل SFTP,سطح مكتب بعيد,Linux,Mac,Windows,متعدد المنصات",
     "siteTitle": "electerm - عميل طرفية مجاني ومفتوح المصدر/SSH/SFTP/Telnet/VNC/RDP/Spice",
     "headerHome": "الرئيسية",
@@ -18,7 +18,7 @@
     "headerLanguages": "اللغات",
     "heroTryDemo": "جرب العرض التوضيحي",
     "heroViewOnGithub": "عرض على GitHub",
-    "heroSupports": "بالإضافة إلى Windows/macOS/Linux/Android السائدة، يدعم electerm أيضًا الأنظمة القديمة — Ubuntu 18 و Windows 7 و macOS 10+ وتوزيعات Linux الصينية الخاصة مثل UOS و Kylin و LoongArch (سواء old-world أو new-world).",
+    "heroSupports": "بالإضافة إلى Windows/macOS/Linux/Android/HarmonyOS السائدة، يدعم electerm أيضًا الأنظمة القديمة — Ubuntu 18 و Windows 7 و macOS 10+ وتوزيعات Linux الصينية الخاصة مثل UOS و Kylin و LoongArch (سواء old-world أو new-world).",
     "featuresTitle": "الميزات",
     "featuresSubtitle": "كل ما تحتاجه في عميل طرفية",
     "featureAllInOneTitle": "عميل شامل مفتوح المصدر",
@@ -194,7 +194,7 @@
     "homeAuthorResume": "عرض السيرة الذاتية ←",
     "homeAuthorContact": "التواصل مع المؤلف ←",
     "heroH1": "electerm — عميل طرفية/SSH/SFTP/Telnet/منفذ تسلسلي/RDP/VNC/Spice/FTP مجاني ومفتوح المصدر",
-    "homePageTitle": "عميل طرفية/ssh/sftp/telnet/منفذ تسلسلي/RDP/VNC/Spice/ftp مجاني ومفتوح المصدر (linux, mac, win, android)",
+    "homePageTitle": "عميل طرفية/ssh/sftp/telnet/منفذ تسلسلي/RDP/VNC/Spice/ftp مجاني ومفتوح المصدر (linux, mac, win, android, harmony)",
     "siteTitleShort": "عميل طرفية/SSH/SFTP/Telnet/تسلسلي/RDP/VNC/Spice/FTP مجاني"
   }
 }

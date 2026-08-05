@@ -139,6 +139,7 @@ section.downloads#downloads
       button.download-tab-btn(data-tab='linux') Linux
       button.download-tab-btn(data-tab='android') Android
         sup.beta-tag beta
+      button.download-tab-btn(data-tab='harmony') HarmonyOS
 
     //- Windows
     .download-panel.active(data-tab='windows')
@@ -258,6 +259,16 @@ section.downloads#downloads
         .download-grid
           each obj in assets.android.items
             +dlCard(obj)
+
+    //- HarmonyOS
+    .download-panel(data-tab='harmony')
+      .download-grid
+        .download-card
+          .download-card-top
+            .download-card-name HarmonyOS
+            .download-card-desc Get electerm on Huawei HarmonyOS devices from AppGallery.
+          .download-card-links
+            a.download-card-link.primary(href='https://appgallery.huawei.com/app/detail?id=org.electerm.electerm', target='_blank', rel='noreferrer') AppGallery
 
     //- Android QR modal (desktop mode)
     .android-qr-modal#androidQrModal(aria-hidden='true', role='dialog')
