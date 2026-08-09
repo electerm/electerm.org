@@ -137,9 +137,11 @@ section.downloads#downloads
       button.download-tab-btn.active(data-tab='windows') Windows
       button.download-tab-btn(data-tab='mac') macOS
       button.download-tab-btn(data-tab='linux') Linux
+      button.download-tab-btn(data-tab='harmony') HarmonyOS
       button.download-tab-btn(data-tab='android') Android
         sup.beta-tag beta
-      button.download-tab-btn(data-tab='harmony') HarmonyOS
+      button.download-tab-btn(data-tab='ios') iOS
+        sup.beta-tag soon
 
     //- Windows
     .download-panel.active(data-tab='windows')
@@ -253,13 +255,6 @@ section.downloads#downloads
             each obj in assets.linux.loong64_legacy.items
               +dlCard(obj)
 
-    //- Android
-    - if (assets.android && assets.android.items.length > 0)
-      .download-panel(data-tab='android')
-        .download-grid
-          each obj in assets.android.items
-            +dlCard(obj)
-
     //- HarmonyOS
     .download-panel(data-tab='harmony')
       .download-grid
@@ -269,6 +264,23 @@ section.downloads#downloads
             .download-card-desc Get electerm on Huawei HarmonyOS devices from AppGallery.
           .download-card-links
             a.download-card-link.primary(href='https://appgallery.huawei.com/app/detail?id=org.electerm.electerm', target='_blank', rel='noreferrer') AppGallery
+
+    //- Android
+    - if (assets.android && assets.android.items.length > 0)
+      .download-panel(data-tab='android')
+        .download-grid
+          each obj in assets.android.items
+            +dlCard(obj)
+
+    //- iOS (under development)
+    .download-panel(data-tab='ios')
+      .download-grid
+        .download-card
+          .download-card-top
+            .download-card-name iOS
+            .download-card-desc Currently under development.
+          .download-card-links
+            a.download-card-link.primary(href='https://github.com/electerm/electerm-ios', target='_blank', rel='noreferrer') GitHub
 
     //- Android QR modal (desktop mode)
     .android-qr-modal#androidQrModal(aria-hidden='true', role='dialog')
