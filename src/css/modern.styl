@@ -2221,14 +2221,67 @@ justify-content space-between
       display block
 
 // Reserve space so the fixed ad bar/card doesn't cover footer content.
-// JS refines these to the actual rendered ad height (see react-footer script).
+// Applies to whichever network is in use (EthicalAds or Carbon Ads wrapper
+// present in the DOM). JS refines these to the actual rendered ad height.
 @media (max-width: 1419px)
-  body
+  body:has(.ethical-ad-wrapper, .carbon-ad-wrapper)
     padding-bottom 56px
 @media (min-width: 1420px)
-  .site-footer
+  body:has(.ethical-ad-wrapper, .carbon-ad-wrapper) .site-footer
     padding-bottom 80px
 
 // Ad unit visibility — always visible; JS controls type/layout
 .ethical-ad-unit
   display block
+
+/* ===== Carbon Ads ===== */
+// Same responsive placement as EthicalAds: full-width fixed bar < 1420px,
+// corner card bottom-right >= 1420px. Hidden until react-footer JS adds
+// .carbon-ad-active (non-CN visitors) and injects the carbon.js script.
+.carbon-ad-wrapper
+  display none
+  position fixed
+  bottom 0
+  left 0
+  right 0
+  z-index 998
+  min-height 56px
+  align-items center
+  justify-content center
+  padding 8px 20px
+  background var(--color-bg-alt)
+  border-top 1px solid var(--color-border)
+
+  &.carbon-ad-active
+    display flex
+
+  // >= 1420px: corner card
+  @media (min-width: 1420px)
+    min-height auto
+    bottom 24px
+    left auto
+    right 24px
+    z-index 999
+    padding 0
+    border none
+    max-width 300px
+    background white
+    border-radius var(--radius-md)
+    box-shadow var(--shadow-lg)
+
+    &.carbon-ad-active
+      display block
+
+// Carbon Responsive injects #carbonads with its own card chrome and a ~330px
+// max-width, which renders larger than the EthicalAds unit. Force the creative
+// to fill the wrapper and drop Carbon's own chrome so it matches the EthicalAds
+// footprint in both the bar (< 1420px) and corner-card (>= 1420px) modes.
+// #carbon-responsive is a higher-specificity hook than Carbon's plain #carbonads.
+#carbon-responsive
+  #carbonads
+    position static
+    width 100%
+    max-width 100%
+    margin 0
+    background transparent
+    box-shadow none

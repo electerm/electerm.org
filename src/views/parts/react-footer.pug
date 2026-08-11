@@ -165,9 +165,9 @@ script.
       });
     });
 
-    // === EthicalAds spacing: keep the fixed ad bar/card from covering footer content ===
+    // === Ad spacing: keep the fixed ad bar/card (EthicalAds or Carbon Ads) from covering footer content ===
     (function(){
-      var wrapper = document.querySelector('.ethical-ad-wrapper');
+      var wrapper = document.querySelector('.ethical-ad-wrapper, .carbon-ad-wrapper');
       var footer = document.querySelector('footer.site-footer');
       if (!wrapper) return;
       var BP = 1420;
@@ -222,6 +222,22 @@ script.
       setTimeout(apply, 1500);
       setTimeout(apply, 3000);
     })();
+
+    // === Carbon Ads — only for non-CN visitors ===
+    // Carbon's carbon.js is injected into the container only when the visitor
+    // is outside China, mirroring the EthicalAds gating above.
+    window.__countryPromise.then(function(cc){
+      var wrapper = document.querySelector('.carbon-ad-wrapper');
+      if (!wrapper) return;
+      if (cc === 'CN') return;
+      wrapper.classList.add('carbon-ad-active');
+      var s = document.createElement('script');
+      s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//cdn.carbonads.com/carbon.js?serve=CWBDE2JL&placement=electermorg&format=responsive';
+      s.id = '_carbonads_js';
+      wrapper.appendChild(s);
+    });
 
     // === Init all cloud sliders on the page ===
     (function(){

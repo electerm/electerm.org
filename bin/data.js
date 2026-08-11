@@ -349,6 +349,9 @@ export default {
   desc: 'Free and open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client (linux, mac, win, android, harmony)',
   siteName: 'electerm',
   host: process.env.HOST,
+  // Ads network switch. 'ethical' (EthicalAds) is the default network;
+  // set to 'carbon' to serve Carbon Ads site-wide.
+  adProvider: 'carbon',
   videos: videos.videos,
   pages: [
     'sponsor-electerm',
