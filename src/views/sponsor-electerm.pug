@@ -420,47 +420,5 @@ html(lang=langCode)
     include ./parts/ads
     include ./parts/footer
     include ./parts/react-footer
-    script.
-      document.addEventListener('DOMContentLoaded', function() {
-        var copyBtn = document.querySelector('.copy-btn');
-        var copyStatus = document.getElementById('copy-status');
-        if (copyBtn) {
-          copyBtn.addEventListener('click', function() {
-            var address = document.getElementById('trn20-address').textContent.trim();
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              navigator.clipboard.writeText(address).then(function() {
-                showCopySuccess();
-              }).catch(function() {
-                fallbackCopy(address);
-              });
-            } else {
-              fallbackCopy(address);
-            }
-          });
-        }
-        function fallbackCopy(text) {
-          var textarea = document.createElement('textarea');
-          textarea.value = text;
-          textarea.style.position = 'fixed';
-          textarea.style.opacity = '0';
-          document.body.appendChild(textarea);
-          textarea.select();
-          try {
-            document.execCommand('copy');
-            showCopySuccess();
-          } catch (e) {
-            alert('Failed to copy address');
-          }
-          document.body.removeChild(textarea);
-        }
-        function showCopySuccess() {
-          copyBtn.classList.add('success');
-          copyBtn.textContent = '✓';
-          copyStatus.classList.add('show');
-          setTimeout(function() {
-            copyBtn.classList.remove('success');
-            copyBtn.textContent = '📋';
-            copyStatus.classList.remove('show');
-          }, 2000);
-        }
-      });
+    include ./parts/page-script
+    +pageScript('sponsor-electerm')

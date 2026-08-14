@@ -1,0 +1,256 @@
+// Global site behavior: shared country fetch, analytics, ad networks,
+// cloud slider init, and ad-spacing logic. Extracted from react-footer.pug.
+(function () {
+  // === Shared single country fetch for all consumers ===
+  window.__countryPromise = fetch('/api/country')
+    .then(function (r) { return r.json() })
+    .then(function (d) { return (d.country || '').toUpperCase() })
+    .catch(function () { return null })
+
+  // === Google Analytics ===
+  var s1 = document.createElement('script')
+  s1.async = true
+  s1.src = 'https://www.googletagmanager.com/gtag/js?id=G-LCY5SM7M8J'
+  document.head.appendChild(s1)
+  window.dataLayer = window.dataLayer || []
+  function gtag () { dataLayer.push(arguments) }
+  gtag('js', new Date())
+  gtag('config', 'G-LCY5SM7M8J')
+
+  // === Cloud slider init (reusable across Aliyun, Tencent, etc.) ===
+  window.initCloudSlider = function (idMap) {
+    var slider = document.getElementById(idMap.slider)
+    if (!slider) return null
+    var track = document.getElementById(idMap.track)
+    if (!track) return null
+    var slides = track.children
+    var total = slides.length
+    if (!total) return null
+    var current = 0
+    var timer = null
+    var DURATION = 5000
+
+    var dotsContainer = document.getElementById(idMap.dots)
+    for (var i = 0; i < total; i++) {
+      (function (idx) {
+        var dot = document.createElement('button')
+        dot.type = 'button'
+        dot.className = 'cloud-dot'
+        dot.setAttribute('aria-label', '第 ' + (idx + 1) + ' 张')
+        dot.addEventListener('click', function () { goTo(idx); resetTimer() })
+        dotsContainer.appendChild(dot)
+      })(i)
+    }
+    var dots = dotsContainer.children
+
+    function update () {
+      track.style.transform = 'translateX(-' + (current * 100) + '%)'
+      for (var i = 0; i < dots.length; i++) {
+        if (dots[i]) dots[i].classList.toggle('active', i === current)
+      }
+    }
+
+    function goTo (idx) { current = (idx + total) % total; update() }
+    function nextSlide () { goTo(current + 1) }
+    function prevSlide () { goTo(current - 1) }
+
+    function startTimer () { stopTimer(); timer = setInterval(nextSlide, DURATION) }
+    function stopTimer () { if (timer) { clearInterval(timer); timer = null } }
+    function resetTimer () { startTimer() }
+
+    document.getElementById(idMap.next).addEventListener('click', function () { nextSlide(); resetTimer() })
+    document.getElementById(idMap.prev).addEventListener('click', function () { prevSlide(); resetTimer() })
+
+    slider.addEventListener('mouseenter', stopTimer)
+    slider.addEventListener('mouseleave', startTimer)
+
+    // Touch swipe
+    var touchStartX = 0
+    track.addEventListener('touchstart', function (e) { touchStartX = e.changedTouches[0].screenX }, { passive: true })
+    track.addEventListener('touchend', function (e) {
+      var diff = touchStartX - e.changedTouches[0].screenX
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) nextSlide(); else prevSlide()
+        resetTimer()
+      }
+    }, { passive: true })
+
+    return {
+      goTo: goTo,
+      total: total,
+      update: update,
+      startTimer: startTimer,
+      stopTimer: stopTimer
+    }
+  }
+
+  // === EthicalAds — only for non-CN visitors ===
+  window.__countryPromise.then(function (cc) {
+    var adWrapper = document.querySelector('.ethical-ad-wrapper')
+    if (!adWrapper) return
+
+    var adUnit = adWrapper.querySelector('.ethical-ad-unit')
+    if (!adUnit) return
+
+    var BP_MOBILE = 480
+    var BP_WIDE = 1420
+    var currentMode = null
+
+    // Three ad modes:
+    //  'v-image'  → >= 1420px: vertical image ad (corner card)
+    //  'h-image'  → 480px-1419px: horizontal image ad (bottom bar)
+    //  'text'     → < 480px: text ad (bottom bar)
+    function getMode (vw) {
+      if (vw < BP_MOBILE) return 'text'
+      if (vw < BP_WIDE) return 'h-image'
+      return 'v-image'
+    }
+
+    function updateAd () {
+      var vw = window.innerWidth || document.documentElement.clientWidth
+      var mode = getMode(vw)
+
+      // Set the ad type attribute and horizontal class.
+      // reload() re-reads data-ea-type so the correct ad type loads.
+      var newType = (mode === 'text') ? 'text' : 'image'
+      var oldType = adUnit.getAttribute('data-ea-type')
+
+      if (mode === 'h-image') {
+        adUnit.classList.add('horizontal')
+      } else {
+        adUnit.classList.remove('horizontal')
+      }
+
+      // Reload when mode changes (different ad type or layout).
+      // EthicalAds reload() clears the element and re-fetches an ad.
+      if (mode !== currentMode) {
+        currentMode = mode
+        if (newType !== oldType) {
+          adUnit.setAttribute('data-ea-type', newType)
+        }
+        if (window.ethicalads && window.ethicalads.reload) {
+          window.ethicalads.reload()
+        }
+      }
+    }
+
+    // Show the ad container and load EthicalAds script.
+    adWrapper.classList.add('ethical-ad-active')
+    var s = document.createElement('script')
+    s.async = true
+    s.src = 'https://media.ethicalads.io/media/client/ethicalads.min.js'
+    document.body.appendChild(s)
+
+    // Set initial mode before EthicalAds loads.
+    // The initial data-ea-type is already "image"; if we're on mobile,
+    // switch to "text" before the ad script scans the element.
+    var initVw = window.innerWidth || document.documentElement.clientWidth
+    var initMode = getMode(initVw)
+    currentMode = initMode
+    if (initMode === 'text') {
+      adUnit.setAttribute('data-ea-type', 'text')
+    } else if (initMode === 'h-image') {
+      adUnit.classList.add('horizontal')
+    }
+
+    // Re-evaluate on resize (debounced)
+    var adRt = null
+    window.addEventListener('resize', function () {
+      if (adRt) clearTimeout(adRt)
+      adRt = setTimeout(updateAd, 150)
+    })
+  });
+
+  // === Ad spacing: keep the fixed ad bar/card (EthicalAds or Carbon Ads) from covering footer content ===
+  (function () {
+    var wrapper = document.querySelector('.ethical-ad-wrapper, .carbon-ad-wrapper')
+    var footer = document.querySelector('footer.site-footer')
+    if (!wrapper) return
+    var BP = 1420
+    function apply () {
+      var h = wrapper.offsetHeight || 0
+      var vw = window.innerWidth || document.documentElement.clientWidth
+      if (vw < BP) {
+        // < 1420px: full-width fixed bar pinned to viewport bottom.
+        // Reserve space on <body> so the bar never hides the footer.
+        document.body.style.paddingBottom = h + 'px'
+        if (footer) {
+          footer.style.paddingBottom = ''
+          footer.style.setProperty('--watermark-height', '0px')
+          footer.style.setProperty('--watermark-bottom', '0px')
+          footer.style.setProperty('--watermark-bg-size', '0px')
+        }
+      } else {
+        // >= 1420px: corner card fixed 24px above the viewport bottom-right.
+        // Reserve space inside the footer and show watermark in the reserved area.
+        document.body.style.paddingBottom = ''
+        if (footer) {
+          if (h > 0) {
+            var ph = (h + 32) // total extra padding
+            // watermark element takes 60% of padding, centred
+            var wh = Math.round(ph * 0.6)
+            var wb = Math.round((ph - wh) / 2)
+            // logo bg-width ~1.2x of padding height (~42% of watermark el height × 2.88 ratio)
+            var bg = Math.round(ph * 1.2)
+            footer.style.paddingBottom = ph + 'px'
+            footer.style.setProperty('--watermark-height', wh + 'px')
+            footer.style.setProperty('--watermark-bottom', wb + 'px')
+            footer.style.setProperty('--watermark-bg-size', bg + 'px')
+          } else {
+            footer.style.paddingBottom = ''
+            footer.style.setProperty('--watermark-height', '0px')
+            footer.style.setProperty('--watermark-bottom', '0px')
+            footer.style.setProperty('--watermark-bg-size', '0px')
+          }
+        }
+      }
+    }
+    if (window.ResizeObserver) {
+      new ResizeObserver(function () { apply() }).observe(wrapper)
+    }
+    var rt = null
+    window.addEventListener('resize', function () {
+      if (rt) clearTimeout(rt)
+      rt = setTimeout(apply, 100)
+    })
+    apply()
+    // ethicalads loads async; re-measure once creatives likely rendered
+    setTimeout(apply, 1500)
+    setTimeout(apply, 3000)
+  })()
+
+  // === Carbon Ads — only for non-CN visitors ===
+  // Carbon's carbon.js is injected into the container only when the visitor
+  // is outside China, mirroring the EthicalAds gating above.
+  window.__countryPromise.then(function (cc) {
+    var wrapper = document.querySelector('.carbon-ad-wrapper')
+    if (!wrapper) return
+    if (cc === 'CN') return
+    wrapper.classList.add('carbon-ad-active')
+    var s = document.createElement('script')
+    s.async = true
+    s.type = 'text/javascript'
+    s.src = '//cdn.carbonads.com/carbon.js?serve=CWBDE2JL&placement=electermorg&format=responsive'
+    s.id = '_carbonads_js'
+    wrapper.appendChild(s)
+  });
+
+  // === Init all cloud sliders on the page ===
+  (function () {
+    var sections = document.querySelectorAll('.cloud-slider-section')
+    for (var i = 0; i < sections.length; i++) {
+      (function (section) {
+        var provider = section.getAttribute('data-provider') || ''
+        var s = window.initCloudSlider({
+          slider: provider + '-slider',
+          track: provider + '-track',
+          dots: provider + '-dots',
+          prev: provider + '-prev',
+          next: provider + '-next'
+        })
+        if (!s) return
+        s.goTo(Math.floor(Math.random() * s.total))
+      })(sections[i])
+    }
+  })()
+})()

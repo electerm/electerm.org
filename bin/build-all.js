@@ -1,5 +1,6 @@
 import data from './data.js'
 import { buildPug } from './build-bug.js'
+import { jsUrl } from './js-entry.js'
 import { resolve } from 'path'
 import { cwd } from './common.js'
 import fs from 'fs/promises'
@@ -119,6 +120,10 @@ function generateVideoKeywords (video) {
 }
 
 async function main () {
+  // Make the per-page JS entry resolver available to every rendered template
+  // (it reads data/js-manifest.json, written by `npm run build-js`).
+  data.jsUrl = (p) => jsUrl(p, false)
+
   cssFilename = '/index.bundle.css'
   try {
     const assetsPath = resolve(cwd, 'data/assets.json')

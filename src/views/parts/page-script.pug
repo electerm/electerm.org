@@ -1,0 +1,7 @@
+// Emits the <script type="module"> tag for a page's bundled JS entry.
+// jsUrl() resolves to the hashed prod file (from data/js-manifest.json) or the
+// unbundled dev source (/js-src/pages/<page>.js) depending on the build mode.
+mixin pageScript(name)
+  - var _js = jsUrl(name)
+  if _js
+    script(type='module', src=_js)

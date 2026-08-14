@@ -53,8 +53,3 @@ nav.mobile-nav
         span.flag #{item.lang.flag}
         span #{item.lang.name}
 
-script.
-  document.addEventListener('click', function(e) {
-    var dd = document.querySelector('.lang-dropdown');
-    if (dd && !dd.contains(e.target)) dd.classList.remove('open');
-  })

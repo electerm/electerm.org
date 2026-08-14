@@ -41,7 +41,9 @@ footer.site-footer
         a(href='https://html5beta.com/page/timeline.html', target='_blank', rel='noreferrer') #{lang.lang.footerResume}
   .watermark
 
-// 3D electerm logo: lazily swap the hero PNG for an animated, mouse-reactive WebGL model.
+// Importmap for three.js — consumed at runtime by the bundled hero module
+// (src/js/parts/hero-3d-logo.js). Must appear before any module script that
+// imports 'three'.
 script(type='importmap').
   {
     "imports": {
@@ -49,11 +51,4 @@ script(type='importmap').
       "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
     }
   }
-script(type='module').
-  window.addEventListener('DOMContentLoaded', function () {
-    var logo = document.querySelector('.hero-logo')
-    if (!logo) return
-    import('#{host}/js/hero-3d-logo.js')
-      .then(function (mod) { new mod.default(logo, { modelUrl: '#{host}/electerm.glb' }) })
-      .catch(function (err) { console.warn('[hero-3d-logo] init failed, keeping PNG logo', err) })
-  })
+

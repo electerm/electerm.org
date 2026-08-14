@@ -1,6 +1,7 @@
 import logger from 'morgan'
 import { viewPath, env, staticPath, cwd } from './common.js'
 import data from './data.js'
+import { jsUrl } from './js-entry.js'
 import express from 'express'
 import stylus from 'stylus'
 import { readFileSync } from 'fs'
@@ -16,6 +17,9 @@ data.langs = data.langs.map(l => ({
   ...l,
   url: l.slug === '' ? h : h + '/' + l.slug + '/'
 }))
+
+// Make the per-page JS entry resolver available to every rendered template.
+data.jsUrl = (p) => jsUrl(p, true)
 
 // Compile stylus to CSS
 function compileStylus () {
@@ -167,6 +171,18 @@ function createServer () {
   app.get('/faq/:lang/', handleFaq)
 
   app.use(express.static(staticPath))
+  // Serve the unbundled source JS modules in dev (native ESM, no build step).
+  // Never cache these during development so edits are picked up immediately.
+  app.use('/js-src', (req, res, next) => {
+    res.set('Cache-Control', 'no-store')
+    next()
+  })
+  app.use('/js-src', express.static(resolve(cwd, 'src/js')))
+  // Dev CSS is compiled on the fly too — disable caching for it as well.
+  app.use('/index.bundle.css', (req, res, next) => {
+    res.set('Cache-Control', 'no-store')
+    next()
+  })
   app.set('views', viewPath)
   app.set('view engine', 'pug')
 

@@ -7,6 +7,8 @@ echo "copy files"
 npm run cp
 echo "build css"
 npm run build-css
+echo "build js"
+npm run build-js
 echo "build html"
 HOST=https://electerm.org npm run build-html
 echo "build sitemap"

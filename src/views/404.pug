@@ -39,15 +39,5 @@ html(lang=langCode)
             a(href='https://github.com/electerm/electerm/issues/new' target='_blank' rel='noreferrer') Report it on GitHub ↗
     include ./parts/cloud
     include ./parts/footer
-    script.
-      // Auto-redirect to downloads section if URL hash suggests it
-      (function() {
-        var path = window.location.pathname;
-        if (path.includes('download') || path.includes('release')) {
-          document.querySelectorAll('.error-btn-secondary').forEach(function(btn) {
-            if (btn.textContent.includes('Download')) {
-              btn.href = '/#downloads';
-            }
-          });
-        }
-      })();
+    include ./parts/page-script
+    +pageScript('404')
