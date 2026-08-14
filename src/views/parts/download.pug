@@ -6,6 +6,10 @@ section.downloads#downloads
 
     //- Auto-detect OS script
     script.
+      var I18N = {
+        copy: !{JSON.stringify(lang.lang.downloadCopy || 'Copy')},
+        copied: !{JSON.stringify(lang.lang.downloadCopied || 'Copied!')}
+      };
       function detectOS() {
         var p = navigator.platform.toLowerCase();
         var u = navigator.userAgent.toLowerCase();
@@ -87,6 +91,33 @@ section.downloads#downloads
           modal.setAttribute('aria-hidden', 'true');
         }
       }
+      function copyAltCmd(btn) {
+        var item = btn.closest('.alt-install-item');
+        var code = item && item.querySelector('.alt-install-code code');
+        if (!code) return;
+        var text = code.textContent;
+      function done() {
+        var old = btn.textContent;
+        btn.textContent = I18N.copied;
+        setTimeout(function(){ btn.textContent = old; }, 1500);
+      }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function(){ fallbackCopy(text); done(); });
+        } else {
+          fallbackCopy(text);
+          done();
+        }
+      }
+      function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+      }
       document.addEventListener('DOMContentLoaded', function(){
         switchTab(detectOS());
         document.querySelectorAll('.download-tab-btn').forEach(function(b){
@@ -96,6 +127,9 @@ section.downloads#downloads
           bar.querySelectorAll('.arch-btn').forEach(function(b){
             b.addEventListener('click', function(){ switchArch(this, this.getAttribute('data-arch')); });
           });
+        });
+        document.querySelectorAll('.alt-copy').forEach(function(b){
+          b.addEventListener('click', function(){ copyAltCmd(this); });
         });
         // Android QR modal — desktop only
         if (!isAndroidDevice()) {
@@ -132,6 +166,22 @@ section.downloads#downloads
           - if (obj.desc)
             .download-card-desc #{obj.desc}
         +dlLinks(obj)
+
+    //- Alternative install methods (package managers, stores, repos, npm)
+    mixin altInstall(items)
+      .alt-install
+        .alt-install-title #{lang.lang.downloadOtherWays || 'Other ways to install'}
+        .alt-install-list
+          each it in items
+            .alt-install-item
+              .alt-install-name #{lang.lang[it.key] || it.name}
+              .alt-install-body
+                - if (it.cmd)
+                  pre.alt-install-code
+                    code #{it.cmd}
+                  button.alt-copy(type='button', aria-label=lang.lang.downloadCopy || 'Copy') #{lang.lang.downloadCopy || 'Copy'}
+                - if (it.url)
+                  a.alt-install-link(href=it.url, target='_blank', rel='noreferrer') #{it.urlText || it.url}
 
     .download-tabs-bar
       button.download-tab-btn.active(data-tab='windows') Windows
@@ -174,11 +224,21 @@ section.downloads#downloads
             each obj in assets.windows.win7.items
               +dlCard(obj)
 
+      +altInstall([
+        { name: 'Microsoft Store', url: 'https://www.microsoft.com/store/apps/9NCN7272GTFF' },
+        { name: 'npm', cmd: 'npm i -g electerm' }
+      ])
+
     //- macOS
     .download-panel(data-tab='mac')
       .download-grid
         each obj in assets.mac.items
           +dlCard(obj)
+
+      +altInstall([
+        { name: 'Homebrew', cmd: 'brew install --cask electerm' },
+        { name: 'npm', cmd: 'npm i -g electerm' }
+      ])
 
     //- Linux
     .download-panel(data-tab='linux')
@@ -254,6 +314,13 @@ section.downloads#downloads
           - if (assets.linux.loong64_legacy && assets.linux.loong64_legacy.items.length > 0)
             each obj in assets.linux.loong64_legacy.items
               +dlCard(obj)
+
+      +altInstall([
+        { name: 'Snap Store', cmd: 'sudo snap install electerm --classic', url: 'https://snapcraft.io/electerm' },
+        { key: 'downloadRepoApt', name: 'APT repository', cmd: `curl -fsSL https://repos.electerm.org/deb/public.key | sudo gpg --dearmor -o /usr/share/keyrings/electerm.gpg\necho "deb [arch=amd64 signed-by=/usr/share/keyrings/electerm.gpg] https://repos.electerm.org/deb stable main" | sudo tee /etc/apt/sources.list.d/electerm.list\nsudo apt update\nsudo apt install -y electerm`, url: 'https://repos.electerm.org/deb' },
+        { key: 'downloadRepoRpm', name: 'RPM repository', cmd: `sudo rpm --import https://repos.electerm.org/rpm/public.key\nsudo tee /etc/yum.repos.d/electerm.repo <<'EOF'\n[electerm]\nname=Electerm Repository\nbaseurl=https://repos.electerm.org/rpm/\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://repos.electerm.org/rpm/public.key\nEOF\nsudo dnf install -y electerm`, url: 'https://repos.electerm.org/rpm' },
+        { name: 'npm', cmd: 'npm i -g electerm' }
+      ])
 
     //- HarmonyOS
     .download-panel(data-tab='harmony')

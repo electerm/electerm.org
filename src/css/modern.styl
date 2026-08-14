@@ -669,6 +669,104 @@ justify-content space-between
   .download-card-links
     width 100%
 
+/* ===== Alternative install methods (package managers / stores / repos / npm) ===== */
+.alt-install
+  margin-top 28px
+  padding-top 24px
+  border-top 1px dashed var(--color-border)
+
+.alt-install-title
+  display flex
+  align-items center
+  gap 8px
+  font-size 0.95rem
+  font-weight 600
+  color var(--color-text)
+  margin-bottom 16px
+
+.alt-install-title::before
+  content ''
+  width 4px
+  height 16px
+  border-radius 2px
+  background var(--color-primary)
+
+.alt-install-list
+  display grid
+  grid-template-columns 1fr
+  gap 12px
+
+@media (min-width: 640px)
+  .alt-install-list
+    grid-template-columns repeat(2, 1fr)
+
+.alt-install-item
+  display flex
+  flex-direction column
+  gap 10px
+  padding 14px 16px
+  background var(--color-bg)
+  border 1px solid var(--color-border)
+  border-radius var(--radius-md)
+
+.alt-install-name
+  font-size 0.9rem
+  font-weight 600
+  color var(--color-text)
+
+.alt-install-body
+  display flex
+  flex-direction column
+  gap 8px
+
+.alt-install-code
+  margin 0
+  padding 10px 12px
+  background var(--color-bg-alt)
+  border 1px solid var(--color-border-light)
+  border-radius var(--radius-sm)
+  font-size 0.78rem
+  line-height 1.55
+  color var(--color-text)
+  white-space pre-wrap
+  word-break break-all
+  overflow-x auto
+
+.alt-install-code code
+  font-family var(--font-mono, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace)
+
+.alt-copy
+  align-self flex-start
+  padding 5px 12px
+  border 1px solid var(--color-border)
+  border-radius var(--radius-sm)
+  background var(--color-bg)
+  color var(--color-text-secondary)
+  font-size 0.78rem
+  font-weight 500
+  cursor pointer
+  transition all 0.15s
+
+.alt-copy:hover
+  border-color var(--color-primary)
+  color var(--color-primary)
+
+.alt-install-link
+  align-self flex-start
+  padding 7px 14px
+  border 1px solid var(--color-primary)
+  border-radius var(--radius-sm)
+  background transparent
+  color var(--color-primary)
+  font-size 0.82rem
+  font-weight 500
+  text-decoration none
+  transition all 0.2s
+
+.alt-install-link:hover
+  background var(--color-primary)
+  color white
+
 .arch-bar
   display flex
   gap 4px
