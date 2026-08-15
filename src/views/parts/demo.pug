@@ -3,6 +3,12 @@ section.demo-section#demo
     .section-header
       h2 #{lang.lang.demoTitle}
       p #{lang.lang.demoSubtitle}
+    .demo-controls
+      .demo-switch(role='tablist', aria-label='device mode')
+        button.demo-switch-btn.active(type='button', role='tab', aria-selected='true', data-mode='desktop') #{lang.lang.demoModeDesktop}
+        button.demo-switch-btn(type='button', role='tab', aria-selected='false', data-mode='mobile') #{lang.lang.demoModeMobile}
+      a.demo-fullscreen(href='https://demo.electerm.org', target='_blank', rel='noreferrer')
+        | #{lang.lang.demoOpenFull}
     .demo-wrapper
       .demo-toolbar
         .demo-dots
@@ -12,6 +18,4 @@ section.demo-section#demo
         .demo-address
           span 🔒
           span demo.electerm.org
-        a.demo-fullscreen(href='https://demo.electerm.org', target='_blank', rel='noreferrer')
-          | #{lang.lang.demoOpenFull}
       iframe.demo-iframe(src='https://demo.electerm.org', title='electerm live demo', loading='lazy', allow='clipboard-read; clipboard-write', sandbox='allow-scripts allow-same-origin allow-popups allow-forms')

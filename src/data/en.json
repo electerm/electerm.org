@@ -100,6 +100,8 @@
     "demoTitle": "Live Demo",
     "demoSubtitle": "Try electerm directly in your browser — no installation needed",
     "demoOpenFull": "Open full screen ↗",
+    "demoModeDesktop": "Desktop",
+    "demoModeMobile": "Mobile",
     "resourcesTitle": "Resources",
     "resourcesSubtitle": "Everything you need to get started",
     "resourcesOfficial": "Official",

@@ -98,6 +98,8 @@
     "demoTitle": "ライブデモ",
     "demoSubtitle": "ブラウザで直接Electermを試す — インストール不要",
     "demoOpenFull": "全画面で開く ↗",
+    "demoModeDesktop": "デスクトップ",
+    "demoModeMobile": "モバイル",
     "resourcesTitle": "リソース",
     "resourcesSubtitle": "開始に必要なすべて",
     "resourcesOfficial": "公式",

@@ -98,6 +98,8 @@
     "demoTitle": "線上演示",
     "demoSubtitle": "直接在瀏覽器中體驗 Electerm — 無需安裝",
     "demoOpenFull": "全螢幕開啟 ↗",
+    "demoModeDesktop": "桌面端",
+    "demoModeMobile": "行動端",
     "resourcesTitle": "資源",
     "resourcesSubtitle": "開始使用所需的一切",
     "resourcesOfficial": "官方",

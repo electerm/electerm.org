@@ -98,6 +98,8 @@
     "demoTitle": "Demo en vivo",
     "demoSubtitle": "Pruebe Electerm directamente en su navegador — sin instalación necesaria",
     "demoOpenFull": "Abrir en pantalla completa ↗",
+    "demoModeDesktop": "Escritorio",
+    "demoModeMobile": "Móvil",
     "resourcesTitle": "Recursos",
     "resourcesSubtitle": "Todo lo que necesita para empezar",
     "resourcesOfficial": "Oficial",
