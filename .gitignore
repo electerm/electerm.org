@@ -39,3 +39,4 @@ coverage
 /dist
 /AGENTS.md
 .workbuddy
+.img2threejs
