@@ -1,0 +1,145 @@
+{
+  "version": "v1.37.110",
+  "date": "2024-01-03",
+  "body": "### Bug fixes/UI\n\n- #3222 fix window not show issue when start[windows OS]\n- #3224 Fix sftp width issue\n\n### Other updates\n\n- Experimental: Add new download cdn\n- Fix test build script in readme\n- #3226 add Linux AppImage build (#3227)",
+  "assets": [
+    {
+      "name": "electerm-1.37.110-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-aarch64.rpm",
+      "size": 64951172,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.110-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-amd64.deb",
+      "size": 68703824,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-amd64.snap",
+      "size": 83783680,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-arm64.AppImage",
+      "size": 98745271,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-arm64.deb",
+      "size": 64849590,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-arm64.tar.gz",
+      "size": 93525438,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.110-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-armv7l.AppImage",
+      "size": 86905640,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-armv7l.deb",
+      "size": 62751236,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-armv7l.rpm",
+      "size": 62666000,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.110-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-armv7l.tar.gz",
+      "size": 83570281,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.110-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-x64.tar.gz",
+      "size": 92945856,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.110-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-x86_64.AppImage",
+      "size": 97830303,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-linux-x86_64.rpm",
+      "size": 68830704,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.110-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-mac-arm64.dmg",
+      "size": 97374881,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-mac-arm64.dmg.blockmap",
+      "size": 104064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-mac-x64.dmg",
+      "size": 102627855,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-mac-x64.dmg.blockmap",
+      "size": 107445,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-win-x64-installer.exe",
+      "size": 72577319,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-win-x64-installer.exe.blockmap",
+      "size": 76116,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-win-x64-loose.tar.gz",
+      "size": 98144187,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.110-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-win-x64-portable.tar.gz",
+      "size": 98388201,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.110-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-win-x64.appx",
+      "size": 114393729,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.110-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.110/electerm-1.37.110-win-x64.tar.gz",
+      "size": 98388445,
+      "type": "application/gzip"
+    }
+  ]
+}

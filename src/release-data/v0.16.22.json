@@ -1,0 +1,37 @@
+{
+  "version": "v0.16.22",
+  "date": "2018-02-25",
+  "body": "- fix #325 fix #318 fix file transfer path bug (#326)\n- fix #323 fix edit file name press enter may not work (#324)\n- fix #119 support install from npm (#313)",
+  "assets": [
+    {
+      "name": "electerm-0.16.22-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.22/electerm-0.16.22-linux-amd64.deb",
+      "size": 37059166,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.22-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.22/electerm-0.16.22-linux-x86_64.rpm",
+      "size": 53689580,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.16.22-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.22/electerm-0.16.22-mac.dmg",
+      "size": 51348112,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.22-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.22/electerm-0.16.22-win.tar.gz",
+      "size": 55946982,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.16.22.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.22/electerm-0.16.22.tar.gz",
+      "size": 51704466,
+      "type": "application/gzip"
+    }
+  ]
+}

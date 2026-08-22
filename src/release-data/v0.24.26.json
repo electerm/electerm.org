@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.26",
+  "date": "2018-09-30",
+  "body": "- fix #773 fix tab drag problem (#774)",
+  "assets": [
+    {
+      "name": "electerm-0.24.26-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.26/electerm-0.24.26-linux-amd64.deb",
+      "size": 36239714,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.26-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.26/electerm-0.24.26-linux-x86_64.rpm",
+      "size": 36380661,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.26-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.26/electerm-0.24.26-mac.dmg",
+      "size": 52227149,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.26-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.26/electerm-0.24.26-win.tar.gz",
+      "size": 51474734,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.26.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.26/electerm-0.24.26.tar.gz",
+      "size": 49150765,
+      "type": "application/gzip"
+    }
+  ]
+}

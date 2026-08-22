@@ -1,0 +1,37 @@
+{
+  "version": "v0.21.10",
+  "date": "2018-05-25",
+  "body": "- fix #476 fix terminal resize (#478)\n- fix #475 name fix, ssh -> terminal (#477)\n- fix #472 fix keyboard shortcut in local file manager (#474)\n- fix #444 fix quick connect autofocus (#473)",
+  "assets": [
+    {
+      "name": "electerm-0.21.10-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.10/electerm-0.21.10-linux-amd64.deb",
+      "size": 36122912,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.21.10-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.10/electerm-0.21.10-linux-x86_64.rpm",
+      "size": 36272009,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.21.10-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.10/electerm-0.21.10-mac.dmg",
+      "size": 52018321,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.21.10-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.10/electerm-0.21.10-win.tar.gz",
+      "size": 51341070,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.21.10.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.10/electerm-0.21.10.tar.gz",
+      "size": 48988283,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "version": "v1.38.65",
+  "date": "2024-04-09",
+  "body": "### Bug fix release\n\n- #3344 Fix symbolic link resolve\n- #3345 Fix sz/rz sometimes not working issue\n- #3348 Fix quick command show in sftp mode\n- #3346 Fix quick commands crash issue",
+  "assets": [
+    {
+      "name": "electerm-1.38.65-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-aarch64.rpm",
+      "size": 64956208,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.65-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-amd64.deb",
+      "size": 68699688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-amd64.snap",
+      "size": 83775488,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-arm64.AppImage",
+      "size": 98741114,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-arm64.deb",
+      "size": 64727330,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-arm64.tar.gz",
+      "size": 93524922,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.65-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-armv7l.AppImage",
+      "size": 86901398,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-armv7l.deb",
+      "size": 62661920,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-armv7l.rpm",
+      "size": 62664336,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.65-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-armv7l.tar.gz",
+      "size": 83568935,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.65-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-x64.tar.gz",
+      "size": 92945452,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.65-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-x86_64.AppImage",
+      "size": 97825993,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-linux-x86_64.rpm",
+      "size": 68849044,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.65-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-mac-arm64.dmg",
+      "size": 97384314,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-mac-arm64.dmg.blockmap",
+      "size": 103109,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-mac-x64.dmg",
+      "size": 102639711,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-mac-x64.dmg.blockmap",
+      "size": 106684,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-win-x64-installer.exe",
+      "size": 72604647,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-win-x64-installer.exe.blockmap",
+      "size": 76127,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-win-x64-loose.tar.gz",
+      "size": 98153936,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.65-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-win-x64-portable.tar.gz",
+      "size": 98399977,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.65-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-win-x64.appx",
+      "size": 114413085,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.65-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.65/electerm-1.38.65-win-x64.tar.gz",
+      "size": 98399809,
+      "type": "application/gzip"
+    }
+  ]
+}

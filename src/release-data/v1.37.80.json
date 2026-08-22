@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.80",
+  "date": "2023-12-21",
+  "body": "### New features/UI\n\n- #3181 Terminal search match from bottom\n- UI: new file list sorting UI\n- #3159 Support backspace in some old device\n- UI: use a different add icon\n\n### Bug fixes\n\n- fix shortcut support in windows\n- Improve exit cmd check in terminal\n- #3180 fix exit cmd support in windows, support logout in linux/mac\n- Fix transfer history size prop\n\n### Other updates\n\n- Update ssh2 version (#3183)\n- Remove load history function, seems useless",
+  "assets": [
+    {
+      "name": "electerm-1.37.80-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-linux-amd64.deb",
+      "size": 67396234,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.80-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-linux-amd64.snap",
+      "size": 82309120,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.80-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-linux-x64.tar.gz",
+      "size": 91502612,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.80-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-linux-x86_64.rpm",
+      "size": 67536172,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.80-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-mac-arm64.dmg",
+      "size": 95956369,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.80-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-mac-x64.dmg",
+      "size": 101172840,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.80-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-win-x64-installer.exe",
+      "size": 71274255,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.80-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-win-x64-loose.tar.gz",
+      "size": 96697273,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.80-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-win-x64-portable.tar.gz",
+      "size": 96945335,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.80-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-win-x64.appx",
+      "size": 112945692,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.80-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.80/electerm-1.37.80-win-x64.tar.gz",
+      "size": 96945194,
+      "type": "application/gzip"
+    }
+  ]
+}

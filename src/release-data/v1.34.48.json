@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.48",
+  "date": "2023-11-07",
+  "body": "### Quick bug fix release\n\n- fix #3071 Fix split terminal not showing issue",
+  "assets": [
+    {
+      "name": "electerm-1.34.48-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-linux-amd64.deb",
+      "size": 73216646,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.48-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-linux-amd64.snap",
+      "size": 88932352,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.48-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-linux-x64.tar.gz",
+      "size": 99228636,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.48-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-linux-x86_64.rpm",
+      "size": 72894400,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.48-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-mac-arm64.dmg",
+      "size": 95494197,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.48-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-mac-x64.dmg",
+      "size": 100724171,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.48-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-win-x64-installer.exe",
+      "size": 76124056,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.48-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-win-x64-loose.tar.gz",
+      "size": 103851616,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.48-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-win-x64-portable.tar.gz",
+      "size": 104075432,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.48-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-win-x64.appx",
+      "size": 111697998,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.48-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.48/electerm-1.34.48-win-x64.tar.gz",
+      "size": 104075743,
+      "type": "application/gzip"
+    }
+  ]
+}

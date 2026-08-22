@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.57",
+  "date": "2022-05-12",
+  "body": "### Bug fixes\n\n- Fix duplicate tab function\n- Fix close quick command function, would stop pinned state\n- Fix sortable table UI in terminal info panel\n- Fix terminal info panel table sort\n- Fix close terminal reopen issue\n\n### New features\n\n- Remember sftp sort prop and order\n- After download upgrade, open downloaded file in folder for linux and windows\n- When only one tab, remove close button\n\n### Other updates\n\n- Add German language file by @Hope-IT-Works\n- Upgrade trzsz.js to v0.3.4 (#2493) by @lonnywong\n- Auto submit PR for winget when new release published by @vedantmgoyal2009\n- Show dev dependencies in app deps list\n\n",
+  "assets": [
+    {
+      "name": "electerm-1.21.57-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-linux-amd64.deb",
+      "size": 62974058,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.57-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-linux-amd64.snap",
+      "size": 77524992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.57-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-linux-x64.tar.gz",
+      "size": 85816025,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.57-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-linux-x86_64.rpm",
+      "size": 63106624,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.57-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-mac-arm64.dmg",
+      "size": 90391797,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.57-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-mac-x64.dmg",
+      "size": 89647137,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.57-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-win-x64-installer.exe",
+      "size": 67825061,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.57-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-win-x64-loose.tar.gz",
+      "size": 91955460,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.57-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-win-x64.appx",
+      "size": 99128360,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.57-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.57/electerm-1.21.57-win-x64.tar.gz",
+      "size": 92695963,
+      "type": "application/gzip"
+    }
+  ]
+}

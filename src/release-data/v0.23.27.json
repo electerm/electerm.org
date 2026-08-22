@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.27",
+  "date": "2018-08-03",
+  "body": "- fix #637 fix folder transfer (#638)\n- fix #623 add proxy related translation (#635)",
+  "assets": [
+    {
+      "name": "electerm-0.23.27-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.27/electerm-0.23.27-linux-amd64.deb",
+      "size": 36171406,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.27-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.27/electerm-0.23.27-linux-x86_64.rpm",
+      "size": 36320321,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.27-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.27/electerm-0.23.27-mac.dmg",
+      "size": 52096090,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.27-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.27/electerm-0.23.27-win.tar.gz",
+      "size": 51404582,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.27.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.27/electerm-0.23.27.tar.gz",
+      "size": 49054704,
+      "type": "application/gzip"
+    }
+  ]
+}

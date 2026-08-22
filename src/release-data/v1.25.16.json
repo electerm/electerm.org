@@ -1,0 +1,67 @@
+{
+  "version": "v1.25.16",
+  "date": "2023-02-27",
+  "body": "### Bug fixes\n\n- fix download upgrade button, use sourceforge download mirror when github mirror fails\n\n### Other updates\n\n- UI: update upgrade panel UI, add sourceforge mirror link\n- Some code refractor, improve performance\n",
+  "assets": [
+    {
+      "name": "electerm-1.25.16-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-linux-amd64.deb",
+      "size": 63460134,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.16-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-linux-amd64.snap",
+      "size": 78532608,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.16-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-linux-x64.tar.gz",
+      "size": 86942256,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.16-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-linux-x86_64.rpm",
+      "size": 63748484,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.25.16-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-mac-arm64.dmg",
+      "size": 91390247,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.16-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-mac-x64.dmg",
+      "size": 91235573,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.16-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-win-x64-installer.exe",
+      "size": 68427480,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.16-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-win-x64-loose.tar.gz",
+      "size": 93470051,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.16-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-win-x64.appx",
+      "size": 100313566,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.16-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.16/electerm-1.25.16-win-x64.tar.gz",
+      "size": 93808686,
+      "type": "application/gzip"
+    }
+  ]
+}

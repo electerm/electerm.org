@@ -1,0 +1,241 @@
+{
+  "version": "v2.3.65",
+  "date": "2025-10-13",
+  "body": "### Updates\n\n- Update electron -> v38.2.2, resolve high GPU use issue in Mac OS 26\n\n-----\n\n### 更新\n\n- 更新 electron 到 v38.2.2，解决GPU占用问题(Mac OS ARM)\n\nDownload: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-2.3.65-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-aarch64-legacy.rpm",
+      "size": 60774640,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.65-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-aarch64.rpm",
+      "size": 60888813,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.65-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-amd64-legacy.deb",
+      "size": 72508016,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-amd64.deb",
+      "size": 85652304,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-amd64.snap",
+      "size": 92893184,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-arm64-legacy.AppImage",
+      "size": 92344978,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-arm64-legacy.deb",
+      "size": 68380648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-arm64-legacy.tar.gz",
+      "size": 87510253,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-arm64.AppImage",
+      "size": 92631905,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-arm64.deb",
+      "size": 68558888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-arm64.tar.gz",
+      "size": 87778040,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l-legacy.AppImage",
+      "size": 80552358,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l-legacy.deb",
+      "size": 64702064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l-legacy.rpm",
+      "size": 58455516,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l-legacy.tar.gz",
+      "size": 77577908,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l.AppImage",
+      "size": 80839243,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l.deb",
+      "size": 64881004,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l.rpm",
+      "size": 58589465,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.65-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-armv7l.tar.gz",
+      "size": 77847030,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-x64-legacy.tar.gz",
+      "size": 87152576,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-x64.tar.gz",
+      "size": 104033844,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-x86_64-legacy.AppImage",
+      "size": 91695945,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-x86_64-legacy.rpm",
+      "size": 64694756,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.65-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-x86_64.AppImage",
+      "size": 109642683,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-linux-x86_64.rpm",
+      "size": 76396005,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.65-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-mac-arm64.dmg",
+      "size": 103176316,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-mac-arm64.dmg.blockmap",
+      "size": 109473,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-mac-x64.dmg",
+      "size": 104969415,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-mac-x64.dmg.blockmap",
+      "size": 111095,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-arm64-installer.exe",
+      "size": 88367877,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-arm64-installer.exe.blockmap",
+      "size": 93186,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-arm64.tar.gz",
+      "size": 118151737,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-x64-installer.exe",
+      "size": 87260311,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-x64-installer.exe.blockmap",
+      "size": 91120,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-x64-loose.tar.gz",
+      "size": 118816224,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-x64-portable.tar.gz",
+      "size": 118850523,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-x64.appx",
+      "size": 139517656,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.65-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win-x64.tar.gz",
+      "size": 118850096,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.65-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.65/electerm-2.3.65-win7.tar.gz",
+      "size": 95154207,
+      "type": "application/gzip"
+    }
+  ]
+}

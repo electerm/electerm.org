@@ -1,0 +1,67 @@
+{
+  "version": "v1.22.8",
+  "date": "2022-07-25",
+  "body": "### Bug fixes:\n\n- fix #2578 Fix data sync function\n\n### Other updates\n\n- test: Add data sync test\n- Improve load speed and fix locale init function (#2576)\n",
+  "assets": [
+    {
+      "name": "electerm-1.22.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-linux-amd64.deb",
+      "size": 63023350,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-linux-amd64.snap",
+      "size": 77991936,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-linux-x64.tar.gz",
+      "size": 86342934,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-linux-x86_64.rpm",
+      "size": 63241564,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.22.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-mac-arm64.dmg",
+      "size": 91057718,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.8-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-mac-x64.dmg",
+      "size": 90296782,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.8-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-win-x64-installer.exe",
+      "size": 68074805,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.8-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-win-x64-loose.tar.gz",
+      "size": 92453915,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.8-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-win-x64.appx",
+      "size": 99703238,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.8/electerm-1.22.8-win-x64.tar.gz",
+      "size": 93217420,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.88",
+  "date": "2023-12-25",
+  "body": "### New feature\n\n- ***Experimental*** Support sync sftp path with terminal (#3190)\n\n### Bug fixes\n\n- #3186 Fix stuck in fullscreen issue in Linux\n- #3189 Fix keepaliveInterval reset\n- #3187 UI: Fix some tooltip overflow",
+  "assets": [
+    {
+      "name": "electerm-1.37.88-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-linux-amd64.deb",
+      "size": 67393060,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.88-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-linux-amd64.snap",
+      "size": 82321408,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.88-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-linux-x64.tar.gz",
+      "size": 91504402,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.88-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-linux-x86_64.rpm",
+      "size": 67547860,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.88-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-mac-arm64.dmg",
+      "size": 95952796,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.88-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-mac-x64.dmg",
+      "size": 101171579,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.88-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-win-x64-installer.exe",
+      "size": 71276540,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.88-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-win-x64-loose.tar.gz",
+      "size": 96698690,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.88-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-win-x64-portable.tar.gz",
+      "size": 96946693,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.88-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-win-x64.appx",
+      "size": 112949039,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.88-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.88/electerm-1.37.88-win-x64.tar.gz",
+      "size": 96946290,
+      "type": "application/gzip"
+    }
+  ]
+}

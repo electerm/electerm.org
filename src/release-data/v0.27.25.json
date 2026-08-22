@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.25",
+  "date": "2019-05-13",
+  "body": "- fix #1272 [bug fix] Fix build script (#1273)\n- fix #1270 [bug fix] Fix file transfer auto start (#1271)\n- fix #1242 Fix local/remote copy/cut (#1268)\n\n",
+  "assets": [
+    {
+      "name": "electerm-0.27.25-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.25/electerm-0.27.25-linux-amd64.deb",
+      "size": 52704954,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.25-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.25/electerm-0.27.25-linux-amd64.snap",
+      "size": 130703360,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.25-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.25/electerm-0.27.25-linux-x64.tar.gz",
+      "size": 75425689,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.25-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.25/electerm-0.27.25-linux-x86_64.rpm",
+      "size": 52563682,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.25-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.25/electerm-0.27.25-mac.dmg",
+      "size": 59012553,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.25-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.25/electerm-0.27.25-win-x64.tar.gz",
+      "size": 59365349,
+      "type": "application/gzip"
+    }
+  ]
+}

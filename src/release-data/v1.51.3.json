@@ -1,0 +1,151 @@
+{
+  "version": "v1.51.3",
+  "date": "2024-12-20",
+  "body": "### Bug fix release\n\n- Fix terminal info open issue\n- Fix tabs scroll not working\n- #3721 Fix terminal background image filter\n affected the terminal content issue\n\n-----\n\n### Bug 修复发布\n\n- 修复终端信息打开问题\n- 修复标签滚动不起作用的问题\n- #3721 修复终端背景图像过滤器影响终端内容的问题",
+  "assets": [
+    {
+      "name": "electerm-1.51.3-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-aarch64.rpm",
+      "size": 66076472,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-amd64.deb",
+      "size": 70232920,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-amd64.snap",
+      "size": 87535616,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-arm64.AppImage",
+      "size": 102492461,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-arm64.deb",
+      "size": 65858170,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-arm64.tar.gz",
+      "size": 96935036,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.3-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-armv7l.AppImage",
+      "size": 90616971,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-armv7l.deb",
+      "size": 63840892,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-armv7l.rpm",
+      "size": 63771816,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.3-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-armv7l.tar.gz",
+      "size": 86979639,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-x64.tar.gz",
+      "size": 97074840,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.3-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-x86_64.AppImage",
+      "size": 102348470,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-linux-x86_64.rpm",
+      "size": 70383504,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.3-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-mac-arm64.dmg",
+      "size": 100871054,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-mac-arm64.dmg.blockmap",
+      "size": 106518,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-mac-x64.dmg",
+      "size": 106840602,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-mac-x64.dmg.blockmap",
+      "size": 112221,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-win-x64-installer.exe",
+      "size": 75002885,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-win-x64-installer.exe.blockmap",
+      "size": 78981,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-win-x64-loose.tar.gz",
+      "size": 101909727,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.3-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-win-x64-portable.tar.gz",
+      "size": 102603380,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.3-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-win-x64.appx",
+      "size": 119171296,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-win-x64.tar.gz",
+      "size": 102603073,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.3-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.3/electerm-1.51.3-win7.tar.gz",
+      "size": 98651096,
+      "type": "application/gzip"
+    }
+  ]
+}

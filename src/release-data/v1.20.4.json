@@ -1,0 +1,67 @@
+{
+  "version": "v1.20.4",
+  "date": "2022-03-28",
+  "body": "## Bug fixes\n\n- fix #2408 Fix privacy notice link\n- fix #2410 Trim hostname (#2411)\n\n## New features\n\n- Support terminal cursor style setting\n\n## Performance\n\n- Refractor file transfer, always compress folder and transfer\n- Improve session performance, do not render sftp components when invisible\n- Improve tabs control performance\n\nWill continue improve performance in future releases.\n\n## UI\n\n- Use same icon as in file list when open file info modal\n- Better release note format\n- New file transfer UI\n\n## Other updates\n\n- Improve npm publish process\n- Upgrade trzsz to 0.3.2, improve tmux pane progress bar. (by @lonnywong)\n\nCheck https://github.com/electerm/electerm/wiki/Know-issues for more known issues\n",
+  "assets": [
+    {
+      "name": "electerm-1.20.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-linux-amd64.deb",
+      "size": 59235108,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.4-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-linux-amd64.snap",
+      "size": 73707520,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.4-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-linux-x64.tar.gz",
+      "size": 82154241,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.20.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-linux-x86_64.rpm",
+      "size": 60263856,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.20.4-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-mac-arm64.dmg",
+      "size": 88843871,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.4-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-mac-x64.dmg",
+      "size": 87507251,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.4-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-win-x64-installer.exe",
+      "size": 64256372,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.4-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-win-x64-loose.tar.gz",
+      "size": 87492772,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.20.4-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-win-x64.appx",
+      "size": 94128911,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.4-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.4/electerm-1.20.4-win-x64.tar.gz",
+      "size": 88082747,
+      "type": "application/gzip"
+    }
+  ]
+}

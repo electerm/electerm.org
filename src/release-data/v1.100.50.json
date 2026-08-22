@@ -1,0 +1,151 @@
+{
+  "version": "v1.100.50",
+  "date": "2025-08-12",
+  "body": "## Bug fixes\n\n- #4021 Fix drop file to sftp issue\n- #4016 Fix drag file to terminal function\n\n## Other updates\n\n- Use 127.0.0.1 instead of localhost to avoid some issue when use VPN\n\n-----\n\n## 修复问题\n\n- #4021 修复拖拽文件到 sftp 的问题\n- #4016 修复拖拽文件到终端的功能\n\n## 其他更新\n\n- 使用 127.0.0.1 替代 localhost, 解决开启VPN时候导致的某些问题",
+  "assets": [
+    {
+      "name": "electerm-1.100.50-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-aarch64.rpm",
+      "size": 69756853,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.100.50-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-amd64.deb",
+      "size": 73996412,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-amd64.snap",
+      "size": 92655616,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-arm64.AppImage",
+      "size": 108578333,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-arm64.deb",
+      "size": 69518266,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-arm64.tar.gz",
+      "size": 102795028,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.50-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-armv7l.AppImage",
+      "size": 96288912,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-armv7l.deb",
+      "size": 67652306,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-armv7l.rpm",
+      "size": 67825937,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.100.50-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-armv7l.tar.gz",
+      "size": 92555538,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.50-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-x64.tar.gz",
+      "size": 102738803,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.50-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-x86_64.AppImage",
+      "size": 108239650,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-linux-x86_64.rpm",
+      "size": 74374817,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.100.50-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-mac-arm64.dmg",
+      "size": 107754027,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-mac-arm64.dmg.blockmap",
+      "size": 113648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-mac-x64.dmg",
+      "size": 113651279,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-mac-x64.dmg.blockmap",
+      "size": 119116,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-win-x64-installer.exe",
+      "size": 82432469,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-win-x64-installer.exe.blockmap",
+      "size": 87714,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-win-x64-loose.tar.gz",
+      "size": 112852992,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.50-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-win-x64-portable.tar.gz",
+      "size": 112922306,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.50-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-win-x64.appx",
+      "size": 132003960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.50-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-win-x64.tar.gz",
+      "size": 112921989,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.50-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.50/electerm-1.100.50-win7.tar.gz",
+      "size": 100205140,
+      "type": "application/gzip"
+    }
+  ]
+}

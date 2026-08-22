@@ -1,0 +1,37 @@
+{
+  "version": "v0.26.23",
+  "date": "2019-01-20",
+  "body": "- fix #1088 Fix upgrade progress (#1089)",
+  "assets": [
+    {
+      "name": "electerm-0.26.23-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.23/electerm-0.26.23-linux-amd64.deb",
+      "size": 38225804,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.23-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.23/electerm-0.26.23-linux-x64.tar.gz",
+      "size": 52237852,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.23-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.23/electerm-0.26.23-linux-x86_64.rpm",
+      "size": 38253094,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.23-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.23/electerm-0.26.23-mac.dmg",
+      "size": 53889441,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.23-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.23/electerm-0.26.23-win-x64.tar.gz",
+      "size": 54195010,
+      "type": "application/gzip"
+    }
+  ]
+}

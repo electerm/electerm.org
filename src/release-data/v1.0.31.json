@@ -1,0 +1,43 @@
+{
+  "version": "v1.0.31",
+  "date": "2020-02-28",
+  "body": "- fix #1576 [UI] Highlight active split terminal (#1577)\n- fix #1572 [feat] Support quick command list content search (#1574)\n- fix #1563 [UI] Add more padding to terminal (#1564)",
+  "assets": [
+    {
+      "name": "electerm-1.0.31-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.31/electerm-1.0.31-linux-amd64.deb",
+      "size": 50876848,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.31-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.31/electerm-1.0.31-linux-amd64.snap",
+      "size": 62132224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.31-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.31/electerm-1.0.31-linux-x64.tar.gz",
+      "size": 70223904,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.0.31-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.31/electerm-1.0.31-linux-x86_64.rpm",
+      "size": 50536932,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.0.31-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.31/electerm-1.0.31-mac.dmg",
+      "size": 68158315,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.31-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.31/electerm-1.0.31-win-x64.tar.gz",
+      "size": 65299387,
+      "type": "application/gzip"
+    }
+  ]
+}

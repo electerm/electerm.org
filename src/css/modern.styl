@@ -647,6 +647,12 @@ justify-content space-between
   text-align center
   margin-top 32px
 
+.download-more-links
+  display inline-flex
+  flex-wrap wrap
+  justify-content center
+  gap 12px
+
 .download-more a
   display inline-flex
   align-items center
@@ -2460,3 +2466,99 @@ justify-content space-between
     margin 0
     background transparent
     box-shadow none
+
+// ===== Release pages (historical download archive) =====
+.release-detail, .releases-list
+  padding 64px 0
+  .container
+    max-width 880px
+  h1
+    font-size 2rem
+    margin-bottom 8px
+  .release-meta
+    display flex
+    align-items center
+    gap 12px
+    color var(--color-text-secondary)
+    font-size 0.9rem
+    margin-bottom 24px
+  .release-breadcrumb
+    font-size 0.85rem
+    color var(--color-text-secondary)
+    margin-bottom 16px
+    a
+      color var(--color-primary)
+    .sep
+      margin 0 6px
+      color var(--color-border)
+    .current
+      color var(--color-text)
+  .release-badge
+    background var(--color-primary)
+    color #fff
+    padding 2px 8px
+    border-radius var(--radius-sm)
+    font-size 0.75rem
+  .release-notes
+    background var(--color-bg-alt)
+    border 1px solid var(--color-border)
+    border-radius var(--radius-md)
+    padding 20px 24px
+    overflow-x auto
+    line-height 1.7
+    margin-bottom 32px
+    h1, h2, h3
+      margin 16px 0 8px
+      line-height 1.3
+    ul, ol
+      padding-left 20px
+      margin 8px 0
+    code
+      background rgba(127,127,127,0.15)
+      padding 1px 4px
+      border-radius 4px
+    a
+      color var(--color-primary)
+    hr
+      margin 28px 0
+      border none
+      border-top 1px solid var(--color-border)
+  .release-downloads
+    h2
+      font-size 1.25rem
+      margin-bottom 16px
+  .release-back
+    margin-top 28px
+    a
+      color var(--color-primary)
+  .releases-intro
+    color var(--color-text-secondary)
+    margin-bottom 24px
+  .release-year
+    margin-bottom 24px
+    h2
+      font-size 1.4rem
+      border-bottom 1px solid var(--color-border)
+      padding-bottom 8px
+      margin-bottom 12px
+    .release-year-list
+      list-style none
+      padding 0
+      columns 2
+      column-gap 24px
+      li
+        break-inside avoid
+        display flex
+        justify-content space-between
+        gap 12px
+        padding 6px 0
+        a
+          color var(--color-primary)
+        .release-year-date
+          color var(--color-text-secondary)
+          font-size 0.85rem
+          white-space nowrap
+  .release-back
+    margin-top 28px
+    a
+      color var(--color-primary)

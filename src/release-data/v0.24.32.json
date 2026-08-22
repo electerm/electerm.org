@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.32",
+  "date": "2018-10-04",
+  "body": "- fix #781 add rightClickSelectsWord option (#786)\n- fix #782 [UI]better tab close icon (#785)\n- fix #783 [UI]fix hide/show hidden file icon (#784)\n- fix #776 remove some unused log output (#778)",
+  "assets": [
+    {
+      "name": "electerm-0.24.32-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.32/electerm-0.24.32-linux-amd64.deb",
+      "size": 36236688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.32-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.32/electerm-0.24.32-linux-x86_64.rpm",
+      "size": 36388989,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.32-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.32/electerm-0.24.32-mac.dmg",
+      "size": 52226791,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.32-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.32/electerm-0.24.32-win.tar.gz",
+      "size": 51473801,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.32.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.32/electerm-0.24.32.tar.gz",
+      "size": 49151716,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.53",
+  "date": "2019-08-22",
+  "body": "fix #1323 [fix] Fix paste behavior in address input ",
+  "assets": [
+    {
+      "name": "electerm-0.27.53-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.53/electerm-0.27.53-linux-amd64.deb",
+      "size": 46740108,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.53-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.53/electerm-0.27.53-linux-amd64.snap",
+      "size": 57229312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.53-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.53/electerm-0.27.53-linux-x64.tar.gz",
+      "size": 64829686,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.53-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.53/electerm-0.27.53-linux-x86_64.rpm",
+      "size": 46571528,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.53-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.53/electerm-0.27.53-mac.dmg",
+      "size": 63054388,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.53-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.53/electerm-0.27.53-win-x64.tar.gz",
+      "size": 62114751,
+      "type": "application/gzip"
+    }
+  ]
+}

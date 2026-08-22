@@ -1,0 +1,37 @@
+{
+  "version": "v0.20.6",
+  "date": "2018-05-18",
+  "body": "- fix #440 set theme from terminal context menu (#441)\n- fix #436 terminal theme support (#439)\n- fix #431 add shortcut desc to terminal context menu (#435)\n- fix #432 add copy/paste keyboard shortcuts of terminal (#434)\n- fix #429 fix parallel test in 2 os (#430)",
+  "assets": [
+    {
+      "name": "electerm-0.20.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.6/electerm-0.20.6-linux-amd64.deb",
+      "size": 34811794,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.20.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.6/electerm-0.20.6-linux-x86_64.rpm",
+      "size": 34773229,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.20.6-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.6/electerm-0.20.6-mac.dmg",
+      "size": 50515689,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.20.6-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.6/electerm-0.20.6-win.tar.gz",
+      "size": 50667019,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.20.6.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.6/electerm-0.20.6.tar.gz",
+      "size": 47411430,
+      "type": "application/gzip"
+    }
+  ]
+}

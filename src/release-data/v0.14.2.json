@@ -1,0 +1,37 @@
+{
+  "version": "v0.14.2",
+  "date": "2018-01-15",
+  "body": "- fix #249 fix can not start in mac (#250)\n- fix #242 remove reload icon and locale fix (#248)\n- fix #241 support F5 refresh sftp (#247)\n- fix #240 fix multi-language missings (#245)\n- fix #243 restore dev-tool to help menu (#244)",
+  "assets": [
+    {
+      "name": "electerm-0.14.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.2/electerm-0.14.2-linux-amd64.deb",
+      "size": 37145652,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.2/electerm-0.14.2-linux-x86_64.rpm",
+      "size": 53887521,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.14.2-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.2/electerm-0.14.2-mac.dmg",
+      "size": 51527791,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.2-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.2/electerm-0.14.2-win.tar.gz",
+      "size": 55277268,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.14.2.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.2/electerm-0.14.2.tar.gz",
+      "size": 51887753,
+      "type": "application/gzip"
+    }
+  ]
+}

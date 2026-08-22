@@ -1,0 +1,253 @@
+{
+  "version": "v3.3.8",
+  "date": "2026-04-16",
+  "body": "### New features/UI/Updates\n\n- Widget: Add batch operation widget, remove old batch op (#4285)\n- #4288 Support key up/down to select bookmark in bookmark tree, support press enter to open selected bookmark\n- Support ESC to close bookmark search panel\n- Improve bookmark search: hide no match categories\n- Update nedb version, support latest nodejs/electron\n- Check update every hour instead of only on app start\n- Support auto sync time interval and direction(download/upload)\n- #4281 Improve add button dropdown auto focus speed\n- Use vite 8\n- Support `npm i -g electerm` to deploy electerm binary and run electerm command in all OS (#4287)\n\n### Bug fixes\n\n- #4283 Fix terminal log format\n- UI: Fix notification z-index\n- #4286 Fix conflict modal' time format error\n- Fix npm install security issue\n- #4284 Fix ssh failed session cause memory leak issue\n- Fix bookmark search auto focus issue\n- #4282 Fix refresh sftp address trigger show address history dropdown issue\n- Fix click keyword can not trigger normal click function issue in bookmark tree\n- Fix keyword search in bookmark tree\n- Fix error message for web app\n\n-----\n\n### 新功能/界面/更新\n\n- 组件：添加批量操作组件，移除旧的批量操作 (#4285)\n- #4288 支持上/下键在书签树中选择书签，支持回车打开选中的书签\n- 支持 ESC 关闭书签搜索面板\n- 优化书签搜索：隐藏无匹配项的分类\n- 更新 nedb 版本，支持最新的 nodejs/electron\n- 每小时检查更新，而不是仅在应用启动时检查\n- 支持自动同步时间间隔和方向（下载/上传）\n- #4281 优化添加按钮下拉菜单的自动聚焦速度\n- 使用 vite 8\n- 支持 `npm i -g electerm` 在所有操作系统上部署 electerm 二进制文件并运行 electerm 命令 (#4287)\n\n### Bug 修复\n\n- #4283 修复终端格式\n- 界面：修复通知框 z-index 问题\n- #4286 修复冲突模态框时间格式错误\n- 修复 npm install 安全问题\n- #4284 修复 ssh 失败会话导致内存泄漏问题\n- 修复书签搜索自动聚焦问题\n- #4282 修复刷新 sftp 地址触发显示地址历史下拉菜单问题\n- 修复点击关键字无法触发正常点击功能的问题\n- 修复书签树关键字搜索问题\n- 修复 web 应用错误信息显示问题\n\n-------\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-3.3.8-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-aarch64-legacy.rpm",
+      "size": 61863420,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.3.8-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-aarch64.rpm",
+      "size": 62014217,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.3.8-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-amd64-legacy.deb",
+      "size": 73791244,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-amd64.deb",
+      "size": 86860652,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-amd64.snap",
+      "size": 94367744,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-arm64-legacy.AppImage",
+      "size": 94206879,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-arm64-legacy.deb",
+      "size": 69582808,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-arm64-legacy.tar.gz",
+      "size": 89256920,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-arm64.AppImage",
+      "size": 94477186,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-arm64.deb",
+      "size": 69761140,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-arm64.tar.gz",
+      "size": 89521655,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l-legacy.AppImage",
+      "size": 82413859,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l-legacy.deb",
+      "size": 65920888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l-legacy.rpm",
+      "size": 59529380,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l-legacy.tar.gz",
+      "size": 79323891,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l.AppImage",
+      "size": 82680079,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l.deb",
+      "size": 66098484,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l.rpm",
+      "size": 59661865,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.3.8-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-armv7l.tar.gz",
+      "size": 79588515,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-x64-legacy.tar.gz",
+      "size": 88898463,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-x64.tar.gz",
+      "size": 105724765,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-x86_64-legacy.AppImage",
+      "size": 93557893,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-x86_64-legacy.rpm",
+      "size": 65780524,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.3.8-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-x86_64.AppImage",
+      "size": 111442571,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-linux-x86_64.rpm",
+      "size": 77424785,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.3.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-mac-arm64.dmg",
+      "size": 104873775,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-mac-arm64.dmg.blockmap",
+      "size": 110485,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-mac-x64.dmg",
+      "size": 106727053,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-mac-x64.dmg.blockmap",
+      "size": 113556,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-mac10-x64.dmg",
+      "size": 91673334,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-mac10-x64.dmg.blockmap",
+      "size": 96686,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-arm64-installer.exe",
+      "size": 89485277,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-arm64-installer.exe.blockmap",
+      "size": 94432,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-arm64.tar.gz",
+      "size": 119859004,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-x64-installer.exe",
+      "size": 88375849,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-x64-installer.exe.blockmap",
+      "size": 92255,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-x64-loose.tar.gz",
+      "size": 120525851,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-x64-portable.tar.gz",
+      "size": 120555361,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-x64.appx",
+      "size": 141383007,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.3.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win-x64.tar.gz",
+      "size": 120555064,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.3.8-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.3.8/electerm-3.3.8-win7.tar.gz",
+      "size": 96909573,
+      "type": "application/gzip"
+    }
+  ]
+}

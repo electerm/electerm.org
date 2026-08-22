@@ -1,0 +1,43 @@
+{
+  "version": "v1.8.3",
+  "date": "2020-11-18",
+  "body": "- ui: Scrollbar width increase to 7px\n- ui: Back to click to open quick commands\n- code: Use webpack 5 (#1900)\n- security: Use ipc, disable remote module (#1897)\n- security: Use preload, disable nodeIntegration (#1895)",
+  "assets": [
+    {
+      "name": "electerm-1.8.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.8.3/electerm-1.8.3-linux-amd64.deb",
+      "size": 55455918,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.8.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.8.3/electerm-1.8.3-linux-amd64.snap",
+      "size": 68235264,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.8.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.8.3/electerm-1.8.3-linux-x64.tar.gz",
+      "size": 76947196,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.8.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.8.3/electerm-1.8.3-linux-x86_64.rpm",
+      "size": 56115772,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.8.3-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.8.3/electerm-1.8.3-mac.dmg",
+      "size": 80198809,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.8.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.8.3/electerm-1.8.3-win-x64.tar.gz",
+      "size": 75744630,
+      "type": "application/gzip"
+    }
+  ]
+}

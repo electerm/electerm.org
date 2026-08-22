@@ -1,0 +1,151 @@
+{
+  "version": "v1.100.60",
+  "date": "2025-08-17",
+  "body": "### New features\n\n- Add debian src: https://electerm-repos.html5beta.com/deb\n\n### Bug fixes/Improvement\n\n- fix #4026 Fix for some release that should not show upgrade info, like snap store or microsoft store, it still shows upgrade info issue\n- Fix caps lock toggle cause password input lose focus issue\n- Improve UX when page loading\n\n-----\n\n### 新功能\n\n- 添加 Debian 仓库徽章\n- 添加从 Debian 仓库安装的文档\n- 添加debian源: https://electerm-repos.html5beta.com/deb\n\n### 修复问题/改进\n\n- 修复 #4026 某些渠道（如 Snap 商店或微软商店）不应显示升级信息却仍显示的问题\n- 修复切换大写锁定导致密码输入框失焦的问题\n- 优化页面加载时的用户体验\n",
+  "assets": [
+    {
+      "name": "electerm-1.100.60-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-aarch64.rpm",
+      "size": 69752609,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.100.60-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-amd64.deb",
+      "size": 73985258,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-amd64.snap",
+      "size": 92655616,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-arm64.AppImage",
+      "size": 108578135,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-arm64.deb",
+      "size": 69515224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-arm64.tar.gz",
+      "size": 102795784,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.60-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-armv7l.AppImage",
+      "size": 96288752,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-armv7l.deb",
+      "size": 67634850,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-armv7l.rpm",
+      "size": 67827433,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.100.60-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-armv7l.tar.gz",
+      "size": 92555671,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.60-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-x64.tar.gz",
+      "size": 102739023,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.60-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-x86_64.AppImage",
+      "size": 108239780,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-linux-x86_64.rpm",
+      "size": 74393941,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.100.60-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-mac-arm64.dmg",
+      "size": 107756857,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-mac-arm64.dmg.blockmap",
+      "size": 113244,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-mac-x64.dmg",
+      "size": 113651227,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-mac-x64.dmg.blockmap",
+      "size": 119251,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-win-x64-installer.exe",
+      "size": 82433683,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-win-x64-installer.exe.blockmap",
+      "size": 87868,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-win-x64-loose.tar.gz",
+      "size": 112852098,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.60-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-win-x64-portable.tar.gz",
+      "size": 112923081,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.60-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-win-x64.appx",
+      "size": 132004357,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.100.60-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-win-x64.tar.gz",
+      "size": 112922432,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.100.60-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.100.60/electerm-1.100.60-win7.tar.gz",
+      "size": 100205816,
+      "type": "application/gzip"
+    }
+  ]
+}

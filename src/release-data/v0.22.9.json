@@ -1,0 +1,37 @@
+{
+  "version": "v0.22.9",
+  "date": "2018-06-20",
+  "body": "- fix #515 fix file manager time format (#518)\n- fix #516 add restart menu (#517)\n- fix #513 fix file manager drag function, add double click to reset width(#514)",
+  "assets": [
+    {
+      "name": "electerm-0.22.9-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.9/electerm-0.22.9-linux-amd64.deb",
+      "size": 36117338,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.9-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.9/electerm-0.22.9-linux-x86_64.rpm",
+      "size": 36270513,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.22.9-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.9/electerm-0.22.9-mac.dmg",
+      "size": 52024600,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.9-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.9/electerm-0.22.9-win.tar.gz",
+      "size": 51351652,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.22.9.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.9/electerm-0.22.9.tar.gz",
+      "size": 48993359,
+      "type": "application/gzip"
+    }
+  ]
+}

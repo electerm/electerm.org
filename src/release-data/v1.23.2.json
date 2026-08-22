@@ -1,0 +1,85 @@
+{
+  "version": "v1.23.2",
+  "date": "2022-09-18",
+  "body": "### New features\n\n- feat: Add more term types in term option (fix #2629)\n\n### Other updates\n\n- Upgrade deps(xterm/electron/antd), now sogou input should works fine (#2634)",
+  "assets": [
+    {
+      "name": "electerm-1.23.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-linux-amd64.deb",
+      "size": 62866530,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-linux-amd64.snap",
+      "size": 78024704,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-linux-x64.tar.gz",
+      "size": 86399230,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-linux-x86_64.rpm",
+      "size": 63296712,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.23.2-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-mac-arm64.dmg",
+      "size": 91080827,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-mac-arm64.dmg.blockmap",
+      "size": 97806,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-mac-x64.dmg",
+      "size": 90352743,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-mac-x64.dmg.blockmap",
+      "size": 94682,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-win-x64-installer.exe",
+      "size": 68120120,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-win-x64-installer.exe.blockmap",
+      "size": 72597,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-win-x64-loose.tar.gz",
+      "size": 92511797,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.2-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-win-x64.appx",
+      "size": 99771522,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.2-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.2/electerm-1.23.2-win-x64.tar.gz",
+      "size": 93277514,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.3",
+  "date": "2018-08-26",
+  "body": "fix #690 fix multi-line text paste in terminal [windows os] (#694)\nfix #688 update electron version (#691)",
+  "assets": [
+    {
+      "name": "electerm-0.24.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.3/electerm-0.24.3-linux-amd64.deb",
+      "size": 36263904,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.3/electerm-0.24.3-linux-x86_64.rpm",
+      "size": 36408285,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.3-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.3/electerm-0.24.3-mac.dmg",
+      "size": 52257835,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.3-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.3/electerm-0.24.3-win.tar.gz",
+      "size": 51479962,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.3.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.3/electerm-0.24.3.tar.gz",
+      "size": 49161024,
+      "type": "application/gzip"
+    }
+  ]
+}

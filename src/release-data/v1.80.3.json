@@ -1,0 +1,151 @@
+{
+  "version": "v1.80.3",
+  "date": "2025-04-23",
+  "body": "### Quick bug fix\n\n- Fix theme config may cash app issue\n\n-----\n\n### 快速修复\n\n- 修复主题配置可能卡住应用的问题\n",
+  "assets": [
+    {
+      "name": "electerm-1.80.3-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-aarch64.rpm",
+      "size": 69112545,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-amd64.deb",
+      "size": 73679440,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-amd64.snap",
+      "size": 91136000,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-arm64.AppImage",
+      "size": 106656126,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-arm64.deb",
+      "size": 69067970,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-arm64.tar.gz",
+      "size": 101017720,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.3-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-armv7l.AppImage",
+      "size": 94783117,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-armv7l.deb",
+      "size": 67522806,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-armv7l.rpm",
+      "size": 67325409,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.3-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-armv7l.tar.gz",
+      "size": 91111656,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-x64.tar.gz",
+      "size": 100913779,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.3-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-x86_64.AppImage",
+      "size": 106267583,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-linux-x86_64.rpm",
+      "size": 73822025,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.3-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-mac-arm64.dmg",
+      "size": 105782564,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-mac-arm64.dmg.blockmap",
+      "size": 111105,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-mac-x64.dmg",
+      "size": 112742470,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-mac-x64.dmg.blockmap",
+      "size": 119445,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-win-x64-installer.exe",
+      "size": 80632495,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-win-x64-installer.exe.blockmap",
+      "size": 85480,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-win-x64-loose.tar.gz",
+      "size": 110016359,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.3-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-win-x64-portable.tar.gz",
+      "size": 110088398,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.3-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-win-x64.appx",
+      "size": 128293783,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-win-x64.tar.gz",
+      "size": 110087827,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.3-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.3/electerm-1.80.3-win7.tar.gz",
+      "size": 100762316,
+      "type": "application/gzip"
+    }
+  ]
+}

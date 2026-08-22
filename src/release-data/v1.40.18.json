@@ -1,0 +1,151 @@
+{
+  "version": "v1.40.18",
+  "date": "2024-10-11",
+  "body": "### Bug fixes\n\n- #3624 Fix drag folder to sibling folder support\n\n-----\n\n### Bug 修复\n\n- #3624 修复拖动文件夹到兄弟文件夹功能",
+  "assets": [
+    {
+      "name": "electerm-1.40.18-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-aarch64.rpm",
+      "size": 66122528,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.18-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-amd64.deb",
+      "size": 69763674,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-amd64.snap",
+      "size": 85712896,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-arm64.AppImage",
+      "size": 100970798,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-arm64.deb",
+      "size": 65981294,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-arm64.tar.gz",
+      "size": 95570594,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.18-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-armv7l.AppImage",
+      "size": 89119226,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-armv7l.deb",
+      "size": 63932778,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-armv7l.rpm",
+      "size": 63827764,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.18-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-armv7l.tar.gz",
+      "size": 85615028,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.18-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-x64.tar.gz",
+      "size": 94992531,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.18-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-x86_64.AppImage",
+      "size": 100055850,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-linux-x86_64.rpm",
+      "size": 70008692,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.18-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-mac-arm64.dmg",
+      "size": 99606841,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-mac-arm64.dmg.blockmap",
+      "size": 104564,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-mac-x64.dmg",
+      "size": 104828338,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-mac-x64.dmg.blockmap",
+      "size": 111415,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-win-x64-installer.exe",
+      "size": 74077416,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-win-x64-installer.exe.blockmap",
+      "size": 78107,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-win-x64-loose.tar.gz",
+      "size": 100188031,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.18-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-win-x64-portable.tar.gz",
+      "size": 100494100,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.18-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-win-x64.appx",
+      "size": 116723412,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.18-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-win-x64.tar.gz",
+      "size": 100493382,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.18-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.18/electerm-1.40.18-win7.tar.gz",
+      "size": 97383077,
+      "type": "application/gzip"
+    }
+  ]
+}

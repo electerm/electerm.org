@@ -1,0 +1,37 @@
+{
+  "version": "v0.12.0",
+  "date": "2018-01-05",
+  "body": "- fix #146 support private key auth (#190)\n- fix #157 add more test (#189)\n- fix #186 fix dbclick to open terminal function (#188)\n- fix #177 add close other/right tabs function (#187)\n- fix #180 use new logo/icon (#184)\n- fix #180 use homepage as upgrade page (#183)\n- fix #181 use release badge (#182)",
+  "assets": [
+    {
+      "name": "electerm-0.12.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.12.0/electerm-0.12.0-linux-amd64.deb",
+      "size": 37118468,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.12.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.12.0/electerm-0.12.0-linux-x86_64.rpm",
+      "size": 54173368,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.12.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.12.0/electerm-0.12.0-mac.dmg",
+      "size": 51499478,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.12.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.12.0/electerm-0.12.0-win.tar.gz",
+      "size": 54988542,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.12.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.12.0/electerm-0.12.0.tar.gz",
+      "size": 52165183,
+      "type": "application/gzip"
+    }
+  ]
+}

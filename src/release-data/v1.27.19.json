@@ -1,0 +1,67 @@
+{
+  "version": "v1.27.19",
+  "date": "2023-07-22",
+  "body": "### New features\n\n- Support sync data to custom server (#2884)\n- Support more proxy type and easier proxy form (#2883)\n\n### Bug fixes\n\n- fix #2888: Fix server info output\n",
+  "assets": [
+    {
+      "name": "electerm-1.27.19-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-linux-amd64.deb",
+      "size": 63589240,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.19-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-linux-amd64.snap",
+      "size": 78733312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.19-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-linux-x64.tar.gz",
+      "size": 87135637,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.27.19-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-linux-x86_64.rpm",
+      "size": 63753140,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.27.19-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-mac-arm64.dmg",
+      "size": 91623751,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.19-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-mac-x64.dmg",
+      "size": 91452271,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.19-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-win-x64-installer.exe",
+      "size": 72573388,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.19-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-win-x64-loose.tar.gz",
+      "size": 99262641,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.27.19-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-win-x64.appx",
+      "size": 106945024,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.19-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.19/electerm-1.27.19-win-x64.tar.gz",
+      "size": 99892543,
+      "type": "application/gzip"
+    }
+  ]
+}

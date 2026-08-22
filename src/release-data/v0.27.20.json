@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.20",
+  "date": "2019-05-04",
+  "body": "- fix #1240 Add auto focus when close split (#1255)\n- fix #1239 Add close info modal button (#1254)\n- Better app drag area control (#1253)\n- fix #1209 Use subx as state manager (#1243)",
+  "assets": [
+    {
+      "name": "electerm-0.27.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.20/electerm-0.27.20-linux-amd64.deb",
+      "size": 52715014,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.20/electerm-0.27.20-linux-amd64.snap",
+      "size": 130703360,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.20/electerm-0.27.20-linux-x64.tar.gz",
+      "size": 75425252,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.20/electerm-0.27.20-linux-x86_64.rpm",
+      "size": 52581962,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.20-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.20/electerm-0.27.20-mac.dmg",
+      "size": 59011764,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.20/electerm-0.27.20-win-x64.tar.gz",
+      "size": 59365142,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "version": "v1.38.19",
+  "date": "2024-02-22",
+  "body": "### New features\n\n- #3286 Support promote for username\n\n### Bug fixes\n\n- #3282 Fix terminal hight color match\n- Fix cancel file select cause crash(zmodem)\n- #3291 Fix sync pass save\n\n### Other updates\n\n- Use zmodem-ts instead of zmodem.js module",
+  "assets": [
+    {
+      "name": "electerm-1.38.19-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-aarch64.rpm",
+      "size": 64942332,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.19-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-amd64.deb",
+      "size": 68831590,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-amd64.snap",
+      "size": 83779584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-arm64.AppImage",
+      "size": 98740963,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-arm64.deb",
+      "size": 64919074,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-arm64.tar.gz",
+      "size": 93522765,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.19-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-armv7l.AppImage",
+      "size": 86901481,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-armv7l.deb",
+      "size": 62860034,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-armv7l.rpm",
+      "size": 62666808,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.19-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-armv7l.tar.gz",
+      "size": 83567079,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.19-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-x64.tar.gz",
+      "size": 92942236,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.19-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-x86_64.AppImage",
+      "size": 97826130,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-linux-x86_64.rpm",
+      "size": 68842660,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.19-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-mac-arm64.dmg",
+      "size": 97372180,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-mac-arm64.dmg.blockmap",
+      "size": 103584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-mac-x64.dmg",
+      "size": 102627249,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-mac-x64.dmg.blockmap",
+      "size": 107749,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-win-x64-installer.exe",
+      "size": 72595987,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-win-x64-installer.exe.blockmap",
+      "size": 75984,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-win-x64-loose.tar.gz",
+      "size": 98150684,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.19-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-win-x64-portable.tar.gz",
+      "size": 98396059,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.19-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-win-x64.appx",
+      "size": 114416244,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.19-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.19/electerm-1.38.19-win-x64.tar.gz",
+      "size": 98395768,
+      "type": "application/gzip"
+    }
+  ]
+}

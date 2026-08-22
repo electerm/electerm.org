@@ -1,0 +1,43 @@
+{
+  "version": "v1.12.0",
+  "date": "2021-03-07",
+  "body": "feat: Support command line usage(check wiki or app about or run `electerm --help`)",
+  "assets": [
+    {
+      "name": "electerm-1.12.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.0/electerm-1.12.0-linux-amd64.deb",
+      "size": 55007736,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.0/electerm-1.12.0-linux-amd64.snap",
+      "size": 67186688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.0/electerm-1.12.0-linux-x64.tar.gz",
+      "size": 75833408,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.0/electerm-1.12.0-linux-x86_64.rpm",
+      "size": 55522392,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.12.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.0/electerm-1.12.0-mac.dmg",
+      "size": 79028531,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.0/electerm-1.12.0-win-x64.tar.gz",
+      "size": 73368931,
+      "type": "application/gzip"
+    }
+  ]
+}

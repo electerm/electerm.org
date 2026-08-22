@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.52",
+  "date": "2018-12-09",
+  "body": "- Added Russian language support by @TheLetslook\n- fix #992 Fix app command (#993)\n- fix #988 Support passphrase + password mode (#991)\n- fix #987 Fix password promotes title (#989)",
+  "assets": [
+    {
+      "name": "electerm-0.25.52-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.52/electerm-0.25.52-linux-amd64.deb",
+      "size": 38197130,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.52-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.52/electerm-0.25.52-linux-x64.tar.gz",
+      "size": 52163034,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.52-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.52/electerm-0.25.52-linux-x86_64.rpm",
+      "size": 38229766,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.52-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.52/electerm-0.25.52-mac.dmg",
+      "size": 53807682,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.52-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.52/electerm-0.25.52-win-x64.tar.gz",
+      "size": 53986606,
+      "type": "application/gzip"
+    }
+  ]
+}

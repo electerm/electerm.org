@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.12",
+  "date": "2018-11-06",
+  "body": "- fix #864 Add versions to env panel (#866)\n- fix #861 Fix reload add extra tab bug (#862) by @blue-bird1",
+  "assets": [
+    {
+      "name": "electerm-0.25.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.12/electerm-0.25.12-linux-amd64.deb",
+      "size": 38130888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.12-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.12/electerm-0.25.12-linux-x64.tar.gz",
+      "size": 52149491,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.12/electerm-0.25.12-linux-x86_64.rpm",
+      "size": 38167106,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.12-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.12/electerm-0.25.12-mac.dmg",
+      "size": 53803879,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.12-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.12/electerm-0.25.12-win-x64.tar.gz",
+      "size": 53543726,
+      "type": "application/gzip"
+    }
+  ]
+}

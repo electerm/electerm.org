@@ -1,0 +1,289 @@
+{
+  "version": "v3.12.0",
+  "date": "2026-05-29",
+  "body": "### New features/UI/Updates\n\n- serialport: Add XMODEM protocol support for file transfers in serialport session (#4358)\n- serialport: Support TX/RX line endings for serialport session\n- AI Agent: Add close_tab function for tab management\n- AI Agent: Support sftp transfer\n- MCP/AI Agent: Add open tab tool to directly open session without creating bookmark\n- MCP: Enhance bookmark create by adding data validation and sanitization\n- MCP/AI Agent: Fix MCP/AI run command ability, now can run in any tab\n- Add confirmation for clearing AI chat history\n- Add AI chat mode persistence with local storage\n- UI: Improve bookmark list mouse over UI\n- UI: Improve history UI logic\n\n### Bug fixes\n\n- Fix sftp upload folder modify time issue\n- Fix server info code, avoid potential crash (#4362)\n- Fix backspace can not trigger terminal scroll to bottom issue\n\n-----\n\n### 新功能/界面/更新\n\n- serialport: 为串口会话添加 XMODEM 协议支持，用于文件传输 (#4358)\n- serialport: 支持串口会话的 TX/RX 行尾符设置\n- AI 代理：添加 close_tab 功能用于标签页管理\n- AI 代理：支持 SFTP 文件传输\n- MCP/AI 代理：添加 open tab 工具，可直接打开会话而无需创建书签\n- MCP：通过添加数据验证和清理增强书签创建功能\n- MCP/AI 代理：修复 MCP/AI 运行命令功能，现在可在任意标签页中运行\n- 添加清空 AI 聊天历史的确认提示\n- 添加 AI 聊天模式的本地存储持久化\n- 界面：改进书签列表鼠标悬停效果\n- 界面：改进历史记录界面逻辑\n\n### 问题修复\n\n- 修复 SFTP 上传文件夹修改时间的问题\n- 修复服务器信息代码，避免潜在崩溃 (#4362)\n- 修复退格键无法触发终端滚动到底部的问题\n",
+  "assets": [
+    {
+      "name": "electerm-3.12.0-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-aarch64-legacy.rpm",
+      "size": 61959056,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.12.0-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-aarch64.rpm",
+      "size": 62077409,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.12.0-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-amd64-legacy.deb",
+      "size": 73877744,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-amd64.deb",
+      "size": 88110588,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-amd64.snap",
+      "size": 95748096,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-arm64-legacy.AppImage",
+      "size": 94362792,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-arm64-legacy.deb",
+      "size": 69708124,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-arm64-legacy.tar.gz",
+      "size": 89398605,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-arm64.AppImage",
+      "size": 94624708,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-arm64.deb",
+      "size": 69888208,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-arm64.tar.gz",
+      "size": 89662507,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l-legacy.AppImage",
+      "size": 82565599,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l-legacy.deb",
+      "size": 66047564,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l-legacy.rpm",
+      "size": 59651560,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l-legacy.tar.gz",
+      "size": 79465380,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l.AppImage",
+      "size": 82827611,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l.deb",
+      "size": 66226776,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l.rpm",
+      "size": 59768757,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.12.0-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-armv7l.tar.gz",
+      "size": 79730436,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-linux-loong64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-loong64-legacy.deb",
+      "size": 151897586,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.12.0-linux-loong64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-loong64-legacy.tar.gz",
+      "size": 151314620,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-3.12.0-linux-loong64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-loong64.deb",
+      "size": 95061520,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.12.0-linux-loong64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-loong64.tar.gz",
+      "size": 128997466,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-3.12.0-linux-loongarch64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-loongarch64-legacy.deb",
+      "size": 151897518,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.12.0-linux-loongarch64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-loongarch64.deb",
+      "size": 95064398,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.12.0-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-x64-legacy.tar.gz",
+      "size": 89040918,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-x64.tar.gz",
+      "size": 107491542,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-x86_64-legacy.AppImage",
+      "size": 93713752,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-x86_64-legacy.rpm",
+      "size": 65879404,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.12.0-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-x86_64.AppImage",
+      "size": 113372411,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-linux-x86_64.rpm",
+      "size": 78594417,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.12.0-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-mac-arm64.dmg",
+      "size": 108125281,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-mac-arm64.dmg.blockmap",
+      "size": 113313,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-mac-x64.dmg",
+      "size": 115052548,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-mac-x64.dmg.blockmap",
+      "size": 119662,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-mac10-x64.dmg",
+      "size": 91848834,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-mac10-x64.dmg.blockmap",
+      "size": 97147,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-arm64-installer.exe",
+      "size": 99535691,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-arm64-installer.exe.blockmap",
+      "size": 104700,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-arm64.tar.gz",
+      "size": 134192994,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-x64-installer.exe",
+      "size": 98765052,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-x64-installer.exe.blockmap",
+      "size": 105086,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-x64-loose.tar.gz",
+      "size": 136251146,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-x64-portable.tar.gz",
+      "size": 136278868,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-x64.appx",
+      "size": 159015760,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.12.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win-x64.tar.gz",
+      "size": 136278119,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.12.0-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.12.0/electerm-3.12.0-win7.tar.gz",
+      "size": 97051637,
+      "type": "application/gzip"
+    }
+  ]
+}

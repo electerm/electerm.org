@@ -1,0 +1,151 @@
+{
+  "version": "v1.51.8",
+  "date": "2024-12-27",
+  "body": "### New features/UI/Updates\n\n- UI: Add border for sessions\n- Improved transfer code, allow 5 concurrent file transfers (#3728)\n- Avoid potential worker load issue\n- Support move transfer to top\n- Support drag/drop transfer to change order\n- Rewrite history related functions (#3724)\n- Improve system menu UI\n- Rewrite file transfer functions (#3723)\n- Add terminal info panel test\n- Info panel would always show active tab's info\n\n\n### Bug fixes\n\n- Fix bookmark order not remembered issue (#3730)\n- Fix reload tab function cause lose active tab issue\n- Fix left side panel drag support\n- Fix transfer pause/resume\n- Fix tab scroll\n- Fix change layout may lose focus issue\n\n\n-----\n\n### 新功能/界面/更新\n\n- 界面：为会话添加边界\n- 优化传输代码，支持5个文件同时传输 (#3728)\n- 避免潜在的工作线程加载问题\n- 支持将传输任务移至顶部\n- 支持通过拖放改变传输任务顺序\n- 重写历史记录相关功能 (#3724)\n- 改善系统菜单界面\n- 重写文件传输功能 (#3723)\n- 添加终端信息面板测试\n- 信息面板始终显示当前活动标签页的信息\n\n### 问题修复\n\n- 修复书签顺序无法记住的问题 (#3730)\n- 修复重新加载标签页功能导致当前活动标签页丢失的问题\n- 修复左侧面板拖动支持问题\n- 修复传输暂停/恢复功能\n- 修复标签页滚动问题\n- 修复更改布局可能导致焦点丢失的问题\n",
+  "assets": [
+    {
+      "name": "electerm-1.51.8-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-aarch64.rpm",
+      "size": 66076804,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-amd64.deb",
+      "size": 70233062,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-amd64.snap",
+      "size": 87543808,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-arm64.AppImage",
+      "size": 102492216,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-arm64.deb",
+      "size": 65856328,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-arm64.tar.gz",
+      "size": 96936449,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.8-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-armv7l.AppImage",
+      "size": 90616467,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-armv7l.deb",
+      "size": 63855944,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-armv7l.rpm",
+      "size": 63795728,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.8-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-armv7l.tar.gz",
+      "size": 86981108,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-x64.tar.gz",
+      "size": 97076957,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.8-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-x86_64.AppImage",
+      "size": 102348378,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-linux-x86_64.rpm",
+      "size": 70394020,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-mac-arm64.dmg",
+      "size": 100875478,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-mac-arm64.dmg.blockmap",
+      "size": 106565,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-mac-x64.dmg",
+      "size": 106852848,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-mac-x64.dmg.blockmap",
+      "size": 113372,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-win-x64-installer.exe",
+      "size": 75005232,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-win-x64-installer.exe.blockmap",
+      "size": 78792,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-win-x64-loose.tar.gz",
+      "size": 101911241,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.8-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-win-x64-portable.tar.gz",
+      "size": 102604361,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.8-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-win-x64.appx",
+      "size": 119170299,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-win-x64.tar.gz",
+      "size": 102604246,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.8-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.8/electerm-1.51.8-win7.tar.gz",
+      "size": 98652247,
+      "type": "application/gzip"
+    }
+  ]
+}

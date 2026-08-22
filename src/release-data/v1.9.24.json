@@ -1,0 +1,43 @@
+{
+  "version": "v1.9.24",
+  "date": "2020-11-26",
+  "body": "- fix #1924 fix: Fix get current display function\n- test: Add switch to history test\n- fix #1920 fix #1874 fix: Fix open folder in root bug for windows\n- fix #1926 fix: Fix no history switch to history tab crash app\n- feat: Show ssh keyboard interactive instructions in promote",
+  "assets": [
+    {
+      "name": "electerm-1.9.24-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.24/electerm-1.9.24-linux-amd64.deb",
+      "size": 55386210,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.24-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.24/electerm-1.9.24-linux-amd64.snap",
+      "size": 68194304,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.24-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.24/electerm-1.9.24-linux-x64.tar.gz",
+      "size": 76916766,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.9.24-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.24/electerm-1.9.24-linux-x86_64.rpm",
+      "size": 56091256,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.9.24-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.24/electerm-1.9.24-mac.dmg",
+      "size": 80155750,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.24-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.24/electerm-1.9.24-win-x64.tar.gz",
+      "size": 75721254,
+      "type": "application/gzip"
+    }
+  ]
+}

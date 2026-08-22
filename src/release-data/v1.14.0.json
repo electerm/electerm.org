@@ -1,0 +1,61 @@
+{
+  "version": "v1.14.0",
+  "date": "2021-07-18",
+  "body": "- [feature]: Support compress and transfer folder in sftp(auto uncompress)\n- [feature] Preview font style in font setting\n- [feature]: Add clear sync setting button",
+  "assets": [
+    {
+      "name": "electerm-1.14.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-linux-amd64.deb",
+      "size": 59121880,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.14.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-linux-amd64.snap",
+      "size": 73670656,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.14.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-linux-x64.tar.gz",
+      "size": 82091052,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.14.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-linux-x86_64.rpm",
+      "size": 60344352,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.14.0-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-mac-x64.dmg",
+      "size": 87141684,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.14.0-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-win-x64-installer.exe",
+      "size": 63601110,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.14.0-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-win-x64-loose.tar.gz",
+      "size": 86425630,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.14.0-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-win-x64.appx",
+      "size": 92945727,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.14.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.14.0/electerm-1.14.0-win-x64.tar.gz",
+      "size": 87022544,
+      "type": "application/gzip"
+    }
+  ]
+}

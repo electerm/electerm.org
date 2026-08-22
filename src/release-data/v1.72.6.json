@@ -1,0 +1,151 @@
+{
+  "version": "v1.72.6",
+  "date": "2025-03-08",
+  "body": "### Major updates\n\n- Support broadcast input to all visible terminals (#3825)\n- Support command suggestions, get suggestions from AI API, move AI config to general setting panel (#3823)\n\n### New features/Updates\n\n- Add keyword filter in sftp list\n- Add ai suggestions cache component\n- Add Ctrl+Enter shortcut for AI chat submit\n\n### UI Improvements\n\n- Improve terminal icons UI\n\n### Code refactoring and improvements\n\n- Replace div with <> to reduce dom elements\n\n-----\n\n### 重大更新\n\n- 支持向所有可见终端同步输入 (#3825)\n- 支持命令建议，从AI API获取建议，将AI配置移至通用设置页面 (#3823)\n\n### 新功能/更新\n\n- 为sftp列表添加关键字过滤\n- 添加ai建议缓存组件\n- 为AI聊天提交添加Ctrl+Enter快捷键\n\n### 界面改进\n\n- 改进终端图标UI\n\n### 代码重构和改进\n\n- 用 <> 替换 div 以减少dom元素\n",
+  "assets": [
+    {
+      "name": "electerm-1.72.6-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-aarch64.rpm",
+      "size": 69233373,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.72.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-amd64.deb",
+      "size": 73774220,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-amd64.snap",
+      "size": 91918336,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-arm64.AppImage",
+      "size": 107279580,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-arm64.deb",
+      "size": 69202582,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-arm64.tar.gz",
+      "size": 101577954,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.6-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-armv7l.AppImage",
+      "size": 95406676,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-armv7l.deb",
+      "size": 67681428,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-armv7l.rpm",
+      "size": 67482417,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.72.6-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-armv7l.tar.gz",
+      "size": 91669914,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-x64.tar.gz",
+      "size": 101461605,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.6-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-x86_64.AppImage",
+      "size": 106887075,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-linux-x86_64.rpm",
+      "size": 73955312,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.72.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-mac-arm64.dmg",
+      "size": 106383791,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-mac-arm64.dmg.blockmap",
+      "size": 112096,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-mac-x64.dmg",
+      "size": 113364137,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-mac-x64.dmg.blockmap",
+      "size": 119752,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-win-x64-installer.exe",
+      "size": 80972507,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-win-x64-installer.exe.blockmap",
+      "size": 85693,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-win-x64-loose.tar.gz",
+      "size": 110577041,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.6-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-win-x64-portable.tar.gz",
+      "size": 110647350,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.6-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-win-x64.appx",
+      "size": 128953591,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-win-x64.tar.gz",
+      "size": 110647386,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.6-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.6/electerm-1.72.6-win7.tar.gz",
+      "size": 101323930,
+      "type": "application/gzip"
+    }
+  ]
+}

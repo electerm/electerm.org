@@ -1,0 +1,37 @@
+{
+  "version": "v0.14.1",
+  "date": "2018-01-14",
+  "body": "- change default language to en_us\n- fix #226 fix drag&drop trigger drag select (#237)\n- fix #227 add click to remove select function (#236)\n- fix #231 fix multi-language feature (#235)\n- fix #232 fix delete history function (#234)\n- fix #229 fix system locale read (#230)",
+  "assets": [
+    {
+      "name": "electerm-0.14.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.1/electerm-0.14.1-linux-amd64.deb",
+      "size": 37153152,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.1/electerm-0.14.1-linux-x86_64.rpm",
+      "size": 53887348,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.14.1-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.1/electerm-0.14.1-mac.dmg",
+      "size": 51527664,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.1-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.1/electerm-0.14.1-win.tar.gz",
+      "size": 55277330,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.14.1.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.1/electerm-0.14.1.tar.gz",
+      "size": 51887813,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": "v1.23.8",
+  "date": "2022-10-02",
+  "body": "### Bug fixes\n\n- fix #2645 Fix terminal bg image load\n- fix #2648 Fix batch input history clear function\n",
+  "assets": [
+    {
+      "name": "electerm-1.23.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-linux-amd64.deb",
+      "size": 63196898,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-linux-amd64.snap",
+      "size": 78024704,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-linux-x64.tar.gz",
+      "size": 86399315,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-linux-x86_64.rpm",
+      "size": 63299004,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.23.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-mac-arm64.dmg",
+      "size": 91080817,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.8-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-mac-x64.dmg",
+      "size": 90352706,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.8-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-win-x64-installer.exe",
+      "size": 68119963,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.8-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-win-x64-loose.tar.gz",
+      "size": 92512966,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.8-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-win-x64.appx",
+      "size": 99771456,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.8/electerm-1.23.8-win-x64.tar.gz",
+      "size": 93277265,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v1.3.46",
+  "date": "2020-07-03",
+  "body": "- [feat] Add env:LANG option in bookmark form -> setting (#1760)",
+  "assets": [
+    {
+      "name": "electerm-1.3.46-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.46/electerm-1.3.46-linux-amd64.deb",
+      "size": 52569880,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.46-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.46/electerm-1.3.46-linux-amd64.snap",
+      "size": 64462848,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.46-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.46/electerm-1.3.46-linux-x64.tar.gz",
+      "size": 72814091,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.3.46-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.46/electerm-1.3.46-linux-x86_64.rpm",
+      "size": 51943332,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.3.46-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.46/electerm-1.3.46-mac.dmg",
+      "size": 71687455,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.46-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.46/electerm-1.3.46-win-x64.tar.gz",
+      "size": 73371707,
+      "type": "application/gzip"
+    }
+  ]
+}

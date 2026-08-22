@@ -1,0 +1,37 @@
+{
+  "version": "v0.13.0",
+  "date": "2018-01-09",
+  "body": "- fix #208 update dep version (#209)\n- fix #31 support copy/paste files (#207)\n- fix #94 support drag file from file manager (#205)\n- fix #195 add more test (#204)\n- fix #202 fix open new ssh logic, sftp use same timeout setting (#203)\n- fix #200 fix saved privateKey show (#201)\n- fix #196 add user tips, update antd to 3.1.0 (#199)\n- fix #197 copy tab will cd same path(limited support) (#198)\n- fix #185 support tab drag & drop (#193)\n- fix #161 component optimize (#192)\n",
+  "assets": [
+    {
+      "name": "electerm-0.13.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.0/electerm-0.13.0-linux-amd64.deb",
+      "size": 37103256,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.13.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.0/electerm-0.13.0-linux-x86_64.rpm",
+      "size": 53829638,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.13.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.0/electerm-0.13.0-mac.dmg",
+      "size": 51470310,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.13.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.0/electerm-0.13.0-win.tar.gz",
+      "size": 55211196,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.13.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.0/electerm-0.13.0.tar.gz",
+      "size": 51832818,
+      "type": "application/gzip"
+    }
+  ]
+}

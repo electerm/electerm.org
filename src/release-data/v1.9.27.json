@@ -1,0 +1,43 @@
+{
+  "version": "v1.9.27",
+  "date": "2020-11-27",
+  "body": "- fix #1923 fix: Fix bookmark quick command not working issue\n- feat: Add ignore button in terminal keyboard interactive\n- fix #1929 feat: Add sftp traffic icon and terminal activity icon to session tab UI",
+  "assets": [
+    {
+      "name": "electerm-1.9.27-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.27/electerm-1.9.27-linux-amd64.deb",
+      "size": 55390184,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.27-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.27/electerm-1.9.27-linux-amd64.snap",
+      "size": 68198400,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.27-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.27/electerm-1.9.27-linux-x64.tar.gz",
+      "size": 76918654,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.9.27-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.27/electerm-1.9.27-linux-x86_64.rpm",
+      "size": 56087184,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.9.27-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.27/electerm-1.9.27-mac.dmg",
+      "size": 80162218,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.27-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.27/electerm-1.9.27-win-x64.tar.gz",
+      "size": 75723997,
+      "type": "application/gzip"
+    }
+  ]
+}

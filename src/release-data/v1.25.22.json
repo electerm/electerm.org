@@ -1,0 +1,67 @@
+{
+  "version": "v1.25.22",
+  "date": "2023-03-14",
+  "body": "### Quick bug fix release\n\n- fix #2783 fix #2780 Fix close window button function, fix tab context menu\n",
+  "assets": [
+    {
+      "name": "electerm-1.25.22-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-linux-amd64.deb",
+      "size": 63603688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.22-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-linux-amd64.snap",
+      "size": 78532608,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.22-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-linux-x64.tar.gz",
+      "size": 86942299,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.22-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-linux-x86_64.rpm",
+      "size": 63725620,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.25.22-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-mac-arm64.dmg",
+      "size": 91390480,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.22-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-mac-x64.dmg",
+      "size": 91237194,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.22-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-win-x64-installer.exe",
+      "size": 68426594,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.22-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-win-x64-loose.tar.gz",
+      "size": 93471064,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.22-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-win-x64.appx",
+      "size": 100312816,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.22-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.22/electerm-1.25.22-win-x64.tar.gz",
+      "size": 93808689,
+      "type": "application/gzip"
+    }
+  ]
+}

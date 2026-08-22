@@ -1,0 +1,67 @@
+{
+  "version": "v1.17.26",
+  "date": "2022-01-17",
+  "body": "Bug fixes:\n\n- fix #2349: Fix locale check fail may cause app can not start in win7\n- fix #2350: Fix file conflict modal infomation\n- fix #2346: Fix rz/sz ends cause encode setting lose\n\nUpdates:\n\n- Improve performance when save update bookmarks\n\nKnown issues:\n\n- [rz] When upload file with rz command, for file > 1M, may not end properly, and may not update progress, but still upload in background.\n- When use `edit with...` from context menu, editor only support apps in system path, means editor name without path\n- Check more from https://github.com/electerm/electerm/wiki/Know-issues\n  \n",
+  "assets": [
+    {
+      "name": "electerm-1.17.26-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-linux-amd64.deb",
+      "size": 58881406,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.26-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-linux-amd64.snap",
+      "size": 73428992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.26-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-linux-x64.tar.gz",
+      "size": 81838240,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.26-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-linux-x86_64.rpm",
+      "size": 60118636,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.17.26-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-mac-arm64.dmg",
+      "size": 88557045,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.26-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-mac-x64.dmg",
+      "size": 87210930,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.26-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-win-x64-installer.exe",
+      "size": 64119961,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.26-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-win-x64-loose.tar.gz",
+      "size": 87166317,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.26-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-win-x64.appx",
+      "size": 93763164,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.26-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.26/electerm-1.17.26-win-x64.tar.gz",
+      "size": 87772996,
+      "type": "application/gzip"
+    }
+  ]
+}

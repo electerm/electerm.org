@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.16",
+  "date": "2018-09-12",
+  "body": "- fix #737 fix open file function (#744)\n- fix #727 fix default theme color (#743)\n- fix #734 UI adjust (#742)\n- fix #733 fix menu for mac (#740)\n- fix #738 fix #735 webpack config/package clean (#739)",
+  "assets": [
+    {
+      "name": "electerm-0.24.16-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.16/electerm-0.24.16-linux-amd64.deb",
+      "size": 36260702,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.16-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.16/electerm-0.24.16-linux-x86_64.rpm",
+      "size": 36405969,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.16-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.16/electerm-0.24.16-mac.dmg",
+      "size": 52247624,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.16-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.16/electerm-0.24.16-win.tar.gz",
+      "size": 51486084,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.16.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.16/electerm-0.24.16.tar.gz",
+      "size": 49163935,
+      "type": "application/gzip"
+    }
+  ]
+}

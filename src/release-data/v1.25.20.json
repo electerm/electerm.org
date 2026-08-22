@@ -1,0 +1,67 @@
+{
+  "version": "v1.25.20",
+  "date": "2023-03-10",
+  "body": "### Bug fixes\n\n- fix #2770 fix window control function(maximize)\n- fix #2769 fix terminal not respond to resize window issue\n- fix context menu item hard to click when overlaps with tabs-inne by @mmagi \n\n### Other updates\n\n- Increase quick command length limit\n\n",
+  "assets": [
+    {
+      "name": "electerm-1.25.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-linux-amd64.deb",
+      "size": 63604860,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-linux-amd64.snap",
+      "size": 78532608,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-linux-x64.tar.gz",
+      "size": 86942279,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-linux-x86_64.rpm",
+      "size": 63742528,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.25.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-mac-arm64.dmg",
+      "size": 91390182,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-mac-x64.dmg",
+      "size": 91237373,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-win-x64-installer.exe",
+      "size": 68427709,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-win-x64-loose.tar.gz",
+      "size": 93470121,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-win-x64.appx",
+      "size": 100312682,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.20/electerm-1.25.20-win-x64.tar.gz",
+      "size": 93808315,
+      "type": "application/gzip"
+    }
+  ]
+}

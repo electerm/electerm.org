@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.44",
+  "date": "2019-02-15",
+  "body": "- fix #1132 Add time left to file transport (#1133)",
+  "assets": [
+    {
+      "name": "electerm-0.26.44-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.44/electerm-0.26.44-linux-amd64.deb",
+      "size": 38236764,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.44-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.44/electerm-0.26.44-linux-amd64.snap",
+      "size": 110424064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.44-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.44/electerm-0.26.44-linux-x64.tar.gz",
+      "size": 52696830,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.44-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.44/electerm-0.26.44-linux-x86_64.rpm",
+      "size": 38263678,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.44-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.44/electerm-0.26.44-mac.dmg",
+      "size": 54368451,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.44-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.44/electerm-0.26.44-win-x64.tar.gz",
+      "size": 54675132,
+      "type": "application/gzip"
+    }
+  ]
+}

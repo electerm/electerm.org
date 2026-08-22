@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.10",
+  "date": "2023-10-09",
+  "body": "### New features\n\n- fix #2996 Remember quick commands labels\n\n### Bug fixes\n\n- fix #3026 Fix x11 support\n- fix #3023 Fix test conenction fucntion",
+  "assets": [
+    {
+      "name": "electerm-1.34.10-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-linux-amd64.deb",
+      "size": 72983648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.10-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-linux-amd64.snap",
+      "size": 88887296,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.10-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-linux-x64.tar.gz",
+      "size": 99173268,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.10-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-linux-x86_64.rpm",
+      "size": 72871992,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.10-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-mac-arm64.dmg",
+      "size": 95453472,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.10-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-mac-x64.dmg",
+      "size": 100673335,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.10-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-win-x64-installer.exe",
+      "size": 76132583,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.10-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-win-x64-loose.tar.gz",
+      "size": 103823657,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.10-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-win-x64-portable.tar.gz",
+      "size": 104049362,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.10-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-win-x64.appx",
+      "size": 111648114,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.10-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.10/electerm-1.34.10-win-x64.tar.gz",
+      "size": 104049577,
+      "type": "application/gzip"
+    }
+  ]
+}

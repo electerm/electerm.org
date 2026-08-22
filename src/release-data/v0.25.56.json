@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.56",
+  "date": "2018-12-12",
+  "body": "- fix #1002 Fix edit history icon function (#1003)\n- fix #995 Fix timeout setting (#1001)\n- fix #997 Fix bookmarks tree list view (#1000)\n- fix #702 [UI] Add sidebar, remove top buttons (#996)",
+  "assets": [
+    {
+      "name": "electerm-0.25.56-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.56/electerm-0.25.56-linux-amd64.deb",
+      "size": 38206144,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.56-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.56/electerm-0.25.56-linux-x64.tar.gz",
+      "size": 52186440,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.56-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.56/electerm-0.25.56-linux-x86_64.rpm",
+      "size": 38232674,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.56-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.56/electerm-0.25.56-mac.dmg",
+      "size": 53828344,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.56-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.56/electerm-0.25.56-win-x64.tar.gz",
+      "size": 54009006,
+      "type": "application/gzip"
+    }
+  ]
+}

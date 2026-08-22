@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.73",
+  "date": "2022-05-30",
+  "body": "### Bug fixes\n\n- fix #2504: Fix window title\n- fix #2505: Fix passphase detect\n- fix #2508: Fix tab close in background issue\n- fix #2512: Fix quick command not working in split terminal\n- Fix side panel UI when use system title bar\n- Fix bookmark panel white screen bug when click transfer icon\n\n### UI\n\n- fix #2510 [UI]: improve setting page UI\n- Improve tabs UI\n- Improve sync form UI\n\n### New features\n\n- Show warning and close/reload choice when connection lost\n- Support load themes from iTerm2-Color-Schemes/electerm\n- Add close process button to activity list in info panel\n\n### Other updates\n\n- Improve tab delete function, use watch to handle\n- Fix theme related test\n- Updated sync to github/gitee guide\n",
+  "assets": [
+    {
+      "name": "electerm-1.21.73-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-linux-amd64.deb",
+      "size": 62839754,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.73-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-linux-amd64.snap",
+      "size": 77709312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.73-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-linux-x64.tar.gz",
+      "size": 86075687,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.73-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-linux-x86_64.rpm",
+      "size": 63064332,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.73-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-mac-arm64.dmg",
+      "size": 90708493,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.73-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-mac-x64.dmg",
+      "size": 89893119,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.73-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-win-x64-installer.exe",
+      "size": 67891031,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.73-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-win-x64-loose.tar.gz",
+      "size": 91974063,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.73-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-win-x64.appx",
+      "size": 99435390,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.73-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.73/electerm-1.21.73-win-x64.tar.gz",
+      "size": 92953387,
+      "type": "application/gzip"
+    }
+  ]
+}

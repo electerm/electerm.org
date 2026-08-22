@@ -1,0 +1,241 @@
+{
+  "version": "v2.3.85",
+  "date": "2025-11-03",
+  "body": "### Bug fixes\n\n- Fix static bookmark list title width\n- #4097 Fix transfer list UI, avoid file name too long break the UI\n\n### New features\n\n- Support long list of ssh tunnel with max height and scroll bar\n\n-----\n\n### 问题修复\n\n- 修复静态书签列表标题宽度\n- #4097 修复传输列表界面，避免文件名过长破坏界面\n\n### 新功能\n\n- 支持 SSH 隧道长列表，带有最大高度和滚动条\n\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)\n",
+  "assets": [
+    {
+      "name": "electerm-2.3.85-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-aarch64-legacy.rpm",
+      "size": 60779092,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.85-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-aarch64.rpm",
+      "size": 60888729,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.85-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-amd64-legacy.deb",
+      "size": 72508100,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-amd64.deb",
+      "size": 85652420,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-amd64.snap",
+      "size": 92893184,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-arm64-legacy.AppImage",
+      "size": 92345064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-arm64-legacy.deb",
+      "size": 68380716,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-arm64-legacy.tar.gz",
+      "size": 87510222,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-arm64.AppImage",
+      "size": 92631938,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-arm64.deb",
+      "size": 68558912,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-arm64.tar.gz",
+      "size": 87778026,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l-legacy.AppImage",
+      "size": 80552456,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l-legacy.deb",
+      "size": 64702156,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l-legacy.rpm",
+      "size": 58450952,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l-legacy.tar.gz",
+      "size": 77578104,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l.AppImage",
+      "size": 80839295,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l.deb",
+      "size": 64881100,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l.rpm",
+      "size": 58587173,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.85-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-armv7l.tar.gz",
+      "size": 77847101,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-x64-legacy.tar.gz",
+      "size": 87152497,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-x64.tar.gz",
+      "size": 104033978,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-x86_64-legacy.AppImage",
+      "size": 91696018,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-x86_64-legacy.rpm",
+      "size": 64691928,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.85-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-x86_64.AppImage",
+      "size": 109642667,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-linux-x86_64.rpm",
+      "size": 76394689,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.85-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-mac-arm64.dmg",
+      "size": 103176396,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-mac-arm64.dmg.blockmap",
+      "size": 109112,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-mac-x64.dmg",
+      "size": 104969599,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-mac-x64.dmg.blockmap",
+      "size": 111257,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-arm64-installer.exe",
+      "size": 88366756,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-arm64-installer.exe.blockmap",
+      "size": 92591,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-arm64.tar.gz",
+      "size": 118151755,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-x64-installer.exe",
+      "size": 87261332,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-x64-installer.exe.blockmap",
+      "size": 90861,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-x64-loose.tar.gz",
+      "size": 118817152,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-x64-portable.tar.gz",
+      "size": 118851441,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-x64.appx",
+      "size": 139518003,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.85-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win-x64.tar.gz",
+      "size": 118851659,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.85-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.85/electerm-2.3.85-win7.tar.gz",
+      "size": 95156726,
+      "type": "application/gzip"
+    }
+  ]
+}

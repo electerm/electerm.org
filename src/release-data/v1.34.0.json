@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.0",
+  "date": "2023-10-03",
+  "body": "### New features\n\n- fix #3017 Always ask for password once if not provided (#3018)\n\n### Other updates\n\n- Code refractor: follow standard v17 rules",
+  "assets": [
+    {
+      "name": "electerm-1.34.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-linux-amd64.deb",
+      "size": 72980034,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-linux-amd64.snap",
+      "size": 88899584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-linux-x64.tar.gz",
+      "size": 99173117,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-linux-x86_64.rpm",
+      "size": 72848908,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.0-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-mac-arm64.dmg",
+      "size": 95444713,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.0-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-mac-x64.dmg",
+      "size": 100659004,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.0-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-win-x64-installer.exe",
+      "size": 76126482,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.0-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-win-x64-loose.tar.gz",
+      "size": 103819266,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.0-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-win-x64-portable.tar.gz",
+      "size": 104043832,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.0-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-win-x64.appx",
+      "size": 111640976,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.0/electerm-1.34.0-win-x64.tar.gz",
+      "size": 104044476,
+      "type": "application/gzip"
+    }
+  ]
+}

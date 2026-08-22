@@ -1,0 +1,43 @@
+{
+  "version": "v1.10.9",
+  "date": "2020-12-08",
+  "body": "- fix #1951 fix: Fix transfer speed in windows\n- fix #1953 ui: Fix setting menu UI\n- fix #1955 feat: Support encrypt bookmarks\n- fix #1785 feat: Remove reload shortcut(cmd/ctrl + R)\n- fix #1954 feat: Add download empty sync gist warning\n- feat: Support bookmark local session (#1947)\n- fix #1945 fix: Fix ctrl + tab switch tabs\n- code refractor: setting-modal\n- ui: New setting modal UI (#1944)",
+  "assets": [
+    {
+      "name": "electerm-1.10.9-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.9/electerm-1.10.9-linux-amd64.deb",
+      "size": 55393652,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.9-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.9/electerm-1.10.9-linux-amd64.snap",
+      "size": 68206592,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.9-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.9/electerm-1.10.9-linux-x64.tar.gz",
+      "size": 76928209,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.10.9-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.9/electerm-1.10.9-linux-x86_64.rpm",
+      "size": 56103668,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.10.9-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.9/electerm-1.10.9-mac.dmg",
+      "size": 80175626,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.9-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.9/electerm-1.10.9-win-x64.tar.gz",
+      "size": 75733116,
+      "type": "application/gzip"
+    }
+  ]
+}

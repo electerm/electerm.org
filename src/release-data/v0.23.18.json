@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.18",
+  "date": "2018-07-22",
+  "body": "- fix #132 import/export bookmark function (#613)\n- fix #586 add file mananger shortcut tip (#611)",
+  "assets": [
+    {
+      "name": "electerm-0.23.18-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.18/electerm-0.23.18-linux-amd64.deb",
+      "size": 36140744,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.18-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.18/electerm-0.23.18-linux-x86_64.rpm",
+      "size": 36289473,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.18-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.18/electerm-0.23.18-mac.dmg",
+      "size": 52061588,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.18-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.18/electerm-0.23.18-win.tar.gz",
+      "size": 51377582,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.18.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.18/electerm-0.23.18.tar.gz",
+      "size": 49026362,
+      "type": "application/gzip"
+    }
+  ]
+}

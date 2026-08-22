@@ -1,0 +1,73 @@
+{
+  "version": "v1.32.38",
+  "date": "2023-09-18",
+  "body": "### New features/UI\n\n- fix #2979 feat: Support input custom zoom level\n- fix #2912 Support multi ssh tunnels in one ssh connection\n- fix #2804 Fix command line param support\n- fix #2980 Add tab index number to tab title\n- fix #2943 Support command line params --sftp-only to run in sftp only mode\n- fix #2979 feat: Support input custom zoom level\n- UI: Improve some UI detail\n\n### Bug fixes\n\n- fix #2983 Fix edit remote file always loading when submit\n- Support SetEnv in command line and bookmark form\n- fix #2971 When switch folder in sftp, clear selected files",
+  "assets": [
+    {
+      "name": "electerm-1.32.38-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-linux-amd64.deb",
+      "size": 72960990,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.38-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-linux-amd64.snap",
+      "size": 89141248,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.38-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-linux-x64.tar.gz",
+      "size": 99443556,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.38-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-linux-x86_64.rpm",
+      "size": 72868716,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.32.38-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-mac-arm64.dmg",
+      "size": 95749258,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.38-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-mac-x64.dmg",
+      "size": 100925104,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.38-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-win-x64-installer.exe",
+      "size": 76408190,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.38-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-win-x64-loose.tar.gz",
+      "size": 103664829,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.38-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-win-x64-portable.tar.gz",
+      "size": 104315171,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.38-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-win-x64.appx",
+      "size": 111951927,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.38-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.38/electerm-1.32.38-win-x64.tar.gz",
+      "size": 104314257,
+      "type": "application/gzip"
+    }
+  ]
+}

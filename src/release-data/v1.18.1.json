@@ -1,0 +1,67 @@
+{
+  "version": "v1.18.1",
+  "date": "2022-02-08",
+  "body": "Quick bug fix: Fix window resize not working issue",
+  "assets": [
+    {
+      "name": "electerm-1.18.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-linux-amd64.deb",
+      "size": 59395572,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.1-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-linux-amd64.snap",
+      "size": 73445376,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.1-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-linux-x64.tar.gz",
+      "size": 81863671,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.18.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-linux-x86_64.rpm",
+      "size": 60131328,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.18.1-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-mac-arm64.dmg",
+      "size": 88575661,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.1-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-mac-x64.dmg",
+      "size": 87228486,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.1-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-win-x64-installer.exe",
+      "size": 64132032,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.1-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-win-x64-loose.tar.gz",
+      "size": 87193927,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.18.1-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-win-x64.appx",
+      "size": 93787857,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.1-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.1/electerm-1.18.1-win-x64.tar.gz",
+      "size": 87796485,
+      "type": "application/gzip"
+    }
+  ]
+}

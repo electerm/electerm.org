@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.36",
+  "date": "2018-10-12",
+  "body": "- fix #795 fix #792 fix file manager Selection bugs (#797)",
+  "assets": [
+    {
+      "name": "electerm-0.24.36-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.36/electerm-0.24.36-linux-amd64.deb",
+      "size": 36244196,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.36-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.36/electerm-0.24.36-linux-x86_64.rpm",
+      "size": 36378597,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.36-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.36/electerm-0.24.36-mac.dmg",
+      "size": 52224208,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.36-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.36/electerm-0.24.36-win.tar.gz",
+      "size": 51468391,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.36.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.36/electerm-0.24.36.tar.gz",
+      "size": 49149594,
+      "type": "application/gzip"
+    }
+  ]
+}

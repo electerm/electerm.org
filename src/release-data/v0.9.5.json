@@ -1,0 +1,37 @@
+{
+  "version": "v0.9.5",
+  "date": "2017-12-13",
+  "body": "- fix #135 move static resource to dep pack\n- fix #5 add init test (#139)\n- fix #137 add fetch error notification (#138)",
+  "assets": [
+    {
+      "name": "electerm-0.9.5-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.5/electerm-0.9.5-linux-amd64.deb",
+      "size": 37069782,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.9.5-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.5/electerm-0.9.5-linux-x86_64.rpm",
+      "size": 54132652,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.9.5-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.5/electerm-0.9.5-mac.dmg",
+      "size": 51457238,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.9.5-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.5/electerm-0.9.5-win.tar.gz",
+      "size": 55087842,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.9.5.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.5/electerm-0.9.5.tar.gz",
+      "size": 52125915,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": "v1.16.11",
+  "date": "2021-09-18",
+  "body": "Features:\n\n- fix #2248 Add time stamp to terminal log name\n- Strip ansi code from terminal log\n- Make drag bookmark a little easier\n\nBug fixes:\n\n- Fix open terminal log link in info panel\n- Fix upload big file support with rz\n\nUI:\n\n- Adjust default background color\n\nOthers:\n\n- Add experimental mac ARM build, may not work, not tested (#2244)\n",
+  "assets": [
+    {
+      "name": "electerm-1.16.11-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-linux-amd64.deb",
+      "size": 59299454,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.11-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-linux-amd64.snap",
+      "size": 73383936,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.11-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-linux-x64.tar.gz",
+      "size": 81819603,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.11-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-linux-x86_64.rpm",
+      "size": 60104540,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.16.11-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-mac-arm64.dmg",
+      "size": 88546928,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.11-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-mac-x64.dmg",
+      "size": 87190991,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.11-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-win-x64-installer.exe",
+      "size": 64105459,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.11-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-win-x64-loose.tar.gz",
+      "size": 87140415,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.11-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-win-x64.appx",
+      "size": 93749121,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.11-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.11/electerm-1.16.11-win-x64.tar.gz",
+      "size": 87750683,
+      "type": "application/gzip"
+    }
+  ]
+}

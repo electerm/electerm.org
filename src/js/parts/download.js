@@ -3,8 +3,8 @@
 // Localized strings are read from data-* attributes set in the Pug template
 // (so this module stays free of server-side templating).
 function detectOS () {
-  var p = navigator.platform.toLowerCase()
-  var u = navigator.userAgent.toLowerCase()
+  const p = navigator.platform.toLowerCase()
+  const u = navigator.userAgent.toLowerCase()
   if (p.includes('mac') || u.includes('mac')) return 'mac'
   if (p.includes('win') || u.includes('windows')) return 'windows'
   if (p.includes('linux') || u.includes('linux')) return 'linux'
@@ -22,7 +22,7 @@ function switchTab (os) {
 }
 
 function switchArch (btn, arch) {
-  var container = btn.closest('.arch-bar').parentElement
+  const container = btn.closest('.arch-bar').parentElement
   container.querySelectorAll('.arch-btn').forEach(function (b) {
     b.classList.toggle('active', b.getAttribute('data-arch') === arch)
   })
@@ -32,16 +32,16 @@ function switchArch (btn, arch) {
 }
 
 function isAndroidDevice () {
-  var u = navigator.userAgent.toLowerCase()
-  var p = (navigator.platform || '').toLowerCase()
+  const u = navigator.userAgent.toLowerCase()
+  const p = (navigator.platform || '').toLowerCase()
   return p.includes('android') || u.includes('android')
 }
 
-var qrLibLoaded = false
+let qrLibLoaded = false
 function loadQrLib (cb) {
   if (qrLibLoaded) { cb(); return }
   if (window.qrcode) { qrLibLoaded = true; cb(); return }
-  var s = document.createElement('script')
+  const s = document.createElement('script')
   s.src = '/js/qrcode-generator.min.js'
   s.onload = function () { qrLibLoaded = true; cb() }
   s.onerror = function () { cb(new Error('Failed to load QR library')) }
@@ -49,11 +49,11 @@ function loadQrLib (cb) {
 }
 
 function showQrModal (url, source) {
-  var modal = document.getElementById('androidQrModal')
-  var codeEl = document.getElementById('androidQrCode')
-  var urlEl = document.getElementById('androidQrUrl')
-  var dlEl = document.getElementById('androidQrDownload')
-  var srcEl = document.getElementById('androidQrSource')
+  const modal = document.getElementById('androidQrModal')
+  const codeEl = document.getElementById('androidQrCode')
+  const urlEl = document.getElementById('androidQrUrl')
+  const dlEl = document.getElementById('androidQrDownload')
+  const srcEl = document.getElementById('androidQrSource')
   if (!modal) return
   urlEl.textContent = url
   dlEl.href = url
@@ -67,7 +67,7 @@ function showQrModal (url, source) {
       return
     }
     try {
-      var qr = qrcode(0, 'M')
+      const qr = window.qrcode(0, 'M')
       qr.addData(url)
       qr.make()
       codeEl.innerHTML = qr.createSvgTag({
@@ -83,7 +83,7 @@ function showQrModal (url, source) {
 }
 
 function hideQrModal () {
-  var modal = document.getElementById('androidQrModal')
+  const modal = document.getElementById('androidQrModal')
   if (modal) {
     modal.classList.remove('active')
     modal.setAttribute('aria-hidden', 'true')
@@ -91,12 +91,12 @@ function hideQrModal () {
 }
 
 function copyAltCmd (btn) {
-  var item = btn.closest('.alt-install-item')
-  var code = item && item.querySelector('.alt-install-code code')
+  const item = btn.closest('.alt-install-item')
+  const code = item && item.querySelector('.alt-install-code code')
   if (!code) return
-  var text = code.textContent
-  var done = function () {
-    var old = btn.textContent
+  const text = code.textContent
+  const done = function () {
+    const old = btn.textContent
     btn.textContent = btn.dataset.copied
     setTimeout(function () { btn.textContent = old }, 1500)
   }
@@ -109,7 +109,7 @@ function copyAltCmd (btn) {
 }
 
 function fallbackCopy (text) {
-  var ta = document.createElement('textarea')
+  const ta = document.createElement('textarea')
   ta.value = text
   ta.style.position = 'fixed'
   ta.style.opacity = '0'
@@ -119,8 +119,17 @@ function fallbackCopy (text) {
   document.body.removeChild(ta)
 }
 
+function firstPresentTab () {
+  const b = document.querySelector('.download-tab-btn')
+  return b ? b.getAttribute('data-tab') : 'windows'
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-  switchTab(detectOS())
+  // Start on the visitor's OS, but fall back to the first available tab if
+  // this page (e.g. an older release) doesn't ship that OS.
+  const detected = detectOS()
+  const detectedPanel = document.querySelector('.download-panel[data-tab="' + detected + '"]')
+  switchTab(detectedPanel ? detected : firstPresentTab())
   document.querySelectorAll('.download-tab-btn').forEach(function (b) {
     b.addEventListener('click', function () { switchTab(this.getAttribute('data-tab')) })
   })
@@ -132,23 +141,27 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.alt-copy').forEach(function (b) {
     b.addEventListener('click', function () { copyAltCmd(this) })
   })
-  // Android QR modal — desktop only
+  // Android QR modal — desktop only, and only when the modal markup exists
+  // (release pages that don't render it should let the links navigate).
   if (!isAndroidDevice()) {
-    var androidPanel = document.querySelector('.download-panel[data-tab="android"]')
-    if (androidPanel) {
-      androidPanel.querySelectorAll('.download-card-link').forEach(function (link) {
-        link.addEventListener('click', function (e) {
-          e.preventDefault()
-          showQrModal(this.href, this.textContent.trim())
+    const qrModal = document.getElementById('androidQrModal')
+    if (qrModal) {
+      const androidPanel = document.querySelector('.download-panel[data-tab="android"]')
+      if (androidPanel) {
+        androidPanel.querySelectorAll('.download-card-link').forEach(function (link) {
+          link.addEventListener('click', function (e) {
+            e.preventDefault()
+            showQrModal(this.href, this.textContent.trim())
+          })
         })
+      }
+      const closeBtn = document.getElementById('androidQrClose')
+      if (closeBtn) closeBtn.addEventListener('click', hideQrModal)
+      const overlay = document.querySelector('.android-qr-overlay')
+      if (overlay) overlay.addEventListener('click', hideQrModal)
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') hideQrModal()
       })
     }
-    var closeBtn = document.getElementById('androidQrClose')
-    if (closeBtn) closeBtn.addEventListener('click', hideQrModal)
-    var overlay = document.querySelector('.android-qr-overlay')
-    if (overlay) overlay.addEventListener('click', hideQrModal)
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') hideQrModal()
-    })
   }
 })

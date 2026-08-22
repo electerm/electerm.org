@@ -1,0 +1,151 @@
+{
+  "version": "v1.40.20",
+  "date": "2024-10-28",
+  "body": "### Bug fixes\n\n- #3636 Fix sync function loading state control\n\n-----\n\n### Bug 修复\n\n- #3636 修复同步功能加载状态控制",
+  "assets": [
+    {
+      "name": "electerm-1.40.20-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-aarch64.rpm",
+      "size": 66113372,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-amd64.deb",
+      "size": 69780498,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-amd64.snap",
+      "size": 85712896,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-arm64.AppImage",
+      "size": 100970903,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-arm64.deb",
+      "size": 65990224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-arm64.tar.gz",
+      "size": 95570433,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.20-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-armv7l.AppImage",
+      "size": 89119445,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-armv7l.deb",
+      "size": 63930854,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-armv7l.rpm",
+      "size": 63817068,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.20-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-armv7l.tar.gz",
+      "size": 85615457,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-x64.tar.gz",
+      "size": 94992483,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.20-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-x86_64.AppImage",
+      "size": 100056011,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-linux-x86_64.rpm",
+      "size": 69999416,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-mac-arm64.dmg",
+      "size": 99606724,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-mac-arm64.dmg.blockmap",
+      "size": 104208,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-mac-x64.dmg",
+      "size": 104828833,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-mac-x64.dmg.blockmap",
+      "size": 111941,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-win-x64-installer.exe",
+      "size": 74076549,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-win-x64-installer.exe.blockmap",
+      "size": 78302,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-win-x64-loose.tar.gz",
+      "size": 100188053,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.20-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-win-x64-portable.tar.gz",
+      "size": 100494012,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-win-x64.appx",
+      "size": 116723669,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-win-x64.tar.gz",
+      "size": 100493731,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.20-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.20/electerm-1.40.20-win7.tar.gz",
+      "size": 97383119,
+      "type": "application/gzip"
+    }
+  ]
+}

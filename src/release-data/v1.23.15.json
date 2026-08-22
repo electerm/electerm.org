@@ -1,0 +1,67 @@
+{
+  "version": "v1.23.15",
+  "date": "2022-10-14",
+  "body": "### Bug fixes\n\n- Auto blur terminals when setting panel opened\n\n### New features\n\n- Add disable open default tab setting\n- Add loading screen\n- Add trigger delay when mouse over quick command button\n\n### Other updates\n\n- Change default mac exec to zsh",
+  "assets": [
+    {
+      "name": "electerm-1.23.15-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-linux-amd64.deb",
+      "size": 63186686,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.15-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-linux-amd64.snap",
+      "size": 78024704,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.15-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-linux-x64.tar.gz",
+      "size": 86399157,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.15-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-linux-x86_64.rpm",
+      "size": 63296456,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.23.15-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-mac-arm64.dmg",
+      "size": 91080995,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.15-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-mac-x64.dmg",
+      "size": 90353564,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.15-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-win-x64-installer.exe",
+      "size": 68120859,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.15-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-win-x64-loose.tar.gz",
+      "size": 92512850,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.15-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-win-x64.appx",
+      "size": 99772506,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.15-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.15/electerm-1.23.15-win-x64.tar.gz",
+      "size": 93277202,
+      "type": "application/gzip"
+    }
+  ]
+}

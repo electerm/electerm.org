@@ -1,0 +1,67 @@
+{
+  "version": "v1.20.10",
+  "date": "2022-03-31",
+  "body": "Bug fix release:\n\n- fix #2421 Fix search lose focus issue\n- fix #2419 Fix password dropdown select function\n- fix #2415 [macos] Fix edit file with local app function (#2420)\n",
+  "assets": [
+    {
+      "name": "electerm-1.20.10-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-linux-amd64.deb",
+      "size": 59254292,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.10-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-linux-amd64.snap",
+      "size": 73752576,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.10-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-linux-x64.tar.gz",
+      "size": 82179287,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.20.10-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-linux-x86_64.rpm",
+      "size": 60265340,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.20.10-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-mac-arm64.dmg",
+      "size": 88887340,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.10-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-mac-x64.dmg",
+      "size": 87504883,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.10-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-win-x64-installer.exe",
+      "size": 64247877,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.10-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-win-x64-loose.tar.gz",
+      "size": 87483330,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.20.10-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-win-x64.appx",
+      "size": 94119909,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.10-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.10/electerm-1.20.10-win-x64.tar.gz",
+      "size": 88074410,
+      "type": "application/gzip"
+    }
+  ]
+}

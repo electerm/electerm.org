@@ -1,0 +1,151 @@
+{
+  "version": "v1.50.59",
+  "date": "2024-12-05",
+  "body": "### New features/Updates\n\n- Update express version -> 4.21.1\n- Support web session custom useragent (#3688) by @SpenserCai\n- Add web session url validator (#3689) by @SpenserCai\n- Support open new window when click url in webview's page (#3679) by @SpenserCai\n\n\n### Bug fixes\n\n- #3695 Fix some keyboard shortcuts would crash app issue\n- Fix ci for win7 (#3692)\n- Fix invalid web session url may crash the App\n\n\n-----\n\n### 新功能/更新\n\n- 更新 express 版本 -> 4.21.1\n- 支持 Web 会话自定义 User-Agent（#3688）由 @SpenserCai 提供\n- 添加 Web 会话 URL 验证器（#3689）由 @SpenserCai 提供\n- 支持在 WebView 页面中点击 URL 时打开新窗口（#3679）由 @SpenserCai 提供\n\n### Bug 修复\n\n- #3695 修复部分键盘快捷键导致应用崩溃的问题\n- 修复 Win7 的 CI 问题（#3692）\n- 修复无效的 Web 会话 URL 可能导致应用崩溃的问题",
+  "assets": [
+    {
+      "name": "electerm-1.50.59-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-aarch64.rpm",
+      "size": 66082692,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.50.59-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-amd64.deb",
+      "size": 70240906,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-amd64.snap",
+      "size": 87539712,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-arm64.AppImage",
+      "size": 102475601,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-arm64.deb",
+      "size": 65852194,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-arm64.tar.gz",
+      "size": 96935142,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.50.59-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-armv7l.AppImage",
+      "size": 90604161,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-armv7l.deb",
+      "size": 63851626,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-armv7l.rpm",
+      "size": 63799508,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.50.59-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-armv7l.tar.gz",
+      "size": 86980506,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.50.59-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-x64.tar.gz",
+      "size": 97076697,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.50.59-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-x86_64.AppImage",
+      "size": 102352078,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-linux-x86_64.rpm",
+      "size": 70399100,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.50.59-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-mac-arm64.dmg",
+      "size": 100858160,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-mac-arm64.dmg.blockmap",
+      "size": 105498,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-mac-x64.dmg",
+      "size": 106829139,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-mac-x64.dmg.blockmap",
+      "size": 114557,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-win-x64-installer.exe",
+      "size": 75039052,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-win-x64-installer.exe.blockmap",
+      "size": 79615,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-win-x64-loose.tar.gz",
+      "size": 101909422,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.50.59-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-win-x64-portable.tar.gz",
+      "size": 102604259,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.50.59-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-win-x64.appx",
+      "size": 119182904,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.50.59-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-win-x64.tar.gz",
+      "size": 102604066,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.50.59-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.50.59/electerm-1.50.59-win7.tar.gz",
+      "size": 98650100,
+      "type": "application/gzip"
+    }
+  ]
+}

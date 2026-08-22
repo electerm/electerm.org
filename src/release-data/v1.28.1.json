@@ -1,0 +1,67 @@
+{
+  "version": "v1.28.1",
+  "date": "2023-08-15",
+  "body": "### New features\n\n- Support portable in Windows OS (#2916)\n\n### Bug fixes/UI\n\n- fix #2908 Improve zoom button UI in system menu\n- fix #2908 Fix zoom not applied issue when restart\n\n### Other updates\n\n- Upgrade electron to v22 (#2921)",
+  "assets": [
+    {
+      "name": "electerm-1.28.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-linux-amd64.deb",
+      "size": 70761208,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.1-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-linux-amd64.snap",
+      "size": 87269376,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.1-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-linux-x64.tar.gz",
+      "size": 97208691,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.28.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-linux-x86_64.rpm",
+      "size": 70662372,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.28.1-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-mac-arm64.dmg",
+      "size": 95015953,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.1-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-mac-x64.dmg",
+      "size": 100918186,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.1-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-win-x64-installer.exe",
+      "size": 75576604,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.1-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-win-x64-loose.tar.gz",
+      "size": 103302297,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.28.1-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-win-x64.appx",
+      "size": 111582698,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.1-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.1/electerm-1.28.1-win-x64.tar.gz",
+      "size": 103942860,
+      "type": "application/gzip"
+    }
+  ]
+}

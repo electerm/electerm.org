@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.68",
+  "date": "2023-11-15",
+  "body": "### Bug fixes\n\n- fix #3088 Avoid duplicate submit change password operation\n- fix #3087 #3089 Add space to default terminal word separator\n- fix #3094 Support open non-en character file path for windows OS",
+  "assets": [
+    {
+      "name": "electerm-1.34.68-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-linux-amd64.deb",
+      "size": 72957978,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.68-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-linux-amd64.snap",
+      "size": 88944640,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.68-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-linux-x64.tar.gz",
+      "size": 99230860,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.68-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-linux-x86_64.rpm",
+      "size": 72877080,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.68-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-mac-arm64.dmg",
+      "size": 95495322,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.68-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-mac-x64.dmg",
+      "size": 100709423,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.68-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-win-x64-installer.exe",
+      "size": 76674532,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.68-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-win-x64-loose.tar.gz",
+      "size": 103825198,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.68-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-win-x64-portable.tar.gz",
+      "size": 104048395,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.68-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-win-x64.appx",
+      "size": 111661750,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.68-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.68/electerm-1.34.68-win-x64.tar.gz",
+      "size": 104047471,
+      "type": "application/gzip"
+    }
+  ]
+}

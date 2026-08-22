@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.72",
+  "date": "2019-10-18",
+  "body": "- [feat] Add ssh setting: login script delay (#1378)\n- [feat] Add path validation and better resolve function (#1377)",
+  "assets": [
+    {
+      "name": "electerm-0.27.72-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.72/electerm-0.27.72-linux-amd64.deb",
+      "size": 46180066,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.72-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.72/electerm-0.27.72-linux-amd64.snap",
+      "size": 56741888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.72-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.72/electerm-0.27.72-linux-x64.tar.gz",
+      "size": 64009753,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.72-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.72/electerm-0.27.72-linux-x86_64.rpm",
+      "size": 45988656,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.72-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.72/electerm-0.27.72-mac.dmg",
+      "size": 68189921,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.72-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.72/electerm-0.27.72-win-x64.tar.gz",
+      "size": 65516198,
+      "type": "application/gzip"
+    }
+  ]
+}

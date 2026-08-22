@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.67",
+  "date": "2019-10-08",
+  "body": "- Fix bookmark/other item delete (#1369)\n- [UI] Fix quick command select UI (#1361)",
+  "assets": [
+    {
+      "name": "electerm-0.27.67-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.67/electerm-0.27.67-linux-amd64.deb",
+      "size": 46011434,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.67-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.67/electerm-0.27.67-linux-amd64.snap",
+      "size": 56377344,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.67-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.67/electerm-0.27.67-linux-x64.tar.gz",
+      "size": 63599459,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.67-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.67/electerm-0.27.67-linux-x86_64.rpm",
+      "size": 45811588,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.67-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.67/electerm-0.27.67-mac.dmg",
+      "size": 67747954,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.67-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.67/electerm-0.27.67-win-x64.tar.gz",
+      "size": 64287179,
+      "type": "application/gzip"
+    }
+  ]
+}

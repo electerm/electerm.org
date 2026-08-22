@@ -1,0 +1,43 @@
+{
+  "version": "v1.0.27",
+  "date": "2020-02-12",
+  "body": "- [bug fix] Fix terminal init in windows OS (#1558)",
+  "assets": [
+    {
+      "name": "electerm-1.0.27-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.27/electerm-1.0.27-linux-amd64.deb",
+      "size": 50875604,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.27-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.27/electerm-1.0.27-linux-amd64.snap",
+      "size": 62132224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.27-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.27/electerm-1.0.27-linux-x64.tar.gz",
+      "size": 70223688,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.0.27-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.27/electerm-1.0.27-linux-x86_64.rpm",
+      "size": 50528960,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.0.27-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.27/electerm-1.0.27-mac.dmg",
+      "size": 68158244,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.27-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.27/electerm-1.0.27-win-x64.tar.gz",
+      "size": 65295548,
+      "type": "application/gzip"
+    }
+  ]
+}

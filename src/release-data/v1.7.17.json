@@ -1,0 +1,43 @@
+{
+  "version": "v1.7.17",
+  "date": "2020-11-15",
+  "body": "- feat: Show quick commands when mouseover\n- code: Rewrite upgrade check module\n- ui: Fix file manager selected item color\n- feat: Add notification for rz upload size limit\n- ui: Improve sftp transfer UI\n- ui: Add transfer animation for tab ui",
+  "assets": [
+    {
+      "name": "electerm-1.7.17-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.17/electerm-1.7.17-linux-amd64.deb",
+      "size": 55251886,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.7.17-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.17/electerm-1.7.17-linux-amd64.snap",
+      "size": 67649536,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.7.17-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.17/electerm-1.7.17-linux-x64.tar.gz",
+      "size": 76334699,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.7.17-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.17/electerm-1.7.17-linux-x86_64.rpm",
+      "size": 55583528,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.7.17-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.17/electerm-1.7.17-mac.dmg",
+      "size": 79548266,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.7.17-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.17/electerm-1.7.17-win-x64.tar.gz",
+      "size": 74496281,
+      "type": "application/gzip"
+    }
+  ]
+}

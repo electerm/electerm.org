@@ -1,0 +1,67 @@
+{
+  "version": "v1.23.20",
+  "date": "2022-10-20",
+  "body": "### Bug fixes\n\n- fix #2660 fix #2666 Fix copy select content logic\n- fix #2670 Fix file info/mode edit\n\n### UI\n\n- Fix logo element UI",
+  "assets": [
+    {
+      "name": "electerm-1.23.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-linux-amd64.deb",
+      "size": 63208714,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-linux-amd64.snap",
+      "size": 78024704,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-linux-x64.tar.gz",
+      "size": 86399886,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-linux-x86_64.rpm",
+      "size": 63277868,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.23.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-mac-arm64.dmg",
+      "size": 91081029,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-mac-x64.dmg",
+      "size": 90352806,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-win-x64-installer.exe",
+      "size": 68121142,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-win-x64-loose.tar.gz",
+      "size": 92513264,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-win-x64.appx",
+      "size": 99772718,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.20/electerm-1.23.20-win-x64.tar.gz",
+      "size": 93277739,
+      "type": "application/gzip"
+    }
+  ]
+}

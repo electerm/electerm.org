@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.44",
+  "date": "2018-10-20",
+  "body": "- fix #812 [experimental]fix connection lost indicator (#821)\n- fix #814 fix bookmark tree select\n- fix #814 fix symlink path resolve (#820)\n- fix #802 add reset to default setting function (#819)\n- fix #817 [UI]adjust border radius setting (#818)",
+  "assets": [
+    {
+      "name": "electerm-0.24.44-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.44/electerm-0.24.44-linux-amd64.deb",
+      "size": 36243598,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.44-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.44/electerm-0.24.44-linux-x86_64.rpm",
+      "size": 36388605,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.44-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.44/electerm-0.24.44-mac.dmg",
+      "size": 52231551,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.44-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.44/electerm-0.24.44-win.tar.gz",
+      "size": 51473314,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.44.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.44/electerm-0.24.44.tar.gz",
+      "size": 49154824,
+      "type": "application/gzip"
+    }
+  ]
+}

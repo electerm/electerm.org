@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.41",
+  "date": "2019-06-13",
+  "body": "- fix #1302 Fix Zmodem support (#1303)\n- fix #875 Support auto format ssh host string (#1301)\n- Add useless logo hover animation\n- fix #1288 Update locales pack (#1300)\n- fix #1257 Fix tests (#1297)",
+  "assets": [
+    {
+      "name": "electerm-0.27.41-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.41/electerm-0.27.41-linux-amd64.deb",
+      "size": 56577606,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.41-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.41/electerm-0.27.41-linux-amd64.snap",
+      "size": 135794688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.41-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.41/electerm-0.27.41-linux-x64.tar.gz",
+      "size": 81014236,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.41-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.41/electerm-0.27.41-linux-x86_64.rpm",
+      "size": 55951308,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.41-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.41/electerm-0.27.41-mac.dmg",
+      "size": 62440102,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.41-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.41/electerm-0.27.41-win-x64.tar.gz",
+      "size": 64254282,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v1.9.19",
+  "date": "2020-11-25",
+  "body": "- fix #1919 fix: Show terminal search icon\n- feat: Support keyboard interactive (#1921)\n- fix #1916 feat: Download upgrade with global proxy (#1918)",
+  "assets": [
+    {
+      "name": "electerm-1.9.19-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.19/electerm-1.9.19-linux-amd64.deb",
+      "size": 55380934,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.19-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.19/electerm-1.9.19-linux-amd64.snap",
+      "size": 68194304,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.19-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.19/electerm-1.9.19-linux-x64.tar.gz",
+      "size": 76916656,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.9.19-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.19/electerm-1.9.19-linux-x86_64.rpm",
+      "size": 56081860,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.9.19-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.19/electerm-1.9.19-mac.dmg",
+      "size": 80155751,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.19-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.19/electerm-1.9.19-win-x64.tar.gz",
+      "size": 75725167,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.6",
+  "date": "2023-11-27",
+  "body": "### New features\n\n- Add addTimeStampToTermLog switch to terminal info panel/setting\n\n### Bug fixes\n\n- #3121 #3115 Fix some default shortcuts like ctrl+v not handled right in vim and other terminal app\n- fix terminal log logic",
+  "assets": [
+    {
+      "name": "electerm-1.37.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-linux-amd64.deb",
+      "size": 73225162,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-linux-amd64.snap",
+      "size": 88915968,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-linux-x64.tar.gz",
+      "size": 99243135,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-linux-x86_64.rpm",
+      "size": 72879344,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-mac-arm64.dmg",
+      "size": 95472084,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.6-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-mac-x64.dmg",
+      "size": 100731847,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.6-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-win-x64-installer.exe",
+      "size": 76682461,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.6-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-win-x64-loose.tar.gz",
+      "size": 103834740,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.6-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-win-x64-portable.tar.gz",
+      "size": 104059291,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.6-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-win-x64.appx",
+      "size": 111654053,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.6/electerm-1.37.6-win-x64.tar.gz",
+      "size": 104059522,
+      "type": "application/gzip"
+    }
+  ]
+}

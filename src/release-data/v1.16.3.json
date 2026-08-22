@@ -1,0 +1,61 @@
+{
+  "version": "v1.16.3",
+  "date": "2021-08-19",
+  "body": "- new feature: Quick command labels\n- Remove serial port support\n- bug fix: Fix crash when open settings\n- For snap user, please reinstall with `snap install electerm --classic` since electerm has been granted classic confinement to resolve permission issue like can not use sudo or can not get font list",
+  "assets": [
+    {
+      "name": "electerm-1.16.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-linux-amd64.deb",
+      "size": 59297810,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-linux-amd64.snap",
+      "size": 73392128,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-linux-x64.tar.gz",
+      "size": 81813301,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-linux-x86_64.rpm",
+      "size": 60114312,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.16.3-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-mac-x64.dmg",
+      "size": 87179866,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.3-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-win-x64-installer.exe",
+      "size": 63999529,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.3-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-win-x64-loose.tar.gz",
+      "size": 87012416,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.3-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-win-x64.appx",
+      "size": 93602829,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.3/electerm-1.16.3-win-x64.tar.gz",
+      "size": 87622589,
+      "type": "application/gzip"
+    }
+  ]
+}

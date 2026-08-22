@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.91",
+  "date": "2022-06-30",
+  "body": "### Bug fixes\n\n- fix #2542 Fix batch input accept newline character\n- fix #2531 Fix new tab index logic\n- fix #2530 Fix reload do not show terminal issue",
+  "assets": [
+    {
+      "name": "electerm-1.21.91-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-linux-amd64.deb",
+      "size": 62992418,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.91-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-linux-amd64.snap",
+      "size": 77533184,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.91-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-linux-x64.tar.gz",
+      "size": 85846312,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.91-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-linux-x86_64.rpm",
+      "size": 63126664,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.91-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-mac-arm64.dmg",
+      "size": 90441903,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.91-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-mac-x64.dmg",
+      "size": 89638507,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.91-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-win-x64-installer.exe",
+      "size": 67848930,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.91-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-win-x64-loose.tar.gz",
+      "size": 91978585,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.91-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-win-x64.appx",
+      "size": 99148792,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.91-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.91/electerm-1.21.91-win-x64.tar.gz",
+      "size": 92728017,
+      "type": "application/gzip"
+    }
+  ]
+}

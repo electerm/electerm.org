@@ -1,0 +1,61 @@
+{
+  "version": "1.13.4",
+  "date": "2021-06-07",
+  "body": "Add privacy notice link and build appx and nsis release for windows (no need to upgrade)",
+  "assets": [
+    {
+      "name": "electerm-1.13.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-linux-amd64.deb",
+      "size": 59032620,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.4-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-linux-amd64.snap",
+      "size": 73379840,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.4-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-linux-x64.tar.gz",
+      "size": 81770552,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.13.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-linux-x86_64.rpm",
+      "size": 60195688,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.13.4-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-mac.dmg",
+      "size": 86814488,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.4-win-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-win-installer.exe",
+      "size": 63482960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.4-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-win-x64-loose.tar.gz",
+      "size": 86049026,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.13.4-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-win-x64.appx",
+      "size": 92619441,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.4-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/1.13.4/electerm-1.13.4-win-x64.tar.gz",
+      "size": 86704927,
+      "type": "application/gzip"
+    }
+  ]
+}

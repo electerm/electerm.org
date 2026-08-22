@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.96",
+  "date": "2023-12-28",
+  "body": "### Quick bug fix release\n\n- fix #3207 #3205 #3208 #3206 Completely resolve backspace key issue, fix unexpected drag",
+  "assets": [
+    {
+      "name": "electerm-1.37.96-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-linux-amd64.deb",
+      "size": 67402056,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.96-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-linux-amd64.snap",
+      "size": 82329600,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.96-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-linux-x64.tar.gz",
+      "size": 91506006,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.96-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-linux-x86_64.rpm",
+      "size": 67525792,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.96-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-mac-arm64.dmg",
+      "size": 95951450,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.96-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-mac-x64.dmg",
+      "size": 101175654,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.96-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-win-x64-installer.exe",
+      "size": 71278351,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.96-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-win-x64-loose.tar.gz",
+      "size": 96699643,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.96-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-win-x64-portable.tar.gz",
+      "size": 96947666,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.96-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-win-x64.appx",
+      "size": 112948609,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.96-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.96/electerm-1.37.96-win-x64.tar.gz",
+      "size": 96947765,
+      "type": "application/gzip"
+    }
+  ]
+}

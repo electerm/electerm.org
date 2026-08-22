@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.28",
+  "date": "2018-10-02",
+  "body": "- fix #717 fix #695 fix #775 add fontSize/fontFamily setting (#777)",
+  "assets": [
+    {
+      "name": "electerm-0.24.28-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.28/electerm-0.24.28-linux-amd64.deb",
+      "size": 36239460,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.28-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.28/electerm-0.24.28-linux-x86_64.rpm",
+      "size": 36385505,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.28-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.28/electerm-0.24.28-mac.dmg",
+      "size": 52226717,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.28-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.28/electerm-0.24.28-win.tar.gz",
+      "size": 51472714,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.28.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.28/electerm-0.24.28.tar.gz",
+      "size": 49151014,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.11",
+  "date": "2019-04-17",
+  "body": "- fix #1214 [fix][windows] Fix upgrade download in windows (#1232)\n- fix #1200 Support Ctrl/Cmd + C/V for Copy/Paste (#1231)\n- fix #1229 [UI] Fix new ssh/new tab menu name (#1230)\n- fix #1216 [feat] Add log viewer to about panel (#1224)\n- fix #1218 [bug fix] Fix sftp close function (#1223)\n- fix #1220 Use electron 4 (#1222)\n- fix #1213 [chor] Use electron-log module to do log (#1215)\n- fix #1210 [UI] Fix current theme item UI (#1211)",
+  "assets": [
+    {
+      "name": "electerm-0.27.11-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.11/electerm-0.27.11-linux-amd64.deb",
+      "size": 52652738,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.11-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.11/electerm-0.27.11-linux-amd64.snap",
+      "size": 130650112,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.11-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.11/electerm-0.27.11-linux-x64.tar.gz",
+      "size": 75409375,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.11-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.11/electerm-0.27.11-linux-x86_64.rpm",
+      "size": 52562758,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.11-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.11/electerm-0.27.11-mac.dmg",
+      "size": 58995995,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.11-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.11/electerm-0.27.11-win-x64.tar.gz",
+      "size": 62440576,
+      "type": "application/gzip"
+    }
+  ]
+}

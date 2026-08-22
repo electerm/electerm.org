@@ -1,0 +1,67 @@
+{
+  "version": "v1.25.50",
+  "date": "2023-06-09",
+  "body": "### Bug fixes\n\n- fix #2814 Fix switch tab lose focus issue,\n- fix #2821 fix drag tab cause switch tab order chaos\n- fix #2842 Fix server info UI(net speed and mem)\n- fix #2813 fix split terminal border not showing issue\n\n### New features\n\n- fix #2819 Add clear option to select no proxy in bookmark options\n- fix #2834 Telnet username set not required\n- Add desc to bookmark list title\n",
+  "assets": [
+    {
+      "name": "electerm-1.25.50-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-linux-amd64.deb",
+      "size": 63668528,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.50-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-linux-amd64.snap",
+      "size": 78528512,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.50-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-linux-x64.tar.gz",
+      "size": 86942912,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.50-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-linux-x86_64.rpm",
+      "size": 63744000,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.25.50-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-mac-arm64.dmg",
+      "size": 91391571,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.50-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-mac-x64.dmg",
+      "size": 91237146,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.50-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-win-x64-installer.exe",
+      "size": 68431149,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.50-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-win-x64-loose.tar.gz",
+      "size": 93470690,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.50-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-win-x64.appx",
+      "size": 100317394,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.50-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.50/electerm-1.25.50-win-x64.tar.gz",
+      "size": 93809735,
+      "type": "application/gzip"
+    }
+  ]
+}

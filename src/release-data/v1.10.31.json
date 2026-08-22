@@ -1,0 +1,43 @@
+{
+  "version": "v1.10.31",
+  "date": "2021-01-01",
+  "body": "- fix #1974 ui: Remove tabs as system drag area to avoid some menu tab unable to be clicked issue.\n- fix #1971 feat: Support pin bookmark and history panel (#1981)\n- fix #1986 feat: Send check info request with delay to reduce cpu usage in terminal info modal\n- fix #1985 ui: make transfer control icon bigger\n- ui: Remove drag-to-select function (#1988)\n- perf: Reduce transfer UI cpu load\n- fix: Fix delete folder in windows\n- fix: Fix context menu in local file manager\n- feat: Remove serialport support for windows (#1994)\n- code: Use dayjs to reduce bundle size (#1993)",
+  "assets": [
+    {
+      "name": "electerm-1.10.31-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.31/electerm-1.10.31-linux-amd64.deb",
+      "size": 54917314,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.31-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.31/electerm-1.10.31-linux-amd64.snap",
+      "size": 67796992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.31-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.31/electerm-1.10.31-linux-x64.tar.gz",
+      "size": 76491008,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.10.31-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.31/electerm-1.10.31-linux-x86_64.rpm",
+      "size": 55949304,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.10.31-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.31/electerm-1.10.31-mac.dmg",
+      "size": 79726721,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.31-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.31/electerm-1.10.31-win-x64.tar.gz",
+      "size": 73830234,
+      "type": "application/gzip"
+    }
+  ]
+}

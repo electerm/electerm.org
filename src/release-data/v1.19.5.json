@@ -1,0 +1,67 @@
+{
+  "version": "v1.19.5",
+  "date": "2022-03-18",
+  "body": "Performance Improve\n\n- Resolve bookmark related(create, delete, clone etc) performance issue\n\nOther info:\n\nWill continue improve performance in future releases.",
+  "assets": [
+    {
+      "name": "electerm-1.19.5-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-linux-amd64.deb",
+      "size": 59241028,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.5-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-linux-amd64.snap",
+      "size": 73703424,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.5-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-linux-x64.tar.gz",
+      "size": 82141985,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.19.5-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-linux-x86_64.rpm",
+      "size": 60254700,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.19.5-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-mac-arm64.dmg",
+      "size": 88833551,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.5-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-mac-x64.dmg",
+      "size": 87493305,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.5-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-win-x64-installer.exe",
+      "size": 64271304,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.5-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-win-x64-loose.tar.gz",
+      "size": 87479004,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.19.5-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-win-x64.appx",
+      "size": 94092643,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.5-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.5/electerm-1.19.5-win-x64.tar.gz",
+      "size": 88071802,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "version": "v1.39.88",
+  "date": "2024-07-22",
+  "body": "### New features\n\n- #3514 User can select what data to sync\n\n### Bug fixes/UI/UX\n\n- #3522 Fix edit icon not showing issue in dropdown bookmark select\n- Fix some old bookmark can not create new folder in sftp issue\n- Fix run script UI: one script takes one line\n- Fix socks proxy connection problem (#3499) by @loopx9\n- Fix ctrl+f throw error when no tab issue @YMonster\n- UX: Improve drag to resize UX for side panel\n- UX: #3507 Set sidebar min width from 343 to 150\n- #3506 UI: remove copy link in terminal info tables, now click content woul\nd trigger copy\n\n------\n\n### 新功能\n\n- #3514 用户可以选择同步哪些数据\n\n### Bug 修复/UI/UX\n\n- #3522 修复下拉书签选择中编辑图标不显示的问题\n- 修复一些旧书签无法在 sftp 中创建新文件夹的问题\n- 修复运行脚本 UI：每个脚本占一行\n- 修复 socks 代理连接问题 (#3499) @loopx9\n- 修复没有选项卡时按 ctrl+f 抛出错误的问题 @YMonster\n- UX：改善侧边面板拖动调整大小的用户体验\n- UX：#3507 将侧边栏最小宽度从 343 调整为 150\n- #3506 UI：移除终端信息表中的复制链接，现在点击内容即可触发复制",
+  "assets": [
+    {
+      "name": "electerm-1.39.88-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-aarch64.rpm",
+      "size": 66011340,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.88-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-amd64.deb",
+      "size": 69908604,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-amd64.snap",
+      "size": 85712896,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-arm64.AppImage",
+      "size": 100991577,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-arm64.deb",
+      "size": 65927712,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-arm64.tar.gz",
+      "size": 95584986,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.88-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-armv7l.AppImage",
+      "size": 89136138,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-armv7l.deb",
+      "size": 64018694,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-armv7l.rpm",
+      "size": 63724368,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.88-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-armv7l.tar.gz",
+      "size": 85629260,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.88-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-x64.tar.gz",
+      "size": 95006261,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.88-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-x86_64.AppImage",
+      "size": 100076591,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-linux-x86_64.rpm",
+      "size": 69903276,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.88-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-mac-arm64.dmg",
+      "size": 99625713,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-mac-arm64.dmg.blockmap",
+      "size": 104157,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-mac-x64.dmg",
+      "size": 104858706,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-mac-x64.dmg.blockmap",
+      "size": 111305,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-win-x64-installer.exe",
+      "size": 74158988,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-win-x64-installer.exe.blockmap",
+      "size": 77913,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-win-x64-loose.tar.gz",
+      "size": 100193484,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.88-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-win-x64-portable.tar.gz",
+      "size": 100506522,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.88-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-win-x64.appx",
+      "size": 116781715,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.88-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-win-x64.tar.gz",
+      "size": 100506324,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.88-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.88/electerm-1.39.88-win7.tar.gz",
+      "size": 97397872,
+      "type": "application/gzip"
+    }
+  ]
+}

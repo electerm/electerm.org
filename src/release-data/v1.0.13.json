@@ -1,0 +1,43 @@
+{
+  "version": "v1.0.13",
+  "date": "2020-01-05",
+  "body": "- [fix] Fix unmaxmize causing window disappear bug (#1515)\n- [feat] Add edit icon in bookmark select menu (#1514)\n- [feat] Add \"show in file manager\" in context menu of local file manager\n- [feat] Add clear terminal shortcut: Ctrl + L (#1510)\n- [fix] Change switch tabs shortcut to Ctrl + Tab (#1507)\n- [chor] Add changelog link to about panel (#1502)",
+  "assets": [
+    {
+      "name": "electerm-1.0.13-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.13/electerm-1.0.13-linux-amd64.deb",
+      "size": 50868132,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.13-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.13/electerm-1.0.13-linux-amd64.snap",
+      "size": 62132224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.13-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.13/electerm-1.0.13-linux-x64.tar.gz",
+      "size": 70221302,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.0.13-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.13/electerm-1.0.13-linux-x86_64.rpm",
+      "size": 50535788,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.0.13-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.13/electerm-1.0.13-mac.dmg",
+      "size": 68156247,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.13-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.13/electerm-1.0.13-win-x64.tar.gz",
+      "size": 65647845,
+      "type": "application/gzip"
+    }
+  ]
+}

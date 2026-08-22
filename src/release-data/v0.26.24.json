@@ -1,0 +1,37 @@
+{
+  "version": "v0.26.24",
+  "date": "2019-01-22",
+  "body": "- fix #1060 Add terminal auto focus (#1091)",
+  "assets": [
+    {
+      "name": "electerm-0.26.24-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.24/electerm-0.26.24-linux-amd64.deb",
+      "size": 38236232,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.24-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.24/electerm-0.26.24-linux-x64.tar.gz",
+      "size": 52237681,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.24-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.24/electerm-0.26.24-linux-x86_64.rpm",
+      "size": 38252370,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.24-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.24/electerm-0.26.24-mac.dmg",
+      "size": 53889842,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.24-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.24/electerm-0.26.24-win-x64.tar.gz",
+      "size": 54196627,
+      "type": "application/gzip"
+    }
+  ]
+}

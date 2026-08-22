@@ -1,0 +1,67 @@
+{
+  "version": "v1.27.20",
+  "date": "2023-07-27",
+  "body": "### Quick bug fix release\n\n- Fix telnet bookmark can not be saved properly issue",
+  "assets": [
+    {
+      "name": "electerm-1.27.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-linux-amd64.deb",
+      "size": 63552790,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-linux-amd64.snap",
+      "size": 78733312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-linux-x64.tar.gz",
+      "size": 87136252,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.27.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-linux-x86_64.rpm",
+      "size": 63756216,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.27.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-mac-arm64.dmg",
+      "size": 91625094,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-mac-x64.dmg",
+      "size": 91452386,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-win-x64-installer.exe",
+      "size": 72572839,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-win-x64-loose.tar.gz",
+      "size": 99262848,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.27.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-win-x64.appx",
+      "size": 106944036,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.20/electerm-1.27.20-win-x64.tar.gz",
+      "size": 99893340,
+      "type": "application/gzip"
+    }
+  ]
+}

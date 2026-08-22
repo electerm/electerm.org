@@ -1,0 +1,49 @@
+{
+  "version": "v1.11.6",
+  "date": "2021-01-14",
+  "body": "- [fix] Fix worker may not load in time issue\n- [chor] Fix brew install guide by @kawarimidoll \n- [warn] The mac-arm64 build may still not work",
+  "assets": [
+    {
+      "name": "electerm-1.11.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.6/electerm-1.11.6-linux-amd64.deb",
+      "size": 57304048,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.6/electerm-1.11.6-linux-amd64.snap",
+      "size": 70135808,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.6/electerm-1.11.6-linux-x64.tar.gz",
+      "size": 78536024,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.11.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.6/electerm-1.11.6-linux-x86_64.rpm",
+      "size": 58218248,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.11.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.6/electerm-1.11.6-mac-arm64.dmg",
+      "size": 86108603,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.6-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.6/electerm-1.11.6-mac.dmg",
+      "size": 85197919,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.6/electerm-1.11.6-win-x64.tar.gz",
+      "size": 73331793,
+      "type": "application/gzip"
+    }
+  ]
+}

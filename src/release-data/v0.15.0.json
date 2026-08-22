@@ -1,0 +1,37 @@
+{
+  "version": "v0.15.0",
+  "date": "2018-01-27",
+  "body": "- fix #239 add basic ssh test (#285)\n- fix #269 sftp runs in seprate process (#284)\n- fix #282 new update check method (#283)\n- fix #278 update all dependencies (#281)\n- fix #279 add scrollback lines setting (#280)",
+  "assets": [
+    {
+      "name": "electerm-0.15.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.0/electerm-0.15.0-linux-amd64.deb",
+      "size": 37191390,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.15.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.0/electerm-0.15.0-linux-x86_64.rpm",
+      "size": 53940030,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.15.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.0/electerm-0.15.0-mac.dmg",
+      "size": 51593167,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.15.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.0/electerm-0.15.0-win.tar.gz",
+      "size": 56185940,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.15.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.0/electerm-0.15.0.tar.gz",
+      "size": 51944318,
+      "type": "application/gzip"
+    }
+  ]
+}

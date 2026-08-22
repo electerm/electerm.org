@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.63",
+  "date": "2019-03-15",
+  "body": "- fix #1172 Add linkClick/winpty compat addon for xterm (#1173)",
+  "assets": [
+    {
+      "name": "electerm-0.26.63-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.63/electerm-0.26.63-linux-amd64.deb",
+      "size": 38168162,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.63-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.63/electerm-0.26.63-linux-amd64.snap",
+      "size": 110403584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.63-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.63/electerm-0.26.63-linux-x64.tar.gz",
+      "size": 52679619,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.63-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.63/electerm-0.26.63-linux-x86_64.rpm",
+      "size": 38189730,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.63-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.63/electerm-0.26.63-mac.dmg",
+      "size": 54361949,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.63-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.63/electerm-0.26.63-win-x64.tar.gz",
+      "size": 54676102,
+      "type": "application/gzip"
+    }
+  ]
+}

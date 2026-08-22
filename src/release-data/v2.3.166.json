@@ -1,0 +1,253 @@
+{
+  "version": "v2.3.166",
+  "date": "2025-12-27",
+  "body": "### New features/UI/Updates\n\n- Support workspace: save/load specific layout and sessions (#4140)\n- Improve terminal data flow in alternate screen mode (like vim, less, or TUI apps like Claude Code)\n- Use custom modal to improve performance\n- Improve widget UI\n- UI: Better OS info display\n\n### Bug fixes\n\n- #4143 Fix ftp multi file transfer break session issue\n- Fix can not transfer empty file issue\n- Fix a UI glitch for shortcut select\n- #4136 Fix http proxy auth support\n\n-----\n\n### 新功能/界面/更新\n\n- 支持工作区：保存/加载特定布局和会话 (#4140)\n- 改善交替屏幕模式下的终端数据流（如 vim、less 或 TUI 应用如 Claude Code）\n- 使用自定义模态框以提升性能\n- 改善小部件界面\n- UI：更好的操作系统信息显示\n\n### Bug 修复\n\n- #4143 修复 ftp 多文件传输中断会话问题\n- 修复无法传输空文件的问题\n- 修复快捷选择的用户界面小故障\n- #4136 修复 http 代理认证支持\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)\n\nVideo guide使用视频: [https://electerm.html5beta.com/videos](https://electerm.html5beta.com/videos)",
+  "assets": [
+    {
+      "name": "electerm-2.3.166-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-aarch64-legacy.rpm",
+      "size": 60800216,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.166-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-aarch64.rpm",
+      "size": 60927085,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.166-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-amd64-legacy.deb",
+      "size": 72540176,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-amd64.deb",
+      "size": 85684040,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-amd64.snap",
+      "size": 92930048,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-arm64-legacy.AppImage",
+      "size": 92386191,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-arm64-legacy.deb",
+      "size": 68325236,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-arm64-legacy.tar.gz",
+      "size": 87545738,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-arm64.AppImage",
+      "size": 92668545,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-arm64.deb",
+      "size": 68501472,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-arm64.tar.gz",
+      "size": 87813942,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l-legacy.AppImage",
+      "size": 80589406,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l-legacy.deb",
+      "size": 64691040,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l-legacy.rpm",
+      "size": 58479008,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l-legacy.tar.gz",
+      "size": 77613016,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l.AppImage",
+      "size": 80875949,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l.deb",
+      "size": 64870372,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l.rpm",
+      "size": 58601013,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.166-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-armv7l.tar.gz",
+      "size": 77881246,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-x64-legacy.tar.gz",
+      "size": 87187586,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-x64.tar.gz",
+      "size": 104069568,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-x86_64-legacy.AppImage",
+      "size": 91737117,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-x86_64-legacy.rpm",
+      "size": 64713328,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.166-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-x86_64.AppImage",
+      "size": 109675304,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-linux-x86_64.rpm",
+      "size": 76418869,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.166-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-mac-arm64.dmg",
+      "size": 103174484,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-mac-arm64.dmg.blockmap",
+      "size": 108265,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-mac-x64.dmg",
+      "size": 104988546,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-mac-x64.dmg.blockmap",
+      "size": 110331,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-mac10-x64.dmg",
+      "size": 89901365,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-mac10-x64.dmg.blockmap",
+      "size": 95549,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-arm64-installer.exe",
+      "size": 88397008,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-arm64-installer.exe.blockmap",
+      "size": 93116,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-arm64.tar.gz",
+      "size": 118188080,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-x64-installer.exe",
+      "size": 87289607,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-x64-installer.exe.blockmap",
+      "size": 90781,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-x64-loose.tar.gz",
+      "size": 118852699,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-x64-portable.tar.gz",
+      "size": 118886234,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-x64.appx",
+      "size": 139557599,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.166-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win-x64.tar.gz",
+      "size": 118886468,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.166-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.166/electerm-2.3.166-win7.tar.gz",
+      "size": 95189852,
+      "type": "application/gzip"
+    }
+  ]
+}

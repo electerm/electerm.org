@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.30",
+  "date": "2023-10-18",
+  "body": "### Bug fixes/UI\n\n- Fix setting panel width not responsive issue\n- Fix #3038 Fix sftp drag file to folder function\n- Fix #3036 Fix remote address bookmark not loaded when app init\n- Fix context menu not hide when close setting panel\n- Remove username placeholder to avoid confusion",
+  "assets": [
+    {
+      "name": "electerm-1.34.30-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-linux-amd64.deb",
+      "size": 72924588,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.30-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-linux-amd64.snap",
+      "size": 88875008,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.30-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-linux-x64.tar.gz",
+      "size": 99175652,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.30-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-linux-x86_64.rpm",
+      "size": 72862328,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.30-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-mac-arm64.dmg",
+      "size": 95446630,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.30-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-mac-x64.dmg",
+      "size": 100666638,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.30-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-win-x64-installer.exe",
+      "size": 76134230,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.30-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-win-x64-loose.tar.gz",
+      "size": 103825491,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.30-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-win-x64-portable.tar.gz",
+      "size": 104050932,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.30-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-win-x64.appx",
+      "size": 111646245,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.30-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.30/electerm-1.34.30-win-x64.tar.gz",
+      "size": 104050268,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": "v1.33.36",
+  "date": "2023-10-01",
+  "body": "### New features\n\n- fix #2914 Add calc folder size button\n\n### Bug fixes\n\n- fix #3007 fix #3013 Fix ssh terminal color issue\n",
+  "assets": [
+    {
+      "name": "electerm-1.33.36-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-linux-amd64.deb",
+      "size": 73001810,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.36-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-linux-amd64.snap",
+      "size": 89133056,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.36-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-linux-x64.tar.gz",
+      "size": 99438802,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.33.36-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-linux-x86_64.rpm",
+      "size": 72861780,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.33.36-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-mac-arm64.dmg",
+      "size": 95736376,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.36-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-mac-x64.dmg",
+      "size": 100941082,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.36-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-win-x64-installer.exe",
+      "size": 76403519,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.36-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-win-x64-loose.tar.gz",
+      "size": 103663394,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.33.36-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-win-x64-portable.tar.gz",
+      "size": 104312331,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.33.36-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-win-x64.appx",
+      "size": 111946176,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.36-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.36/electerm-1.33.36-win-x64.tar.gz",
+      "size": 104312188,
+      "type": "application/gzip"
+    }
+  ]
+}

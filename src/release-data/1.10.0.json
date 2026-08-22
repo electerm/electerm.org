@@ -1,0 +1,43 @@
+{
+  "version": "1.10.0",
+  "date": "2020-12-01",
+  "body": "- feat: Cancel zmodem do not reload session (#1943)\n- feat: When ignore Keyboard Interactive, use password as first return \n- feat: Add more ssh2 algorithms support\n- feat: Respect keyboard interactive echo setting",
+  "assets": [
+    {
+      "name": "electerm-1.10.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/1.10.0/electerm-1.10.0-linux-amd64.deb",
+      "size": 55398288,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/1.10.0/electerm-1.10.0-linux-amd64.snap",
+      "size": 68210688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/1.10.0/electerm-1.10.0-linux-x64.tar.gz",
+      "size": 76926571,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.10.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/1.10.0/electerm-1.10.0-linux-x86_64.rpm",
+      "size": 56093300,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.10.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/1.10.0/electerm-1.10.0-mac.dmg",
+      "size": 80179094,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/1.10.0/electerm-1.10.0-win-x64.tar.gz",
+      "size": 75725906,
+      "type": "application/gzip"
+    }
+  ]
+}

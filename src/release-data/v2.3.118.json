@@ -1,0 +1,241 @@
+{
+  "version": "v2.3.118",
+  "date": "2025-11-28",
+  "body": "### New features/UI/Updates\n\n- Add new shortcut Alt+N to toggle bookmark select panel\n- Auto focus search input when showing bookmark select dropdown\n- Improve SSH tunnel code stability\n\n### Bug fixes\n\n- Fix SSH tunnel error that could break SSH session (#critical)\n\n-----\n\n### 新功能/界面/更新\n\n- 添加新快捷键 Alt+N 来切换书签选择面板\n- 显示书签选择下拉框时自动聚焦搜索框\n- 改进 SSH 隧道代码稳定性\n\n### 问题修复\n\n- 修复 SSH 隧道错误可能导致 SSH 会话中断的问题（#关键）\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-2.3.118-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-aarch64-legacy.rpm",
+      "size": 60800348,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.118-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-aarch64.rpm",
+      "size": 60903649,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.118-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-amd64-legacy.deb",
+      "size": 72513324,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-amd64.deb",
+      "size": 85657596,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-amd64.snap",
+      "size": 92897280,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-arm64-legacy.AppImage",
+      "size": 92353174,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-arm64-legacy.deb",
+      "size": 68395960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-arm64-legacy.tar.gz",
+      "size": 87517072,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-arm64.AppImage",
+      "size": 92644198,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-arm64.deb",
+      "size": 68573808,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-arm64.tar.gz",
+      "size": 87785311,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l-legacy.AppImage",
+      "size": 80556376,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l-legacy.deb",
+      "size": 64750416,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l-legacy.rpm",
+      "size": 58473024,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l-legacy.tar.gz",
+      "size": 77584359,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l.AppImage",
+      "size": 80847424,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l.deb",
+      "size": 64928972,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l.rpm",
+      "size": 58591885,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.118-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-armv7l.tar.gz",
+      "size": 77852335,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-x64-legacy.tar.gz",
+      "size": 87158756,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-x64.tar.gz",
+      "size": 104039976,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-x86_64-legacy.AppImage",
+      "size": 91704149,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-x86_64-legacy.rpm",
+      "size": 64694884,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.118-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-x86_64.AppImage",
+      "size": 109650983,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-linux-x86_64.rpm",
+      "size": 76411453,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.118-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-mac-arm64.dmg",
+      "size": 103188411,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-mac-arm64.dmg.blockmap",
+      "size": 108550,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-mac-x64.dmg",
+      "size": 104969603,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-mac-x64.dmg.blockmap",
+      "size": 109723,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-arm64-installer.exe",
+      "size": 88374081,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-arm64-installer.exe.blockmap",
+      "size": 92926,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-arm64.tar.gz",
+      "size": 118159236,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-x64-installer.exe",
+      "size": 87265995,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-x64-installer.exe.blockmap",
+      "size": 90827,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-x64-loose.tar.gz",
+      "size": 118823458,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-x64-portable.tar.gz",
+      "size": 118857997,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-x64.appx",
+      "size": 139526497,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.118-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win-x64.tar.gz",
+      "size": 118857553,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.118-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.118/electerm-2.3.118-win7.tar.gz",
+      "size": 95163459,
+      "type": "application/gzip"
+    }
+  ]
+}

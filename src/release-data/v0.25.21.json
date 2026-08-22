@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.21",
+  "date": "2018-11-13",
+  "body": "- fix #895 Remove duplicated setting in settings (#896)\n- Small fixes to README (#891) by @padraigconnolly \n- fix #887 Clean build scripts (#890)\n- fix #888 Reduce build image number (#889)",
+  "assets": [
+    {
+      "name": "electerm-0.25.21-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.21/electerm-0.25.21-linux-amd64.deb",
+      "size": 38109722,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.21-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.21/electerm-0.25.21-linux-x64.tar.gz",
+      "size": 52145484,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.21-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.21/electerm-0.25.21-linux-x86_64.rpm",
+      "size": 38165658,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.21-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.21/electerm-0.25.21-mac.dmg",
+      "size": 53800893,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.21-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.21/electerm-0.25.21-win-x64.tar.gz",
+      "size": 53983394,
+      "type": "application/gzip"
+    }
+  ]
+}

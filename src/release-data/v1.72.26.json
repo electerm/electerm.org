@@ -1,0 +1,151 @@
+{
+  "version": "v1.72.26",
+  "date": "2025-03-11",
+  "body": "\n### New features/updates\n\n- Now mirror input to all terminals, not just visible ones\n- Support search highlight bar on the right\n- Fixed terminal search not matching issue (#3831)\n\n---\n\n### 新特性/更新\n\n- 现在可以将输入镜像到所有终端，而不仅仅是可见的终端\n- 支持在右侧显示搜索高亮条\n- 修复终端搜索不匹配的问题 (#3831)\n",
+  "assets": [
+    {
+      "name": "electerm-1.72.26-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-aarch64.rpm",
+      "size": 69242485,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.72.26-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-amd64.deb",
+      "size": 73761040,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-amd64.snap",
+      "size": 91914240,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-arm64.AppImage",
+      "size": 107275509,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-arm64.deb",
+      "size": 69204998,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-arm64.tar.gz",
+      "size": 101578471,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.26-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-armv7l.AppImage",
+      "size": 95402547,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-armv7l.deb",
+      "size": 67707014,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-armv7l.rpm",
+      "size": 67492593,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.72.26-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-armv7l.tar.gz",
+      "size": 91670836,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.26-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-x64.tar.gz",
+      "size": 101462424,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.26-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-x86_64.AppImage",
+      "size": 106883006,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-linux-x86_64.rpm",
+      "size": 73949996,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.72.26-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-mac-arm64.dmg",
+      "size": 106383098,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-mac-arm64.dmg.blockmap",
+      "size": 111223,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-mac-x64.dmg",
+      "size": 113354834,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-mac-x64.dmg.blockmap",
+      "size": 119367,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-win-x64-installer.exe",
+      "size": 80974619,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-win-x64-installer.exe.blockmap",
+      "size": 85616,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-win-x64-loose.tar.gz",
+      "size": 110577125,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.26-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-win-x64-portable.tar.gz",
+      "size": 110648292,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.26-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-win-x64.appx",
+      "size": 128952917,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.72.26-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-win-x64.tar.gz",
+      "size": 110647739,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.72.26-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.72.26/electerm-1.72.26-win7.tar.gz",
+      "size": 101324677,
+      "type": "application/gzip"
+    }
+  ]
+}

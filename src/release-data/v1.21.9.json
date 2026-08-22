@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.9",
+  "date": "2022-04-06",
+  "body": "### New features\n\n- Support serialport (#2428)\n\n### Bug fixes\n\n- Fix remember window size\n\n### Other updates\n\n- [linux] Add --in-process-gpu command line flag\n- Update issue template\n- Use playwright to do e2e test, upgrade electron to v17 (#2427)\n",
+  "assets": [
+    {
+      "name": "electerm-1.21.9-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-linux-amd64.deb",
+      "size": 63162802,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.9-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-linux-amd64.snap",
+      "size": 77504512,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.9-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-linux-x64.tar.gz",
+      "size": 85793756,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.9-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-linux-x86_64.rpm",
+      "size": 63072312,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.9-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-mac-arm64.dmg",
+      "size": 90394537,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.9-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-mac-x64.dmg",
+      "size": 89632161,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.9-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-win-x64-installer.exe",
+      "size": 67801726,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.9-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-win-x64-loose.tar.gz",
+      "size": 91917138,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.9-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-win-x64.appx",
+      "size": 99083054,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.9-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.9/electerm-1.21.9-win-x64.tar.gz",
+      "size": 92674771,
+      "type": "application/gzip"
+    }
+  ]
+}

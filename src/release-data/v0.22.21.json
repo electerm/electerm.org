@@ -1,0 +1,37 @@
+{
+  "version": "v0.22.21",
+  "date": "2018-07-01",
+  "body": "- fix #549 fix file manager copy/paste/shift/ctrl key (#553)\n- fix #539 add symbolic link icon (#547)\n- fix #542 make global shortbut toggle visiblity (#546)",
+  "assets": [
+    {
+      "name": "electerm-0.22.21-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.21/electerm-0.22.21-linux-amd64.deb",
+      "size": 36123650,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.21-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.21/electerm-0.22.21-linux-x86_64.rpm",
+      "size": 36272949,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.22.21-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.21/electerm-0.22.21-mac.dmg",
+      "size": 52024066,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.21-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.21/electerm-0.22.21-win.tar.gz",
+      "size": 51352846,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.22.21.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.21/electerm-0.22.21.tar.gz",
+      "size": 48994006,
+      "type": "application/gzip"
+    }
+  ]
+}

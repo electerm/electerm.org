@@ -1,0 +1,37 @@
+{
+  "version": "v0.15.6",
+  "date": "2018-01-30",
+  "body": "- fix #295 fix sftp file list height (#297)\n- fix #291 fix #292 run fs operation in seprate process (#296)",
+  "assets": [
+    {
+      "name": "electerm-0.15.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.6/electerm-0.15.6-linux-amd64.deb",
+      "size": 37061592,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.15.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.6/electerm-0.15.6-linux-x86_64.rpm",
+      "size": 53687507,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.15.6-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.6/electerm-0.15.6-mac.dmg",
+      "size": 51353463,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.15.6-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.6/electerm-0.15.6-win.tar.gz",
+      "size": 55943065,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.15.6.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.6/electerm-0.15.6.tar.gz",
+      "size": 51701272,
+      "type": "application/gzip"
+    }
+  ]
+}

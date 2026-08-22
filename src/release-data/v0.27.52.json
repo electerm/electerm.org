@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.52",
+  "date": "2019-08-21",
+  "body": "- fix #1316 Support quick commands (#1321)\n- Update all dependencies and fix all code format",
+  "assets": [
+    {
+      "name": "electerm-0.27.52-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.52/electerm-0.27.52-linux-amd64.deb",
+      "size": 46741390,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.52-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.52/electerm-0.27.52-linux-amd64.snap",
+      "size": 57229312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.52-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.52/electerm-0.27.52-linux-x64.tar.gz",
+      "size": 64829672,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.52-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.52/electerm-0.27.52-linux-x86_64.rpm",
+      "size": 46587380,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.52-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.52/electerm-0.27.52-mac.dmg",
+      "size": 63054358,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.52-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.52/electerm-0.27.52-win-x64.tar.gz",
+      "size": 62115539,
+      "type": "application/gzip"
+    }
+  ]
+}

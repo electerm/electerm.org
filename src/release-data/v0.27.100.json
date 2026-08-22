@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.100",
+  "date": "2019-12-23",
+  "body": "- fix #1471 [bug fix] Fix upgrade in windows (#1475)\n- fix #1470 [bug fix] Fix npm install script for windows (#1474)\n- fix #1469 [UI] Add margin to skip upgrade button (#1473)",
+  "assets": [
+    {
+      "name": "electerm-0.27.100-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.100/electerm-0.27.100-linux-amd64.deb",
+      "size": 46205224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.100-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.100/electerm-0.27.100-linux-amd64.snap",
+      "size": 56750080,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.100-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.100/electerm-0.27.100-linux-x64.tar.gz",
+      "size": 64035636,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.100-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.100/electerm-0.27.100-linux-x86_64.rpm",
+      "size": 46008660,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.100-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.100/electerm-0.27.100-mac.dmg",
+      "size": 68195254,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.100-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.100/electerm-0.27.100-win-x64.tar.gz",
+      "size": 65544281,
+      "type": "application/gzip"
+    }
+  ]
+}

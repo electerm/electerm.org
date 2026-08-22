@@ -1,0 +1,49 @@
+{
+  "version": "v1.12.15",
+  "date": "2021-04-10",
+  "body": "- feature: Ignore case for file manager sort\n- feature: Add cursor blink option in settings (#2106)\n- bug fix: Fix check update option in settings\n- ui: Support hide menu, only show terminal",
+  "assets": [
+    {
+      "name": "electerm-1.12.15-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.15/electerm-1.12.15-linux-amd64.deb",
+      "size": 54428122,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.15-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.15/electerm-1.12.15-linux-amd64.snap",
+      "size": 67227648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.15-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.15/electerm-1.12.15-linux-x64.tar.gz",
+      "size": 75861262,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.15-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.15/electerm-1.12.15-linux-x86_64.rpm",
+      "size": 55519360,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.12.15-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.15/electerm-1.12.15-mac.dmg",
+      "size": 79072786,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.15-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.15/electerm-1.12.15-win-x64-loose.tar.gz",
+      "size": 72773146,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.15-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.15/electerm-1.12.15-win-x64.tar.gz",
+      "size": 73380715,
+      "type": "application/gzip"
+    }
+  ]
+}

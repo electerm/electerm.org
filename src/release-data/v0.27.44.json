@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.44",
+  "date": "2019-06-16",
+  "body": "- Handle possible ssh connect error (#1307)\n- fix #1245 Add transporting indicator UI (#1306)\n- fix #1120 Need confirm when exiting with file transfering (#1305)",
+  "assets": [
+    {
+      "name": "electerm-0.27.44-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.44/electerm-0.27.44-linux-amd64.deb",
+      "size": 56560028,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.44-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.44/electerm-0.27.44-linux-amd64.snap",
+      "size": 135790592,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.44-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.44/electerm-0.27.44-linux-x64.tar.gz",
+      "size": 81010918,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.44-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.44/electerm-0.27.44-linux-x86_64.rpm",
+      "size": 55941764,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.44-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.44/electerm-0.27.44-mac.dmg",
+      "size": 62451181,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.44-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.44/electerm-0.27.44-win-x64.tar.gz",
+      "size": 64249640,
+      "type": "application/gzip"
+    }
+  ]
+}

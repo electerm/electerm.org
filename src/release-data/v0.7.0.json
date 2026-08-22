@@ -1,0 +1,31 @@
+{
+  "version": "v0.7.0",
+  "date": "2017-11-29",
+  "body": "- fix #100 rewrite build process, use ci (#101)\n- fix #85 add animation demo image (#99)\n- fix #96 fix #97 fix #82 drag to select multi files in sftp (#98)\n- fix dist script\n- fix #86 add about menu link to tag info (#95)",
+  "assets": [
+    {
+      "name": "electerm-0.7.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.7.0/electerm-0.7.0-win.tar.gz",
+      "size": 55140418,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.7.0.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.7.0/electerm-0.7.0.dmg",
+      "size": 50013990,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.7.0.x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.7.0/electerm-0.7.0.x86_64.rpm",
+      "size": 54116210,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm_0.7.0_amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.7.0/electerm_0.7.0_amd64.deb",
+      "size": 37049130,
+      "type": "application/octet-stream"
+    }
+  ]
+}

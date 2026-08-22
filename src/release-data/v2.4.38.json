@@ -1,0 +1,253 @@
+{
+  "version": "v2.4.38",
+  "date": "2026-01-29",
+  "body": "### Quick bug fix release\n\n- #4171 Fix can not login to with some rsa key issue(like ec2 amazon linux rsa key)\n\n------\n\n### 快速问题修复\n\n- #4171 修复某些 RSA 密钥无法登录的问题(如 EC2 Amazon Linux RSA 密钥)\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-2.4.38-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-aarch64-legacy.rpm",
+      "size": 60991276,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.38-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-aarch64.rpm",
+      "size": 61140429,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.38-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-amd64-legacy.deb",
+      "size": 72755656,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-amd64.deb",
+      "size": 85865444,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-amd64.snap",
+      "size": 93155328,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-arm64-legacy.AppImage",
+      "size": 92685138,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-arm64-legacy.deb",
+      "size": 68541420,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-arm64-legacy.tar.gz",
+      "size": 87815632,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-arm64.AppImage",
+      "size": 92959914,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-arm64.deb",
+      "size": 68720088,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-arm64.tar.gz",
+      "size": 88085430,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l-legacy.AppImage",
+      "size": 80888375,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l-legacy.deb",
+      "size": 64907944,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l-legacy.rpm",
+      "size": 58681248,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l-legacy.tar.gz",
+      "size": 77883674,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l.AppImage",
+      "size": 81167199,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l.deb",
+      "size": 65086504,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l.rpm",
+      "size": 58808581,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.38-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-armv7l.tar.gz",
+      "size": 78151634,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-x64-legacy.tar.gz",
+      "size": 87457734,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-x64.tar.gz",
+      "size": 104304680,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-x86_64-legacy.AppImage",
+      "size": 92036107,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-x86_64-legacy.rpm",
+      "size": 64903132,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.38-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-x86_64.AppImage",
+      "size": 109933771,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-linux-x86_64.rpm",
+      "size": 76592249,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.38-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-mac-arm64.dmg",
+      "size": 103424930,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-mac-arm64.dmg.blockmap",
+      "size": 107507,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-mac-x64.dmg",
+      "size": 105243926,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-mac-x64.dmg.blockmap",
+      "size": 110721,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-mac10-x64.dmg",
+      "size": 90179719,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-mac10-x64.dmg.blockmap",
+      "size": 95450,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-arm64-installer.exe",
+      "size": 88591099,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-arm64-installer.exe.blockmap",
+      "size": 93571,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-arm64.tar.gz",
+      "size": 118429628,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-x64-installer.exe",
+      "size": 87485387,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-x64-installer.exe.blockmap",
+      "size": 91191,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-x64-loose.tar.gz",
+      "size": 119093351,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-x64-portable.tar.gz",
+      "size": 119127518,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-x64.appx",
+      "size": 139852412,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.38-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win-x64.tar.gz",
+      "size": 119127297,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.38-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.4.38/electerm-2.4.38-win7.tar.gz",
+      "size": 95463674,
+      "type": "application/gzip"
+    }
+  ]
+}

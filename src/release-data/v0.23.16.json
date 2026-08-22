@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.16",
+  "date": "2018-07-18",
+  "body": "- fix #321 support running script after logined (#609)\n- fix #602 use search component (#608)\n- fix #551 add autorun setting guide (#607)\n- fix #600 better common error notification (#606)",
+  "assets": [
+    {
+      "name": "electerm-0.23.16-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.16/electerm-0.23.16-linux-amd64.deb",
+      "size": 36144158,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.16-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.16/electerm-0.23.16-linux-x86_64.rpm",
+      "size": 36288037,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.16-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.16/electerm-0.23.16-mac.dmg",
+      "size": 52057654,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.16-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.16/electerm-0.23.16-win.tar.gz",
+      "size": 51375521,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.16.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.16/electerm-0.23.16.tar.gz",
+      "size": 49026087,
+      "type": "application/gzip"
+    }
+  ]
+}

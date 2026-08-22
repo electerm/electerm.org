@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.14",
+  "date": "2022-04-09",
+  "body": "### Quick Bug fix\n\n- fix #2438 [windows only] Fix close tab cause app stop working\n\n### New features\n\n- fix #2433 Always save/restore current terminal state when reload or duplicate tab",
+  "assets": [
+    {
+      "name": "electerm-1.21.14-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-linux-amd64.deb",
+      "size": 62593070,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.14-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-linux-amd64.snap",
+      "size": 77516800,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.14-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-linux-x64.tar.gz",
+      "size": 85800916,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.14-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-linux-x86_64.rpm",
+      "size": 63088648,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.14-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-mac-arm64.dmg",
+      "size": 90395089,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.14-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-mac-x64.dmg",
+      "size": 89622766,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.14-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-win-x64-installer.exe",
+      "size": 67804951,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.14-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-win-x64-loose.tar.gz",
+      "size": 91941021,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.14-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-win-x64.appx",
+      "size": 99096811,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.14-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.14/electerm-1.21.14-win-x64.tar.gz",
+      "size": 92681652,
+      "type": "application/gzip"
+    }
+  ]
+}

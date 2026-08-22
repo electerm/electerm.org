@@ -1,0 +1,43 @@
+{
+  "version": "v1.3.54",
+  "date": "2020-07-12",
+  "body": "- [fix] Fix maximize function (#1779)\n- Update DMG release UI (#1769)\n- Use human readable file size\n- [fix] Fix quick command list not showing error",
+  "assets": [
+    {
+      "name": "electerm-1.3.54-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.54/electerm-1.3.54-linux-amd64.deb",
+      "size": 52569962,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.54-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.54/electerm-1.3.54-linux-amd64.snap",
+      "size": 64462848,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.54-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.54/electerm-1.3.54-linux-x64.tar.gz",
+      "size": 72814805,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.3.54-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.54/electerm-1.3.54-linux-x86_64.rpm",
+      "size": 51945628,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.3.54-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.54/electerm-1.3.54-mac.dmg",
+      "size": 71683101,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.54-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.54/electerm-1.3.54-win-x64.tar.gz",
+      "size": 73372280,
+      "type": "application/gzip"
+    }
+  ]
+}

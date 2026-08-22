@@ -1,0 +1,37 @@
+{
+  "version": "v0.22.6",
+  "date": "2018-06-19",
+  "body": "- fix #511 remember window size[last state management] (#512)\n- fix #495 file manager table (#510)",
+  "assets": [
+    {
+      "name": "electerm-0.22.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.6/electerm-0.22.6-linux-amd64.deb",
+      "size": 36120876,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.6/electerm-0.22.6-linux-x86_64.rpm",
+      "size": 36273517,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.22.6-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.6/electerm-0.22.6-mac.dmg",
+      "size": 52023929,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.6-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.6/electerm-0.22.6-win.tar.gz",
+      "size": 51344231,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.22.6.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.6/electerm-0.22.6.tar.gz",
+      "size": 48993327,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v0.26.2",
+  "date": "2018-12-28",
+  "body": "- fix #1037 Save bookmark tree open state (#1044)\n- fix #1029 UI adjustment (#1043)\n- fix #1020 Add tab double click test (#1040)\n- fix #906 Fix drag from os file manager to local section (#1039)\n- fix #898 Fix dragover file UI (#1038)\n- Fix window drag (#1036) by @wenbingzhang\n- fix #1034 Update antd version (#1035)",
+  "assets": [
+    {
+      "name": "electerm-0.26.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.2/electerm-0.26.2-linux-amd64.deb",
+      "size": 38183264,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.2-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.2/electerm-0.26.2-linux-x64.tar.gz",
+      "size": 52193846,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.2/electerm-0.26.2-linux-x86_64.rpm",
+      "size": 38213442,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.2-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.2/electerm-0.26.2-mac.dmg",
+      "size": 53854147,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.2-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.2/electerm-0.26.2-win-x64.tar.gz",
+      "size": 54013683,
+      "type": "application/gzip"
+    }
+  ]
+}

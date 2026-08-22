@@ -1,0 +1,43 @@
+{
+  "version": "v1.3.8",
+  "date": "2020-03-25",
+  "body": "- [fix] Fix database upgrade process (#1631)",
+  "assets": [
+    {
+      "name": "electerm-1.3.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.8/electerm-1.3.8-linux-amd64.deb",
+      "size": 52554164,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.8/electerm-1.3.8-linux-amd64.snap",
+      "size": 64434176,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.8/electerm-1.3.8-linux-x64.tar.gz",
+      "size": 72788635,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.3.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.8/electerm-1.3.8-linux-x86_64.rpm",
+      "size": 51924472,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.3.8-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.8/electerm-1.3.8-mac.dmg",
+      "size": 71658300,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.8/electerm-1.3.8-win-x64.tar.gz",
+      "size": 73242148,
+      "type": "application/gzip"
+    }
+  ]
+}

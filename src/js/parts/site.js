@@ -1,5 +1,6 @@
 // Global site behavior: shared country fetch, analytics, ad networks,
 // cloud slider init, and ad-spacing logic. Extracted from react-footer.pug.
+/* global ResizeObserver */
 (function () {
   // === Shared single country fetch for all consumers ===
   window.__countryPromise = fetch('/api/country')
@@ -8,32 +9,32 @@
     .catch(function () { return null })
 
   // === Google Analytics ===
-  var s1 = document.createElement('script')
+  const s1 = document.createElement('script')
   s1.async = true
   s1.src = 'https://www.googletagmanager.com/gtag/js?id=G-LCY5SM7M8J'
   document.head.appendChild(s1)
   window.dataLayer = window.dataLayer || []
-  function gtag () { dataLayer.push(arguments) }
+  function gtag () { window.dataLayer.push(arguments) }
   gtag('js', new Date())
   gtag('config', 'G-LCY5SM7M8J')
 
   // === Cloud slider init (reusable across Aliyun, Tencent, etc.) ===
   window.initCloudSlider = function (idMap) {
-    var slider = document.getElementById(idMap.slider)
+    const slider = document.getElementById(idMap.slider)
     if (!slider) return null
-    var track = document.getElementById(idMap.track)
+    const track = document.getElementById(idMap.track)
     if (!track) return null
-    var slides = track.children
-    var total = slides.length
+    const slides = track.children
+    const total = slides.length
     if (!total) return null
-    var current = 0
-    var timer = null
-    var DURATION = 5000
+    let current = 0
+    let timer = null
+    const DURATION = 5000
 
-    var dotsContainer = document.getElementById(idMap.dots)
-    for (var i = 0; i < total; i++) {
+    const dotsContainer = document.getElementById(idMap.dots)
+    for (let i = 0; i < total; i++) {
       (function (idx) {
-        var dot = document.createElement('button')
+        const dot = document.createElement('button')
         dot.type = 'button'
         dot.className = 'cloud-dot'
         dot.setAttribute('aria-label', '第 ' + (idx + 1) + ' 张')
@@ -41,11 +42,11 @@
         dotsContainer.appendChild(dot)
       })(i)
     }
-    var dots = dotsContainer.children
+    const dots = dotsContainer.children
 
     function update () {
       track.style.transform = 'translateX(-' + (current * 100) + '%)'
-      for (var i = 0; i < dots.length; i++) {
+      for (let i = 0; i < dots.length; i++) {
         if (dots[i]) dots[i].classList.toggle('active', i === current)
       }
     }
@@ -65,10 +66,10 @@
     slider.addEventListener('mouseleave', startTimer)
 
     // Touch swipe
-    var touchStartX = 0
+    let touchStartX = 0
     track.addEventListener('touchstart', function (e) { touchStartX = e.changedTouches[0].screenX }, { passive: true })
     track.addEventListener('touchend', function (e) {
-      var diff = touchStartX - e.changedTouches[0].screenX
+      const diff = touchStartX - e.changedTouches[0].screenX
       if (Math.abs(diff) > 40) {
         if (diff > 0) nextSlide(); else prevSlide()
         resetTimer()
@@ -76,25 +77,25 @@
     }, { passive: true })
 
     return {
-      goTo: goTo,
-      total: total,
-      update: update,
-      startTimer: startTimer,
-      stopTimer: stopTimer
+      goTo,
+      total,
+      update,
+      startTimer,
+      stopTimer
     }
   }
 
   // === EthicalAds — only for non-CN visitors ===
   window.__countryPromise.then(function (cc) {
-    var adWrapper = document.querySelector('.ethical-ad-wrapper')
+    const adWrapper = document.querySelector('.ethical-ad-wrapper')
     if (!adWrapper) return
 
-    var adUnit = adWrapper.querySelector('.ethical-ad-unit')
+    const adUnit = adWrapper.querySelector('.ethical-ad-unit')
     if (!adUnit) return
 
-    var BP_MOBILE = 480
-    var BP_WIDE = 1420
-    var currentMode = null
+    const BP_MOBILE = 480
+    const BP_WIDE = 1420
+    let currentMode = null
 
     // Three ad modes:
     //  'v-image'  → >= 1420px: vertical image ad (corner card)
@@ -107,13 +108,13 @@
     }
 
     function updateAd () {
-      var vw = window.innerWidth || document.documentElement.clientWidth
-      var mode = getMode(vw)
+      const vw = window.innerWidth || document.documentElement.clientWidth
+      const mode = getMode(vw)
 
       // Set the ad type attribute and horizontal class.
       // reload() re-reads data-ea-type so the correct ad type loads.
-      var newType = (mode === 'text') ? 'text' : 'image'
-      var oldType = adUnit.getAttribute('data-ea-type')
+      const newType = (mode === 'text') ? 'text' : 'image'
+      const oldType = adUnit.getAttribute('data-ea-type')
 
       if (mode === 'h-image') {
         adUnit.classList.add('horizontal')
@@ -136,7 +137,7 @@
 
     // Show the ad container and load EthicalAds script.
     adWrapper.classList.add('ethical-ad-active')
-    var s = document.createElement('script')
+    const s = document.createElement('script')
     s.async = true
     s.src = 'https://media.ethicalads.io/media/client/ethicalads.min.js'
     document.body.appendChild(s)
@@ -144,8 +145,8 @@
     // Set initial mode before EthicalAds loads.
     // The initial data-ea-type is already "image"; if we're on mobile,
     // switch to "text" before the ad script scans the element.
-    var initVw = window.innerWidth || document.documentElement.clientWidth
-    var initMode = getMode(initVw)
+    const initVw = window.innerWidth || document.documentElement.clientWidth
+    const initMode = getMode(initVw)
     currentMode = initMode
     if (initMode === 'text') {
       adUnit.setAttribute('data-ea-type', 'text')
@@ -154,7 +155,7 @@
     }
 
     // Re-evaluate on resize (debounced)
-    var adRt = null
+    let adRt = null
     window.addEventListener('resize', function () {
       if (adRt) clearTimeout(adRt)
       adRt = setTimeout(updateAd, 150)
@@ -163,13 +164,13 @@
 
   // === Ad spacing: keep the fixed ad bar/card (EthicalAds or Carbon Ads) from covering footer content ===
   (function () {
-    var wrapper = document.querySelector('.ethical-ad-wrapper, .carbon-ad-wrapper')
-    var footer = document.querySelector('footer.site-footer')
+    const wrapper = document.querySelector('.ethical-ad-wrapper, .carbon-ad-wrapper')
+    const footer = document.querySelector('footer.site-footer')
     if (!wrapper) return
-    var BP = 1420
+    const BP = 1420
     function apply () {
-      var h = wrapper.offsetHeight || 0
-      var vw = window.innerWidth || document.documentElement.clientWidth
+      const h = wrapper.offsetHeight || 0
+      const vw = window.innerWidth || document.documentElement.clientWidth
       if (vw < BP) {
         // < 1420px: full-width fixed bar pinned to viewport bottom.
         // Reserve space on <body> so the bar never hides the footer.
@@ -186,12 +187,12 @@
         document.body.style.paddingBottom = ''
         if (footer) {
           if (h > 0) {
-            var ph = (h + 32) // total extra padding
+            const ph = (h + 32) // total extra padding
             // watermark element takes 60% of padding, centred
-            var wh = Math.round(ph * 0.6)
-            var wb = Math.round((ph - wh) / 2)
+            const wh = Math.round(ph * 0.6)
+            const wb = Math.round((ph - wh) / 2)
             // logo bg-width ~1.2x of padding height (~42% of watermark el height × 2.88 ratio)
-            var bg = Math.round(ph * 1.2)
+            const bg = Math.round(ph * 1.2)
             footer.style.paddingBottom = ph + 'px'
             footer.style.setProperty('--watermark-height', wh + 'px')
             footer.style.setProperty('--watermark-bottom', wb + 'px')
@@ -208,7 +209,7 @@
     if (window.ResizeObserver) {
       new ResizeObserver(function () { apply() }).observe(wrapper)
     }
-    var rt = null
+    let rt = null
     window.addEventListener('resize', function () {
       if (rt) clearTimeout(rt)
       rt = setTimeout(apply, 100)
@@ -223,11 +224,11 @@
   // Carbon's carbon.js is injected into the container only when the visitor
   // is outside China, mirroring the EthicalAds gating above.
   window.__countryPromise.then(function (cc) {
-    var wrapper = document.querySelector('.carbon-ad-wrapper')
+    const wrapper = document.querySelector('.carbon-ad-wrapper')
     if (!wrapper) return
     if (cc === 'CN') return
     wrapper.classList.add('carbon-ad-active')
-    var s = document.createElement('script')
+    const s = document.createElement('script')
     s.async = true
     s.type = 'text/javascript'
     s.src = '//cdn.carbonads.com/carbon.js?serve=CWBDE2JL&placement=electermorg&format=responsive'
@@ -237,11 +238,11 @@
 
   // === Init all cloud sliders on the page ===
   (function () {
-    var sections = document.querySelectorAll('.cloud-slider-section')
-    for (var i = 0; i < sections.length; i++) {
+    const sections = document.querySelectorAll('.cloud-slider-section')
+    for (let i = 0; i < sections.length; i++) {
       (function (section) {
-        var provider = section.getAttribute('data-provider') || ''
-        var s = window.initCloudSlider({
+        const provider = section.getAttribute('data-provider') || ''
+        const s = window.initCloudSlider({
           slider: provider + '-slider',
           track: provider + '-track',
           dots: provider + '-dots',

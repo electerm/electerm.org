@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.38",
+  "date": "2018-08-15",
+  "body": "- fix #654 fix bookmark form logic (#664)\n- fix #655 use memoize-one to cache file list (#659)\n- fix #499 remove all `componentWillReceiveProps` (#657)\n- fix #652 if only has default category, use normal Select (#653)",
+  "assets": [
+    {
+      "name": "electerm-0.23.38-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.38/electerm-0.23.38-linux-amd64.deb",
+      "size": 36185268,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.38-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.38/electerm-0.23.38-linux-x86_64.rpm",
+      "size": 36329317,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.38-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.38/electerm-0.23.38-mac.dmg",
+      "size": 52136490,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.38-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.38/electerm-0.23.38-win.tar.gz",
+      "size": 51451292,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.38.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.38/electerm-0.23.38.tar.gz",
+      "size": 49100190,
+      "type": "application/gzip"
+    }
+  ]
+}

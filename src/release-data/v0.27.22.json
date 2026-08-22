@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.22",
+  "date": "2019-05-08",
+  "body": "- fix #1266 [bug fix]Fix remote file direct edit (#1267)\n- fix #1238 Always hide transfer list (#1265)",
+  "assets": [
+    {
+      "name": "electerm-0.27.22-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.22/electerm-0.27.22-linux-amd64.deb",
+      "size": 52721026,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.22-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.22/electerm-0.27.22-linux-amd64.snap",
+      "size": 130703360,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.22-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.22/electerm-0.27.22-linux-x64.tar.gz",
+      "size": 75425716,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.22-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.22/electerm-0.27.22-linux-x86_64.rpm",
+      "size": 52551530,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.22-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.22/electerm-0.27.22-mac.dmg",
+      "size": 59011713,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.22-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.22/electerm-0.27.22-win-x64.tar.gz",
+      "size": 59364885,
+      "type": "application/gzip"
+    }
+  ]
+}

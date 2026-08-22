@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.40",
+  "date": "2022-04-28",
+  "body": "### Bug fixes\n\n- fix #2466 Fix tab title\n- fix #2472 Fix serial port form custom baudRate support\n- Remove system tray since it is useless, fix auto hide function\n- fix #2471 Fix fullscreen UI\n\n### New features\n\n- fix #2469 Support pin quick command panel to bottom\n- Support term search options(whole word, regexp, case sensitive)\n\n### Performance improve\n\n- Use standalone term search module\n\n### Other updates\n\n- Updates modules ssh2->1.10.0, react -> 18.1.0, xterm -> 4.19beta\n- Update use guide wiki: https://github.com/electerm/electerm/wiki/Autorun-electerm-when-login-to-os\n \n\n",
+  "assets": [
+    {
+      "name": "electerm-1.21.40-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-linux-amd64.deb",
+      "size": 62970046,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.40-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-linux-amd64.snap",
+      "size": 77524992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.40-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-linux-x64.tar.gz",
+      "size": 85810693,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.40-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-linux-x86_64.rpm",
+      "size": 63104236,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.40-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-mac-arm64.dmg",
+      "size": 90393323,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.40-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-mac-x64.dmg",
+      "size": 89641992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.40-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-win-x64-installer.exe",
+      "size": 67819553,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.40-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-win-x64-loose.tar.gz",
+      "size": 91950942,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.40-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-win-x64.appx",
+      "size": 99117989,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.40-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.40/electerm-1.21.40-win-x64.tar.gz",
+      "size": 92690225,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "version": "v3.15.0",
+  "date": "2026-05-31",
+  "body": "### New features/UI/Updates\n\n- #4365 Support WSL path in Windows OS\n- #4366 Make sure window server remote path always correct\n- Web app: Support download/upload from browser\n- Support record terminal feed to file\n- Add save terminal log context menu for terminal\n- UI: Improve server info panel UI\n- UI: Improve AI chat UI\n\n### Bug fixes\n\n- Fix terminal state sync with terminal info panel\n- Fix switch tab server info panel not properly update issue\n\n-----\n\n### 新功能/界面/更新\n\n- #4365 支持 Windows 系统中的 WSL 路径\n- #4366 确保窗口服务器远程路径始终正确\n- Web 应用：支持从浏览器下载/上传文件\n- 支持将终端输出录制到文件\n- 添加终端右键菜单中的保存终端日志选项\n- 界面：改进服务器信息面板界面\n- 界面：改进 AI 聊天界面\n\n### 问题修复\n\n- 修复终端状态与终端信息面板同步的问题\n- 修复切换标签页时服务器信息面板未正确更新的问题\n\n-------\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-3.15.0-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-aarch64-legacy.rpm",
+      "size": 61965648,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.0-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-aarch64.rpm",
+      "size": 62089429,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.0-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-amd64-legacy.deb",
+      "size": 73879724,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-amd64.deb",
+      "size": 88112012,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-amd64.snap",
+      "size": 95752192,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-arm64-legacy.AppImage",
+      "size": 94362401,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-arm64-legacy.deb",
+      "size": 69709528,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-arm64-legacy.tar.gz",
+      "size": 89399662,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-arm64.AppImage",
+      "size": 94624556,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-arm64.deb",
+      "size": 69888892,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-arm64.tar.gz",
+      "size": 89664730,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l-legacy.AppImage",
+      "size": 82569398,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l-legacy.deb",
+      "size": 66048960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l-legacy.rpm",
+      "size": 59644348,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l-legacy.tar.gz",
+      "size": 79466890,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l.AppImage",
+      "size": 82831557,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l.deb",
+      "size": 66227888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l.rpm",
+      "size": 59772341,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.0-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-armv7l.tar.gz",
+      "size": 79732054,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-linux-loong64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-loong64-legacy.deb",
+      "size": 151898910,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.0-linux-loong64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-loong64-legacy.tar.gz",
+      "size": 151306771,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-3.15.0-linux-loong64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-loong64.deb",
+      "size": 95064126,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.0-linux-loong64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-loong64.tar.gz",
+      "size": 129007309,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-3.15.0-linux-loongarch64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-loongarch64-legacy.deb",
+      "size": 151898866,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.0-linux-loongarch64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-loongarch64.deb",
+      "size": 95065464,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.0-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-x64-legacy.tar.gz",
+      "size": 89041931,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-x64.tar.gz",
+      "size": 107493055,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-x86_64-legacy.AppImage",
+      "size": 93713391,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-x86_64-legacy.rpm",
+      "size": 65893488,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.0-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-x86_64.AppImage",
+      "size": 113376388,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-linux-x86_64.rpm",
+      "size": 78595089,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.0-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-mac-arm64.dmg",
+      "size": 108123241,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-mac-arm64.dmg.blockmap",
+      "size": 113739,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-mac-x64.dmg",
+      "size": 115049059,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-mac-x64.dmg.blockmap",
+      "size": 120327,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-mac10-x64.dmg",
+      "size": 91845024,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-mac10-x64.dmg.blockmap",
+      "size": 96896,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-arm64-installer.exe",
+      "size": 99537735,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-arm64-installer.exe.blockmap",
+      "size": 104840,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-arm64.tar.gz",
+      "size": 134195219,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-x64-installer.exe",
+      "size": 98767256,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-x64-installer.exe.blockmap",
+      "size": 105097,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-x64-loose.tar.gz",
+      "size": 136252304,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-x64-portable.tar.gz",
+      "size": 136279919,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-x64.appx",
+      "size": 159020864,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win-x64.tar.gz",
+      "size": 136279366,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.0-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.0/electerm-3.15.0-win7.tar.gz",
+      "size": 97053396,
+      "type": "application/gzip"
+    }
+  ]
+}

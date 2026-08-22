@@ -1,0 +1,43 @@
+{
+  "version": "v1.10.14",
+  "date": "2020-12-15",
+  "body": "- fix: Fix setting tabs can not click issue",
+  "assets": [
+    {
+      "name": "electerm-1.10.14-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.14/electerm-1.10.14-linux-amd64.deb",
+      "size": 55394742,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.14-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.14/electerm-1.10.14-linux-amd64.snap",
+      "size": 68206592,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.14-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.14/electerm-1.10.14-linux-x64.tar.gz",
+      "size": 76928335,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.10.14-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.14/electerm-1.10.14-linux-x86_64.rpm",
+      "size": 56099260,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.10.14-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.14/electerm-1.10.14-mac.dmg",
+      "size": 80176726,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.14-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.14/electerm-1.10.14-win-x64.tar.gz",
+      "size": 75734262,
+      "type": "application/gzip"
+    }
+  ]
+}

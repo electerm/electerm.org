@@ -1,0 +1,43 @@
+{
+  "version": "v1.4.2",
+  "date": "2020-08-05",
+  "body": "- fix: Add edit icon for simple bookmark list(Only have default category) (#1795)\n- fix: Fix serial port support (#1800)\n- feat: Add check upgrade on start switch in settings (#1801)",
+  "assets": [
+    {
+      "name": "electerm-1.4.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.4.2/electerm-1.4.2-linux-amd64.deb",
+      "size": 52326666,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.4.2-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.4.2/electerm-1.4.2-linux-amd64.snap",
+      "size": 64552960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.4.2-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.4.2/electerm-1.4.2-linux-x64.tar.gz",
+      "size": 72897408,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.4.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.4.2/electerm-1.4.2-linux-x86_64.rpm",
+      "size": 52015772,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.4.2-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.4.2/electerm-1.4.2-mac.dmg",
+      "size": 71783271,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.4.2-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.4.2/electerm-1.4.2-win-x64.tar.gz",
+      "size": 73370299,
+      "type": "application/gzip"
+    }
+  ]
+}

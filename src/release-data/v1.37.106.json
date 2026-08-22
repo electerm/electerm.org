@@ -1,0 +1,127 @@
+{
+  "version": "v1.37.106",
+  "date": "2023-12-31",
+  "body": "### New feature\n\n- #3212 Use fira code as terminal default font\n\n### Bug fixes/UI\n\n- UI: fix info panel top postion\n- UI: fix a tranlate error\n- #3215 Fix some keyboard shortcut in alt buffer mode(vim, emacs...) not working issue\n- #3215 Fix double click cause unexpected window resize issue\n\n### Other updates\n\n- Experimental: Add linux-arm64/armv7l build (#3219)",
+  "assets": [
+    {
+      "name": "electerm-1.37.106-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-aarch64.rpm",
+      "size": 64945336,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.106-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-amd64.deb",
+      "size": 68719142,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-amd64.snap",
+      "size": 83783680,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-arm64.deb",
+      "size": 64863768,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-arm64.tar.gz",
+      "size": 93525209,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.106-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-armv7l.deb",
+      "size": 62756334,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-armv7l.rpm",
+      "size": 62656376,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.106-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-armv7l.tar.gz",
+      "size": 83569675,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.106-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-x64.tar.gz",
+      "size": 92945724,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.106-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-linux-x86_64.rpm",
+      "size": 68851960,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.106-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-mac-arm64.dmg",
+      "size": 97375390,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-mac-arm64.dmg.blockmap",
+      "size": 103696,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-mac-x64.dmg",
+      "size": 102628066,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-mac-x64.dmg.blockmap",
+      "size": 106780,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-win-x64-installer.exe",
+      "size": 72577466,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-win-x64-installer.exe.blockmap",
+      "size": 76041,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-win-x64-loose.tar.gz",
+      "size": 98143431,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.106-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-win-x64-portable.tar.gz",
+      "size": 98388016,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.106-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-win-x64.appx",
+      "size": 114392725,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.106-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.106/electerm-1.37.106-win-x64.tar.gz",
+      "size": 98387891,
+      "type": "application/gzip"
+    }
+  ]
+}

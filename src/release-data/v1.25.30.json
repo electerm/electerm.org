@@ -1,0 +1,67 @@
+{
+  "version": "v1.25.30",
+  "date": "2023-03-31",
+  "body": "### Bug fixes\n\n- fix copy content to clipboard issue when editor open\n\n### New features\n\n- Support double click title bar area to maximize/unmaximize\n- Support middle click to close tab\n- Add batch delete function in bookmark manage page (#2802)",
+  "assets": [
+    {
+      "name": "electerm-1.25.30-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-linux-amd64.deb",
+      "size": 63567378,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.30-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-linux-amd64.snap",
+      "size": 78528512,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.30-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-linux-x64.tar.gz",
+      "size": 86942948,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.30-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-linux-x86_64.rpm",
+      "size": 63744184,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.25.30-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-mac-arm64.dmg",
+      "size": 91391162,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.30-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-mac-x64.dmg",
+      "size": 91236030,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.30-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-win-x64-installer.exe",
+      "size": 68426872,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.30-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-win-x64-loose.tar.gz",
+      "size": 93468833,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.30-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-win-x64.appx",
+      "size": 100315045,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.30-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.30/electerm-1.25.30-win-x64.tar.gz",
+      "size": 93808588,
+      "type": "application/gzip"
+    }
+  ]
+}

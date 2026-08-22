@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.20",
+  "date": "2023-11-30",
+  "body": "### Bug fixes\n\n- Fix drag window cause resize issue\n- Fix tab title can be draged issue\n- Fix copy shortcut in Windows/Linux OS (#3138)",
+  "assets": [
+    {
+      "name": "electerm-1.37.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-linux-amd64.deb",
+      "size": 73354828,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-linux-amd64.snap",
+      "size": 89071616,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-linux-x64.tar.gz",
+      "size": 99423035,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-linux-x86_64.rpm",
+      "size": 73029004,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-mac-arm64.dmg",
+      "size": 95680050,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-mac-x64.dmg",
+      "size": 100909913,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-win-x64-installer.exe",
+      "size": 76809686,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-win-x64-loose.tar.gz",
+      "size": 104009435,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.20-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-win-x64-portable.tar.gz",
+      "size": 104241979,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-win-x64.appx",
+      "size": 111870478,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.20/electerm-1.37.20-win-x64.tar.gz",
+      "size": 104242159,
+      "type": "application/gzip"
+    }
+  ]
+}

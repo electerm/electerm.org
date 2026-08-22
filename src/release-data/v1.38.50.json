@@ -1,0 +1,145 @@
+{
+  "version": "v1.38.50",
+  "date": "2024-04-04",
+  "body": "### Bug fix/UI update release\n\n- #3336 Fix conform exit do not work issue in windows\n- Fix sync data order control\n- UI: show formatted os info in info panel",
+  "assets": [
+    {
+      "name": "electerm-1.38.50-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-aarch64.rpm",
+      "size": 64956740,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.50-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-amd64.deb",
+      "size": 68666846,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-amd64.snap",
+      "size": 83779584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-arm64.AppImage",
+      "size": 98740982,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-arm64.deb",
+      "size": 64715452,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-arm64.tar.gz",
+      "size": 93523988,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.50-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-armv7l.AppImage",
+      "size": 86901474,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-armv7l.deb",
+      "size": 62662524,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-armv7l.rpm",
+      "size": 62660140,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.50-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-armv7l.tar.gz",
+      "size": 83568508,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.50-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-x64.tar.gz",
+      "size": 92945076,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.50-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-x86_64.AppImage",
+      "size": 97826085,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-linux-x86_64.rpm",
+      "size": 68860952,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.50-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-mac-arm64.dmg",
+      "size": 97377165,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-mac-arm64.dmg.blockmap",
+      "size": 102929,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-mac-x64.dmg",
+      "size": 102640949,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-mac-x64.dmg.blockmap",
+      "size": 106632,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-win-x64-installer.exe",
+      "size": 72604052,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-win-x64-installer.exe.blockmap",
+      "size": 76058,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-win-x64-loose.tar.gz",
+      "size": 98153600,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.50-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-win-x64-portable.tar.gz",
+      "size": 98398948,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.50-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-win-x64.appx",
+      "size": 114412156,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.50-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.50/electerm-1.38.50-win-x64.tar.gz",
+      "size": 98398613,
+      "type": "application/gzip"
+    }
+  ]
+}

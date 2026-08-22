@@ -1,0 +1,37 @@
+{
+  "version": "v0.9.0",
+  "date": "2017-12-07",
+  "body": "- fix #134 fix logo url (#136)\n- fix #128 add checkupdate menu and more info to about page (#131)\n- fix #129 new icon set (#130)",
+  "assets": [
+    {
+      "name": "electerm-0.9.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.0/electerm-0.9.0-linux-amd64.deb",
+      "size": 37068794,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.9.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.0/electerm-0.9.0-linux-x86_64.rpm",
+      "size": 54142590,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.9.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.0/electerm-0.9.0-mac.dmg",
+      "size": 51441280,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.9.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.0/electerm-0.9.0-win.tar.gz",
+      "size": 55101616,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.9.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.9.0/electerm-0.9.0.tar.gz",
+      "size": 52138976,
+      "type": "application/gzip"
+    }
+  ]
+}

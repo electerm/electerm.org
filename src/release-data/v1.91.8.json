@@ -1,0 +1,151 @@
+{
+  "version": "v1.91.8",
+  "date": "2025-05-31",
+  "body": "\n### New features\n\n- #3959 Support proxy for AI request\n\n### Bug fixes\n\n- fix connection hopping bookmark search, do not allow select category as host\n\n-----\n\n### 新功能\n\n- #3959 支持AI请求的代理\n\n### 修复问题\n\n- 修复连接跳转书签搜索，不允许选择分类作为主机",
+  "assets": [
+    {
+      "name": "electerm-1.91.8-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-aarch64.rpm",
+      "size": 68085769,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.91.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-amd64.deb",
+      "size": 72574706,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-amd64.snap",
+      "size": 90157056,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-arm64.AppImage",
+      "size": 105798925,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-arm64.deb",
+      "size": 68042812,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-arm64.tar.gz",
+      "size": 100127257,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.91.8-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-armv7l.AppImage",
+      "size": 93926097,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-armv7l.deb",
+      "size": 66499432,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-armv7l.rpm",
+      "size": 66346857,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.91.8-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-armv7l.tar.gz",
+      "size": 90219136,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.91.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-x64.tar.gz",
+      "size": 100023386,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.91.8-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-x86_64.AppImage",
+      "size": 105410341,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-linux-x86_64.rpm",
+      "size": 72783061,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.91.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-mac-arm64.dmg",
+      "size": 104918332,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-mac-arm64.dmg.blockmap",
+      "size": 110751,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-mac-x64.dmg",
+      "size": 111888145,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-mac-x64.dmg.blockmap",
+      "size": 116989,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-win-x64-installer.exe",
+      "size": 79687593,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-win-x64-installer.exe.blockmap",
+      "size": 84089,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-win-x64-loose.tar.gz",
+      "size": 109123756,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.91.8-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-win-x64-portable.tar.gz",
+      "size": 109195821,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.91.8-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-win-x64.appx",
+      "size": 127470065,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.91.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-win-x64.tar.gz",
+      "size": 109195363,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.91.8-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.91.8/electerm-1.91.8-win7.tar.gz",
+      "size": 99872100,
+      "type": "application/gzip"
+    }
+  ]
+}

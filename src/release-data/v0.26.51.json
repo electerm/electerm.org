@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.51",
+  "date": "2019-02-21",
+  "body": "- fix #1140 [UI] Remove theme select from terminal context menu (#1143)\n- fix #1139 [UI] Add link icon to external link (#1142)\n- fix #815 [UI] Use antd dark theme (#1141)\n- fix #1016 Support exit command (#1138)",
+  "assets": [
+    {
+      "name": "electerm-0.26.51-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.51/electerm-0.26.51-linux-amd64.deb",
+      "size": 38154504,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.51-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.51/electerm-0.26.51-linux-amd64.snap",
+      "size": 110403584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.51-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.51/electerm-0.26.51-linux-x64.tar.gz",
+      "size": 52678695,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.51-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.51/electerm-0.26.51-linux-x86_64.rpm",
+      "size": 38193754,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.51-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.51/electerm-0.26.51-mac.dmg",
+      "size": 54363856,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.51-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.51/electerm-0.26.51-win-x64.tar.gz",
+      "size": 54676160,
+      "type": "application/gzip"
+    }
+  ]
+}

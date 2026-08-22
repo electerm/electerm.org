@@ -1,0 +1,37 @@
+{
+  "version": "v0.26.12",
+  "date": "2019-01-01",
+  "body": "- fix #1056 [UI] Adjust bottom margin (#1059)\n- fix #1057 fix window control icon UI (#1058)",
+  "assets": [
+    {
+      "name": "electerm-0.26.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.12/electerm-0.26.12-linux-amd64.deb",
+      "size": 38192592,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.12-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.12/electerm-0.26.12-linux-x64.tar.gz",
+      "size": 52194295,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.12/electerm-0.26.12-linux-x86_64.rpm",
+      "size": 38219542,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.12-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.12/electerm-0.26.12-mac.dmg",
+      "size": 53853902,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.12-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.12/electerm-0.26.12-win-x64.tar.gz",
+      "size": 54016623,
+      "type": "application/gzip"
+    }
+  ]
+}

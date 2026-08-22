@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.10",
+  "date": "2018-07-14",
+  "body": "- fix #590 add bookmark categories (#601)",
+  "assets": [
+    {
+      "name": "electerm-0.23.10-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.10/electerm-0.23.10-linux-amd64.deb",
+      "size": 36136502,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.10-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.10/electerm-0.23.10-linux-x86_64.rpm",
+      "size": 36293689,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.10-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.10/electerm-0.23.10-mac.dmg",
+      "size": 52056278,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.10-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.10/electerm-0.23.10-win.tar.gz",
+      "size": 51376871,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.10.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.10/electerm-0.23.10.tar.gz",
+      "size": 49024958,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v1.5.0",
+  "date": "2020-09-24",
+  "body": "- Rewrite sftp module, now it use async process to handle file transfer\n- Add zh_tw language support",
+  "assets": [
+    {
+      "name": "electerm-1.5.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.5.0/electerm-1.5.0-linux-amd64.deb",
+      "size": 54259802,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.5.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.5.0/electerm-1.5.0-linux-amd64.snap",
+      "size": 66154496,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.5.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.5.0/electerm-1.5.0-linux-x64.tar.gz",
+      "size": 74751160,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.5.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.5.0/electerm-1.5.0-linux-x86_64.rpm",
+      "size": 54413236,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.5.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.5.0/electerm-1.5.0-mac.dmg",
+      "size": 77855980,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.5.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.5.0/electerm-1.5.0-win-x64.tar.gz",
+      "size": 72406626,
+      "type": "application/gzip"
+    }
+  ]
+}

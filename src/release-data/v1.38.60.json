@@ -1,0 +1,145 @@
+{
+  "version": "v1.38.60",
+  "date": "2024-04-07",
+  "body": "### New features\n\n- #2793 #2714 #2647 #2145 #2061 #1907 Support drag/drop to adjust quick command order\n- #3332 Support drag/drop to adjust address bookmarks order\n\n### Bug fixes\n\n- #3339 Fix bug cause app not working in windows\n- #3237 Fix transfer list bug",
+  "assets": [
+    {
+      "name": "electerm-1.38.60-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-aarch64.rpm",
+      "size": 64956184,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.60-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-amd64.deb",
+      "size": 68699830,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-amd64.snap",
+      "size": 83775488,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-arm64.AppImage",
+      "size": 98741154,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-arm64.deb",
+      "size": 64731508,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-arm64.tar.gz",
+      "size": 93524779,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.60-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-armv7l.AppImage",
+      "size": 86901577,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-armv7l.deb",
+      "size": 62658664,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-armv7l.rpm",
+      "size": 62667124,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.60-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-armv7l.tar.gz",
+      "size": 83568990,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.60-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-x64.tar.gz",
+      "size": 92945432,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.60-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-x86_64.AppImage",
+      "size": 97826306,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-linux-x86_64.rpm",
+      "size": 68855288,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.60-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-mac-arm64.dmg",
+      "size": 97383899,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-mac-arm64.dmg.blockmap",
+      "size": 102548,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-mac-x64.dmg",
+      "size": 102640218,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-mac-x64.dmg.blockmap",
+      "size": 108095,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-win-x64-installer.exe",
+      "size": 72604560,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-win-x64-installer.exe.blockmap",
+      "size": 76023,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-win-x64-loose.tar.gz",
+      "size": 98154545,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.60-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-win-x64-portable.tar.gz",
+      "size": 98400064,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.60-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-win-x64.appx",
+      "size": 114412976,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.60-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.60/electerm-1.38.60-win-x64.tar.gz",
+      "size": 98399657,
+      "type": "application/gzip"
+    }
+  ]
+}

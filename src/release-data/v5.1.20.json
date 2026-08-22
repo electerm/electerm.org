@@ -1,0 +1,289 @@
+{
+  "version": "v5.1.20",
+  "date": "2026-08-14",
+  "body": "### Bug fix release\n\n- Fix CN char input issue (#4480)\n- Fix local terminal load unwanted cert issue\n\n-----\n\n### Bug 修复发布\n\n- 修复中文输入问题 (#4480)\n- 修复本地终端加载无关证书的问题\n\n-------\n\nDownload下载: [https://electerm.org](https://electerm.org)\n",
+  "assets": [
+    {
+      "name": "electerm-5.1.20-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-aarch64-legacy.rpm",
+      "size": 62576492,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.20-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-aarch64.rpm",
+      "size": 62683837,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.20-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-amd64-legacy.deb",
+      "size": 74516700,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-amd64.deb",
+      "size": 93361040,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-amd64.snap",
+      "size": 102125568,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-arm64-legacy.AppImage",
+      "size": 95383666,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-arm64-legacy.deb",
+      "size": 70491608,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-arm64-legacy.tar.gz",
+      "size": 90280661,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-arm64.AppImage",
+      "size": 95633385,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-arm64.deb",
+      "size": 70639324,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-arm64.tar.gz",
+      "size": 90511032,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l-legacy.AppImage",
+      "size": 83586397,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l-legacy.deb",
+      "size": 66844912,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l-legacy.rpm",
+      "size": 60256016,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l-legacy.tar.gz",
+      "size": 80349257,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l.AppImage",
+      "size": 83836056,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l.deb",
+      "size": 66992724,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l.rpm",
+      "size": 60344689,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.20-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-armv7l.tar.gz",
+      "size": 80580269,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-linux-loong64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-loong64-legacy.deb",
+      "size": 152653390,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.20-linux-loong64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-loong64-legacy.tar.gz",
+      "size": 152211628,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-5.1.20-linux-loong64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-loong64.deb",
+      "size": 96184466,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.20-linux-loong64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-loong64.tar.gz",
+      "size": 130408129,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-5.1.20-linux-loongarch64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-loongarch64-legacy.deb",
+      "size": 152653334,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.20-linux-loongarch64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-loongarch64.deb",
+      "size": 96185272,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.20-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-x64-legacy.tar.gz",
+      "size": 89922336,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-x64.tar.gz",
+      "size": 114404482,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-x86_64-legacy.AppImage",
+      "size": 94734782,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-x86_64-legacy.rpm",
+      "size": 66492008,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.20-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-x86_64.AppImage",
+      "size": 120738228,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-linux-x86_64.rpm",
+      "size": 83168405,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-mac-arm64.dmg",
+      "size": 113326164,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-mac-arm64.dmg.blockmap",
+      "size": 119747,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-mac-x64.dmg",
+      "size": 117171352,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-mac-x64.dmg.blockmap",
+      "size": 123202,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-mac10-x64.dmg",
+      "size": 92622713,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-mac10-x64.dmg.blockmap",
+      "size": 98542,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-arm64-installer.exe",
+      "size": 103142535,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-arm64-installer.exe.blockmap",
+      "size": 109322,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-arm64.tar.gz",
+      "size": 138659400,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-x64-installer.exe",
+      "size": 104815751,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-x64-installer.exe.blockmap",
+      "size": 109939,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-x64-loose.tar.gz",
+      "size": 136314852,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-x64-portable.tar.gz",
+      "size": 136339237,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-x64.appx",
+      "size": 159328518,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win-x64.tar.gz",
+      "size": 136338888,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.20-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.20/electerm-5.1.20-win7.tar.gz",
+      "size": 97616104,
+      "type": "application/gzip"
+    }
+  ]
+}

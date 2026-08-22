@@ -1,0 +1,37 @@
+{
+  "version": "v0.13.2",
+  "date": "2018-01-10",
+  "body": "- fix #213 fix #216 fix #215 fix ssh current path modifier (#217)\n- fix in production can not open info modal (#218)",
+  "assets": [
+    {
+      "name": "electerm-0.13.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.2/electerm-0.13.2-linux-amd64.deb",
+      "size": 37131078,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.13.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.2/electerm-0.13.2-linux-x86_64.rpm",
+      "size": 53860639,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.13.2-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.2/electerm-0.13.2-mac.dmg",
+      "size": 51500858,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.13.2-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.2/electerm-0.13.2-win.tar.gz",
+      "size": 55241665,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.13.2.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.2/electerm-0.13.2.tar.gz",
+      "size": 51862379,
+      "type": "application/gzip"
+    }
+  ]
+}

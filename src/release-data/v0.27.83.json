@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.83",
+  "date": "2019-11-30",
+  "body": "- [feat] Add option that user must hold ctrl or meta (in mac) when click to open terminal link (#1416)",
+  "assets": [
+    {
+      "name": "electerm-0.27.83-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.83/electerm-0.27.83-linux-amd64.deb",
+      "size": 46180316,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.83-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.83/electerm-0.27.83-linux-amd64.snap",
+      "size": 56745984,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.83-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.83/electerm-0.27.83-linux-x64.tar.gz",
+      "size": 64005345,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.83-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.83/electerm-0.27.83-linux-x86_64.rpm",
+      "size": 45990328,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.83-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.83/electerm-0.27.83-mac.dmg",
+      "size": 68181439,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.83-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.83/electerm-0.27.83-win-x64.tar.gz",
+      "size": 65514775,
+      "type": "application/gzip"
+    }
+  ]
+}

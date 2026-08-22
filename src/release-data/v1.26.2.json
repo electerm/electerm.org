@@ -1,0 +1,67 @@
+{
+  "version": "v1.26.2",
+  "date": "2023-06-27",
+  "body": "### Quick bug fix\n\n- UI: fix a typo in bookmark form tabs",
+  "assets": [
+    {
+      "name": "electerm-1.26.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-linux-amd64.deb",
+      "size": 63548308,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.26.2-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-linux-amd64.snap",
+      "size": 78532608,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.26.2-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-linux-x64.tar.gz",
+      "size": 86946147,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.26.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-linux-x86_64.rpm",
+      "size": 63744912,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.26.2-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-mac-arm64.dmg",
+      "size": 91355179,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.26.2-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-mac-x64.dmg",
+      "size": 91253479,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.26.2-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-win-x64-installer.exe",
+      "size": 68431075,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.26.2-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-win-x64-loose.tar.gz",
+      "size": 93472057,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.26.2-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-win-x64.appx",
+      "size": 100326199,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.26.2-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.26.2/electerm-1.26.2-win-x64.tar.gz",
+      "size": 93814499,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "version": "v1.38.70",
+  "date": "2024-04-21",
+  "body": "### New features/UI\n\n- #3338 Show ssh tunnel status in tab tooltip\n- #3338 Support ssh tunnel name, new ssh tunnel list UI\n- #3338 Add sshTunnelLocalHost input for ssh tunnel\n- UI: improve disk info data order\n- #3357 Fix window control button z-index\n\n### Bug fixes\n\n- #3374 Fix del shortcut when edit file name\n- #3353 Refractor file transfer function, fix some file not upload issue [skip build] (#3375)\n- #3370 Fix sync error when no user config\n- #3343 Fix multi window support in Mac OS\n- #3368 #3345 Fix cancel rz upload crash terminal issue",
+  "assets": [
+    {
+      "name": "electerm-1.38.70-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-aarch64.rpm",
+      "size": 64957336,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.70-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-amd64.deb",
+      "size": 68978486,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-amd64.snap",
+      "size": 83775488,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-arm64.AppImage",
+      "size": 98745407,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-arm64.deb",
+      "size": 64978934,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-arm64.tar.gz",
+      "size": 93525305,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.70-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-armv7l.AppImage",
+      "size": 86905652,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-armv7l.deb",
+      "size": 62938468,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-armv7l.rpm",
+      "size": 62663552,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.70-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-armv7l.tar.gz",
+      "size": 83569498,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.70-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-x64.tar.gz",
+      "size": 92947290,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.70-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-x86_64.AppImage",
+      "size": 97830294,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-linux-x86_64.rpm",
+      "size": 68860764,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.70-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-mac-arm64.dmg",
+      "size": 97385029,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-mac-arm64.dmg.blockmap",
+      "size": 102911,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-mac-x64.dmg",
+      "size": 102639596,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-mac-x64.dmg.blockmap",
+      "size": 108453,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-win-x64-installer.exe",
+      "size": 72605309,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-win-x64-installer.exe.blockmap",
+      "size": 76219,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-win-x64-loose.tar.gz",
+      "size": 98154109,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.70-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-win-x64-portable.tar.gz",
+      "size": 98399525,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.70-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-win-x64.appx",
+      "size": 114411606,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.70-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.70/electerm-1.38.70-win-x64.tar.gz",
+      "size": 98399433,
+      "type": "application/gzip"
+    }
+  ]
+}

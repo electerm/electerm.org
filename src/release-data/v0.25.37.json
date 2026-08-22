@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.37",
+  "date": "2018-11-25",
+  "body": "- fix #952 Hover to show bookmark select (#953)\n- fix #950 Auto focus after terminal clear (#951)\n- fix #938 Centralized state management (#947)",
+  "assets": [
+    {
+      "name": "electerm-0.25.37-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.37/electerm-0.25.37-linux-amd64.deb",
+      "size": 38174666,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.37-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.37/electerm-0.25.37-linux-x64.tar.gz",
+      "size": 52159462,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.37-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.37/electerm-0.25.37-linux-x86_64.rpm",
+      "size": 38201942,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.37-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.37/electerm-0.25.37-mac.dmg",
+      "size": 53803575,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.37-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.37/electerm-0.25.37-win-x64.tar.gz",
+      "size": 53981546,
+      "type": "application/gzip"
+    }
+  ]
+}

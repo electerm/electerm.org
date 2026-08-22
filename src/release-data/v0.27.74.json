@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.74",
+  "date": "2019-10-25",
+  "body": "- [Fix] Fix sftp remote init path for special cases like juniper device\n- [UI] Fix file manager list UI (#1381)",
+  "assets": [
+    {
+      "name": "electerm-0.27.74-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.74/electerm-0.27.74-linux-amd64.deb",
+      "size": 46187458,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.74-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.74/electerm-0.27.74-linux-amd64.snap",
+      "size": 56741888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.74-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.74/electerm-0.27.74-linux-x64.tar.gz",
+      "size": 64009462,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.74-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.74/electerm-0.27.74-linux-x86_64.rpm",
+      "size": 45986388,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.74-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.74/electerm-0.27.74-mac.dmg",
+      "size": 68190057,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.74-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.74/electerm-0.27.74-win-x64.tar.gz",
+      "size": 64994427,
+      "type": "application/gzip"
+    }
+  ]
+}

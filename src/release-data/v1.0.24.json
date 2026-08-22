@@ -1,0 +1,43 @@
+{
+  "version": "v1.0.24",
+  "date": "2020-02-05",
+  "body": "- [quick fix] Fix hotkey select (#1548)",
+  "assets": [
+    {
+      "name": "electerm-1.0.24-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.24/electerm-1.0.24-linux-amd64.deb",
+      "size": 50873694,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.24-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.24/electerm-1.0.24-linux-amd64.snap",
+      "size": 62132224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.24-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.24/electerm-1.0.24-linux-x64.tar.gz",
+      "size": 70223846,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.0.24-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.24/electerm-1.0.24-linux-x86_64.rpm",
+      "size": 50530248,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.0.24-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.24/electerm-1.0.24-mac.dmg",
+      "size": 68158313,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.24-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.24/electerm-1.0.24-win-x64.tar.gz",
+      "size": 65296426,
+      "type": "application/gzip"
+    }
+  ]
+}

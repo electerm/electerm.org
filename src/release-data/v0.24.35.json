@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.35",
+  "date": "2018-10-11",
+  "body": "- fix #793 fix font family setting (#794)\n- fix #745 use latest babel (#790)",
+  "assets": [
+    {
+      "name": "electerm-0.24.35-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.35/electerm-0.24.35-linux-amd64.deb",
+      "size": 36252396,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.35-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.35/electerm-0.24.35-linux-x86_64.rpm",
+      "size": 36387065,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.35-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.35/electerm-0.24.35-mac.dmg",
+      "size": 52224798,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.35-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.35/electerm-0.24.35-win.tar.gz",
+      "size": 51467398,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.35.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.35/electerm-0.24.35.tar.gz",
+      "size": 49149551,
+      "type": "application/gzip"
+    }
+  ]
+}

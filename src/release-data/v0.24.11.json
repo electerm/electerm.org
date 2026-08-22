@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.11",
+  "date": "2018-09-06",
+  "body": "- fix #726 fix first-run crash (#732)\n- fix #728 fix init terminal args in mac (#731)",
+  "assets": [
+    {
+      "name": "electerm-0.24.11-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.11/electerm-0.24.11-linux-amd64.deb",
+      "size": 36256770,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.11-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.11/electerm-0.24.11-linux-x86_64.rpm",
+      "size": 36410497,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.11-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.11/electerm-0.24.11-mac.dmg",
+      "size": 52247731,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.11-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.11/electerm-0.24.11-win.tar.gz",
+      "size": 51484516,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.11.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.11/electerm-0.24.11.tar.gz",
+      "size": 49164004,
+      "type": "application/gzip"
+    }
+  ]
+}

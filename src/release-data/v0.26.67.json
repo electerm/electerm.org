@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.67",
+  "date": "2019-03-26",
+  "body": "- fix #1174 [feat] Support Zmodem[rz,sz] (#1185)",
+  "assets": [
+    {
+      "name": "electerm-0.26.67-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.67/electerm-0.26.67-linux-amd64.deb",
+      "size": 38192644,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.67-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.67/electerm-0.26.67-linux-amd64.snap",
+      "size": 111943680,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.67-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.67/electerm-0.26.67-linux-x64.tar.gz",
+      "size": 52706915,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.67-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.67/electerm-0.26.67-linux-x86_64.rpm",
+      "size": 38219642,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.67-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.67/electerm-0.26.67-mac.dmg",
+      "size": 54382078,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.67-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.67/electerm-0.26.67-win-x64.tar.gz",
+      "size": 54704154,
+      "type": "application/gzip"
+    }
+  ]
+}

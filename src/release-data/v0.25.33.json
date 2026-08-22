@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.33",
+  "date": "2018-11-16",
+  "body": "- fix #944 Fix release script (#945)\n- fix #942 Fix terminal context menu theme select (#943)\n- fix #930 Fix request error message notification (#941)\n- fix #939 Fix reload tab icon (#940)\n- fix #943 Auto resize terminal when font setting changes\n- fix #921 Fix drag to select from anywhere\n- fix #904 [UI] better menu icon\n- fix #893 Update default theme color\n- fix #894 Add theme save message \n- fix #880 Simplify fetch wrapper\n- fix #892 Hide dns helper in history form \n- fix #903 fix windows home dir by @blue-bird1",
+  "assets": [
+    {
+      "name": "electerm-0.25.33-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.33/electerm-0.25.33-linux-amd64.deb",
+      "size": 38174298,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.33-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.33/electerm-0.25.33-linux-x64.tar.gz",
+      "size": 52159101,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.33-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.33/electerm-0.25.33-linux-x86_64.rpm",
+      "size": 38208366,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.33-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.33/electerm-0.25.33-mac.dmg",
+      "size": 53803636,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.33-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.33/electerm-0.25.33-win-x64.tar.gz",
+      "size": 53980470,
+      "type": "application/gzip"
+    }
+  ]
+}

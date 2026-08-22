@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.1",
+  "date": "2023-11-26",
+  "body": "### New features\n\n- Major update: Improve tabs UI, improve drag support\n- fix #3066 Add hide ssh-config category in setting\n- Add terminal log switch in terminal info panel\n- fix #3114 Add time stamp to terminal log\n\n### Bug/UI fixes\n\n- UI: Fix default link color\n- fix #3111 Fix zoomin/out shortcut config support\n",
+  "assets": [
+    {
+      "name": "electerm-1.37.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-linux-amd64.deb",
+      "size": 73214950,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.1-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-linux-amd64.snap",
+      "size": 88915968,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.1-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-linux-x64.tar.gz",
+      "size": 99242933,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-linux-x86_64.rpm",
+      "size": 72904644,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.1-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-mac-arm64.dmg",
+      "size": 95473832,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.1-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-mac-x64.dmg",
+      "size": 100732612,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.1-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-win-x64-installer.exe",
+      "size": 76682610,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.1-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-win-x64-loose.tar.gz",
+      "size": 103834172,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.1-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-win-x64-portable.tar.gz",
+      "size": 104059417,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.1-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-win-x64.appx",
+      "size": 111652566,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.1-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.1/electerm-1.37.1-win-x64.tar.gz",
+      "size": 104059795,
+      "type": "application/gzip"
+    }
+  ]
+}

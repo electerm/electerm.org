@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.31",
+  "date": "2019-05-28",
+  "body": "- fix #1283 [UI] theme Color adjust to match new default terminal background color (#1284)\n- fix #1280 [feat] Support terminal background image setting (#1282)\n- fix #1061 [feat] Add terminal background watermark (#1281)\n- fix #1258 Use electron 5 (#1279)\n- fix #1274 [chor] Use standard linter (#1278)",
+  "assets": [
+    {
+      "name": "electerm-0.27.31-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.31/electerm-0.27.31-linux-amd64.deb",
+      "size": 56568538,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.31-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.31/electerm-0.27.31-linux-amd64.snap",
+      "size": 135794688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.31-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.31/electerm-0.27.31-linux-x64.tar.gz",
+      "size": 81011236,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.31-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.31/electerm-0.27.31-linux-x86_64.rpm",
+      "size": 55949596,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.31-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.31/electerm-0.27.31-mac.dmg",
+      "size": 62451095,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.31-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.31/electerm-0.27.31-win-x64.tar.gz",
+      "size": 64252721,
+      "type": "application/gzip"
+    }
+  ]
+}

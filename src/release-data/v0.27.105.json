@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.105",
+  "date": "2019-12-26",
+  "body": "- [feat] Support web image as terminal background (#1480)\n- [feat] Add system tray (#1478)\n- [feat] Support font select (#1476)",
+  "assets": [
+    {
+      "name": "electerm-0.27.105-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.105/electerm-0.27.105-linux-amd64.deb",
+      "size": 50870424,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.105-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.105/electerm-0.27.105-linux-amd64.snap",
+      "size": 62132224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.105-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.105/electerm-0.27.105-linux-x64.tar.gz",
+      "size": 70218360,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.105-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.105/electerm-0.27.105-linux-x86_64.rpm",
+      "size": 50527628,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.105-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.105/electerm-0.27.105-mac.dmg",
+      "size": 68151909,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.105-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.105/electerm-0.27.105-win-x64.tar.gz",
+      "size": 65641441,
+      "type": "application/gzip"
+    }
+  ]
+}

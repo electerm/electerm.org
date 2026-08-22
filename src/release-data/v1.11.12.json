@@ -1,0 +1,43 @@
+{
+  "version": "v1.11.12",
+  "date": "2021-02-15",
+  "body": "- feat: Support exec path with params",
+  "assets": [
+    {
+      "name": "electerm-1.11.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.12/electerm-1.11.12-linux-amd64.deb",
+      "size": 54714138,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.12-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.12/electerm-1.11.12-linux-amd64.snap",
+      "size": 67174400,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.12-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.12/electerm-1.11.12-linux-x64.tar.gz",
+      "size": 75809507,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.11.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.12/electerm-1.11.12-linux-x86_64.rpm",
+      "size": 55505480,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.11.12-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.12/electerm-1.11.12-mac.dmg",
+      "size": 79017714,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.12-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.12/electerm-1.11.12-win-x64.tar.gz",
+      "size": 73348157,
+      "type": "application/gzip"
+    }
+  ]
+}

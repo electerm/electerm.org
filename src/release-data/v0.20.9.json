@@ -1,0 +1,37 @@
+{
+  "version": "v0.20.9",
+  "date": "2018-05-22",
+  "body": "- fix #444 quick connect (#447)\n- fix #445 fix repeat paste by shortcut (#446)\n- fix #437 add open file context menu (#443)\n\n",
+  "assets": [
+    {
+      "name": "electerm-0.20.9-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.9/electerm-0.20.9-linux-amd64.deb",
+      "size": 34789602,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.20.9-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.9/electerm-0.20.9-linux-x86_64.rpm",
+      "size": 34737985,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.20.9-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.9/electerm-0.20.9-mac.dmg",
+      "size": 50479709,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.20.9-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.9/electerm-0.20.9-win.tar.gz",
+      "size": 50633144,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.20.9.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.20.9/electerm-0.20.9.tar.gz",
+      "size": 47375201,
+      "type": "application/gzip"
+    }
+  ]
+}

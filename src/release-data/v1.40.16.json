@@ -1,0 +1,151 @@
+{
+  "version": "v1.40.16",
+  "date": "2024-09-29",
+  "body": "### Bug fixes\n\n- #3621 Fix quick command panel background color\n- #3619 Fix download folder with space in name\n- #3597 Improve tree list search performance\n\n-----\n\n### Bug 修复\n\n- #3621 修复快速命令面板背景颜色\n- #3619 修复下载文件夹名称中带有空格的问题\n- #3597 改进书签列表搜索性能",
+  "assets": [
+    {
+      "name": "electerm-1.40.16-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-aarch64.rpm",
+      "size": 66112068,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.16-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-amd64.deb",
+      "size": 69886050,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-amd64.snap",
+      "size": 85712896,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-arm64.AppImage",
+      "size": 100970883,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-arm64.deb",
+      "size": 65904592,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-arm64.tar.gz",
+      "size": 95570516,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.16-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-armv7l.AppImage",
+      "size": 89119464,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-armv7l.deb",
+      "size": 64022898,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-armv7l.rpm",
+      "size": 63822128,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.16-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-armv7l.tar.gz",
+      "size": 85615002,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.16-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-x64.tar.gz",
+      "size": 94992443,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.16-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-x86_64.AppImage",
+      "size": 100056014,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-linux-x86_64.rpm",
+      "size": 70016744,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.40.16-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-mac-arm64.dmg",
+      "size": 99606511,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-mac-arm64.dmg.blockmap",
+      "size": 104530,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-mac-x64.dmg",
+      "size": 104829362,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-mac-x64.dmg.blockmap",
+      "size": 111938,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-win-x64-installer.exe",
+      "size": 74076605,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-win-x64-installer.exe.blockmap",
+      "size": 77761,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-win-x64-loose.tar.gz",
+      "size": 100188452,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.16-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-win-x64-portable.tar.gz",
+      "size": 100494109,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.16-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-win-x64.appx",
+      "size": 116723406,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.40.16-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-win-x64.tar.gz",
+      "size": 100493888,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.40.16-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.40.16/electerm-1.40.16-win7.tar.gz",
+      "size": 97382971,
+      "type": "application/gzip"
+    }
+  ]
+}

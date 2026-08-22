@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.8",
+  "date": "2018-07-10",
+  "body": "- fix #593 remove auto hide menu feature (#594)\n- fix #591 confirm bookmark/terminalTheme delete (#592)\n- fix #587 app title follow current tab title (#589)",
+  "assets": [
+    {
+      "name": "electerm-0.23.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.8/electerm-0.23.8-linux-amd64.deb",
+      "size": 36123076,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.8/electerm-0.23.8-linux-x86_64.rpm",
+      "size": 36274413,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.8-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.8/electerm-0.23.8-mac.dmg",
+      "size": 52033773,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.8-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.8/electerm-0.23.8-win.tar.gz",
+      "size": 51354729,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.8.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.8/electerm-0.23.8.tar.gz",
+      "size": 49002583,
+      "type": "application/gzip"
+    }
+  ]
+}

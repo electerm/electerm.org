@@ -1,0 +1,151 @@
+{
+  "version": "v1.101.16",
+  "date": "2025-08-27",
+  "body": "### Quick bug fix\n\n- fix new serialport session can not connect issue\n\n-----\n\n### 快速问题修复\n\n- 修复新建的serialport书签无法连接的问题\n",
+  "assets": [
+    {
+      "name": "electerm-1.101.16-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-aarch64.rpm",
+      "size": 71444765,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.101.16-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-amd64.deb",
+      "size": 76040576,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-amd64.snap",
+      "size": 94175232,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-arm64.AppImage",
+      "size": 110935181,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-arm64.deb",
+      "size": 71302662,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-arm64.tar.gz",
+      "size": 105044680,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.16-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-armv7l.AppImage",
+      "size": 99813382,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-armv7l.deb",
+      "size": 70305120,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-armv7l.rpm",
+      "size": 70265105,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.101.16-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-armv7l.tar.gz",
+      "size": 95970160,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.16-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-x64.tar.gz",
+      "size": 105048267,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.16-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-x86_64.AppImage",
+      "size": 110712502,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-linux-x86_64.rpm",
+      "size": 76217153,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.101.16-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-mac-arm64.dmg",
+      "size": 114939894,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-mac-arm64.dmg.blockmap",
+      "size": 120798,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-mac-x64.dmg",
+      "size": 120905021,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-mac-x64.dmg.blockmap",
+      "size": 128187,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-win-x64-installer.exe",
+      "size": 87124620,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-win-x64-installer.exe.blockmap",
+      "size": 91397,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-win-x64-loose.tar.gz",
+      "size": 118940224,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.16-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-win-x64-portable.tar.gz",
+      "size": 119013634,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.16-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-win-x64.appx",
+      "size": 139007090,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.16-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-win-x64.tar.gz",
+      "size": 119013424,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.16-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.16/electerm-1.101.16-win7.tar.gz",
+      "size": 99324952,
+      "type": "application/gzip"
+    }
+  ]
+}

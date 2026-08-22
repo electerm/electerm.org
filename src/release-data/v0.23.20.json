@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.20",
+  "date": "2018-07-23",
+  "body": "- fix #615 fix copy shortcut in terminal (#616)\n- fix #612 fix search component (#614)",
+  "assets": [
+    {
+      "name": "electerm-0.23.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.20/electerm-0.23.20-linux-amd64.deb",
+      "size": 36144122,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.20/electerm-0.23.20-linux-x86_64.rpm",
+      "size": 36296893,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.20-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.20/electerm-0.23.20-mac.dmg",
+      "size": 52065612,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.20-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.20/electerm-0.23.20-win.tar.gz",
+      "size": 51382574,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.20.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.20/electerm-0.23.20.tar.gz",
+      "size": 49031331,
+      "type": "application/gzip"
+    }
+  ]
+}

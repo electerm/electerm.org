@@ -1,0 +1,151 @@
+{
+  "version": "v1.51.18",
+  "date": "2025-01-03",
+  "body": "### New features/Updates\n\n- Support import ~/.ssh/config (#3738)\n- Warn user when sftpPathFollowSsh enabled\n- Update UI: tab tag and theme select in setting page\n\n### Bug fixes\n\n- Fix cannot delete folder issue for windows ssh server (#3595)\n- Fix transfer may lose some file issue\n- Fix reload lose focus issue\n- Fix quick command panel control (#3731)\n\n### Code refactoring and improvements\n\n- Rewrite and improve various functions including checkedKeys, expandedKeys, resolutions, itermThemes, drag to resize component (#3732), and other core functionalities\n\n### Tests\n\n- Add new tests: profile use, web/telnet bookmark, and local type bookmark\n\n-----\n\n### 新功能/更新\n\n- 支持导入 ~/.ssh/config(#3738)\n- 当启用 sftpPathFollowSsh 时警告用户\n- 更新 UI：标签页标签和设置页面中的主题选择\n\n### Bug 修复\n- 修复 Windows ssh 服务器无法删除文件夹的问题 (#3595)\n- 修复传输可能丢失部分文件的问题\n- 修复重新加载失去焦点的问题\n- 修复快速命令面板控制问题 (#3731)\n\n### 代码重构和改进\n- 重写和改进多个功能，包括 checkedKeys、expandedKeys、resolutions、itermThemes、拖动调整大小组件 (#3732) 和其他核心功能\n\n### 测试\n- 添加新测试：配置文件使用、web/telnet 书签和本地类型书签",
+  "assets": [
+    {
+      "name": "electerm-1.51.18-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-aarch64.rpm",
+      "size": 66085452,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.18-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-amd64.deb",
+      "size": 70243452,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-amd64.snap",
+      "size": 87588864,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-arm64.AppImage",
+      "size": 102491479,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-arm64.deb",
+      "size": 65858552,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-arm64.tar.gz",
+      "size": 96944717,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.18-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-armv7l.AppImage",
+      "size": 90616929,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-armv7l.deb",
+      "size": 63854244,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-armv7l.rpm",
+      "size": 63793368,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.18-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-armv7l.tar.gz",
+      "size": 86987935,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.18-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-x64.tar.gz",
+      "size": 97083605,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.18-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-x86_64.AppImage",
+      "size": 102360488,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-linux-x86_64.rpm",
+      "size": 70391356,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.51.18-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-mac-arm64.dmg",
+      "size": 100884055,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-mac-arm64.dmg.blockmap",
+      "size": 105488,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-mac-x64.dmg",
+      "size": 106848916,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-mac-x64.dmg.blockmap",
+      "size": 113427,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-win-x64-installer.exe",
+      "size": 75016252,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-win-x64-installer.exe.blockmap",
+      "size": 79180,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-win-x64-loose.tar.gz",
+      "size": 101917827,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.18-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-win-x64-portable.tar.gz",
+      "size": 102613337,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.18-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-win-x64.appx",
+      "size": 119169859,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.51.18-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-win-x64.tar.gz",
+      "size": 102613042,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.51.18-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.51.18/electerm-1.51.18-win7.tar.gz",
+      "size": 98657574,
+      "type": "application/gzip"
+    }
+  ]
+}

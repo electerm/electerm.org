@@ -1,0 +1,253 @@
+{
+  "version": "v2.3.198",
+  "date": "2026-01-15",
+  "body": "### New features/Updates\n\n- Support custom ssh agent path\n- Improve mcp widget, add electerm name space\n- [experimental] Add TCP keep alive in ssh2 lib\n\n### Bug fixes\n\n- Fix global keep alive Interval overide logic\n- Fix terminal search panel background\n\n-----\n\n### 新功能/更新\n\n- 支持自定义 SSH 代理路径\n- 改进 MCP 组件，添加 electerm 命名空间\n- [实验性] 在 ssh2 库中添加 TCP 保活\n\n### Bug 修复\n\n- 修复全局保活间隔覆盖逻辑\n- 修复终端搜索面板背景\n\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)\n\nVideo guide使用视频: [https://electerm.html5beta.com/videos](https://electerm.html5beta.com/videos)",
+  "assets": [
+    {
+      "name": "electerm-2.3.198-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-aarch64-legacy.rpm",
+      "size": 60963904,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.198-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-aarch64.rpm",
+      "size": 61096929,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.198-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-amd64-legacy.deb",
+      "size": 72726980,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-amd64.deb",
+      "size": 85870044,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-amd64.snap",
+      "size": 93171712,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-arm64-legacy.AppImage",
+      "size": 92652578,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-arm64-legacy.deb",
+      "size": 68511132,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-arm64-legacy.tar.gz",
+      "size": 87786963,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-arm64.AppImage",
+      "size": 92931429,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-arm64.deb",
+      "size": 68687496,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-arm64.tar.gz",
+      "size": 88056283,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l-legacy.AppImage",
+      "size": 80855782,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l-legacy.deb",
+      "size": 64877036,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l-legacy.rpm",
+      "size": 58649824,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l-legacy.tar.gz",
+      "size": 77855069,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l.AppImage",
+      "size": 81138666,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l.deb",
+      "size": 65055888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l.rpm",
+      "size": 58766221,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.198-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-armv7l.tar.gz",
+      "size": 78123609,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-x64-legacy.tar.gz",
+      "size": 87430612,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-x64.tar.gz",
+      "size": 104312026,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-x86_64-legacy.AppImage",
+      "size": 92003528,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-x86_64-legacy.rpm",
+      "size": 64869668,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.198-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-x86_64.AppImage",
+      "size": 109941820,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-linux-x86_64.rpm",
+      "size": 76576241,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.198-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-mac-arm64.dmg",
+      "size": 103449685,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-mac-arm64.dmg.blockmap",
+      "size": 108233,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-mac-x64.dmg",
+      "size": 105259202,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-mac-x64.dmg.blockmap",
+      "size": 111580,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-mac10-x64.dmg",
+      "size": 90180878,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-mac10-x64.dmg.blockmap",
+      "size": 95361,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-arm64-installer.exe",
+      "size": 88593219,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-arm64-installer.exe.blockmap",
+      "size": 93523,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-arm64.tar.gz",
+      "size": 118435042,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-x64-installer.exe",
+      "size": 87483010,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-x64-installer.exe.blockmap",
+      "size": 90907,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-x64-loose.tar.gz",
+      "size": 119100195,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-x64-portable.tar.gz",
+      "size": 119135237,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-x64.appx",
+      "size": 139859032,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.198-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win-x64.tar.gz",
+      "size": 119135868,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.198-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.198/electerm-2.3.198-win7.tar.gz",
+      "size": 95436728,
+      "type": "application/gzip"
+    }
+  ]
+}

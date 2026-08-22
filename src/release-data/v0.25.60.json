@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.60",
+  "date": "2018-12-16",
+  "body": "- fix #1011 Fix window control icon (#1013)\n- fix #966 Support x11 (#1012)\n- fix #1008 Fix next tab hot key[ctrl + shift + Tab] (#1009)\n- fix #1005 Add more drag area at top (#1007)",
+  "assets": [
+    {
+      "name": "electerm-0.25.60-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.60/electerm-0.25.60-linux-amd64.deb",
+      "size": 38179580,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.60-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.60/electerm-0.25.60-linux-x64.tar.gz",
+      "size": 52187710,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.60-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.60/electerm-0.25.60-linux-x86_64.rpm",
+      "size": 38230522,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.60-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.60/electerm-0.25.60-mac.dmg",
+      "size": 53831639,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.60-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.60/electerm-0.25.60-win-x64.tar.gz",
+      "size": 54009864,
+      "type": "application/gzip"
+    }
+  ]
+}

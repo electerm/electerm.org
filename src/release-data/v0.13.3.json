@@ -1,0 +1,37 @@
+{
+  "version": "v0.13.3",
+  "date": "2018-01-11",
+  "body": "- fix #222 fix file prop/mode modal can not close (#223)\n- fix #219 fix file tooltip UI (#221)\n- fix #214 add basic ssh test (#220)",
+  "assets": [
+    {
+      "name": "electerm-0.13.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.3/electerm-0.13.3-linux-amd64.deb",
+      "size": 37129088,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.13.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.3/electerm-0.13.3-linux-x86_64.rpm",
+      "size": 53860772,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.13.3-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.3/electerm-0.13.3-mac.dmg",
+      "size": 51501011,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.13.3-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.3/electerm-0.13.3-win.tar.gz",
+      "size": 55241803,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.13.3.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.13.3/electerm-0.13.3.tar.gz",
+      "size": 51862404,
+      "type": "application/gzip"
+    }
+  ]
+}

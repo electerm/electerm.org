@@ -1,0 +1,37 @@
+{
+  "version": "v0.16.25",
+  "date": "2018-02-27",
+  "body": "- fix #329 after paste regain focus (#332)",
+  "assets": [
+    {
+      "name": "electerm-0.16.25-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.25/electerm-0.16.25-linux-amd64.deb",
+      "size": 37058528,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.25-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.25/electerm-0.16.25-linux-x86_64.rpm",
+      "size": 53689628,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.16.25-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.25/electerm-0.16.25-mac.dmg",
+      "size": 51348085,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.25-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.25/electerm-0.16.25-win.tar.gz",
+      "size": 55955419,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.16.25.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.25/electerm-0.16.25.tar.gz",
+      "size": 51704532,
+      "type": "application/gzip"
+    }
+  ]
+}

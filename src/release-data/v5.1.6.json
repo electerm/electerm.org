@@ -1,0 +1,289 @@
+{
+  "version": "v5.1.6",
+  "date": "2026-08-12",
+  "body": "### New features/UI/Updates\n\n- UI: add transfer count badge and widget count badge\n- Support left sidebar customization\n- Add touch-only shortcut bar with edit functionality\n- Support hide left sidebar\n- Improve mobile mode UI\n\n### Bug fixes\n\n- Fix transparent terminal selection (#4468) by @YangAtC\n- Fix symlink support for non sftp server\n- Fix terminal rendering extra lines at start issue (#4461) by @testerxydw\n\n### Security\n\n- Security: strip dangerous props for MCP tool call (reported by @manus-use)\n\n-----\n\n### 新功能/界面/更新\n\n- UI：添加传输数量徽标和组件数量徽标\n- 支持自定义左侧边栏\n- 添加仅触摸模式的快捷栏，支持编辑功能\n- 支持隐藏左侧边栏\n- 改进移动端模式界面\n\n### Bug 修复\n\n- 修复透明终端选区问题 (#4468) by @YangAtC\n- 修复非 sftp 服务器的符号链接支持\n- 修复终端在开始时渲染多余行的问题 (#4461) by @testerxydw\n\n### 安全\n\n- 安全：移除 MCP 工具调用中的危险属性（由 @manus-use 报告）\n\n-------\n\nDownload下载: [https://electerm.org](https://electerm.org)\n",
+  "assets": [
+    {
+      "name": "electerm-5.1.6-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-aarch64-legacy.rpm",
+      "size": 62588032,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.6-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-aarch64.rpm",
+      "size": 62675213,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.6-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-amd64-legacy.deb",
+      "size": 74550424,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-amd64.deb",
+      "size": 93358864,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-amd64.snap",
+      "size": 102125568,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-arm64-legacy.AppImage",
+      "size": 95379075,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-arm64-legacy.deb",
+      "size": 70489716,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-arm64-legacy.tar.gz",
+      "size": 90277428,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-arm64.AppImage",
+      "size": 95633510,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-arm64.deb",
+      "size": 70602528,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-arm64.tar.gz",
+      "size": 90507995,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l-legacy.AppImage",
+      "size": 83581733,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l-legacy.deb",
+      "size": 66843064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l-legacy.rpm",
+      "size": 60262240,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l-legacy.tar.gz",
+      "size": 80346964,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l.AppImage",
+      "size": 83836206,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l.deb",
+      "size": 66934784,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l.rpm",
+      "size": 60363769,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.6-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-armv7l.tar.gz",
+      "size": 80576625,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-linux-loong64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-loong64-legacy.deb",
+      "size": 152650658,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.6-linux-loong64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-loong64-legacy.tar.gz",
+      "size": 152201577,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-5.1.6-linux-loong64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-loong64.deb",
+      "size": 96180040,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.6-linux-loong64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-loong64.tar.gz",
+      "size": 130414103,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-5.1.6-linux-loongarch64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-loongarch64-legacy.deb",
+      "size": 152651038,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.6-linux-loongarch64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-loongarch64.deb",
+      "size": 96183110,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-5.1.6-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-x64-legacy.tar.gz",
+      "size": 89920694,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-x64.tar.gz",
+      "size": 114402734,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-x86_64-legacy.AppImage",
+      "size": 94730003,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-x86_64-legacy.rpm",
+      "size": 66488580,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.6-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-x86_64.AppImage",
+      "size": 120734126,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-linux-x86_64.rpm",
+      "size": 83153609,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-5.1.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-mac-arm64.dmg",
+      "size": 113325114,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-mac-arm64.dmg.blockmap",
+      "size": 118340,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-mac-x64.dmg",
+      "size": 117168112,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-mac-x64.dmg.blockmap",
+      "size": 122249,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-mac10-x64.dmg",
+      "size": 92623737,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-mac10-x64.dmg.blockmap",
+      "size": 98164,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-arm64-installer.exe",
+      "size": 103138432,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-arm64-installer.exe.blockmap",
+      "size": 108493,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-arm64.tar.gz",
+      "size": 138656254,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-x64-installer.exe",
+      "size": 104810853,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-x64-installer.exe.blockmap",
+      "size": 109709,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-x64-loose.tar.gz",
+      "size": 136312900,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-x64-portable.tar.gz",
+      "size": 136335815,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-x64.appx",
+      "size": 159323355,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-5.1.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win-x64.tar.gz",
+      "size": 136335456,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-5.1.6-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v5.1.6/electerm-5.1.6-win7.tar.gz",
+      "size": 97612297,
+      "type": "application/gzip"
+    }
+  ]
+}

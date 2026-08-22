@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.48",
+  "date": "2018-12-05",
+  "body": "- fix #977 Add shortcuts for menus (#985)\n- fix #836 Support keyboard-interactive auth with publickey auth (#983)\n- fix #981 Set password input type to password (#982)\n- fix #976 Menu click do not gain focus (#980)\n- fix #976 Make select all support terminal (#978)\n- fix #969 Fix Remote file edit trigger transfer (#975)",
+  "assets": [
+    {
+      "name": "electerm-0.25.48-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.48/electerm-0.25.48-linux-amd64.deb",
+      "size": 38165956,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.48-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.48/electerm-0.25.48-linux-x64.tar.gz",
+      "size": 52159199,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.48-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.48/electerm-0.25.48-linux-x86_64.rpm",
+      "size": 38223982,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.48-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.48/electerm-0.25.48-mac.dmg",
+      "size": 53805355,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.48-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.48/electerm-0.25.48-win-x64.tar.gz",
+      "size": 53981601,
+      "type": "application/gzip"
+    }
+  ]
+}

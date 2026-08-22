@@ -6,6 +6,7 @@ import express from 'express'
 import stylus from 'stylus'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
+import releaseData from './release-data.js'
 
 const devPort = env.SERVER_DEV_PORT || 6068
 const host = env.SERVER_HOST || '127.0.0.1'
@@ -124,6 +125,49 @@ function handleVideosIndex (req, res) {
   })
 }
 
+function handleReleasesIndex (req, res) {
+  const { langCode, lang } = enLang
+  const releasesGrouped = releaseData.getReleasesByYear()
+  res.render('releases', {
+    ...data,
+    host: h,
+    url: h + '/releases/',
+    dev: true,
+    cssUrl: '/index.bundle.css',
+    langCode,
+    lang,
+    lp: '',
+    faqUrl: '/faq/',
+    keywords: 'electerm, releases, past versions, download, terminal client, open source',
+    desc: 'Browse all electerm releases and download any past version for Linux, macOS, Windows, Android, and HarmonyOS.',
+    releasesGrouped
+  })
+}
+
+function handleRelease (req, res) {
+  const { langCode, lang } = enLang
+  const version = req.params.version
+  const release = releaseData.getRelease(version)
+  if (!release) {
+    res.status(404).send('Release not found')
+    return
+  }
+  res.render('release', {
+    ...data,
+    host: h,
+    url: h + '/releases/' + version + '/',
+    dev: true,
+    cssUrl: '/index.bundle.css',
+    langCode,
+    lang,
+    lp: '',
+    faqUrl: '/faq/',
+    keywords: 'electerm ' + version + ', download, terminal client, open source',
+    desc: 'Download electerm ' + version + ' for Linux, macOS, Windows, Android, and HarmonyOS.',
+    release
+  })
+}
+
 function handleFaq (req, res) {
   const langSlug = req.params.lang || ''
   let langData
@@ -210,6 +254,12 @@ function createServer () {
   // Video routes
   app.get('/videos', handleVideosIndex)
   app.get('/videos/:videoSlug', handleVideo)
+
+  // Release archive routes (historical download pages)
+  app.get('/releases', handleReleasesIndex)
+  app.get('/releases/', handleReleasesIndex)
+  app.get('/releases/:version', handleRelease)
+  app.get('/releases/:version/', handleRelease)
 
   // Catch-all for /:something/ routes
   app.get('/:param/', (req, res, next) => {

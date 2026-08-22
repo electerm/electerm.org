@@ -1,0 +1,139 @@
+{
+  "version": "v1.38.86",
+  "date": "2024-05-04",
+  "body": "### New features\n\n- #3378 Support deep link starts with electerm:// check wiki: https://github.com/electerm/electerm/wiki/Deep-link-support (#3397)\n\n### Bug fixes/UI\n\n- #3395 Update UX/UI, add animation when transferring (#3396)\n- Add ssh tunnel direction guide\n- #3389 #3387 #3384 #3339  Fix crash on local terminal ends",
+  "assets": [
+    {
+      "name": "electerm-1.38.86-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-aarch64.rpm",
+      "size": 64978096,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.86-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-amd64.deb",
+      "size": 68989316,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-amd64.snap",
+      "size": 83779584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-arm64.AppImage",
+      "size": 98810572,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-arm64.deb",
+      "size": 65002322,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-arm64.tar.gz",
+      "size": 93600695,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.86-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-armv7l.AppImage",
+      "size": 86954789,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-armv7l.deb",
+      "size": 62989042,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-armv7l.rpm",
+      "size": 62688460,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.86-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-armv7l.tar.gz",
+      "size": 83646118,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.86-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-x64.tar.gz",
+      "size": 93021801,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.86-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-linux-x86_64.AppImage",
+      "size": 97895765,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-mac-arm64.dmg",
+      "size": 97485125,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-mac-arm64.dmg.blockmap",
+      "size": 102756,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-mac-x64.dmg",
+      "size": 102679474,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-mac-x64.dmg.blockmap",
+      "size": 105929,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-win-x64-installer.exe",
+      "size": 72663005,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-win-x64-installer.exe.blockmap",
+      "size": 76394,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-win-x64-loose.tar.gz",
+      "size": 98222599,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.86-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-win-x64-portable.tar.gz",
+      "size": 98468806,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.86-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-win-x64.appx",
+      "size": 114473943,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.86-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.86/electerm-1.38.86-win-x64.tar.gz",
+      "size": 98468744,
+      "type": "application/gzip"
+    }
+  ]
+}

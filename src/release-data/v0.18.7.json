@@ -1,0 +1,37 @@
+{
+  "version": "v0.18.7",
+  "date": "2018-04-03",
+  "body": "fix #386 fix #384 fix #383 fix #381 ssh-config support terminal mode only(#387)",
+  "assets": [
+    {
+      "name": "electerm-0.18.7-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.7/electerm-0.18.7-linux-amd64.deb",
+      "size": 34945116,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.7-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.7/electerm-0.18.7-linux-x86_64.rpm",
+      "size": 34907561,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.18.7-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.7/electerm-0.18.7-mac.dmg",
+      "size": 50988027,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.7-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.7/electerm-0.18.7-win.tar.gz",
+      "size": 51114577,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.18.7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.7/electerm-0.18.7.tar.gz",
+      "size": 47858695,
+      "type": "application/gzip"
+    }
+  ]
+}

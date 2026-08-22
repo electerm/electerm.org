@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.38",
+  "date": "2023-12-07",
+  "body": "### Bug fixes\n\n- #3152 Fix windows root drive list (#3157)\n- #3154 Fix new bookmark cause crash",
+  "assets": [
+    {
+      "name": "electerm-1.37.38-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-linux-amd64.deb",
+      "size": 67290536,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.38-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-linux-amd64.snap",
+      "size": 82046976,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.38-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-linux-x64.tar.gz",
+      "size": 91259839,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.38-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-linux-x86_64.rpm",
+      "size": 67395828,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.38-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-mac-arm64.dmg",
+      "size": 95681397,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.38-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-mac-x64.dmg",
+      "size": 100908323,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.38-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-win-x64-installer.exe",
+      "size": 70570411,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.38-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-win-x64-loose.tar.gz",
+      "size": 95756046,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.38-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-win-x64-portable.tar.gz",
+      "size": 95953443,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.38-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-win-x64.appx",
+      "size": 111872549,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.38-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.38/electerm-1.37.38-win-x64.tar.gz",
+      "size": 95953301,
+      "type": "application/gzip"
+    }
+  ]
+}

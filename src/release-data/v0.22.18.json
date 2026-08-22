@@ -1,0 +1,37 @@
+{
+  "version": "v0.22.18",
+  "date": "2018-06-30",
+  "body": "- fix #538 fix symbolic path resolve (#545)",
+  "assets": [
+    {
+      "name": "electerm-0.22.18-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.18/electerm-0.22.18-linux-amd64.deb",
+      "size": 36125218,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.18-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.18/electerm-0.22.18-linux-x86_64.rpm",
+      "size": 36273365,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.22.18-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.18/electerm-0.22.18-mac.dmg",
+      "size": 52024463,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.18-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.18/electerm-0.22.18-win.tar.gz",
+      "size": 51352272,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.22.18.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.18/electerm-0.22.18.tar.gz",
+      "size": 48993757,
+      "type": "application/gzip"
+    }
+  ]
+}

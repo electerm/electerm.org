@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.75",
+  "date": "2019-04-01",
+  "body": "- fix #1193 [feat] Add disable ssh/sftp history setting (#1203)\n- fix #1198 [bug fix] Fix bookmarks expand (#1201)",
+  "assets": [
+    {
+      "name": "electerm-0.26.75-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.75/electerm-0.26.75-linux-amd64.deb",
+      "size": 38196220,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.75-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.75/electerm-0.26.75-linux-amd64.snap",
+      "size": 111947776,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.75-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.75/electerm-0.26.75-linux-x64.tar.gz",
+      "size": 52717108,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.75-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.75/electerm-0.26.75-linux-x86_64.rpm",
+      "size": 38232218,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.75-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.75/electerm-0.26.75-mac.dmg",
+      "size": 54393125,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.75-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.75/electerm-0.26.75-win-x64.tar.gz",
+      "size": 54846549,
+      "type": "application/gzip"
+    }
+  ]
+}

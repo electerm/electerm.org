@@ -1,0 +1,37 @@
+{
+  "version": "v0.26.10",
+  "date": "2018-12-31",
+  "body": "- fix #1052 fix X11 default setting (#1055)",
+  "assets": [
+    {
+      "name": "electerm-0.26.10-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.10/electerm-0.26.10-linux-amd64.deb",
+      "size": 38181768,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.10-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.10/electerm-0.26.10-linux-x64.tar.gz",
+      "size": 52194238,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.10-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.10/electerm-0.26.10-linux-x86_64.rpm",
+      "size": 38212938,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.10-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.10/electerm-0.26.10-mac.dmg",
+      "size": 53854067,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.10-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.10/electerm-0.26.10-win-x64.tar.gz",
+      "size": 54015396,
+      "type": "application/gzip"
+    }
+  ]
+}

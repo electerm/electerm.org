@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.74",
+  "date": "2022-06-01",
+  "body": "Quick bug fix: Roll back db wrapper, resolve some users can not save config issue",
+  "assets": [
+    {
+      "name": "electerm-1.21.74-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-linux-amd64.deb",
+      "size": 62864994,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.74-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-linux-amd64.snap",
+      "size": 77549568,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.74-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-linux-x64.tar.gz",
+      "size": 85854593,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.74-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-linux-x86_64.rpm",
+      "size": 63139608,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.74-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-mac-arm64.dmg",
+      "size": 90456228,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.74-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-mac-x64.dmg",
+      "size": 89689730,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.74-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-win-x64-installer.exe",
+      "size": 67854756,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.74-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-win-x64-loose.tar.gz",
+      "size": 91988361,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.74-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-win-x64.appx",
+      "size": 99148050,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.74-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.74/electerm-1.21.74-win-x64.tar.gz",
+      "size": 92733638,
+      "type": "application/gzip"
+    }
+  ]
+}

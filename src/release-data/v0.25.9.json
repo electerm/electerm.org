@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.9",
+  "date": "2018-11-05",
+  "body": "- fix #848 Add tab reload context menu (#860)\n- fix #857 Use react16.6 memo (#859)\n- fix #854 Use react16 lazy and Suspense (#858)\n- fix #850 Simplify dev server code (#856)\n- fix #851 When terminal websocket no reponse, set status to error (#855)\n- fix #844 Remove nodemon (#852)\n- fix #832 Add offline event check (#849)\n- fix #787 fix #841 Add edit file context menu (#843)",
+  "assets": [
+    {
+      "name": "electerm-0.25.9-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.9/electerm-0.25.9-linux-amd64.deb",
+      "size": 38127988,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.9-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.9/electerm-0.25.9-linux-x64.tar.gz",
+      "size": 52149463,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.9-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.9/electerm-0.25.9-linux-x86_64.rpm",
+      "size": 38172382,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.9-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.9/electerm-0.25.9-mac.dmg",
+      "size": 53803806,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.9-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.9/electerm-0.25.9-win-x64.tar.gz",
+      "size": 53985562,
+      "type": "application/gzip"
+    }
+  ]
+}

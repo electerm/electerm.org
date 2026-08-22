@@ -1,0 +1,67 @@
+{
+  "version": "v1.17.16",
+  "date": "2021-11-12",
+  "body": "Quick bug fix: Fix sftp pager can not click issue",
+  "assets": [
+    {
+      "name": "electerm-1.17.16-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-linux-amd64.deb",
+      "size": 59335542,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.16-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-linux-amd64.snap",
+      "size": 73420800,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.16-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-linux-x64.tar.gz",
+      "size": 81828084,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.16-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-linux-x86_64.rpm",
+      "size": 60106600,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.17.16-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-mac-arm64.dmg",
+      "size": 88534960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.16-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-mac-x64.dmg",
+      "size": 87186080,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.16-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-win-x64-installer.exe",
+      "size": 64119164,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.16-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-win-x64-loose.tar.gz",
+      "size": 87152547,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.16-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-win-x64.appx",
+      "size": 93767279,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.16-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.16/electerm-1.17.16-win-x64.tar.gz",
+      "size": 87758288,
+      "type": "application/gzip"
+    }
+  ]
+}

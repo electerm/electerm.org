@@ -1,0 +1,37 @@
+{
+  "version": "v0.19.8",
+  "date": "2018-04-28",
+  "body": "- fix #403 add dup tab next to src tab (#412)\n- fix #410 fix close tab button always show in production app (#411)",
+  "assets": [
+    {
+      "name": "electerm-0.19.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.8/electerm-0.19.8-linux-amd64.deb",
+      "size": 34952076,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.8/electerm-0.19.8-linux-x86_64.rpm",
+      "size": 34904681,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.19.8-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.8/electerm-0.19.8-mac.dmg",
+      "size": 50985686,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.8-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.8/electerm-0.19.8-win.tar.gz",
+      "size": 51117683,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.19.8.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.8/electerm-0.19.8.tar.gz",
+      "size": 47861277,
+      "type": "application/gzip"
+    }
+  ]
+}

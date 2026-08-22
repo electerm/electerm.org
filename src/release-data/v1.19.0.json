@@ -1,0 +1,67 @@
+{
+  "version": "v1.19.0",
+  "date": "2022-03-13",
+  "body": "New features\n\n- Support trzsz (https://github.com/trzsz/trzsz, trz/tsz, similar to rz/sz), and compatible with tmux(by @lonnywong)\n- fix #2385 Batch input support multi line\n\nBug fixes:\n\n- Fix after paste with context menu, lose focus issue\n\nCheck https://github.com/electerm/electerm/wiki/Know-issues for more known issues",
+  "assets": [
+    {
+      "name": "electerm-1.19.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-linux-amd64.deb",
+      "size": 59237098,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-linux-amd64.snap",
+      "size": 73703424,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-linux-x64.tar.gz",
+      "size": 82141930,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.19.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-linux-x86_64.rpm",
+      "size": 60259432,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.19.0-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-mac-arm64.dmg",
+      "size": 88834865,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.0-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-mac-x64.dmg",
+      "size": 87493339,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.0-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-win-x64-installer.exe",
+      "size": 64263851,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.0-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-win-x64-loose.tar.gz",
+      "size": 87480960,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.19.0-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-win-x64.appx",
+      "size": 94091483,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.19.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.19.0/electerm-1.19.0-win-x64.tar.gz",
+      "size": 88073254,
+      "type": "application/gzip"
+    }
+  ]
+}

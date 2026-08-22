@@ -1,0 +1,67 @@
+{
+  "version": "v1.22.27",
+  "date": "2022-08-02",
+  "body": "### Bug fixes\n\n- fix #2597 Fix create bookmark category function\n\n### New features\n\n- Add cut/paste bookmark context menu in bookmark edit UI\n\n### Other updates\n\n- [skip build] Add bookmark group test (#2599)",
+  "assets": [
+    {
+      "name": "electerm-1.22.27-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-linux-amd64.deb",
+      "size": 63029816,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.27-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-linux-amd64.snap",
+      "size": 77991936,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.27-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-linux-x64.tar.gz",
+      "size": 86343095,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.27-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-linux-x86_64.rpm",
+      "size": 63236772,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.22.27-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-mac-arm64.dmg",
+      "size": 91055907,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.27-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-mac-x64.dmg",
+      "size": 90299268,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.27-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-win-x64-installer.exe",
+      "size": 68075230,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.27-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-win-x64-loose.tar.gz",
+      "size": 92454259,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.27-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-win-x64.appx",
+      "size": 99703304,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.27-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.27/electerm-1.22.27-win-x64.tar.gz",
+      "size": 93217988,
+      "type": "application/gzip"
+    }
+  ]
+}

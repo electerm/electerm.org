@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.92",
+  "date": "2023-12-27",
+  "body": "### Bug fixes\n\n- #3199 Add right click end drag to avoid unexpected drag action\n- #3194 Fix file cut operation only do copy issue\n- #3197 Avoid zoom too fast\n- #3194 #3196 Avoid drag sticky bug, update tar version\n- #3192 Fix ctrl-v shortcut in window/linux\n\n### Other updates\n\n- #3193 Better exec input UI\n- #3185 Faster del operation in terminal",
+  "assets": [
+    {
+      "name": "electerm-1.37.92-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-linux-amd64.deb",
+      "size": 67401064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.92-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-linux-amd64.snap",
+      "size": 82325504,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.92-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-linux-x64.tar.gz",
+      "size": 91505746,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.92-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-linux-x86_64.rpm",
+      "size": 67540336,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.92-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-mac-arm64.dmg",
+      "size": 95949952,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.92-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-mac-x64.dmg",
+      "size": 101177052,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.92-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-win-x64-installer.exe",
+      "size": 71277121,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.92-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-win-x64-loose.tar.gz",
+      "size": 96700842,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.92-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-win-x64-portable.tar.gz",
+      "size": 96947236,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.92-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-win-x64.appx",
+      "size": 112949645,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.92-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.92/electerm-1.37.92-win-x64.tar.gz",
+      "size": 96946911,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": "v1.16.1",
+  "date": "2021-08-15",
+  "body": "### UI\n\n- Make close setting icon bigger\n- Remove tooltip for list title\n- New Quick command UI\n\n### New features\n\n- Support export/import quick commands\n\n\n",
+  "assets": [
+    {
+      "name": "electerm-1.16.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-linux-amd64.deb",
+      "size": 59692534,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.1-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-linux-amd64.snap",
+      "size": 74035200,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.1-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-linux-x64.tar.gz",
+      "size": 82475094,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-linux-x86_64.rpm",
+      "size": 60519384,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.16.1-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-mac-x64.dmg",
+      "size": 87823563,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.1-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-win-x64-installer.exe",
+      "size": 64795742,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.1-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-win-x64-loose.tar.gz",
+      "size": 88151680,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.1-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-win-x64.appx",
+      "size": 94872226,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.1-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.1/electerm-1.16.1-win-x64.tar.gz",
+      "size": 88761342,
+      "type": "application/gzip"
+    }
+  ]
+}

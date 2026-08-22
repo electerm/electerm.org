@@ -1,0 +1,151 @@
+{
+  "version": "v1.39.56",
+  "date": "2024-06-19",
+  "body": "### Quick bug fix release\n\n- Provide release for win7 (#3482)\n- Fix tabs control buttons UI when tabs overflow (win/Linux only)",
+  "assets": [
+    {
+      "name": "electerm-1.39.56-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-aarch64.rpm",
+      "size": 66010392,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.56-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-amd64.deb",
+      "size": 69768374,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-amd64.snap",
+      "size": 85708800,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-arm64.AppImage",
+      "size": 100979211,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-arm64.deb",
+      "size": 65855256,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-arm64.tar.gz",
+      "size": 95583412,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.56-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-armv7l.AppImage",
+      "size": 89128202,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-armv7l.deb",
+      "size": 63878918,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-armv7l.rpm",
+      "size": 63716772,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.56-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-armv7l.tar.gz",
+      "size": 85627785,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.56-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-x64.tar.gz",
+      "size": 95004838,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.56-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-x86_64.AppImage",
+      "size": 100064480,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-linux-x86_64.rpm",
+      "size": 69908808,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.56-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-mac-arm64.dmg",
+      "size": 99622566,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-mac-arm64.dmg.blockmap",
+      "size": 105881,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-mac-x64.dmg",
+      "size": 104852911,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-mac-x64.dmg.blockmap",
+      "size": 109111,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-win-x64-installer.exe",
+      "size": 74159112,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-win-x64-installer.exe.blockmap",
+      "size": 77868,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-win-x64-loose.tar.gz",
+      "size": 100190802,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.56-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-win-x64-portable.tar.gz",
+      "size": 100505549,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.56-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-win-x64.appx",
+      "size": 116773105,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.56-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-win-x64.tar.gz",
+      "size": 100505585,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.56-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.56/electerm-1.39.56-win7.tar.gz",
+      "size": 97395817,
+      "type": "application/gzip"
+    }
+  ]
+}

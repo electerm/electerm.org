@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.12",
+  "date": "2018-07-15",
+  "body": "- fix #604 fix UI bug (#605)",
+  "assets": [
+    {
+      "name": "electerm-0.23.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.12/electerm-0.23.12-linux-amd64.deb",
+      "size": 36142184,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.12/electerm-0.23.12-linux-x86_64.rpm",
+      "size": 36293421,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.12-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.12/electerm-0.23.12-mac.dmg",
+      "size": 52057276,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.12-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.12/electerm-0.23.12-win.tar.gz",
+      "size": 51377176,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.12.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.12/electerm-0.23.12.tar.gz",
+      "size": 49025815,
+      "type": "application/gzip"
+    }
+  ]
+}

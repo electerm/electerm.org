@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.37",
+  "date": "2019-06-05",
+  "body": "- fix #1295 [Bug fix] Fix bookmark save (#1296)\n- New About page UI (#1294)\n- fix #1292 [UI] New tab close icon UI (#1293)",
+  "assets": [
+    {
+      "name": "electerm-0.27.37-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.37/electerm-0.27.37-linux-amd64.deb",
+      "size": 56562806,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.37-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.37/electerm-0.27.37-linux-amd64.snap",
+      "size": 135794688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.37-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.37/electerm-0.27.37-linux-x64.tar.gz",
+      "size": 81011887,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.37-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.37/electerm-0.27.37-linux-x86_64.rpm",
+      "size": 55946712,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.37-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.37/electerm-0.27.37-mac.dmg",
+      "size": 62451086,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.37-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.37/electerm-0.27.37-win-x64.tar.gz",
+      "size": 64252721,
+      "type": "application/gzip"
+    }
+  ]
+}

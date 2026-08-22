@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.41",
+  "date": "2018-08-17",
+  "body": "- fix #269 fix #662 fix transfer method, increase transfer speed (#668)\n- fix #663 add hide button to transfer panel (#667)\n- fix #658 replace dayjs with simple function (#666)",
+  "assets": [
+    {
+      "name": "electerm-0.23.41-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.41/electerm-0.23.41-linux-amd64.deb",
+      "size": 36180712,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.41-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.41/electerm-0.23.41-linux-x86_64.rpm",
+      "size": 36331625,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.41-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.41/electerm-0.23.41-mac.dmg",
+      "size": 52132530,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.41-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.41/electerm-0.23.41-win.tar.gz",
+      "size": 51448890,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.41.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.41/electerm-0.23.41.tar.gz",
+      "size": 49095420,
+      "type": "application/gzip"
+    }
+  ]
+}

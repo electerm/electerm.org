@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.59",
+  "date": "2019-03-01",
+  "body": "- fix #970 Support edit local file with built-in editor (#1160)\n- fix #838 Add global proxy setting (#1159)",
+  "assets": [
+    {
+      "name": "electerm-0.26.59-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.59/electerm-0.26.59-linux-amd64.deb",
+      "size": 38173006,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.59-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.59/electerm-0.26.59-linux-amd64.snap",
+      "size": 110403584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.59-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.59/electerm-0.26.59-linux-x64.tar.gz",
+      "size": 52679189,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.59-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.59/electerm-0.26.59-linux-x86_64.rpm",
+      "size": 38199682,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.59-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.59/electerm-0.26.59-mac.dmg",
+      "size": 54364870,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.59-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.59/electerm-0.26.59-win-x64.tar.gz",
+      "size": 54675656,
+      "type": "application/gzip"
+    }
+  ]
+}

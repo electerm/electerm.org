@@ -1,0 +1,37 @@
+{
+  "version": "v0.18.4",
+  "date": "2018-03-29",
+  "body": "- fix #373 add basic sftp transfer test (#374)\n- fix #370 fix sftp drop to folder function (#372)\n- fix #369 fix UI (#371)\n- fix #367 add history/bookmark list max height (#368)",
+  "assets": [
+    {
+      "name": "electerm-0.18.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.4/electerm-0.18.4-linux-amd64.deb",
+      "size": 34945312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.4/electerm-0.18.4-linux-x86_64.rpm",
+      "size": 34906325,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.18.4-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.4/electerm-0.18.4-mac.dmg",
+      "size": 50994150,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.4-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.4/electerm-0.18.4-win.tar.gz",
+      "size": 51111133,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.18.4.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.4/electerm-0.18.4.tar.gz",
+      "size": 47857389,
+      "type": "application/gzip"
+    }
+  ]
+}

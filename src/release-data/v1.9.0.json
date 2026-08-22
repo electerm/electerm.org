@@ -1,0 +1,43 @@
+{
+  "version": "v1.9.0",
+  "date": "2020-11-19",
+  "body": "- perf: Accelerate app start (#1904)",
+  "assets": [
+    {
+      "name": "electerm-1.9.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.0/electerm-1.9.0-linux-amd64.deb",
+      "size": 55434374,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.0/electerm-1.9.0-linux-amd64.snap",
+      "size": 68235264,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.0/electerm-1.9.0-linux-x64.tar.gz",
+      "size": 76925941,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.9.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.0/electerm-1.9.0-linux-x86_64.rpm",
+      "size": 56118808,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.9.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.0/electerm-1.9.0-mac.dmg",
+      "size": 80169578,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.0/electerm-1.9.0-win-x64.tar.gz",
+      "size": 75725269,
+      "type": "application/gzip"
+    }
+  ]
+}

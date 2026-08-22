@@ -1,0 +1,151 @@
+{
+  "version": "v1.60.48",
+  "date": "2025-02-06",
+  "body": "### Bug fixes\n\n- Fix sftp follow terminal switch in terminal setting\n- Fix .deb release can not run in Ubuntu 24.04 issue (#3793)\n- Fix auto focus input\n- Fix profile related bugs\n\n### Features\n\nAdd API path option for AI config\nAdd language option for AI config\n\n---\n\n### 问题修复\n\n- 修复终端设置中sftp跟随终端切换的问题\n- 修复 .deb文件在Ubuntu 24.04中无法运行的问题 (#3793)\n- 修复自动聚焦输入的问题\n- 改进测试\n- 修复与profile相关的bug\n\n### 新功能\n\n- 为AI配置添加API路径选项\n- 为AI配置添加语言选项",
+  "assets": [
+    {
+      "name": "electerm-1.60.48-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-aarch64.rpm",
+      "size": 69229677,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.48-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-amd64.deb",
+      "size": 73857440,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-amd64.snap",
+      "size": 91881472,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-arm64.AppImage",
+      "size": 107242762,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-arm64.deb",
+      "size": 69291700,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-arm64.tar.gz",
+      "size": 101557410,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.48-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-armv7l.AppImage",
+      "size": 95369840,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-armv7l.deb",
+      "size": 67642310,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-armv7l.rpm",
+      "size": 67486177,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.48-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-armv7l.tar.gz",
+      "size": 91652840,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.48-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-x64.tar.gz",
+      "size": 101455335,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.48-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-x86_64.AppImage",
+      "size": 106854091,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-linux-x86_64.rpm",
+      "size": 73938157,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.48-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-mac-arm64.dmg",
+      "size": 106377281,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-mac-arm64.dmg.blockmap",
+      "size": 113770,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-mac-x64.dmg",
+      "size": 113333021,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-mac-x64.dmg.blockmap",
+      "size": 119590,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-win-x64-installer.exe",
+      "size": 80938145,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-win-x64-installer.exe.blockmap",
+      "size": 85867,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-win-x64-loose.tar.gz",
+      "size": 110488808,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.48-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-win-x64-portable.tar.gz",
+      "size": 110560102,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.48-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-win-x64.appx",
+      "size": 128858158,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.48-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-win-x64.tar.gz",
+      "size": 110559919,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.48-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.48/electerm-1.60.48-win7.tar.gz",
+      "size": 101307223,
+      "type": "application/gzip"
+    }
+  ]
+}

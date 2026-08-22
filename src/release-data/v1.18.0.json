@@ -1,0 +1,67 @@
+{
+  "version": "v1.18.0",
+  "date": "2022-02-06",
+  "body": "UI:\n\n- Improve setting/bookmark panel UI\n- Improve tabs UI\n- Update pinned side panel UI, now will not cover terminal\n\nUpdates:\n\n- Improve performance(may still having performance issue, please feedback)\n- Improve some wording by @ic-768\n\nKnown issues:\n\n- [rz] When upload file with rz command, for file > 1M, may not end properly, and may not update progress, but still upload in background.\n- When use edit with... from context menu, editor only support apps in system path, means editor name without path\n- Check more from https://github.com/electerm/electerm/wiki/Know-issues\n",
+  "assets": [
+    {
+      "name": "electerm-1.18.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-linux-amd64.deb",
+      "size": 59400950,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-linux-amd64.snap",
+      "size": 73445376,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-linux-x64.tar.gz",
+      "size": 81863614,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.18.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-linux-x86_64.rpm",
+      "size": 60136348,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.18.0-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-mac-arm64.dmg",
+      "size": 88579220,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.0-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-mac-x64.dmg",
+      "size": 87231587,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.0-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-win-x64-installer.exe",
+      "size": 64130569,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.0-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-win-x64-loose.tar.gz",
+      "size": 87193477,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.18.0-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-win-x64.appx",
+      "size": 93782337,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.18.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.18.0/electerm-1.18.0-win-x64.tar.gz",
+      "size": 87795876,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.45",
+  "date": "2018-10-21",
+  "body": "fix #824 fix symlink handling (#825)",
+  "assets": [
+    {
+      "name": "electerm-0.24.45-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.45/electerm-0.24.45-linux-amd64.deb",
+      "size": 36127174,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.45-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.45/electerm-0.24.45-linux-x64.tar.gz",
+      "size": 49225058,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.45-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.45/electerm-0.24.45-linux-x86_64.rpm",
+      "size": 36270197,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.45-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.45/electerm-0.24.45-mac.dmg",
+      "size": 52304457,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.45-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.45/electerm-0.24.45-win-x64.tar.gz",
+      "size": 51541465,
+      "type": "application/gzip"
+    }
+  ]
+}

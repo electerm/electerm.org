@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.36",
+  "date": "2023-12-06",
+  "body": "### Bug fixes\n\n- #3142 Fix ignore skip release function\n- #3149 #3135 Fix drag windows cause db too big\n- #3143 Fix tab tooltip could be dragged issue\n- Fix bookmarked local path mya not work in windows\n\n### Other updates\n\n- Reduce bundle size by remove language files\n",
+  "assets": [
+    {
+      "name": "electerm-1.37.36-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-linux-amd64.deb",
+      "size": 67193396,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.36-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-linux-amd64.snap",
+      "size": 81940480,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.36-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-linux-x64.tar.gz",
+      "size": 91159633,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.36-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-linux-x86_64.rpm",
+      "size": 67304640,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.36-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-mac-arm64.dmg",
+      "size": 95680289,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.36-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-mac-x64.dmg",
+      "size": 100908749,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.36-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-win-x64-installer.exe",
+      "size": 70469651,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.36-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-win-x64-loose.tar.gz",
+      "size": 95625786,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.36-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-win-x64-portable.tar.gz",
+      "size": 95822431,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.36-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-win-x64.appx",
+      "size": 102505457,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.36-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.36/electerm-1.37.36-win-x64.tar.gz",
+      "size": 95822415,
+      "type": "application/gzip"
+    }
+  ]
+}

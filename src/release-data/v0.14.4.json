@@ -1,0 +1,37 @@
+{
+  "version": "v0.14.4",
+  "date": "2018-01-18",
+  "body": "- fix #255 fix ssh focus and ssh padding (#256)",
+  "assets": [
+    {
+      "name": "electerm-0.14.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.4/electerm-0.14.4-linux-amd64.deb",
+      "size": 37149800,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.4/electerm-0.14.4-linux-x86_64.rpm",
+      "size": 53887579,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.14.4-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.4/electerm-0.14.4-mac.dmg",
+      "size": 51527844,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.4-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.4/electerm-0.14.4-win.tar.gz",
+      "size": 55277745,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.14.4.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.4/electerm-0.14.4.tar.gz",
+      "size": 51887875,
+      "type": "application/gzip"
+    }
+  ]
+}

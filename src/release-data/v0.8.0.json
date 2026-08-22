@@ -1,0 +1,37 @@
+{
+  "version": "v0.8.0",
+  "date": "2017-11-30",
+  "body": "- fix #102 fix #108 fix #103 fix #111 fix #110 use ssh2 to do remote terminal simulate and fix bugs\n- fix #104 add linux tar.gz release (#107)\n- fix #105 add build status icon to readme (#106)",
+  "assets": [
+    {
+      "name": "electerm-0.8.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.8.0/electerm-0.8.0-linux-amd64.deb",
+      "size": 37049926,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.8.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.8.0/electerm-0.8.0-linux-x86_64.rpm",
+      "size": 54116711,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.8.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.8.0/electerm-0.8.0-mac.dmg",
+      "size": 50014534,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.8.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.8.0/electerm-0.8.0-win.tar.gz",
+      "size": 55127593,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.8.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.8.0/electerm-0.8.0.tar.gz",
+      "size": 52112665,
+      "type": "application/gzip"
+    }
+  ]
+}

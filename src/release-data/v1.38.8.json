@@ -1,0 +1,145 @@
+{
+  "version": "v1.38.8",
+  "date": "2024-01-29",
+  "body": "### Major update\n\n- Rewrite rz/sz module\n\n### New features\n\n- #3256 Support drag in setting page header\n- Make UI reponsive(electerm-web support mobile device now)\n\n### Bug fixes\n\n- fix #3261 Fix Auto copy when search in terminal\n- #3254 Add reload tab shortcut(Alt-R by default)\n\n\n### Other updates\n\n- For Linux default use system title bar as a temp solution for drag related issue\n",
+  "assets": [
+    {
+      "name": "electerm-1.38.8-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-aarch64.rpm",
+      "size": 64934168,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-amd64.deb",
+      "size": 68708900,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-amd64.snap",
+      "size": 83783680,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-arm64.AppImage",
+      "size": 98741035,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-arm64.deb",
+      "size": 64862552,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-arm64.tar.gz",
+      "size": 93521149,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.8-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-armv7l.AppImage",
+      "size": 86901431,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-armv7l.deb",
+      "size": 62755534,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-armv7l.rpm",
+      "size": 62663912,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.8-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-armv7l.tar.gz",
+      "size": 83565026,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-x64.tar.gz",
+      "size": 92942264,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.8-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-x86_64.AppImage",
+      "size": 97826017,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-linux-x86_64.rpm",
+      "size": 68849720,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.38.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-mac-arm64.dmg",
+      "size": 97367479,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-mac-arm64.dmg.blockmap",
+      "size": 103977,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-mac-x64.dmg",
+      "size": 102628094,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-mac-x64.dmg.blockmap",
+      "size": 107930,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-win-x64-installer.exe",
+      "size": 72588018,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-win-x64-installer.exe.blockmap",
+      "size": 76032,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-win-x64-loose.tar.gz",
+      "size": 98139402,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.8-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-win-x64-portable.tar.gz",
+      "size": 98384083,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.38.8-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-win-x64.appx",
+      "size": 114378616,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.38.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.38.8/electerm-1.38.8-win-x64.tar.gz",
+      "size": 98383859,
+      "type": "application/gzip"
+    }
+  ]
+}

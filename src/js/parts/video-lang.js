@@ -1,4 +1,5 @@
 // Video pages: language toggle (zh / en) for titles and UI.
+/* global localStorage */
 function getBrowserLang () {
   const lang = navigator.language || navigator.userLanguage
   return lang.toLowerCase().startsWith('zh') ? 'zh' : 'en'

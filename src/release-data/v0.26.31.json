@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.31",
+  "date": "2019-01-24",
+  "body": "- fix #1100 Add Spanish language support (#1101)\n- fix #1098 Fix install src trim\n- fix #1063 Add snap build (#1097)",
+  "assets": [
+    {
+      "name": "electerm-0.26.31-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.31/electerm-0.26.31-linux-amd64.deb",
+      "size": 38232792,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.31-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.31/electerm-0.26.31-linux-amd64.snap",
+      "size": 110428160,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.31-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.31/electerm-0.26.31-linux-x64.tar.gz",
+      "size": 52693153,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.31-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.31/electerm-0.26.31-linux-x86_64.rpm",
+      "size": 38260638,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.31-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.31/electerm-0.26.31-mac.dmg",
+      "size": 54364651,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.31-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.31/electerm-0.26.31-win-x64.tar.gz",
+      "size": 54651732,
+      "type": "application/gzip"
+    }
+  ]
+}

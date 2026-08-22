@@ -1,0 +1,49 @@
+{
+  "version": "v1.12.24",
+  "date": "2021-05-17",
+  "body": "- bug fix: Fix transparent support\n- update: Use host name as terminal log name (#2141)\n- feature: Store encrypted password in db file(#2131)",
+  "assets": [
+    {
+      "name": "electerm-1.12.24-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.24/electerm-1.12.24-linux-amd64.deb",
+      "size": 54512624,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.24-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.24/electerm-1.12.24-linux-amd64.snap",
+      "size": 67231744,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.24-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.24/electerm-1.12.24-linux-x64.tar.gz",
+      "size": 75861643,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.24-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.24/electerm-1.12.24-linux-x86_64.rpm",
+      "size": 55516124,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.12.24-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.24/electerm-1.12.24-mac.dmg",
+      "size": 79073101,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.24-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.24/electerm-1.12.24-win-x64-loose.tar.gz",
+      "size": 72773354,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.24-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.24/electerm-1.12.24-win-x64.tar.gz",
+      "size": 73380956,
+      "type": "application/gzip"
+    }
+  ]
+}

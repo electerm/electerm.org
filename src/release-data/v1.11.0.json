@@ -1,0 +1,49 @@
+{
+  "version": "v1.11.0",
+  "date": "2021-01-09",
+  "body": "- [experimental] Support mac arm64(Download the `mac-arm.dmg`)\n- [feat] Upgrade to electron 11 (#2012)\n- [feat] fix #2008 Remove serialport support(can not get it built, if you need it, please try the old release < 1.10.14)\n- [ui] Auto expand batch input when mouse over\n- [feat] Provide password auto complete for bookmark form(Select from other bookmark's password list) (#2006)",
+  "assets": [
+    {
+      "name": "electerm-1.11.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.0/electerm-1.11.0-linux-amd64.deb",
+      "size": 57301328,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.0/electerm-1.11.0-linux-amd64.snap",
+      "size": 70135808,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.0/electerm-1.11.0-linux-x64.tar.gz",
+      "size": 78535493,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.11.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.0/electerm-1.11.0-linux-x86_64.rpm",
+      "size": 58223008,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.11.0-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.0/electerm-1.11.0-mac-arm64.dmg",
+      "size": 86109962,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.0/electerm-1.11.0-mac.dmg",
+      "size": 85194440,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.0/electerm-1.11.0-win-x64.tar.gz",
+      "size": 73299521,
+      "type": "application/gzip"
+    }
+  ]
+}

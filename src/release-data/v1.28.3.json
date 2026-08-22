@@ -1,0 +1,67 @@
+{
+  "version": "v1.28.3",
+  "date": "2023-08-17",
+  "body": "### Quick bug fix release\n\n- fix #2929 Fix read file function\n- fix #2930 Fix dns lookup function\n",
+  "assets": [
+    {
+      "name": "electerm-1.28.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-linux-amd64.deb",
+      "size": 70765494,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-linux-amd64.snap",
+      "size": 87269376,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-linux-x64.tar.gz",
+      "size": 97208264,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.28.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-linux-x86_64.rpm",
+      "size": 70655756,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.28.3-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-mac-arm64.dmg",
+      "size": 95016335,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.3-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-mac-x64.dmg",
+      "size": 100918249,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.3-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-win-x64-installer.exe",
+      "size": 75574158,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.3-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-win-x64-loose.tar.gz",
+      "size": 103302583,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.28.3-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-win-x64.appx",
+      "size": 111582732,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.3/electerm-1.28.3-win-x64.tar.gz",
+      "size": 103941470,
+      "type": "application/gzip"
+    }
+  ]
+}

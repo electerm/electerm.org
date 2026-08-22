@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.12",
+  "date": "2019-04-17",
+  "body": "- fix #1233 [bug fix]Fix sftp close may break app (#1234)",
+  "assets": [
+    {
+      "name": "electerm-0.27.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.12/electerm-0.27.12-linux-amd64.deb",
+      "size": 52634338,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.12-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.12/electerm-0.27.12-linux-amd64.snap",
+      "size": 130650112,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.12-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.12/electerm-0.27.12-linux-x64.tar.gz",
+      "size": 75409341,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.12/electerm-0.27.12-linux-x86_64.rpm",
+      "size": 52532474,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.12-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.12/electerm-0.27.12-mac.dmg",
+      "size": 58996006,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.12-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.12/electerm-0.27.12-win-x64.tar.gz",
+      "size": 62441886,
+      "type": "application/gzip"
+    }
+  ]
+}

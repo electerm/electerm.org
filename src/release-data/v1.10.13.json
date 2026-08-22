@@ -1,0 +1,43 @@
+{
+  "version": "v1.10.13",
+  "date": "2020-12-14",
+  "body": "- fix #1965 fix: Fix IME support in search Component\n- fix: Avoid create gist when gist id already set\n- fix #1956 fix: Start port from 30975\n- fix #1962 fix: Fix setting tab unclickable issue (#1964)",
+  "assets": [
+    {
+      "name": "electerm-1.10.13-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.13/electerm-1.10.13-linux-amd64.deb",
+      "size": 55387920,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.13-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.13/electerm-1.10.13-linux-amd64.snap",
+      "size": 68206592,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.13-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.13/electerm-1.10.13-linux-x64.tar.gz",
+      "size": 76928356,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.10.13-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.13/electerm-1.10.13-linux-x86_64.rpm",
+      "size": 56089508,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.10.13-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.13/electerm-1.10.13-mac.dmg",
+      "size": 80177405,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.10.13-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.10.13/electerm-1.10.13-win-x64.tar.gz",
+      "size": 75734332,
+      "type": "application/gzip"
+    }
+  ]
+}

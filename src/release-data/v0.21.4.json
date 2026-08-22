@@ -1,0 +1,37 @@
+{
+  "version": "v0.21.4",
+  "date": "2018-05-24",
+  "body": "- fix #464 fix #463 fix form edit bug (#466)\n- fix #461 update deps (#462)\n- fix #298 draggable/resizable sftp file manager ui (#460)\n- fix #458 fix npmignore (#459)",
+  "assets": [
+    {
+      "name": "electerm-0.21.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.4/electerm-0.21.4-linux-amd64.deb",
+      "size": 34792186,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.21.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.4/electerm-0.21.4-linux-x86_64.rpm",
+      "size": 34755293,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.21.4-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.4/electerm-0.21.4-mac.dmg",
+      "size": 50707485,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.21.4-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.4/electerm-0.21.4-win.tar.gz",
+      "size": 50844576,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.21.4.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.4/electerm-0.21.4.tar.gz",
+      "size": 47589130,
+      "type": "application/gzip"
+    }
+  ]
+}

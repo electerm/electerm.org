@@ -1,0 +1,67 @@
+{
+  "version": "v1.27.5",
+  "date": "2023-07-11",
+  "body": "### New features\n\n- fix #2868: Support batch operation (#2871)\n- fix #2703: Add copy file path context menu",
+  "assets": [
+    {
+      "name": "electerm-1.27.5-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-linux-amd64.deb",
+      "size": 63438174,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.5-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-linux-amd64.snap",
+      "size": 78553088,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.5-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-linux-x64.tar.gz",
+      "size": 86951145,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.27.5-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-linux-x86_64.rpm",
+      "size": 63719388,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.27.5-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-mac-arm64.dmg",
+      "size": 91437289,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.5-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-mac-x64.dmg",
+      "size": 91301917,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.5-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-win-x64-installer.exe",
+      "size": 72326577,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.5-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-win-x64-loose.tar.gz",
+      "size": 99358558,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.27.5-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-win-x64.appx",
+      "size": 106718259,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.27.5-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.27.5/electerm-1.27.5-win-x64.tar.gz",
+      "size": 99699819,
+      "type": "application/gzip"
+    }
+  ]
+}

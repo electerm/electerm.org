@@ -1,0 +1,151 @@
+{
+  "version": "v1.80.5",
+  "date": "2025-04-24",
+  "body": "### Quick bug fix\n\n- Fix 1.80.x version can not load data issue (Thanks to @dengwentong)\n\n-----\n\n### 快速修复\n\n- 修复1.80.x版本无法加载数据的问题 (感谢 @dengwentong)",
+  "assets": [
+    {
+      "name": "electerm-1.80.5-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-aarch64.rpm",
+      "size": 69108557,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.5-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-amd64.deb",
+      "size": 73809746,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-amd64.snap",
+      "size": 91136000,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-arm64.AppImage",
+      "size": 106656045,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-arm64.deb",
+      "size": 69330312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-arm64.tar.gz",
+      "size": 101017770,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.5-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-armv7l.AppImage",
+      "size": 94783124,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-armv7l.deb",
+      "size": 67602178,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-armv7l.rpm",
+      "size": 67328209,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.5-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-armv7l.tar.gz",
+      "size": 91111627,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.5-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-x64.tar.gz",
+      "size": 100913795,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.5-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-x86_64.AppImage",
+      "size": 106267603,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-linux-x86_64.rpm",
+      "size": 73817829,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.5-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-mac-arm64.dmg",
+      "size": 105781541,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-mac-arm64.dmg.blockmap",
+      "size": 111644,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-mac-x64.dmg",
+      "size": 112742250,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-mac-x64.dmg.blockmap",
+      "size": 119729,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-win-x64-installer.exe",
+      "size": 80631803,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-win-x64-installer.exe.blockmap",
+      "size": 85245,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-win-x64-loose.tar.gz",
+      "size": 110015592,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.5-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-win-x64-portable.tar.gz",
+      "size": 110089237,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.5-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-win-x64.appx",
+      "size": 128293806,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.5-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-win-x64.tar.gz",
+      "size": 110088726,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.5-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.5/electerm-1.80.5-win7.tar.gz",
+      "size": 100761999,
+      "type": "application/gzip"
+    }
+  ]
+}

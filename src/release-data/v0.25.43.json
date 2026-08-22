@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.43",
+  "date": "2018-12-04",
+  "body": "- fix #959 Support private key passphrase promote (#973)\n- fix #971 Make terminal timeout shorter",
+  "assets": [
+    {
+      "name": "electerm-0.25.43-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.43/electerm-0.25.43-linux-amd64.deb",
+      "size": 38174118,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.43-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.43/electerm-0.25.43-linux-x64.tar.gz",
+      "size": 52158039,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.43-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.43/electerm-0.25.43-linux-x86_64.rpm",
+      "size": 38199658,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.43-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.43/electerm-0.25.43-mac.dmg",
+      "size": 53804143,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.43-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.43/electerm-0.25.43-win-x64.tar.gz",
+      "size": 53980691,
+      "type": "application/gzip"
+    }
+  ]
+}

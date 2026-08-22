@@ -1,0 +1,145 @@
+{
+  "version": "v1.39.47",
+  "date": "2024-06-17",
+  "body": "### Bug fixes\n\n- Fix theme apply icon\n- Remove extra edit bookmark group icon\n- #3477 fix test function for vnc session\n- #3478 Fix openAllBookmarkInCategory function\n\n------\n\n### 错误修复\n\n- 修复主题应用图标\n- 移除多余的编辑书签组图标\n- #3477 修复VNC会话的测试功能\n- #3478 修复打开文件夹中所有书签功能",
+  "assets": [
+    {
+      "name": "electerm-1.39.47-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-aarch64.rpm",
+      "size": 66006544,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.47-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-amd64.deb",
+      "size": 69763080,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-amd64.snap",
+      "size": 85708800,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-arm64.AppImage",
+      "size": 100979294,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-arm64.deb",
+      "size": 65859196,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-arm64.tar.gz",
+      "size": 95583187,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.47-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-armv7l.AppImage",
+      "size": 89127734,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-armv7l.deb",
+      "size": 63884392,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-armv7l.rpm",
+      "size": 63722052,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.47-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-armv7l.tar.gz",
+      "size": 85627896,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.47-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-x64.tar.gz",
+      "size": 95004824,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.47-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-x86_64.AppImage",
+      "size": 100064185,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-linux-x86_64.rpm",
+      "size": 69898272,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.47-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-mac-arm64.dmg",
+      "size": 99621311,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-mac-arm64.dmg.blockmap",
+      "size": 105836,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-mac-x64.dmg",
+      "size": 104852955,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-mac-x64.dmg.blockmap",
+      "size": 109149,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-win-x64-installer.exe",
+      "size": 74159135,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-win-x64-installer.exe.blockmap",
+      "size": 77859,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-win-x64-loose.tar.gz",
+      "size": 100191091,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.47-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-win-x64-portable.tar.gz",
+      "size": 100505962,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.47-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-win-x64.appx",
+      "size": 116773122,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.47-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.47/electerm-1.39.47-win-x64.tar.gz",
+      "size": 100505572,
+      "type": "application/gzip"
+    }
+  ]
+}

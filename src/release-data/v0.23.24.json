@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.24",
+  "date": "2018-07-31",
+  "body": "- fix #628 update test/build process (#629)\n- fix #617 socks proxy support (#627)\n- fix #610 reduce first screen load time[code split] (#620)",
+  "assets": [
+    {
+      "name": "electerm-0.23.24-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.24/electerm-0.23.24-linux-amd64.deb",
+      "size": 36175068,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.24-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.24/electerm-0.23.24-linux-x86_64.rpm",
+      "size": 36323101,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.24-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.24/electerm-0.23.24-mac.dmg",
+      "size": 52093016,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.24-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.24/electerm-0.23.24-win.tar.gz",
+      "size": 51408696,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.24.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.24/electerm-0.23.24.tar.gz",
+      "size": 49057389,
+      "type": "application/gzip"
+    }
+  ]
+}

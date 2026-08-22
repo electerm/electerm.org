@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.5",
+  "date": "2018-07-09",
+  "body": "- fix #552 add cut context menu/shortcut (#585)\n- fix #581 better context menu subtext UI (#582)\n- fix #576 new ssh bookmark default title set to empty (#579)",
+  "assets": [
+    {
+      "name": "electerm-0.23.5-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.5/electerm-0.23.5-linux-amd64.deb",
+      "size": 36126216,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.5-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.5/electerm-0.23.5-linux-x86_64.rpm",
+      "size": 36276581,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.5-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.5/electerm-0.23.5-mac.dmg",
+      "size": 52032774,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.5-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.5/electerm-0.23.5-win.tar.gz",
+      "size": 51354154,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.5.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.5/electerm-0.23.5.tar.gz",
+      "size": 49002272,
+      "type": "application/gzip"
+    }
+  ]
+}

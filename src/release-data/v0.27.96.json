@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.96",
+  "date": "2019-12-19",
+  "body": "- [feat] Use tree select in bookmark form (#1465)\n- [feat] Capitalize all English words (#1462)\n- [bug fix] Set zoom limit (#1460)\n- [bug fix] Fix window size memory and recover (#1445)\n- [feat] Add Save and new Button (#1443)\n- [feat] Support \"Ctrl/Cmd + W\" to close tab (#1436)\n- [bug fix] Fix tab close logic (#1434)\n- [feat] Support locale/IME (#1429)\n- [feat] Support multi instance (#1428)\n- [Fix] Remove fullscreen toggle shortcut which will crash app (#1427)\n- Use xterm-256color as default terminal type (#1426)\n- [UI] Fix loading screen bg color (#1423)",
+  "assets": [
+    {
+      "name": "electerm-0.27.96-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.96/electerm-0.27.96-linux-amd64.deb",
+      "size": 46198468,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.96-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.96/electerm-0.27.96-linux-amd64.snap",
+      "size": 56745984,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.96-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.96/electerm-0.27.96-linux-x64.tar.gz",
+      "size": 64036089,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.96-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.96/electerm-0.27.96-linux-x86_64.rpm",
+      "size": 46002876,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.96-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.96/electerm-0.27.96-mac.dmg",
+      "size": 68195258,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.96-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.96/electerm-0.27.96-win-x64.tar.gz",
+      "size": 65542217,
+      "type": "application/gzip"
+    }
+  ]
+}

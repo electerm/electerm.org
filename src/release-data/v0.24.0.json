@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.0",
+  "date": "2018-08-21",
+  "body": "- fix #671 fix theme form save logic (#675)\n- fix #670 reduce fs websocket connection (#674)\n- fix #578 add tabs test (#672)\n- fix #661 add dns lookup for hostname (#669)",
+  "assets": [
+    {
+      "name": "electerm-0.24.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.0/electerm-0.24.0-linux-amd64.deb",
+      "size": 36182546,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.0/electerm-0.24.0-linux-x86_64.rpm",
+      "size": 36330165,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.0/electerm-0.24.0-mac.dmg",
+      "size": 52133130,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.0/electerm-0.24.0-win.tar.gz",
+      "size": 51446635,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.0/electerm-0.24.0.tar.gz",
+      "size": 49096556,
+      "type": "application/gzip"
+    }
+  ]
+}

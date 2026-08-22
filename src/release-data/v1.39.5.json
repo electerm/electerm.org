@@ -1,0 +1,145 @@
+{
+  "version": "v1.39.5",
+  "date": "2024-05-13",
+  "body": "### Bug fixes/UI\n\n- Add rdp wiki link to rdp form and connection UI\n- Fix rdp/web bookmark category select\n- fix #3411 Clear selection after close terminal search panel",
+  "assets": [
+    {
+      "name": "electerm-1.39.5-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-aarch64.rpm",
+      "size": 65815112,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.5-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-amd64.deb",
+      "size": 69843292,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-amd64.snap",
+      "size": 85438464,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-arm64.AppImage",
+      "size": 100696469,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-arm64.deb",
+      "size": 65850212,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-arm64.tar.gz",
+      "size": 95315213,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.5-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-armv7l.AppImage",
+      "size": 88841056,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-armv7l.deb",
+      "size": 63918748,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-armv7l.rpm",
+      "size": 63531864,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.5-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-armv7l.tar.gz",
+      "size": 85359867,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.5-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-x64.tar.gz",
+      "size": 94736233,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.5-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-x86_64.AppImage",
+      "size": 99781693,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-linux-x86_64.rpm",
+      "size": 69708020,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.5-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-mac-arm64.dmg",
+      "size": 99295468,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-mac-arm64.dmg.blockmap",
+      "size": 105634,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-mac-x64.dmg",
+      "size": 104583992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-mac-x64.dmg.blockmap",
+      "size": 112412,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-win-x64-installer.exe",
+      "size": 73912249,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-win-x64-installer.exe.blockmap",
+      "size": 77673,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-win-x64-loose.tar.gz",
+      "size": 99959398,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.5-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-win-x64-portable.tar.gz",
+      "size": 100251724,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.5-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-win-x64.appx",
+      "size": 116494395,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.5-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.5/electerm-1.39.5-win-x64.tar.gz",
+      "size": 100251434,
+      "type": "application/gzip"
+    }
+  ]
+}

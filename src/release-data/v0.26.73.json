@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.73",
+  "date": "2019-03-30",
+  "body": "- fix #1198 [bug fix] Fix tree list collapse (#1199)\n- fix #1190 [bug fix] Keep overwrited file mode (#1197)\n\n",
+  "assets": [
+    {
+      "name": "electerm-0.26.73-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.73/electerm-0.26.73-linux-amd64.deb",
+      "size": 38195260,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.73-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.73/electerm-0.26.73-linux-amd64.snap",
+      "size": 111947776,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.73-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.73/electerm-0.26.73-linux-x64.tar.gz",
+      "size": 52716982,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.73-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.73/electerm-0.26.73-linux-x86_64.rpm",
+      "size": 38229822,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.73-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.73/electerm-0.26.73-mac.dmg",
+      "size": 54392102,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.73-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.73/electerm-0.26.73-win-x64.tar.gz",
+      "size": 54845865,
+      "type": "application/gzip"
+    }
+  ]
+}

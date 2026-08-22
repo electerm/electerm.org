@@ -1,0 +1,38 @@
+doctype html
+html(lang=langCode)
+  head
+    title Past electerm releases - download any version
+    meta(name='description', content=desc)
+    meta(name='keywords', content=keywords)
+    meta(property='og:title' content='Past electerm releases')
+    meta(property='og:description' content=desc)
+    meta(name='twitter:title' content='Past electerm releases')
+    meta(name='twitter:description' content=desc)
+    include ./parts/react-header
+    script(type='application/ld+json').
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "#{host}" },
+          { "@type": "ListItem", "position": 2, "name": "Releases", "item": "#{host}/releases/" }
+        ]
+      }
+  body
+    include ./parts/header
+    main.releases-list
+      .container
+        h1 All releases
+        p.releases-intro Download any past version of electerm for Linux, macOS, Windows, Android, and HarmonyOS.
+        each group in releasesGrouped
+          section.release-year
+            h2= group.year
+            ul.release-year-list
+              each r in group.items
+                li.release-year-item
+                  a(href='/releases/' + r.version + '/')= r.name
+                  span.release-year-date= r.date
+        .release-back
+          a(href='/') ← Back to home
+    include ./parts/footer
+    include ./parts/react-footer

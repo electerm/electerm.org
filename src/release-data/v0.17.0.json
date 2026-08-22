@@ -1,0 +1,37 @@
+{
+  "version": "v0.17.0",
+  "date": "2018-03-21",
+  "body": "- fix #109 add password promote (#356)\n- fix #353 update dependencies (#354)\n- fix #258 add more sftp basic test (#351)\n- fix #299 add transfer history record (#350)\n- fix #348 fix npm install script (#349)",
+  "assets": [
+    {
+      "name": "electerm-0.17.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.0/electerm-0.17.0-linux-amd64.deb",
+      "size": 35079016,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.17.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.0/electerm-0.17.0-linux-x86_64.rpm",
+      "size": 35018521,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.17.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.0/electerm-0.17.0-mac.dmg",
+      "size": 51141633,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.17.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.0/electerm-0.17.0-win.tar.gz",
+      "size": 51266497,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.17.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.0/electerm-0.17.0.tar.gz",
+      "size": 48029056,
+      "type": "application/gzip"
+    }
+  ]
+}

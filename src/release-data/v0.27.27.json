@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.27",
+  "date": "2019-05-24",
+  "body": "- [feat] fix #1269 Support drag bookmark/category to sort/move (#1277)\n- [feat] fix #1275 Auto focus after minimize upgrade panel (#1276)",
+  "assets": [
+    {
+      "name": "electerm-0.27.27-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.27/electerm-0.27.27-linux-amd64.deb",
+      "size": 52707194,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.27-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.27/electerm-0.27.27-linux-amd64.snap",
+      "size": 130703360,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.27-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.27/electerm-0.27.27-linux-x64.tar.gz",
+      "size": 75425877,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.27-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.27/electerm-0.27.27-linux-x86_64.rpm",
+      "size": 52581446,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.27-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.27/electerm-0.27.27-mac.dmg",
+      "size": 59012600,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.27-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.27/electerm-0.27.27-win-x64.tar.gz",
+      "size": 59366290,
+      "type": "application/gzip"
+    }
+  ]
+}

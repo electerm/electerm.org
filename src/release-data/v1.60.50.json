@@ -1,0 +1,151 @@
+{
+  "version": "v1.60.50",
+  "date": "2025-02-07",
+  "body": "### New features/Updates\n\n- Improve sync test\n- Add more tab context menu test\n- When \"Paste on right-click\" is enabled, context menu will not show in terminal\n\n### Bug fixes\n\n- Fix data sync logic to avoid error message\n\n---\n\n### 新功能/更新\n\n- 改进同步测试\n- 添加更多标签页右键菜单测试\n- 当启用\"右键粘贴\"功能时，终端中不显示右键菜单\n\n### 错误修复\n\n- 修复数据同步逻辑以避免错误消息",
+  "assets": [
+    {
+      "name": "electerm-1.60.50-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-aarch64.rpm",
+      "size": 69214581,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.50-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-amd64.deb",
+      "size": 73861670,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-amd64.snap",
+      "size": 91881472,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-arm64.AppImage",
+      "size": 107242766,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-arm64.deb",
+      "size": 69300432,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-arm64.tar.gz",
+      "size": 101557247,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.50-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-armv7l.AppImage",
+      "size": 95369862,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-armv7l.deb",
+      "size": 67629312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-armv7l.rpm",
+      "size": 67474605,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.50-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-armv7l.tar.gz",
+      "size": 91653114,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.50-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-x64.tar.gz",
+      "size": 101455130,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.50-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-x86_64.AppImage",
+      "size": 106854016,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-linux-x86_64.rpm",
+      "size": 73938725,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.50-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-mac-arm64.dmg",
+      "size": 106378865,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-mac-arm64.dmg.blockmap",
+      "size": 113275,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-mac-x64.dmg",
+      "size": 113333603,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-mac-x64.dmg.blockmap",
+      "size": 120189,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-win-x64-installer.exe",
+      "size": 80938787,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-win-x64-installer.exe.blockmap",
+      "size": 85332,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-win-x64-loose.tar.gz",
+      "size": 110488187,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.50-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-win-x64-portable.tar.gz",
+      "size": 110560205,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.50-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-win-x64.appx",
+      "size": 128858064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.50-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-win-x64.tar.gz",
+      "size": 110559937,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.50-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.50/electerm-1.60.50-win7.tar.gz",
+      "size": 101307565,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v0.11.0",
+  "date": "2018-01-04",
+  "body": "- fix #167 UI adjust & tabs UI fix (#179)\n- fix #175 fix dup history bug (#176)\n- fix #169 add more ssh context menu (#174)\n- fix #83 add ssh status indicator (#173)\n- fix #170 add ssh loading indicator (#172)\n- fix #26 add global timeout setting (#171)\n- fix #164 change homepage link (#165)\n- fix #142 add home page link (#163)\n- fix #158 add more badges to readme (#159)",
+  "assets": [
+    {
+      "name": "electerm-0.11.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.0/electerm-0.11.0-linux-amd64.deb",
+      "size": 37118584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.11.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.0/electerm-0.11.0-linux-x86_64.rpm",
+      "size": 54175089,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.11.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.0/electerm-0.11.0-mac.dmg",
+      "size": 51492891,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.11.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.0/electerm-0.11.0-win.tar.gz",
+      "size": 54987530,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.11.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.0/electerm-0.11.0.tar.gz",
+      "size": 52165854,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v1.12.2",
+  "date": "2021-03-08",
+  "body": "fix #2074 fix: Fix support for electron command line params",
+  "assets": [
+    {
+      "name": "electerm-1.12.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.2/electerm-1.12.2-linux-amd64.deb",
+      "size": 55009354,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.2-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.2/electerm-1.12.2-linux-amd64.snap",
+      "size": 67186688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.2-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.2/electerm-1.12.2-linux-x64.tar.gz",
+      "size": 75832623,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.2/electerm-1.12.2-linux-x86_64.rpm",
+      "size": 55534528,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.12.2-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.2/electerm-1.12.2-mac.dmg",
+      "size": 79028562,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.2-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.2/electerm-1.12.2-win-x64.tar.gz",
+      "size": 73368610,
+      "type": "application/gzip"
+    }
+  ]
+}

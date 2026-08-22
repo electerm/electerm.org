@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.40",
+  "date": "2019-01-31",
+  "body": "- fix #1121 [UI] New theme select UI (#1123)\n- fix #1109 New menus UI (#1119)",
+  "assets": [
+    {
+      "name": "electerm-0.26.40-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.40/electerm-0.26.40-linux-amd64.deb",
+      "size": 38227786,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.40-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.40/electerm-0.26.40-linux-amd64.snap",
+      "size": 110424064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.40-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.40/electerm-0.26.40-linux-x64.tar.gz",
+      "size": 52695933,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.40-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.40/electerm-0.26.40-linux-x86_64.rpm",
+      "size": 38256610,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.40-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.40/electerm-0.26.40-mac.dmg",
+      "size": 54366342,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.40-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.40/electerm-0.26.40-win-x64.tar.gz",
+      "size": 54653735,
+      "type": "application/gzip"
+    }
+  ]
+}

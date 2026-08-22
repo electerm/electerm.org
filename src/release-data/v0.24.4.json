@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.4",
+  "date": "2018-08-27",
+  "body": "- fix #679 fix #680 add copyWhenSelect and pasteWhenContextMenu options (#700)",
+  "assets": [
+    {
+      "name": "electerm-0.24.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.4/electerm-0.24.4-linux-amd64.deb",
+      "size": 36269186,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.4/electerm-0.24.4-linux-x86_64.rpm",
+      "size": 36410369,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.4-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.4/electerm-0.24.4-mac.dmg",
+      "size": 52250790,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.4-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.4/electerm-0.24.4-win.tar.gz",
+      "size": 51482460,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.4.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.4/electerm-0.24.4.tar.gz",
+      "size": 49163130,
+      "type": "application/gzip"
+    }
+  ]
+}

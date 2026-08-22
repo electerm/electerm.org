@@ -1,0 +1,37 @@
+{
+  "version": "v0.16.28",
+  "date": "2018-03-09",
+  "body": "- fix #330 fix #334 fix sftp transfer may not finish properly (#344)",
+  "assets": [
+    {
+      "name": "electerm-0.16.28-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.28/electerm-0.16.28-linux-amd64.deb",
+      "size": 37061222,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.28-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.28/electerm-0.16.28-linux-x86_64.rpm",
+      "size": 53678385,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.16.28-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.28/electerm-0.16.28-mac.dmg",
+      "size": 51342710,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.28-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.28/electerm-0.16.28-win.tar.gz",
+      "size": 55954029,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.16.28.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.28/electerm-0.16.28.tar.gz",
+      "size": 51694429,
+      "type": "application/gzip"
+    }
+  ]
+}

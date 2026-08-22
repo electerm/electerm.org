@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.38",
+  "date": "2019-01-29",
+  "body": "- fix #1104 Add aes256-cbc ciphers support (#1118)\n- fix #1116 Support custom exec (#1117)\n- fix #1112 [UI] Dark context menu and context menu for add tab button (#…  …\n- fix #1110 Support dynamic tab width (#1113)\n- fix #1104 Support old hmac algorithms (#1107)\n- fix #1105 Prevent transferring non-exist file cashing app (#1106)\n- fix #1102 Add change log to upgrade panel (#1103)",
+  "assets": [
+    {
+      "name": "electerm-0.26.38-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.38/electerm-0.26.38-linux-amd64.deb",
+      "size": 38227600,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.38-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.38/electerm-0.26.38-linux-amd64.snap",
+      "size": 110424064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.38-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.38/electerm-0.26.38-linux-x64.tar.gz",
+      "size": 52694788,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.38-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.38/electerm-0.26.38-linux-x86_64.rpm",
+      "size": 38257646,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.38-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.38/electerm-0.26.38-mac.dmg",
+      "size": 54365192,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.38-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.38/electerm-0.26.38-win-x64.tar.gz",
+      "size": 54653582,
+      "type": "application/gzip"
+    }
+  ]
+}

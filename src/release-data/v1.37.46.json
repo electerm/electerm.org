@@ -1,0 +1,73 @@
+{
+  "version": "v1.37.46",
+  "date": "2023-12-08",
+  "body": "### New features\n\n- Add release date to new version title\n\n### Bug fixes\n\n- #3161 Fix ctrl-v shortcut in windows\n- #3147 Fix telnet support\n- #3161 Restore add button when no tabs\n- #3160 Fix shortcuts in sftp",
+  "assets": [
+    {
+      "name": "electerm-1.37.46-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-linux-amd64.deb",
+      "size": 67335696,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.46-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-linux-amd64.snap",
+      "size": 82051072,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.46-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-linux-x64.tar.gz",
+      "size": 91259526,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.46-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-linux-x86_64.rpm",
+      "size": 67404412,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.46-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-mac-arm64.dmg",
+      "size": 95680922,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.46-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-mac-x64.dmg",
+      "size": 100909212,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.46-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-win-x64-installer.exe",
+      "size": 70570922,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.46-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-win-x64-loose.tar.gz",
+      "size": 95756627,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.46-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-win-x64-portable.tar.gz",
+      "size": 95952761,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.46-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-win-x64.appx",
+      "size": 111870648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.46-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.46/electerm-1.37.46-win-x64.tar.gz",
+      "size": 95952860,
+      "type": "application/gzip"
+    }
+  ]
+}

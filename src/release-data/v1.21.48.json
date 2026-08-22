@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.48",
+  "date": "2022-05-04",
+  "body": "### Bug fixes\n\n- fix #2478 Fix rz/sz (#2481)\n- fix #2477 Fix disable check upgrade on start can not manually check update in about panel\n- Fix terminal input exit do not corrently close terminal\n- fix #2476 Fix open all bookmarks in category function\n\n### Other updates\n\n- Skip upgrade check for windows store build and snap build\n",
+  "assets": [
+    {
+      "name": "electerm-1.21.48-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-linux-amd64.deb",
+      "size": 62960370,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.48-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-linux-amd64.snap",
+      "size": 77516800,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.48-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-linux-x64.tar.gz",
+      "size": 85808760,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.48-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-linux-x86_64.rpm",
+      "size": 63102716,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.48-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-mac-arm64.dmg",
+      "size": 90400889,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.48-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-mac-x64.dmg",
+      "size": 89620415,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.48-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-win-x64-installer.exe",
+      "size": 67817558,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.48-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-win-x64-loose.tar.gz",
+      "size": 91947416,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.48-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-win-x64.appx",
+      "size": 99102355,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.48-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.48/electerm-1.21.48-win-x64.tar.gz",
+      "size": 92689022,
+      "type": "application/gzip"
+    }
+  ]
+}

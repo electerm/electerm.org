@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.6",
+  "date": "2023-10-07",
+  "body": "### New features/UI\n\n- fix #3016 Adjust settting/batch op page UI/logic\n- fix #3019 Add skip all button in conflict modal\n- UI: Improve theme list performance(paged)\n- fix #3020 Fix main menu/sub menu bg\n\n### Bug fixes\n\n- fix #3015 Give proper message when transfer errored\n\n### Other updates\n\n- electron version bump to 26.2.4",
+  "assets": [
+    {
+      "name": "electerm-1.34.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-linux-amd64.deb",
+      "size": 72943114,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-linux-amd64.snap",
+      "size": 88891392,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-linux-x64.tar.gz",
+      "size": 99173036,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-linux-x86_64.rpm",
+      "size": 72864140,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-mac-arm64.dmg",
+      "size": 95452892,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.6-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-mac-x64.dmg",
+      "size": 100673872,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.6-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-win-x64-installer.exe",
+      "size": 76132606,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.6-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-win-x64-loose.tar.gz",
+      "size": 103824548,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.6-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-win-x64-portable.tar.gz",
+      "size": 104049443,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.6-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-win-x64.appx",
+      "size": 111648959,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.6/electerm-1.34.6-win-x64.tar.gz",
+      "size": 104049441,
+      "type": "application/gzip"
+    }
+  ]
+}

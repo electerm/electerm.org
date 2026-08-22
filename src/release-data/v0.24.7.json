@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.7",
+  "date": "2018-09-03",
+  "body": "- fix #693 new default theme colors (#718)\n- fix #714 add ISSUE_TEMPLATE (#715)\n- fix #697 fix #704 add settings link to menus feature, hide system menu (#711)\n",
+  "assets": [
+    {
+      "name": "electerm-0.24.7-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.7/electerm-0.24.7-linux-amd64.deb",
+      "size": 36271292,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.7-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.7/electerm-0.24.7-linux-x86_64.rpm",
+      "size": 36406109,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.7-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.7/electerm-0.24.7-mac.dmg",
+      "size": 52246991,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.7-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.7/electerm-0.24.7-win.tar.gz",
+      "size": 51483245,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.7/electerm-0.24.7.tar.gz",
+      "size": 49163369,
+      "type": "application/gzip"
+    }
+  ]
+}

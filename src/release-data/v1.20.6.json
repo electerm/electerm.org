@@ -1,0 +1,67 @@
+{
+  "version": "v1.20.6",
+  "date": "2022-03-29",
+  "body": "Quick Bug fix release:\n\n- fix #2416 Fix window size remember\n- Fix file transfer in windows OS",
+  "assets": [
+    {
+      "name": "electerm-1.20.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-linux-amd64.deb",
+      "size": 59231416,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-linux-amd64.snap",
+      "size": 73707520,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-linux-x64.tar.gz",
+      "size": 82153781,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.20.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-linux-x86_64.rpm",
+      "size": 60258264,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.20.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-mac-arm64.dmg",
+      "size": 88844576,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.6-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-mac-x64.dmg",
+      "size": 87507756,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.6-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-win-x64-installer.exe",
+      "size": 64258933,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.6-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-win-x64-loose.tar.gz",
+      "size": 87491472,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.20.6-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-win-x64.appx",
+      "size": 94130438,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.20.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.20.6/electerm-1.20.6-win-x64.tar.gz",
+      "size": 88084610,
+      "type": "application/gzip"
+    }
+  ]
+}

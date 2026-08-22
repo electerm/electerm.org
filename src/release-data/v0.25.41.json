@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.41",
+  "date": "2018-12-01",
+  "body": "- fix #958 All npm cmd support windows (#968)\n- fix #965 Fix exit bug in windows 10 (#967)\n- Fix release script",
+  "assets": [
+    {
+      "name": "electerm-0.25.41-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.41/electerm-0.25.41-linux-amd64.deb",
+      "size": 38176364,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.41-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.41/electerm-0.25.41-linux-x64.tar.gz",
+      "size": 52157637,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.41-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.41/electerm-0.25.41-linux-x86_64.rpm",
+      "size": 38201726,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.41-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.41/electerm-0.25.41-mac.dmg",
+      "size": 53803076,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.41-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.41/electerm-0.25.41-win-x64.tar.gz",
+      "size": 53980357,
+      "type": "application/gzip"
+    }
+  ]
+}

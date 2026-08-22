@@ -1,0 +1,37 @@
+{
+  "version": "v0.18.0",
+  "date": "2018-03-28",
+  "body": "- fix #355 use dark UI theme as default (#366)\n- fix #362 fix test script (#363)\n- reduce bundle size",
+  "assets": [
+    {
+      "name": "electerm-0.18.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.0/electerm-0.18.0-linux-amd64.deb",
+      "size": 34970140,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.0/electerm-0.18.0-linux-x86_64.rpm",
+      "size": 34911909,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.18.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.0/electerm-0.18.0-mac.dmg",
+      "size": 50994563,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.0/electerm-0.18.0-win.tar.gz",
+      "size": 51110049,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.18.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.0/electerm-0.18.0.tar.gz",
+      "size": 47857156,
+      "type": "application/gzip"
+    }
+  ]
+}

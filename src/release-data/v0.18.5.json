@@ -1,0 +1,37 @@
+{
+  "version": "v0.18.5",
+  "date": "2018-03-30",
+  "body": "- fix #375 fix sftp transport UI (#376)",
+  "assets": [
+    {
+      "name": "electerm-0.18.5-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.5/electerm-0.18.5-linux-amd64.deb",
+      "size": 34947442,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.5-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.5/electerm-0.18.5-linux-x86_64.rpm",
+      "size": 34901741,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.18.5-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.5/electerm-0.18.5-mac.dmg",
+      "size": 50993651,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.18.5-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.5/electerm-0.18.5-win.tar.gz",
+      "size": 51112564,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.18.5.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.18.5/electerm-0.18.5.tar.gz",
+      "size": 47856282,
+      "type": "application/gzip"
+    }
+  ]
+}

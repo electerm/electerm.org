@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.11",
+  "date": "2018-07-15",
+  "body": "- fix #598 highlight keyword when search list (#603)",
+  "assets": [
+    {
+      "name": "electerm-0.23.11-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.11/electerm-0.23.11-linux-amd64.deb",
+      "size": 36141868,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.11-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.11/electerm-0.23.11-linux-x86_64.rpm",
+      "size": 36290173,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.11-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.11/electerm-0.23.11-mac.dmg",
+      "size": 52057264,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.11-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.11/electerm-0.23.11-win.tar.gz",
+      "size": 51376695,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.11.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.11/electerm-0.23.11.tar.gz",
+      "size": 49025813,
+      "type": "application/gzip"
+    }
+  ]
+}

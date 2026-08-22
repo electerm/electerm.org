@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.1",
+  "date": "2018-11-01",
+  "body": "- fix #761 Double click to edit remote file function(only for small files)(#840)",
+  "assets": [
+    {
+      "name": "electerm-0.25.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.1/electerm-0.25.1-linux-amd64.deb",
+      "size": 38102848,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.1-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.1/electerm-0.25.1-linux-x64.tar.gz",
+      "size": 52124496,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.1/electerm-0.25.1-linux-x86_64.rpm",
+      "size": 38165010,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.1-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.1/electerm-0.25.1-mac.dmg",
+      "size": 53778526,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.1-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.1/electerm-0.25.1-win-x64.tar.gz",
+      "size": 53960624,
+      "type": "application/gzip"
+    }
+  ]
+}

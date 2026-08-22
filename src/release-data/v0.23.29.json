@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.29",
+  "date": "2018-08-05",
+  "body": "- fix #626 proxy select (#644)\n- fix #640 proxy form validate (#641)",
+  "assets": [
+    {
+      "name": "electerm-0.23.29-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.29/electerm-0.23.29-linux-amd64.deb",
+      "size": 36179548,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.29-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.29/electerm-0.23.29-linux-x86_64.rpm",
+      "size": 36318277,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.29-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.29/electerm-0.23.29-mac.dmg",
+      "size": 52095801,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.29-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.29/electerm-0.23.29-win.tar.gz",
+      "size": 51404881,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.29.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.29/electerm-0.23.29.tar.gz",
+      "size": 49054856,
+      "type": "application/gzip"
+    }
+  ]
+}

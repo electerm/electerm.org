@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.62",
+  "date": "2019-03-05",
+  "body": "- fix #1162 [feat] Show time passed in transfer list (#1165)\n- fix #1163 [bug fix] Treat asar file as normal file (#1164)\n- fix #1158 [test] add sidebar bookmark/history list test (#1161)",
+  "assets": [
+    {
+      "name": "electerm-0.26.62-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.62/electerm-0.26.62-linux-amd64.deb",
+      "size": 38159062,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.62-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.62/electerm-0.26.62-linux-amd64.snap",
+      "size": 110403584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.62-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.62/electerm-0.26.62-linux-x64.tar.gz",
+      "size": 52679238,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.62-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.62/electerm-0.26.62-linux-x86_64.rpm",
+      "size": 38200466,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.62-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.62/electerm-0.26.62-mac.dmg",
+      "size": 54365016,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.62-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.62/electerm-0.26.62-win-x64.tar.gz",
+      "size": 54678208,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.89",
+  "date": "2019-12-03",
+  "body": "- [feat] Support locale/IME (#1429)\n- [feat] Support multi instance (#1428)\n- [fix] Remove fullscreen toggle shortcut which will crash app (#1427)\n- Use xterm-256color as default terminal type (#1426)\n- [UI] Fix loading screen bg color (#1423)",
+  "assets": [
+    {
+      "name": "electerm-0.27.89-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.89/electerm-0.27.89-linux-amd64.deb",
+      "size": 46180850,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.89-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.89/electerm-0.27.89-linux-amd64.snap",
+      "size": 56745984,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.89-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.89/electerm-0.27.89-linux-x64.tar.gz",
+      "size": 64005880,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.89-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.89/electerm-0.27.89-linux-x86_64.rpm",
+      "size": 45977776,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.89-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.89/electerm-0.27.89-mac.dmg",
+      "size": 68178412,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.89-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.89/electerm-0.27.89-win-x64.tar.gz",
+      "size": 65513059,
+      "type": "application/gzip"
+    }
+  ]
+}

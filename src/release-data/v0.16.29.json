@@ -1,0 +1,37 @@
+{
+  "version": "v0.16.29",
+  "date": "2018-03-14",
+  "body": "- fix #331 add keepalive to ssh/sftp (#345)",
+  "assets": [
+    {
+      "name": "electerm-0.16.29-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.29/electerm-0.16.29-linux-amd64.deb",
+      "size": 37053010,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.29-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.29/electerm-0.16.29-linux-x86_64.rpm",
+      "size": 53678453,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.16.29-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.29/electerm-0.16.29-mac.dmg",
+      "size": 51342718,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.29-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.29/electerm-0.16.29-win.tar.gz",
+      "size": 55955714,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.16.29.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.29/electerm-0.16.29.tar.gz",
+      "size": 51694326,
+      "type": "application/gzip"
+    }
+  ]
+}

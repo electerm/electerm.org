@@ -1,0 +1,37 @@
+{
+  "version": "v0.17.3",
+  "date": "2018-03-26",
+  "body": "- fix #360 fix terminal paste function (#361)\n- fix #322 add terminal search function (#359)\n- fix #357 fix homepage url (#358)",
+  "assets": [
+    {
+      "name": "electerm-0.17.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.3/electerm-0.17.3-linux-amd64.deb",
+      "size": 35086888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.17.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.3/electerm-0.17.3-linux-x86_64.rpm",
+      "size": 35024569,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.17.3-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.3/electerm-0.17.3-mac.dmg",
+      "size": 51141788,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.17.3-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.3/electerm-0.17.3-win.tar.gz",
+      "size": 51266617,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.17.3.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.17.3/electerm-0.17.3.tar.gz",
+      "size": 48029257,
+      "type": "application/gzip"
+    }
+  ]
+}

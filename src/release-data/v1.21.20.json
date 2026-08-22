@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.20",
+  "date": "2022-04-13",
+  "body": "Quick bug fix: dock menu code cause app can not run in linux and windows",
+  "assets": [
+    {
+      "name": "electerm-1.21.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-linux-amd64.deb",
+      "size": 62591366,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-linux-amd64.snap",
+      "size": 77520896,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-linux-x64.tar.gz",
+      "size": 85801240,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-linux-x86_64.rpm",
+      "size": 63088816,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-mac-arm64.dmg",
+      "size": 90391957,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-mac-x64.dmg",
+      "size": 89615906,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-win-x64-installer.exe",
+      "size": 67806169,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-win-x64-loose.tar.gz",
+      "size": 91939972,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-win-x64.appx",
+      "size": 99098551,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.20/electerm-1.21.20-win-x64.tar.gz",
+      "size": 92683117,
+      "type": "application/gzip"
+    }
+  ]
+}

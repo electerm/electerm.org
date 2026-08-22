@@ -1,0 +1,43 @@
+{
+  "version": "v1.0.21",
+  "date": "2020-02-01",
+  "body": "- [feat] Encrypt sync github token (#1541)\n- [feat] Add no-terminal-background option for terminal backround (#1540)\n- [fix] Fix web image terminal background support",
+  "assets": [
+    {
+      "name": "electerm-1.0.21-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.21/electerm-1.0.21-linux-amd64.deb",
+      "size": 50881386,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.21-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.21/electerm-1.0.21-linux-amd64.snap",
+      "size": 62132224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.21-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.21/electerm-1.0.21-linux-x64.tar.gz",
+      "size": 70223964,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.0.21-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.21/electerm-1.0.21-linux-x86_64.rpm",
+      "size": 50523712,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.0.21-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.21/electerm-1.0.21-mac.dmg",
+      "size": 68157919,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.21-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.21/electerm-1.0.21-win-x64.tar.gz",
+      "size": 65295766,
+      "type": "application/gzip"
+    }
+  ]
+}

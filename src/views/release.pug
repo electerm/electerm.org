@@ -1,0 +1,204 @@
+doctype html
+html(lang=langCode)
+  head
+    title= 'electerm ' + release.version + ' download'
+    meta(name='description', content=desc)
+    meta(name='keywords', content=keywords)
+    meta(property='og:title' content='electerm ' + release.version + ' download')
+    meta(property='og:description' content=desc)
+    meta(name='twitter:title' content='electerm ' + release.version + ' download')
+    meta(name='twitter:description' content=desc)
+    include ./parts/react-header
+    include ./parts/page-script
+    include ./parts/download-card
+    script(type='application/ld+json').
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "electerm #{release.version}",
+        "codeRepository": "https://github.com/electerm/electerm",
+        "programmingLanguage": "JavaScript",
+        "softwareVersion": "#{release.version}",
+        "datePublished": "#{release.date}",
+        "url": "#{url}",
+        "downloadUrl": "https://github.com/electerm/electerm/releases/tag/#{release.version}"
+      }
+  body
+    include ./parts/header
+    main
+      section.release-detail
+        .container
+          nav.release-breadcrumb
+            a(href='/' + (lp || '')) Home
+            span.sep /
+            a(href='/releases/') Releases
+            span.sep /
+            span.current #{release.version}
+          .release-header
+            h1= release.name || ('electerm ' + release.version)
+            .release-meta
+              span.release-date Published #{release.date}
+          if release.bodyHtml
+            .release-notes!= release.bodyHtml
+          else if release.body
+            pre.release-notes= release.body
+      if release.downloadTabs && release.downloadTabs.length
+        section.downloads#downloads
+          .container
+            .section-header
+              h2 Downloads
+              p Files for electerm #{release.version}
+            - var osLabels = { windows: 'Windows', mac: 'macOS', linux: 'Linux', android: 'Android' }
+            .download-tabs-bar
+              each os in release.downloadTabs
+                button.download-tab-btn(class=(os === release.downloadActiveOs ? 'active' : ''), data-tab=os)= osLabels[os]
+            //- Windows
+            if release.downloadAssets.windows && release.downloadAssets.windows.x64.items.length
+              .download-panel(class=(release.downloadActiveOs === 'windows' ? 'active' : ''), data-tab='windows')
+                .arch-bar
+                  if release.downloadAssets.windows.x64.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.windows === 'x64' ? 'active' : ''), data-arch='x64') x64
+                  if release.downloadAssets.windows.arm64.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.windows === 'arm64' ? 'active' : ''), data-arch='arm64') ARM64
+                  if release.downloadAssets.windows.win7.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.windows === 'win7' ? 'active' : ''), data-arch='win7') Windows 7
+                  button.arch-btn(data-arch='all') All
+                if release.downloadAssets.windows.x64.items.length
+                  .arch-panel(class=(release.downloadActiveArch.windows === 'x64' ? 'active' : ''), data-arch='x64')
+                    .download-grid
+                      each obj in release.downloadAssets.windows.x64.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.windows.arm64.items.length
+                  .arch-panel(data-arch='arm64')
+                    .download-grid
+                      each obj in release.downloadAssets.windows.arm64.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.windows.win7.items.length
+                  .arch-panel(data-arch='win7')
+                    .download-grid
+                      each obj in release.downloadAssets.windows.win7.items
+                        +dlCardHist(obj)
+                .arch-panel(data-arch='all')
+                  .download-grid
+                    each obj in release.downloadAssets.windows.x64.items
+                      +dlCardHist(obj)
+                    each obj in release.downloadAssets.windows.arm64.items
+                      +dlCardHist(obj)
+                    each obj in release.downloadAssets.windows.win7.items
+                      +dlCardHist(obj)
+                +altInstall([
+                  { name: 'Microsoft Store', url: 'https://www.microsoft.com/store/apps/9NCN7272GTFF' },
+                  { name: 'npm', cmd: 'npm i -g electerm' }
+                ])
+            //- macOS
+            if release.downloadAssets.mac && release.downloadAssets.mac.items.length
+              .download-panel(class=(release.downloadActiveOs === 'mac' ? 'active' : ''), data-tab='mac')
+                .download-grid
+                  each obj in release.downloadAssets.mac.items
+                    +dlCardHist(obj)
+                +altInstall([
+                  { name: 'Homebrew', cmd: 'brew install --cask electerm' },
+                  { name: 'npm', cmd: 'npm i -g electerm' }
+                ])
+            //- Linux
+            if release.downloadAssets.linux && release.downloadAssets.linux.x86_64.items.length
+              .download-panel(class=(release.downloadActiveOs === 'linux' ? 'active' : ''), data-tab='linux')
+                .arch-bar
+                  if release.downloadAssets.linux.x86_64.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'x86_64' ? 'active' : ''), data-arch='x86_64') x86_64
+                  if release.downloadAssets.linux.x86_64_legacy.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'x86_64_legacy' ? 'active' : ''), data-arch='x86_64_legacy') x86_64 Legacy
+                  if release.downloadAssets.linux.arm64.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'arm64' ? 'active' : ''), data-arch='arm64') ARM64
+                  if release.downloadAssets.linux.arm64_legacy.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'arm64_legacy' ? 'active' : ''), data-arch='arm64_legacy') ARM64 Legacy
+                  if release.downloadAssets.linux.armv7.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'armv7' ? 'active' : ''), data-arch='armv7') ARMv7
+                  if release.downloadAssets.linux.armv7_legacy.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'armv7_legacy' ? 'active' : ''), data-arch='armv7_legacy') ARMv7 Legacy
+                  if release.downloadAssets.linux.loong64.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'loong64' ? 'active' : ''), data-arch='loong64') LoongArch64
+                  if release.downloadAssets.linux.loong64_legacy.items.length
+                    button.arch-btn(class=(release.downloadActiveArch.linux === 'loong64_legacy' ? 'active' : ''), data-arch='loong64_legacy') LoongArch64 Legacy
+                  button.arch-btn(data-arch='all') All
+                if release.downloadAssets.linux.x86_64.items.length
+                  .arch-panel(class=(release.downloadActiveArch.linux === 'x86_64' ? 'active' : ''), data-arch='x86_64')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.x86_64.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.linux.x86_64_legacy.items.length
+                  .arch-panel(data-arch='x86_64_legacy')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.x86_64_legacy.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.linux.arm64.items.length
+                  .arch-panel(data-arch='arm64')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.arm64.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.linux.arm64_legacy.items.length
+                  .arch-panel(data-arch='arm64_legacy')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.arm64_legacy.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.linux.armv7.items.length
+                  .arch-panel(data-arch='armv7')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.armv7.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.linux.armv7_legacy.items.length
+                  .arch-panel(data-arch='armv7_legacy')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.armv7_legacy.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.linux.loong64.items.length
+                  .arch-panel(data-arch='loong64')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.loong64.items
+                        +dlCardHist(obj)
+                if release.downloadAssets.linux.loong64_legacy.items.length
+                  .arch-panel(data-arch='loong64_legacy')
+                    .download-grid
+                      each obj in release.downloadAssets.linux.loong64_legacy.items
+                        +dlCardHist(obj)
+                .arch-panel(data-arch='all')
+                  .download-grid
+                    each obj in release.downloadAssets.linux.x86_64.items
+                      +dlCardHist(obj)
+                    if release.downloadAssets.linux.x86_64_legacy.items.length
+                      each obj in release.downloadAssets.linux.x86_64_legacy.items
+                        +dlCardHist(obj)
+                    each obj in release.downloadAssets.linux.arm64.items
+                      +dlCardHist(obj)
+                    if release.downloadAssets.linux.arm64_legacy.items.length
+                      each obj in release.downloadAssets.linux.arm64_legacy.items
+                        +dlCardHist(obj)
+                    each obj in release.downloadAssets.linux.armv7.items
+                      +dlCardHist(obj)
+                    if release.downloadAssets.linux.armv7_legacy.items.length
+                      each obj in release.downloadAssets.linux.armv7_legacy.items
+                        +dlCardHist(obj)
+                    each obj in release.downloadAssets.linux.loong64.items
+                      +dlCardHist(obj)
+                    if release.downloadAssets.linux.loong64_legacy.items.length
+                      each obj in release.downloadAssets.linux.loong64_legacy.items
+                        +dlCardHist(obj)
+                +altInstall([
+                  { name: 'Snap Store', cmd: 'sudo snap install electerm --classic', url: 'https://snapcraft.io/electerm' },
+                  { key: 'downloadRepoApt', name: 'APT repository', cmd: `curl -fsSL https://repos.electerm.org/deb/public.key | sudo gpg --dearmor -o /usr/share/keyrings/electerm.gpg\necho "deb [arch=amd64 signed-by=/usr/share/keyrings/electerm.gpg] https://repos.electerm.org/deb stable main" | sudo tee /etc/apt/sources.list.d/electerm.list\nsudo apt update\nsudo apt install -y electerm`, url: 'https://repos.electerm.org/deb' },
+                  { key: 'downloadRepoRpm', name: 'RPM repository', cmd: `sudo rpm --import https://repos.electerm.org/rpm/public.key\nsudo tee /etc/yum.repos.d/electerm.repo <<'EOF'\n[electerm]\nname=Electerm Repository\nbaseurl=https://repos.electerm.org/rpm/\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://repos.electerm.org/rpm/public.key\nEOF\nsudo dnf install -y electerm`, url: 'https://repos.electerm.org/rpm' },
+                  { name: 'npm', cmd: 'npm i -g electerm' }
+                ])
+            //- Android
+            if release.downloadAssets.android && release.downloadAssets.android.items.length
+              .download-panel(class=(release.downloadActiveOs === 'android' ? 'active' : ''), data-tab='android')
+                .download-grid
+                  each obj in release.downloadAssets.android.items
+                    +dlCardHist(obj)
+      section.release-detail
+        .container
+          .release-back
+            a(href='/releases/') ← All releases
+    include ./parts/footer
+    include ./parts/react-footer
+    +pageScript('release')

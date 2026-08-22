@@ -1,0 +1,52 @@
+// Shared download card mixins — used by both the homepage download section
+// (src/views/parts/download.pug) and the per-release pages (release.pug) so
+// the card markup + mirror links stay identical across the site.
+
+mixin dlLinks(obj)
+  .download-card-links
+    a.download-card-link.primary(href=obj.browser_download_url) GitHub
+    a.download-card-link(href=obj.sourceforgeUrl) SourceForge
+    a.download-card-link(href='https://mirror.electerm.org/' + obj.browser_download_url) gh-proxy
+    a.download-card-link(href=obj.r2Url) R2
+
+mixin dlCard(obj)
+  .download-card
+    .download-card-top
+      .download-card-name #{obj.name}
+      - if (obj.desc)
+        .download-card-desc #{obj.desc}
+    +dlLinks(obj)
+
+// History release pages (release.pug) only expose GitHub + the gh-proxy
+// mirror — no SourceForge, no R2.
+mixin dlLinksHist(obj)
+  .download-card-links
+    a.download-card-link.primary(href=obj.browser_download_url) GitHub
+    a.download-card-link(href='https://mirror.electerm.org/' + obj.browser_download_url) gh-proxy
+
+mixin dlCardHist(obj)
+  .download-card
+    .download-card-top
+      .download-card-name #{obj.name}
+      - if (obj.desc)
+        .download-card-desc #{obj.desc}
+    +dlLinksHist(obj)
+
+mixin altInstall(items)
+  .alt-install
+    .alt-install-title #{lang.lang.downloadOtherWays || 'Other ways to install'}
+    .alt-install-list
+      each it in items
+        .alt-install-item
+          .alt-install-name #{lang.lang[it.key] || it.name}
+          .alt-install-body
+            - if (it.cmd)
+              pre.alt-install-code
+                code #{it.cmd}
+              button.alt-copy(
+                type='button',
+                data-copied=lang.lang.downloadCopied || 'Copied!',
+                aria-label=lang.lang.downloadCopy || 'Copy'
+              ) #{lang.lang.downloadCopy || 'Copy'}
+            - if (it.url)
+              a.alt-install-link(href=it.url, target='_blank', rel='noreferrer') #{it.urlText || it.url}

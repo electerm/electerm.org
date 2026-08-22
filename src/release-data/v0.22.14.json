@@ -1,0 +1,37 @@
+{
+  "version": "v0.22.14",
+  "date": "2018-06-26",
+  "body": "- fix #526 remote terminal init logic fix (#528)\n- fix #525 fix tab close clean logic (#527)\n- fix #523 after connection close, change terminal status to error (#524)",
+  "assets": [
+    {
+      "name": "electerm-0.22.14-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.14/electerm-0.22.14-linux-amd64.deb",
+      "size": 36121166,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.14-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.14/electerm-0.22.14-linux-x86_64.rpm",
+      "size": 36270117,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.22.14-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.14/electerm-0.22.14-mac.dmg",
+      "size": 52024839,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.14-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.14/electerm-0.22.14-win.tar.gz",
+      "size": 51351590,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.22.14.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.14/electerm-0.22.14.tar.gz",
+      "size": 48993487,
+      "type": "application/gzip"
+    }
+  ]
+}

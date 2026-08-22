@@ -1,0 +1,37 @@
+{
+  "version": "v0.14.8",
+  "date": "2018-01-24",
+  "body": "- fix #272 fix on delete confirm press enter may trigger transfer (#277)\n- fix #275 fix big file sftp transfer may not end well (#276)\n- fix #271 fix sftp address control (#273)\n- fix #268 fix context menu may be covered by window (#270)\n- fix #265 fix terminal context menu position when near window border (#… …\n- fix #263 new history moves on list top (#264)\n- fix #260 use webpack to output html from pug (#262)\n- fix #238 disable cache (#261)",
+  "assets": [
+    {
+      "name": "electerm-0.14.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.8/electerm-0.14.8-linux-amd64.deb",
+      "size": 37154076,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.8/electerm-0.14.8-linux-x86_64.rpm",
+      "size": 53889062,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.14.8-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.8/electerm-0.14.8-mac.dmg",
+      "size": 51529945,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.8-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.8/electerm-0.14.8-win.tar.gz",
+      "size": 55283201,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.14.8.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.8/electerm-0.14.8.tar.gz",
+      "size": 51889495,
+      "type": "application/gzip"
+    }
+  ]
+}

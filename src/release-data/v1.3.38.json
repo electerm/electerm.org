@@ -1,0 +1,43 @@
+{
+  "version": "v1.3.38",
+  "date": "2020-06-16",
+  "body": "- [fix] Improve maximize function\n- [feat] Add diable sftp option in bookmark form -> setting (#1738)",
+  "assets": [
+    {
+      "name": "electerm-1.3.38-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.38/electerm-1.3.38-linux-amd64.deb",
+      "size": 52560490,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.38-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.38/electerm-1.3.38-linux-amd64.snap",
+      "size": 64458752,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.38-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.38/electerm-1.3.38-linux-x64.tar.gz",
+      "size": 72813728,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.3.38-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.38/electerm-1.3.38-linux-x86_64.rpm",
+      "size": 51950360,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.3.38-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.38/electerm-1.3.38-mac.dmg",
+      "size": 71693117,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.3.38-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.3.38/electerm-1.3.38-win-x64.tar.gz",
+      "size": 73369860,
+      "type": "application/gzip"
+    }
+  ]
+}

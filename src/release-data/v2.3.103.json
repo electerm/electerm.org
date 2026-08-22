@@ -1,0 +1,241 @@
+{
+  "version": "v2.3.103",
+  "date": "2025-11-14",
+  "body": "### Quick Bug fix release\n\n- Fix sz/rz support\n\n-----\n\n### 快速问题修复\n\n- 修复 sz/rz 文件传输功能\n\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-2.3.103-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-aarch64-legacy.rpm",
+      "size": 60785696,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.103-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-aarch64.rpm",
+      "size": 60894845,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.103-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-amd64-legacy.deb",
+      "size": 72508956,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-amd64.deb",
+      "size": 85653076,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-amd64.snap",
+      "size": 92893184,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-arm64-legacy.AppImage",
+      "size": 92345034,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-arm64-legacy.deb",
+      "size": 68391448,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-arm64-legacy.tar.gz",
+      "size": 87510932,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-arm64.AppImage",
+      "size": 92635777,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-arm64.deb",
+      "size": 68569324,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-arm64.tar.gz",
+      "size": 87778914,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l-legacy.AppImage",
+      "size": 80552381,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l-legacy.deb",
+      "size": 64745896,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l-legacy.rpm",
+      "size": 58452068,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l-legacy.tar.gz",
+      "size": 77578218,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l.AppImage",
+      "size": 80839059,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l.deb",
+      "size": 64924496,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l.rpm",
+      "size": 58577093,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.103-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-armv7l.tar.gz",
+      "size": 77847805,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-x64-legacy.tar.gz",
+      "size": 87152893,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-x64.tar.gz",
+      "size": 104034740,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-x86_64-legacy.AppImage",
+      "size": 91696030,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-x86_64-legacy.rpm",
+      "size": 64691384,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.103-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-x86_64.AppImage",
+      "size": 109642622,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-linux-x86_64.rpm",
+      "size": 76403313,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.3.103-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-mac-arm64.dmg",
+      "size": 103178451,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-mac-arm64.dmg.blockmap",
+      "size": 106734,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-mac-x64.dmg",
+      "size": 104971319,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-mac-x64.dmg.blockmap",
+      "size": 109234,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-arm64-installer.exe",
+      "size": 88369054,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-arm64-installer.exe.blockmap",
+      "size": 92809,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-arm64.tar.gz",
+      "size": 118152432,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-x64-installer.exe",
+      "size": 87261407,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-x64-installer.exe.blockmap",
+      "size": 90922,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-x64-loose.tar.gz",
+      "size": 118816935,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-x64-portable.tar.gz",
+      "size": 118851586,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-x64.appx",
+      "size": 139518363,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.3.103-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win-x64.tar.gz",
+      "size": 118851205,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.3.103-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.3.103/electerm-2.3.103-win7.tar.gz",
+      "size": 95157455,
+      "type": "application/gzip"
+    }
+  ]
+}

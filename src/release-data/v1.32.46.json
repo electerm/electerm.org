@@ -1,0 +1,73 @@
+{
+  "version": "v1.32.46",
+  "date": "2023-09-21",
+  "body": "### New features\n\n- fix #2991 Add connect (only) button in bookmark form\n- Auto read private keys to login when no password/privateKey provided\n- fix #2992 Fix zoom input behavior in menu\n\n### Bug fixes\n\n- fix #2990 Fix command line support when window already open\n- fix #2993 Fix x11 support\n- Fix a potential memory leak\n\n### Other updates\n\n- Change keepalive max to 20000s, min to 0\n",
+  "assets": [
+    {
+      "name": "electerm-1.32.46-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-linux-amd64.deb",
+      "size": 72941208,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.46-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-linux-amd64.snap",
+      "size": 89133056,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.46-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-linux-x64.tar.gz",
+      "size": 99445138,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.46-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-linux-x86_64.rpm",
+      "size": 72860044,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.32.46-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-mac-arm64.dmg",
+      "size": 95750167,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.46-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-mac-x64.dmg",
+      "size": 100933126,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.46-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-win-x64-installer.exe",
+      "size": 76407175,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.46-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-win-x64-loose.tar.gz",
+      "size": 103668831,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.46-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-win-x64-portable.tar.gz",
+      "size": 104319045,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.46-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-win-x64.appx",
+      "size": 111948942,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.46-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.46/electerm-1.32.46-win-x64.tar.gz",
+      "size": 104318789,
+      "type": "application/gzip"
+    }
+  ]
+}

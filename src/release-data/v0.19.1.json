@@ -1,0 +1,37 @@
+{
+  "version": "v0.19.1",
+  "date": "2018-04-13",
+  "body": "- fix #398 fix sftp ui bug (#399)",
+  "assets": [
+    {
+      "name": "electerm-0.19.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.1/electerm-0.19.1-linux-amd64.deb",
+      "size": 34952664,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.1/electerm-0.19.1-linux-x86_64.rpm",
+      "size": 34910609,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.19.1-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.1/electerm-0.19.1-mac.dmg",
+      "size": 50985810,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.1-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.1/electerm-0.19.1-win.tar.gz",
+      "size": 51117120,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.19.1.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.1/electerm-0.19.1.tar.gz",
+      "size": 47860031,
+      "type": "application/gzip"
+    }
+  ]
+}

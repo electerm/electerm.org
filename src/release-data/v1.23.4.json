@@ -1,0 +1,67 @@
+{
+  "version": "v1.23.4",
+  "date": "2022-09-21",
+  "body": "### Quick bug fix release\n\n- Fix setting or other data not save issue",
+  "assets": [
+    {
+      "name": "electerm-1.23.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-linux-amd64.deb",
+      "size": 62866744,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.4-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-linux-amd64.snap",
+      "size": 78024704,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.4-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-linux-x64.tar.gz",
+      "size": 86399260,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-linux-x86_64.rpm",
+      "size": 63268268,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.23.4-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-mac-arm64.dmg",
+      "size": 91080808,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.4-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-mac-x64.dmg",
+      "size": 90352435,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.4-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-win-x64-installer.exe",
+      "size": 68119987,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.4-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-win-x64-loose.tar.gz",
+      "size": 92511797,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.23.4-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-win-x64.appx",
+      "size": 99771738,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.23.4-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.23.4/electerm-1.23.4-win-x64.tar.gz",
+      "size": 93277472,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v0.27.76",
+  "date": "2019-11-14",
+  "body": "- [fix] Fix common keyboard shortcuts in built-in editor (#1394)\n- [feat] Support all supported ssh2 algorithms (#1397)",
+  "assets": [
+    {
+      "name": "electerm-0.27.76-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.76/electerm-0.27.76-linux-amd64.deb",
+      "size": 46182718,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.76-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.76/electerm-0.27.76-linux-amd64.snap",
+      "size": 56741888,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.76-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.76/electerm-0.27.76-linux-x64.tar.gz",
+      "size": 64009855,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.27.76-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.76/electerm-0.27.76-linux-x86_64.rpm",
+      "size": 45998392,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.27.76-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.76/electerm-0.27.76-mac.dmg",
+      "size": 68190258,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.27.76-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.27.76/electerm-0.27.76-win-x64.tar.gz",
+      "size": 65516856,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.20",
+  "date": "2023-10-12",
+  "body": "### New features\n\n- fix #3033 Show search match count and current match index\n- fix #3031 Support multi delayed scripts for bookmark\n- fix #3029 Support auto upload(overwrite) data to sync server when data change\n\n### Bug fixes/UI\n\n- Fix quick command list UI, make label matched ones more visible\n",
+  "assets": [
+    {
+      "name": "electerm-1.34.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-linux-amd64.deb",
+      "size": 72938284,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-linux-amd64.snap",
+      "size": 88875008,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-linux-x64.tar.gz",
+      "size": 99176000,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-linux-x86_64.rpm",
+      "size": 72868872,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-mac-arm64.dmg",
+      "size": 95447087,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-mac-x64.dmg",
+      "size": 100666062,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-win-x64-installer.exe",
+      "size": 76133993,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-win-x64-loose.tar.gz",
+      "size": 103825045,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.20-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-win-x64-portable.tar.gz",
+      "size": 104050786,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-win-x64.appx",
+      "size": 111646364,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.20/electerm-1.34.20-win-x64.tar.gz",
+      "size": 104049910,
+      "type": "application/gzip"
+    }
+  ]
+}

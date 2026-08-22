@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.39",
+  "date": "2018-10-17",
+  "body": "- fix #806 fix find free port (#809)\n- fix #804 fix loginScript form(by @gpsbird) (#808)\n- fix #805 add contributing guide (#807)\n- fix #800 remove default font setting for ssh (#801)",
+  "assets": [
+    {
+      "name": "electerm-0.24.39-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.39/electerm-0.24.39-linux-amd64.deb",
+      "size": 36243980,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.39-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.39/electerm-0.24.39-linux-x86_64.rpm",
+      "size": 36386133,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.39-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.39/electerm-0.24.39-mac.dmg",
+      "size": 52224230,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.39-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.39/electerm-0.24.39-win.tar.gz",
+      "size": 51469019,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.39.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.39/electerm-0.24.39.tar.gz",
+      "size": 49149489,
+      "type": "application/gzip"
+    }
+  ]
+}

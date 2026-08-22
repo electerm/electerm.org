@@ -1,0 +1,151 @@
+{
+  "version": "v1.101.20",
+  "date": "2025-09-05",
+  "body": "### New Features\n\n- remove comments when run AI generated commands\n- Add run scripts support for telnet and serialport bookmark\n- Give error message when local server can not start\n\n### Bug Fixes\n\n- Do not show ssh prefix when it is ssh bookmark\n\n-----\n\n### 新功能\n\n- 运行 AI 生成命令时去除注释\n- telnet 和 serialport 书签支持运行脚本\n- 本地服务器无法启动时给出错误信息\n\n### 问题修复\n\n- ssh 书签不再显示 ssh 前缀",
+  "assets": [
+    {
+      "name": "electerm-1.101.20-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-aarch64.rpm",
+      "size": 71401353,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.101.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-amd64.deb",
+      "size": 76301124,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-amd64.snap",
+      "size": 94175232,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-arm64.AppImage",
+      "size": 110910907,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-arm64.deb",
+      "size": 71512656,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-arm64.tar.gz",
+      "size": 105017553,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.20-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-armv7l.AppImage",
+      "size": 99789118,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-armv7l.deb",
+      "size": 70425086,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-armv7l.rpm",
+      "size": 70239033,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.101.20-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-armv7l.tar.gz",
+      "size": 95943465,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.20-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-x64.tar.gz",
+      "size": 105050072,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.20-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-x86_64.AppImage",
+      "size": 110712651,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-linux-x86_64.rpm",
+      "size": 76205677,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.101.20-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-mac-arm64.dmg",
+      "size": 114928744,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-mac-arm64.dmg.blockmap",
+      "size": 121423,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-mac-x64.dmg",
+      "size": 120901179,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-mac-x64.dmg.blockmap",
+      "size": 126695,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-win-x64-installer.exe",
+      "size": 87124853,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-win-x64-installer.exe.blockmap",
+      "size": 91467,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-win-x64-loose.tar.gz",
+      "size": 118942591,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.20-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-win-x64-portable.tar.gz",
+      "size": 119015195,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.20-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-win-x64.appx",
+      "size": 139008650,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.101.20-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-win-x64.tar.gz",
+      "size": 119015486,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.101.20-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.101.20/electerm-1.101.20-win7.tar.gz",
+      "size": 99326867,
+      "type": "application/gzip"
+    }
+  ]
+}

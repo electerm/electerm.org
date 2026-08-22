@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.54",
+  "date": "2019-02-22",
+  "body": "- fix #1146 Add Popover menu for add terminal button (#1149)\n- fix #1145 [UI] Add max height to sub menu (#1148) \n- fix #1144 [UI] Fix transport hover background (#1147)",
+  "assets": [
+    {
+      "name": "electerm-0.26.54-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.54/electerm-0.26.54-linux-amd64.deb",
+      "size": 38157336,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.54-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.54/electerm-0.26.54-linux-amd64.snap",
+      "size": 110403584,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.54-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.54/electerm-0.26.54-linux-x64.tar.gz",
+      "size": 52678826,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.54-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.54/electerm-0.26.54-linux-x86_64.rpm",
+      "size": 38201870,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.54-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.54/electerm-0.26.54-mac.dmg",
+      "size": 54364201,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.54-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.54/electerm-0.26.54-win-x64.tar.gz",
+      "size": 54676994,
+      "type": "application/gzip"
+    }
+  ]
+}

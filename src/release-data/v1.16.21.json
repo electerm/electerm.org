@@ -1,0 +1,67 @@
+{
+  "version": "v1.16.21",
+  "date": "2021-10-12",
+  "body": "New features:\n\n- Use pagination when more than 100 files in file manager\n- Add edit with external editor option (#2269)\n\nBug fixes:\n\n- fix #2257 [UI] Increase scroll bar width\n- fix #2255 Fix sftp remote can not paste in windows (#2256)\n- Make sidebar bookmark and history button clickable\n\nOther updates:\n\n- Add google analytics to track use statics\n- Remove gcm cipher support, upgrade ssh module\n\nKnown issues:\n\n- The mac ARM build not tested, may not work at all, if not working for you, please use the mac x64 build.\n",
+  "assets": [
+    {
+      "name": "electerm-1.16.21-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-linux-amd64.deb",
+      "size": 59205832,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.21-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-linux-amd64.snap",
+      "size": 73371648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.21-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-linux-x64.tar.gz",
+      "size": 81810196,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.21-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-linux-x86_64.rpm",
+      "size": 60097876,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.16.21-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-mac-arm64.dmg",
+      "size": 88517276,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.21-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-mac-x64.dmg",
+      "size": 87158915,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.21-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-win-x64-installer.exe",
+      "size": 64097074,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.21-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-win-x64-loose.tar.gz",
+      "size": 87135832,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.16.21-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-win-x64.appx",
+      "size": 93719512,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.16.21-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.16.21/electerm-1.16.21-win-x64.tar.gz",
+      "size": 87740467,
+      "type": "application/gzip"
+    }
+  ]
+}

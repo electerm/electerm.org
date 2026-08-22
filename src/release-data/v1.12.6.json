@@ -1,0 +1,43 @@
+{
+  "version": "v1.12.6",
+  "date": "2021-03-21",
+  "body": "- [feat] Use standalone exec params input\n- [fix] Term type default setting will be default bookmark term type\n- [fix] Fix close file conflict modal function\n- [chor] Add the way of installing with scoop in windows to README by @Bennett-Yang (#2080)\n- [fix] Fix batch input UI issue",
+  "assets": [
+    {
+      "name": "electerm-1.12.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.6/electerm-1.12.6-linux-amd64.deb",
+      "size": 54900226,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.6/electerm-1.12.6-linux-amd64.snap",
+      "size": 67186688,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.6/electerm-1.12.6-linux-x64.tar.gz",
+      "size": 75839512,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.6/electerm-1.12.6-linux-x86_64.rpm",
+      "size": 55536288,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.12.6-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.6/electerm-1.12.6-mac.dmg",
+      "size": 79035213,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.6/electerm-1.12.6-win-x64.tar.gz",
+      "size": 73363695,
+      "type": "application/gzip"
+    }
+  ]
+}

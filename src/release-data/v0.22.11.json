@@ -1,0 +1,37 @@
+{
+  "version": "v0.22.11",
+  "date": "2018-06-25",
+  "body": "- fix #520 fix terminal resize logic (#522)\n- fix #519 fix keepalive/timeout option on remote connection (#521)",
+  "assets": [
+    {
+      "name": "electerm-0.22.11-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.11/electerm-0.22.11-linux-amd64.deb",
+      "size": 36125722,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.11-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.11/electerm-0.22.11-linux-x86_64.rpm",
+      "size": 36274153,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.22.11-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.11/electerm-0.22.11-mac.dmg",
+      "size": 52024221,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.11-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.11/electerm-0.22.11-win.tar.gz",
+      "size": 51351442,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.22.11.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.11/electerm-0.22.11.tar.gz",
+      "size": 48993480,
+      "type": "application/gzip"
+    }
+  ]
+}

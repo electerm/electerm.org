@@ -1,0 +1,289 @@
+{
+  "version": "v3.15.100",
+  "date": "2026-07-03",
+  "body": "### New features/UI/Updates\n\n- Support tree list sort by title or host\n- Support multi file drop to terminal to paste multi file path to terminal\n- Update xterm to latest\n- Add configurable Shift+Enter hotkey for terminal line continuation (#4409) by @kkrrsq\n- Update logo\n- #4398 Support realVNC\n- Add electerm online to about panel\n\n### Bug fixes\n\n- Improve filename sanitization: clarify handling of leading/trailing spaces and dots\n- fix #4407: align terminal renderer backgrounds (#4408) by @hippo2cat\n- Fix build for win7 (#4412)\n- #4411 Fix local terminal env pollution\n\n-----\n\n### 新功能/界面/更新\n\n- 支持按标题或主机对树列表排序\n- 支持将多个文件拖放到终端，将多个文件路径粘贴到终端\n- 更新 xterm 到最新版本\n- 添加可配置的 Shift+Enter 热键用于终端换行 (#4409) by @kkrrsq\n- 更新 logo\n- #4398 支持 realVNC\n- 在关于面板中添加 electerm 在线链接\n\n### 问题修复\n\n- 改进文件名净化：明确处理前导/尾随空格和点\n- 修复 #4407：调整终端渲染器背景对齐 (#4408) by @hippo2cat\n- #4411 修复本地终端环境变量污染问题\n- 修复 win7 构建问题 (#4412)\n\n-------\n\nDownload下载: [https://electerm.org](https://electerm.org)\n",
+  "assets": [
+    {
+      "name": "electerm-3.15.100-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-aarch64-legacy.rpm",
+      "size": 62199432,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.100-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-aarch64.rpm",
+      "size": 62312397,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.100-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-amd64-legacy.deb",
+      "size": 74152884,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-amd64.deb",
+      "size": 88435956,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-amd64.snap",
+      "size": 96100352,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-arm64-legacy.AppImage",
+      "size": 94731342,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-arm64-legacy.deb",
+      "size": 70063304,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-arm64-legacy.tar.gz",
+      "size": 89727825,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-arm64.AppImage",
+      "size": 95010300,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-arm64.deb",
+      "size": 70235620,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-arm64.tar.gz",
+      "size": 89993652,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l-legacy.AppImage",
+      "size": 82934138,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l-legacy.deb",
+      "size": 66440104,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l-legacy.rpm",
+      "size": 59877936,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l-legacy.tar.gz",
+      "size": 79797869,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l.AppImage",
+      "size": 83217171,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l.deb",
+      "size": 66611696,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l.rpm",
+      "size": 60004593,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.100-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-armv7l.tar.gz",
+      "size": 80061822,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-linux-loong64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-loong64-legacy.deb",
+      "size": 152268854,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.100-linux-loong64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-loong64-legacy.tar.gz",
+      "size": 151662600,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-3.15.100-linux-loong64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-loong64.deb",
+      "size": 95357772,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.100-linux-loong64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-loong64.tar.gz",
+      "size": 129384637,
+      "type": "application/x-gtar"
+    },
+    {
+      "name": "electerm-3.15.100-linux-loongarch64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-loongarch64-legacy.deb",
+      "size": 152268892,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.100-linux-loongarch64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-loongarch64.deb",
+      "size": 95355808,
+      "type": "application/x-debian-package"
+    },
+    {
+      "name": "electerm-3.15.100-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-x64-legacy.tar.gz",
+      "size": 89371594,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-x64.tar.gz",
+      "size": 107846212,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-x86_64-legacy.AppImage",
+      "size": 94082311,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-x86_64-legacy.rpm",
+      "size": 66125520,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.100-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-x86_64.AppImage",
+      "size": 113782338,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-linux-x86_64.rpm",
+      "size": 78849661,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.15.100-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-mac-arm64.dmg",
+      "size": 108415265,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-mac-arm64.dmg.blockmap",
+      "size": 114846,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-mac-x64.dmg",
+      "size": 115320498,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-mac-x64.dmg.blockmap",
+      "size": 120461,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-mac10-x64.dmg",
+      "size": 92062173,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-mac10-x64.dmg.blockmap",
+      "size": 97030,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-arm64-installer.exe",
+      "size": 99912957,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-arm64-installer.exe.blockmap",
+      "size": 105080,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-arm64.tar.gz",
+      "size": 134541126,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-x64-installer.exe",
+      "size": 99138793,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-x64-installer.exe.blockmap",
+      "size": 105155,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-x64-loose.tar.gz",
+      "size": 136590857,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-x64-portable.tar.gz",
+      "size": 136623956,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-x64.appx",
+      "size": 159421063,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.15.100-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win-x64.tar.gz",
+      "size": 136623152,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.15.100-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.15.100/electerm-3.15.100-win7.tar.gz",
+      "size": 97376381,
+      "type": "application/gzip"
+    }
+  ]
+}

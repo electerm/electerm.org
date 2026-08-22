@@ -1,0 +1,151 @@
+{
+  "version": "v1.60.29",
+  "date": "2025-02-03",
+  "body": "\n### New features/Updates\n\n- Add install src info to about panel\n- Add \"..\" item to file list\n- Update default AI role text\n- Add role defaults for AI config form\n- Add language form item for AI config form\n- Add context menu to explain selected terminal output\n- Add translate for AI form\n- Add AI feature text\n- Add a shorter default role for AI\n\n### Code refactoring and improvements\n\n- Rewrite dom control with react ref\n- Rewrite refs system\n- Rewrite terminal search keyboard shortcut control\n- Rewrite file manager/sftp keyboard shortcut support\n- Rewrite init batch operation logic\n- Rewrite transfer conflict related logic\n- Rewrite upgrade check logic\n- Rewrite file manager header drag to resize logic\n- Merge file info and mode editor component\n- Rewrite file mode edit logic\n- Rewrite file editor logic (#3787)\n- Rewrite system menu\n- Rewrite sftp context menu (#3781)\n- Rewrite drag handle component\n- Rewrite terminal action related functions\n- Rewrite auto focus input component\n- Improve database sync data logic, improve performance (#3776)\n- Improve sftp performance\n\n### Bug fixes\n\n- Fix select all shortcut\n- Fix drop tab to empty batch not working right issue\n- Fix click to select file\n- Fix #3774 Fix fullscreen shortcut in vim mode\n- Fix left side panel UI and expand icon function\n- Fix copied translate\n- Fix sftp potential memory leak\n- Fix tab on data UI\n- Fix list windows OS drive function\n\n----\n\n### 新功能/更新\n\n- 在关于面板中添加安装源信息\n- 在文件列表中添加\"..\"项\n- 更新默认AI角色文本\n- 为AI配置表单添加角色默认值\n- 为AI配置表单添加语言表单项\n- 添加上下文菜单以解释选定的终端输出\n- 为AI表单添加翻译\n- 添加AI功能文本\n- 使用更短的默认AI角色文本\n\n### 代码重构和改进\n\n- 使用react ref重写DOM控制\n- 重写refs系统\n- 重写终端搜索键盘快捷键控制\n- 重写文件管理器/sftp键盘快捷键支持\n- 重写初始化批处理操作逻辑\n- 重写传输冲突相关逻辑\n- 重写升级检查逻辑\n- 重写文件管理器头部拖动调整大小逻辑\n- 合并文件信息和模式编辑器组件\n- 重写文件模式编辑逻辑\n- 重写文件编辑器逻辑 (#3787)\n- 重写系统菜单\n- 重写sftp上下文菜单 (#3781)\n- 重写拖动处理组件\n- 重写终端操作相关功能\n- 重写自动聚焦输入组件\n- 改进数据库同步数据逻辑，提高性能 (#3776)\n- 改进sftp性能\n\n### 错误修复\n\n- 修复全选快捷键\n- 修复将标签拖放到空批处理不正常工作的问题\n- 修复点击选择文件\n- 修复 #3774 修复vim模式下全屏快捷键\n- 修复左侧面板UI和展开图标功能\n- 修复复制翻译\n- 修复sftp潜在的内存泄漏\n- 修复数据UI上的标签\n- 修复列出Windows系统驱动器功能\n",
+  "assets": [
+    {
+      "name": "electerm-1.60.29-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-aarch64.rpm",
+      "size": 69235876,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.29-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-amd64.deb",
+      "size": 73809386,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-amd64.snap",
+      "size": 91889664,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-arm64.AppImage",
+      "size": 107234561,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-arm64.deb",
+      "size": 69255920,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-arm64.tar.gz",
+      "size": 101543971,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.29-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-armv7l.AppImage",
+      "size": 95361545,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-armv7l.deb",
+      "size": 67629670,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-armv7l.rpm",
+      "size": 67478228,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.29-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-armv7l.tar.gz",
+      "size": 91638558,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.29-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-x64.tar.gz",
+      "size": 101440642,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.29-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-x86_64.AppImage",
+      "size": 106845941,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-linux-x86_64.rpm",
+      "size": 73936512,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.60.29-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-mac-arm64.dmg",
+      "size": 106385260,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-mac-arm64.dmg.blockmap",
+      "size": 111872,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-mac-x64.dmg",
+      "size": 113328801,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-mac-x64.dmg.blockmap",
+      "size": 120025,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-win-x64-installer.exe",
+      "size": 80938324,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-win-x64-installer.exe.blockmap",
+      "size": 85682,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-win-x64-loose.tar.gz",
+      "size": 110489007,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.29-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-win-x64-portable.tar.gz",
+      "size": 110559142,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.29-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-win-x64.appx",
+      "size": 128857718,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.60.29-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-win-x64.tar.gz",
+      "size": 110558863,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.60.29-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.60.29/electerm-1.60.29-win7.tar.gz",
+      "size": 101306789,
+      "type": "application/gzip"
+    }
+  ]
+}

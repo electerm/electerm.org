@@ -1,0 +1,37 @@
+{
+  "version": "v0.24.20",
+  "date": "2018-09-19",
+  "body": "- fix #755 use PureComponent (#759)\n- fix #754 fix setState use (#756)\n- fix #750 cache static files (#751)\n- fix #746 update antd to version 3.9.2 (#747)",
+  "assets": [
+    {
+      "name": "electerm-0.24.20-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.20/electerm-0.24.20-linux-amd64.deb",
+      "size": 36231742,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.20-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.20/electerm-0.24.20-linux-x86_64.rpm",
+      "size": 36383169,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.24.20-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.20/electerm-0.24.20-mac.dmg",
+      "size": 52226824,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.24.20-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.20/electerm-0.24.20-win.tar.gz",
+      "size": 51473618,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.24.20.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.24.20/electerm-0.24.20.tar.gz",
+      "size": 49149565,
+      "type": "application/gzip"
+    }
+  ]
+}

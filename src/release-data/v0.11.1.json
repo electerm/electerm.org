@@ -1,0 +1,37 @@
+{
+  "version": "v0.11.1",
+  "date": "2018-01-04",
+  "body": "- fix homepage url",
+  "assets": [
+    {
+      "name": "electerm-0.11.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.1/electerm-0.11.1-linux-amd64.deb",
+      "size": 37115730,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.11.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.1/electerm-0.11.1-linux-x86_64.rpm",
+      "size": 54175074,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.11.1-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.1/electerm-0.11.1-mac.dmg",
+      "size": 51492832,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.11.1-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.1/electerm-0.11.1-win.tar.gz",
+      "size": 54988147,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.11.1.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.11.1/electerm-0.11.1.tar.gz",
+      "size": 52165914,
+      "type": "application/gzip"
+    }
+  ]
+}

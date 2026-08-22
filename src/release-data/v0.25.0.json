@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.0",
+  "date": "2018-10-27",
+  "body": "- fix #689 add file manager test, local symlink test (#834)\n- fix #828 [UI] better terminal spliter icons (#831) \n- fix #799 fix file path resolve in windows (#829)\n- remove extra brace (#827) by @blue-bird1\n- fix #816 add keyboard shortcut to switch between session tabs (#826)",
+  "assets": [
+    {
+      "name": "electerm-0.25.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.0/electerm-0.25.0-linux-amd64.deb",
+      "size": 38108604,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.0/electerm-0.25.0-linux-x64.tar.gz",
+      "size": 52123799,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.0/electerm-0.25.0-linux-x86_64.rpm",
+      "size": 38154406,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.0/electerm-0.25.0-mac.dmg",
+      "size": 53777034,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.0/electerm-0.25.0-win-x64.tar.gz",
+      "size": 53959951,
+      "type": "application/gzip"
+    }
+  ]
+}

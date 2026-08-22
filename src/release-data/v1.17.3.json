@@ -1,0 +1,67 @@
+{
+  "version": "v1.17.3",
+  "date": "2021-10-31",
+  "body": "Bug Fixes:\n\n- fix #2288: Fix proxy support(https/http/sock4/sock5) for check update info and sync data\n- fix #2283: Fix select all operation would select hidden files issue\n\nNew features:\n\n- fix #2291 : Add description input in bookmark form\n\nOther uodates:\n\n- Disable gpu support for linux\n- Upgrade webpack modules and update sync form UI\n- Upgrade electron\n- Remove google analytic code(not working)\n\nKnown issues:\n\nPlease check: https://github.com/electerm/electerm/wiki/Know-issues\n",
+  "assets": [
+    {
+      "name": "electerm-1.17.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-linux-amd64.deb",
+      "size": 59334438,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-linux-amd64.snap",
+      "size": 73408512,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-linux-x64.tar.gz",
+      "size": 81827279,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-linux-x86_64.rpm",
+      "size": 60122508,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.17.3-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-mac-arm64.dmg",
+      "size": 88538868,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.3-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-mac-x64.dmg",
+      "size": 87175607,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.3-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-win-x64-installer.exe",
+      "size": 64114945,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.3-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-win-x64-loose.tar.gz",
+      "size": 87147693,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.3-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-win-x64.appx",
+      "size": 93760010,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.3/electerm-1.17.3-win-x64.tar.gz",
+      "size": 87756238,
+      "type": "application/gzip"
+    }
+  ]
+}

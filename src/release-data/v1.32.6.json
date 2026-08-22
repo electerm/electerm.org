@@ -1,0 +1,73 @@
+{
+  "version": "v1.32.6",
+  "date": "2023-09-11",
+  "body": "### Bug fixes\n\n- fix #2967 Fix support for importing old bookmarks\n- fix expand-all function in bookmark panel\n\n### Other updates\n\n- Provide standalone portable release download",
+  "assets": [
+    {
+      "name": "electerm-1.32.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-linux-amd64.deb",
+      "size": 72934644,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-linux-amd64.snap",
+      "size": 89141248,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-linux-x64.tar.gz",
+      "size": 99440191,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-linux-x86_64.rpm",
+      "size": 72863500,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.32.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-mac-arm64.dmg",
+      "size": 95744413,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.6-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-mac-x64.dmg",
+      "size": 100926471,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.6-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-win-x64-installer.exe",
+      "size": 76403699,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.6-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-win-x64-loose.tar.gz",
+      "size": 103662006,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.6-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-win-x64-portable.tar.gz",
+      "size": 104310215,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.32.6-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-win-x64.appx",
+      "size": 111946878,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.32.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.32.6/electerm-1.32.6-win-x64.tar.gz",
+      "size": 104309568,
+      "type": "application/gzip"
+    }
+  ]
+}

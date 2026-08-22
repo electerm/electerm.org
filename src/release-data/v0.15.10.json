@@ -1,0 +1,37 @@
+{
+  "version": "v0.15.10",
+  "date": "2018-01-31",
+  "body": "- fix #302 fix sftp copy function (#303)\n- fix #178 get home dir first before list remote files (#301)\n- fix #274 add transfer speed (#300)",
+  "assets": [
+    {
+      "name": "electerm-0.15.10-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.10/electerm-0.15.10-linux-amd64.deb",
+      "size": 37055636,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.15.10-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.10/electerm-0.15.10-linux-x86_64.rpm",
+      "size": 53687759,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.15.10-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.10/electerm-0.15.10-mac.dmg",
+      "size": 51353711,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.15.10-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.10/electerm-0.15.10-win.tar.gz",
+      "size": 55944792,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.15.10.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.15.10/electerm-0.15.10.tar.gz",
+      "size": 51701708,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v0.14.0",
+  "date": "2018-01-12",
+  "body": "- fix #225 fix delete file trigger error bug (#228)\n- fix #160 support multi language(en, cn only for now, partial) (#224)",
+  "assets": [
+    {
+      "name": "electerm-0.14.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.0/electerm-0.14.0-linux-amd64.deb",
+      "size": 37160444,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.0/electerm-0.14.0-linux-x86_64.rpm",
+      "size": 53901507,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.14.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.0/electerm-0.14.0-mac.dmg",
+      "size": 51542447,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.14.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.0/electerm-0.14.0-win.tar.gz",
+      "size": 55287047,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.14.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.14.0/electerm-0.14.0.tar.gz",
+      "size": 51902063,
+      "type": "application/gzip"
+    }
+  ]
+}

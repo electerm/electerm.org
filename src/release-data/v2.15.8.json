@@ -1,0 +1,253 @@
+{
+  "version": "v2.15.8",
+  "date": "2026-03-11",
+  "body": "### New features/UI/Updates\n\n- Support load SSH config as bookmarks (#4212)\n- Add progress bar for trzsz/rzsz transfer\n- Add GPU error handler and suggestions\n\n### Bug fixes\n\n- Fix list delete icon UI\n- Fix theme item delete icon overlap with apply icon issue\n- Fix editor navigating issue\n\n-----\n\n### 新功能/界面/更新\n\n- 支持加载 SSH 配置为书签 (#4212)\n- 为 trzsz/rzsz 传输添加进度条\n- 添加 GPU 错误处理程序和建议\n\n### Bug 修复\n\n- 修复列表删除图标界面问题\n- 修复主题项删除图标与应用图标重叠的问题\n- 修复编辑器导航问题\n\n-------\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-2.15.8-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-aarch64-legacy.rpm",
+      "size": 62056096,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.15.8-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-aarch64.rpm",
+      "size": 62155281,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.15.8-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-amd64-legacy.deb",
+      "size": 74056684,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-amd64.deb",
+      "size": 87154740,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-amd64.snap",
+      "size": 94867456,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-arm64-legacy.AppImage",
+      "size": 94850234,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-arm64-legacy.deb",
+      "size": 69986524,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-arm64-legacy.tar.gz",
+      "size": 89856329,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-arm64.AppImage",
+      "size": 95137105,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-arm64.deb",
+      "size": 70158924,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-arm64.tar.gz",
+      "size": 90124725,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l-legacy.AppImage",
+      "size": 83057099,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l-legacy.deb",
+      "size": 66380648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l-legacy.rpm",
+      "size": 59718764,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l-legacy.tar.gz",
+      "size": 79924396,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l.AppImage",
+      "size": 83344031,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l.deb",
+      "size": 66553116,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l.rpm",
+      "size": 59836365,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.15.8-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-armv7l.tar.gz",
+      "size": 80192449,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-x64-legacy.tar.gz",
+      "size": 89498196,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-x64.tar.gz",
+      "size": 106339165,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-x86_64-legacy.AppImage",
+      "size": 94201172,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-x86_64-legacy.rpm",
+      "size": 65970620,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.15.8-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-x86_64.AppImage",
+      "size": 112106859,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-linux-x86_64.rpm",
+      "size": 77639361,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.15.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-mac-arm64.dmg",
+      "size": 105590395,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-mac-arm64.dmg.blockmap",
+      "size": 110495,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-mac-x64.dmg",
+      "size": 107349409,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-mac-x64.dmg.blockmap",
+      "size": 112502,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-mac10-x64.dmg",
+      "size": 92352995,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-mac10-x64.dmg.blockmap",
+      "size": 98298,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-arm64-installer.exe",
+      "size": 89810601,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-arm64-installer.exe.blockmap",
+      "size": 94680,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-arm64.tar.gz",
+      "size": 120464216,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-x64-installer.exe",
+      "size": 88704016,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-x64-installer.exe.blockmap",
+      "size": 92293,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-x64-loose.tar.gz",
+      "size": 121129949,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-x64-portable.tar.gz",
+      "size": 121160078,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-x64.appx",
+      "size": 142050294,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.15.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win-x64.tar.gz",
+      "size": 121159699,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.15.8-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.15.8/electerm-2.15.8-win7.tar.gz",
+      "size": 97507222,
+      "type": "application/gzip"
+    }
+  ]
+}

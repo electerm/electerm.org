@@ -1,0 +1,73 @@
+{
+  "version": "v1.33.26",
+  "date": "2023-09-29",
+  "body": "### New features/UI\n\n- fix #3006 feat: Add ipv4 for network info\n- UI: Add proper symbol for sessions with connecction hopping\n\n### Bug fixes\n\n- fix #2955 fix #3011: Fix telnet can not connect issue\n- Fix some keyboard interactive promote title\n\n### Other updates\n\n- Code refractor: rewrite session core\n- Handle uncaught error/excption to make process more stable",
+  "assets": [
+    {
+      "name": "electerm-1.33.26-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-linux-amd64.deb",
+      "size": 72944130,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.26-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-linux-amd64.snap",
+      "size": 89137152,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.26-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-linux-x64.tar.gz",
+      "size": 99451832,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.33.26-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-linux-x86_64.rpm",
+      "size": 72884496,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.33.26-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-mac-arm64.dmg",
+      "size": 95744997,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.26-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-mac-x64.dmg",
+      "size": 100985805,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.26-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-win-x64-installer.exe",
+      "size": 76412573,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.26-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-win-x64-loose.tar.gz",
+      "size": 103675120,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.33.26-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-win-x64-portable.tar.gz",
+      "size": 104325159,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.33.26-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-win-x64.appx",
+      "size": 111964740,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.33.26-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.33.26/electerm-1.33.26-win-x64.tar.gz",
+      "size": 104324450,
+      "type": "application/gzip"
+    }
+  ]
+}

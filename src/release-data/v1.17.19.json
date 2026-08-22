@@ -1,0 +1,67 @@
+{
+  "version": "v1.17.19",
+  "date": "2021-12-02",
+  "body": "Bug fixes:\n- fix #2318 Support space in editor path and file path\n\nUpdates:\n- Add rz upload warning and remove cancel button\n- Add Arabic language support by @haithamalnaeb\n\nKnown issues:\n- [rz] When upload file with rz command, for file > 1M, may not end properly, and may not update progress, but still upload in background.\n- Check more from https://github.com/electerm/electerm/wiki/Know-issues",
+  "assets": [
+    {
+      "name": "electerm-1.17.19-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-linux-amd64.deb",
+      "size": 59260666,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.19-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-linux-amd64.snap",
+      "size": 73428992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.19-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-linux-x64.tar.gz",
+      "size": 81830881,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.19-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-linux-x86_64.rpm",
+      "size": 60113400,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.17.19-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-mac-arm64.dmg",
+      "size": 88539292,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.19-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-mac-x64.dmg",
+      "size": 87181923,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.19-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-win-x64-installer.exe",
+      "size": 64109960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.19-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-win-x64-loose.tar.gz",
+      "size": 87157934,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.19-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-win-x64.appx",
+      "size": 93779710,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.19-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.19/electerm-1.17.19-win-x64.tar.gz",
+      "size": 87764035,
+      "type": "application/gzip"
+    }
+  ]
+}

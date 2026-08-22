@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.18",
+  "date": "2018-11-10",
+  "body": "- Fix build process (#886)\n- fix #863 Make context menu click auto trigger close event (#881)\n- fix #878 [chor]Clean server code (#879)\n- fix #873 Move electerm-resource to dev-deps (#877)\n- fix #872 Make view one file only (#876)\n- fix #871 Load file directly in production (#874)\n- fix #869 remove dev server (#870)",
+  "assets": [
+    {
+      "name": "electerm-0.25.18-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.18/electerm-0.25.18-linux-amd64.deb",
+      "size": 38116062,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.18-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.18/electerm-0.25.18-linux-x64.tar.gz",
+      "size": 52145248,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.18-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.18/electerm-0.25.18-linux-x86_64.rpm",
+      "size": 38181386,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.18-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.18/electerm-0.25.18-mac.dmg",
+      "size": 53799672,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.18-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.18/electerm-0.25.18-win-x64.tar.gz",
+      "size": 53985111,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v1.13.3",
+  "date": "2021-06-04",
+  "body": "- update: Click setting/theme/sync button again will trigger hide panel\n- feature: Add use system title bar option in settings\n\n",
+  "assets": [
+    {
+      "name": "electerm-1.13.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.3/electerm-1.13.3-linux-amd64.deb",
+      "size": 59034242,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.3/electerm-1.13.3-linux-amd64.snap",
+      "size": 73371648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.3/electerm-1.13.3-linux-x64.tar.gz",
+      "size": 81769644,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.13.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.3/electerm-1.13.3-linux-x86_64.rpm",
+      "size": 60180764,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.13.3-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.3/electerm-1.13.3-mac.dmg",
+      "size": 86814212,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.3/electerm-1.13.3-win-x64.tar.gz",
+      "size": 86682850,
+      "type": "application/gzip"
+    }
+  ]
+}

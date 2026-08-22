@@ -1,0 +1,151 @@
+{
+  "version": "v1.39.99",
+  "date": "2024-08-05",
+  "body": "### New features\n\n- #3530 Support %xxx% in sftp path\n- #3509 Support telnet/rdp/vnc/serialport/local and all options in command line\n- #3524 Add terminal config for sftpPathFollowSsh\n- #3514 make profiles standalone sync data\n\n### Bug fixes/UI/UX\n\n- #3532 Handler dynamic portforward error properly\n- #3506 Fix terminal info UI\n- #3525 Fix upggrade message UI, support long message\n- #3514 Profile id would use auto increment instead of random string\n- #3536 Fix tabs UI for add button toggle\n\n------\n\n### 新功能\n\n- #3530 支持在sftp路径中使用%xxx%\n- #3509 在命令行中支持telnet/rdp/vnc/serialport/local和所有选项\n- #3524 为SFTP跟随终端路径添加终端设置项\n- #3514 使配置文件独立同步数据\n\n### 错误修复/UI/UX\n\n- #3532 正确处理动态端口转发错误\n- #3506 修复终端信息UI\n- #3525 修复升级消息UI，支持长消息\n- #3514 配置文件ID将使用自动增量而不是随机字符串\n- #3536 修复添加按钮切换的标签UI",
+  "assets": [
+    {
+      "name": "electerm-1.39.99-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-aarch64.rpm",
+      "size": 66010200,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.99-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-amd64.deb",
+      "size": 69975632,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-amd64.snap",
+      "size": 85704704,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-arm64.AppImage",
+      "size": 100979228,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-arm64.deb",
+      "size": 66043562,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-arm64.tar.gz",
+      "size": 95581667,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.99-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-armv7l.AppImage",
+      "size": 89123682,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-armv7l.deb",
+      "size": 63920670,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-armv7l.rpm",
+      "size": 63708164,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.99-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-armv7l.tar.gz",
+      "size": 85625532,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.99-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-x64.tar.gz",
+      "size": 95003637,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.99-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-x86_64.AppImage",
+      "size": 100064255,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-linux-x86_64.rpm",
+      "size": 69893616,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.39.99-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-mac-arm64.dmg",
+      "size": 99625290,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-mac-arm64.dmg.blockmap",
+      "size": 104993,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-mac-x64.dmg",
+      "size": 104848742,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-mac-x64.dmg.blockmap",
+      "size": 110885,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-win-x64-installer.exe",
+      "size": 74156543,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-win-x64-installer.exe.blockmap",
+      "size": 78265,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-win-x64-loose.tar.gz",
+      "size": 100190591,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.99-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-win-x64-portable.tar.gz",
+      "size": 100503898,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.99-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-win-x64.appx",
+      "size": 116772131,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.39.99-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-win-x64.tar.gz",
+      "size": 100503827,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.39.99-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.39.99/electerm-1.39.99-win7.tar.gz",
+      "size": 97395011,
+      "type": "application/gzip"
+    }
+  ]
+}

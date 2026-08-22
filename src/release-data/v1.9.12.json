@@ -1,0 +1,43 @@
+{
+  "version": "v1.9.12",
+  "date": "2020-11-23",
+  "body": "- feat: Update window maximize status when window move\n- feat: Support maximize in all displays\n- fix #1915 fix: Copy remain terminal focus\n- code: Partial code refractor\n",
+  "assets": [
+    {
+      "name": "electerm-1.9.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.12/electerm-1.9.12-linux-amd64.deb",
+      "size": 55383406,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.12-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.12/electerm-1.9.12-linux-amd64.snap",
+      "size": 68112384,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.12-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.12/electerm-1.9.12-linux-x64.tar.gz",
+      "size": 76793056,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.9.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.12/electerm-1.9.12-linux-x86_64.rpm",
+      "size": 56001764,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.9.12-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.12/electerm-1.9.12-mac.dmg",
+      "size": 80066371,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.9.12-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.9.12/electerm-1.9.12-win-x64.tar.gz",
+      "size": 75590675,
+      "type": "application/gzip"
+    }
+  ]
+}

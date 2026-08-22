@@ -1,0 +1,67 @@
+{
+  "version": "v1.17.15",
+  "date": "2021-11-11",
+  "body": "Bug fixes:\n\n- fix #2304: Fix transfer file auto rename issue when remote/local file same path\n- Fix command line parameter 'port' is not resolved correctly (by @MicroOps-cn)\n\nNew Features:\n\n- Supports specifying tab name when opening a new connection from the command line (by @MicroOps-cn)\n- Support Single instance mode for running from command line, check details from https://github.com/electerm/electerm/wiki/Command-line-usage (by @MicroOps-cn)\n\nKnown issues:\n\n- The mac-arm build not tested, may not work at all\n\n\n\n",
+  "assets": [
+    {
+      "name": "electerm-1.17.15-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-linux-amd64.deb",
+      "size": 59325654,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.15-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-linux-amd64.snap",
+      "size": 73420800,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.15-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-linux-x64.tar.gz",
+      "size": 81828233,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.15-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-linux-x86_64.rpm",
+      "size": 60109076,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.17.15-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-mac-arm64.dmg",
+      "size": 88534546,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.15-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-mac-x64.dmg",
+      "size": 87185715,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.15-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-win-x64-installer.exe",
+      "size": 64116354,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.15-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-win-x64-loose.tar.gz",
+      "size": 87151132,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.17.15-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-win-x64.appx",
+      "size": 93768219,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.17.15-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.17.15/electerm-1.17.15-win-x64.tar.gz",
+      "size": 87756274,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "v0.19.6",
+  "date": "2018-04-28",
+  "body": "- fix #407 filter no-host ssh-config items (#409)\n- fix #406 double click resize handle to reset all terminal split layout (#408)\n- fix #390 drag-to-resize terminal split (#405)\n- fix #391 better error page (#402)\n- fix #400 only show scrollbar when mouseover (#401)",
+  "assets": [
+    {
+      "name": "electerm-0.19.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.6/electerm-0.19.6-linux-amd64.deb",
+      "size": 34953934,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.6/electerm-0.19.6-linux-x86_64.rpm",
+      "size": 34914389,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.19.6-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.6/electerm-0.19.6-mac.dmg",
+      "size": 50985672,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.6-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.6/electerm-0.19.6-win.tar.gz",
+      "size": 51117181,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.19.6.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.6/electerm-0.19.6.tar.gz",
+      "size": 47861083,
+      "type": "application/gzip"
+    }
+  ]
+}

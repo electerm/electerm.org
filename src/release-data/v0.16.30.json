@@ -1,0 +1,37 @@
+{
+  "version": "v0.16.30",
+  "date": "2018-03-14",
+  "body": "- fix #346 fix update check url (#347)",
+  "assets": [
+    {
+      "name": "electerm-0.16.30-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.30/electerm-0.16.30-linux-amd64.deb",
+      "size": 37051764,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.30-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.30/electerm-0.16.30-linux-x86_64.rpm",
+      "size": 53678461,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.16.30-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.30/electerm-0.16.30-mac.dmg",
+      "size": 51343512,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.16.30-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.30/electerm-0.16.30-win.tar.gz",
+      "size": 55955660,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.16.30.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.16.30/electerm-0.16.30.tar.gz",
+      "size": 51694369,
+      "type": "application/gzip"
+    }
+  ]
+}

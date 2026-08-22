@@ -1,0 +1,43 @@
+{
+  "version": "v1.0.0",
+  "date": "2019-12-30",
+  "body": "- Version 1.0 Released\n- [feat] Add French language support by @damosse31\n- [test] Add quick commands test (#1482)",
+  "assets": [
+    {
+      "name": "electerm-1.0.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.0/electerm-1.0.0-linux-amd64.deb",
+      "size": 50870976,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.0-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.0/electerm-1.0.0-linux-amd64.snap",
+      "size": 62132224,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.0-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.0/electerm-1.0.0-linux-x64.tar.gz",
+      "size": 70220699,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.0.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.0/electerm-1.0.0-linux-x86_64.rpm",
+      "size": 50535540,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.0.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.0/electerm-1.0.0-mac.dmg",
+      "size": 68150238,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.0.0-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.0.0/electerm-1.0.0-win-x64.tar.gz",
+      "size": 65647722,
+      "type": "application/gzip"
+    }
+  ]
+}

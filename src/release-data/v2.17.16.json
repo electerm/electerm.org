@@ -1,0 +1,253 @@
+{
+  "version": "v2.17.16",
+  "date": "2026-03-23",
+  "body": "### Bug fixes\n\n- Fix highlight keywords can not handle digital match issue\n- Fix editor search input lose focus issue\n- Fix PATH not loaded issue in windows OS\n- Suppress debug logging in production by checking NODE_ENV (#4233)\n\n-----\n\n### Bug 修复发布\n\n- 修复高亮关键词无法处理数字匹配的问题\n- 修复编辑器搜索输入框失去焦点的问题\n- 修复 Windows 系统下 PATH 未加载的问题\n- 通过检查 NODE_ENV 在生产环境抑制调试日志 (#4233)\n\n-------\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-2.17.16-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-aarch64-legacy.rpm",
+      "size": 62715328,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.17.16-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-aarch64.rpm",
+      "size": 62842813,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.17.16-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-amd64-legacy.deb",
+      "size": 74854596,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-amd64.deb",
+      "size": 87955520,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-amd64.snap",
+      "size": 95784960,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-arm64-legacy.AppImage",
+      "size": 95879300,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-arm64-legacy.deb",
+      "size": 70784496,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-arm64-legacy.tar.gz",
+      "size": 90810164,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-arm64.AppImage",
+      "size": 96166362,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-arm64.deb",
+      "size": 70960432,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-arm64.tar.gz",
+      "size": 91077602,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l-legacy.AppImage",
+      "size": 84086089,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l-legacy.deb",
+      "size": 67178556,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l-legacy.rpm",
+      "size": 60405936,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l-legacy.tar.gz",
+      "size": 80877405,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l.AppImage",
+      "size": 84368956,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l.deb",
+      "size": 67354548,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l.rpm",
+      "size": 60519561,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.17.16-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-armv7l.tar.gz",
+      "size": 81143831,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-x64-legacy.tar.gz",
+      "size": 90451182,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-x64.tar.gz",
+      "size": 107292750,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-x86_64-legacy.AppImage",
+      "size": 95230428,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-x86_64-legacy.rpm",
+      "size": 66639348,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.17.16-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-x86_64.AppImage",
+      "size": 113127542,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-linux-x86_64.rpm",
+      "size": 78307925,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.17.16-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-mac-arm64.dmg",
+      "size": 106600097,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-mac-arm64.dmg.blockmap",
+      "size": 112511,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-mac-x64.dmg",
+      "size": 108384683,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-mac-x64.dmg.blockmap",
+      "size": 114065,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-mac10-x64.dmg",
+      "size": 93336417,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-mac10-x64.dmg.blockmap",
+      "size": 98212,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-arm64-installer.exe",
+      "size": 90609920,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-arm64-installer.exe.blockmap",
+      "size": 95760,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-arm64.tar.gz",
+      "size": 121422149,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-x64-installer.exe",
+      "size": 89501239,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-x64-installer.exe.blockmap",
+      "size": 93064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-x64-loose.tar.gz",
+      "size": 122095034,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-x64-portable.tar.gz",
+      "size": 122120119,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-x64.appx",
+      "size": 143118929,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.17.16-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win-x64.tar.gz",
+      "size": 122119657,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.17.16-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v2.17.16/electerm-2.17.16-win7.tar.gz",
+      "size": 98467655,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "version": "2.4.35",
+  "date": "2026-01-28",
+  "body": "### New features/UI/Updates\n\n- #4156 Disable spellchecker\n- Improve setting page UX, no lagging input\n\n### Bug fixes\n\n- Fix enter key behavior in modal\n\n-----\n\n### 新功能/界面/更新\n\n- #4156 禁用拼写检查器\n- 改进设置页面用户体验，无延迟输入\n\n### Bug 修复\n\n- 修复模态框中回车键行为\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-2.4.35-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-aarch64-legacy.rpm",
+      "size": 60991632,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.35-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-aarch64.rpm",
+      "size": 61117157,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.35-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-amd64-legacy.deb",
+      "size": 72755400,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-amd64.deb",
+      "size": 85865180,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-amd64.snap",
+      "size": 93155328,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-arm64-legacy.AppImage",
+      "size": 92684898,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-arm64-legacy.deb",
+      "size": 68541200,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-arm64-legacy.tar.gz",
+      "size": 87815509,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-arm64.AppImage",
+      "size": 92959930,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-arm64.deb",
+      "size": 68719876,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-arm64.tar.gz",
+      "size": 88085056,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l-legacy.AppImage",
+      "size": 80888136,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l-legacy.deb",
+      "size": 64907660,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l-legacy.rpm",
+      "size": 58669692,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l-legacy.tar.gz",
+      "size": 77883604,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l.AppImage",
+      "size": 81167204,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l.deb",
+      "size": 65086308,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l.rpm",
+      "size": 58791621,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.35-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-armv7l.tar.gz",
+      "size": 78151842,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-x64-legacy.tar.gz",
+      "size": 87457577,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-x64.tar.gz",
+      "size": 104304463,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-x86_64-legacy.AppImage",
+      "size": 92031806,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-x86_64-legacy.rpm",
+      "size": 64902784,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.35-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-x86_64.AppImage",
+      "size": 109933735,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-linux-x86_64.rpm",
+      "size": 76579101,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-2.4.35-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-mac-arm64.dmg",
+      "size": 103422242,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-mac-arm64.dmg.blockmap",
+      "size": 111027,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-mac-x64.dmg",
+      "size": 105249588,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-mac-x64.dmg.blockmap",
+      "size": 111560,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-mac10-x64.dmg",
+      "size": 90184106,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-mac10-x64.dmg.blockmap",
+      "size": 95565,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-arm64-installer.exe",
+      "size": 88593014,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-arm64-installer.exe.blockmap",
+      "size": 93226,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-arm64.tar.gz",
+      "size": 118429208,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-x64-installer.exe",
+      "size": 87484539,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-x64-installer.exe.blockmap",
+      "size": 90996,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-x64-loose.tar.gz",
+      "size": 119092525,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-x64-portable.tar.gz",
+      "size": 119128029,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-x64.appx",
+      "size": 139852098,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-2.4.35-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win-x64.tar.gz",
+      "size": 119127806,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-2.4.35-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/2.4.35/electerm-2.4.35-win7.tar.gz",
+      "size": 95463205,
+      "type": "application/gzip"
+    }
+  ]
+}

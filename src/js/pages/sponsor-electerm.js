@@ -4,11 +4,11 @@ import '../parts/header.js'
 import { copyText } from '../parts/copy.js'
 
 document.addEventListener('DOMContentLoaded', function () {
-  var copyBtn = document.querySelector('.copy-btn')
-  var copyStatus = document.getElementById('copy-status')
+  const copyBtn = document.querySelector('.copy-btn')
+  const copyStatus = document.getElementById('copy-status')
   if (copyBtn) {
     copyBtn.addEventListener('click', function () {
-      var address = document.getElementById('trn20-address').textContent.trim()
+      const address = document.getElementById('trn20-address').textContent.trim()
       copyText(address)
       showCopySuccess()
     })

@@ -1,0 +1,49 @@
+{
+  "version": "v1.13.1",
+  "date": "2021-05-22",
+  "body": "- Fix build for Linux\n- Upgrade to electron 12",
+  "assets": [
+    {
+      "name": "electerm-1.13.1-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.1/electerm-1.13.1-linux-amd64.deb",
+      "size": 59032266,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.1-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.1/electerm-1.13.1-linux-amd64.snap",
+      "size": 73367552,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.1-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.1/electerm-1.13.1-linux-x64.tar.gz",
+      "size": 81765651,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.13.1-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.1/electerm-1.13.1-linux-x86_64.rpm",
+      "size": 60189800,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.13.1-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.1/electerm-1.13.1-mac.dmg",
+      "size": 86808041,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.13.1-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.1/electerm-1.13.1-win-x64-loose.tar.gz",
+      "size": 86019806,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.13.1-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.13.1/electerm-1.13.1-win-x64.tar.gz",
+      "size": 86675063,
+      "type": "application/gzip"
+    }
+  ]
+}

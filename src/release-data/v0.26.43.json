@@ -1,0 +1,43 @@
+{
+  "version": "v0.26.43",
+  "date": "2019-02-11",
+  "body": "- fix #1130 Add search to new bookmark category select (#1131)\n- fix #964 Support sub category for bookmark (#1129)\n- fix #1126 [UI] fix submenu text overflow (#1127)",
+  "assets": [
+    {
+      "name": "electerm-0.26.43-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.43/electerm-0.26.43-linux-amd64.deb",
+      "size": 38251554,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.43-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.43/electerm-0.26.43-linux-amd64.snap",
+      "size": 110424064,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.43-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.43/electerm-0.26.43-linux-x64.tar.gz",
+      "size": 52696796,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.26.43-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.43/electerm-0.26.43-linux-x86_64.rpm",
+      "size": 38254374,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.26.43-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.43/electerm-0.26.43-mac.dmg",
+      "size": 54368442,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.26.43-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.26.43/electerm-0.26.43-win-x64.tar.gz",
+      "size": 54674923,
+      "type": "application/gzip"
+    }
+  ]
+}

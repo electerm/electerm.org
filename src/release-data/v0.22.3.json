@@ -1,0 +1,37 @@
+{
+  "version": "v0.22.3",
+  "date": "2018-06-11",
+  "body": "- fix #501 add keepalive to websocket connections (#502)",
+  "assets": [
+    {
+      "name": "electerm-0.22.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.3/electerm-0.22.3-linux-amd64.deb",
+      "size": 36118114,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.3/electerm-0.22.3-linux-x86_64.rpm",
+      "size": 36271197,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.22.3-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.3/electerm-0.22.3-mac.dmg",
+      "size": 52021464,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.22.3-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.3/electerm-0.22.3-win.tar.gz",
+      "size": 51343590,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.22.3.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.22.3/electerm-0.22.3.tar.gz",
+      "size": 48990468,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "version": "v1.12.21",
+  "date": "2021-05-06",
+  "body": "- bug fix: Fix promotes UI which cause long promote not showing properly\n- ui: Display terminal background image in cover mode (#2125) by @swgloomy",
+  "assets": [
+    {
+      "name": "electerm-1.12.21-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.21/electerm-1.12.21-linux-amd64.deb",
+      "size": 54539802,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.21-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.21/electerm-1.12.21-linux-amd64.snap",
+      "size": 67227648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.21-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.21/electerm-1.12.21-linux-x64.tar.gz",
+      "size": 75861543,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.21-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.21/electerm-1.12.21-linux-x86_64.rpm",
+      "size": 55513580,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.12.21-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.21/electerm-1.12.21-mac.dmg",
+      "size": 79072925,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.12.21-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.21/electerm-1.12.21-win-x64-loose.tar.gz",
+      "size": 72773274,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.12.21-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.12.21/electerm-1.12.21-win-x64.tar.gz",
+      "size": 73380465,
+      "type": "application/gzip"
+    }
+  ]
+}

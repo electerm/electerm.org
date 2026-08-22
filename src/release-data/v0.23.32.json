@@ -1,0 +1,37 @@
+{
+  "version": "v0.23.32",
+  "date": "2018-08-09",
+  "body": "- fix #647 update language pack add Português do Brasil (#648)\n- fix #642 apply socks proxy timeout (#646)\n- fix #643 add connection test loading icon (#645)",
+  "assets": [
+    {
+      "name": "electerm-0.23.32-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.32/electerm-0.23.32-linux-amd64.deb",
+      "size": 36164716,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.32-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.32/electerm-0.23.32-linux-x86_64.rpm",
+      "size": 36324221,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.23.32-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.32/electerm-0.23.32-mac.dmg",
+      "size": 52096910,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.23.32-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.32/electerm-0.23.32-win.tar.gz",
+      "size": 51408688,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.23.32.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.23.32/electerm-0.23.32.tar.gz",
+      "size": 49057309,
+      "type": "application/gzip"
+    }
+  ]
+}

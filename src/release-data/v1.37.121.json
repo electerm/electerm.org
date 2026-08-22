@@ -1,0 +1,145 @@
+{
+  "version": "v1.37.121",
+  "date": "2024-01-07",
+  "body": "### Bug fixes/UI\n\n- #3234 UI: improve sidebar list UI\n- #3232 Fix local folder drag/drop action in file manager\n- #3230 Fix drag can not cross screen issue\n- #3236 Directly upload big folder instead of pack it first\n\n### Other updates\n\n- #3229 Support ARM Linux for npm i script\n",
+  "assets": [
+    {
+      "name": "electerm-1.37.121-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-aarch64.rpm",
+      "size": 64947972,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.121-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-amd64.deb",
+      "size": 68725172,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-amd64.snap",
+      "size": 83787776,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-arm64.AppImage",
+      "size": 98745177,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-arm64.deb",
+      "size": 64845068,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-arm64.tar.gz",
+      "size": 93526939,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.121-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-armv7l.AppImage",
+      "size": 86905710,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-armv7l.deb",
+      "size": 62755726,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-armv7l.rpm",
+      "size": 62660812,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.121-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-armv7l.tar.gz",
+      "size": 83571192,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.121-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-x64.tar.gz",
+      "size": 92946901,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.121-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-x86_64.AppImage",
+      "size": 97830380,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-linux-x86_64.rpm",
+      "size": 68849216,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.37.121-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-mac-arm64.dmg",
+      "size": 97380868,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-mac-arm64.dmg.blockmap",
+      "size": 102904,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-mac-x64.dmg",
+      "size": 102636135,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-mac-x64.dmg.blockmap",
+      "size": 106733,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-win-x64-installer.exe",
+      "size": 72578075,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-win-x64-installer.exe.blockmap",
+      "size": 76203,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-win-x64-loose.tar.gz",
+      "size": 98144476,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.121-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-win-x64-portable.tar.gz",
+      "size": 98389526,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.37.121-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-win-x64.appx",
+      "size": 114399368,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.37.121-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.37.121/electerm-1.37.121-win-x64.tar.gz",
+      "size": 98389333,
+      "type": "application/gzip"
+    }
+  ]
+}

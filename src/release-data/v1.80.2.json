@@ -1,0 +1,151 @@
+{
+  "version": "v1.80.2",
+  "date": "2025-04-22",
+  "body": "### Major update\n\n- Rewrite file transfer functions (#3880)\n\n### New features\n\n- Support random background pattern for terminal\n- File editor support search keyword and copy all content (#3893)\n- Support background setting for bookmark (#3868)\n\n### Bug fixes\n\n- Fix sftp ws API\n- #3877 Fix gotoFolderInTerminal context menu for file item\n- #3874 Fix duplicated history issue\n- #3873 Fix quick command drag/drop to sort\n- Fix command Injection risk when drag/drop file to terminal (reported by @d0ge)\n\n### Other updates\n\n- Add more tests\n- Update font-list to version 1.5.1\n- Improve AI config UI, AI API path set to required\n\n----\n\n### 主要更新\n\n- 重写文件传输功能 (#3880)\n\n### 新功能\n\n- 终端支持随机背景图\n- 文件编辑器支持搜索关键字和复制全部内容 (#3893)\n- 支持书签背景设置 (#3868)\n\n### 修复问题\n\n- 修复 sftp ws API\n- #3877 修复文件菜单中 gotoFolderInTerminal 问题\n- #3874 修复历史记录重复问题\n- #3873 修复快捷命令排序问题\n- 修复拖拽文件到终端时的命令注入风险 (由 @d0ge 报告)\n\n### 其他更新\n\n- 增加更多测试\n- 更新 font-list 到 1.5.1 版本\n- 改善 AI 配置界面，AI API 路径设置为必填\n",
+  "assets": [
+    {
+      "name": "electerm-1.80.2-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-aarch64.rpm",
+      "size": 69101925,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.2-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-amd64.deb",
+      "size": 73684876,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-amd64.snap",
+      "size": 91136000,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-arm64.AppImage",
+      "size": 106655964,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-arm64.deb",
+      "size": 69058876,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-arm64.tar.gz",
+      "size": 101017515,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.2-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-armv7l.AppImage",
+      "size": 94783008,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-armv7l.deb",
+      "size": 67530816,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-armv7l.rpm",
+      "size": 67324841,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.2-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-armv7l.tar.gz",
+      "size": 91111577,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.2-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-x64.tar.gz",
+      "size": 100913937,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.2-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-x86_64.AppImage",
+      "size": 106267537,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-linux-x86_64.rpm",
+      "size": 73803141,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.80.2-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-mac-arm64.dmg",
+      "size": 105782546,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-mac-arm64.dmg.blockmap",
+      "size": 111407,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-mac-x64.dmg",
+      "size": 112741988,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-mac-x64.dmg.blockmap",
+      "size": 119282,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-win-x64-installer.exe",
+      "size": 80632495,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-win-x64-installer.exe.blockmap",
+      "size": 85601,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-win-x64-loose.tar.gz",
+      "size": 110014167,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.2-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-win-x64-portable.tar.gz",
+      "size": 110088633,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.2-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-win-x64.appx",
+      "size": 128293633,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.80.2-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-win-x64.tar.gz",
+      "size": 110087950,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.80.2-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.80.2/electerm-1.80.2-win7.tar.gz",
+      "size": 100762326,
+      "type": "application/gzip"
+    }
+  ]
+}

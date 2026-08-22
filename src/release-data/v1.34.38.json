@@ -1,0 +1,73 @@
+{
+  "version": "v1.34.38",
+  "date": "2023-10-28",
+  "body": "### New features\n\n- Directly close session if user types exit in terminal #3052 #3051\n\n### Bug fixes/UI\n\n- fix #3049 Fix window postion remember function\n- UI: smaller tree child left padding #3052 #3051\n- fix #3056 Fix theme list pageSize control, fix ssh form port number\n- fix #3032 Make quick commands/batch input more visible",
+  "assets": [
+    {
+      "name": "electerm-1.34.38-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-linux-amd64.deb",
+      "size": 72933120,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.38-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-linux-amd64.snap",
+      "size": 88887296,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.38-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-linux-x64.tar.gz",
+      "size": 99171376,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.38-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-linux-x86_64.rpm",
+      "size": 72839140,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.34.38-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-mac-arm64.dmg",
+      "size": 95442541,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.38-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-mac-x64.dmg",
+      "size": 100664150,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.38-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-win-x64-installer.exe",
+      "size": 76130295,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.38-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-win-x64-loose.tar.gz",
+      "size": 103825013,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.38-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-win-x64-portable.tar.gz",
+      "size": 104047494,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.34.38-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-win-x64.appx",
+      "size": 111641616,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.34.38-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.34.38/electerm-1.34.38-win-x64.tar.gz",
+      "size": 104047501,
+      "type": "application/gzip"
+    }
+  ]
+}

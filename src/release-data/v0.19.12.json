@@ -1,0 +1,37 @@
+{
+  "version": "v0.19.12",
+  "date": "2018-05-03",
+  "body": "- fix #419 fix sftp transport UI (#420)\n- fix #385 add terminal split shortcut(Ctrol + /) (#418)\n- fix #415 replace moment with dayjs (#416)\n- fix #413 fix sftp context menu UI (#414)",
+  "assets": [
+    {
+      "name": "electerm-0.19.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.12/electerm-0.19.12-linux-amd64.deb",
+      "size": 34830700,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.12/electerm-0.19.12-linux-x86_64.rpm",
+      "size": 34771061,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.19.12-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.12/electerm-0.19.12-mac.dmg",
+      "size": 50516611,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.12-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.12/electerm-0.19.12-win.tar.gz",
+      "size": 50666588,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.19.12.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.12/electerm-0.19.12.tar.gz",
+      "size": 47410862,
+      "type": "application/gzip"
+    }
+  ]
+}

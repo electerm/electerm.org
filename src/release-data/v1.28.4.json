@@ -1,0 +1,67 @@
+{
+  "version": "v1.28.4",
+  "date": "2023-08-17",
+  "body": "### Quick bug fix release\n\n- fix #2931 Fix open link cause error issue\n",
+  "assets": [
+    {
+      "name": "electerm-1.28.4-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-linux-amd64.deb",
+      "size": 70763872,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.4-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-linux-amd64.snap",
+      "size": 87269376,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.4-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-linux-x64.tar.gz",
+      "size": 97207228,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.28.4-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-linux-x86_64.rpm",
+      "size": 70672572,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.28.4-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-mac-arm64.dmg",
+      "size": 95017068,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.4-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-mac-x64.dmg",
+      "size": 100918049,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.4-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-win-x64-installer.exe",
+      "size": 75577828,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.4-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-win-x64-loose.tar.gz",
+      "size": 103302859,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.28.4-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-win-x64.appx",
+      "size": 111582814,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.28.4-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.28.4/electerm-1.28.4-win-x64.tar.gz",
+      "size": 103944139,
+      "type": "application/gzip"
+    }
+  ]
+}

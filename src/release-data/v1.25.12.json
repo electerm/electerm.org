@@ -1,0 +1,67 @@
+{
+  "version": "v1.25.12",
+  "date": "2023-01-18",
+  "body": "### New features\n\n- Support screen reader for terminal(support NVDA on Windows and VoiceOver on macOS, need turn on in setting page)",
+  "assets": [
+    {
+      "name": "electerm-1.25.12-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-linux-amd64.deb",
+      "size": 63652492,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.12-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-linux-amd64.snap",
+      "size": 78536704,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.12-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-linux-x64.tar.gz",
+      "size": 86941354,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.12-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-linux-x86_64.rpm",
+      "size": 63741180,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.25.12-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-mac-arm64.dmg",
+      "size": 91390749,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.12-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-mac-x64.dmg",
+      "size": 91234386,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.12-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-win-x64-installer.exe",
+      "size": 68427425,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.12-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-win-x64-loose.tar.gz",
+      "size": 93469942,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.12-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-win-x64.appx",
+      "size": 100316882,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.12-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.12/electerm-1.25.12-win-x64.tar.gz",
+      "size": 93808995,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": "v1.25.40",
+  "date": "2023-04-04",
+  "body": "### Bug fixes\n\n- fix ctrl+tab not working for errored tab\n- fix can not expand category issue in bookmark management\n\n### New features\n\n- Support ctrl+shift+tab to switch to prev tab",
+  "assets": [
+    {
+      "name": "electerm-1.25.40-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-linux-amd64.deb",
+      "size": 63562104,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.40-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-linux-amd64.snap",
+      "size": 78528512,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.40-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-linux-x64.tar.gz",
+      "size": 86942625,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.40-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-linux-x86_64.rpm",
+      "size": 63725552,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.25.40-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-mac-arm64.dmg",
+      "size": 91391811,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.40-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-mac-x64.dmg",
+      "size": 91237038,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.40-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-win-x64-installer.exe",
+      "size": 68427175,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.40-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-win-x64-loose.tar.gz",
+      "size": 93469903,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.25.40-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-win-x64.appx",
+      "size": 100315485,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.25.40-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.25.40/electerm-1.25.40-win-x64.tar.gz",
+      "size": 93808390,
+      "type": "application/gzip"
+    }
+  ]
+}

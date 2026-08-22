@@ -1,0 +1,67 @@
+{
+  "version": "v1.22.30",
+  "date": "2022-08-03",
+  "body": "### Bug fixes\n\n- Fix check upgrade info at start\n\n### New features\n\n- fix #2598 Added rsa-sha-xxx key sig support from mscdex/ssh2#1200\n\n### Other updates\n\n- Add auto check upgrade test",
+  "assets": [
+    {
+      "name": "electerm-1.22.30-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-linux-amd64.deb",
+      "size": 63017364,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.30-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-linux-amd64.snap",
+      "size": 77991936,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.30-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-linux-x64.tar.gz",
+      "size": 86342970,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.30-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-linux-x86_64.rpm",
+      "size": 63236648,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.22.30-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-mac-arm64.dmg",
+      "size": 91055894,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.30-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-mac-x64.dmg",
+      "size": 90299843,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.30-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-win-x64-installer.exe",
+      "size": 68074875,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.30-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-win-x64-loose.tar.gz",
+      "size": 92454933,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.30-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-win-x64.appx",
+      "size": 99703389,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.30-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.30/electerm-1.22.30-win-x64.tar.gz",
+      "size": 93218110,
+      "type": "application/gzip"
+    }
+  ]
+}

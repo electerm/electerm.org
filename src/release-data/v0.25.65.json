@@ -1,0 +1,37 @@
+{
+  "version": "v0.25.65",
+  "date": "2018-12-21",
+  "body": "- fix #1026 Fix window control icons behavior (#1027)\n- fix #999 Fix ssh-config item support (#1025)\n- fix #1023 Move notification to bottom right (#1024)\n- fix #1019 Support language match (#1021)",
+  "assets": [
+    {
+      "name": "electerm-0.25.65-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.65/electerm-0.25.65-linux-amd64.deb",
+      "size": 38186196,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.65-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.65/electerm-0.25.65-linux-x64.tar.gz",
+      "size": 52187095,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.25.65-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.65/electerm-0.25.65-linux-x86_64.rpm",
+      "size": 38219078,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.25.65-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.65/electerm-0.25.65-mac.dmg",
+      "size": 53832430,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.25.65-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.25.65/electerm-0.25.65-win-x64.tar.gz",
+      "size": 54013467,
+      "type": "application/gzip"
+    }
+  ]
+}

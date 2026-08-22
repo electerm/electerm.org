@@ -1,0 +1,37 @@
+{
+  "version": "v0.21.0",
+  "date": "2018-05-23",
+  "body": "- fix #427 add basic terminal theme test (#454)\n- fix #442 add theme edit icon (#453)\n- fix #449 fix missiing translation (#452)  \n- fix #448 test mac/linux in different sftp account (#451)",
+  "assets": [
+    {
+      "name": "electerm-0.21.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.0/electerm-0.21.0-linux-amd64.deb",
+      "size": 34787654,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.21.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.0/electerm-0.21.0-linux-x86_64.rpm",
+      "size": 34745513,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.21.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.0/electerm-0.21.0-mac.dmg",
+      "size": 50479597,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.21.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.0/electerm-0.21.0-win.tar.gz",
+      "size": 50633633,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.21.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.21.0/electerm-0.21.0.tar.gz",
+      "size": 47374840,
+      "type": "application/gzip"
+    }
+  ]
+}

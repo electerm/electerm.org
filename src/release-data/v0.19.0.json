@@ -1,0 +1,37 @@
+{
+  "version": "v0.19.0",
+  "date": "2018-04-10",
+  "body": "- fix #377 add terminal split basic test (#395)\n- fix #392 fix setting open button function (#394) \n- fix #364 terminal split function (#393)",
+  "assets": [
+    {
+      "name": "electerm-0.19.0-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.0/electerm-0.19.0-linux-amd64.deb",
+      "size": 34950784,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.0-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.0/electerm-0.19.0-linux-x86_64.rpm",
+      "size": 34910957,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-0.19.0-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.0/electerm-0.19.0-mac.dmg",
+      "size": 50985854,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-0.19.0-win.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.0/electerm-0.19.0-win.tar.gz",
+      "size": 51115272,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-0.19.0.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v0.19.0/electerm-0.19.0.tar.gz",
+      "size": 47860035,
+      "type": "application/gzip"
+    }
+  ]
+}

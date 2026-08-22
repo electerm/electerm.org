@@ -1,7 +1,7 @@
 // Shared clipboard helpers (used by about + sponsor pages).
 
 export function fallbackCopy (text) {
-  var ta = document.createElement('textarea')
+  const ta = document.createElement('textarea')
   ta.value = text
   ta.style.position = 'fixed'
   ta.style.opacity = '0'

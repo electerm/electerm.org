@@ -1,0 +1,67 @@
+{
+  "version": "v1.21.88",
+  "date": "2022-06-13",
+  "body": "### Bug fixes\n\n- Fix some file operation not working in local file manager\n- Fix reload function not working right when in sftp pane\n\n## Improve\n\n- Improve app start time\n- Add more change log link to upgrade note\n- Redesign edit with system editor function\n\n### Other updates\n\n- Add google analytics to track use statics, check provicy notice link in wiki for detail\n- Refractor some modules\n",
+  "assets": [
+    {
+      "name": "electerm-1.21.88-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-linux-amd64.deb",
+      "size": 62867978,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.88-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-linux-amd64.snap",
+      "size": 77529088,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.88-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-linux-x64.tar.gz",
+      "size": 85844022,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.88-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-linux-x86_64.rpm",
+      "size": 63129536,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.21.88-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-mac-arm64.dmg",
+      "size": 90444416,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.88-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-mac-x64.dmg",
+      "size": 89655725,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.88-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-win-x64-installer.exe",
+      "size": 67847638,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.88-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-win-x64-loose.tar.gz",
+      "size": 91975633,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.21.88-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-win-x64.appx",
+      "size": 99142847,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.21.88-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.21.88/electerm-1.21.88-win-x64.tar.gz",
+      "size": 92722377,
+      "type": "application/gzip"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": "v1.30.9",
+  "date": "2023-09-06",
+  "body": "### New features\n\n- fix #2927 Add a setting that would refresh local/remote file list when switch from terminal (#2950)\n\n### Bug fixes/UI\n\n- fix #2947 Fix close/reload session button not working issue\n\n### Other updates\n\n- Use vite to build resource (#2949)\n- fix #2946 Disable default refresh keyboard shortcut",
+  "assets": [
+    {
+      "name": "electerm-1.30.9-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-linux-amd64.deb",
+      "size": 70170478,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.30.9-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-linux-amd64.snap",
+      "size": 85716992,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.30.9-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-linux-x64.tar.gz",
+      "size": 95597870,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.30.9-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-linux-x86_64.rpm",
+      "size": 70171572,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.30.9-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-mac-arm64.dmg",
+      "size": 93296312,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.30.9-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-mac-x64.dmg",
+      "size": 99165481,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.30.9-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-win-x64-installer.exe",
+      "size": 74767861,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.30.9-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-win-x64-loose.tar.gz",
+      "size": 101710849,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.30.9-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-win-x64.appx",
+      "size": 109743375,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.30.9-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.30.9/electerm-1.30.9-win-x64.tar.gz",
+      "size": 102338897,
+      "type": "application/gzip"
+    }
+  ]
+}

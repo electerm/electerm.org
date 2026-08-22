@@ -1,0 +1,61 @@
+{
+  "version": "v1.15.3",
+  "date": "2021-08-07",
+  "body": "New features:\n\n- fix #2185 Add keepalive interval setting\n- fix #2200 Add open bookmarks on app start setting (#2208)\n\nBug fixes:\n\n- fix #2204 Fix wrong focus when have multi split terminal\n- fix #2201 Remove path validate\n- Fix compress and download function",
+  "assets": [
+    {
+      "name": "electerm-1.15.3-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-linux-amd64.deb",
+      "size": 59543718,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.15.3-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-linux-amd64.snap",
+      "size": 73699328,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.15.3-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-linux-x64.tar.gz",
+      "size": 82147013,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.15.3-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-linux-x86_64.rpm",
+      "size": 60357192,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.15.3-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-mac-x64.dmg",
+      "size": 87530374,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.15.3-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-win-x64-installer.exe",
+      "size": 64262788,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.15.3-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-win-x64-loose.tar.gz",
+      "size": 87352233,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.15.3-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-win-x64.appx",
+      "size": 93962588,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.15.3-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.15.3/electerm-1.15.3-win-x64.tar.gz",
+      "size": 87952935,
+      "type": "application/gzip"
+    }
+  ]
+}

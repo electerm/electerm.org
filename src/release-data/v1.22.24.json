@@ -1,0 +1,67 @@
+{
+  "version": "v1.22.24",
+  "date": "2022-08-01",
+  "body": "### Bug fixes\n\n- fix #2588 Fix context menu position not right when click near bottom\n\n### New features\n\n- fix #2591 feat: Support file extension in file list UI\n- Fix some rsa key support issue\n",
+  "assets": [
+    {
+      "name": "electerm-1.22.24-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-linux-amd64.deb",
+      "size": 63032066,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.24-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-linux-amd64.snap",
+      "size": 77991936,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.24-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-linux-x64.tar.gz",
+      "size": 86342077,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.24-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-linux-x86_64.rpm",
+      "size": 63234492,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.22.24-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-mac-arm64.dmg",
+      "size": 91055540,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.24-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-mac-x64.dmg",
+      "size": 90298750,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.24-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-win-x64-installer.exe",
+      "size": 68075125,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.24-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-win-x64-loose.tar.gz",
+      "size": 92453179,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.22.24-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-win-x64.appx",
+      "size": 99702710,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.22.24-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.22.24/electerm-1.22.24-win-x64.tar.gz",
+      "size": 93217405,
+      "type": "application/gzip"
+    }
+  ]
+}

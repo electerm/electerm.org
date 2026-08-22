@@ -1,0 +1,253 @@
+{
+  "version": "v3.7.9",
+  "date": "2026-04-26",
+  "body": "### New features/UI/Updates\n\n- Rewrite ftp operation logic, now can do concurrent task\n- Use @electerm/ftp-srv to replace old ftp-srv lib\n- Improve AI generate bookmark error message\n\n### Bug fixes\n\n- Fix edit file with custom editor function\n- Fix mv/cp support in ftp session\n- Fix batch delete bookmark tree function\n- Fix quick connect ftp format issue\n- #4302 Fix file mode edit/read in scp mode\n- Fix AI generate bookmark in some situation can not create right data issue\n- #4301 Fix drag file in sftp same side not working issue\n\n-----\n\n### 新功能/界面/更新\n\n- 重写 FTP 操作逻辑，现在可以并发执行任务\n- 使用 @electerm/ftp-srv 替换旧的 ftp-srv 库\n- 改进 AI 生成书签错误消息\n\n### 问题修复\n\n- 修复使用指定文件编辑器编辑文件功能\n- 修复 FTP 会话中的 mv/cp 支持\n- 修复批量删除书签树功能\n- 修复快速连接 FTP 格式问题\n- #4302 修复 SCP 模式下文件模式编辑/读取问题\n- 修复某些情况下 AI 生成书签无法创建正确数据的问题\n- #4301 修复 SFTP 同侧拖拽文件不工作的问题\n\n-------\n\nDownload下载: [https://electerm.html5beta.com](https://electerm.html5beta.com)",
+  "assets": [
+    {
+      "name": "electerm-3.7.9-linux-aarch64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-aarch64-legacy.rpm",
+      "size": 61945604,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.7.9-linux-aarch64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-aarch64.rpm",
+      "size": 62078389,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.7.9-linux-amd64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-amd64-legacy.deb",
+      "size": 73896508,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-amd64.deb",
+      "size": 88150596,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-amd64.snap",
+      "size": 95760384,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-arm64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-arm64-legacy.AppImage",
+      "size": 94362245,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-arm64-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-arm64-legacy.deb",
+      "size": 69686540,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-arm64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-arm64-legacy.tar.gz",
+      "size": 89401749,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-linux-arm64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-arm64.AppImage",
+      "size": 94641145,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-arm64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-arm64.deb",
+      "size": 69865384,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-arm64.tar.gz",
+      "size": 89666683,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l-legacy.AppImage",
+      "size": 82569244,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l-legacy.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l-legacy.deb",
+      "size": 66025804,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l-legacy.rpm",
+      "size": 59643096,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l-legacy.tar.gz",
+      "size": 79469640,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l.AppImage",
+      "size": 82844035,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l.deb",
+      "size": 66204280,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l.rpm",
+      "size": 59762461,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.7.9-linux-armv7l.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-armv7l.tar.gz",
+      "size": 79734318,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-linux-x64-legacy.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-x64-legacy.tar.gz",
+      "size": 89043950,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-x64.tar.gz",
+      "size": 107495171,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-linux-x86_64-legacy.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-x86_64-legacy.AppImage",
+      "size": 93713196,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-x86_64-legacy.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-x86_64-legacy.rpm",
+      "size": 65857256,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.7.9-linux-x86_64.AppImage",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-x86_64.AppImage",
+      "size": 113384648,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-linux-x86_64.rpm",
+      "size": 78572589,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-3.7.9-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-mac-arm64.dmg",
+      "size": 108137364,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-mac-arm64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-mac-arm64.dmg.blockmap",
+      "size": 114775,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-mac-x64.dmg",
+      "size": 115044198,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-mac-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-mac-x64.dmg.blockmap",
+      "size": 120083,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-mac10-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-mac10-x64.dmg",
+      "size": 91833672,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-mac10-x64.dmg.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-mac10-x64.dmg.blockmap",
+      "size": 97069,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-win-arm64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-arm64-installer.exe",
+      "size": 99522654,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-win-arm64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-arm64-installer.exe.blockmap",
+      "size": 104929,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-win-arm64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-arm64.tar.gz",
+      "size": 134196287,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-x64-installer.exe",
+      "size": 98751711,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-win-x64-installer.exe.blockmap",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-x64-installer.exe.blockmap",
+      "size": 105046,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-x64-loose.tar.gz",
+      "size": 136245792,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-x64-portable.tar.gz",
+      "size": 136281669,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-x64.appx",
+      "size": 159017998,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-3.7.9-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win-x64.tar.gz",
+      "size": 136281389,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-3.7.9-win7.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v3.7.9/electerm-3.7.9-win7.tar.gz",
+      "size": 97056387,
+      "type": "application/gzip"
+    }
+  ]
+}

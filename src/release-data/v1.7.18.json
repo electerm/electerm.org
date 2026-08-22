@@ -1,0 +1,43 @@
+{
+  "version": "v1.7.18",
+  "date": "2020-11-16",
+  "body": "- ui: Fix close split icon",
+  "assets": [
+    {
+      "name": "electerm-1.7.18-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.18/electerm-1.7.18-linux-amd64.deb",
+      "size": 55260400,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.7.18-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.18/electerm-1.7.18-linux-amd64.snap",
+      "size": 67649536,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.7.18-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.18/electerm-1.7.18-linux-x64.tar.gz",
+      "size": 76333905,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.7.18-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.18/electerm-1.7.18-linux-x86_64.rpm",
+      "size": 55600212,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.7.18-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.18/electerm-1.7.18-mac.dmg",
+      "size": 79548254,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.7.18-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.7.18/electerm-1.7.18-win-x64.tar.gz",
+      "size": 74492712,
+      "type": "application/gzip"
+    }
+  ]
+}

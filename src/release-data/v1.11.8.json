@@ -1,0 +1,49 @@
+{
+  "version": "v1.11.8",
+  "date": "2021-01-23",
+  "body": "- fix: fix worker websocket memory leak\n- feat: Instantly switch terminal encoding (#2043) by @mmagi ",
+  "assets": [
+    {
+      "name": "electerm-1.11.8-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.8/electerm-1.11.8-linux-amd64.deb",
+      "size": 57306566,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.8-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.8/electerm-1.11.8-linux-amd64.snap",
+      "size": 70135808,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.8-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.8/electerm-1.11.8-linux-x64.tar.gz",
+      "size": 78535888,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.11.8-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.8/electerm-1.11.8-linux-x86_64.rpm",
+      "size": 58215372,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.11.8-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.8/electerm-1.11.8-mac-arm64.dmg",
+      "size": 86108626,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.8-mac.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.8/electerm-1.11.8-mac.dmg",
+      "size": 85197934,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.11.8-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.11.8/electerm-1.11.8-win-x64.tar.gz",
+      "size": 73330276,
+      "type": "application/gzip"
+    }
+  ]
+}

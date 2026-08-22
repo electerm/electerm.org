@@ -1,0 +1,73 @@
+{
+  "version": "v1.35.6",
+  "date": "2023-11-22",
+  "body": "### Quick bug fix release\n\n- #3107 Fix fullscreen button and shortcut(alt+f)\n- Fix split terminal shortcut(ctrl or meta+/)\n- Fix #3106 Change default new bookmark shortcut to ctrl/meta+n",
+  "assets": [
+    {
+      "name": "electerm-1.35.6-linux-amd64.deb",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-linux-amd64.deb",
+      "size": 73241272,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.35.6-linux-amd64.snap",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-linux-amd64.snap",
+      "size": 88932352,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.35.6-linux-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-linux-x64.tar.gz",
+      "size": 99240742,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.35.6-linux-x86_64.rpm",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-linux-x86_64.rpm",
+      "size": 72894380,
+      "type": "application/x-redhat-package-manager"
+    },
+    {
+      "name": "electerm-1.35.6-mac-arm64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-mac-arm64.dmg",
+      "size": 95495228,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.35.6-mac-x64.dmg",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-mac-x64.dmg",
+      "size": 100728976,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.35.6-win-x64-installer.exe",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-win-x64-installer.exe",
+      "size": 76679915,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.35.6-win-x64-loose.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-win-x64-loose.tar.gz",
+      "size": 103832062,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.35.6-win-x64-portable.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-win-x64-portable.tar.gz",
+      "size": 104057347,
+      "type": "application/gzip"
+    },
+    {
+      "name": "electerm-1.35.6-win-x64.appx",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-win-x64.appx",
+      "size": 111662515,
+      "type": "application/octet-stream"
+    },
+    {
+      "name": "electerm-1.35.6-win-x64.tar.gz",
+      "url": "https://github.com/electerm/electerm/releases/download/v1.35.6/electerm-1.35.6-win-x64.tar.gz",
+      "size": 104056866,
+      "type": "application/gzip"
+    }
+  ]
+}
