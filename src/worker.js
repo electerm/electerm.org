@@ -6,7 +6,14 @@ const jsonHeaders = { 'content-type': 'application/json; charset=utf-8' }
 
 export default {
   async fetch (request, env) {
-    const { pathname } = new URL(request.url)
+    const url = new URL(request.url)
+    const { pathname } = url
+
+    // Legacy domain -> electerm.org, keeping path and query
+    if (url.hostname === 'electerm.html5beta.com') {
+      url.hostname = 'electerm.org'
+      return Response.redirect(url.toString(), 301)
+    }
 
     // Country lookup for locale/cloud-ads logic (was api/country.js on Vercel).
     // cf-ipcountry is set by Cloudflare for every request.
