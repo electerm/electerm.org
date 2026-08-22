@@ -31,12 +31,13 @@ jobs:
     if: needs.check-skip-ci.outputs.should_skip != 'true'
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-          
+          cache: 'npm'
+
       - name: Install dependencies
         run: npm i
 
@@ -44,12 +45,10 @@ jobs:
         run: npm run b
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
-      - name: Deploy to Vercel
-        run: |
-          npx vercel --prod --token "${{ secrets.VERCEL_TOKEN }}" --yes
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
