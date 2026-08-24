@@ -1,0 +1,10 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  # Allow other *.electerm.org subdomains (and any origin) to load static
+  # assets like /electerm.glb cross-origin. _headers can only use "*"
+  # (no per-Origin condition); the asset runtime applies this to every asset
+  # response. This is what makes https://cloud.electerm.org load the GLB.
+  Access-Control-Allow-Origin: *

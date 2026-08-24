@@ -22,7 +22,7 @@
     "fix": "standard --fix",
     "lint": "standard",
     "pub": "npm run build && vercel --prod",
-    "cp": "cp -r src/static/* public/ && cp -r data public/",
+    "cp": "cp -r src/static/. public/ && cp -r data public/",
     "rm": "rm -rf public/ && mkdir public",
     "s": "node bin/server.mjs",
     "cut": "./bin/qr-code.cut.js"
