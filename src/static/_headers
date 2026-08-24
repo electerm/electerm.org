@@ -1,9 +1,0 @@
-/*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  # Let other *.electerm.org subdomains (and any origin) load static assets
-  # like /electerm.glb cross-origin. Cloudflare Workers Static Assets can't
-  # reflect a dynamic Origin from the worker, so "*" is required here.
-  Access-Control-Allow-Origin: *
