@@ -40,7 +40,7 @@ Besides the mainstream Windows / macOS / Linux / Android platforms, electerm als
 ## Sub-projects and Related Links
 
 - Homepage / Downloads: [https://electerm.org](https://electerm.org)
-- Theme marketplace: [https://theme.electerm.org](https://theme.electerm.org)
+- Theme live editor, live preview & sharing: [https://theme.electerm.org](https://theme.electerm.org)
 - Online demo: [https://demo.electerm.org](https://demo.electerm.org)
 - electerm online (free cloud app): [https://cloud.electerm.org](https://cloud.electerm.org)
 - electerm AI: [https://ai.electerm.org](https://ai.electerm.org)

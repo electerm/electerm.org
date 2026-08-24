@@ -40,7 +40,7 @@ electerm 是一款开源的终端 / SSH / SFTP / FTP / Telnet / 串口 / RDP / V
 ## 子项目与相关链接
 
 - 官网 / 下载：[https://electerm.org](https://electerm.org)
-- 主题市场：[https://theme.electerm.org](https://theme.electerm.org)
+- 主题在线编辑、实时预览与分享：[https://theme.electerm.org](https://theme.electerm.org)
 - 在线演示：[https://demo.electerm.org](https://demo.electerm.org)
 - electerm 在线版（云端免费）：[https://cloud.electerm.org](https://cloud.electerm.org)
 - electerm AI：[https://ai.electerm.org](https://ai.electerm.org)
