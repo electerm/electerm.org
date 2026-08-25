@@ -29,6 +29,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: check-skip-ci
     if: needs.check-skip-ci.outputs.should_skip != 'true'
+    # Required so the sync script can push the updated release data back.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -41,36 +44,14 @@ jobs:
       - name: Install dependencies
         run: npm i
 
-      - name: Fetch base release data (on electerm-release dispatch)
-        if: github.event_name == 'repository_dispatch'
-        run: npm run down
+      # Sync release data only when the latest electerm tag is missing from
+      # src/release-data / src/release-data-android (event-agnostic: runs on
+      # both push and repository_dispatch). Fetches, commits and pushes if
+      # needed; otherwise is a cheap no-op.
+      - name: Sync latest release data
+        run: bash bin/sync-release-data.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Fetch latest release data (on electerm-release dispatch)
-        if: github.event_name == 'repository_dispatch'
-        run: node bin/fetch-release-json.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Fetch android release data (on electerm-release dispatch)
-        if: github.event_name == 'repository_dispatch'
-        run: node bin/fetch-android.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Commit latest release data (on electerm-release dispatch)
-        if: github.event_name == 'repository_dispatch'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/release-data src/release-data-android
-          if git diff --cached --quiet; then
-            echo "No new release data to commit"
-          else
-            git commit -m "chore: add latest release data [skip ci]"
-            git push
-          fi
 
       - name: Build site
         run: npm run b

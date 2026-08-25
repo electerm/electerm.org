@@ -103,14 +103,25 @@ async function ensureDesktop (version) {
   }
 }
 
-// Merge the android release for a single desktop version (if present).
+// Merge the android release for a single version.
+//
+// android releases may be STANDALONE — published on their own timeline with
+// no matching electerm desktop release yet (or ever). We therefore do NOT
+// block on a missing desktop file: we still capture the apk assets so the
+// data dir stays current, and the desktop release page will merge them
+// automatically once a matching desktop version appears.
 async function mergeOne (version) {
-  const ok = await ensureDesktop(version)
-  if (!ok) return false
   const androidFile = resolve(androidDir, version + '.json')
   if (fs.existsSync(androidFile)) {
     console.log(`ℹ️ Android data for ${version} already present; skip.`)
     return false
+  }
+  // Best-effort: ensure the desktop data file exists for a complete release
+  // page. A failure here (no matching desktop release) is fine — we keep the
+  // standalone android data regardless.
+  const ok = await ensureDesktop(version)
+  if (!ok) {
+    console.log(`ℹ️ No matching electerm desktop release for ${version} — writing android data standalone.`)
   }
   const android = await fetchAndroidByTag(version)
   if (!android) {
@@ -135,8 +146,9 @@ async function mergeAll () {
   console.log(`✅ Synced android data for ${count} version(s).`)
 }
 
-// Merge android for the most recent android releases that match an existing
-// desktop version. Cheap (1 list call) — used on every dispatch.
+// Merge android for the most recent android releases. Cheap (1 list call) —
+// reuses mergeOne so standalone android releases (no matching desktop) are
+// still captured.
 async function mergeRecent (limit = 30) {
   let releases
   try {
@@ -151,16 +163,8 @@ async function mergeRecent (limit = 30) {
   }
   let count = 0
   for (const r of releases) {
-    const tag = r.tag_name
-    const ok = await ensureDesktop(tag)
-    if (!ok) continue
-    const androidFile = resolve(androidDir, tag + '.json')
-    if (fs.existsSync(androidFile)) continue
-    const android = await fetchAndroidByTag(tag)
-    if (!android) continue
-    writeAndroidJson(android)
-    console.log(`✅ Wrote android data for ${tag} (${android.assets.length} apk)`)
-    count++
+    const ok = await mergeOne(r.tag_name)
+    if (ok) count++
   }
   console.log(`✅ Synced android data for ${count} recent version(s).`)
 }
