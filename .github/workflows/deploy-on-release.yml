@@ -41,6 +41,12 @@ jobs:
       - name: Install dependencies
         run: npm i
 
+      - name: Fetch base release data (on electerm-release dispatch)
+        if: github.event_name == 'repository_dispatch'
+        run: npm run down
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Fetch latest release data (on electerm-release dispatch)
         if: github.event_name == 'repository_dispatch'
         run: node bin/fetch-release-json.js
