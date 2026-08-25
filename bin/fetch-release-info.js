@@ -8,7 +8,8 @@ conf()
 const cwd = process.cwd()
 
 const token = process.env.GITHUB_TOKEN
-const outputPath = resolve(cwd, 'data/electerm-github-release.json')
+const outputDir = resolve(cwd, 'data')
+const outputPath = resolve(outputDir, 'electerm-github-release.json')
 
 if (!token) {
   console.error('Error: GITHUB_TOKEN environment variable is not set')
@@ -72,6 +73,7 @@ async function main () {
   const repoInfo = await fetchRepoInfo()
   const output = { ...releaseInfo, ...repoInfo, androidVersion: androidInfo.tagName }
   // Write to file
+  await fs.mkdir(outputDir, { recursive: true })
   await fs.writeFile(outputPath, JSON.stringify(output, null, 2))
   console.log(`Release info saved to ${outputPath}`)
 }
