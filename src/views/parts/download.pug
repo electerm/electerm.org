@@ -14,7 +14,7 @@ section.downloads#downloads
       button.download-tab-btn(data-tab='android') Android
         sup.beta-tag beta
       button.download-tab-btn(data-tab='ios') iOS
-        sup.beta-tag soon
+        sup.beta-tag new
 
     //- Windows
     .download-panel.active(data-tab='windows')
@@ -162,15 +162,16 @@ section.downloads#downloads
           each obj in assets.android.items
             +dlCard(obj)
 
-    //- iOS (under development)
+    //- iOS
     .download-panel(data-tab='ios')
       .download-grid
         .download-card
           .download-card-top
             .download-card-name iOS
-            .download-card-desc Currently under development.
+            .download-card-desc Available on the App Store.
           .download-card-links
-            a.download-card-link.primary(href='https://github.com/electerm/electerm-ios', target='_blank', rel='noreferrer') GitHub
+            a.download-card-link.primary(href='https://apps.apple.com/cn/app/electerm/id6792971552', target='_blank', rel='noreferrer') App Store
+            a.download-card-link(href='https://github.com/electerm/electerm-ios', target='_blank', rel='noreferrer') GitHub
 
     //- Android QR modal (desktop mode)
     .android-qr-modal#androidQrModal(aria-hidden='true', role='dialog')

@@ -4,7 +4,7 @@
   "flag": "🇰🇷",
   "match": "ko",
   "lang": {
-    "desc": "터미널/SSH/SFTP/FTP/Telnet/시리얼 포트/RDP/VNC/Spice 클라이언트(Linux, Mac, Windows, Android, HarmonyOS 지원)",
+    "desc": "터미널/SSH/SFTP/FTP/Telnet/시리얼 포트/RDP/VNC/Spice 클라이언트(Linux, Mac, Windows, Android, HarmonyOS, iOS 지원)",
     "keywords": "electerm,터미널,SSH,SFTP,FTP,Telnet,시리얼 포트,RDP,VNC,Spice,파일 관리자,오픈소스,무료 터미널,SSH 클라이언트,SFTP 클라이언트,원격 데스크톱,Linux,Mac,Windows,크로스 플랫폼",
     "siteTitle": "electerm - 무료 오픈소스 터미널/SSH/SFTP/Telnet/시리얼포트/VNC/RDP/Spice 클라이언트",
     "headerHome": "홈",
@@ -18,7 +18,7 @@
     "headerLanguages": "언어",
     "heroTryDemo": "데모 체험",
     "heroViewOnGithub": "GitHub에서 보기",
-    "heroSupports": "주요 Windows/macOS/Linux/Android/HarmonyOS 외에도 electerm은 Ubuntu 18, Windows 7, macOS 10+와 UOS, Kylin, LoongArch(old-world 및 new-world 모두)와 같은 특수 중국 Linux 배포판 등 이전 시스템도 지원합니다.",
+    "heroSupports": "주요 Windows/macOS/Linux/Android/HarmonyOS/iOS 외에도 electerm은 Ubuntu 18, Windows 7, macOS 10+와 UOS, Kylin, LoongArch(old-world 및 new-world 모두)와 같은 특수 중국 Linux 배포판 등 이전 시스템도 지원합니다.",
     "featuresTitle": "기능",
     "featuresSubtitle": "터미널 클라이언트에 필요한 모든 것",
     "featureAllInOneTitle": "오픈소스 올인원 클라이언트",
@@ -45,7 +45,7 @@
     "featureZmodemTrzszTitle": "Zmodem 및 Trzsz",
     "featureZmodemTrzszDesc": "Zmodem(rz/sz) 및 Trzsz(trz/tsz) 파일 전송 지원, tmux 호환.",
     "featureCrossPlatformTitle": "크로스 플랫폼",
-    "featureCrossPlatformDesc": "Windows 7+(x64/ARM64), macOS 10.15+(x64/arm64), Linux(x64/arm64/Loong64), Android, HarmonyOS, glibc 2.17+ 지원.",
+    "featureCrossPlatformDesc": "Windows 7+(x64/ARM64), macOS 10.15+(x64/arm64), Linux(x64/arm64/Loong64), Android, iOS, HarmonyOS, glibc 2.17+ 지원.",
     "downloadTitle": "다운로드",
     "downloadSubtitle": "무료 오픈 소스 — 플랫폼을 선택하세요",
     "downloadViewAll": "GitHub에서 모든 릴리스 보기 →",
@@ -202,7 +202,7 @@
     "homeAuthorResume": "이력서 보기 →",
     "homeAuthorContact": "저자에게 연락 →",
     "heroH1": "electerm — 무료 오픈소스 터미널/SSH/SFTP/Telnet/시리얼 포트/RDP/VNC/Spice/FTP 클라이언트",
-    "homePageTitle": "무료 오픈소스 터미널/ssh/sftp/telnet/시리얼 포트/RDP/VNC/Spice/ftp 클라이언트 (linux, mac, win, android, harmony)",
+    "homePageTitle": "무료 오픈소스 터미널/ssh/sftp/telnet/시리얼 포트/RDP/VNC/Spice/ftp 클라이언트 (linux, mac, win, android, harmony, ios)",
     "siteTitleShort": "무료 터미널/SSH/SFTP/Telnet/시리얼/RDP/VNC/Spice/FTP"
   }
 }

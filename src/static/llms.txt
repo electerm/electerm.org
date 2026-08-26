@@ -97,6 +97,7 @@ npm i -g electerm
 
 - [Windows Store](https://www.microsoft.com/store/apps/9NCN7272GTFF) - Microsoft Store listing
 - [Snap Store](https://snapcraft.io/electerm) - Snap package
+- [Apple App Store](https://apps.apple.com/cn/app/electerm/id6792971552) - iOS app
 
 ## Support the Project
 

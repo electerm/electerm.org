@@ -4,7 +4,7 @@
   "flag": "🇨🇳",
   "match": "zh",
   "lang": {
-    "desc": "终端/SSH/SFTP/FTP/Telnet/串口/RDP/VNC/Spice客户端(支持Linux、Mac、Win、Android、HarmonyOS)",
+    "desc": "终端/SSH/SFTP/FTP/Telnet/串口/RDP/VNC/Spice客户端(支持Linux、Mac、Win、Android、HarmonyOS、iOS)",
     "keywords": "electerm,终端,SSH,SFTP,FTP,Telnet,串口,串行端口,RDP,VNC,Spice,文件管理器,开源,免费终端客户端,SSH客户端,SFTP客户端,远程桌面,Linux,Mac,Windows,跨平台",
     "siteTitle": "electerm - 免费开源终端/SSH/SFTP/Telnet/串口/VNC/RDP/Spice客户端",
     "headerHome": "首页",
@@ -18,7 +18,7 @@
     "headerLanguages": "语言",
     "heroTryDemo": "在线演示",
     "heroViewOnGithub": "在 GitHub 上查看",
-    "heroSupports": "除主流的 Windows/macOS/Linux/Android/HarmonyOS 外，electerm 还支持较旧的系统 —— Ubuntu 18、Windows 7、macOS 10+，以及统信 UOS、银河麒麟等国产 Linux 发行版和龙芯 LoongArch（新旧世界均支持）。",
+    "heroSupports": "除主流的 Windows/macOS/Linux/Android/HarmonyOS/iOS 外，electerm 还支持较旧的系统 —— Ubuntu 18、Windows 7、macOS 10+，以及统信 UOS、银河麒麟等国产 Linux 发行版和龙芯 LoongArch（新旧世界均支持）。",
     "featuresTitle": "功能特性",
     "featuresSubtitle": "终端客户端所需的一切",
     "featureAllInOneTitle": "开源多合一客户端",
@@ -45,7 +45,7 @@
     "featureZmodemTrzszTitle": "Zmodem 与 Trzsz",
     "featureZmodemTrzszDesc": "支持 Zmodem (rz/sz) 和 Trzsz (trz/tsz) 文件传输，兼容 tmux。",
     "featureCrossPlatformTitle": "跨平台",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)、macOS 10.15+ (x64/arm64)、Linux (x64/arm64/Loong64)、Android，支持 glibc 2.17+。",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)、macOS 10.15+ (x64/arm64)、Linux (x64/arm64/Loong64)、Android、iOS，支持 glibc 2.17+。",
     "downloadTitle": "下载",
     "downloadSubtitle": "免费开源 — 选择您的平台",
     "downloadViewAll": "在 GitHub 上查看所有版本 →",
@@ -204,7 +204,7 @@
     "homeAuthorResume": "查看简历 →",
     "homeAuthorContact": "联系作者 →",
     "heroH1": "electerm — 免费开源终端/SSH/SFTP/Telnet/串口/RDP/VNC/Spice/FTP客户端",
-    "homePageTitle": "免费开源终端/ssh/sftp/telnet/串口/RDP/VNC/Spice/ftp客户端 (linux, mac, win, android, harmony)",
+    "homePageTitle": "免费开源终端/ssh/sftp/telnet/串口/RDP/VNC/Spice/ftp客户端 (linux, mac, win, android, harmony, ios)",
     "siteTitleShort": "免费终端/SSH/SFTP/Telnet/串口/RDP/VNC/Spice/FTP客户端"
   }
 }

@@ -346,7 +346,7 @@ function createReleaseData () {
 }
 
 export default {
-  desc: 'Free and open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client (linux, mac, win, android, harmony)',
+  desc: 'Free and open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client (linux, mac, win, android, harmony, ios)',
   siteName: 'electerm',
   host: process.env.HOST,
   // Ads network switch. 'ethical' (EthicalAds) is the default network;
@@ -395,6 +395,10 @@ export default {
     {
       url: 'https://snapcraft.io/electerm',
       title: 'Snap Store'
+    },
+    {
+      url: 'https://apps.apple.com/cn/app/electerm/id6792971552',
+      title: 'Apple App Store'
     },
     {
       url: 'electerm@atomgit',
@@ -470,7 +474,9 @@ export default {
         { title: 'AI Dream', url: 'https://ai-dream.html5beta.com', external: true },
         { title: 'electerm-android', url: 'https://github.com/electerm/electerm-android', external: true },
         { title: 'electerm-harmony (HarmonyOS)', url: 'https://github.com/electerm/electerm-harmony', external: true },
-        { title: 'electerm on AppGallery (HarmonyOS)', url: 'https://appgallery.huawei.com/app/detail?id=org.electerm.electerm', external: true }
+        { title: 'electerm on AppGallery (HarmonyOS)', url: 'https://appgallery.huawei.com/app/detail?id=org.electerm.electerm', external: true },
+        { title: 'electerm-ios (iOS)', url: 'https://github.com/electerm/electerm-ios', external: true },
+        { title: 'electerm on Apple App Store (iOS)', url: 'https://apps.apple.com/cn/app/electerm/id6792971552', external: true }
       ]
     },
     {
@@ -480,7 +486,8 @@ export default {
         { title: 'Atlas Cloud', url: 'https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=electerm', external: true },
         { title: 'Video Guides', url: '/videos/' },
         { title: 'Windows Store', url: 'https://www.microsoft.com/store/apps/9NCN7272GTFF', external: true },
-        { title: 'Snap Store', url: 'https://snapcraft.io/electerm', external: true }
+        { title: 'Snap Store', url: 'https://snapcraft.io/electerm', external: true },
+        { title: 'Apple App Store', url: 'https://apps.apple.com/cn/app/electerm/id6792971552', external: true }
       ]
     }
   ]

@@ -4,7 +4,7 @@
   "flag": "🇫🇷",
   "match": "fr",
   "lang": {
-    "desc": "Client Terminal/SSH/SFTP/FTP/Telnet/port série/RDP/VNC/Spice (Linux, Mac, Windows, Android, HarmonyOS)",
+    "desc": "Client Terminal/SSH/SFTP/FTP/Telnet/port série/RDP/VNC/Spice (Linux, Mac, Windows, Android, HarmonyOS, iOS)",
     "keywords": "electerm,terminal,SSH,SFTP,FTP,Telnet,port série,RDP,VNC,Spice,gestionnaire de fichiers,open source,client terminal gratuit,client SSH,client SFTP,bureau à distance,Linux,Mac,Windows,multiplateforme",
     "siteTitle": "electerm - Client terminal/SSH/SFTP/Telnet/VNC/RDP/Spice gratuit et open source",
     "headerHome": "Accueil",
@@ -18,7 +18,7 @@
     "headerLanguages": "Langues",
     "heroTryDemo": "Essayer la démo",
     "heroViewOnGithub": "Voir sur GitHub",
-    "heroSupports": "Outre les Windows/macOS/Linux/Android/HarmonyOS grand public, electerm prend également en charge les systèmes plus anciens — Ubuntu 18, Windows 7, macOS 10+, ainsi que des distributions Linux chinoises spéciales telles que UOS, Kylin et LoongArch (à la fois old-world et new-world).",
+    "heroSupports": "Outre les Windows/macOS/Linux/Android/HarmonyOS/iOS grand public, electerm prend également en charge les systèmes plus anciens — Ubuntu 18, Windows 7, macOS 10+, ainsi que des distributions Linux chinoises spéciales telles que UOS, Kylin et LoongArch (à la fois old-world et new-world).",
     "featuresTitle": "Fonctionnalités",
     "featuresSubtitle": "Tout ce dont vous avez besoin dans un client terminal",
     "featureAllInOneTitle": "Client tout-en-un open-source",
@@ -45,7 +45,7 @@
     "featureZmodemTrzszTitle": "Zmodem et Trzsz",
     "featureZmodemTrzszDesc": "Prend en charge le transfert de fichiers Zmodem (rz/sz) et Trzsz (trz/tsz), compatible avec tmux.",
     "featureCrossPlatformTitle": "Multiplateforme",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), Android, HarmonyOS, y compris glibc 2.17+.",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64), macOS 10.15+ (x64/arm64), Linux (x64/arm64/Loong64), Android, iOS, HarmonyOS, y compris glibc 2.17+.",
     "downloadTitle": "Télécharger",
     "downloadSubtitle": "Gratuit et open source — choisissez votre plateforme",
     "downloadViewAll": "Voir toutes les versions sur GitHub →",
@@ -202,7 +202,7 @@
     "homeAuthorResume": "Voir le CV →",
     "homeAuthorContact": "Contacter l'auteur →",
     "heroH1": "electerm — Client terminal/SSH/SFTP/Telnet/Port série/RDP/VNC/Spice/FTP gratuit et open-source",
-    "homePageTitle": "Client terminal/ssh/sftp/telnet/port série/RDP/VNC/Spice/ftp gratuit et open-source (linux, mac, win, android, harmony)",
+    "homePageTitle": "Client terminal/ssh/sftp/telnet/port série/RDP/VNC/Spice/ftp gratuit et open-source (linux, mac, win, android, harmony, ios)",
     "siteTitleShort": "Terminal/SSH/SFTP/Telnet/Série/RDP/VNC/Spice/FTP gratuit"
   }
 }

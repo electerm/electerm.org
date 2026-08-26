@@ -4,7 +4,7 @@
   "flag": "🇹🇼",
   "match": "zh",
   "lang": {
-    "desc": "終端/SSH/SFTP/FTP/Telnet/串列埠/RDP/VNC/Spice客戶端(支援Linux、Mac、Windows、Android、HarmonyOS)",
+    "desc": "終端/SSH/SFTP/FTP/Telnet/串列埠/RDP/VNC/Spice客戶端(支援Linux、Mac、Windows、Android、HarmonyOS、iOS)",
     "keywords": "electerm,終端,SSH,SFTP,FTP,Telnet,串列埠,序列埠,RDP,VNC,Spice,檔案管理器,開源,免費終端客戶端,SSH客戶端,SFTP客戶端,遠端桌面,Linux,Mac,Windows,跨平台",
     "siteTitle": "electerm - 免費開源終端/SSH/SFTP/Telnet/序列埠/VNC/RDP/Spice客戶端",
     "headerHome": "首頁",
@@ -18,7 +18,7 @@
     "headerLanguages": "語言",
     "heroTryDemo": "線上演示",
     "heroViewOnGithub": "在 GitHub 上查看",
-    "heroSupports": "除主流的 Windows/macOS/Linux/Android/HarmonyOS 外，electerm 還支援較舊的系統 —— Ubuntu 18、Windows 7、macOS 10+，以及統信 UOS、銀河麒麟等國產 Linux 發行版和龍芯 LoongArch（新舊世界均支援）。",
+    "heroSupports": "除主流的 Windows/macOS/Linux/Android/HarmonyOS/iOS 外，electerm 還支援較舊的系統 —— Ubuntu 18、Windows 7、macOS 10+，以及統信 UOS、銀河麒麟等國產 Linux 發行版和龍芯 LoongArch（新舊世界均支援）。",
     "featuresTitle": "功能特色",
     "featuresSubtitle": "終端客戶端所需的一切",
     "featureAllInOneTitle": "開源多合一客戶端",
@@ -45,7 +45,7 @@
     "featureZmodemTrzszTitle": "Zmodem 與 Trzsz",
     "featureZmodemTrzszDesc": "支援 Zmodem (rz/sz) 和 Trzsz (trz/tsz) 檔案傳輸，相容 tmux。",
     "featureCrossPlatformTitle": "跨平台",
-    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)、macOS 10.15+ (x64/arm64)、Linux (x64/arm64/Loong64)、Android，支援 glibc 2.17+。",
+    "featureCrossPlatformDesc": "Windows 7+ (x64/ARM64)、macOS 10.15+ (x64/arm64)、Linux (x64/arm64/Loong64)、Android、iOS，支援 glibc 2.17+。",
     "downloadTitle": "下載",
     "downloadSubtitle": "免費開源 — 選擇您的平台",
     "downloadViewAll": "在 GitHub 上查看所有版本 →",
@@ -202,7 +202,7 @@
     "homeAuthorResume": "查看履歷 →",
     "homeAuthorContact": "聯絡作者 →",
     "heroH1": "electerm — 免費開源終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice/FTP客戶端",
-    "homePageTitle": "免費開源終端/ssh/sftp/telnet/序列埠/RDP/VNC/Spice/ftp客戶端 (linux, mac, win, android, harmony)",
+    "homePageTitle": "免費開源終端/ssh/sftp/telnet/序列埠/RDP/VNC/Spice/ftp客戶端 (linux, mac, win, android, harmony, ios)",
     "siteTitleShort": "免費終端/SSH/SFTP/Telnet/序列埠/RDP/VNC/Spice/FTP客戶端"
   }
 }
