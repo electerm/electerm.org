@@ -14,14 +14,14 @@ electerm 官方网站的代码仓库，线上地址：[https://electerm.org](htt
 
 ## 关于 electerm
 
-electerm 是一款开源的终端 / SSH / SFTP / FTP / Telnet / 串口 / RDP / VNC / Spice 客户端，支持 Linux、macOS、Windows、Android 与 HarmonyOS 等平台。
+electerm 是一款开源的终端 / SSH / SFTP / FTP / Telnet / 串口 / RDP / VNC / Spice 客户端，支持 Linux、macOS、Windows、Android、HarmonyOS 与 iOS 等平台。
 
-除主流的 Windows / macOS / Linux / Android 外，electerm 还支持 HarmonyOS，以及较老的系统，如 Ubuntu 18、Windows 7、macOS 10+，以及 UOS、麒麟、龙架构（LoongArch，新旧世界）等国产 Linux 发行版。
+除主流的 Windows / macOS / Linux / Android 外，electerm 还支持 HarmonyOS、iOS，以及较老的系统，如 Ubuntu 18、Windows 7、macOS 10+，以及 UOS、麒麟、龙架构（LoongArch，新旧世界）等国产 Linux 发行版。
 
 ## 核心特性
 
 - 可作为终端 / 文件管理器，或 SSH / SFTP / FTP / Telnet / 串口 / RDP / VNC / Spice 客户端使用
-- 支持 Windows 7+（X64/ARM64）、HarmonyOS、Android、macOS 10.15+（X64/arm64）、Linux（X64/arm64/Loong64）等，甚至兼容 glibc 2.17+ 的老系统
+- 支持 Windows 7+（X64/ARM64）、HarmonyOS、Android、iOS、macOS 10.15+（X64/arm64）、Linux（X64/arm64/Loong64）等，甚至兼容 glibc 2.17+ 的老系统
 - 全局快捷键切换窗口显隐（类似 guake，默认 `ctrl + 2`）
 - 多平台支持（Linux / macOS / Windows）
 - 多语言支持（含中、英、日、韩、俄、西、法等十余种语言）
@@ -47,9 +47,11 @@ electerm 是一款开源的终端 / SSH / SFTP / FTP / Telnet / 串口 / RDP / V
 - electerm-web（浏览器端，含移动端）：[https://github.com/electerm/electerm-web](https://github.com/electerm/electerm-web)
 - electerm-android（安卓端）：[https://github.com/electerm/electerm-android](https://github.com/electerm/electerm-android)
 - electerm-harmony（鸿蒙端）：[https://github.com/electerm/electerm-harmony](https://github.com/electerm/electerm-harmony)
+- electerm-ios（iOS 端）：[https://github.com/electerm/electerm-ios](https://github.com/electerm/electerm-ios)
 - Docker 部署：[https://github.com/electerm/electerm-web-docker](https://github.com/electerm/electerm-web-docker)
 - 多语言包：[https://github.com/electerm/electerm-locales](https://github.com/electerm/electerm-locales)
 - 应用市场
+  - Apple App Store：[https://apps.apple.com/cn/app/electerm/id6792971552](https://apps.apple.com/cn/app/electerm/id6792971552)
   - 华为应用市场：[https://appgallery.huawei.com/app/detail?id=org.electerm.electerm](https://appgallery.huawei.com/app/detail?id=org.electerm.electerm)
   - Microsoft Store：[https://www.microsoft.com/store/apps/9NCN7272GTFF](https://www.microsoft.com/store/apps/9NCN7272GTFF)
   - Snap Store：[https://snapcraft.io/electerm](https://snapcraft.io/electerm)

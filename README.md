@@ -14,14 +14,14 @@ This repository builds and maintains the electerm homepage, providing product in
 
 ## About electerm
 
-electerm is an open-source terminal / SSH / SFTP / FTP / Telnet / serialport / RDP / VNC / Spice client, supporting Linux, macOS, Windows, Android, and HarmonyOS.
+electerm is an open-source terminal / SSH / SFTP / FTP / Telnet / serialport / RDP / VNC / Spice client, supporting Linux, macOS, Windows, Android, HarmonyOS, and iOS.
 
-Besides the mainstream Windows / macOS / Linux / Android platforms, electerm also supports HarmonyOS and older systems such as Ubuntu 18, Windows 7, macOS 10+, as well as domestic Linux distributions like UOS, Kylin, and LoongArch (both old-world and new-world).
+Besides the mainstream Windows / macOS / Linux / Android platforms, electerm also supports HarmonyOS, iOS, and older systems such as Ubuntu 18, Windows 7, macOS 10+, as well as domestic Linux distributions like UOS, Kylin, and LoongArch (both old-world and new-world).
 
 ## Key Features
 
 - Works as a terminal / file manager or an SSH / SFTP / FTP / Telnet / serialport / RDP / VNC / Spice client
-- Supports Windows 7+ (X64/ARM64), HarmonyOS, Android, macOS 10.15+ (X64/arm64), Linux (X64/arm64/Loong64), and even older systems with glibc 2.17+
+- Supports Windows 7+ (X64/ARM64), HarmonyOS, Android, iOS, macOS 10.15+ (X64/arm64), Linux (X64/arm64/Loong64), and even older systems with glibc 2.17+
 - Global hotkey to toggle window visibility (similar to guake, default `ctrl + 2`)
 - Multi-platform support (Linux / macOS / Windows)
 - Multi-language support (Chinese, English, Japanese, Korean, Russian, Spanish, French, and more)
@@ -47,9 +47,11 @@ Besides the mainstream Windows / macOS / Linux / Android platforms, electerm als
 - electerm-web (browser version, including mobile): [https://github.com/electerm/electerm-web](https://github.com/electerm/electerm-web)
 - electerm-android: [https://github.com/electerm/electerm-android](https://github.com/electerm/electerm-android)
 - electerm-harmony (HarmonyOS): [https://github.com/electerm/electerm-harmony](https://github.com/electerm/electerm-harmony)
+- electerm-ios (iOS): [https://github.com/electerm/electerm-ios](https://github.com/electerm/electerm-ios)
 - Docker deployment: [https://github.com/electerm/electerm-web-docker](https://github.com/electerm/electerm-web-docker)
 - Locales: [https://github.com/electerm/electerm-locales](https://github.com/electerm/electerm-locales)
 - App stores
+  - Apple App Store: [https://apps.apple.com/cn/app/electerm/id6792971552](https://apps.apple.com/cn/app/electerm/id6792971552)
   - Huawei AppGallery: [https://appgallery.huawei.com/app/detail?id=org.electerm.electerm](https://appgallery.huawei.com/app/detail?id=org.electerm.electerm)
   - Microsoft Store: [https://www.microsoft.com/store/apps/9NCN7272GTFF](https://www.microsoft.com/store/apps/9NCN7272GTFF)
   - Snap Store: [https://snapcraft.io/electerm](https://snapcraft.io/electerm)
