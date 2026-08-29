@@ -30,7 +30,7 @@ binding = "ASSETS"
 not_found_handling = "404-page"
 # Asset runtime serves files and applies _headers. The worker only runs for
 # non-asset routes (legacy redirect, /api/*). Must stay false — see note above.
-run_worker_first = false
+run_worker_first = true
 
 [observability]
 enabled = true
