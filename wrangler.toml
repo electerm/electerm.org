@@ -12,8 +12,9 @@
 #   - locale redirects come from src/static/_redirects
 #   - security + CORS headers come from src/static/_headers
 #   - unknown paths serve public/404.html with a 404 status (not_found_handling)
-# This worker (src/worker.js) only handles non-asset routes: the legacy-domain
-# redirect and /api/country.
+# This worker (src/worker.js) only handles non-asset routes: /api/country.
+# The legacy-domain redirect (electerm.html5beta.com -> electerm.org) is a
+# Cloudflare Page Rule configured at the edge, not in this worker.
 #
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
 
@@ -30,7 +31,7 @@ binding = "ASSETS"
 not_found_handling = "404-page"
 # Asset runtime serves files and applies _headers. The worker only runs for
 # non-asset routes (legacy redirect, /api/*). Must stay false — see note above.
-run_worker_first = true
+run_worker_first = false
 
 [observability]
 enabled = true

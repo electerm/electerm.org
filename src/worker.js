@@ -6,9 +6,11 @@
 // response — that is what lets https://cloud.electerm.org load /electerm.glb.
 //
 // This worker therefore only runs for NON-asset routes:
-//   - the legacy domain redirect (electerm.html5beta.com -> electerm.org)
 //   - /api/country (returns JSON; adds first-party CORS so other
 //     *.electerm.org subdomains can call it)
+//
+// NOTE: electerm.html5beta.com -> electerm.org is handled by a Cloudflare
+// Page Rule at the edge, before requests reach this worker.
 
 const jsonHeaders = { 'content-type': 'application/json; charset=utf-8' }
 
@@ -44,12 +46,6 @@ export default {
   async fetch (request, env) {
     const url = new URL(request.url)
     const { pathname } = url
-
-    // Legacy domain -> electerm.org, keeping path and query
-    if (url.hostname === 'electerm.html5beta.com') {
-      url.hostname = 'electerm.org'
-      return Response.redirect(url.toString(), 301)
-    }
 
     // CORS preflight for first-party subdomain requests to /api/*
     if (request.method === 'OPTIONS') {
