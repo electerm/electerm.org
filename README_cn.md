@@ -2,7 +2,7 @@
 
 <h1 class="aligncenter">
     <a href="https://electerm.org">
-        <img src="https://github.com/electerm/electerm-resource/raw/master/static/images/electerm.png", alt="electerm" />
+        <img src="https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/electerm.png", alt="electerm" />
     </a>
 </h1>
 
