@@ -1,0 +1,29 @@
+{
+  "version": "v5.3.26",
+  "assets": [
+    {
+      "name": "electerm-android-arm64-v8a-5.3.26.apk",
+      "url": "https://github.com/electerm/electerm-android/releases/download/v5.3.26/electerm-android-arm64-v8a-5.3.26.apk",
+      "size": 59733550,
+      "type": "application/vnd.android.package-archive"
+    },
+    {
+      "name": "electerm-android-armeabi-v7a-5.3.26.apk",
+      "url": "https://github.com/electerm/electerm-android/releases/download/v5.3.26/electerm-android-armeabi-v7a-5.3.26.apk",
+      "size": 55539468,
+      "type": "application/vnd.android.package-archive"
+    },
+    {
+      "name": "electerm-android-universal-5.3.26.apk",
+      "url": "https://github.com/electerm/electerm-android/releases/download/v5.3.26/electerm-android-universal-5.3.26.apk",
+      "size": 162977515,
+      "type": "application/vnd.android.package-archive"
+    },
+    {
+      "name": "electerm-android-x86_64-5.3.26.apk",
+      "url": "https://github.com/electerm/electerm-android/releases/download/v5.3.26/electerm-android-x86_64-5.3.26.apk",
+      "size": 64345373,
+      "type": "application/vnd.android.package-archive"
+    }
+  ]
+}
