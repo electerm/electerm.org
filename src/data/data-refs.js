@@ -50,5 +50,11 @@ export default [
     name: 'Nube',
     text: '65% cheaper GLM5.3',
     url: 'https://nube.sh/invite/318517780H6ZSK'
+  },
+  {
+    id: 'workbuddy',
+    name: 'WorkBuddy',
+    text: '2000 free credit for new user',
+    url: 'https://www.workbuddy.cn/events/invite?inviteCode=ly4ll4ob3'
   }
 ]
