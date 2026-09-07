@@ -1,5 +1,5 @@
 // Global site behavior: shared country fetch, analytics, ad networks,
-// cloud slider init, and ad-spacing logic. Extracted from react-footer.pug.
+// and ad-spacing logic. Extracted from react-footer.pug.
 /* global ResizeObserver */
 (function () {
   // === Shared single country fetch for all consumers ===
@@ -17,73 +17,6 @@
   function gtag () { window.dataLayer.push(arguments) }
   gtag('js', new Date())
   gtag('config', 'G-LCY5SM7M8J')
-
-  // === Cloud slider init (reusable across Aliyun, Tencent, etc.) ===
-  window.initCloudSlider = function (idMap) {
-    const slider = document.getElementById(idMap.slider)
-    if (!slider) return null
-    const track = document.getElementById(idMap.track)
-    if (!track) return null
-    const slides = track.children
-    const total = slides.length
-    if (!total) return null
-    let current = 0
-    let timer = null
-    const DURATION = 5000
-
-    const dotsContainer = document.getElementById(idMap.dots)
-    for (let i = 0; i < total; i++) {
-      (function (idx) {
-        const dot = document.createElement('button')
-        dot.type = 'button'
-        dot.className = 'cloud-dot'
-        dot.setAttribute('aria-label', '第 ' + (idx + 1) + ' 张')
-        dot.addEventListener('click', function () { goTo(idx); resetTimer() })
-        dotsContainer.appendChild(dot)
-      })(i)
-    }
-    const dots = dotsContainer.children
-
-    function update () {
-      track.style.transform = 'translateX(-' + (current * 100) + '%)'
-      for (let i = 0; i < dots.length; i++) {
-        if (dots[i]) dots[i].classList.toggle('active', i === current)
-      }
-    }
-
-    function goTo (idx) { current = (idx + total) % total; update() }
-    function nextSlide () { goTo(current + 1) }
-    function prevSlide () { goTo(current - 1) }
-
-    function startTimer () { stopTimer(); timer = setInterval(nextSlide, DURATION) }
-    function stopTimer () { if (timer) { clearInterval(timer); timer = null } }
-    function resetTimer () { startTimer() }
-
-    document.getElementById(idMap.next).addEventListener('click', function () { nextSlide(); resetTimer() })
-    document.getElementById(idMap.prev).addEventListener('click', function () { prevSlide(); resetTimer() })
-
-    slider.addEventListener('mouseenter', stopTimer)
-    slider.addEventListener('mouseleave', startTimer)
-
-    // Touch swipe
-    let touchStartX = 0
-    track.addEventListener('touchstart', function (e) { touchStartX = e.changedTouches[0].screenX }, { passive: true })
-    track.addEventListener('touchend', function (e) {
-      const diff = touchStartX - e.changedTouches[0].screenX
-      if (Math.abs(diff) > 40) {
-        if (diff > 0) nextSlide(); else prevSlide()
-        resetTimer()
-      }
-    }, { passive: true })
-
-    return {
-      goTo,
-      total,
-      update,
-      startTimer,
-      stopTimer
-    }
-  }
 
   // === EthicalAds — only for non-CN visitors ===
   window.__countryPromise.then(function (cc) {
@@ -234,24 +167,5 @@
     s.src = '//cdn.carbonads.com/carbon.js?serve=CWBDE2JL&placement=electermorg&format=responsive'
     s.id = '_carbonads_js'
     wrapper.appendChild(s)
-  });
-
-  // === Init all cloud sliders on the page ===
-  (function () {
-    const sections = document.querySelectorAll('.cloud-slider-section')
-    for (let i = 0; i < sections.length; i++) {
-      (function (section) {
-        const provider = section.getAttribute('data-provider') || ''
-        const s = window.initCloudSlider({
-          slider: provider + '-slider',
-          track: provider + '-track',
-          dots: provider + '-dots',
-          prev: provider + '-prev',
-          next: provider + '-next'
-        })
-        if (!s) return
-        s.goTo(Math.floor(Math.random() * s.total))
-      })(sections[i])
-    }
-  })()
+  })
 })()

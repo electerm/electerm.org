@@ -4,6 +4,7 @@ import { cwd, releaseData } from './common.js'
 import fs from 'fs'
 import dayjs from 'dayjs'
 import { wikiLinks } from './wiki-links.js'
+import refs from '../src/data/data-refs.js'
 
 config()
 
@@ -362,6 +363,7 @@ export default {
     'contact'
   ],
   langs: createLocaleData(),
+  refs,
   ...createReleaseData(),
   links: [
     {

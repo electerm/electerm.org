@@ -1,0 +1,11 @@
+//- Referral links — simple text links
+//- Data comes from src/data/data-refs.js, injected as `refs` (see bin/data.js)
+if refs && refs.length
+  section.refs-section
+    .container
+      ul.refs-list
+        each ref in refs
+          li.refs-item
+            a.refs-link(href=ref.url, target='_blank', rel='nofollow noreferrer sponsored') #{ref.name}: #{ref.text}
+            if ref.pixel
+              img.refs-pixel(height='0', width='0', border='0', alt='', src=ref.pixel, style='position:absolute;visibility:hidden;')

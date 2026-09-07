@@ -1423,350 +1423,37 @@ justify-content space-between
   transform translateY(-1px)
   box-shadow 0 4px 12px rgba(37,99,235,0.3)
 
-/* ===== Aliyun Cloud ===== */
-/* ===== Cloud Slider (shared) ===== */
-
-// Outer wrapper — provides padding and background, hidden until any child shows
-.cloud-banners-section
-  padding 16px 0
-  background var(--color-bg-alt)
+/* ===== Refs (referral links) ===== */
+.refs-section
+  padding 18px 0
   border-top 1px solid var(--color-border)
-  border-bottom 1px solid var(--color-border)
 
-// Flex row placing sliders side-by-side
-.cloud-banners
+.refs-list
   display flex
-  flex-direction column
-  gap 12px
+  flex-wrap wrap
+  justify-content center
+  align-items baseline
+  gap 6px 28px
+  margin 0
+  padding 0
+  list-style none
 
-@media (min-width: 768px)
-  .cloud-banners
-    flex-direction row
-
-  .cloud-banners .cloud-slider-section
-    flex 1
-    min-width 0   // prevent flex overflow
-
-// Each individual slider section
-.cloud-slider-section
-  // No padding/border — provided by .cloud-banners-section
+.refs-item
   position relative
+  margin 0
 
-.cloud-slider
-  position relative
-  border-radius var(--radius-md)
-  overflow hidden
-  box-shadow var(--shadow-md)
-
-.cloud-track
-  display flex
-  transition transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
-  will-change transform
-
-.cloud-slide
-  flex 0 0 100%
-  min-width 100%
-  display flex
-  align-items center
+.refs-link
+  font-size 0.8rem
+  line-height 1.6
+  color var(--color-text-secondary)
   text-decoration none
-  color white
-  padding 16px 16px
-  position relative
-  overflow hidden
-  min-height 70px
-
-.cloud-slide:hover
-  color white
-
-.cloud-slide:hover .cloud-cta
-  background white
-  transform translateY(-1px)
-
-.cloud-slide::before
-  content ''
-  position absolute
-  top -30%
-  right -6%
-  width 140px
-  height 140px
-  border-radius 50%
-  background rgba(255, 255, 255, 0.08)
-  pointer-events none
-
-.cloud-slide::after
-  content ''
-  position absolute
-  bottom -40%
-  left -3%
-  width 110px
-  height 110px
-  border-radius 50%
-  background rgba(255, 255, 255, 0.05)
-  pointer-events none
-
-// Aliyun slide gradients
-[data-provider="aliyun"] .cloud-slide[data-slide="1"]
-  background linear-gradient(135deg, #FF6A00 0%, #FF9A3D 50%, #1677FF 100%)
-
-[data-provider="aliyun"] .cloud-slide[data-slide="2"]
-  background linear-gradient(135deg, #0A2E6C 0%, #1677FF 55%, #00C6FB 100%)
-
-[data-provider="aliyun"] .cloud-slide[data-slide="3"]
-  background linear-gradient(135deg, #6B21A8 0%, #9333EA 50%, #1677FF 100%)
-
-[data-provider="aliyun"] .cloud-slide[data-slide="4"]
-  background linear-gradient(135deg, #064E3B 0%, #10B981 50%, #1677FF 100%)
-
-[data-provider="aliyun"] .cloud-slide[data-slide="5"]
-  background linear-gradient(135deg, #7C2D12 0%, #EA580C 50%, #F59E0B 100%)
-
-// Tencent slide gradients
-[data-provider="tencent"] .cloud-slide[data-slide="1"]
-  background linear-gradient(135deg, #0052D9 0%, #006EFF 50%, #00A870 100%)
-
-[data-provider="tencent"] .cloud-slide[data-slide="2"]
-  background linear-gradient(135deg, #1C2F5D 0%, #0052D9 55%, #00C6FB 100%)
-
-[data-provider="tencent"] .cloud-slide[data-slide="3"]
-  background linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #00ACC1 100%)
-
-[data-provider="tencent"] .cloud-slide[data-slide="4"]
-  background linear-gradient(135deg, #004BA0 0%, #1976D2 50%, #4FC3F7 100%)
-
-[data-provider="tencent"] .cloud-slide[data-slide="5"]
-  background linear-gradient(135deg, #1A237E 0%, #283593 50%, #5C6BC0 100%)
-
-// Provider-specific CTA colors
-[data-provider="aliyun"] .cloud-cta
-  color #1677FF
-
-[data-provider="tencent"] .cloud-cta
-  color #0052D9
-
-// Static banner (Vultr, Pixverse, etc.) — shared layout, only bg differs per provider
-.cloud-banner
-  flex 1
-  min-width 0
-  position relative
-  border-radius var(--radius-md)
-  overflow hidden
-  box-shadow var(--shadow-md)
-
-// Per-provider background gradients (the only special style per card)
-.cloud-banner[data-provider="vultr"]
-  background linear-gradient(135deg, #7C3AED 0%, #A78BFA 50%, #0EA5E9 100%)
-
-.cloud-banner[data-provider="pixverse"]
-  background linear-gradient(135deg, #E11D48 0%, #F43F5E 50%, #8B5CF6 100%)
-
-.cloud-banner-link
-  display flex
-  align-items center
-  text-decoration none
-  color white
-  padding 16px 16px
-  min-height 70px
-  transition opacity 0.15s ease
+  white-space nowrap
+  transition color 0.15s ease
 
   &:hover
-    opacity 0.92
-    color white
-
-.cloud-banner-content
-  position relative
-  z-index 1
-  max-width 90%
-
-.cloud-banner-badge
-  display inline-block
-  padding 2px 10px
-  background rgba(255, 255, 255, 0.25)
-  border-radius 999px
-  font-size 11px
-  font-weight 600
-  letter-spacing 0.3px
-  text-transform uppercase
-  margin-bottom 4px
-
-.cloud-banner-title
-  font-size 15px
-  font-weight 700
-  margin 0 0 2px
-  line-height 1.3
-
-.cloud-banner-desc
-  font-size 12px
-  margin 0 0 6px
-  opacity 0.9
-  line-height 1.4
-
-.cloud-banner-cta
-  display inline-flex
-  align-items center
-  gap 4px
-  font-size 12px
-  font-weight 600
-  color white
-  background rgba(255, 255, 255, 0.2)
-  padding 2px 10px
-  border-radius 999px
-
-  .cloud-arrow
-    transition transform 0.15s ease
-
-  &:hover .cloud-arrow
-    transform translateX(3px)
-
-.cloud-slide-content
-  position relative
-  z-index 1
-  max-width 90%
-
-.cloud-badge
-  display inline-block
-  padding 2px 10px
-  background rgba(255, 255, 255, 0.25)
-  border-radius 20px
-  font-size 0.62rem
-  font-weight 600
-  letter-spacing 0.04em
-  margin-bottom 6px
-  backdrop-filter blur(4px)
-  text-transform uppercase
-
-.cloud-title
-  font-size 0.95rem
-  font-weight 700
-  margin-bottom 4px
-  line-height 1.3
-  letter-spacing -0.01em
-
-.cloud-desc
-  font-size 0.72rem
-  opacity 0.92
-  margin-bottom 8px
-  line-height 1.4
-
-.cloud-cta
-  display inline-flex
-  align-items center
-  gap 4px
-  padding 5px 12px
-  background rgba(255, 255, 255, 0.95)
-  border-radius var(--radius-sm)
-  font-size 0.72rem
-  font-weight 600
-  transition all 0.2s
-
-.cloud-cta:hover
-  background white
-  transform translateY(-1px)
-
-.cloud-arrow
-  transition transform 0.2s
-  width 14px
-  height 14px
-
-.cloud-slide:hover .cloud-arrow
-  transform translateX(3px)
-
-.cloud-nav
-  position absolute
-  top 50%
-  transform translateY(-50%)
-  width 28px
-  height 28px
-  border none
-  border-radius 50%
-  background rgba(255, 255, 255, 0.85)
-  color #0f172a
-  display flex
-  align-items center
-  justify-content center
-  cursor pointer
-  z-index 2
-  opacity 0
-  transition opacity 0.2s, background 0.2s
-  backdrop-filter blur(4px)
-
-.cloud-slider:hover .cloud-nav
-  opacity 1
-
-.cloud-nav:hover
-  background white
-
-.cloud-prev
-  left 6px
-
-.cloud-next
-  right 6px
-
-.cloud-dots
-  position absolute
-  bottom 6px
-  left 50%
-  transform translateX(-50%)
-  display flex
-  gap 4px
-  z-index 2
-
-.cloud-dot
-  width 5px
-  height 5px
-  border-radius 50%
-  border none
-  background rgba(255, 255, 255, 0.45)
-  cursor pointer
-  padding 0
-  transition all 0.2s
-
-.cloud-dot.active
-  background white
-  width 14px
-  border-radius 3px
-
-// Tablet+ adjustments
-@media (min-width: 768px)
-  .cloud-banners-section
-    padding 16px 0
-
-  .cloud-slide
-    padding 20px 18px
-    min-height 80px
-
-  .cloud-title
-    font-size 1.05rem
-
-  .cloud-desc
-    font-size 0.78rem
-
-  .cloud-badge
-    font-size 0.66rem
-
-  .cloud-nav
-    width 30px
-    height 30px
-
-  .cloud-prev
-    left 8px
-
-  .cloud-next
-    right 8px
-
-// Desktop - larger banners
-@media (min-width: 1024px)
-  .cloud-slide
-    padding 24px 22px
-    min-height 90px
-
-  .cloud-title
-    font-size 1.1rem
-
-  .cloud-desc
-    font-size 0.82rem
-
-  .cloud-badge
-    font-size 0.68rem
+    color var(--color-primary)
+    text-decoration underline
+    text-underline-offset 3px
 
 /* ===== Privacy Policy ===== */
 .privacy-page
