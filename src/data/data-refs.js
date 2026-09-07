@@ -1,4 +1,4 @@
-// Referral links rendered by src/views/parts/refs.pug
+// Referral links rendered by src/app/views/partials/refs.pug
 // Keep `text` short — it renders as "name: text"
 export default [
   {
@@ -22,7 +22,7 @@ export default [
   {
     id: 'pixverse',
     name: 'Pixverse',
-    text: 'AI video generator',
+    text: 'AI image/video models 10% off',
     url: 'https://motivaiprivatelimited.sjv.io/c/7467780/3958599/49478',
     // Impact Radius tracking pixel (affiliate requirement)
     pixel: 'https://imp.pxf.io/i/7467780/3958599/49478'
@@ -30,19 +30,25 @@ export default [
   {
     id: 'atlascloud',
     name: 'AtlasCloud',
-    text: 'AI cloud platform',
+    text: 'All AI image/video models',
     url: 'https://www.atlascloud.ai?ref=PCAEL2'
   },
   {
     id: 'siliconflow',
     name: 'SiliconFlow',
-    text: 'AI inference platform',
+    text: 'Free llm tokens',
     url: 'https://cloud.siliconflow.cn/i/Xa85Yz6R'
   },
   {
     id: 'orcarouter',
     name: 'OrcaRouter',
-    text: 'LLM router',
+    text: 'LLM cheaper',
     url: 'https://www.orcarouter.ai/ref/ref_2c4884ca28b88a82593f'
+  },
+  {
+    id: 'nube',
+    name: 'Nube',
+    text: '65% cheaper GLM5.3',
+    url: 'https://nube.sh/invite/318517780H6ZSK'
   }
 ]
