@@ -367,10 +367,6 @@ export default {
   ...createReleaseData(),
   links: [
     {
-      url: 'https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=electerm',
-      title: 'Atlas Cloud'
-    },
-    {
       url: 'https://electerm.org/videos/',
       title: 'Electerm Video guide'
     },
@@ -484,7 +480,6 @@ export default {
       key: 'Community',
       links: [
         { title: 'Sponsor Electerm', url: '/sponsor-electerm/' },
-        { title: 'Atlas Cloud', url: 'https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=electerm', external: true },
         { title: 'Video Guides', url: '/videos/' },
         { title: 'Windows Store', url: 'https://www.microsoft.com/store/apps/9NCN7272GTFF', external: true },
         { title: 'Snap Store', url: 'https://snapcraft.io/electerm', external: true },

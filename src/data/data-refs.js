@@ -31,7 +31,7 @@ export default [
     id: 'atlascloud',
     name: 'AtlasCloud',
     text: 'All AI image/video models',
-    url: 'https://www.atlascloud.ai?ref=PCAEL2'
+    url: 'https://www.atlascloud.ai?ref=PCAEL2&utm_source=github&utm_medium=link&utm_campaign=electerm'
   },
   {
     id: 'siliconflow',
