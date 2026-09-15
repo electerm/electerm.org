@@ -2269,3 +2269,49 @@ justify-content space-between
     margin-top 28px
     a
       color var(--color-primary)
+
+/* ===== Hero OS-variant highlight animation (.hero-supports) ===== */
+.hero-supports
+  .os-chip
+    display inline-block
+    padding 1px 9px 2px
+    margin 1px 1px
+    border 1px solid var(--color-border)
+    border-radius 999px
+    background rgba(37, 99, 235, 0.06)
+    color inherit
+    font-weight 600
+    font-size 0.92em
+    line-height 1.6
+    white-space nowrap
+    cursor pointer
+    transition background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease
+    &:hover
+      border-color var(--color-primary)
+      color var(--color-primary)
+      transform translateY(-1px)
+  .os-chip .os-emoji
+    margin-right 4px
+    font-size 0.95em
+  .os-chip.os-active
+    background var(--color-primary)
+    border-color var(--color-primary)
+    color #fff
+    box-shadow 0 3px 14px rgba(37, 99, 235, 0.45)
+    transform translateY(-1px) scale(1.05)
+  .os-chip.os-pop
+    animation osPop 0.45s ease
+  &.os-static .os-chip
+    background rgba(37, 99, 235, 0.08)
+
+@keyframes osPop
+  0%
+    transform scale(1)
+  40%
+    transform translateY(-2px) scale(1.12) rotate(-1.2deg)
+  100%
+    transform translateY(-1px) scale(1.05)
+
+@media (prefers-reduced-motion: reduce)
+  .hero-supports .os-chip.os-pop
+    animation none

@@ -3,6 +3,7 @@
 // so it is loaded as a dynamic import — if three.js fails to load, the PNG logo
 // stays and the rest of the page JS is unaffected.
 import HeroAnimate from './animate.js'
+import './os-highlight.js'
 
 const heroEl = document.getElementById('hero-anim')
 if (heroEl) {
