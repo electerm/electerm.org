@@ -211,6 +211,8 @@ function createReleaseData () {
 
       const isLoong64 = cname.includes('loong64')
       const isLoongarch64 = cname.includes('loongarch64')
+      const isRiscv64 = cname.includes('riscv64') || cname.includes('riscv')
+      const isPpc64 = cname.includes('ppc64le') || cname.includes('ppc64el') || cname.includes('ppc64')
 
       if (cname.endsWith('.rpm')) {
         nr.desc = isLegacy ? 'for Red Hat, Fedora... (glibc < 2.34)' : 'for Red Hat, Fedora...'
@@ -219,6 +221,10 @@ function createReleaseData () {
           nr.desc = isLegacy ? 'for old world UOS/Kylin...' : 'for new world UOS/Kylin...'
         } else if (isLoongarch64) {
           nr.desc = isLegacy ? 'for old world Debian, Ubuntu... (loongarch64)' : 'for new world Debian, Ubuntu... (loongarch64)'
+        } else if (isRiscv64) {
+          nr.desc = 'for Debian, Ubuntu... (riscv64)'
+        } else if (isPpc64) {
+          nr.desc = 'for Debian, Ubuntu... (ppc64le)'
         } else {
           nr.desc = isLegacy ? 'for Debian, Ubuntu... (glibc < 2.34, like UOS/Kylin/Ubuntu 18)' : 'for Debian, Ubuntu...'
         }
@@ -227,6 +233,10 @@ function createReleaseData () {
       } else if (cname.endsWith('.gz')) {
         if (isLoong64 || isLoongarch64) {
           nr.desc = isLegacy ? 'for old world loongarch, just extract' : 'for new world loongarch, just extract'
+        } else if (isRiscv64) {
+          nr.desc = 'for all linux (riscv64), just extract'
+        } else if (isPpc64) {
+          nr.desc = 'for all linux (ppc64le), just extract'
         } else {
           nr.desc = isLegacy ? 'for all linux, just extract (glibc < 2.34)' : 'for all linux, just extract'
         }
@@ -245,6 +255,10 @@ function createReleaseData () {
         archType = 'armv7'
       } else if (cname.includes('loong64') || cname.includes('loongarch64')) {
         archType = 'loong64'
+      } else if (isRiscv64) {
+        archType = 'riscv64'
+      } else if (isPpc64) {
+        archType = 'ppc64le'
       }
 
       // Add to appropriate architecture group
@@ -310,6 +324,22 @@ function createReleaseData () {
       },
       loong64_legacy: {
         name: 'Linux LoongArch64 (Old World)',
+        items: []
+      },
+      riscv64: {
+        name: 'Linux RISC-V 64',
+        items: []
+      },
+      riscv64_legacy: {
+        name: 'Linux RISC-V 64 Legacy',
+        items: []
+      },
+      ppc64le: {
+        name: 'Linux ppc64le',
+        items: []
+      },
+      ppc64le_legacy: {
+        name: 'Linux ppc64le Legacy',
         items: []
       }
     },

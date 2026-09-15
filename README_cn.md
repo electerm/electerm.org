@@ -16,12 +16,12 @@ electerm 官方网站的代码仓库，线上地址：[https://electerm.org](htt
 
 electerm 是一款开源的终端 / SSH / SFTP / FTP / Telnet / 串口 / RDP / VNC / Spice 客户端，支持 Linux、macOS、Windows、Android、HarmonyOS 与 iOS 等平台。
 
-除主流的 Windows / macOS / Linux / Android 外，electerm 还支持 HarmonyOS、iOS，以及较老的系统，如 Ubuntu 18、Windows 7、macOS 10+，以及 UOS、麒麟、龙架构（LoongArch，新旧世界）等国产 Linux 发行版。
+除主流的 Windows / macOS / Linux / Android 外，electerm 还支持 HarmonyOS、iOS，以及较老的系统，如 Ubuntu 18、Windows 7、macOS 10+，以及 UOS、麒麟、龙架构（LoongArch，新旧世界）等国产 Linux 发行版，以及 RISC-V（riscv64）和 PowerPC 64 位小端（ppc64le）Linux。
 
 ## 核心特性
 
 - 可作为终端 / 文件管理器，或 SSH / SFTP / FTP / Telnet / 串口 / RDP / VNC / Spice 客户端使用
-- 支持 Windows 7+（X64/ARM64）、HarmonyOS、Android、iOS、macOS 10.15+（X64/arm64）、Linux（X64/arm64/Loong64）等，甚至兼容 glibc 2.17+ 的老系统
+- 支持 Windows 7+（X64/ARM64）、HarmonyOS、Android、iOS、macOS 10.15+（X64/arm64）、Linux（X64/arm64/armv7/LoongArch64/RISC-V/ppc64le）等，甚至兼容 glibc 2.17+ 的老系统
 - 全局快捷键切换窗口显隐（类似 guake，默认 `ctrl + 2`）
 - 多平台支持（Linux / macOS / Windows）
 - 多语言支持（含中、英、日、韩、俄、西、法等十余种语言）

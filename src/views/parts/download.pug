@@ -77,6 +77,12 @@ section.downloads#downloads
         button.arch-btn(data-arch='loong64') LoongArch64
         - if (assets.linux.loong64_legacy && assets.linux.loong64_legacy.items.length > 0)
           button.arch-btn(data-arch='loong64_legacy') LoongArch64 Legacy
+        button.arch-btn(data-arch='riscv64') RISC-V 64
+        - if (assets.linux.riscv64_legacy && assets.linux.riscv64_legacy.items.length > 0)
+          button.arch-btn(data-arch='riscv64_legacy') RISC-V 64 Legacy
+        button.arch-btn(data-arch='ppc64le') ppc64le
+        - if (assets.linux.ppc64le_legacy && assets.linux.ppc64le_legacy.items.length > 0)
+          button.arch-btn(data-arch='ppc64le_legacy') ppc64le Legacy
         button.arch-btn(data-arch='all') All
       .arch-panel.active(data-arch='x86_64')
         .download-grid
@@ -114,6 +120,24 @@ section.downloads#downloads
           .download-grid
             each obj in assets.linux.loong64_legacy.items
               +dlCard(obj)
+      .arch-panel(data-arch='riscv64')
+        .download-grid
+          each obj in assets.linux.riscv64.items
+            +dlCard(obj)
+      - if (assets.linux.riscv64_legacy && assets.linux.riscv64_legacy.items.length > 0)
+        .arch-panel(data-arch='riscv64_legacy')
+          .download-grid
+            each obj in assets.linux.riscv64_legacy.items
+              +dlCard(obj)
+      .arch-panel(data-arch='ppc64le')
+        .download-grid
+          each obj in assets.linux.ppc64le.items
+            +dlCard(obj)
+      - if (assets.linux.ppc64le_legacy && assets.linux.ppc64le_legacy.items.length > 0)
+        .arch-panel(data-arch='ppc64le_legacy')
+          .download-grid
+            each obj in assets.linux.ppc64le_legacy.items
+              +dlCard(obj)
       .arch-panel(data-arch='all')
         .download-grid
           each obj in assets.linux.x86_64.items
@@ -135,6 +159,16 @@ section.downloads#downloads
             +dlCard(obj)
           - if (assets.linux.loong64_legacy && assets.linux.loong64_legacy.items.length > 0)
             each obj in assets.linux.loong64_legacy.items
+              +dlCard(obj)
+          each obj in assets.linux.riscv64.items
+            +dlCard(obj)
+          - if (assets.linux.riscv64_legacy && assets.linux.riscv64_legacy.items.length > 0)
+            each obj in assets.linux.riscv64_legacy.items
+              +dlCard(obj)
+          each obj in assets.linux.ppc64le.items
+            +dlCard(obj)
+          - if (assets.linux.ppc64le_legacy && assets.linux.ppc64le_legacy.items.length > 0)
+            each obj in assets.linux.ppc64le_legacy.items
               +dlCard(obj)
 
       +altInstall([

@@ -90,6 +90,8 @@ function classifyAssets (rawAssets) {
       const isLegacy = cname.includes('-legacy')
       const isLoong64 = cname.includes('loong64')
       const isLoongarch64 = cname.includes('loongarch64')
+      const isRiscv64 = cname.includes('riscv64') || cname.includes('riscv')
+      const isPpc64 = cname.includes('ppc64le') || cname.includes('ppc64el') || cname.includes('ppc64')
       if (cname.endsWith('.rpm')) {
         nr.desc = isLegacy ? 'for Red Hat, Fedora... (glibc < 2.34)' : 'for Red Hat, Fedora...'
       } else if (cname.endsWith('.deb')) {
@@ -97,6 +99,10 @@ function classifyAssets (rawAssets) {
           nr.desc = isLegacy ? 'for old world UOS/Kylin...' : 'for new world UOS/Kylin...'
         } else if (isLoongarch64) {
           nr.desc = isLegacy ? 'for old world Debian, Ubuntu... (loongarch64)' : 'for new world Debian, Ubuntu... (loongarch64)'
+        } else if (isRiscv64) {
+          nr.desc = 'for Debian, Ubuntu... (riscv64)'
+        } else if (isPpc64) {
+          nr.desc = 'for Debian, Ubuntu... (ppc64le)'
         } else {
           nr.desc = isLegacy ? 'for Debian, Ubuntu... (glibc < 2.34, like UOS/Kylin/Ubuntu 18)' : 'for Debian, Ubuntu...'
         }
@@ -105,6 +111,10 @@ function classifyAssets (rawAssets) {
       } else if (cname.endsWith('.gz')) {
         if (isLoong64 || isLoongarch64) {
           nr.desc = isLegacy ? 'for old world loongarch, just extract' : 'for new world loongarch, just extract'
+        } else if (isRiscv64) {
+          nr.desc = 'for all linux (riscv64), just extract'
+        } else if (isPpc64) {
+          nr.desc = 'for all linux (ppc64le), just extract'
         } else {
           nr.desc = isLegacy ? 'for all linux, just extract (glibc < 2.34)' : 'for all linux, just extract'
         }
@@ -116,6 +126,8 @@ function classifyAssets (rawAssets) {
       else if (cname.includes('arm64') || cname.includes('aarch64')) archType = 'arm64'
       else if (cname.includes('armv7l')) archType = 'armv7'
       else if (cname.includes('loong64') || cname.includes('loongarch64')) archType = 'loong64'
+      else if (isRiscv64) archType = 'riscv64'
+      else if (isPpc64) archType = 'ppc64le'
       const category = isLegacy ? `${archType}_legacy` : archType
       if (!prev.linux[category]) prev.linux[category] = { items: [] }
       prev.linux[category].items.push(nr)
@@ -138,7 +150,11 @@ function classifyAssets (rawAssets) {
       armv7: { items: [] },
       armv7_legacy: { items: [] },
       loong64: { items: [] },
-      loong64_legacy: { items: [] }
+      loong64_legacy: { items: [] },
+      riscv64: { items: [] },
+      riscv64_legacy: { items: [] },
+      ppc64le: { items: [] },
+      ppc64le_legacy: { items: [] }
     },
     mac: { items: [] },
     windows: { x64: { items: [] }, arm64: { items: [] }, win7: { items: [] } },
@@ -197,7 +213,7 @@ function loadOne (file) {
     d.downloadActiveOs = d.downloadTabs[0] || 'windows'
     d.downloadActiveArch = {
       windows: firstArch(d.downloadAssets.windows, ['x64', 'arm64', 'win7']),
-      linux: firstArch(d.downloadAssets.linux, ['x86_64', 'x86_64_legacy', 'arm64', 'arm64_legacy', 'armv7', 'armv7_legacy', 'loong64', 'loong64_legacy'])
+      linux: firstArch(d.downloadAssets.linux, ['x86_64', 'x86_64_legacy', 'arm64', 'arm64_legacy', 'armv7', 'armv7_legacy', 'loong64', 'loong64_legacy', 'riscv64', 'riscv64_legacy', 'ppc64le', 'ppc64le_legacy'])
     }
   } else {
     d.downloadAssets = classifyAssets([])
