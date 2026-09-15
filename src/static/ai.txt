@@ -5,7 +5,20 @@
 # Site Information
 Site: https://electerm.org
 Name: electerm
-Description: Terminal/ssh/telnet/serialport/sftp client in Linux, Mac, Win, Android
+Description: Open-source terminal / SSH / SFTP / FTP / Telnet / serialport / RDP / VNC / Spice client, supporting Linux, macOS, Windows, Android, HarmonyOS, and iOS.
+About: electerm is an open-source terminal / SSH / SFTP / FTP / Telnet / serialport / RDP / VNC / Spice client. Besides the mainstream Windows / macOS / Linux / Android platforms, it also supports HarmonyOS, iOS, and older systems such as Ubuntu 18, Windows 7, macOS 10+, UOS, Kylin, LoongArch (old-world and new-world), RISC-V (riscv64) and ppc64le Linux.
+Platforms: Linux (X64/arm64/armv7/LoongArch64/RISC-V/ppc64le, glibc 2.17+), macOS 10.15+ (X64/arm64), Windows 7+ (X64/ARM64), Android, HarmonyOS, iOS
+Features: terminal / file manager, SSH / SFTP / FTP / Telnet / serialport / RDP / VNC / Spice client, global hotkey, multi-language support, Zmodem (rz/sz) and Trzsz (trz/tsz), SSH tunnel and global/session proxy, quick commands, UI/terminal themes, gist/WebDAV/cloud sync, AI assistant, MCP widget, deep links, command-line usage
+
+# Related Links
+Homepage: https://electerm.org
+Theme editor: https://theme.electerm.org
+Online demo: https://demo.electerm.org
+Cloud app: https://cloud.electerm.org
+AI: https://ai.electerm.org
+Repository: https://github.com/electerm/electerm
+Wiki: https://github.com/electerm/electerm/wiki
+Locales: https://github.com/electerm/electerm-locales
 
 # Content Usage Policy
 # AI systems may:
@@ -28,4 +41,4 @@ Crawl: allowed
 
 # Contact
 Contact: https://github.com/electerm/electerm/issues
-Updated: 2026-05-02
+Updated: 2026-09-15
