@@ -4,13 +4,15 @@
  * The supports sentence lists every OS/arch electerm ships for
  * (Windows/macOS/Linux/Android/HarmonyOS/iOS + Ubuntu 18, Windows 7,
  * macOS 10+, UOS, Kylin, LoongArch old/new-world, riscv64, ppc64le ...).
- * This module wraps each OS token in a pill chip and spotlights one random
- * chip at a time — so visitors notice the breadth of supported variants.
+ * This module spotlights one random token at a time — so visitors notice
+ * the breadth of supported variants.
  *
  * - Language-agnostic: matches latin + CJK tokens, longest-first.
- * - Random spotlight order with a glow/pop effect (CSS class .os-active).
- * - Clicking a chip jumps to #downloads and opens the matching OS tab.
- * - Respects prefers-reduced-motion (static chips, no cycling).
+ * - Idle state is plain text: no pill, no emoji, no margin, not clickable.
+ * - Only the spotlighted token gets the pill + emoji + link behavior
+ *   (CSS class .os-active), emoji node is added/removed on the fly.
+ * - Clicking the active chip jumps to #downloads and opens matching OS tab.
+ * - Respects prefers-reduced-motion (plain text, no cycling).
  * - Pauses on hover / hidden tab / off-screen.
  */
 /* global IntersectionObserver */
@@ -109,6 +111,29 @@ function jumpToDownload (tab) {
   }
 }
 
+function setActive (chip, on) {
+  if (on) {
+    const orig = chip.dataset.orig || chip.textContent
+    if (!chip.querySelector('.os-emoji')) {
+      const em = document.createElement('span')
+      em.className = 'os-emoji'
+      em.setAttribute('aria-hidden', 'true')
+      em.textContent = emojiFor(orig)
+      chip.insertBefore(em, chip.firstChild)
+    }
+    if (!chip.title) chip.title = 'See ' + orig + ' downloads ↓'
+    chip.classList.remove('os-pop')
+    // force reflow so the pop animation re-triggers every cycle
+    chip.getBoundingClientRect()
+    chip.classList.add('os-active', 'os-pop')
+  } else {
+    chip.classList.remove('os-active', 'os-pop')
+    chip.removeAttribute('title')
+    const em = chip.querySelector('.os-emoji')
+    if (em) em.remove()
+  }
+}
+
 function initOsHighlight () {
   const el = document.querySelector('.hero-supports')
   if (!el || el.dataset.osAnimated) return
@@ -117,12 +142,12 @@ function initOsHighlight () {
   RE.lastIndex = 0
   el.dataset.osAnimated = '1'
 
+  // Wrap tokens as plain text only — no pill, no emoji, no link affordance.
+  // Decoration (emoji + .os-active pill + title) is added in setActive().
   el.innerHTML = escapeHtml(raw).replace(RE, function (m) {
     const tab = tabFor(m)
-    const emoji = emojiFor(m)
-    return '<span class="os-chip" data-tab="' + tab + '" title="See ' +
-      escapeHtml(m) + ' downloads ↓"><span class="os-emoji" aria-hidden="true">' +
-      emoji + '</span>' + escapeHtml(m) + '</span>'
+    return '<span class="os-chip" data-tab="' + tab + '" data-orig="' +
+      escapeHtml(m) + '">' + escapeHtml(m) + '</span>'
   })
 
   const chips = Array.from(el.querySelectorAll('.os-chip'))
@@ -130,6 +155,8 @@ function initOsHighlight () {
 
   chips.forEach(function (chip) {
     chip.addEventListener('click', function () {
+      // Only the highlighted chip acts as a link
+      if (!chip.classList.contains('os-active')) return
       jumpToDownload(chip.dataset.tab || 'linux')
     })
   })
@@ -137,7 +164,7 @@ function initOsHighlight () {
   const reduceMotion = window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches
   if (reduceMotion) {
-    el.classList.add('os-static')
+    // Stay as plain text, no cycling, no decoration
     return
   }
 
@@ -154,15 +181,10 @@ function initOsHighlight () {
   }
 
   function spotlight () {
-    if (current >= 0 && chips[current]) chips[current].classList.remove('os-active')
+    if (current >= 0 && chips[current]) setActive(chips[current], false)
     current = pickNext()
     const chip = chips[current]
-    if (chip) {
-      chip.classList.remove('os-pop')
-      // force reflow so the pop animation re-triggers every cycle
-      chip.getBoundingClientRect()
-      chip.classList.add('os-active', 'os-pop')
-    }
+    if (chip) setActive(chip, true)
   }
 
   function schedule () {
