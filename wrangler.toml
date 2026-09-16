@@ -46,9 +46,10 @@ not_found_handling = "404-page"
 # asset runtime keeps applying _headers. See the notes at the top for why both
 # entries are needed and why /api/* cannot be left out.
 #   /data/electerm-github-release.json?src=<asset-name> filters release.assets
-#   down to the single asset the calling build asks for. The trailing * also
-#   covers the query string. Array form needs wrangler >= 4.20.0.
-run_worker_first = ["/data/electerm-github-release.json*", "/api/*"]
+#   down to the single asset the calling build asks for. Patterns match the
+#   PATH only (the query is not part of the match), so no wildcard is needed.
+#   Array form needs wrangler >= 4.20.0 — see the workflow's wranglerVersion.
+run_worker_first = ["/data/electerm-github-release.json", "/api/*"]
 
 [observability]
 enabled = true

@@ -63,4 +63,10 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # The action defaults to wrangler 3.90.0, which silently ignores
+          # assets.run_worker_first AND does not process src/static/_headers or
+          # src/static/_redirects (it uploads them as plain files, so /_headers
+          # was even publicly readable). v4 handles all three; run_worker_first
+          # as an array needs >= 4.20.0.
+          wranglerVersion: '4'
           command: deploy
