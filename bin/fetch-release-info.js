@@ -16,6 +16,31 @@ if (!token) {
   process.exit(1)
 }
 
+function cleanBody (body) {
+  if (!body) {
+    return body
+  }
+  return body.replace(/[\r\n]+-{3,}[\r\n]+Download下载: \[https:\/\/electerm\.org\]\(https:\/\/electerm\.org\)\s*$/, '')
+}
+
+function slimAsset (asset = {}) {
+  return {
+    name: asset.name,
+    browser_download_url: asset.browser_download_url,
+    size: asset.size,
+    created_at: asset.created_at
+  }
+}
+
+function slimRelease (data = {}) {
+  return {
+    tag_name: data.tag_name,
+    body: cleanBody(data.body),
+    published_at: data.published_at,
+    assets: (data.assets || []).map(slimAsset)
+  }
+}
+
 async function fetchReleaseInfo () {
   const response = await axios.get('https://api.github.com/repos/electerm/electerm/releases/latest', {
     headers: {
@@ -26,8 +51,7 @@ async function fetchReleaseInfo () {
   })
 
   return {
-    action: 'published',
-    release: response.data
+    release: slimRelease(response.data)
   }
 }
 
@@ -42,7 +66,7 @@ async function fetchAndroidReleaseInfo () {
 
   return {
     tagName: response.data.tag_name,
-    assets: response.data.assets || []
+    assets: (response.data.assets || []).map(slimAsset)
   }
 }
 
@@ -63,9 +87,6 @@ async function fetchRepoInfo () {
 async function main () {
   console.log('Fetching latest release info from GitHub...')
   const releaseInfo = await fetchReleaseInfo()
-  if (releaseInfo.release.body) {
-    releaseInfo.release.body = releaseInfo.release.body.replace(/[\r\n]+-{3,}[\r\n]+Download下载: \[https:\/\/electerm\.org\]\(https:\/\/electerm\.org\)\s*$/, '')
-  }
   console.log('Fetching Android release info from GitHub...')
   const androidInfo = await fetchAndroidReleaseInfo()
   releaseInfo.release.assets = [...(releaseInfo.release.assets || []), ...androidInfo.assets]

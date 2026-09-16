@@ -1,7 +1,8 @@
 import logger from 'morgan'
-import { viewPath, env, staticPath, cwd } from './common.js'
+import { viewPath, env, staticPath, cwd, releaseData as releaseInfo } from './common.js'
 import data from './data.js'
 import { jsUrl } from './js-entry.js'
+import { filterAssets } from '../src/release-asset-filter.js'
 import express from 'express'
 import stylus from 'stylus'
 import { readFileSync } from 'fs'
@@ -87,6 +88,21 @@ function handleIndex (req, res) {
     lang,
     desc: lang.lang.desc
   })
+}
+
+// Mirrors the production Worker route (src/worker.js): the release info the
+// electerm app polls, with an optional ?src=<asset-name> that keeps only the
+// asset the calling build asks for. Production serves this from public/data/.
+function handleReleaseInfo (req, res) {
+  const src = String(req.query.src || '').trim()
+  const release = releaseInfo.release || {}
+  res.set('Access-Control-Allow-Origin', '*')
+  res.json(src
+    ? {
+        ...releaseInfo,
+        release: { ...release, assets: filterAssets(release.assets, src) }
+      }
+    : releaseInfo)
 }
 
 function handleVideo (req, res) {
@@ -247,6 +263,9 @@ function createServer () {
     const country = (req.headers['cf-ipcountry'] || 'us').toUpperCase()
     res.json({ country })
   })
+
+  // Release info for the electerm app (see src/worker.js in production)
+  app.get('/data/electerm-github-release.json', handleReleaseInfo)
 
   // Home page
   app.get('/', handleIndex)

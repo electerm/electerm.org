@@ -138,7 +138,10 @@ function createReleaseData () {
   const arr = assets.reduce((prev, curr) => {
     const androidFlag = isAndroidAsset(curr.name, curr.browser_download_url)
     const nr = {
-      ...curr,
+      name: curr.name,
+      browser_download_url: curr.browser_download_url,
+      size: curr.size,
+      created_at: curr.created_at,
       sourceforgeUrl: getSourceforgeUrl(curr.browser_download_url),
       cdnUrl: getCdnUrl(curr.browser_download_url),
       r2Url: getR2Url(curr.browser_download_url, androidFlag),

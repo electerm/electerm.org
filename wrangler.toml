@@ -4,15 +4,28 @@
 # Static assets are served directly by the Workers asset runtime, which applies
 # src/static/_headers (security + CORS) to every asset response.
 #
-# IMPORTANT: run_worker_first MUST be false. With run_worker_first = true the
-# Worker fronts asset requests and Cloudflare strips BOTH _headers rules AND any
-# headers the worker adds to env.ASSETS.fetch() responses (cache HIT serves the
-# raw asset). run_worker_first = false lets the asset runtime apply _headers.
+# IMPORTANT: asset paths must stay asset-first (not listed in run_worker_first).
+# With run_worker_first = true the Worker fronts every asset request and
+# Cloudflare strips BOTH _headers rules AND any headers the worker adds to
+# env.ASSETS.fetch() responses (cache HIT serves the raw asset). Keeping
+# asset-first routing lets the asset runtime apply _headers.
+#
+# The exception is /data/electerm-github-release.json, listed in the
+# run_worker_first ARRAY below (wrangler >= 4.20.0) so the Worker can read its
+# ?src=<asset-name> query — the asset runtime ignores query strings and would
+# always serve the unfiltered file. That path loses _headers, so src/worker.js
+# re-adds those headers itself.
+#
+# CAREFUL: the array form disables the Worker fallback. With run_worker_first
+# unset, an asset miss still invokes the Worker; with an array, requests that
+# match no pattern and no asset go straight to not_found_handling (404.html)
+# and never reach the Worker. Every route the Worker answers must therefore be
+# listed here, which is why /api/* is in the array.
 #
 #   - locale redirects come from src/static/_redirects
 #   - security + CORS headers come from src/static/_headers
 #   - unknown paths serve public/404.html with a 404 status (not_found_handling)
-# This worker (src/worker.js) only handles non-asset routes: /api/country.
+# This worker (src/worker.js) handles /api/country and the release JSON.
 # The legacy-domain redirect (electerm.html5beta.com -> electerm.org) is a
 # Cloudflare Page Rule configured at the edge, not in this worker.
 #
@@ -29,9 +42,13 @@ directory = "./public"
 binding = "ASSETS"
 # Serve 404.html with a 404 status for unknown paths (replaces Vercel's rewrite to /api/404)
 not_found_handling = "404-page"
-# Asset runtime serves files and applies _headers. The worker only runs for
-# non-asset routes (legacy redirect, /api/*). Must stay false — see note above.
-run_worker_first = false
+# Worker-first for these two only; everything else stays asset-first so the
+# asset runtime keeps applying _headers. See the notes at the top for why both
+# entries are needed and why /api/* cannot be left out.
+#   /data/electerm-github-release.json?src=<asset-name> filters release.assets
+#   down to the single asset the calling build asks for. The trailing * also
+#   covers the query string. Array form needs wrangler >= 4.20.0.
+run_worker_first = ["/data/electerm-github-release.json*", "/api/*"]
 
 [observability]
 enabled = true
