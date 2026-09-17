@@ -114,6 +114,15 @@ export default {
     const url = new URL(request.url)
     const { pathname } = url
 
+    // www.electerm.org -> electerm.org (301). This also fixes the 522 on www:
+    // www had no Worker route so Cloudflare fell through to a dead origin.
+    // Once www is attached as a Worker custom domain, this redirect sends
+    // everything to the apex, preserving path + query.
+    if (url.hostname === 'www.electerm.org') {
+      url.hostname = 'electerm.org'
+      return Response.redirect(url.toString(), 301)
+    }
+
     // CORS preflight for first-party subdomain requests to /api/*
     if (request.method === 'OPTIONS') {
       const origin = request.headers.get('Origin')
