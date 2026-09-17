@@ -114,11 +114,14 @@ export default {
     const url = new URL(request.url)
     const { pathname } = url
 
-    // www.electerm.org -> electerm.org (301). This also fixes the 522 on www:
-    // www had no Worker route so Cloudflare fell through to a dead origin.
-    // Once www is attached as a Worker custom domain, this redirect sends
-    // everything to the apex, preserving path + query.
-    if (url.hostname === 'www.electerm.org') {
+    // www.electerm.org + legacy electerm.html5beta.com -> electerm.org (301).
+    // Both attached as Worker custom domains (DNS auto-created).
+    // Edge Redirect Rules fire first; this is backup + covers /api/* and
+    // release JSON direct hits. Preserves path + query.
+    if (
+      url.hostname === 'www.electerm.org' ||
+      url.hostname === 'electerm.html5beta.com'
+    ) {
       url.hostname = 'electerm.org'
       return Response.redirect(url.toString(), 301)
     }

@@ -25,9 +25,9 @@
 #   - locale redirects come from src/static/_redirects
 #   - security + CORS headers come from src/static/_headers
 #   - unknown paths serve public/404.html with a 404 status (not_found_handling)
-# This worker (src/worker.js) handles /api/country and the release JSON.
-# The legacy-domain redirect (electerm.html5beta.com -> electerm.org) is a
-# Cloudflare Page Rule configured at the edge, not in this worker.
+# This worker (src/worker.js) handles /api/country, the release JSON, and
+# backup 301s for www.electerm.org + legacy electerm.html5beta.com.
+# Primary redirects are Cloudflare Redirect Rules at the edge.
 #
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
 
@@ -35,16 +35,20 @@ name = "electerm-org"
 main = "src/worker.js"
 compatibility_date = "2026-06-30"
 
-# Routing (source of truth on deploy). Manual www DNS rows were suppressed
-# (NXDOMAIN on leia while test123/www2 served), so let Cloudflare create www
-# DNS automatically via custom_domain. Delete any manual www DNS before
-# deploy, otherwise attach fails with 100117. Worker 301s www -> apex.
+# Routing (source of truth on deploy). Manual DNS rows for www and legacy
+# were suppressed, so both use custom_domain auto-DNS (www works).
+# Delete any manual DNS for these names before deploy, otherwise attach fails
+# with 100117. Edge Redirect Rules fire first; worker 301s as backup.
 [[routes]]
 pattern = "electerm.org"
 custom_domain = true
 
 [[routes]]
 pattern = "www.electerm.org"
+custom_domain = true
+
+[[routes]]
+pattern = "electerm.html5beta.com"
 custom_domain = true
 
 [assets]
