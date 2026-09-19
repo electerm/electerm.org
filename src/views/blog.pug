@@ -1,0 +1,243 @@
+doctype html
+- var isCn = typeof blogLang !== 'undefined' && blogLang === 'cn'
+html(lang=isCn ? 'zh-CN' : langCode)
+  head
+    title #{post.title} - electerm Blog
+    meta(name='description', content=post.description)
+    meta(name='keywords', content=keywords)
+    meta(property='og:title' content='electerm Blog - ' + post.title)
+    meta(property='og:description' content=post.description)
+    meta(name='twitter:title' content='electerm Blog - ' + post.title)
+    meta(name='twitter:description' content=post.description)
+    include ./parts/react-header
+    if post.structuredData
+      script(type='application/ld+json')!= post.structuredData
+    style.
+      .blog-hero {
+        background: var(--color-bg-alt);
+        padding: 32px 0;
+      }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .back-link:hover {
+        color: var(--color-primary);
+      }
+      .lang-switcher {
+        display: inline-flex;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        margin-bottom: 16px;
+      }
+      .lang-switcher a {
+        padding: 8px 20px;
+        background: var(--color-bg-alt);
+        color: var(--color-text-secondary);
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+      .lang-switcher a + a {
+        border-left: 1px solid var(--color-border);
+      }
+      .lang-switcher a:hover {
+        background: var(--color-bg);
+        color: var(--color-text);
+      }
+      .lang-switcher a.active {
+        background: var(--color-primary);
+        color: white;
+      }
+      .blog-hero h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        line-height: 1.3;
+      }
+      .blog-meta {
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        align-items: center;
+      }
+      .blog-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .blog-tag {
+        font-size: 0.75rem;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: var(--color-bg);
+        border: 1px solid var(--color-border);
+        color: var(--color-text-secondary);
+      }
+      .blog-section {
+        padding: 40px 0 80px;
+        background: var(--color-bg);
+      }
+      .blog-content {
+        max-width: 780px;
+        margin: 0 auto;
+        font-size: 1rem;
+        line-height: 1.75;
+        color: var(--color-text);
+      }
+      .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4 {
+        margin: 1.6em 0 0.6em;
+        line-height: 1.35;
+      }
+      .blog-content h2 {
+        font-size: 1.4rem;
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: 8px;
+      }
+      .blog-content h3 { font-size: 1.15rem; }
+      .blog-content p { margin: 1em 0; }
+      .blog-content ul, .blog-content ol {
+        margin: 1em 0;
+        padding-left: 1.6em;
+      }
+      .blog-content li { margin: 0.4em 0; }
+      .blog-content a { color: var(--color-primary); }
+      .blog-content code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.88em;
+        background: var(--color-bg-alt);
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 1px 5px;
+      }
+      .blog-content pre {
+        background: #0d1117;
+        color: #e6edf3;
+        border-radius: var(--radius-lg);
+        padding: 16px;
+        overflow-x: auto;
+        line-height: 1.5;
+      }
+      .blog-content pre code {
+        background: none;
+        border: none;
+        padding: 0;
+        color: inherit;
+      }
+      .blog-content img {
+        max-width: 100%;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+      }
+      .blog-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1em 0;
+        font-size: 0.92rem;
+      }
+      .blog-content th, .blog-content td {
+        border: 1px solid var(--color-border);
+        padding: 8px 10px;
+        text-align: left;
+      }
+      .blog-content th { background: var(--color-bg-alt); }
+      .blog-content blockquote {
+        border-left: 3px solid var(--color-primary);
+        margin: 1em 0;
+        padding: 4px 16px;
+        color: var(--color-text-secondary);
+        background: var(--color-bg-alt);
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      }
+      .related-videos {
+        max-width: 780px;
+        margin: 40px auto 0;
+        padding: 24px;
+        background: var(--color-bg-alt);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+      }
+      .related-videos h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+      .related-videos ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .related-videos li { margin: 8px 0; }
+      .related-videos a { color: var(--color-primary); text-decoration: none; }
+      .related-videos a:hover { text-decoration: underline; }
+      .blog-nav {
+        max-width: 780px;
+        margin: 32px auto 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .blog-nav a {
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .blog-nav a:hover { color: var(--color-primary); }
+  body
+    include ./parts/header
+    section.blog-hero
+      .container
+        - var backUrl = isCn ? '/blogs/cn/' : '/blogs/'
+        - var backText = isCn ? '← Electerm 博客' : '← Electerm Blog'
+        a.back-link(href=backUrl)= backText
+        .lang-switcher
+          - var enUrl = `/blogs/${post.slug}/`
+          - var cnUrl = `/blogs/${post.slug}/cn/`
+          a(href=enUrl class=!isCn ? 'active' : '') EN
+          a(href=cnUrl class=isCn ? 'active' : '') 中文
+        h1= post.title
+        .blog-meta
+          if post.date
+            span= post.date
+          if post.tags && post.tags.length
+            .blog-tags
+              each t in post.tags
+                span.blog-tag= t
+    section.blog-section
+      .container
+        .blog-content!= post.html
+        if relatedVideos && relatedVideos.length
+          .related-videos
+            h2= isCn ? '相关视频指南' : 'Related video guides'
+            ul
+              each v in relatedVideos
+                li
+                  a(href=`/videos/${v.videoSlug}/`)= '🎥 ' + v.titleEn
+        .blog-nav
+          if prevPost
+            - var prevUrl = isCn ? `/blogs/${prevPost.slug}/cn/` : `/blogs/${prevPost.slug}/`
+            a(href=prevUrl) ← #{prevPost.title}
+          else
+            span
+          if nextPost
+            - var nextUrl = isCn ? `/blogs/${nextPost.slug}/cn/` : `/blogs/${nextPost.slug}/`
+            a(href=nextUrl) #{nextPost.title} →
+          else
+            span
+    include ./parts/refs
+    include ./parts/ads
+    include ./parts/footer
+    include ./parts/react-footer
+    include ./parts/page-script
+    +pageScript('blog')

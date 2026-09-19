@@ -8,6 +8,7 @@ import stylus from 'stylus'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 import releaseData from './release-data.js'
+import { getAllBlogs, getBlog } from './blogs.js'
 
 const devPort = env.SERVER_DEV_PORT || 6068
 const host = env.SERVER_HOST || '127.0.0.1'
@@ -138,6 +139,64 @@ function handleVideosIndex (req, res) {
     lang,
     desc: lang.lang.desc,
     videos: data.videos
+  })
+}
+
+function handleBlogsIndex (req, res) {
+  const { langCode, lang } = enLang
+  const blogLang = req.params.blogLang === 'cn' ? 'cn' : 'en'
+  const posts = getAllBlogs(blogLang)
+  const isCn = blogLang === 'cn'
+  res.render('blogs', {
+    ...data,
+    host: h,
+    url: h + (isCn ? '/blogs/cn/' : '/blogs/'),
+    dev: true,
+    cssUrl: '/index.bundle.css',
+    langCode,
+    lang,
+    keywords: 'electerm blog, terminal tutorial, ssh guide, terminal client guide',
+    desc: isCn
+      ? 'Electerm 博客：免费开源终端客户端的教程、指南与深度文章。'
+      : 'Electerm blog: tutorials, guides and deep-dives for the free and open-source terminal client.',
+    posts,
+    blogLang
+  })
+}
+
+function handleBlog (req, res) {
+  const { langCode, lang } = enLang
+  const slug = req.params.slug
+  const blogLang = req.params.blogLang === 'cn' ? 'cn' : 'en'
+  const post = getBlog(slug, blogLang)
+  if (!post) {
+    res.status(404).send('Blog post not found')
+    return
+  }
+  const isCn = blogLang === 'cn'
+  const posts = getAllBlogs(blogLang)
+  const idx = posts.findIndex(p => p.slug === slug)
+  const prevPost = idx > 0 ? posts[idx - 1] : null
+  const nextPost = idx >= 0 && idx < posts.length - 1 ? posts[idx + 1] : null
+  const relatedVideos = (post.videos || [])
+    .map(vs => data.videos.find(v => v.videoSlug === vs))
+    .filter(Boolean)
+  res.render('blog', {
+    ...data,
+    host: h,
+    url: h + '/blogs/' + slug + '/' + (isCn ? 'cn/' : ''),
+    dev: true,
+    cssUrl: '/index.bundle.css',
+    langCode,
+    lang,
+    keywords: 'electerm, ' + post.title.toLowerCase() + ', ' + (post.tags || []).join(', '),
+    desc: post.description,
+    post,
+    posts,
+    prevPost,
+    nextPost,
+    relatedVideos,
+    blogLang
   })
 }
 
@@ -273,6 +332,30 @@ function createServer () {
   // Video routes
   app.get('/videos', handleVideosIndex)
   app.get('/videos/:videoSlug', handleVideo)
+
+  // Blog routes (markdown from src/blogs/<slug>/{en,cn}.md,
+  // rendered on every request in dev). The /cn/ variants must come first
+  // so "cn" is not mistaken for a post slug.
+  app.get('/blogs', handleBlogsIndex)
+  app.get('/blogs/', handleBlogsIndex)
+  app.get('/blogs/cn', (req, res) => {
+    req.params.blogLang = 'cn'
+    return handleBlogsIndex(req, res)
+  })
+  app.get('/blogs/cn/', (req, res) => {
+    req.params.blogLang = 'cn'
+    return handleBlogsIndex(req, res)
+  })
+  app.get('/blogs/:slug/cn', (req, res) => {
+    req.params.blogLang = 'cn'
+    return handleBlog(req, res)
+  })
+  app.get('/blogs/:slug/cn/', (req, res) => {
+    req.params.blogLang = 'cn'
+    return handleBlog(req, res)
+  })
+  app.get('/blogs/:slug', handleBlog)
+  app.get('/blogs/:slug/', handleBlog)
 
   // Release archive routes (historical download pages)
   app.get('/releases', handleReleasesIndex)

@@ -4,6 +4,7 @@ import { jsUrl } from './js-entry.js'
 import { resolve } from 'path'
 import { cwd } from './common.js'
 import releaseData from './release-data.js'
+import { getAllBlogs, getBlogLangs } from './blogs.js'
 import fs from 'fs/promises'
 import { readFileSync } from 'fs'
 
@@ -285,6 +286,7 @@ async function main () {
 
   await buildVideoPages()
   await buildReleases()
+  await buildBlogPages()
 }
 
 async function buildReleases () {
@@ -330,6 +332,85 @@ async function buildReleases () {
     })
   }
   console.log(`Built ${all.length} release pages`)
+}
+
+async function buildBlogPages () {
+  const { langCode, lang } = data.langs.find(l => l.id === 'en_us')
+  const h = process.env.HOST
+
+  // List pages: /blogs/ (en) + /blogs/cn/ (cn)
+  const listFrom = resolve(cwd, 'src/views/blogs.pug')
+  for (const blogLang of ['en', 'cn']) {
+    const posts = getAllBlogs(blogLang)
+    const isCn = blogLang === 'cn'
+    const listDir = resolve(cwd, isCn ? 'public/blogs/cn' : 'public/blogs')
+    await fs.mkdir(listDir, { recursive: true })
+    await buildPug(listFrom, resolve(listDir, 'index.html'), {
+      ...data,
+      langCode,
+      lang,
+      lp: '',
+      faqUrl: '/faq/',
+      keywords: 'electerm blog, terminal tutorial, ssh guide, terminal client guide',
+      desc: isCn
+        ? 'Electerm 博客：免费开源终端客户端的教程、指南与深度文章。'
+        : 'Electerm blog: tutorials, guides and deep-dives for the free and open-source terminal client.',
+      url: isCn ? `${h}/blogs/cn/` : `${h}/blogs/`,
+      cssUrl: cssFilename,
+      posts,
+      blogLang
+    })
+  }
+  console.log('Built blogs indexes (en + cn)')
+
+  // Detail pages: /blogs/<slug>/ (en) + /blogs/<slug>/cn/ (cn) —
+  // markdown pre-rendered to static HTML
+  const detailFrom = resolve(cwd, 'src/views/blog.pug')
+  const slugs = getAllBlogs('en').map(p => p.slug)
+  let count = 0
+  for (const slug of slugs) {
+    for (const blogLang of getBlogLangs(slug)) {
+      const isCn = blogLang === 'cn'
+      const posts = getAllBlogs(blogLang)
+      const i = posts.findIndex(p => p.slug === slug)
+      if (i === -1) continue
+      const post = posts[i]
+      const dir = resolve(cwd, isCn ? `public/blogs/${slug}/cn` : `public/blogs/${slug}`)
+      await fs.mkdir(dir, { recursive: true })
+      const relatedVideos = (post.videos || [])
+        .map(vs => data.videos.find(v => v.videoSlug === vs))
+        .filter(Boolean)
+      const structuredData = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.description,
+        inLanguage: isCn ? 'zh-CN' : 'en',
+        datePublished: post.dateISO || data.releaseDateISO,
+        author: { '@type': 'Person', name: 'ZHAO Xudong' },
+        mainEntityOfPage: isCn ? `${h}/blogs/${slug}/cn/` : `${h}/blogs/${slug}/`
+      })
+      await buildPug(detailFrom, resolve(dir, 'index.html'), {
+        ...data,
+        langCode,
+        lang,
+        lp: '',
+        faqUrl: '/faq/',
+        keywords: 'electerm, ' + post.title.toLowerCase() + ', ' + (post.tags || []).join(', '),
+        desc: post.description,
+        url: isCn ? `${h}/blogs/${slug}/cn/` : `${h}/blogs/${slug}/`,
+        cssUrl: cssFilename,
+        post: { ...post, structuredData },
+        posts,
+        prevPost: i > 0 ? posts[i - 1] : null,
+        nextPost: i < posts.length - 1 ? posts[i + 1] : null,
+        relatedVideos,
+        blogLang
+      })
+      count++
+    }
+  }
+  console.log(`Built ${count} blog pages`)
 }
 
 async function build404Page () {

@@ -5,6 +5,7 @@ import { resolve } from 'path'
 import dayjs from 'dayjs'
 import data from './data.js'
 import releaseData from './release-data.js'
+import { getAllBlogs, getBlogLangs } from './blogs.js'
 
 const fmt = 'YYYY-MM-DD'
 
@@ -108,6 +109,37 @@ async function buildSiteMap () {
       })
     }
     console.log(`✅ Added ${releases.length} release pages to sitemap`)
+  }
+
+  // Blog pages (pre-rendered markdown, en + cn)
+  try {
+    const posts = getAllBlogs('en')
+    if (posts.length) {
+      for (const listLoc of [host + '/blogs/', host + '/blogs/cn/']) {
+        urls.push({
+          loc: listLoc,
+          lastmod: dayjs().format(fmt),
+          changefreq: 'weekly',
+          priority: 0.9
+        })
+      }
+      let blogCount = 0
+      for (const p of posts) {
+        const lastmod = p.date ? dayjs(p.date).format(fmt) : dayjs().format(fmt)
+        for (const l of getBlogLangs(p.slug)) {
+          urls.push({
+            loc: l === 'cn' ? `${host}/blogs/${p.slug}/cn/` : `${host}/blogs/${p.slug}/`,
+            lastmod,
+            changefreq: 'monthly',
+            priority: 0.8
+          })
+          blogCount++
+        }
+      }
+      console.log(`✅ Added ${blogCount} blog pages to sitemap`)
+    }
+  } catch (e) {
+    console.warn('Could not add blog pages to sitemap:', e.message)
   }
 
   createSitemap({

@@ -1,0 +1,160 @@
+doctype html
+- var isCn = typeof blogLang !== 'undefined' && blogLang === 'cn'
+html(lang=isCn ? 'zh-CN' : langCode)
+  head
+    title= isCn ? 'Electerm 博客 - 教程、指南与更新' : 'Electerm Blog - Tutorials, Guides and Updates'
+    meta(name='description', content=desc)
+    meta(name='keywords', content=keywords)
+    meta(property='og:title' content=isCn ? 'Electerm 博客' : 'Electerm Blog')
+    meta(property='og:description' content=isCn ? 'Electerm 终端客户端的教程、指南与深度文章' : 'Tutorials, guides and deep-dives for electerm terminal client')
+    meta(name='twitter:title' content=isCn ? 'Electerm 博客' : 'Electerm Blog')
+    meta(name='twitter:description' content=isCn ? 'Electerm 终端客户端的教程、指南与深度文章' : 'Tutorials, guides and deep-dives for electerm terminal client')
+    include ./parts/react-header
+    script(type='application/ld+json').
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "#{host}" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "#{host}/blogs/" }
+        ]
+      }
+    style.
+      .blogs-hero {
+        background: var(--color-bg-alt);
+        padding: 48px 0;
+        text-align: center;
+      }
+      .blogs-hero h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .blogs-hero p {
+        color: var(--color-text-secondary);
+        font-size: 1.05rem;
+      }
+      .blogs-section {
+        padding: 48px 0 80px;
+        background: var(--color-bg);
+      }
+      .lang-switcher {
+        display: inline-flex;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        margin-bottom: 32px;
+      }
+      .lang-switcher a {
+        padding: 8px 20px;
+        background: var(--color-bg);
+        color: var(--color-text-secondary);
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+      .lang-switcher a + a {
+        border-left: 1px solid var(--color-border);
+      }
+      .lang-switcher a:hover {
+        background: var(--color-bg-alt);
+        color: var(--color-text);
+      }
+      .lang-switcher a.active {
+        background: var(--color-primary);
+        color: white;
+      }
+      .blogs-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      @media (min-width: 768px) {
+        .blogs-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      }
+      .blog-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--color-bg);
+        border-radius: var(--radius-lg);
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid var(--color-border);
+        transition: all 0.25s;
+        padding: 24px;
+      }
+      .blog-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--color-primary);
+      }
+      .blog-card-date {
+        font-size: 0.82rem;
+        color: var(--color-text-secondary);
+        margin-bottom: 8px;
+      }
+      .blog-card-title {
+        font-size: 1.15rem;
+        margin: 0 0 8px;
+        color: var(--color-text);
+        font-weight: 700;
+        line-height: 1.4;
+      }
+      .blog-card-desc {
+        font-size: 0.92rem;
+        color: var(--color-text-secondary);
+        line-height: 1.6;
+        flex: 1;
+      }
+      .blog-card-tags {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .blog-tag {
+        font-size: 0.75rem;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: var(--color-bg-alt);
+        border: 1px solid var(--color-border);
+        color: var(--color-text-secondary);
+      }
+      .blog-card-more {
+        margin-top: 12px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+  body
+    include ./parts/header
+    section.blogs-hero
+      .container
+        h1= isCn ? 'Electerm 博客' : 'Electerm Blog'
+        p= isCn ? '免费开源终端客户端的教程、指南与深度文章。' : 'Tutorials, guides and deep-dives for the free and open-source terminal client.'
+    section.blogs-section
+      .container(align='center')
+        .lang-switcher
+          a(href='/blogs/' class=!isCn ? 'active' : '') EN
+          a(href='/blogs/cn/' class=isCn ? 'active' : '') 中文
+        .blogs-grid
+          each post in posts
+            - var cardUrl = isCn ? `/blogs/${post.slug}/cn/` : `/blogs/${post.slug}/`
+            a.blog-card(href=cardUrl)
+              .blog-card-date= post.date
+              h2.blog-card-title= post.title
+              p.blog-card-desc= post.description
+              if post.tags && post.tags.length
+                .blog-card-tags
+                  each t in post.tags
+                    span.blog-tag= t
+              .blog-card-more= isCn ? '阅读全文 →' : 'Read more →'
+    include ./parts/refs
+    include ./parts/ads
+    include ./parts/footer
+    include ./parts/react-footer
+    include ./parts/page-script
+    +pageScript('blogs')
