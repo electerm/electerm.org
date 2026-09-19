@@ -56,5 +56,11 @@ export default [
     name: 'WorkBuddy',
     text: '2000 free credit for new user',
     url: 'https://www.workbuddy.cn/events/invite?inviteCode=ly4ll4ob3'
+  },
+  {
+    id: 'fluxionai',
+    name: 'FluxionAI',
+    text: '70% off AI models',
+    url: 'https://fluxionai.world/register?aff=7H7DERHU3GFF'
   }
 ]
