@@ -14,16 +14,19 @@ link(rel='icon' type='image/png' sizes='16x16' href=host + '/favicon-16x16.png')
 link(rel='apple-touch-icon' sizes='180x180' href=host + '/apple-touch-icon.png')
 link(rel='manifest' href=host + '/site.webmanifest')
 
+- var socialImage = (typeof ogImage !== 'undefined' && ogImage) ? ogImage : host + '/android-chrome-512x512.png'
+
 meta(property='og:type' content='website')
 meta(property='og:site_name' content='electerm')
 meta(property='og:url' content=url)
-meta(property='og:image' content=host + '/android-chrome-512x512.png')
-meta(property='og:image:width' content='512')
-meta(property='og:image:height' content='512')
-meta(property='og:image:alt' content='electerm logo')
+meta(property='og:image' content=socialImage)
+if socialImage === host + '/android-chrome-512x512.png'
+  meta(property='og:image:width' content='512')
+  meta(property='og:image:height' content='512')
+  meta(property='og:image:alt' content='electerm logo')
 
 meta(name='twitter:card' content='summary_large_image')
-meta(name='twitter:image' content=host + '/android-chrome-512x512.png')
+meta(name='twitter:image' content=socialImage)
 
 meta(name='theme-color' content='#ffffff')
 link(rel='stylesheet', href=cssUrl)

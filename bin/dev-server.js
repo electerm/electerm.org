@@ -181,6 +181,9 @@ function handleBlog (req, res) {
   const relatedVideos = (post.videos || [])
     .map(vs => data.videos.find(v => v.videoSlug === vs))
     .filter(Boolean)
+  const featureVideo = post.featureVideo
+    ? data.videos.find(v => v.videoSlug === post.featureVideo) || null
+    : null
   res.render('blog', {
     ...data,
     host: h,
@@ -196,6 +199,7 @@ function handleBlog (req, res) {
     prevPost,
     nextPost,
     relatedVideos,
+    featureVideo,
     blogLang
   })
 }

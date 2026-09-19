@@ -10,6 +10,18 @@
  * In production (bin/build-all.js), markdown is pre-rendered once and
  * written to public/blogs/<slug>/index.html (en) and
  * public/blogs/<slug>/cn/index.html (cn) as static HTML.
+ *
+ * Frontmatter keys:
+ *   title         post title (h1 + <title>)
+ *   description   meta description / og:description
+ *   date          YYYY-MM-DD, drives ordering and datePublished
+ *   tags          [a, b] or "a, b"
+ *   videos        [videoSlug, ...] — listed as "related videos" at the bottom
+ *   featureVideo  single videoSlug — embedded as a player above the article
+ *   banner        absolute site path (e.g. /blogs/my-post/banner.png) used as
+ *                 the post hero image, the og:image and the list card thumbnail.
+ *                 Assets live in src/static/blogs/<slug>/ so `npm run cp`
+ *                 copies them to public/blogs/<slug>/.
  */
 import { readdirSync, readFileSync, existsSync, statSync } from 'fs'
 import { resolve } from 'path'
@@ -128,7 +140,10 @@ export function getBlog (slug, lang = 'en') {
     tags: Array.isArray(meta.tags) ? meta.tags : (meta.tags ? [meta.tags] : []),
     // video slugs from electerm.org/videos that this post references
     videos: Array.isArray(meta.videos) ? meta.videos : (meta.videos ? [meta.videos] : []),
-    cover: meta.cover || '',
+    // single video slug rendered as an embedded player at the top of the post
+    featureVideo: meta.featureVideo || '',
+    // banner/hero image, absolute site path (e.g. /blogs/my-post/banner.png)
+    banner: meta.banner || meta.cover || '',
     html,
     raw: body,
     meta

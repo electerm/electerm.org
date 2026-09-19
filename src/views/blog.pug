@@ -1,5 +1,6 @@
 doctype html
 - var isCn = typeof blogLang !== 'undefined' && blogLang === 'cn'
+- var ogImage = post.banner ? host + post.banner : ''
 html(lang=isCn ? 'zh-CN' : langCode)
   head
     title #{post.title} - electerm Blog
@@ -27,6 +28,7 @@ html(lang=isCn ? 'zh-CN' : langCode)
         margin-bottom: 16px;
         text-decoration: none;
         transition: color 0.2s;
+        margin-right: 5px;
       }
       .back-link:hover {
         color: var(--color-primary);
@@ -89,6 +91,46 @@ html(lang=isCn ? 'zh-CN' : langCode)
         padding: 40px 0 80px;
         background: var(--color-bg);
       }
+      .blog-banner {
+        max-width: 780px;
+        margin: 0 auto 28px;
+      }
+      .blog-banner img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+      }
+      .blog-video {
+        max-width: 780px;
+        margin: 0 auto 28px;
+      }
+      .blog-video-frame {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        background: #000;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+      }
+      .blog-video-frame iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        border: 0;
+      }
+      .blog-video-caption {
+        margin-top: 8px;
+        font-size: 0.88rem;
+        color: var(--color-text-secondary);
+      }
+      .blog-video-caption a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+      .blog-video-caption a:hover { text-decoration: underline; }
       .blog-content {
         max-width: 780px;
         margin: 0 auto;
@@ -216,6 +258,23 @@ html(lang=isCn ? 'zh-CN' : langCode)
                 span.blog-tag= t
     section.blog-section
       .container
+        if post.banner
+          .blog-banner
+            img(src=post.banner alt=post.title loading='lazy')
+        if featureVideo
+          .blog-video
+            .blog-video-frame
+              iframe(
+                src=`//player.bilibili.com/player.html?bvid=${featureVideo.bvid}&page=1&high_quality=1&danmaku=0&autoplay=0`
+                scrolling='no'
+                border='0'
+                frameborder='no'
+                framespacing='0'
+                allowfullscreen='true'
+                title=isCn ? featureVideo.title : featureVideo.titleEn
+              )
+            p.blog-video-caption
+              a(href=`/videos/${featureVideo.videoSlug}/`)= '🎥 ' + (isCn ? featureVideo.title : featureVideo.titleEn)
         .blog-content!= post.html
         if relatedVideos && relatedVideos.length
           .related-videos
@@ -223,7 +282,7 @@ html(lang=isCn ? 'zh-CN' : langCode)
             ul
               each v in relatedVideos
                 li
-                  a(href=`/videos/${v.videoSlug}/`)= '🎥 ' + v.titleEn
+                  a(href=`/videos/${v.videoSlug}/`)= '🎥 ' + (isCn ? v.title : v.titleEn)
         .blog-nav
           if prevPost
             - var prevUrl = isCn ? `/blogs/${prevPost.slug}/cn/` : `/blogs/${prevPost.slug}/`

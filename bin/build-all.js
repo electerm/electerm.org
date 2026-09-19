@@ -380,6 +380,10 @@ async function buildBlogPages () {
       const relatedVideos = (post.videos || [])
         .map(vs => data.videos.find(v => v.videoSlug === vs))
         .filter(Boolean)
+      // optional single video embedded as the post's feature video
+      const featureVideo = post.featureVideo
+        ? data.videos.find(v => v.videoSlug === post.featureVideo) || null
+        : null
       const structuredData = JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
@@ -388,6 +392,7 @@ async function buildBlogPages () {
         inLanguage: isCn ? 'zh-CN' : 'en',
         datePublished: post.dateISO || data.releaseDateISO,
         author: { '@type': 'Person', name: 'ZHAO Xudong' },
+        ...(post.banner ? { image: `${h}${post.banner}` } : {}),
         mainEntityOfPage: isCn ? `${h}/blogs/${slug}/cn/` : `${h}/blogs/${slug}/`
       })
       await buildPug(detailFrom, resolve(dir, 'index.html'), {
@@ -405,6 +410,7 @@ async function buildBlogPages () {
         prevPost: i > 0 ? posts[i - 1] : null,
         nextPost: i < posts.length - 1 ? posts[i + 1] : null,
         relatedVideos,
+        featureVideo,
         blogLang
       })
       count++

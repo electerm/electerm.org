@@ -96,6 +96,14 @@ html(lang=isCn ? 'zh-CN' : langCode)
         color: var(--color-text-secondary);
         margin-bottom: 8px;
       }
+      .blog-card-banner {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--color-border);
+      }
       .blog-card-title {
         font-size: 1.15rem;
         margin: 0 0 8px;
@@ -144,6 +152,8 @@ html(lang=isCn ? 'zh-CN' : langCode)
           each post in posts
             - var cardUrl = isCn ? `/blogs/${post.slug}/cn/` : `/blogs/${post.slug}/`
             a.blog-card(href=cardUrl)
+              if post.banner
+                img.blog-card-banner(src=post.banner alt=post.title loading='lazy')
               .blog-card-date= post.date
               h2.blog-card-title= post.title
               p.blog-card-desc= post.description
