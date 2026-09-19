@@ -22,6 +22,13 @@
  *                 the post hero image, the og:image and the list card thumbnail.
  *                 Assets live in src/static/blogs/<slug>/ so `npm run cp`
  *                 copies them to public/blogs/<slug>/.
+ *   bannerScript  absolute site path to a JS module (e.g.
+ *                 /blogs/my-post/banner.js) that renders a live, animated
+ *                 banner instead of a raster image — loaded on the post page
+ *                 and on the blog index. It receives an empty element carrying
+ *                 data-eb-banner="hero" (post page) or "card" (index card).
+ *                 When set, `banner` is ignored for display (og:image then
+ *                 falls back to the default site icon).
  */
 import { readdirSync, readFileSync, existsSync, statSync } from 'fs'
 import { resolve } from 'path'
@@ -144,6 +151,8 @@ export function getBlog (slug, lang = 'en') {
     featureVideo: meta.featureVideo || '',
     // banner/hero image, absolute site path (e.g. /blogs/my-post/banner.png)
     banner: meta.banner || meta.cover || '',
+    // live animated banner module (no image), absolute site path
+    bannerScript: meta.bannerScript || '',
     html,
     raw: body,
     meta

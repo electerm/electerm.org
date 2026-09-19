@@ -95,6 +95,9 @@ html(lang=isCn ? 'zh-CN' : langCode)
         max-width: 780px;
         margin: 0 auto 28px;
       }
+      .blog-banner-live {
+        min-height: 120px;
+      }
       .blog-banner img {
         display: block;
         width: 100%;
@@ -258,7 +261,10 @@ html(lang=isCn ? 'zh-CN' : langCode)
                 span.blog-tag= t
     section.blog-section
       .container
-        if post.banner
+        if post.bannerScript
+          .blog-banner.blog-banner-live
+            div(data-eb-banner='hero')
+        else if post.banner
           .blog-banner
             img(src=post.banner alt=post.title loading='lazy')
         if featureVideo
@@ -294,6 +300,8 @@ html(lang=isCn ? 'zh-CN' : langCode)
             a(href=nextUrl) #{nextPost.title} →
           else
             span
+    if post.bannerScript
+      script(type='module', src=post.bannerScript)
     include ./parts/refs
     include ./parts/ads
     include ./parts/footer
