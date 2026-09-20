@@ -5,7 +5,7 @@ date: 2026-09-19
 tags: [批量输入, 镜像输入, 广播输入, ssh, 提效, 运维]
 videos: [electerm-batch-and-mirror-input-to-multiple-terminals, electerm-batch-operations, electerm-session-layout, electerm-workspace, electerm-quick-commands]
 featureVideo: electerm-batch-and-mirror-input-to-multiple-terminals
-banner: /blogs/batch-and-mirror-input/banner.png
+bannerScript: banner.js
 ---
 
 # Electerm 批量输入与镜像输入：敲一次，驱动多台终端

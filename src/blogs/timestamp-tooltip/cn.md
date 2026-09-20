@@ -4,7 +4,7 @@ description: 在 electerm 终端里选中一个数字，光标旁就会弹出提
 date: 2026-09-19
 tags: [时间戳, unix 时间, 终端, 日志, 提效, 技巧]
 videos: [electerm-auto-copy-on-select, electerm-terminal-keyword-highlighting, electerm-usage-demo]
-bannerScript: /blogs/timestamp-tooltip/banner.js
+bannerScript: banner.js
 ---
 
 # 在 Electerm 里一眼读懂任意 Unix 时间戳

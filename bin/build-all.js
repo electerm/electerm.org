@@ -1,10 +1,10 @@
 import data from './data.js'
 import { buildPug } from './build-bug.js'
 import { jsUrl } from './js-entry.js'
-import { resolve } from 'path'
+import { resolve, dirname } from 'path'
 import { cwd } from './common.js'
 import releaseData from './release-data.js'
-import { getAllBlogs, getBlogLangs } from './blogs.js'
+import { getAllBlogs, getBlogLangs, getAllBlogAssets } from './blogs.js'
 import fs from 'fs/promises'
 import { readFileSync } from 'fs'
 
@@ -334,9 +334,25 @@ async function buildReleases () {
   console.log(`Built ${all.length} release pages`)
 }
 
+// A post can carry its own modules and styles (the animated banner scripts
+// declared with `bannerScript`, plus anything they import). They live next to
+// the markdown in src/blogs/<slug>/ and are published at /blogs/<slug>/<file>.
+// `npm run cp` only mirrors src/static, so the blog folder is copied here.
+async function copyBlogAssets () {
+  const assets = getAllBlogAssets()
+  for (const asset of assets) {
+    const to = resolve(cwd, 'public' + asset.url)
+    await fs.mkdir(dirname(to), { recursive: true })
+    await fs.copyFile(asset.file, to)
+  }
+  console.log(`✅ Published ${assets.length} blog assets`)
+}
+
 async function buildBlogPages () {
   const { langCode, lang } = data.langs.find(l => l.id === 'en_us')
   const h = process.env.HOST
+
+  await copyBlogAssets()
 
   // List pages: /blogs/ (en) + /blogs/cn/ (cn)
   const listFrom = resolve(cwd, 'src/views/blogs.pug')

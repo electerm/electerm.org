@@ -5,7 +5,7 @@ date: 2026-09-19
 tags: [batch-input, mirror-input, broadcast, ssh, productivity, sysadmin]
 videos: [electerm-batch-and-mirror-input-to-multiple-terminals, electerm-batch-operations, electerm-session-layout, electerm-workspace, electerm-quick-commands]
 featureVideo: electerm-batch-and-mirror-input-to-multiple-terminals
-banner: /blogs/batch-and-mirror-input/banner.png
+bannerScript: banner.js
 ---
 
 # Batch Input and Mirror Input in Electerm: Type Once, Drive Many Terminals

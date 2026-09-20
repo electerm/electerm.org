@@ -8,7 +8,7 @@ import stylus from 'stylus'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 import releaseData from './release-data.js'
-import { getAllBlogs, getBlog } from './blogs.js'
+import { getAllBlogs, getBlog, getBlogAssets } from './blogs.js'
 
 const devPort = env.SERVER_DEV_PORT || 6068
 const host = env.SERVER_HOST || '127.0.0.1'
@@ -140,6 +140,22 @@ function handleVideosIndex (req, res) {
     desc: lang.lang.desc,
     videos: data.videos
   })
+}
+
+// Post-local modules and styles — the animated banner scripts declared with
+// `bannerScript` (src/blogs/<slug>/banner.js) and anything they import.
+// Production serves these from public/blogs/<slug>/ (bin/build-all.js copies
+// them); in dev they are read straight from source so editing a banner needs
+// no rebuild. Anything that is not a published post asset falls through.
+function handleBlogAsset (req, res, next) {
+  const { slug, file } = req.params
+  const asset = getBlogAssets(slug).find((a) => a.name === file)
+  if (!asset) {
+    return next()
+  }
+  res.set('Cache-Control', 'no-store')
+  res.type(asset.name)
+  res.sendFile(asset.file)
 }
 
 function handleBlogsIndex (req, res) {
@@ -358,6 +374,8 @@ function createServer () {
     req.params.blogLang = 'cn'
     return handleBlog(req, res)
   })
+  // Post-local assets (banner modules) — /blogs/<slug>/banner.js
+  app.get('/blogs/:slug/:file', handleBlogAsset)
   app.get('/blogs/:slug', handleBlog)
   app.get('/blogs/:slug/', handleBlog)
 

@@ -20,15 +20,24 @@
  *   featureVideo  single videoSlug — embedded as a player above the article
  *   banner        absolute site path (e.g. /blogs/my-post/banner.png) used as
  *                 the post hero image, the og:image and the list card thumbnail.
- *                 Assets live in src/static/blogs/<slug>/ so `npm run cp`
+ *                 Raster assets live in src/static/blogs/<slug>/ so `npm run cp`
  *                 copies them to public/blogs/<slug>/.
- *   bannerScript  absolute site path to a JS module (e.g.
- *                 /blogs/my-post/banner.js) that renders a live, animated
- *                 banner instead of a raster image — loaded on the post page
- *                 and on the blog index. It receives an empty element carrying
+ *   bannerScript  file name of a JS module sitting next to the post, e.g.
+ *                 `banner.js` -> src/blogs/my-post/banner.js, published at
+ *                 /blogs/my-post/banner.js. It renders a live, animated banner
+ *                 instead of a raster image — loaded on the post page and on
+ *                 the blog index. It receives an empty element carrying
  *                 data-eb-banner="hero" (post page) or "card" (index card).
  *                 When set, `banner` is ignored for display (og:image then
  *                 falls back to the default site icon).
+ *                 An absolute site path (/blogs/my-post/banner.js) is still
+ *                 accepted and used verbatim; in that case nothing is copied
+ *                 and the file is expected to come from src/static.
+ *
+ * Every .js / .mjs / .css file inside a post folder is published at
+ * /blogs/<slug>/<file> — by `bin/build-all.js` for the built site, and
+ * straight from source by `bin/dev-server.js` in development. That is what
+ * lets a banner module import a sibling helper without a bundler.
  */
 import { readdirSync, readFileSync, existsSync, statSync } from 'fs'
 import { resolve } from 'path'
@@ -97,8 +106,64 @@ function isValidSlug (slug) {
   return /^[a-z0-9-]+$/i.test(slug)
 }
 
+// Files published next to a post. Anything else in a post folder stays
+// source-only (markdown, notes, images referenced from the article body).
+const BLOG_ASSET_RE = /^[\w.-]+\.(js|mjs|css)$/i
+
 function blogFileFor (slug, lang) {
   return resolve(blogsDir, slug, normalizeBlogLang(lang) + '.md')
+}
+
+/**
+ * Post-local modules/styles, as { name, file, url }.
+ * `file` is an absolute source path; `url` is where it is published.
+ */
+export function getBlogAssets (slug) {
+  if (!isValidSlug(slug)) return []
+  const dir = resolve(blogsDir, slug)
+  if (!existsSync(dir)) return []
+  return readdirSync(dir)
+    .filter((name) => BLOG_ASSET_RE.test(name))
+    .filter((name) => {
+      try {
+        return statSync(resolve(dir, name)).isFile()
+      } catch {
+        return false
+      }
+    })
+    .sort()
+    .map((name) => ({
+      name,
+      file: resolve(dir, name),
+      url: `/blogs/${slug}/${name}`
+    }))
+}
+
+export function getAllBlogAssets () {
+  return getBlogSlugs().flatMap((slug) => getBlogAssets(slug))
+}
+
+/**
+ * `bannerScript` frontmatter -> { url, file }.
+ *   banner.js            -> src/blogs/<slug>/banner.js, /blogs/<slug>/banner.js
+ *   /blogs/x/banner.js   -> used as-is, nothing to copy (legacy / src/static)
+ * A named module that does not exist is reported and dropped, so a typo
+ * renders no banner instead of a 404 script tag.
+ */
+export function resolveBannerScript (slug, value) {
+  const name = String(value || '').trim()
+  if (!name) return { url: '', file: '' }
+  if (name.includes('/')) return { url: name, file: '' }
+  if (!BLOG_ASSET_RE.test(name)) {
+    console.warn(`⚠️  blog "${slug}": bannerScript "${name}" is not a .js/.mjs/.css file name`)
+    return { url: '', file: '' }
+  }
+  const file = resolve(blogsDir, slug, name)
+  if (!existsSync(file)) {
+    console.warn(`⚠️  blog "${slug}": bannerScript "${name}" not found at ${file}`)
+    return { url: '', file: '' }
+  }
+  return { url: `/blogs/${slug}/${name}`, file }
 }
 
 export function getBlogSlugs () {
@@ -133,6 +198,8 @@ export function getBlog (slug, lang = 'en') {
   const raw = readFileSync(file, 'utf-8')
   const { meta, body } = parseFrontmatter(raw)
   const html = renderMarkdown(body)
+  // banner script: a module next to the post, or a site path used verbatim
+  const bannerScript = resolveBannerScript(slug, meta.bannerScript)
   // plain-text excerpt fallback when no description in frontmatter
   const excerpt = (body.replace(/[#>*`[\]()!]/g, '').replace(/\s+/g, ' ').trim().slice(0, 160))
   const actualLang = file.endsWith('/cn.md') ? 'cn' : 'en'
@@ -152,7 +219,7 @@ export function getBlog (slug, lang = 'en') {
     // banner/hero image, absolute site path (e.g. /blogs/my-post/banner.png)
     banner: meta.banner || meta.cover || '',
     // live animated banner module (no image), absolute site path
-    bannerScript: meta.bannerScript || '',
+    bannerScript: bannerScript.url,
     html,
     raw: body,
     meta

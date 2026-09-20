@@ -20,6 +20,9 @@
  * Mount points: any element carrying [data-eb-banner]:
  *   data-eb-banner="hero"  -> headline + full window (blog post page)
  *   data-eb-banner="card"  -> window only         (blog index thumbnail)
+ * Every banner script on the blog index is loaded for every card, so a mount
+ * also has to match data-eb-banner-src (the module the template loaded for
+ * that post) — otherwise the first script to run would claim every card.
  *
  * One deliberate liberty: the terminal tails two log lines rather than one, so
  * that the tooltip — which is a line tall and opens a line above the cursor,
@@ -92,11 +95,14 @@ const icon = (path, cls, viewBox = '64 64 896 896') =>
 
 const CSS = `
 .eb-bn {
-  /* real electerm UI theme — src/client/css/includes/theme.styl */
+  /* real electerm UI theme — src/client/css/includes/theme.styl, with the
+     shipped dark theme (src/client/common/theme-defaults.js, defaultThemeDark)
+     injected over it at runtime, which is where --main #121214 comes from.
+     --main-lighter is only defined in theme.styl, so #5b5a5b is what ships. */
   --eb-ink: #16233a;
   --eb-main-dark: #000;
   --eb-main: #121214;
-  --eb-main-lighter: #2e3338;
+  --eb-main-lighter: #5b5a5b;
   --eb-text: #ddd;
   --eb-text-dark: #888;
   --eb-primary: #08c;
@@ -678,10 +684,27 @@ function mount (host) {
   }
 }
 
+// The path this module was served from, e.g. /blogs/my-post/banner.js.
+function selfPath () {
+  try {
+    return new URL(import.meta.url).pathname
+  } catch (err) {
+    return ''
+  }
+}
+
 export function initBanners (doc = document) {
   injectStyle()
+  const self = selfPath()
   const hosts = doc.querySelectorAll('[data-eb-banner]')
-  for (const host of hosts) mount(host)
+  for (const host of hosts) {
+    // The blog index loads every post's banner module, so a mount has to be
+    // the one this module was loaded for. A host with no data-eb-banner-src
+    // (a test harness) is fair game for any module.
+    const src = host.getAttribute('data-eb-banner-src')
+    if (src && self && src !== self) continue
+    mount(host)
+  }
 }
 
 if (typeof document !== 'undefined') {

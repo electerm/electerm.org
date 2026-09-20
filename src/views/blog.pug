@@ -263,7 +263,7 @@ html(lang=isCn ? 'zh-CN' : langCode)
       .container
         if post.bannerScript
           .blog-banner.blog-banner-live
-            div(data-eb-banner='hero')
+            div(data-eb-banner='hero' data-eb-banner-src=post.bannerScript)
         else if post.banner
           .blog-banner
             img(src=post.banner alt=post.title loading='lazy')

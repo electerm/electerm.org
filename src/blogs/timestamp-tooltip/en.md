@@ -4,7 +4,7 @@ description: Select a number in the electerm terminal and a tooltip tells you wh
 date: 2026-09-19
 tags: [timestamp, unix-time, terminal, logs, productivity, tips]
 videos: [electerm-auto-copy-on-select, electerm-terminal-keyword-highlighting, electerm-usage-demo]
-bannerScript: /blogs/timestamp-tooltip/banner.js
+bannerScript: banner.js
 ---
 
 # Read Any Unix Timestamp at a Glance in Electerm

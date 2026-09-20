@@ -162,7 +162,7 @@ html(lang=isCn ? 'zh-CN' : langCode)
             a.blog-card(href=cardUrl)
               if post.bannerScript
                 .blog-card-banner-live
-                  div(data-eb-banner='card')
+                  div(data-eb-banner='card' data-eb-banner-src=post.bannerScript)
               else if post.banner
                 img.blog-card-banner(src=post.banner alt=post.title loading='lazy')
               .blog-card-date= post.date
