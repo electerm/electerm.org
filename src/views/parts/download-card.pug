@@ -1,6 +1,6 @@
-// Shared download card mixins — used by both the homepage download section
-// (src/views/parts/download.pug) and the per-release pages (release.pug) so
-// the card markup + mirror links stay identical across the site.
+//- Shared download card mixins — used by both the homepage download section
+//- (src/views/parts/download.pug) and the per-release pages (release.pug) so
+//- the card markup + mirror links stay identical across the site.
 
 mixin dlLinks(obj)
   .download-card-links
@@ -17,8 +17,8 @@ mixin dlCard(obj)
         .download-card-desc #{obj.desc}
     +dlLinks(obj)
 
-// History release pages (release.pug) only expose GitHub + the gh-proxy
-// mirror — no SourceForge, no R2.
+//- History release pages (release.pug) only expose GitHub + the gh-proxy
+//- mirror — no SourceForge, no R2.
 mixin dlLinksHist(obj)
   .download-card-links
     a.download-card-link.primary(href=obj.browser_download_url) GitHub
