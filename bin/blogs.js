@@ -52,6 +52,19 @@ export function normalizeBlogLang (lang) {
   return lang === 'cn' ? 'cn' : 'en'
 }
 
+/**
+ * Locale data ({ langCode, lang }) for a blog language.
+ *
+ * The blog is its own bilingual section rather than a translation of the site
+ * shell, so each page renders under the locale of the language it is written
+ * in. Handing both blog languages the site locale meant /blogs/cn/ showed a
+ * Chinese article under an English nav.
+ */
+export function blogLocale (langs, blogLang) {
+  const id = normalizeBlogLang(blogLang) === 'cn' ? 'zh_cn' : 'en_us'
+  return langs.find((l) => l.id === id) || langs.find((l) => l.id === 'en_us')
+}
+
 marked.setOptions({
   gfm: true,
   breaks: false

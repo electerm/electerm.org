@@ -4,7 +4,7 @@ import { jsUrl } from './js-entry.js'
 import { resolve, dirname } from 'path'
 import { cwd } from './common.js'
 import releaseData from './release-data.js'
-import { getAllBlogs, getBlogLangs, getAllBlogAssets } from './blogs.js'
+import { getAllBlogs, getBlogLangs, getAllBlogAssets, blogLocale } from './blogs.js'
 import fs from 'fs/promises'
 import { readFileSync } from 'fs'
 
@@ -349,7 +349,6 @@ async function copyBlogAssets () {
 }
 
 async function buildBlogPages () {
-  const { langCode, lang } = data.langs.find(l => l.id === 'en_us')
   const h = process.env.HOST
 
   await copyBlogAssets()
@@ -359,6 +358,7 @@ async function buildBlogPages () {
   for (const blogLang of ['en', 'cn']) {
     const posts = getAllBlogs(blogLang)
     const isCn = blogLang === 'cn'
+    const { langCode, lang } = blogLocale(data.langs, blogLang)
     const listDir = resolve(cwd, isCn ? 'public/blogs/cn' : 'public/blogs')
     await fs.mkdir(listDir, { recursive: true })
     await buildPug(listFrom, resolve(listDir, 'index.html'), {
@@ -387,6 +387,7 @@ async function buildBlogPages () {
   for (const slug of slugs) {
     for (const blogLang of getBlogLangs(slug)) {
       const isCn = blogLang === 'cn'
+      const { langCode, lang } = blogLocale(data.langs, blogLang)
       const posts = getAllBlogs(blogLang)
       const i = posts.findIndex(p => p.slug === slug)
       if (i === -1) continue

@@ -2,7 +2,7 @@ doctype html
 - var isCn = typeof blogLang !== 'undefined' && blogLang === 'cn'
 //- live banner modules referenced by the posts, loaded once each
 - var bannerScripts = posts.map(function (p) { return p.bannerScript }).filter(function (s, i, a) { return s && a.indexOf(s) === i })
-html(lang=isCn ? 'zh-CN' : langCode)
+html(lang=isCn ? 'zh-CN' : langCode data-page-lang=isCn ? 'zh' : 'en')
   head
     title= isCn ? 'Electerm 博客 - 教程、指南与更新' : 'Electerm Blog - Tutorials, Guides and Updates'
     meta(name='description', content=desc)
@@ -39,33 +39,6 @@ html(lang=isCn ? 'zh-CN' : langCode)
       .blogs-section {
         padding: 48px 0 80px;
         background: var(--color-bg);
-      }
-      .lang-switcher {
-        display: inline-flex;
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-md);
-        overflow: hidden;
-        margin-bottom: 32px;
-      }
-      .lang-switcher a {
-        padding: 8px 20px;
-        background: var(--color-bg);
-        color: var(--color-text-secondary);
-        font-weight: 500;
-        font-size: 0.9rem;
-        text-decoration: none;
-        transition: all 0.2s;
-      }
-      .lang-switcher a + a {
-        border-left: 1px solid var(--color-border);
-      }
-      .lang-switcher a:hover {
-        background: var(--color-bg-alt);
-        color: var(--color-text);
-      }
-      .lang-switcher a.active {
-        background: var(--color-primary);
-        color: white;
       }
       .blogs-grid {
         display: grid;

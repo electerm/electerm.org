@@ -1,46 +1,40 @@
-// Video pages: language toggle (zh / en) for titles and UI.
-/* global localStorage */
-function getBrowserLang () {
-  const lang = navigator.language || navigator.userLanguage
-  return lang.toLowerCase().startsWith('zh') ? 'zh' : 'en'
-}
+// Video pages: language toggle (zh / en) for the page title, the video titles
+// and the switcher's active state.
+//
+// The choice itself lives in the shared site setting (./lang.js), so picking a
+// language here also decides which blog the header links to, and vice versa.
+import { getLang, setLang } from './lang.js'
 
-function getCurrentLang () {
-  const saved = localStorage.getItem('video-lang')
-  return saved || getBrowserLang()
-}
+const INDEX_TITLE = { zh: 'Electerm 视频教程', en: 'Electerm Videos' }
 
-function updateLanguage (lang) {
-  document.documentElement.setAttribute('data-video-lang', lang)
-  localStorage.setItem('video-lang', lang)
-
+function render (lang) {
+  // Single video page: <h1> carries both titles. Videos index: no <h1>.
   const h1Title = document.querySelector('h1.video-title')
-  if (h1Title) {
-    const titleEn = h1Title.dataset.titleEn
-    const titleZh = h1Title.dataset.titleZh
-    document.title = lang === 'zh' ? titleZh : titleEn
-  } else {
-    document.title = lang === 'zh' ? 'Electerm 视频教程' : 'Electerm Videos'
-  }
+  document.title = h1Title
+    ? (lang === 'zh' ? h1Title.dataset.titleZh : h1Title.dataset.titleEn)
+    : INDEX_TITLE[lang]
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang)
   })
 
   document.querySelectorAll('[data-title-en]').forEach(el => {
-    const titleEn = el.dataset.titleEn
-    const titleZh = el.dataset.titleZh
-    el.textContent = lang === 'zh' ? titleZh : titleEn
+    el.textContent = lang === 'zh' ? el.dataset.titleZh : el.dataset.titleEn
   })
 }
 
+// setLang() normalizes, persists and publishes the value; render from what it
+// actually stored rather than from the raw argument.
+function apply (lang) {
+  render(setLang(lang) || getLang())
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-  const currentLang = getCurrentLang()
-  updateLanguage(currentLang)
+  apply(getLang())
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', function () {
-      updateLanguage(this.dataset.lang)
+      apply(this.dataset.lang)
     })
   })
 })

@@ -8,7 +8,7 @@ import stylus from 'stylus'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 import releaseData from './release-data.js'
-import { getAllBlogs, getBlog, getBlogAssets } from './blogs.js'
+import { getAllBlogs, getBlog, getBlogAssets, blogLocale } from './blogs.js'
 
 const devPort = env.SERVER_DEV_PORT || 6068
 const host = env.SERVER_HOST || '127.0.0.1'
@@ -159,8 +159,8 @@ function handleBlogAsset (req, res, next) {
 }
 
 function handleBlogsIndex (req, res) {
-  const { langCode, lang } = enLang
   const blogLang = req.params.blogLang === 'cn' ? 'cn' : 'en'
+  const { langCode, lang } = blogLocale(data.langs, blogLang)
   const posts = getAllBlogs(blogLang)
   const isCn = blogLang === 'cn'
   res.render('blogs', {
@@ -181,9 +181,9 @@ function handleBlogsIndex (req, res) {
 }
 
 function handleBlog (req, res) {
-  const { langCode, lang } = enLang
   const slug = req.params.slug
   const blogLang = req.params.blogLang === 'cn' ? 'cn' : 'en'
+  const { langCode, lang } = blogLocale(data.langs, blogLang)
   const post = getBlog(slug, blogLang)
   if (!post) {
     res.status(404).send('Blog post not found')
