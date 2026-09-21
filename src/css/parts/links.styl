@@ -1,0 +1,59 @@
+/* ===== Links Section ===== */
+
+.links-section
+  padding 80px 0
+  background var(--color-bg)
+
+.links-grid
+  display grid
+  grid-template-columns 1fr
+  gap 32px
+
+@media (min-width: 768px)
+  .links-grid
+    grid-template-columns repeat(2, 1fr)
+    gap 40px
+
+@media (min-width: 1024px)
+  .links-grid
+    grid-template-columns repeat(3, 1fr)
+
+.link-category h3
+  font-size 1rem
+  font-weight 600
+  margin-bottom 16px
+  padding-bottom 12px
+  border-bottom 2px solid var(--color-primary)
+  display inline-block
+
+.link-list
+  list-style none
+
+.link-list li
+  margin-bottom 4px
+
+.link-list a
+  display flex
+  align-items center
+  gap 8px
+  padding 8px 12px
+  border-radius var(--radius-sm)
+  color var(--color-text-secondary)
+  font-size 0.9rem
+  transition all 0.15s
+
+.link-list a:hover
+  background var(--color-bg-alt)
+  color var(--color-primary)
+
+.link-list a::before
+  content ''
+  width 5px
+  height 5px
+  border-radius 50%
+  background var(--color-border)
+  flex-shrink 0
+  transition background 0.15s
+
+.link-list a:hover::before
+  background var(--color-primary)

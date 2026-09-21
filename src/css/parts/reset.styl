@@ -1,0 +1,32 @@
+/* ===== Reset ===== */
+
+*, *::before, *::after
+  box-sizing border-box
+  margin 0
+  padding 0
+
+html
+  scroll-behavior smooth
+  -webkit-text-size-adjust 100%
+  overflow-x hidden
+
+body
+  font-family var(--font-sans)
+  color var(--color-text)
+  background var(--color-bg)
+  line-height 1.6
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  overflow-x hidden
+
+img
+  max-width 100%
+  height auto
+
+a
+  color var(--color-primary)
+  text-decoration none
+  transition color 0.2s
+
+a:hover
+  color var(--color-primary-dark)

@@ -1,0 +1,111 @@
+/* ===== Footer ===== */
+
+.site-footer
+  position relative
+  z-index 0
+  background #0f172a
+  color rgba(255,255,255,0.6)
+  padding 48px 0 24px
+
+  // Watermark logo in the reserved padding-bottom area (shown by JS when ad is visible)
+  .watermark
+    position absolute
+    // JS controls both height and vertical offset to centre the watermark
+    // at half the reserved padding height
+    bottom var(--watermark-bottom, 0)
+    left 0
+    right 0
+    height var(--watermark-height, 0)
+    background-image url('/electerm.png')
+    background-position center
+    background-size var(--watermark-bg-size, 160px) auto
+    background-repeat no-repeat
+    // z-index -1 inside the footer's stacking context = behind in-flow content,
+    // above the footer's own dark background — perfect for a watermark
+    z-index -1
+    opacity 0.07
+    pointer-events none
+    // Slight white glow on the logo to make it pop on the dark bg
+    filter brightness(0) invert(1) drop-shadow(0 0 12px rgba(255,255,255,0.15))
+
+.footer-grid
+  display grid
+  grid-template-columns 1fr
+  gap 32px
+  margin-bottom 40px
+
+@media (min-width: 480px)
+  .footer-grid
+    grid-template-columns repeat(2, 1fr)
+
+@media (min-width: 768px)
+  .footer-grid
+    grid-template-columns 2fr repeat(3, 1fr)
+
+.footer-brand
+  max-width 280px
+
+.footer-brand-name
+  display flex
+  align-items center
+  gap 10px
+  color white
+  font-weight 700
+  font-size 1.1rem
+  margin-bottom 12px
+
+.footer-brand-name img
+  height 28px
+
+.footer-brand p
+  font-size 0.85rem
+  line-height 1.6
+
+.footer-col h4
+  color white
+  font-size 0.85rem
+  font-weight 600
+  text-transform uppercase
+  letter-spacing 0.05em
+  margin-bottom 16px
+
+.footer-col ul
+  list-style none
+
+.footer-col li
+  margin-bottom 8px
+
+.footer-col a
+  color rgba(255,255,255,0.5)
+  font-size 0.88rem
+  transition color 0.2s
+
+.footer-col a:hover
+  color white
+
+.footer-bottom
+  padding-top 24px
+  border-top 1px solid rgba(255,255,255,0.1)
+  display flex
+  flex-direction column
+  gap 12px
+  align-items center
+
+@media (min-width: 768px)
+  .footer-bottom
+    flex-direction row
+    justify-content space-between
+
+.footer-bottom p
+  font-size 0.82rem
+
+.footer-bottom-links
+  display flex
+  gap 16px
+
+.footer-bottom-links a
+  color rgba(255,255,255,0.4)
+  font-size 0.82rem
+
+.footer-bottom-links a:hover
+  color white

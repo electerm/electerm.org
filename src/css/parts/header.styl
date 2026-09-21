@@ -1,0 +1,257 @@
+/* ===== Header ===== */
+
+.site-header
+  position sticky
+  top 0
+  z-index 100
+  background rgba(255,255,255,0.92)
+  backdrop-filter blur(12px)
+  -webkit-backdrop-filter blur(12px)
+  border-bottom 1px solid var(--color-border)
+  height var(--header-height)
+
+.header-inner
+  display flex
+  align-items center
+  justify-content space-between
+  height var(--header-height)
+
+.header-logo
+  display flex
+  align-items center
+  gap 10px
+  font-weight 700
+  font-size 1.15rem
+  color var(--color-text)
+  text-decoration none
+
+.header-logo:hover
+  color var(--color-text)
+
+.header-logo img
+  height 32px
+  width auto
+
+.header-nav
+  display none
+  align-items center
+  gap 8px
+
+@media (min-width: 768px)
+  .header-nav
+    display flex
+
+.header-nav a
+  padding 8px 14px
+  border-radius var(--radius-sm)
+  color var(--color-text-secondary)
+  font-size 0.9rem
+  font-weight 500
+  transition all 0.15s
+
+.header-nav a:hover
+  color var(--color-text)
+  background var(--color-bg-alt)
+
+.header-github-link
+  display inline-flex
+  align-items center
+  gap 6px
+
+.header-star-badge
+  display inline-flex
+  align-items center
+  gap 3px
+  padding 1px 7px
+  border-radius 999px
+  background rgba(255, 196, 0, 0.12)
+  color #d4a300
+  font-size 0.75rem
+  font-weight 600
+  line-height 1.4
+
+.header-star-icon
+  flex-shrink 0
+
+.header-actions
+  display flex
+  align-items center
+  gap 8px
+
+.lang-dropdown
+  position relative
+
+.lang-toggle
+  display flex
+  align-items center
+  gap 6px
+  padding 6px 10px
+  border 1px solid var(--color-border)
+  border-radius var(--radius-sm)
+  background var(--color-bg)
+  cursor pointer
+  font-size 0.9rem
+  color var(--color-text-secondary)
+  transition all 0.15s
+
+.lang-toggle:hover
+  border-color var(--color-primary)
+  color var(--color-primary)
+
+.lang-toggle .flag
+  font-size 1.1rem
+
+.lang-toggle .arrow
+  font-size 0.65rem
+  transition transform 0.2s
+
+.lang-dropdown.open .lang-toggle .arrow
+  transform rotate(180deg)
+
+.lang-menu
+  display none
+  position absolute
+  top calc(100% + 6px)
+  right 0
+  background var(--color-bg)
+  border 1px solid var(--color-border)
+  border-radius var(--radius-md)
+  box-shadow var(--shadow-lg)
+  min-width 180px
+  max-height 400px
+  overflow-y auto
+  z-index 200
+  padding 6px
+
+.lang-dropdown.open .lang-menu
+  display block
+
+.lang-menu a
+  display flex
+  align-items center
+  gap 10px
+  padding 8px 12px
+  border-radius var(--radius-sm)
+  color var(--color-text)
+  font-size 0.85rem
+  white-space nowrap
+
+.lang-menu a:hover
+  background var(--color-bg-alt)
+  color var(--color-primary)
+
+.lang-menu a .flag
+  font-size 1rem
+  width 20px
+  text-align center
+
+// Language switcher, shared by the blog and the video pages: <a> on the blog
+// (one URL per language) and <button> on the video pages (both languages on one
+// page). Styling both element types in one place keeps them identical — as a
+// bare <button> the video switcher used to fall back to Arial at
+// line-height: normal, so it sat 3px shorter than the blog's.
+.lang-switcher
+  display inline-flex
+  border 1px solid var(--color-border)
+  border-radius var(--radius-md)
+  overflow hidden
+  margin-bottom 32px
+
+.lang-switcher > a,
+.lang-switcher > button
+  padding 8px 20px
+  border none
+  background var(--color-bg)
+  color var(--color-text-secondary)
+  font-family inherit
+  font-weight 500
+  font-size 0.9rem
+  line-height 1.6
+  text-decoration none
+  cursor pointer
+  transition all 0.2s
+
+.lang-switcher > a + a,
+.lang-switcher > button + button
+  border-left 1px solid var(--color-border)
+
+.lang-switcher > a:hover,
+.lang-switcher > button:hover
+  background var(--color-bg-alt)
+  color var(--color-text)
+
+// after :hover so it wins the tie on specificity
+.lang-switcher > a.active,
+.lang-switcher > button.active
+  background var(--color-primary)
+  color #fff
+
+.mobile-menu-btn
+  display flex
+  align-items center
+  justify-content center
+  width 40px
+  height 40px
+  border none
+  background none
+  cursor pointer
+  border-radius var(--radius-sm)
+  color var(--color-text)
+
+.mobile-menu-btn:hover
+  background var(--color-bg-alt)
+
+@media (min-width: 768px)
+  .mobile-menu-btn
+    display none
+
+.mobile-nav
+  display none
+  position fixed
+  top var(--header-height)
+  left 0
+  right 0
+  bottom 0
+  background var(--color-bg)
+  z-index 99
+  padding 20px
+
+.mobile-nav.open
+  display block
+
+.mobile-nav a
+  display block
+  padding 14px 0
+  color var(--color-text)
+  font-size 1.1rem
+  font-weight 500
+  border-bottom 1px solid var(--color-border-light)
+
+.mobile-nav a:hover
+color var(--color-primary)
+
+.mobile-nav .header-github-link
+display flex
+align-items center
+justify-content space-between
+
+.mobile-lang-list
+  padding 10px 0
+  display flex
+  flex-wrap wrap
+  gap 6px
+
+.mobile-lang-list a
+  display inline-flex
+  align-items center
+  gap 6px
+  padding 6px 12px
+  border 1px solid var(--color-border)
+  border-radius var(--radius-sm)
+  font-size 0.9rem
+  border-bottom none
+  width auto
+
+.mobile-lang-list a:hover
+  border-color var(--color-primary)
+  background var(--color-primary-light)
