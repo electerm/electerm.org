@@ -81,6 +81,26 @@ function buildHreflangLinks (langs, host) {
   }))
 }
 
+// hreflang alternates for a blog page: the en and cn URLs when both exist
+// (plus x-default pointing at en), otherwise just the self URL as x-default.
+// react-header.pug renders these as <link rel="alternate" hreflang="...">,
+// which tells search engines the two URLs are translations, not duplicates.
+function blogHreflangLinks (slug, langs, host) {
+  const enUrl = `${host}/blogs/${slug}/`
+  if (!langs.includes('cn')) {
+    return [
+      { hreflang: 'en', url: enUrl },
+      { hreflang: 'x-default', url: enUrl }
+    ]
+  }
+  const cnUrl = `${host}/blogs/${slug}/cn/`
+  return [
+    { hreflang: 'en', url: enUrl },
+    { hreflang: 'zh-CN', url: cnUrl },
+    { hreflang: 'x-default', url: enUrl }
+  ]
+}
+
 function generateVideoKeywords (video) {
   const base = 'electerm'
   const slug = video.videoSlug || ''
@@ -308,6 +328,11 @@ async function buildBlogPages () {
 
   // List pages: /blogs/ (en) + /blogs/cn/ (cn)
   const listFrom = resolve(cwd, 'src/views/blogs.pug')
+  const listHreflangLinks = [
+    { hreflang: 'en', url: `${h}/blogs/` },
+    { hreflang: 'zh-CN', url: `${h}/blogs/cn/` },
+    { hreflang: 'x-default', url: `${h}/blogs/` }
+  ]
   for (const blogLang of ['en', 'cn']) {
     const posts = getAllBlogs(blogLang)
     const isCn = blogLang === 'cn'
@@ -325,6 +350,7 @@ async function buildBlogPages () {
         ? 'Electerm 博客：免费开源终端客户端的教程、指南与深度文章。'
         : 'Electerm blog: tutorials, guides and deep-dives for the free and open-source terminal client.',
       url: isCn ? `${h}/blogs/cn/` : `${h}/blogs/`,
+      hreflangLinks: listHreflangLinks,
       cssUrl: cssFilename,
       posts,
       blogLang
@@ -345,6 +371,7 @@ async function buildBlogPages () {
       const i = posts.findIndex(p => p.slug === slug)
       if (i === -1) continue
       const post = posts[i]
+      const hreflangLinks = blogHreflangLinks(slug, getBlogLangs(slug), h)
       const dir = resolve(cwd, isCn ? `public/blogs/${slug}/cn` : `public/blogs/${slug}`)
       await fs.mkdir(dir, { recursive: true })
       const relatedVideos = (post.videos || [])
@@ -374,6 +401,7 @@ async function buildBlogPages () {
         keywords: 'electerm, ' + post.title.toLowerCase() + ', ' + (post.tags || []).join(', '),
         desc: post.description,
         url: isCn ? `${h}/blogs/${slug}/cn/` : `${h}/blogs/${slug}/`,
+        hreflangLinks,
         cssUrl: cssFilename,
         post: { ...post, structuredData },
         posts,
