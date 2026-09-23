@@ -4,7 +4,6 @@ import { cwd } from './common.js'
 import { resolve } from 'path'
 import dayjs from 'dayjs'
 import data from './data.js'
-import releaseData from './release-data.js'
 import { getAllBlogs, getBlogLangs } from './blogs.js'
 
 const fmt = 'YYYY-MM-DD'
@@ -89,26 +88,6 @@ async function buildSiteMap () {
       })
     }
     console.log(`✅ Added ${data.videos.length} video pages to sitemap`)
-  }
-
-  // Release archive pages
-  const releases = releaseData.getAllReleases()
-  if (releases.length) {
-    urls.push({
-      loc: host + '/releases/',
-      lastmod: dayjs().format(fmt),
-      changefreq: 'weekly',
-      priority: 0.6
-    })
-    for (const r of releases) {
-      urls.push({
-        loc: `${host}/releases/${r.version}/`,
-        lastmod: dayjs(r.date).format(fmt),
-        changefreq: 'yearly',
-        priority: 0.4
-      })
-    }
-    console.log(`✅ Added ${releases.length} release pages to sitemap`)
   }
 
   // Blog pages (pre-rendered markdown, en + cn)

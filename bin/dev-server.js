@@ -7,7 +7,6 @@ import express from 'express'
 import stylus from 'stylus'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
-import releaseData from './release-data.js'
 import { getAllBlogs, getBlog, getBlogAssets, blogLocale } from './blogs.js'
 
 const devPort = env.SERVER_DEV_PORT || 6068
@@ -220,49 +219,6 @@ function handleBlog (req, res) {
   })
 }
 
-function handleReleasesIndex (req, res) {
-  const { langCode, lang } = enLang
-  const releasesGrouped = releaseData.getReleasesByYear()
-  res.render('releases', {
-    ...data,
-    host: h,
-    url: h + '/releases/',
-    dev: true,
-    cssUrl: '/index.bundle.css',
-    langCode,
-    lang,
-    lp: '',
-    faqUrl: '/faq/',
-    keywords: 'electerm, releases, past versions, download, terminal client, open source',
-    desc: 'Browse all electerm releases and download any past version for Linux, macOS, Windows, Android, and HarmonyOS.',
-    releasesGrouped
-  })
-}
-
-function handleRelease (req, res) {
-  const { langCode, lang } = enLang
-  const version = req.params.version
-  const release = releaseData.getRelease(version)
-  if (!release) {
-    res.status(404).send('Release not found')
-    return
-  }
-  res.render('release', {
-    ...data,
-    host: h,
-    url: h + '/releases/' + version + '/',
-    dev: true,
-    cssUrl: '/index.bundle.css',
-    langCode,
-    lang,
-    lp: '',
-    faqUrl: '/faq/',
-    keywords: 'electerm ' + version + ', download, terminal client, open source',
-    desc: 'Download electerm ' + version + ' for Linux, macOS, Windows, Android, and HarmonyOS.',
-    release
-  })
-}
-
 function handleFaq (req, res) {
   const langSlug = req.params.lang || ''
   let langData
@@ -379,11 +335,13 @@ function createServer () {
   app.get('/blogs/:slug', handleBlog)
   app.get('/blogs/:slug/', handleBlog)
 
-  // Release archive routes (historical download pages)
-  app.get('/releases', handleReleasesIndex)
-  app.get('/releases/', handleReleasesIndex)
-  app.get('/releases/:version', handleRelease)
-  app.get('/releases/:version/', handleRelease)
+  // Release archive now lives on https://history.electerm.org (301'd at the
+  // edge/worker). Dev server just 301s there to mirror production.
+  app.get(['/releases', '/releases/', '/releases/:version', '/releases/:version/'], (req, res) => {
+    const target = 'https://history.electerm.org/releases/' +
+      (req.params.version ? req.params.version + '/' : '') + (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '')
+    res.redirect(301, target)
+  })
 
   // Catch-all for /:something/ routes
   app.get('/:param/', (req, res, next) => {

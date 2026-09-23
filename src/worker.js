@@ -126,6 +126,19 @@ export default {
       return Response.redirect(url.toString(), 301)
     }
 
+    // The release archive (582 per-version download pages) moved to its own
+    // site history.electerm.org to shrink electerm.org's thin-page surface and
+    // de-risk Google indexing. 301 everything under /releases/* there,
+    // preserving path + query so deep links keep working.
+    if (pathname === '/releases' || pathname.startsWith('/releases/')) {
+      const normalized = pathname === '/releases' ? '/releases/' : pathname
+      const target = 'https://history.electerm.org' + normalized + url.search
+      return new Response(null, {
+        status: 301,
+        headers: { ...SECURITY_HEADERS, location: target }
+      })
+    }
+
     // CORS preflight for first-party subdomain requests to /api/*
     if (request.method === 'OPTIONS') {
       const origin = request.headers.get('Origin')

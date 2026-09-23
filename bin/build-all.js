@@ -3,7 +3,6 @@ import { buildPug } from './build-bug.js'
 import { jsUrl } from './js-entry.js'
 import { resolve, dirname } from 'path'
 import { cwd } from './common.js'
-import releaseData from './release-data.js'
 import { getAllBlogs, getBlogLangs, getAllBlogAssets, blogLocale } from './blogs.js'
 import fs from 'fs/promises'
 import { readFileSync } from 'fs'
@@ -285,53 +284,7 @@ async function main () {
   await build404Page()
 
   await buildVideoPages()
-  await buildReleases()
   await buildBlogPages()
-}
-
-async function buildReleases () {
-  const { langCode, lang } = data.langs.find(l => l.id === 'en_us')
-  const h = process.env.HOST
-
-  // Hub page: /releases/
-  const hubFrom = resolve(cwd, 'src/views/releases.pug')
-  const hubDir = resolve(cwd, 'public/releases')
-  await fs.mkdir(hubDir, { recursive: true })
-  const releasesGrouped = releaseData.getReleasesByYear()
-  await buildPug(hubFrom, resolve(hubDir, 'index.html'), {
-    ...data,
-    langCode,
-    lang,
-    lp: '',
-    faqUrl: '/faq/',
-    keywords: 'electerm, releases, past versions, download, terminal client, open source',
-    desc: 'Browse all electerm releases and download any past version for Linux, macOS, Windows, Android, and HarmonyOS.',
-    url: `${h}/releases/`,
-    cssUrl: cssFilename,
-    releasesGrouped
-  })
-  console.log('Built releases index')
-
-  // Per-version pages: /releases/vX.Y.Z/
-  const relFrom = resolve(cwd, 'src/views/release.pug')
-  const all = releaseData.getAllReleases()
-  for (const release of all) {
-    const dir = resolve(cwd, `public/releases/${release.version}`)
-    await fs.mkdir(dir, { recursive: true })
-    await buildPug(relFrom, resolve(dir, 'index.html'), {
-      ...data,
-      langCode,
-      lang,
-      lp: '',
-      faqUrl: '/faq/',
-      keywords: 'electerm ' + release.version + ', download, terminal client, open source',
-      desc: 'Download electerm ' + release.version + ' for Linux, macOS, Windows, Android, and HarmonyOS.',
-      url: `${h}/releases/${release.version}/`,
-      cssUrl: cssFilename,
-      release
-    })
-  }
-  console.log(`Built ${all.length} release pages`)
 }
 
 // A post can carry its own modules and styles (the animated banner scripts
