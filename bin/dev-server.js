@@ -335,8 +335,8 @@ function createServer () {
   app.get('/blogs/:slug', handleBlog)
   app.get('/blogs/:slug/', handleBlog)
 
-  // Release archive now lives on https://history.electerm.org (301'd at the
-  // edge/worker). Dev server just 301s there to mirror production.
+  // Release archive now lives on https://history.electerm.org/releases/ (301'd
+  // at the edge/worker). Dev server just 301s there to mirror production.
   app.get(['/releases', '/releases/', '/releases/:version', '/releases/:version/'], (req, res) => {
     const target = 'https://history.electerm.org/releases/' +
       (req.params.version ? req.params.version + '/' : '') + (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '')

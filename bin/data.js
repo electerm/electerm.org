@@ -481,7 +481,7 @@ export default {
       key: 'Official',
       links: [
         { title: 'GitHub Repository', url: 'https://github.com/electerm/electerm', external: true },
-        { title: 'Past Releases', url: '/releases/' },
+        { title: 'Past Releases', url: 'https://history.electerm.org/releases/', external: true },
         { title: 'Wiki & Documentation', url: 'https://github.com/electerm/electerm/wiki', external: true },
         { title: 'Command Line Usage', url: 'https://github.com/electerm/electerm/wiki/Command-line-usage', external: true },
         { title: 'Deep Link Support', url: 'https://github.com/electerm/electerm/wiki/Deep-link-support', external: true },

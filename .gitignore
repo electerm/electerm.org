@@ -32,7 +32,6 @@ coverage
 # Dependency directory
 /node_modules/
 /.env
-/releases/
 .vercel
 /public
 /src/api/version.ts

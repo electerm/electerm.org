@@ -17,6 +17,7 @@ Online demo: https://demo.electerm.org
 Cloud app: https://cloud.electerm.org
 AI: https://ai.electerm.org
 Repository: https://github.com/electerm/electerm
+Past releases: https://history.electerm.org/releases/
 Wiki: https://github.com/electerm/electerm/wiki
 Locales: https://github.com/electerm/electerm-locales
 

@@ -4,7 +4,7 @@ import '../parts/header.js'
 // Auto-redirect to downloads section if URL hash suggests it
 (function () {
   const path = window.location.pathname
-  if (path.includes('download') || path.includes('release')) {
+  if (path.includes('download')) {
     document.querySelectorAll('.error-btn-secondary').forEach(function (btn) {
       if (btn.textContent.includes('Download')) {
         btn.href = '/#downloads'

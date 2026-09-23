@@ -8,7 +8,7 @@ videos: [electerm-usage-demo]
 
 # How to Install and Set Up Electerm
 
-Electerm ships for **Windows, macOS, Linux, Android, HarmonyOS and iOS**, with extra builds for older systems (Windows 7, macOS 10.x, glibc < 2.34 distros like Ubuntu 18 / UOS / Kylin) and extra CPU architectures (ARM64, ARMv7, LoongArch64, RISC-V 64, ppc64le). Download everything from the [homepage](https://electerm.org/#downloads) or the [releases archive](/releases/).
+Electerm ships for **Windows, macOS, Linux, Android, HarmonyOS and iOS**, with extra builds for older systems (Windows 7, macOS 10.x, glibc < 2.34 distros like Ubuntu 18 / UOS / Kylin) and extra CPU architectures (ARM64, ARMv7, LoongArch64, RISC-V 64, ppc64le). Download everything from the [homepage](https://electerm.org/#downloads) or the [releases archive](https://history.electerm.org/releases/).
 
 Check the [Know issues](https://github.com/electerm/electerm/wiki/Know-issues) and [Troubleshoot](https://github.com/electerm/electerm/wiki/Troubleshoot) wiki pages if an installer misbehaves.
 
@@ -128,7 +128,7 @@ Mobile apps focus on SSH/SFTP on the go; workspaces and cloud sync make phone â†
 
 - Desktop apps check the release feed (`/data/electerm-github-release.json`) and prompt on new versions.
 - winget / brew / snap / apt / rpm users: update through the package manager (`winget upgrade`, `brew upgrade`, `snap refresh`, `apt upgrade`).
-- Want an old version? Every build ever published is kept in the [releases archive](/releases/) with per-version download pages.
+- Want an old version? Every build ever published is kept in the [releases archive](https://history.electerm.org/releases/) with per-version download pages.
 - Upgrading from 1.x to 2.x with data loss? Read [Upgrading from 1.x to 2.x: Data Loss Issue and Recovery](https://github.com/electerm/electerm/wiki/Upgrading-from-1.x-to-2.x:-Data-Loss-Issue-and-Recovery) before panicking â€” recovery steps are documented.
 
 ## Verify your install

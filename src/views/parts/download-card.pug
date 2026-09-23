@@ -1,6 +1,6 @@
-//- Shared download card mixins — used by both the homepage download section
-//- (src/views/parts/download.pug) and the per-release pages (release.pug) so
-//- the card markup + mirror links stay identical across the site.
+//- Shared download card mixins — used by the homepage download section
+//- (src/views/parts/download.pug) so the card markup + mirror links stay
+//- consistent.
 
 mixin dlLinks(obj)
   .download-card-links
@@ -16,21 +16,6 @@ mixin dlCard(obj)
       - if (obj.desc)
         .download-card-desc #{obj.desc}
     +dlLinks(obj)
-
-//- History release pages (release.pug) only expose GitHub + the gh-proxy
-//- mirror — no SourceForge, no R2.
-mixin dlLinksHist(obj)
-  .download-card-links
-    a.download-card-link.primary(href=obj.browser_download_url) GitHub
-    a.download-card-link(href='https://mirror.electerm.org/' + obj.browser_download_url) gh-proxy
-
-mixin dlCardHist(obj)
-  .download-card
-    .download-card-top
-      .download-card-name #{obj.name}
-      - if (obj.desc)
-        .download-card-desc #{obj.desc}
-    +dlLinksHist(obj)
 
 mixin altInstall(items)
   .alt-install

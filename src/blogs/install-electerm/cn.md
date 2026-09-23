@@ -8,7 +8,7 @@ videos: [electerm-usage-demo]
 
 # 如何在 Windows、macOS、Linux、Android 与 iOS 上安装与配置 Electerm
 
-Electerm 支持 **Windows、macOS、Linux、Android、鸿蒙与 iOS**，还为老系统准备了特别构建（Windows 7、macOS 10.x、glibc < 2.34 的发行版如 Ubuntu 18 / UOS / 麒麟）与多种 CPU 架构（ARM64、ARMv7、LoongArch64、RISC-V 64、ppc64le）。所有安装包都在[首页](https://electerm.org/#downloads)与[历史版本存档](/releases/)。
+Electerm 支持 **Windows、macOS、Linux、Android、鸿蒙与 iOS**，还为老系统准备了特别构建（Windows 7、macOS 10.x、glibc < 2.34 的发行版如 Ubuntu 18 / UOS / 麒麟）与多种 CPU 架构（ARM64、ARMv7、LoongArch64、RISC-V 64、ppc64le）。所有安装包都在[首页](https://electerm.org/#downloads)与[历史版本存档](https://history.electerm.org/releases/)。
 
 安装遇到问题先看 [Know issues](https://github.com/electerm/electerm/wiki/Know-issues) 与 [Troubleshoot](https://github.com/electerm/electerm/wiki/Troubleshoot)。
 
@@ -128,7 +128,7 @@ npm i -g electerm
 
 - 桌面端会检查 release feed（`/data/electerm-github-release.json`），有新版弹窗提示。
 - winget / brew / snap / apt / rpm 用户：走包管理器更新（`winget upgrade`、`brew upgrade`、`snap refresh`、`apt upgrade`）。
-- 想找老版本？[历史版本存档](/releases/)保留了所有发布过的构建，每版有独立下载页。
+- 想找老版本？[历史版本存档](https://history.electerm.org/releases/)保留了所有发布过的构建，每版有独立下载页。
 - 1.x 升 2.x 丢数据？先别慌，看 [Upgrading from 1.x to 2.x: Data Loss Issue and Recovery](https://github.com/electerm/electerm/wiki/Upgrading-from-1.x-to-2.x:-Data-Loss-Issue-and-Recovery)，有恢复步骤。
 
 ## 验证安装
