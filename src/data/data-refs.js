@@ -61,6 +61,6 @@ export default [
     id: 'fluxionai',
     name: 'FluxionAI',
     text: '70% off AI models',
-    url: 'https://fluxionai.world/register?source=github&campaign=electerm-20260923&promo=ELECTERM?aff=7H7DERHU3GFF'
+    url: 'https://fluxionai.world/register?source=github&campaign=electerm-20260923&promo=ELECTERM&aff=7H7DERHU3GFF'
   }
 ]
