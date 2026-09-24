@@ -18,7 +18,7 @@ const appDataPath = process.env.DATA_PATH || resolve(appPath, 'electerm')
 
 它下面的所有东西——`users/default_user/electerm.db`、`electerm_data.db`、`storage-key.enc`、会话日志——都会一起搬走。不用改注册表，不用改配置文件，不用重装。
 
-> wiki 也有说明：[命令行使用 — DATA_PATH](https://github.com/electerm/electerm/wiki/Command-line-usage)。老讨论里看到的 `DB_PATH` 是旧名字，意思一样，现在请用 `DATA_PATH`。
+> wiki 也有说明：[命令行使用 — DATA_PATH](https://github.com/electerm/electerm/wiki/Command-line-usage)。
 
 ## 1. 默认位置（没设 DATA_PATH 时）
 

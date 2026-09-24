@@ -18,7 +18,7 @@ const appDataPath = process.env.DATA_PATH || resolve(appPath, 'electerm')
 
 Everything underneath — `users/default_user/electerm.db`, `electerm_data.db`, `storage-key.enc`, session logs — moves together. No registry hack, no config file edit, no reinstall.
 
-> Also documented in the wiki: [Command line usage — DATA_PATH](https://github.com/electerm/electerm/wiki/Command-line-usage). The old variable name `DB_PATH` you may see in older discussions means the same thing; `DATA_PATH` is the current name.
+> Also documented in the wiki: [Command line usage — DATA_PATH](https://github.com/electerm/electerm/wiki/Command-line-usage).
 
 ## 1. Default locations (when DATA_PATH is not set)
 
