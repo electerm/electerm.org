@@ -61,17 +61,3 @@ jobs:
           # as an array needs >= 4.20.0.
           wranglerVersion: '4'
           command: deploy
-
-      # The release archive moved to history.electerm.org. Forward the same
-      # electerm-release event so a new electerm version also regenerates the
-      # archive there (sync-release-data.sh adds the new per-version page, then
-      # the history site rebuilds). Needs REPO_DISPATCH_TOKEN: a PAT with
-      # repo + workflow scope on the electerm org (GITHUB_TOKEN can't dispatch
-      # to another repo's workflows).
-      - name: Trigger history.electerm.org rebuild
-        if: github.event_name == 'repository_dispatch'
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.REPO_DISPATCH_TOKEN }}
-          repository: electerm/history.electerm.org
-          event-type: electerm-release
