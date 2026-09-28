@@ -1039,6 +1039,30 @@
       },
       "videoSlug": "electerm-drag-and-drop-file-transfer-between-sftp",
       "titleEn": "Electerm Drag and Drop File Transfer Between SFTP"
+    },
+    {
+      "aid": 117346056276477,
+      "bvid": "BV1ufaq6gE61",
+      "title": "electerm 介绍视频",
+      "description": "完全 AI 生成的electerm介绍视频，使用 workbuddy AI(deepseek v4.1flash) 生成。\n\nelecterm 是完全免费和开源的终端/SSH/SFTP/FTP/Telnet/串口/RDP/VNC/Spice客户端(支持Linux、Mac、Win、Android、HarmonyOS、iOS)\n\n除主流的 Windows/macOS/Linux/Android/HarmonyOS/iOS 外，electerm 还支持较旧的系统 —— Ubuntu 18、Windows 7、macOS 10+，以及统信 UOS、银河麒麟等国产 Linux 发行版和龙芯 LoongArch（新旧世界均支持），以及 RISC-V（riscv64）和 PowerPC 64 位小端（ppc64le）Linux。",
+      "link": "https://www.bilibili.com/video/BV1ufaq6gE61",
+      "cover": "http://i1.hdslb.com/bfs/archive/8d600737fdf04e75ec1e0baf3983e87df8c8f67e.jpg",
+      "author": "zxdong262",
+      "authorMid": 14001525,
+      "duration": 199,
+      "pubdate": 1790558986,
+      "publishDate": "2026-09-28T01:29:46.000Z",
+      "stats": {
+        "view": 2,
+        "danmaku": 0,
+        "reply": 0,
+        "favorite": 0,
+        "coin": 0,
+        "share": 0,
+        "like": 0
+      },
+      "videoSlug": "electerm-introduction-video",
+      "titleEn": "Electerm Introduction Video"
     }
   ]
 }
