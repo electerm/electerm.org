@@ -25,6 +25,17 @@ function getR2Url (url, isAndroid) {
   return 'https://r2.electerm.org' + prefix + url.split('/').pop()
 }
 
+function getAtomGitUrl (url, isAndroid) {
+  if (isAndroid) {
+    return ''
+  }
+  const m = url.match(/\/releases\/download\/([^/]+)\/([^/?#]+)/)
+  if (m) {
+    return `https://atomgit.com/electerm/electerm/releases/download/${m[1]}/${m[2]}`
+  }
+  return ''
+}
+
 function isAndroidAsset (fileName, downloadUrl) {
   return fileName.endsWith('.apk') || downloadUrl.includes('electerm-android')
 }
@@ -145,6 +156,7 @@ function createReleaseData () {
       sourceforgeUrl: getSourceforgeUrl(curr.browser_download_url),
       cdnUrl: getCdnUrl(curr.browser_download_url),
       r2Url: getR2Url(curr.browser_download_url, androidFlag),
+      atomgitUrl: getAtomGitUrl(curr.browser_download_url, androidFlag),
       isAndroid: androidFlag
     }
     const cname = curr.name

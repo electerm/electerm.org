@@ -6,6 +6,8 @@ mixin dlLinks(obj)
   .download-card-links
     a.download-card-link.primary(href=obj.browser_download_url) GitHub
     a.download-card-link(href=obj.sourceforgeUrl) SourceForge
+    - if (obj.atomgitUrl)
+      a.download-card-link(href=obj.atomgitUrl) AtomGit(CN)
     a.download-card-link(href='https://mirror.electerm.org/' + obj.browser_download_url) gh-proxy
     a.download-card-link(href=obj.r2Url) R2
 
