@@ -50,6 +50,7 @@
     "downloadTitle": "Download",
     "downloadSubtitle": "Free and open-source — choose your platform (Windows, macOS, Linux, Android, HarmonyOS, iOS)",
     "downloadViewAll": "View all releases on GitHub →",
+    "downloadViewAllAtomGit": "View releases on AtomGit (CN) →",
     "downloadPastReleases": "Browse past releases →",
     "downloadOtherWays": "Other ways to install",
     "downloadCopy": "Copy",

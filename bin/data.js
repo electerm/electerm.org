@@ -444,8 +444,12 @@ export default {
       title: 'Apple App Store'
     },
     {
-      url: 'electerm@atomgit',
-      title: 'https://atomgit.com/electerm/electerm'
+      url: 'https://atomgit.com/electerm/electerm',
+      title: 'electerm@atomgit'
+    },
+    {
+      url: 'https://atomgit.com/electerm/electerm/releases',
+      title: 'AtomGit releases (CN mirror)'
     },
     {
       url: 'https://github.com/electerm/electerm/wiki/Know-issues',
@@ -493,6 +497,9 @@ export default {
       key: 'Official',
       links: [
         { title: 'GitHub Repository', url: 'https://github.com/electerm/electerm', external: true },
+        { title: 'GitHub Releases', url: 'https://github.com/electerm/electerm/releases', external: true },
+        { title: 'AtomGit Repository (CN mirror)', url: 'https://atomgit.com/electerm/electerm', external: true },
+        { title: 'AtomGit Releases (CN mirror)', url: 'https://atomgit.com/electerm/electerm/releases', external: true },
         { title: 'Past Releases', url: 'https://history.electerm.org/releases/', external: true },
         { title: 'Wiki & Documentation', url: 'https://github.com/electerm/electerm/wiki', external: true },
         { title: 'Command Line Usage', url: 'https://github.com/electerm/electerm/wiki/Command-line-usage', external: true },

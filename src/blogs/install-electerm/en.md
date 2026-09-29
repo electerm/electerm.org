@@ -8,7 +8,7 @@ videos: [electerm-usage-demo]
 
 # How to Install and Set Up Electerm
 
-Electerm ships for **Windows, macOS, Linux, Android, HarmonyOS and iOS**, with extra builds for older systems (Windows 7, macOS 10.x, glibc < 2.34 distros like Ubuntu 18 / UOS / Kylin) and extra CPU architectures (ARM64, ARMv7, LoongArch64, RISC-V 64, ppc64le). Download everything from the [homepage](https://electerm.org/#downloads) or the [releases archive](https://history.electerm.org/releases/).
+Electerm ships for **Windows, macOS, Linux, Android, HarmonyOS and iOS**, with extra builds for older systems (Windows 7, macOS 10.x, glibc < 2.34 distros like Ubuntu 18 / UOS / Kylin) and extra CPU architectures (ARM64, ARMv7, LoongArch64, RISC-V 64, ppc64le). Download everything from the [homepage](https://electerm.org/#downloads), the [GitHub releases](https://github.com/electerm/electerm/releases) or the [AtomGit releases (fast in China)](https://atomgit.com/electerm/electerm/releases). Every build ever published is also kept in the [releases archive](https://history.electerm.org/releases/).
 
 Check the [Know issues](https://github.com/electerm/electerm/wiki/Know-issues) and [Troubleshoot](https://github.com/electerm/electerm/wiki/Troubleshoot) wiki pages if an installer misbehaves.
 

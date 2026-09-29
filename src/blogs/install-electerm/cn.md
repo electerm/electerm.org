@@ -8,7 +8,7 @@ videos: [electerm-usage-demo]
 
 # 如何在 Windows、macOS、Linux、Android 与 iOS 上安装与配置 Electerm
 
-Electerm 支持 **Windows、macOS、Linux、Android、鸿蒙与 iOS**，还为老系统准备了特别构建（Windows 7、macOS 10.x、glibc < 2.34 的发行版如 Ubuntu 18 / UOS / 麒麟）与多种 CPU 架构（ARM64、ARMv7、LoongArch64、RISC-V 64、ppc64le）。所有安装包都在[首页](https://electerm.org/#downloads)与[历史版本存档](https://history.electerm.org/releases/)。
+Electerm 支持 **Windows、macOS、Linux、Android、鸿蒙与 iOS**，还为老系统准备了特别构建（Windows 7、macOS 10.x、glibc < 2.34 的发行版如 Ubuntu 18 / UOS / 麒麟）与多种 CPU 架构（ARM64、ARMv7、LoongArch64、RISC-V 64、ppc64le）。所有安装包都在[首页](https://electerm.org/#downloads)、[GitHub releases](https://github.com/electerm/electerm/releases) 与 [AtomGit releases（国内加速）](https://atomgit.com/electerm/electerm/releases)，更老的归档也可以去[历史版本存档](https://history.electerm.org/releases/)。
 
 安装遇到问题先看 [Know issues](https://github.com/electerm/electerm/wiki/Know-issues) 与 [Troubleshoot](https://github.com/electerm/electerm/wiki/Troubleshoot)。
 

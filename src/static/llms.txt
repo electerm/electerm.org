@@ -71,6 +71,9 @@ This repository builds and maintains the electerm homepage, providing product in
 ## Documentation
 
 - [GitHub Repository](https://github.com/electerm/electerm) - Source code and issue tracker
+- [GitHub Releases](https://github.com/electerm/electerm/releases) - Download latest releases
+- [AtomGit Repository (CN mirror)](https://atomgit.com/electerm/electerm) - Source code mirror for CN users
+- [AtomGit Releases (CN mirror)](https://atomgit.com/electerm/electerm/releases) - Download latest releases for CN users
 - [Wiki](https://github.com/electerm/electerm/wiki) - Documentation and guides
 - [Known Issues](https://github.com/electerm/electerm/wiki/Know-issues) - Current limitations
 - [Troubleshooting](https://github.com/electerm/electerm/wiki/Troubleshoot) - Common solutions
