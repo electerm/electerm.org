@@ -20,21 +20,58 @@ export function assetKey (name) {
     .toLowerCase()
 }
 
+// Key without any extension ("android-arm64-v8a.apk" -> "android-arm64-v8a",
+// "win-arm64.tar.gz" -> "win-arm64"). Lets extension-less queries such as
+// "?src=electerm-android-arm64-v8a" resolve to the real file.
+export function assetStem (name) {
+  return assetKey(name).split('.')[0]
+}
+
 // Returns the assets matching `src`, or the whole list when `src` is empty.
 //
-// Matching is tiered, most specific first: full file name, then the version-less
-// key (what clients actually send), then a trailing match (e.g. "?src=x64.dmg").
-// The first tier that produces a hit wins, so a precise query is never widened
-// by a later, looser one. An unmatched `src` returns [] — the release metadata
-// is still returned, the client just learns it has no asset in this release.
+// Both sides are normalised with assetKey() first, so a query with/without
+// the "electerm-" prefix, with/without the version, and with/without the
+// extension all resolve, e.g. all of these match
+// "electerm-android-arm64-v8a-5.5.25.apk":
+//   "electerm-android-arm64-v8a-5.5.25.apk", "electerm-android-arm64-v8a.apk",
+//   "android-arm64-v8a.apk", "electerm-android-arm64-v8a", "android-arm64-v8a"
+//
+// Matching is tiered, most specific first: full file name, then the
+// version-less key, then the extension-less stem, then a trailing match
+// (e.g. "?src=x64.dmg"). The first tier that produces a hit wins, so a
+// precise query is never widened by a later, looser one. An unmatched `src`
+// returns [] — the release metadata is still returned, the client just
+// learns it has no asset in this release.
 export function filterAssets (assets, src) {
   const list = Array.isArray(assets) ? assets.filter(a => a && a.name) : []
   const query = String(src || '').trim().toLowerCase()
   if (!query) return list
+  const queryKey = assetKey(query)
+  const queryStem = queryKey.split('.')[0]
   const tiers = [
     a => a.name.toLowerCase() === query,
-    a => assetKey(a.name) === query,
-    a => a.name.toLowerCase().endsWith(query)
+    a => {
+      const key = assetKey(a.name)
+      return key === query || key === queryKey
+    },
+    // Extension-less query ("electerm-android-arm64-v8a", "win-arm64").
+    // *.blockmap is updater metadata, never a download target, so it only
+    // matches on the explicit tiers above — otherwise "?src=mac-arm64"
+    // would also return the .dmg.blockmap sidecar.
+    a => {
+      if (!queryStem || a.name.toLowerCase().endsWith('.blockmap')) return false
+      const stem = assetStem(a.name)
+      return stem === queryKey || stem === queryStem
+    },
+    a => {
+      const name = a.name.toLowerCase()
+      const key = assetKey(a.name)
+      return (
+        name.endsWith(query) ||
+        key.endsWith(query) ||
+        (queryKey && (name.endsWith(queryKey) || key.endsWith(queryKey)))
+      )
+    }
   ]
   for (const matches of tiers) {
     const hits = list.filter(matches)
