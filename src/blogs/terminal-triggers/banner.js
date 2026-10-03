@@ -415,7 +415,7 @@ function easeInOut (p) {
 }
 
 function prompt () {
-  return `<span class="eb-tr-ps1">netops@core-01</span>:<span class="eb-tr-ps1-path">~</span>$&nbsp;`
+  return '<span class="eb-tr-ps1">netops@core-01</span>:<span class="eb-tr-ps1-path">~</span>$&nbsp;'
 }
 
 function markup (variant) {

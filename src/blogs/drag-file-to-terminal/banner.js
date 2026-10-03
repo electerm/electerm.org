@@ -442,7 +442,7 @@ function easeInOut (p) {
 }
 
 function prompt () {
-  return `<span class="eb-df-ps1">zxd@web-01</span>:<span class="eb-df-ps1-path">~/releases</span>$&nbsp;`
+  return '<span class="eb-df-ps1">zxd@web-01</span>:<span class="eb-df-ps1-path">~/releases</span>$&nbsp;'
 }
 
 function markup (variant) {
