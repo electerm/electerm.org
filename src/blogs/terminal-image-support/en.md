@@ -1,6 +1,6 @@
 ---
 title: 'Show Images Right Inside the Electerm Terminal'
-description: Turn on "support terminal image" for a bookmark and electerm renders pictures inline — SIXEL, iTerm inline images and Kitty graphics via @xterm/addon-image. Where the toggle lives, which commands to try, and what to know about performance.
+description: Turn on "support terminal image" for a bookmark and electerm renders pictures inline — SIXEL, iTerm inline images and Kitty graphics. Where the toggle lives, which commands to try, and what to know about performance.
 date: 2026-09-23
 tags: [terminal, images, sixel, iterm, kitty, ssh, tips]
 videos: [electerm-usage-demo, electerm-terminal-keyword-highlighting, electerm-auto-copy-on-select]
@@ -13,7 +13,7 @@ You `ls` a folder full of screenshots on a remote box and get filenames. Is `her
 
 Electerm can skip the detour. Turn on **support terminal image** for that bookmark and pictures render **inline, in the scrollback**, right where the command ran — like the banner above. No download step, no second app.
 
-It works through `@xterm/addon-image`, the same addon upstream xterm.js ships for this job. That means three wire protocols, not one:
+It works with three wire protocols, not one:
 
 - **SIXEL** — the DEC-era bitmap protocol (`ESC P ... ESC \`), still the lingua franca of terminal graphics
 - **iTerm inline images (IIP)** — the `OSC 1337` protocol `imgcat` uses
@@ -27,21 +27,9 @@ The toggle is **per bookmark, not global** — graphics decoding costs memory, s
 
 1. Open the bookmark for editing (bookmarks panel → right-click → edit, or new bookmark).
 2. For **SSH** bookmarks: find the **SSH settings** section and flip **support terminal image** on. For **local terminal** bookmarks: it sits in the **auth** tab.
-3. Save and **reconnect**. The image addon loads once, when the terminal is created (`src/client/components/terminal/mixins/term-init.js`), so an already-open tab needs a reconnect to pick it up.
+3. Save and **reconnect**. The image support loads once, when the terminal is created, so an already-open tab needs a reconnect to pick it up.
 
-Under the hood that is:
-
-```js
-if (tab.enableTerminalImage) {
-  const ImageAddon = await loadImageAddon()
-  this.imageAddon = new ImageAddon({
-    pixelLimit: 33554432
-  })
-  term.loadAddon(this.imageAddon)
-}
-```
-
-`pixelLimit: 33554432` caps a single image at ~32M pixels; everything else (SIXEL scrolling, palette, storage FIFO, placeholder for evicted images) stays at the addon defaults. The addon is lazy-loaded — if the toggle is off, the code is never even downloaded.
+A single image is capped at roughly 32 million pixels, and everything else stays at the defaults. Support is loaded lazily — if the toggle is off, nothing extra is downloaded at all.
 
 ## Try it: three one-liners
 
@@ -69,7 +57,7 @@ Supported formats here are PNG, JPEG, GIF and QOI (no animation — the first fr
 kitty +kitten icat photo.jpg
 ```
 
-Kitty support in the addon is still WIP upstream, so expect the basics to render and the exotic sub-commands to silently no-op.
+Kitty support is still WIP upstream, so expect the basics to render and the exotic sub-commands to silently no-op.
 
 If you see escape garbage (`^[[?1;2S`, `q#0;2;...`) instead of a picture, the toggle is off or the tab has not been reconnected since you flipped it.
 
@@ -85,12 +73,12 @@ Cursor behaviour is worth knowing: with SIXEL scrolling on (the default), an ima
 
 ## Things worth knowing
 
-- **It is opt-in for a reason: memory.** Image decoding happens in JavaScript and holds full RGBA buffers while it works. The 32M-pixel cap plus the addon's FIFO image storage (with placeholder pattern for evicted scrollback images) keep one tab sane — but ten tabs of 4K screenshots still add up. Leave the toggle off where you do not need it.
+- **It is opt-in for a reason: memory.** Image decoding happens in JavaScript and holds full RGBA buffers while it works. The 32-million-pixel cap plus the addon's own image storage limits (with a placeholder pattern for images evicted from the scrollback) keep one tab sane — but ten tabs of 4K screenshots still add up. Leave the toggle off where you do not need it.
 - **Large pastes bypass batching.** Electerm's session server forwards chunks over 16 KB unbatched so multi-megabyte image sequences cannot desync the parser. You do not need to configure this; it is why a 5 MB `imgcat` does not garble the prompt that follows it.
-- **Keyword highlighting stays out of the way.** The highlight addon skips any write containing a DCS sequence (`ESC P`), so highlighted keywords never corrupt an in-flight SIXEL stream.
+- **Keyword highlighting stays out of the way.** The highlight addon skips any output containing an image control sequence, so highlighted keywords never corrupt an in-flight SIXEL stream.
 - **Not the same as terminal background image.** The background image setting paints a watermark behind the text. This feature draws real image output *as* terminal content — selectable scrollback, resizable with the font, cleared with the screen.
 - **Resize behaviour.** Images already on screen reshape on font rescale to keep their cell coverage. On terminal resize they may expand right if they were right-truncated; they never grow downward if they were bottom-truncated.
-- **Security note.** Image sequences can query terminal metrics (the addon enables `CSI 14/16/18 t` size reports by default). On a normal dev box that is harmless and is what lets tools size images to your window — but if you live in a hostile-output threat model, keep the toggle off.
+- **Security note.** Image sequences can query terminal metrics — the addon enables terminal size reports by default. On a normal dev box that is harmless and is what lets tools size images to your window — but if you live in a hostile-output threat model, keep the toggle off.
 
 ## A terminal that can see
 

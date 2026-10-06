@@ -17,29 +17,15 @@ That trade has no good answer, because both behaviours want the same gesture. El
 
 Nothing is broken, and nothing is a bug in tmux either. It is the mouse-mode contract.
 
-When an application asks for mouse reports, it is sent a sequence like `ESC[?1000h` (VT200 mouse reporting), and from that moment on xterm.js stops treating the pointer as a text pointer. In `MouseService._syncMouseModeState` the whole decision is one line:
-
-```ts
-if (this._mouseStateService.areMouseEventsActive) {
-  element.classList.add(MouseEventCssClasses.ENABLE_MOUSE_EVENTS);
-  this._selectionService.disable();
-}
-```
-
-`_selectionService.disable()` is the important half. Local selection is not merely out-ranked, it is **turned off**. So the drag never creates a selection, and the mousedown that would have started one is instead encoded as an SGR report and pushed at the pty. There is nothing to preserve on mouseup, which is why the highlight you saw blinks out.
+When an application asks the terminal for mouse reports, xterm.js stops treating the pointer as a text pointer — and it does not merely deprioritise local selection, it **turns it off**. So the drag never creates a selection, and the mousedown that would have started one is instead encoded as a mouse report and pushed at the pty. There is nothing to preserve on mouseup, which is why the highlight you saw blinks out.
 
 The same thing happens with `less`, `vim` in mouse mode, `htop`, any TUI that grabs the pointer. tmux is just the case where you *want* the wheel and *also* want to copy, at the same time, forever.
 
 ## What the setting actually changes
 
-One option, `mouseEventsRequireAlt`, exposed in **Settings → Terminal → mouse event requires alt key**. It ships **off**, so nothing changes until you ask for it:
+One option, **mouse event requires alt key**, in **Settings → Terminal**. It ships **off**, so nothing changes until you ask for it.
 
-```js
-// src/app/common/config-default.js
-mouseEventsRequireAlt: false,
-```
-
-Turn it on and the branch above takes the other path — selection stays enabled, and forwarding becomes conditional on the Alt key:
+Turn it on and selection stays enabled, while forwarding becomes conditional on the Alt key:
 
 | Gesture | Setting off (default) | Setting on |
 | --- | --- | --- |
@@ -53,74 +39,34 @@ Two details in that table are worth reading twice, because they are the whole fe
 
 **The wheel is not affected.** Alt is required for clicks, drags and moves. The wheel report is forwarded either way, so `tmux` keeps paging history with the same two fingers you already use. You do not have to hold a modifier to scroll.
 
-**The option is inert when no application wants mouse events.** `_syncMouseModeState` only consults it inside the `areMouseEventsActive` branch. In a plain shell the setting does nothing at all, so there is no state where you have "turned on alt-click" and cannot select text.
+**The option is inert when no application wants mouse events.** Electerm only consults it while an application actually has mouse mode on. In a plain shell the setting does nothing at all, so there is no state where you have "turned on alt-click" and cannot select text.
 
 ## Holding Option hands the pointer back to the app
 
-While the setting is on and the app has mouse mode, xterm.js adds and removes a class as Alt goes down and comes up, and the CSS behind it is one declaration:
+While the setting is on and the app has mouse mode, the terminal cursor changes with the Alt key: hold Option and the caret becomes an arrow — that is the app's cursor now, and clicking will be forwarded. Release it and you are selecting text again.
 
-```css
-.xterm.enable-mouse-events {
-  /* When mouse events are enabled (eg. tmux), revert to the standard pointer cursor */
-  cursor: default;
-}
-```
-
-So there is a visual answer to a question the terminal cannot ask out loud. Hold Option and the caret becomes an arrow — that is the app's cursor now, and clicking will be forwarded. Release it and you are selecting text again. `AltMouseCursorController` listens on `keydown`, `keyup` and `mousemove`, and resets on window `blur`, so the arrow never gets stuck if you alt-tab away with the key held.
+The change resets when the window loses focus, so the arrow never gets stuck if you alt-tab away with the key held.
 
 The `Alt` key itself is **not** included in the report the app receives. tmux sees a plain left click exactly as it would without the modifier held — which is the point: you are not remapping anything, you are choosing when the pointer belongs to whom.
 
-## Every click costs an escape sequence
+## Why a plain drag arrives as two events
 
-The forwarded report is standard SGR mouse encoding, `ESC[<b;x;yM` for press and `ESC[<b;x;ym` for release, with `b` carrying the button and modifier bits. This is what actually crosses the wire when you click with Option held:
+tmux asks for mouse reports in its default mode, which reports a press and a release but not the movement in between. That is why a plain drag in tmux reaches the application as press-then-release at two positions, with no drag events at all: the app never learns about the intermediate movement, it only sees where you pressed and where you let go.
 
-```
-ESC[<0;18;6M        press, left button, column 18 row 6
-ESC[<0;18;6m        release at the same cell
-```
-
-A wheel notch looks like this, and note the button code carries the wheel bit (`64`):
-
-```
-ESC[<64;10;4M        wheel up at column 10 row 4
-ESC[<65;10;4M        wheel down
-```
-
-Which protocols electerm can speak is decided by what the app asks for in its `DECSET` sequence:
-
-| `DECSET` | Encoding | What arrives |
-| --- | --- | --- |
-| `ESC[?1000h` | X10 / VT200 | press, release, wheel — no plain movement |
-| `ESC[?1002h` | button-event drag | the above **plus** drag while a button is held |
-| `ESC[?1003h` | any-event tracking | the above **plus** hover movement |
-| `ESC[?1006h` | SGR | the coordinate encoding used above, unbounded cells |
-
-tmux sends `1000` plus `1006` by default. That is why a plain drag in tmux is reported as press-then-release at two cells, with no drag events in between: the app never learns about the intermediate movement, it only sees where you pressed and where you let go.
+It is worth knowing because it explains a few tmux oddities — a drag that seems to be ignored mid-way, or a selection that behaves differently in a TUI that asks for richer mouse reporting than tmux does.
 
 ## It applies without reconnecting
 
-`mouseEventsRequireAlt` is one of four terminal options pushed straight into the live xterm instance instead of being fixed at boot:
-
-```js
-// src/client/components/terminal/terminal.jsx
-terminalConfigProps = [
-  { name: 'rightClickSelectsWord', type: 'glob' },
-  { name: 'mouseEventsRequireAlt', type: 'glob' },
-  { name: 'fontSize', type: 'glob_local' },
-  { name: 'fontFamily', type: 'glob_local' }
-]
-```
-
-`checkConfigChange` writes the value into `term.options` on the next render. Toggle it in a live SSH session with tmux running and it takes effect immediately — no reconnect, no new tab, no lost scrollback. It is also in the data-sync key list, so the choice follows your other settings to your other machines.
+**mouse event requires alt key** is one of a handful of terminal options pushed straight into the live terminal instance instead of being fixed at boot. Toggle it in a live SSH session with tmux running and it takes effect immediately — no reconnect, no new tab, no lost scrollback. It is also in the data-sync key list, so the choice follows your other settings to your other machines.
 
 ## Numbers worth trusting
 
-- **Default is `false`**, both in electerm's `config-default.js` and in xterm's own `OptionsService`. This is an opt-in change of behaviour, never a silent one.
-- **No reconnect.** The option list above is checked on every `componentDidUpdate`.
+- **Default is off.** This is an opt-in change of behaviour, never a silent one.
+- **No reconnect.** The option is re-read whenever the terminal re-renders.
 - **The alt bit is not sent.** Your app sees an unmodified report; the modifier is a local gate, not a protocol change.
 - **Wheel is never gated.** It is not part of what Alt unlocks.
-- **Selection enable/disable follows mouse mode, not the setting alone.** With the setting off and mouse mode on, selection is genuinely `disable()`d — the app owns the pointer.
-- **Setting precedence.** When `mouseEventsRequireAlt` is active it takes precedence over xterm's `macOptionClickForcesSelection`, so the two cannot fight over the same gesture.
+- **Selection enable/disable follows mouse mode, not the setting alone.** With the setting off and mouse mode on, selection is genuinely switched off — the app owns the pointer.
+- **Setting precedence.** When **mouse event requires alt key** is active it takes precedence over xterm's own Option-click-forces-selection behaviour, so the two cannot fight over the same gesture.
 
 ## Things worth knowing
 
@@ -140,4 +86,4 @@ $ tmux set -g mouse on
 
 Then **Settings → Terminal → mouse event requires alt key**. Drag across some output and let go: the selection stays, `⌘C` takes it. Scroll the wheel: history pages, no modifier held. Hold Option and click: tmux gets the click, and the cursor turns into an arrow to say so.
 
-That is the whole feature. It ships in the next release, off by default, and it is the answer to a question that has been asked in every terminal that takes mouse mode seriously: how do I get both.
+That is the whole feature. It ships off by default, and it is the answer to a question that has been asked in every terminal that takes mouse mode seriously: how do I get both.

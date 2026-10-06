@@ -1,6 +1,6 @@
 ---
 title: 'Electerm 的 SSH 隧道支持 IPv6 吗——三种模式都支持，但别写 [::1]'
-description: electerm 的三种隧道模式（L→R、R→L、动态 SOCKS）都支持 IPv6。本文给出端到端验证方法、地址该填在哪个字段、为什么 [::1] 会失败，以及 IPv6 让它很容易踩到的那个路由 bug。
+description: electerm 的三种隧道模式（L→R、R→L、动态 SOCKS）都支持 IPv6。本文讲地址该填在哪个字段、为什么 [::1] 会失败，以及 IPv6 让它很容易踩到的那个路由 bug。
 date: 2026-10-04
 tags: [ssh, 隧道, ipv6, 端口转发, 排错]
 videos: [electerm-local-to-remote-ssh-tunnel, electerm-remote-to-local-ssh-tunnel]
@@ -19,36 +19,15 @@ bannerScript: banner.js
 
 ## 直接回答
 
-| 模式 | IPv6 填在哪个字段 | 线上传的是什么 | 结果 |
-|---|---|---|---|
-| **L→R** `forwardLocalToRemote` | **远端** host | `direct-tcpip`，`dstIP=::1` | 可以 |
-| **R→L** `forwardRemoteToLocal` | **远端** host（绑定地址） | `tcpip-forward`，`bindAddr=::1` | 可以 |
-| **动态** `dynamicForward`（SOCKS） | **本地** host | 在 `[::1]:1080` 上监听 TCP | 可以 |
+| 模式 | IPv6 填在哪个字段 | 结果 |
+|---|---|---|
+| **L→R** 本地→远端 | **远端** host | 可以 |
+| **R→L** 远端→本地 | **远端** host（绑定地址） | 可以 |
+| **动态**（SOCKS 代理） | **本地** host | 可以 |
 
-域名只要 AAAA 记录指得对也一样能用——不是非写地址字面量不可。之所以专门测字面量，是因为它才最能暴露"链路上有没有哪一环偷偷假设了 IPv4"。
+域名只要 AAAA 记录指得对也一样能用——不是非写地址字面量不可。之所以专门说字面量，是因为它才最能暴露"链路上有没有哪一环偷偷假设了 IPv4"。
 
-## 这是怎么验证的
-
-不是读完代码猜的。三个隧道函数就在 `src/app/server/ssh-tunnel.js`，入参只要一个已连接的 SSH client——所以可以脱离 Electron、脱离界面、也不需要真 sshd，直接用纯 Node 驱动：
-
-1. 起一个本地 `@electerm/ssh2` 服务端扮演 sshd：`tcpip-forward` 请求要它绑哪个地址，它就真绑一个 TCP 服务；`direct-tcpip` 通道要连哪，它就真去连。
-2. 起一个 IPv6 回声服务当"对端那个东西"。
-3. 调用 electerm 真实的 `forwardLocalToRemote`、`forwardRemoteToLocal`、`dynamicForward`，每个方向都真的灌字节过去。
-
-跑出来的结果如下，包括真正过线的地址字符串：
-
-```
-[1] forwardLocalToRemote   remote=::1  (L->R)
-  OK data round-tripped through the tunnel target
-  OK direct-tcpip carried dstIP=::1
-[2] forwardRemoteToLocal   remote bind=::1  (R->L)
-  OK server bound tcpip-forward on ::1:25555
-  OK data round-tripped from the bind address back to local
-[3] dynamicForward   local listener on ::1  (SOCKS)
-  OK SOCKS server accepted a TCP connection on [::1]:27777
-```
-
-是"数据真的往返了"，不是"没报错"——连到错误的本地服务同样不会报错。
+三种模式都用真实字节往返验过，不是"没报错"就算数——连到错误目标的隧道同样不会报错。
 
 ## 地址填在哪个字段
 
@@ -67,11 +46,9 @@ bannerScript: banner.js
 
 electerm 的隧道里没有任何 IPv6 专用代码路径，而这恰恰是它能用的原因。
 
-SSH 协议里，地址在 `tcpip-forward` 请求和 `direct-tcpip` 通道里都是**带长度前缀的不透明字符串**。在 `@electerm/ssh2` 这个 fork 里，`Protocol.tcpipForward`、`forwardedTcpip`、`directTcpip` 都是用长度前缀加 `utf8Write` 原样写进去——整条链路上没有 `isIPv4` 判断，没有解析，没有转换。服务器收到的就是你敲进去的那几个字符。
+SSH 协议里，地址在隧道请求中就是一段纯文本字符串——整条链路上没有东西解析它、没有东西转换它，也没有任何 IPv4 判断。服务器收到的就是你敲进去的那几个字符。本地这侧，平台的网络层本来就接受 IPv6 字面量，而且 electerm 从不在连接上强制某个协议族，所以 SSH 主机本身也是双栈解析的。
 
-本地这侧，Node 的 `net` 本来就接受 IPv6 字面量，`listen()` 和 `connect()` 都不挑。而且 electerm 从不在连接上设 `forceIPv4` 或 `forceIPv6`，所以 SSH 主机本身也是双栈解析的。
-
-所以这个功能本质上就是"我们把字符串透传，Node 负责处理"。没有要开的开关，也没有要配的东西。
+所以这个功能本质上就是"我们把字符串透传，平台负责处理"。没有要开的开关，也没有要配的东西。
 
 ## 坑一：[::1] 会被拒绝
 
@@ -82,7 +59,7 @@ SSH 协议里，地址在 `tcpip-forward` 请求和 `direct-tcpip` 通道里都�
 远端 host: ::1        ->  正常绑定
 ```
 
-host 字段就是个普通文本输入框，没有任何剥方括号的逻辑，所以 `[::1]` 会原样送到服务器，服务器去 bind 一个名字就叫 `[::1]` 的主机，DNS 解析失败。
+host 字段就是个普通文本输入框，没有任何剥方括号的逻辑，所以 `[::1]` 会原样送到服务器，服务器去 bind 一个名字就叫 `[::1]` 的主机，域名解析失败。
 
 这个错误完全可以理解，因为方括号在另外两个你刚从那儿过来的地方是**必须**的：
 
@@ -95,24 +72,16 @@ host 字段就是个普通文本输入框，没有任何剥方括号的逻辑，
 
 这个是 electerm 里一个真实的 bug，而 IPv6 让它很容易被撞上。
 
-`forwardRemoteToLocal` 判断"这个进来的连接属于哪条隧道"时，**只比对端口**：
-
-```js
-if (info.destPort !== sshTunnelRemotePort && info.destPort !== Number(sshTunnelRemotePort)) {
-  return
-}
-```
-
-事件里带的*目的地址*被完全忽略了。现在挂两条 R→L 隧道，远端端口相同、绑定地址不同：
+一条 R→L 隧道收到连接时，electerm 判断"这个连接属于哪条隧道"**只比对端口**——连接上的*目的地址*被完全忽略了。现在挂两条 R→L 隧道，远端端口相同、绑定地址不同：
 
 - `127.0.0.1:28888` → 本机 `:30001`
 - `::1:28888` → 本机 `:30002`
 
-两条隧道各注册一个监听回调，而两个回调都会命中*每一个*进来的 channel，因为它们都只看端口。实测结果：在服务器上连 `127.0.0.1:28888`，应答的是 **`::1` 那条隧道**的本地目标。
+两条隧道各注册一个监听，而两个监听都会命中*每一个*进来的连接，因为它们都只看端口。实测结果：在服务器上连 `127.0.0.1:28888`，应答的是 **`::1` 那条隧道**的本地目标。
 
 在 IPv6 之前这种撞车很少见——你得刻意在同一端口上绑两个不同的 IPv4 地址。现在 loopback 有了两份（`127.0.0.1` 和 `::1`），"同端口、不同协议族"就成了很自然的配法，而它错得很安静：你拿到的是一个能用的连接，只是连到了错误的服务，不会报错。
 
-修法是在这里一并比对 `info.destIP`，目前还没修。**在修好之前，只要混用协议族，就给每条 R→L 隧道一个独立的远端端口。**
+修法是在判断时一并比对目的地址，目前还没修。**在修好之前，只要混用协议族，就给每条 R→L 隧道一个独立的远端端口。**
 
 ## 几个配方
 

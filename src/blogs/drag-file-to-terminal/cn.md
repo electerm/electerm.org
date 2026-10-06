@@ -22,15 +22,15 @@ electerm 把这串动作压成一个手势：**把文件直接拖到终端上**�
 | **串口（Serial）** | `XMODEM` / 粘贴路径 | 串口只有 XMODEM 通道，没有 trz/rz |
 | **本地 / 其它** | 不弹窗，直接粘贴加引号的路径 | 没有“远端”可传，键入 `"~/deploy.tar.gz" ` 是唯一合理的答案 |
 
-两种拖拽来源都认。从系统文件管理器拖进来的，走 Electron 的文件路径（`file.path`，拿不到时退到 `window.api.getPathForFile`）。从 electerm 内部（SFTP 面板、文件管理器）拖出来的，带着 `fromFile` 负载，先解析成完整路径，再进同一个对话框。
+两种拖拽来源都认。从系统文件管理器拖进来的，会解析出它在磁盘上的真实路径。从 electerm 内部（SFTP 面板、文件管理器）拖出来的，同样先解析成完整路径，再进同一个对话框。
 
 多文件也没问题：一次拖三个日志，要么一起上传，要么粘成 `"a.log" "b.log" "c.log"`——加引号、空格分隔。
 
 ## SSH 的三个选项
 
-对话框是 `src/client/components/terminal/drop-file-modal.jsx`，决策逻辑在 `src/client/components/terminal/mixins/term-file-drop.js`。翻译成人话：
+SSH 会话下对话框给三个选项，翻译成人话：
 
-- **`trz`**——trzsz 上传（本地 → 远端）。electerm 把文件列表交给传输层（`window._apiControlSelectFile = filePaths`），然后往会话里键入 `trz` + 回车，跟你手敲一模一样。远端必须装好 trzsz（`PATH` 里能找到 `trz`）。这是现代默认选项——比 zmodem 更快更稳，也是软件其它地方推荐的方案。
+- **`trz`**——trzsz 上传（本地 → 远端）。electerm 把文件列表交给传输层，然后往会话里键入 `trz` + 回车，跟你手敲一模一样。远端必须装好 trzsz（`PATH` 里能找到 `trz`）。这是现代默认选项——比 zmodem 更快更稳，也是软件其它地方推荐的方案。
 - **`rz`**——经典 zmodem 上传。同样的握手，换成 `rz` + 回车。留给老机器、极简 BusyBox、只有 `lrzsz` 的跳转设备 CLI。
 - **粘贴路径（`inputOnly`）**——不上传，只把本地路径加引号键入 shell，例如 `"/Users/zxd/Downloads/deploy.tar.gz" `。远端能看到同一份挂载想自己拼命令（`tar xzf` + 粘贴）、文件本来就在远端只是想要个准确文件名时，用这个。
 
@@ -38,7 +38,7 @@ electerm 把这串动作压成一个手势：**把文件直接拖到终端上**�
 
 ## 不想每次都选：设一个默认动作
 
-默认行为是 `ask`——每次拖都弹窗。如果你永远只做同一件事，去**设置 → 终端 → `dragDropBehavior`** 一次设好（默认值在 `src/client/common/default-setting.js`）：
+默认行为是 `ask`——每次拖都弹窗。如果你永远只做同一件事，去**设置 → 终端 → `dragDropBehavior`** 一次设好：
 
 - `ask`——每次都弹窗问（默认）
 - `trz`——SSH 拖入直接开始 trzsz 上传
@@ -85,4 +85,4 @@ electerm 把这串动作压成一个手势：**把文件直接拖到终端上**�
 - **默认值**：设置 → 终端 → `dragDropBehavior`（`ask` / `trz` / `rz` / `inputOnly`）。
 - **底层**：先暂存文件列表，再发送 `trz` / `rz` + 回车；XMODEM 调 `initiateSend()`。源码：`term-file-drop.js`、`drop-file-modal.jsx`、`file-drop-utils.js`。
 
-下一篇：[Electerm 的 SSH 能力](/blogs/ssh-features-guide/)——先把要接文件的会话配好；或者看看[终端与 SFTP 分屏](/videos/electerm-terminal-and-sftp-split-view/)——不想拖的时候就用浏览的方式。
+下一篇：[Electerm 的 SSH 能力](/blogs/ssh-features-guide/cn/)——先把要接文件的会话配好；或者看看[终端与 SFTP 分屏](/videos/electerm-terminal-and-sftp-split-view/)——不想拖的时候就用浏览的方式。

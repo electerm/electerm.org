@@ -35,22 +35,21 @@ electerm 把三者做进了书签编辑器，就是 **L→R**、**R→L** 和 **
 
 ## 在 electerm 里哪里配隧道
 
-打开任意 SSH 书签 → 拉到 **SSH 隧道**分区（`src/client/components/bookmark-form/common/ssh-tunnels.jsx` + `ssh-tunnel-form.jsx`）：
+打开任意 SSH 书签 → 拉到 **SSH 隧道**分区：
 
 1. 选类型：**L→R**、**R→L** 或 **dynamicForward（socks proxy）**，默认 L→R。
 2. 填**本地** host + 端口，以及（动态模式除外）**远端** host + 端口。默认值是本地 `127.0.0.1:12200`、远端 `127.0.0.1:12300`，改成你真实要用的端口。
 3. 起个**名字**（比如 `pg-prod`、`webhook`、`socks-home`），列表多了才认得出来。
-4. 点添加按钮。隧道进列表显示为 `→ 本地:… → 远端:…`（动态显示 `socks5://…`）。`?` 悬浮提示会把你*实际填的值*画成流向图（`renderSshTunnelFlow`）。
+4. 点添加按钮。隧道进列表显示为 `→ 本地:… → 远端:…`（动态显示 `socks5://…`）。`?` 悬浮提示会把你*实际填的值*画成流向图。
 5. **保存书签并连接。** 隧道随会话自动建立，不用再点，也不用在后台养 `ssh -fN` 进程。
 
-改配置点行里的铅笔，删除点减号。一个书签可以挂**多条隧道**（`sshTunnels` 是数组）——比如 Postgres + Redis + 管理后台，一条连接全带走。
+改配置点行里的铅笔，删除点减号。一个书签可以挂**多条隧道**——比如 Postgres + Redis + 管理后台，一条连接全带走。
 
-底层实现（`src/app/server/ssh-tunnel.js`）：
+三条行为值得知道：
 
-- L→R 在本机起 TCP 服务（`net.createServer`），每个进来的连接经 SSH（`conn.forwardOut`）打出去。
-- R→L 让服务器监听（`conn.forwardIn`），进来的连接再管道回本机（`net.connect`）。
-- 动态在本机起 SOCKS5 服务（`socksv5-server`），每个 SOCKS 请求经 SSH（`conn.forwardOut`）转发。
-- 每个连接相互隔离——一个 socket 挂了只关自己，不断整条隧道；SSH 断了隧道跟着收。
+- **每条隧道彼此独立。** 通过隧道的一条连接失败只关它自己，不会断掉整条隧道，其余照常。
+- **会话结束全部收掉。** SSH 连接一关，它的所有隧道跟着拆干净——不会留下监听的端口要你手工清。
+- **远端永远站在服务器的角度解析。** 这是最容易搞反的一条，下面按模式逐个讲清楚。
 
 进阶：quick-connect 连接串也能带隧道，例如 `ssh://user@host:22?opts={"sshTunnels":[{"sshTunnel":"forwardLocalToRemote","sshTunnelLocalPort":8080,"sshTunnelRemoteHost":"localhost","sshTunnelRemotePort":80}]}`。
 

@@ -1,6 +1,6 @@
 ---
 title: 'Electerm Terminal Background: Images, Text, and Five Filters'
-description: Put a photo, a URL, your own text, or the tab number behind a terminal — and dim, blur and desaturate it with five CSS filters so the text stays readable. Where the setting lives, what each mode actually paints, and two things that will surprise you (the WebGL renderer hides it, and half the labels are untranslated).
+description: Put a photo, a URL, your own text, or the tab number behind a terminal — and dim, blur and desaturate it with five filters so the text stays readable. Where the setting lives, what each mode actually paints, and two things that will surprise you (the WebGL renderer hides it, and half the labels are untranslated).
 date: 2026-10-03
 tags: [background, appearance, customization, images, filters, tips]
 videos: [electerm-terminal-background-settings]
@@ -32,7 +32,7 @@ The same field exists per bookmark, in the bookmark form, so one host can have i
 
 ## The five filters
 
-Once the value is a real image, five number fields appear underneath. They are not sliders — they are antd number inputs with the label baked into the field, so each one reads `Opacity: 1`, `Blur: 0`, and so on.
+Once the value is a real image, five number fields appear underneath. They are not sliders — they are number inputs with the label baked into the field, so each one reads `Opacity: 1`, `Blur: 0`, and so on.
 
 | Field | Default | Range | Step |
 | --- | --- | --- | --- |
@@ -42,11 +42,7 @@ Once the value is a real image, five number fields appear underneath. They are n
 | `Grayscale` | `0` | 0 – 1 | 0.05 |
 | `Contrast` | `1` | 0 – 10 | 0.1 |
 
-They are emitted as one CSS filter chain, in that order:
-
-```css
-filter: blur(6px) opacity(0.45) brightness(0.9) contrast(1.1) grayscale(0.6);
-```
+They are applied in that order, as one chain: blur, then opacity, then brightness, then contrast, then grayscale.
 
 The defaults are all no-ops, which is the right call: drop a photo in and it renders at full strength, and you only reach for the filters when the photo is too loud behind your `kubectl get pods`.
 
@@ -59,31 +55,23 @@ Note that the filters disappear from the panel when the value is `[🚫]`, `Inde
 
 ## What each built-in mode actually paints
 
-**The default (empty value).** Electerm paints its own watermark — `images/electerm-watermark.png`, 766 × 266 — behind the active session in each layout pane. It is sized `min(100%, 766px) auto`, so it keeps its aspect ratio and scales down in a narrow split column instead of being cropped on both sides. If you have never set a background, this is what you have been looking at.
+**The default (empty value).** Electerm paints its own watermark behind the active session in each layout pane. It keeps its aspect ratio and scales down inside a narrow split column instead of being cropped on both sides. If you have never set a background, this is what you have been looking at.
 
-**`[🚫]` no background.** The watermark rule is not emitted at all, and the per-session rule writes an explicit `background-image: none` — explicit because a per-bookmark `[🚫]` has to beat a global image, and an empty rule would let it show through. This is the option to pick if you find the watermark distracting and do not want a replacement.
+**`[🚫]` no background.** The watermark is not drawn at all. This is also the option to pick if you find the watermark distracting and do not want a replacement — and a per-bookmark `[🚫]` beats a global image, so you can switch the background off for one host.
 
-**`[📝]` text.** Opens a modal: the text itself (up to 500 characters), a font size (12–200, default 48), a colour (default `#ffffff`), and a font family (default `Maple Mono`). It is drawn centred in the pane, with newlines preserved, at `opacity: 0.3`. A single word like `PRODUCTION` at 120px is a genuinely good warning sign; a paragraph is not, because the line height and wrapping are not yours to control.
+**`[📝]` text.** Opens a modal: the text itself (up to 500 characters), a font size (12–200, default 48), a colour (default `#ffffff`), and a font family (default `Maple Mono`). It is drawn centred in the pane at 30% opacity, with newlines preserved. A single word like `PRODUCTION` at 120px is a genuinely good warning sign; a paragraph is not, because the line height and wrapping are not yours to control.
 
-**`Index`.** Paints the session's tab number as the background — the same number as the pill in the tab bar — at `opacity: 0.1`, `font-size: 30vmin`, bold. In a four-pane layout it is the fastest way to tell which pane is which when your window manager has scrambled them.
+**`Index`.** Paints the session's tab number as the background — the same number as the pill in the tab bar — very faint and very large. In a four-pane layout it is the fastest way to tell which pane is which when your window manager has scrambled them.
 
-**`🎨 RandomShape`.** Generates a 200 × 200 canvas at render time and uses it as a data URL. There are eight pattern generators — fluid dynamics, quantum wave, relativity field, fluid flow, particle physics, wave interference, string theory, quantum field — and it picks one at random with a random hue, saturation and lightness. Two things follow from how it is built:
+**`🎨 RandomShape`.** Generates a pattern at render time. There are eight generators — fluid dynamics, quantum wave, relativity field, fluid flow, particle physics, wave interference, string theory, quantum field — and it picks one at random with a random hue, saturation and lightness. Two things follow:
 
-- It is **regenerated every time the CSS is rewritten**, so it changes whenever you touch a background setting (and each pane in a split layout gets its own pattern, not one shared pattern).
-- The base rule is `background-repeat: no-repeat` and the user-image branch sets `background-size: auto`, so a 200 × 200 canvas lands as a single tile in the middle of the pane rather than filling it.
+- It is **regenerated every time you touch a background setting**, and each pane in a split layout gets its own pattern rather than one shared pattern.
+- It lands as a single small tile in the middle of the pane rather than filling it.
 
-## How it renders (the part worth knowing)
+## Two things you can observe from outside
 
-The mechanism explains most of the surprises, so it is worth three paragraphs.
-
-xterm is handed a **transparent** terminal background — `background: 'rgba(0,0,0,0)'` — and `.xterm` and `.xterm-viewport` are forced transparent too. Electerm then injects its own stylesheet into the page and paints your image on `.xterm-screen::before`: absolutely positioned, full size, and `z-index: -1`, so it sits behind the text but in front of the pane's own background. That is the whole trick. Your text is never dimmed, because nothing is dimming it.
-
-Local files are read over IPC and inlined as a data URL, so a `file://` path never appears in the DOM; a URL is used as-is. And because xterm thinks the background is transparent, its computed text-selection colour would be blended over transparent-black and come out wrong — so electerm recomputes the selection colour over the real visible background. If you configured an opaque selection colour, it stays opaque.
-
-Two consequences you can observe from outside:
-
-- **A shell that asks the terminal for its background colour gets the UI colour.** OSC 11 (`\e]11;?\a`) is answered with the theme's `main` UI colour, not the terminal palette's background — because the terminal palette's background is the thing being hidden. This was fixed in [#4407](https://github.com/electerm/electerm/issues/4407): TUI apps that query the background were getting the wrong colour under a light UI theme.
-- **The WebGL renderer hides the image.** Settings → Terminal → `renderer type` offers `dom` and `webGL`. `dom` is the default and it is where backgrounds work. Under `webGL`, electerm hands xterm an opaque background instead of a transparent one, and xterm's WebGL addon has no transparency option — its canvas paints an opaque rectangle over the CSS layer. Verified by rendering both against the same DOM: the image is visible under `dom` and completely covered under `webGL`. If your background image "does not work", check this setting before anything else.
+- **A shell that asks the terminal for its background colour gets the UI colour.** TUI apps that query the terminal's background are answered with the theme's UI background, not the terminal palette's background — because the terminal palette's background is the thing being hidden. This was fixed in [#4407](https://github.com/electerm/electerm/issues/4407): under a light UI theme, apps that queried the background were getting the wrong colour.
+- **The WebGL renderer hides the image.** Settings → Terminal → `renderer type` offers `dom` and `webGL`. `dom` is the default and it is where backgrounds work. Under `webGL` the renderer paints an opaque canvas over the background layer. Verified by rendering both against the same page: the image is visible under `dom` and completely covered under `webGL`. If your background image "does not work", check this setting before anything else.
 
 ## Per-bookmark backgrounds, and the trap
 
@@ -95,21 +83,18 @@ The other thing to know is how the two levels combine. Per-bookmark values win �
 
 ## The labels are half-untranslated
 
-Worth knowing so you do not assume you are looking at a broken install. Ten of the strings this feature uses are not in the locale files — not in English, not in Chinese, not anywhere:
+Worth knowing so you do not assume you are looking at a broken install. Ten of the strings this feature uses were never translated — not into English, not into Chinese, not into anything:
 
-```
-textBackground  index  randomShape  Opacity  Blur
-Brightness  Grayscale  Contrast  terminalBackgroundText  enterTextForBackground
-```
+`📝 TextBackground`, `Index`, `🎨 RandomShape`, `Opacity`, `Blur`, `Brightness`, `Grayscale`, `Contrast`, plus the text-background dialog's own two labels.
 
-Electerm's translation lookup falls back to the key itself and capitalises the first letter. So the dropdown really does read `📝 TextBackground`, `Index` and `🎨 RandomShape`, and the filter fields really do read `Opacity`, `Blur`, `Brightness`, `Grayscale`, `Contrast` — in every language, including a Chinese UI. The keys simply were never added to `@electerm/electerm-locales`.
+When electerm has no translation for a string it falls back to the internal name and capitalises the first letter. So the dropdown really does read `📝 TextBackground`, `Index` and `🎨 RandomShape`, and the filter fields really do read `Opacity`, `Blur`, `Brightness`, `Grayscale`, `Contrast` — in every language, including a Chinese UI.
 
 ## Cheat sheet
 
 - **Setting:** Settings → Terminal → `Terminal background image`; per-bookmark in the bookmark form.
 - **Value:** a file path, an `https://` URL, `[🚫]` (none), `[📝]` (text), `Index` or `🎨 RandomShape` (global only), or empty for the watermark.
-- **Filters:** `Opacity` 0–1, `Blur` 0–50, `Brightness` 0–10, `Grayscale` 0–1, `Contrast` 0–10 — emitted as one CSS filter chain, hidden for `[🚫]` / `Index` / `[📝]`.
-- **Text background:** centred, `opacity: 0.3`, size 12–200, default font `Maple Mono`.
+- **Filters:** `Opacity` 0–1, `Blur` 0–50, `Brightness` 0–10, `Grayscale` 0–1, `Contrast` 0–10 — applied as one chain, hidden for `[🚫]` / `Index` / `[📝]`.
+- **Text background:** centred, 30% opacity, size 12–200, default font `Maple Mono`.
 - **Do not set `renderer type` to `webGL`** if you want a background image — the canvas covers it.
 - **Per-bookmark text-only backgrounds are dropped on save.** Set an image path, or set the text globally.
 

@@ -21,25 +21,17 @@ Settings → **Settings** → `opacity`.
 - **Range:** `0` to `1`, in steps of `0.05`.
 - **Default:** `1` — fully opaque, exactly what you have now.
 - **Effect:** live. Drag it down and the window fades in place; drag it back to `1` and it is solid again. No restart, no reconnect, your sessions never notice.
-- **macOS and Windows desktop app only.** The field is hidden in the web version (`electerm-web` / `demo.electerm.org`) — a browser tab cannot make its own window translucent, so there is nothing to set. It does not work on Linux either.
+- **macOS and Windows desktop app only.** The field is hidden in the web version (`electerm-web` / `demo.electorm.org`) — a browser tab cannot make its own window translucent, so there is nothing to set. It does not work on Linux either.
 
 Practical starting points: `0.85` is "barely see-through, still comfortable for hours". `0.7` is the sweet spot for copying from behind. Below `0.5` the terminal itself gets hard to read — useful for a minute of monitoring, not for a day of work.
 
 ## What it really does
 
-It dims **everything**, not just the background:
+It dims **everything**, not just the background.
 
-- The setting is stored as `config.opacity` (default `1`, see `src/client/common/default-setting.js` and `src/app/common/default-setting.js`).
-- The renderer applies it as one CSS rule on the whole app root (`src/client/components/common/opacity.jsx`):
+The whole window — the app surface, the tab bar, dialogs, menus, and the terminal text itself — is drawn at the opacity you set. At the same time electerm makes the window's own background transparent, so what you see through it is genuinely the application behind, not a painted-on backdrop. Turn the value back to `1` and the solid background returns.
 
-```css
-#outside-context {
-  opacity: 0.7 !important;
-}
-```
-
-- At the same time it flips the page and the Electron window background to transparent (`html`/`body` → `transparent`, `setBackgroundColor('#33333300')` over IPC in `src/app/lib/ipc.js`), so whatever is behind the window is what you actually see. At `1` it restores the solid `#333333` background and removes the rule entirely.
-- The window itself is created translucent-capable (`transparent: true` in `src/app/lib/create-window.js`). Transparent-window compositing is only supported on macOS and Windows — that is why the feature only works there.
+That is also why the platform matters: translucent windows are a compositing feature that macOS and Windows provide, and Linux does not. It is not an electerm limitation you can configure around.
 
 The honest consequence: **text fades too**. This is whole-window opacity, not background-only transparency. A terminal background image keeps your text at full brightness; opacity does not — at `0.6`, your shell output is at 60% as well. That is the trade, and it is why the recommended values stay high.
 

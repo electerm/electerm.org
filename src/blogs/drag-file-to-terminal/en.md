@@ -22,15 +22,15 @@ Drop a file (or several) onto any terminal pane and electerm branches by session
 | **Serial** | `XMODEM` / paste path | Serial links only speak XMODEM, there is no trz/rz channel |
 | **Local / anything else** | No dialog — quoted paths are pasted directly | There is no remote to upload to; typing `"~/deploy.tar.gz" ` is the only sane answer |
 
-Two sources are accepted. Files dragged from the OS file manager resolve through Electron's file path (`file.path`, falling back to `window.api.getPathForFile`). Files dragged from inside electerm itself — the SFTP panel or file manager — arrive as a `fromFile` payload and are resolved to their full path before the same dialog appears.
+Two sources are accepted. Files dragged from the OS file manager are resolved to their real path on disk. Files dragged from inside electerm itself — the SFTP panel or file manager — are resolved to their full path too, and then the same dialog appears.
 
 Multiple files work too: drop three logs and all three paths are uploaded, or pasted as `"a.log" "b.log" "c.log"` — space-joined, each quoted.
 
 ## The three SSH choices
 
-The dialog is `src/client/components/terminal/drop-file-modal.jsx`, the decision logic is `src/client/components/terminal/mixins/term-file-drop.js`. In plain language:
+The dialog offers three choices for an SSH session. In plain language:
 
-- **`trz`** — trzsz upload (local → remote). Electerm hands your file list to the transfer layer (`window._apiControlSelectFile = filePaths`) and types `trz` + Enter into the session, exactly as if you had typed it yourself. The remote side must have trzsz installed (`trz` on `PATH`). This is the modern default — faster and more robust than zmodem, and what the app recommends elsewhere too.
+- **`trz`** — trzsz upload (local → remote). Electerm hands your file list to the transfer layer, then types `trz` + Enter into the session, exactly as if you had typed it yourself. The remote side must have trzsz installed (`trz` on `PATH`). This is the modern default — faster and more robust than zmodem, and what the app recommends elsewhere too.
 - **`rz`** — classic zmodem upload. Same handshake, but with `rz` + Enter. Pick this on older boxes, minimal BusyBox environments, or jump-device CLIs where only `lrzsz` exists.
 - **Paste path (`inputOnly`)** — no upload at all. The quoted local path is typed into the shell, e.g. `"/Users/zxd/Downloads/deploy.tar.gz" `. Useful when the "remote" is actually reachable over a shared mount, when you want to build the command yourself (`tar xzf` + paste), or when the file is already there and you just need its name spelled right.
 
@@ -38,7 +38,7 @@ If a transfer is already running, electerm refuses to stack a second one — you
 
 ## Stop asking: set a default
 
-By default the behavior is `ask` — every drop shows the dialog. If you always do the same thing, set it once in **Settings → Terminal → `dragDropBehavior`** (default in `src/client/common/default-setting.js`):
+By default the behavior is `ask` — every drop shows the dialog. If you always do the same thing, set it once in **Settings → Terminal → `dragDropBehavior`**:
 
 - `ask` — show the dialog every time (default)
 - `trz` — every SSH drop starts a trzsz upload immediately

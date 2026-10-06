@@ -27,19 +27,11 @@ electerm 给这件事准备了一个"一个数字"的答案：**窗口不透明�
 
 ## 它到底改了什么
 
-它变淡的是**所有东西**，不只是背景：
+它变淡的是**所有东西**，不只是背景。
 
-- 这个值存为 `config.opacity`（默认 `1`，见 `src/client/common/default-setting.js` 和 `src/app/common/default-setting.js`）。
-- 渲染层把它变成一条作用在整个应用根节点上的 CSS（`src/client/components/common/opacity.jsx`）：
+整个窗口——应用界面、标签栏、对话框、菜单，以及终端里的文字本身——都按你设的那个值来绘制。与此同时，electerm 会把窗口自身的背景也变透明，所以你透过去看到的是真正在后面的应用，而不是一层画上去的底图。调回 `1`，实色背景恢复。
 
-```css
-#outside-context {
-  opacity: 0.7 !important;
-}
-```
-
-- 同时把页面和 Electron 窗口背景一起切成透明（`html`/`body` → `transparent`，经 IPC 调用 `src/app/lib/ipc.js` 里的 `setBackgroundColor('#33333300')`），你看到的透过来的东西，就是窗口后面真实的应用。调回 `1` 时实色 `#333333` 背景恢复，这条规则整个删掉。
-- 窗口创建时就是按可透明建的（`src/app/lib/create-window.js` 里 `transparent: true`）。透明窗口合成只在 macOS 和 Windows 上支持——所以这个功能也只在这两个平台上能用。
+这也解释了平台限制：透明窗口是 macOS 和 Windows 提供的合成能力，Linux 没有。这不是一个能绕过去的 electerm 限制。
 
 实话实说：**字也会变淡**。这是整窗不透明度，不是只透背景。终端背景图能做到"背景淡、字还亮"；opacity 做不到——`0.6` 时你的 shell 输出也只有 60%。这就是代价，所以推荐值才一直偏高。
 

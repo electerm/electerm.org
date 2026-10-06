@@ -9,12 +9,7 @@ tags: [数据目录, 备份, 便携, 同步, 技巧]
 
 书签、保存过的密码、快速命令、主题、触发器、同步配置——electerm 记住的所有东西都放在磁盘上的一个数据目录里。默认目录由操作系统决定，藏在用户目录深处。平时没感觉，关键时刻就碍事：`C:` 盘满了、想把数据放进 Dropbox、多台电脑共用一份配置、U 盘便携运行，或者想分开“工作”和“个人”两套配置。
 
-解决方法只有一个环境变量：**`DATA_PATH`**。electerm 启动时如果发现它，就用它做数据根目录；没设置就回退到默认位置。机制就这一行：
-
-```js
-// src/app/lib/sqlite.js、src/app/lib/nedb.js、src/app/lib/storage-key.js
-const appDataPath = process.env.DATA_PATH || resolve(appPath, 'electerm')
-```
+解决方法只有一个环境变量：**`DATA_PATH`**。electerm 启动时如果发现它，就用它做数据根目录；没设置就回退到默认位置。机制就这么简单。
 
 它下面的所有东西——`users/default_user/electerm.db`、`electerm_data.db`、`storage-key.enc`、会话日志——都会一起搬走。不用改注册表，不用改配置文件，不用重装。
 

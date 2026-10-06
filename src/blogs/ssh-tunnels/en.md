@@ -35,22 +35,21 @@ One sentence each:
 
 ## Where tunnels live in electerm
 
-Open any SSH bookmark → scroll to the **SSH tunnel** section (`src/client/components/bookmark-form/common/ssh-tunnels.jsx` + `ssh-tunnel-form.jsx`):
+Open any SSH bookmark → scroll to the **SSH tunnel** section:
 
 1. Pick the type: **L→R**, **R→L**, or **dynamicForward (socks proxy)**. L→R is the default.
 2. Fill **local** host + port and (except dynamic) **remote** host + port. Defaults are `127.0.0.1:12200` local and `127.0.0.1:12300` remote — change them to your real ports.
 3. Give it a **name** (e.g. `pg-prod`, `webhook`, `socks-home`) so the list stays readable.
-4. Click the add button. The tunnel appears in the table as `→ local:… → remote:…` (or `socks5://…` for dynamic). Hover the `?` icons any time — the tooltip renders your *actual typed values* back as a flow diagram (`renderSshTunnelFlow`).
+4. Click the add button. The tunnel appears in the table as `→ local:… → remote:…` (or `socks5://…` for dynamic). Hover the `?` icons any time — the tooltip renders your *actual typed values* back as a flow diagram.
 5. **Save the bookmark and connect.** Tunnels come up automatically with the session — no extra click, no background `ssh -fN` process to babysit.
 
-Need to change one later? Hit the edit pencil in the table row, or the minus icon to delete. A bookmark can hold **many tunnels** (`sshTunnels` is an array) — e.g. Postgres + Redis + admin UI, all on one connection.
+Need to change one later? Hit the edit pencil in the table row, or the minus icon to delete. A bookmark can hold **many tunnels** — e.g. Postgres + Redis + admin UI, all on one connection.
 
-Under the hood (`src/app/server/ssh-tunnel.js`):
+Three things worth knowing about how they behave:
 
-- L→R opens a TCP server on your machine (`net.createServer`) and dials out through the SSH connection (`conn.forwardOut`) per incoming socket.
-- R→L asks the server to listen (`conn.forwardIn`) and pipes each inbound connection back to your machine (`net.connect`).
-- Dynamic starts a local SOCKS5 server (`socksv5-server`) and forwards every SOCKS request through the connection (`conn.forwardOut`).
-- Each accepted connection is isolated — one failing socket closes just itself, never the tunnel — and everything is torn down when the SSH connection closes.
+- **Each tunnel is independent.** One failing connection through a tunnel closes just that connection, never the tunnel itself, and the rest keep working.
+- **Everything dies with the session.** Close the SSH connection and all its tunnels are torn down — there is no leftover listener to clean up.
+- **The remote side is always resolved from the server.** That is the one rule that trips people up; the sections below spell it out per mode.
 
 Power-user note: quick-connect strings can carry tunnels too, e.g. `ssh://user@host:22?opts={"sshTunnels":[{"sshTunnel":"forwardLocalToRemote","sshTunnelLocalPort":8080,"sshTunnelRemoteHost":"localhost","sshTunnelRemotePort":80}]}`.
 

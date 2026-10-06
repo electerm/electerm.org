@@ -1,6 +1,6 @@
 ---
 title: '会话保活：点亮心跳图标，让会话真的不掉线'
-description: electerm 会话工具条里的心跳图标会在你空闲时每隔几秒发一个回车——重置 TMOUT 和应用层空闲清理，这是 TCP 保活够不到的地方。在哪里开、底层怎么工作、什么时候该关。
+description: electerm 会话工具条里的心跳图标会在你空闲时每隔几秒发一个回车——重置 TMOUT 和应用层空闲清理，这是 TCP 保活够不到的地方。在哪里开、它到底做了什么、什么时候该关。
 date: 2026-09-24
 tags: [保活, ssh, tmout, 终端, 会话, 提效, 技巧]
 bannerScript: banner.js
@@ -14,14 +14,14 @@ bannerScript: banner.js
 
 ## 图标在哪
 
-看**会话控制条**——终端窗格上方那条细 bar（`src/client/components/session/session-control.jsx`）。
+看**会话控制条**——终端窗格上方那条细 bar。
 
-从左到右依次是 `SSH / SFTP` 窗格标签、回形针（SFTP 路径跟随）、分屏切换，然后就是**心跳**：一个心形轮廓中间穿过一条心电图折线（`src/client/components/icons/heartbeat.jsx` 里的 `HeartbeatIcon`——心形 path 加一段 `160,512 310,512 370,310 450,714 ...` 的折线）。
+从左到右依次是 `SSH / SFTP` 窗格标签、回形针（SFTP 路径跟随）、分屏切换，然后就是**心跳**：一个心形轮廓中间穿过一条心电图折线。
 
 - **灰色 = 关。**默认状态，什么都不发。
-- **高亮（橙红，`.sess-icon.active` → `--warn`）= 这个标签页开着。**再点一下关掉。
+- **高亮（橙红）= 这个标签页开着。**再点一下关掉。
 
-它是**按标签页、只放内存**的开关（`src/client/components/session/session.jsx` 里的 `keepaliveEnabled`，经 `src/client/components/terminal/mixins/term-attach.js` 的 `term.toggleKeepalive()` 切换）。没有全局开关——会发按键的功能，本来就该每个会话单独 opt-in。
+它是**按标签页、只放内存**的开关。没有全局开关——会发按键的功能，本来就该每个会话单独 opt-in。
 
 > 只有终端类会话（SSH 或本地 shell）才有这个图标。纯 SFTP、网页标签、RDP 会话没有东西可发回车，图标会自动隐藏。
 
@@ -29,33 +29,26 @@ bannerScript: banner.js
 
 不是 TCP 包，不是 SSH 的 `keepalive@openssh.com` 消息，而是一个真正的换行，进 PTY 的：
 
-1. 每 **3 秒**检查一次：*终端输出和键盘输入是不是都已经静默 3 秒了？*（`src/client/components/terminal/attach-addon-custom.js` 里 `_keepaliveInterval = 3000`，`_checkKeepalive`）。
-2. 是——且 WebSocket 还是 `OPEN`——就沿着现有连接发 `{ action: 'keepalive' }`。
-3. 服务端往 PTY 写 `\n\r\x1b[K`（`src/app/server/session-server.js`）。
-4. bash 的 `read()` 被唤醒，`TMOUT` 计时清零，bash 重画一行提示符。客户端顺手压住约 500 ms 的回显（`startOutputSuppression(500, null, true)`），所以你只看到提示符轻轻重画，不会刷屏。
-
-```
-空闲 3s ──► 客户端: { action: 'keepalive' } ──► 服务端: term.write('\n\r\x1b[K')
-                                                          │
-bash read() 被唤醒 ◄── TTY 凑够一行才投递 ──◄── PTY ──────┘
-TMOUT 清零，提示符重画，回显被压住
-```
+1. 每 **3 秒**检查一次：*终端输出和键盘输入是不是都已经静默 3 秒了？*
+2. 是——且连接还开着——就沿着现有连接发一条保活消息过去。
+3. 服务端把这个换行写进 PTY。
+4. bash 的 `read()` 被唤醒，`TMOUT` 计时清零，bash 重画一行提示符。客户端顺手压住约 500 ms 的回显，所以你只看到提示符轻轻重画，不会刷屏。
 
 两个值得知道的细节：
 
-- **为什么是 `\n` 而不是 NUL？**经典模式下 TTY 行规程要凑够一个换行才把数据交给 `read()`——`\x00` 会永远卡在缓冲里，根本叫不醒 shell。`session-server.js` 的注释专门写了这一点。
+- **为什么是换行而不是 NUL 字节？**经典模式下终端行规程要凑够一个换行才把数据交给 `read()`——NUL 会永远卡在缓冲里，根本叫不醒 shell。
 - **你干活时它很安静。**敲键盘、有输出都会重置两个空闲时钟，所以它从不在你输入到一半时插嘴。只有你真正走开了，它才开口。
 
 ## 为什么它比 TCP / SSH 保活硬
 
-electerm 本来就有常规传输层保活：设置 → SSH 里的 `keepaliveInterval`（默认 10 秒）和 `keepaliveCountMax`（默认 10），经 `term-socket.js` 传到 `session-ssh.js`。相当于 OpenSSH 的 `ServerAliveInterval`——保的是**线**。
+electerm 本来就有常规传输层保活：设置 → SSH 里的 **keepalive interval**（默认 10 秒）和 **keepalive count max**（默认 10）。相当于 OpenSSH 的 `ServerAliveInterval`——保的是**线**。
 
 心跳保的是**shell**。层不一样，杀你的东西也不一样：
 
 | | SSH / TCP 保活 | 会话心跳（本文） |
 |---|---|---|
 | **发什么** | SSH 协议包 / TCP ACK | 真正进 PTY 的 `\n` |
-| **默认节奏** | 每 10 秒（`keepaliveInterval`） | 真正空闲每 3 秒 |
+| **默认节奏** | 每 10 秒 | 真正空闲每 3 秒 |
 | **能挡 NAT / 防火墙空闲回收吗** | 一般能 | 能——而且是真流量 |
 | **能挡 shell `TMOUT` 自动登出吗** | **不能**——shell 根本看不到它 | **能**——`read()` 被唤醒，计时清零 |
 | **能挡堡垒机 / 网关 / WAF 的应用层空闲清理吗** | 经常**不能**——人家看的是按键，不是包 | 实践中**能**——看起来就是有人在动 |
@@ -79,10 +72,10 @@ electerm 本来就有常规传输层保活：设置 → SSH 里的 `keepaliveInt
 这个图标发的是**真按键到真机器**，所以默认关、按标签页生效，项目是故意的。请尊重它：
 
 - **它按的是回车。**在空提示符上无害（重画一行）。其他地方先过脑子：**进 `vim`、`nano`、`emacs`、TUI 安装器、`read -p` / 密码提示之前先关掉。**插入模式里一个换行就是多一行；在 `Are you sure? (y/N)` 面前就是一次默认确认——空默认一般安全，但别赌。
-- **会有提示符的闪动。**每次空闲几秒，提示符重画一次。500 ms 的回显压制能盖住大部分，但在慢链路上你可能瞥见一眼。那一闪就是保活在干活。
+- **会有提示符的闪动。**每次空闲几秒，提示符重画一次。半秒的回显压制能盖住大部分，但在慢链路上你可能瞥见一眼。那一闪就是保活在干活。
 - **重连后要重开。**和所有按标签页的状态一样，关掉标签页开关就没了。重连 → 再点一次小心心。
 - **它不是 tmux/screen 的替代品。**网络真断了，什么保活都救不了。重要的活放 tmux 里跑，*外面*再开着心跳守住这层会话，两层都要。
-- **自动化会忽略它。**触发器匹配和 shell 集成逻辑会显式跳过保活回显（`attach-addon-custom.js`），所以心跳自己的重画不会误触你的触发器。
+- **自动化会忽略它。**触发器匹配和 shell 集成逻辑会显式跳过保活回显，所以心跳自己的重画不会误触你的触发器。
 
 ## 排查清单
 
@@ -94,10 +87,10 @@ electerm 本来就有常规传输层保活：设置 → SSH 里的 `keepaliveInt
 
 ## 一句话备忘
 
-- **开** = 会话控制条里的心跳图标高亮（`session-control.jsx` → `HeartbeatIcon`，`.keepalive-icon.active`）。
-- **干什么** = 真正空闲每 3 秒往 PTY 发 `\n`（`attach-addon-custom.js` → `session-server.js`），回显压 500 ms。
+- **开** = 会话控制条里的心跳图标高亮。
+- **干什么** = 真正空闲每 3 秒往 PTY 发一个换行，回显压约半秒。
 - **为啥不用 SSH 保活** = 传输层保活够不到 `TMOUT` 和应用层空闲清理；换行够得到。
 - **何时关** = 编辑器、TUI、密码提示、危险确认。回到提示符再开。
 - **范围** = 只这个标签页，只放内存，默认关。
 
-下一篇：[SSH 功能](/blogs/ssh-features-guide/)——和本文互补的传输层保活设置；想让终端*自动回*提示而不是只保活，看[终端触发器](/blogs/terminal-triggers/)。
+下一篇：[Electerm SSH 全解](/blogs/ssh-features-guide/cn/)——和本文互补的传输层保活设置；想让终端*自动回*提示而不是只保活，看[终端触发器](/blogs/terminal-triggers/cn/)。

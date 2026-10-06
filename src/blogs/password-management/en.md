@@ -13,7 +13,7 @@ Electerm has a dedicated page for exactly this: **Settings → Passwords**. It g
 
 ## Where it lives
 
-Open **Settings** (the gear icon in the left sidebar), then pick **Passwords** from the settings list (`src/client/components/setting-panel/setting-passwords.jsx`, id `setting-passwords` in `constants.js`).
+Open **Settings** (the gear icon in the left sidebar), then pick **Passwords** from the settings list.
 
 What you get is not a flat credential list but a **grouped view**:
 
@@ -28,8 +28,8 @@ Groups are sorted by count descending, so the most reused password — the one y
 
 Every row has two actions:
 
-- **Copy** — copies the actual password to the clipboard (`copyToClipboard`). For the "paste it into this one-off console" moment without opening the bookmark editor.
-- **Change password** — opens the rotation dialog. This is the batch update: type the new password once, and electerm writes it to **every bookmark in that group** (`editItem(bookmark.id, { password: newPassword })` per bookmark).
+- **Copy** — copies the actual password to the clipboard. For the "paste it into this one-off console" moment without opening the bookmark editor.
+- **Change password** — opens the rotation dialog. This is the batch update: type the new password once, and electerm writes it to **every bookmark in that group**.
 
 The dialog lists the affected bookmarks by title before you confirm, so you can see the blast radius — `# web-01`, `# web-02`, … — then commit. One edit, N bookmarks updated, zero editors opened one by one.
 
@@ -44,7 +44,7 @@ The canonical use case — Friday rotation:
 
 1. Go to **Settings → Passwords**. The top row shows your shared secret with `count = 12`.
 2. Click the **edit** icon on that row.
-3. The modal shows the current value plus the 12 affected bookmarks. Type the new password in the `Input.Password` field and confirm.
+3. The modal shows the current value plus the 12 affected bookmarks. Type the new password in the password field and confirm.
 4. Done — all 12 bookmarks now connect with the new secret. Next login just works.
 
 No per-bookmark visits, no missed host that still has the old password and fails at 2 AM.
@@ -55,8 +55,8 @@ A second use case is auditing reuse: if one row says `count = 30` and spans prod
 
 Convenience means nothing without safe storage, so the short version of electerm's model:
 
-- **OS-level encryption.** Secrets are encrypted with Electron's `safeStorage` (`src/app/lib/safe-storage.js`, prefix `v2:safe:`) — **macOS Keychain**, **Windows DPAPI** (bound to your user account), **Linux libsecret / gnome-keyring** with fallback. Values on disk are base64 ciphertext, not plaintext.
-- **Encrypted database.** Bookmark documents are stored encrypted at rest (see the `db-enc` unit tests), and sync uploads encrypt bookmarks and profiles when a sync password is set.
+- **OS-level encryption.** Secrets are encrypted with the operating system's own credential store — **macOS Keychain**, **Windows DPAPI** (bound to your user account), **Linux libsecret / gnome-keyring** with a fallback. Values on disk are ciphertext, not plaintext.
+- **Encrypted database.** Bookmark documents are stored encrypted at rest, and sync uploads encrypt bookmarks and profiles when a sync password is set.
 - **Masked UI.** The passwords page, like the bookmark table, renders `********` plus a keyboard-style tag — copy goes through the clipboard, never through the screen. Hover tooltips show *host names*, never secret values.
 
 Practical consequences: another user on the same machine cannot read your DB file's passwords (DPAPI/Keychain binding), and shoulder-surfing the settings page reveals counts and hostnames, not secrets.

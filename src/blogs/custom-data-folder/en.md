@@ -9,12 +9,7 @@ tags: [data-path, backup, portable, sync, tips]
 
 Bookmarks, saved passwords, quick commands, themes, triggers, sync settings — everything electerm remembers lives in one data folder on disk. By default that folder is picked by your OS, buried somewhere under your user profile. That is fine until it isn't: your `C:` drive is full, you want the data inside Dropbox, you run electerm from a USB stick, or you keep separate "work" and "personal" profiles.
 
-The fix is one environment variable: **`DATA_PATH`**. If it is set when electerm starts, electerm uses it as the data root. If it is not set, electerm falls back to the default location. That is the whole mechanism:
-
-```js
-// src/app/lib/sqlite.js, src/app/lib/nedb.js, src/app/lib/storage-key.js
-const appDataPath = process.env.DATA_PATH || resolve(appPath, 'electerm')
-```
+The fix is one environment variable: **`DATA_PATH`**. If it is set when electerm starts, electerm uses it as the data root. If it is not set, electerm falls back to the default location. That is the whole mechanism.
 
 Everything underneath — `users/default_user/electerm.db`, `electerm_data.db`, `storage-key.enc`, session logs — moves together. No registry hack, no config file edit, no reinstall.
 

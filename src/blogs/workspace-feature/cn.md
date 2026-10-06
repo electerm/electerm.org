@@ -18,64 +18,25 @@ bannerScript: banner.js
 
 ## 1. 工作区到底存了什么
 
-保存工作区不会快照你的终端回滚内容，也不会保存 shell 状态。它只记两件事——布局，以及哪个书签在哪个窗格里：
+保存工作区不会快照你的终端回滚内容，也不会保存 shell 状态。它只记三件事——布局、哪个书签在哪个窗格，以及那个窗格当时是不是拆成了"终端 + SFTP"：
 
-```js
-// src/client/store/workspace.js
-getCurrentWorkspaceState () {
-  const { layout, tabs } = store
-  const tabsByBatch = {}
-  for (const tab of tabs) {
-    const batch = tab.batch || 0
-    if (!tabsByBatch[batch]) tabsByBatch[batch] = []
-    if (tab.srcId) {
-      tabsByBatch[batch].push({
-        srcId: tab.srcId,
-        sshSftpSplitView: tab.sshSftpSplitView
-      })
-    }
-  }
-  return { layout, tabsByBatch }
-}
-```
-
-所以一个存下来的工作区就是个小对象：
-
-```json
-{
-  "id": "wk1a2b3c",
-  "name": "prod-web",
-  "layout": "c2x2",
-  "tabsByBatch": {
-    "0": [{ "srcId": "bm-web01", "sshSftpSplitView": false }],
-    "1": [{ "srcId": "bm-web02", "sshSftpSplitView": false }],
-    "2": [{ "srcId": "bm-db01", "sshSftpSplitView": true }],
-    "3": [{ "srcId": "bm-cache01", "sshSftpSplitView": false }]
-  },
-  "createdAt": 1759363200000,
-  "updatedAt": 1759363200000
-}
-```
-
-有三个细节值得记住：
-
-- **`layout`** 是八个布局键之一——`c1`（单窗格）、`c2`、`c3`（分列）、`r2`、`r3`（分行）、`c2x2`（网格）、`c1r2`（右两行）、`r1c2`（下两列）。跟布局菜单用的是同一套键。
-- **`tabsByBatch`** 以窗格序号（`tab.batch`）为键，值是一个**数组**——所以一个窗格可以叠好几个标签页，工作区记得哪个在最前面。
-- **`sshSftpSplitView`** 是按标签页存的，所以一个拆成"终端 + SFTP"的窗格会照样拆着回来。这个字段比工作区功能本身晚（`#4418`，v3.15.120）——更早存的工作区里没有这个字段，读出来就是"不拆分"。
+- **布局**——八个布局键之一，跟布局菜单用的是同一套：`c1`（单窗格）、`c2`、`c3`（分列）、`r2`、`r3`（分行）、`c2x2`（网格）、`c1r2`（右两行）、`r1c2`（下两列）。
+- **窗格内容**——按窗格序号存，而且每个窗格存的是一个**列表**而不是单条。所以一个窗格可以叠好几个标签页，工作区记得哪个在最前面。
+- **分屏状态**——一个拆成"终端 + SFTP"的窗格会照样拆着回来。这个记录比工作区功能本身晚（v3.15.120）：更早存的工作区里没有这一项，读出来就是"不拆分"。
 
 ## 2. 什么不会被存下来
 
-上面那个 `if (tab.srcId)` 判断就是全部答案：**只有从书签打开的标签页会被记下来。**
+**只有从书签打开的标签页会被记下来。** 规则就这一条。
 
 | 标签页的来源 | 会被保存吗 |
 |---|---|
-| 侧边栏里的书签 | 会——按书签 id 存 |
+| 侧边栏里的书签 | 会——按书签存 |
 | 快速连接 | 不会 |
 | 本地终端 / "新建标签" | 不会 |
 | 网页、VNC、RDP、Spice、串口标签 | 不会 |
 | SFTP 标签 | 只作为书签标签的分屏另一半 |
 
-原因在于工作区存的是**引用**，不是连接本身。书签 id 是稳定的，所以还原就是"把书签 X 打开到 2 号窗格"。快速连接没有 id 可指，也就无从还原。
+原因在于工作区存的是**引用**，不是连接本身。书签是稳定的，所以还原就是"把书签 X 打开到 2 号窗格"。快速连接没有东西可指，也就无从还原。
 
 实际影响是：如果你的日常配置里有本地 shell，也给它建个书签（没有 host 的书签就是一个完全合法的本地终端书签），它就能像别的连接一样进工作区。
 
@@ -89,43 +50,15 @@ getCurrentWorkspaceState () {
 4. 点列表最上面那个整行宽的 **save** 按钮。
 5. 在弹窗里选 **Save as new** 起个名字，或者选 **overwrite** 再从下拉里挑一个已有工作区。
 
-`Save as new` 永远新建一条、带新 id。`overwrite` 会保留目标条目的 id **和名字**——这条路径下输入框里的名字是被忽略的，因为代码直接把原来的名字传了进去：
+`Save as new` 永远新建一条、带新 id。`overwrite` 会保留目标条目的 id **和名字**——这条路径下输入框里的名字是被忽略的，因为 electerm 直接沿用了原来的名字。想用同一个布局换个名字，就用 **Save as new**。
 
-```js
-// src/client/components/tabs/workspace-save-modal.jsx
-const ws = workspaces.find(w => w.id === selectedId)
-window.store.saveWorkspace(ws?.name || name, selectedId)
-```
-
-两条路径都会更新 `updatedAt`，所以被覆盖的工作区不会悄悄跑到"最新在前"的位置——列表顺序就是集合里的顺序，新条目追加在后面。
+保存同时会把这个条目标记为刚刚更新过，但列表不会因此重排——新条目追加在后面，其余的保持原有顺序。
 
 ## 4. 加载
 
 在列表里点一个工作区，就这样——没有确认弹窗，也没有撤销。
 
-底层 `loadWorkspace()` 按顺序做四件事：
-
-```js
-// src/client/store/workspace.js — loadWorkspace()
-store.removeTabs(() => true)          // 1. 关掉所有已打开的标签
-store.setLayout(layout)               // 2. 切换分屏布局
-for (const [batchStr, tabInfos] of Object.entries(tabsByBatch)) {
-  const batch = parseInt(batchStr, 10)
-  for (const tabInfo of tabInfos) {
-    if (tabInfo.srcId) {
-      window.openTabBatch = batch    // 3. 指定目标窗格
-      store.onSelectBookmark(tabInfo.srcId)
-      if (tabInfo.sshSftpSplitView !== undefined) {
-        store.updateTab(store.activeTabId, {   // 4. 恢复分屏状态
-          sshSftpSplitView: tabInfo.sshSftpSplitView
-        })
-      }
-    }
-  }
-}
-```
-
-`window.openTabBatch` 就是"把新标签塞进指定窗格"的机制：`addTab` 会读它（`batch: window.openTabBatch ?? store.currentLayoutBatch`），读完就清掉。每个窗格上那个小 `+` 按钮也是靠它知道自己属于哪个窗格。
+加载按顺序做四件事：关掉所有已打开的标签、切换到工作区的布局、把每个存下的书签打开到它记录的窗格里、最后还原那些本来拆着的"终端 + SFTP"分屏。
 
 第 1 步带来两个行为，各会让人惊讶一次：
 
@@ -134,7 +67,7 @@ for (const [batchStr, tabInfos] of Object.entries(tabsByBatch)) {
 
 ## 5. 删除
 
-把鼠标悬在一个工作区行上，右侧会淡入一个删除图标。点它，确认 `delete?` 弹窗，条目就没了（`deleteWorkspace` → `delItem`）。删除工作区不会碰它引用的书签——只删预设。
+把鼠标悬在一个工作区行上，右侧会淡入一个删除图标。点它，确认 `delete?` 弹窗，条目就没了。删除工作区不会碰它引用的书签——只删预设。
 
 ## 6. 让 electerm 启动时直接打开某个工作区
 
@@ -143,37 +76,25 @@ for (const [batchStr, tabInfos] of Object.entries(tabsByBatch)) {
 - **bookmarks** —— 一棵可勾选的树，勾上启动时要打开的书签（和分组）。
 - **Workspaces** —— 单选你存过的工作区。
 
-在那里选一个工作区，electerm 启动时就会加载它：同样的布局、同样的窗格、同样的会话，你还没碰鼠标就已经到位了。底层这个设置是一个值、两种形状——书签 id 的数组，或者工作区 id 字符串——启动代码按类型分支：
+在那里选一个工作区，electerm 启动时就会加载它：同样的布局、同样的窗格、同样的会话，你还没碰鼠标就已经到位了。
 
-```js
-// src/client/store/load-data.js — openInitSessions()
-const onStartSessions = store.config.onStartSessions
-if (typeof onStartSessions === 'string' && onStartSessions) {
-  store.loadWorkspace(onStartSessions)   // 工作区 id
-} else {
-  const arr = Array.isArray(onStartSessions) ? onStartSessions : []
-  for (const s of arr) store.onSelectBookmark(s)   // 书签 id
-  if (!arr.length && store.config.initDefaultTabOnStart) store.initFirstTab()
-}
-```
-
-选择器里那两个标签互斥，正是因为这个——切换标签会清空另一边的值。整条启动链路另有一篇： [Electerm 启动时到底会打开什么](/blogs/startup-behavior/cn/)。
+选择器里那两个标签互斥，因为启动设置是**一个值**，它只能表示两种意思之一——一组书签，或者一个工作区。切换标签会清空另一边的值，好让两者不会冲突。整条启动链路另有一篇： [Electerm 启动时到底会打开什么](/blogs/startup-behavior/cn/)。
 
 ## 7. 工作区存在哪，怎么跟着走
 
-工作区是 electerm 本地数据库里一个普通的集合（`settingMap.workspaces`），和书签、主题放在一起。也就是说：
+工作区是 electerm 本地数据库里一个普通的集合，和书签、主题放在一起。也就是说：
 
-- 它包含在**数据同步**里——`webdav-sync.js` 会把 `workspaces.json` 和 `workspaces.order.json` 跟书签一起同步，所以笔记本上存的工作区会出现在台式机上。
-- 它包含在**导入导出**里，也包含在同步对比弹窗里，那个弹窗把 `workspaces` 单列一行。
+- 它包含在**数据同步**里，跟书签一起走，所以笔记本上存的工作区会出现在台式机上。
+- 它包含在**导入导出**里，也包含在同步对比弹窗里，那个弹窗把工作区单列一行。
 - 只要你保留数据目录，重装也还在——见 [迁移 Electerm 的数据目录](/blogs/custom-data-folder/cn/)。
 
 ## 8. 三个会咬你的点
 
-**书签被删了，会留下一个安静的洞。** `onSelectBookmark` 开头就是 `if (!item) return`——工作区里指向一个已不存在书签的条目什么都不会打开，也不给任何提示，窗格就那么空着。如果一个工作区还原后少了一个窗格，先去查那个书签还在不在。
+**书签被删了，会留下一个安静的洞。** 工作区里指向一个已不存在书签的条目什么都不会打开，也不给任何提示，窗格就那么空着。如果一个工作区还原后少了一个窗格，先去查那个书签还在不在。
 
 **覆盖不会改名。** 如上所述，`overwrite` 复用已存的名字。想用同一个布局换个名字，用 **Save as new**。
 
-**工作区只管书签标签。** 它不是会话恢复功能。如果你想在重新加载后拿回**终端状态**（回滚内容、当前目录），那是另一个设置 `restoreTerminalSessionOnReload`，作用在你当时那个标签上，而不是某个存好的布局。
+**工作区只管书签标签。** 它不是会话恢复功能。如果你想在重新加载后拿回**终端状态**（回滚内容、当前目录），那是另一个设置 **restore terminal session on reload**，作用在你当时那个标签上，而不是某个存好的布局。
 
 ## 接下来看
 
@@ -182,4 +103,4 @@ if (typeof onStartSessions === 'string' && onStartSessions) {
 - [书签速连](/blogs/bookmark-quick-connect/cn/) —— 每个工作区条目都指向一个书签。
 - [Electerm 数据同步](/blogs/data-sync/cn/) —— 工作区如何在多台机器之间移动。
 
-这个功能的上游 wiki 页是 [Workspace Feature](https://github.com/electerm/electerm/wiki/Workspace-Feature)。读的时候注意一处：它"在设置里管理工作区"那一节描述了一个设置 → 工作区标签页，而当前代码里并不存在——`openWorkspaceSettings()` 在 `src/client/store/workspace.js` 里定义了但从未被调用，设置弹窗也没有 Workspaces 标签。工作区请从标签栏的布局下拉里管理。
+这个功能的上游 wiki 页是 [Workspace Feature](https://github.com/electerm/electerm/wiki/Workspace-Feature)。读的时候注意一处：它"在设置里管理工作区"那一节描述了一个设置 → 工作区标签页，而当前版本里并不存在——设置弹窗没有 Workspaces 标签。工作区请从标签栏的布局下拉里管理。

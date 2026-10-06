@@ -1,6 +1,6 @@
 ---
 title: 'SSH Tunnels Over IPv6 in Electerm — Yes to All Three Modes, No to [::1]'
-description: IPv6 works in every electerm tunnel mode — L→R, R→L and the dynamic SOCKS proxy. Here is how each one was verified end to end, which field takes the address, why a bracketed [::1] fails, and the routing bug IPv6 makes easy to hit.
+description: IPv6 works in every electerm tunnel mode — L→R, R→L and the dynamic SOCKS proxy. Here is which field takes the address, why a bracketed [::1] fails, and the routing bug IPv6 makes easy to hit.
 date: 2026-10-04
 tags: [ssh, tunnel, ipv6, port-forwarding, troubleshooting]
 videos: [electerm-local-to-remote-ssh-tunnel, electerm-remote-to-local-ssh-tunnel]
@@ -19,36 +19,15 @@ Base reference for the three modes: [SSH Tunnels in Electerm](/blogs/ssh-tunnels
 
 ## The short answer
 
-| Mode | Field that takes the IPv6 address | What crosses the wire | Result |
-|---|---|---|---|
-| **L→R** `forwardLocalToRemote` | **remote** host | `direct-tcpip` with `dstIP=::1` | works |
-| **R→L** `forwardRemoteToLocal` | **remote** host (the bind address) | `tcpip-forward` with `bindAddr=::1` | works |
-| **Dynamic** `dynamicForward` (SOCKS) | **local** host | TCP listener on `[::1]:1080` | works |
+| Mode | Field that takes the IPv6 address | Result |
+|---|---|---|
+| **L→R** local → remote | **remote** host | works |
+| **R→L** remote → local | **remote** host (the bind address) | works |
+| **Dynamic** (SOCKS proxy) | **local** host | works |
 
 A hostname whose AAAA record resolves somewhere also works — you do not need a literal at all. The literal is just the case people are unsure about, and it is the case that tells you whether anything in the stack is silently assuming IPv4.
 
-## How this was checked
-
-Not by reading the code and hoping. The three tunnel functions live in `src/app/server/ssh-tunnel.js` and take nothing but a connected SSH client — so they can be driven straight from plain Node, with no Electron, no UI and no real sshd:
-
-1. Start a local `@electerm/ssh2` server that behaves like sshd — it binds a real TCP server on whatever address a `tcpip-forward` request asks for, and dials the destination of each `direct-tcpip` channel.
-2. Start an IPv6 echo server to act as "the thing on the other side".
-3. Call electerm's real `forwardLocalToRemote`, `forwardRemoteToLocal` and `dynamicForward` against that, and push actual bytes through each one.
-
-Here is what it reported, including the address strings that crossed the wire:
-
-```
-[1] forwardLocalToRemote   remote=::1  (L->R)
-  OK data round-tripped through the tunnel target
-  OK direct-tcpip carried dstIP=::1
-[2] forwardRemoteToLocal   remote bind=::1  (R->L)
-  OK server bound tcpip-forward on ::1:25555
-  OK data round-tripped from the bind address back to local
-[3] dynamicForward   local listener on ::1  (SOCKS)
-  OK SOCKS server accepted a TCP connection on [::1]:27777
-```
-
-A round trip, not just "no error thrown" — a tunnel that connects to the wrong target also throws no error.
+Each of the three was checked with a real byte round-trip through the tunnel, not just "no error thrown" — a tunnel that connects to the wrong target also throws no error.
 
 ## Which field gets the IPv6 address
 
@@ -67,11 +46,9 @@ Both fields default to `127.0.0.1`. Two substitutions cover almost everything:
 
 There is no IPv6 code path in electerm's tunnels, and that is precisely why it works.
 
-The SSH protocol carries the address in a `tcpip-forward` request or a `direct-tcpip` channel as a **length-prefixed opaque string**. In the `@electerm/ssh2` fork, `Protocol.tcpipForward`, `forwardedTcpip` and `directTcpip` all write it with a length prefix and `utf8Write` — there is no `isIPv4` check, no parsing, no conversion anywhere on the path. The server gets the characters you typed.
+The SSH protocol carries the address in a tunnel request as a plain text string — nothing parses it, nothing converts it, and there is no IPv4 check anywhere on the path. The server gets the characters you typed. On the local side the platform's networking layer accepts IPv6 literals without ceremony, and electerm never forces one address family on the connection, so the SSH host itself resolves both too.
 
-On the local side, Node's `net` accepts IPv6 literals in `listen()` and `connect()` without ceremony. And electerm never sets `forceIPv4` or `forceIPv6` on the connection, so the SSH host itself resolves both families too.
-
-So the whole feature is "we pass strings through and Node handles them". Nothing to configure, nothing to enable.
+So the whole feature is "we pass strings through and the platform handles them". Nothing to configure, nothing to enable.
 
 ## Trap 1 — `[::1]` is rejected
 
@@ -82,7 +59,7 @@ remote host: [::1]      ->  ENOTFOUND, "Unable to bind to [::1]:26000"
 remote host: ::1        ->  binds fine
 ```
 
-The host field is a plain text input with no bracket stripping, so `[::1]` reaches the server verbatim, the server tries to bind a host literally named `[::1]`, and DNS resolution fails.
+The host field is a plain text input with no bracket stripping, so `[::1]` reaches the server verbatim, the server tries to bind a host literally named `[::1]`, and name resolution fails.
 
 It is an understandable mistake, because brackets are *required* in two other places you have probably just come from:
 
@@ -95,28 +72,20 @@ Electerm's tunnel form has **separate host and port fields**, so the ambiguity t
 
 This one is a real bug in electerm, and IPv6 is what makes it easy to reach.
 
-`forwardRemoteToLocal` decides which incoming connection belongs to which tunnel by comparing the **port only**:
-
-```js
-if (info.destPort !== sshTunnelRemotePort && info.destPort !== Number(sshTunnelRemotePort)) {
-  return
-}
-```
-
-The destination *address* on that event is ignored. Now register two R→L tunnels that share a remote port but differ in bind address:
+When a connection comes in on an R→L tunnel, electerm decides which tunnel it belongs to by comparing the **port only** — the destination *address* on that connection is ignored. Now register two R→L tunnels that share a remote port but differ in bind address:
 
 - `127.0.0.1:28888` → your local `:30001`
 - `::1:28888` → your local `:30002`
 
-Both tunnels install a listener, and both listeners match *every* incoming channel, because both are looking at the port. Measured result: connecting to `127.0.0.1:28888` on the server is answered by the **`::1` tunnel's** local target.
+Both tunnels install a listener, and both listeners match *every* incoming connection, because both are looking at the port. Measured result: connecting to `127.0.0.1:28888` on the server is answered by the **`::1` tunnel's** local target.
 
 Before IPv6 this collision was rare — you had to deliberately bind two different IPv4 addresses on one port. Now that loopback exists twice (`127.0.0.1` and `::1`), "same port, different family" is a natural thing to configure, and it misroutes silently: you get a working connection to the wrong service, not an error.
 
-The fix is to compare `info.destIP` as well, and it is not in yet. **Until it is, give each R→L tunnel its own remote port** if you are mixing families.
+The fix is to compare the destination address as well, and it is not in yet. **Until it is, give each R→L tunnel its own remote port** if you are mixing families.
 
 ## Recipes
 
-**A host that is only reachable over IPv6.** Connect the bookmark using the IPv6 address (or a AAAA-resolving name), then tunnel as usual. For a service bound to IPv6 loopback on the server:
+**A host that is only reachable over IPv6.** Connect the bookmark using the IPv6 address (or an AAAA-resolving name), then tunnel as usual. For a service bound to IPv6 loopback on the server:
 
 - L→R, remote `::1`, remote port `5432`, local `127.0.0.1:5433`
 - `psql -h ::1 -p 5433 -U app prod`

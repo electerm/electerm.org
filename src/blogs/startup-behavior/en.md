@@ -1,6 +1,6 @@
 ---
 title: 'What Opens When Electerm Starts: Default Tab, Bookmarks, or a Whole Workspace'
-description: Three settings decide what electerm shows at launch — whether to open a default local terminal at all, which bookmarks to open, and whether to restore a saved workspace instead. Plus where the local shell actually starts, and the precedence order the code follows.
+description: Three settings decide what electerm shows at launch — whether to open a default local terminal at all, which bookmarks to open, and whether to restore a saved workspace instead. Plus where the local shell actually starts, and the precedence order electerm follows.
 date: 2026-10-02
 tags: [startup, settings, bookmarks, workspace, local-terminal, productivity]
 videos: [electerm-open-bookmarks-on-startup, electerm-set-local-startup-directory, electerm-session-layout, electerm-workspace]
@@ -24,34 +24,15 @@ All of that is configurable, and the three controls live in two places. The bann
 | **open bookmarks on startup** | Settings → setting | empty | Open a chosen set of bookmarks (or one workspace) at launch |
 | **start directory:local** | Settings → terminal | empty | Starting path for the local side of SFTP panes |
 
-Two of those are on the same settings screen, one after the other: the **open bookmarks on startup** picker sits near the top, and the **open default tab when app start** toggle is further down in the general toggle list. In the config file they are `onStartSessions` and `initDefaultTabOnStart`.
+Two of those are on the same settings screen, one after the other: the **open bookmarks on startup** picker sits near the top, and the **open default tab when app start** toggle is further down in the general toggle list.
 
 ## 2. The launch chain
 
-The whole decision is one function, and it is short enough to read:
-
-```js
-// src/client/store/load-data.js — openInitSessions()
-const onStartSessions = store.config.onStartSessions
-
-if (typeof onStartSessions === 'string' && onStartSessions) {
-  store.loadWorkspace(onStartSessions)        // ① a workspace id
-} else {
-  const arr = Array.isArray(onStartSessions) ? onStartSessions : []
-  for (const s of arr) {
-    store.onSelectBookmark(s)                 // ② bookmark ids
-  }
-  if (!arr.length && store.config.initDefaultTabOnStart) {
-    store.initFirstTab()                      // ③ the default tab
-  }
-}
-```
-
-Read top to bottom, that is the precedence order:
+The whole decision comes down to one question: *was anything configured for startup?* Electerm checks it in a fixed order, and the first branch that matches wins.
 
 1. **A workspace was chosen** → load it. Layout, panes and sessions come back exactly as saved. The default tab is *not* opened.
 2. **Bookmarks were chosen** → open each one. The default tab is *not* opened.
-3. **Nothing was chosen** → open the default tab, but only if `initDefaultTabOnStart` is on.
+3. **Nothing was chosen** → open the default tab, but only if **open default tab when app start** is on.
 4. **Nothing was chosen and the toggle is off** → open nothing. The window shows the empty state.
 
 Note what is missing: there is no "and also" anywhere. These are alternatives, not layers. Choosing bookmarks suppresses the default tab; choosing a workspace suppresses both.
@@ -64,22 +45,16 @@ What you get at launch is an empty window with the "no session" panel: a row of 
 
 Two things worth knowing about that toggle:
 
-- It only governs the *default* tab. If you have bookmarks or a workspace configured for startup, the toggle is irrelevant — the code never reaches it.
+- It only governs the *default* tab. If you have bookmarks or a workspace configured for startup, the toggle is irrelevant — electerm never gets as far as looking at it.
 - It is a per-machine setting stored in your config, so it syncs with your settings if you use data sync.
 
 ## 4. Opening bookmarks at launch
 
 Back in **Settings → setting**, the section headed **open bookmarks on startup** has its own two tabs: **bookmarks** and **Workspaces**.
 
-The **bookmarks** tab is a tree-select over your bookmark tree, and it is checkable — so you can tick individual bookmarks, or tick a whole group and get everything under it. The value stored is a flat array of bookmark ids, and selecting a group stores its children rather than the group itself:
+The **bookmarks** tab is a tree-select over your bookmark tree, and it is checkable — so you can tick individual bookmarks, or tick a whole group and get everything under it. What gets stored is a flat list of the individual bookmarks, not the group you ticked: picking a group saves its contents.
 
-```js
-// src/client/components/setting-panel/start-session-select.jsx
-treeCheckable: true,
-showCheckedStrategy: SHOW_CHILD
-```
-
-`SHOW_CHILD` is why the picker shows the leaves. Practically: reorder or rename the group later and the startup list keeps working, because it points at the bookmarks.
+That matters in practice, and it is why the picker shows you the leaves. Reorder or rename the group later and the startup list keeps working, because it points at the bookmarks themselves rather than at the group.
 
 This is the setting the video walkthrough below covers, and it is the right one when your startup set is *a few independent sessions* rather than a fixed arrangement. If you care about **which pane** each session lands in, you want a workspace instead.
 
@@ -87,16 +62,7 @@ This is the setting the video walkthrough below covers, and it is the right one 
 
 Same section, switch to the **Workspaces** tab, pick one from the dropdown. That is the whole configuration.
 
-The two tabs are mutually exclusive by design. The stored value has two possible shapes — an array of bookmark ids, or a single workspace id string — and switching tabs clears the other one, because the launch chain above can only follow one branch:
-
-```js
-// src/client/components/setting-panel/start-session-select.jsx
-if (key === 'bookmarks' && typeof onStartSessions === 'string') {
-  onChangeStartSessions([])
-} else if (key === 'workspaces' && Array.isArray(onStartSessions)) {
-  onChangeStartSessions(undefined)
-}
-```
+The two tabs are mutually exclusive by design, and switching between them clears the other side. Electerm can only follow one of the two startup branches, so it does not let you configure both at once — pick your workspace and any previously ticked bookmarks are discarded, and the reverse is true as well.
 
 If the Workspaces tab is empty, you have not saved a workspace yet — that is done from the layout dropdown in the tab bar, not from Settings. See [Workspaces in Electerm](/blogs/workspace-feature/).
 
@@ -104,18 +70,7 @@ If the Workspaces tab is empty, you have not saved a workspace yet — that is d
 
 A detail that surprises people who use a split layout: the default tab is created **once per pane**.
 
-```js
-// src/client/store/tab.js — initFirstTab()
-const { layout } = store
-const batchCount = splitConfig[layout].children || 1
-for (let i = 0; i < batchCount; i++) {
-  const newTab = newTerm()
-  newTab.batch = i
-  store.addTab(newTab)
-}
-```
-
-So if you last used a 2x2 grid, launching electerm with the default tab on gives you **four** local terminals, one per pane — not one. `splitConfig` gives the count per layout:
+So if you last used a 2x2 grid, launching electerm with the default tab on gives you **four** local terminals, one per pane — not one.
 
 | Layout | Panes |
 |---|---|
@@ -132,25 +87,15 @@ If four local shells at launch is not what you want, that is another reason to c
 
 ## 7. Where the local terminal actually starts
 
-The local shell does not start in a directory you configure; it starts in your **home directory**, because that is what the process is spawned with:
-
-```js
-// src/app/server/session-local.js
-const cwd = process.env[platform === 'win32' ? 'USERPROFILE' : 'HOME']
-```
+The local shell does not start in a directory you configure; it starts in your **home directory**, because that is what the process is spawned with.
 
 To make it open somewhere else, electerm types a `cd` into the shell as the first startup script. Three things can supply that path, in this order:
 
-```js
-// src/client/components/terminal/startup-queue.js
-const startFolder = reloadCwd || startDirectory || window.initFolder
-```
-
 | Source | Set by |
 |---|---|
-| `reloadCwd` | The restored cwd, only when **restore terminal session on reload** is on |
-| `startDirectory` | The bookmark's own **start directory:remote** field |
-| `window.initFolder` | The `-d` / `--init-folder` command-line flag |
+| The restored working directory | Only when **restore terminal session on reload** is on |
+| The bookmark's own start directory | The bookmark's **start directory:remote** field |
+| The command-line folder | The `-d` / `--init-folder` flag |
 
 So the command-line flag is the one that changes where the *default* local terminal opens:
 
@@ -158,34 +103,20 @@ So the command-line flag is the one that changes where the *default* local termi
 electerm -d ~/code/my-project
 ```
 
-Two caveats on that flag, both visible in the code:
+Two caveats on that flag:
 
-- **It is skipped when startup sessions are configured.** The flag is only adopted when nothing is set to open at launch and the default tab is enabled:
+- **It is skipped when startup sessions are configured.** The flag is only adopted when nothing is set to open at launch *and* the default tab is enabled. Configure bookmarks or a workspace at startup and `-d` silently stops applying to the default tab.
+- **It is deliberately not local-only.** `-d` was added as "ssh/local terminal init folder", and it shows: the same `cd` is queued for any tab that has no start directory of its own — **SSH tabs included**. It is a `cd`, so a path that does not exist remotely fails harmlessly and the shell carries on. Because the value is never cleared, later tabs opened without a start directory of their own inherit it too.
 
-  ```js
-  // src/client/store/load-data.js
-  } else if (
-    options.initFolder &&
-    !(store.config.onStartSessions || []).length &&
-    store.config.initDefaultTabOnStart
-  ) {
-    window.initFolder = options.initFolder
-  }
-  ```
-
-  Configure bookmarks or a workspace at startup and `-d` silently stops applying to the default tab.
-
-- **It is deliberately not local-only.** `-d` was added as "ssh/local terminal init folder", and it shows: `window.initFolder` is a process-wide value and the startup queue does not check whether the tab is local before using it, so the same `cd` is queued for any tab that has no start directory of its own — SSH tabs included. It is a `cd`, so a path that does not exist remotely fails harmlessly and the shell carries on. Because the value is never cleared, later tabs opened without a start directory of their own inherit it too.
-
-The separate **start directory:local** setting is a different value (`startDirectoryLocal`). It is read as the starting path for the local half of an **SFTP** pane — `tab.startDirectoryLocal || config.startDirectoryLocal` — and it is also what the `-d` flag writes into a session opened from the command line. It is not consulted when the local terminal picks its `cd`.
+The separate **start directory:local** setting is a different value. It is read as the starting path for the local half of an **SFTP** pane, and it is also what the `-d` flag writes into a session opened from the command line. It is not consulted when the local terminal picks its `cd`.
 
 ## 8. Three things that will bite you
 
 **A configured startup list beats everything, silently.** Set bookmarks or a workspace at startup and both the default tab and `-d` stop doing anything. If launching electerm no longer opens your local shell, check that picker before anything else.
 
-**A workspace with a deleted bookmark opens a gap.** Startup runs the same `loadWorkspace` as the manual path, including its `if (!item) return` guard — a workspace entry pointing at a bookmark that no longer exists opens nothing and says nothing.
+**A workspace with a deleted bookmark opens a gap.** Startup runs the same load path as clicking a workspace manually — a workspace entry pointing at a bookmark that no longer exists opens nothing and says nothing. If a workspace comes back one pane short, that is the cause.
 
-**`onStartSessions` is not one type.** An array means bookmarks, a string means a workspace. This is why the picker's two tabs clear each other, and why hand-editing the config to `onStartSessions: ["my-workspace"]` produces a startup with no tabs at all rather than a workspace.
+**The startup setting holds two different kinds of value.** A list means bookmarks, a single workspace id means a workspace. This is why the picker's two tabs clear each other, and why hand-editing your config to put a workspace id in a list produces a startup with no tabs at all rather than a workspace.
 
 ## Where next
 
