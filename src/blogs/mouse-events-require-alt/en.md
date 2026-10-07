@@ -23,14 +23,15 @@ The same thing happens with `less`, `vim` in mouse mode, `htop`, any TUI that gr
 
 ## What the setting actually changes
 
-One option, **mouse event requires alt key**, in **Settings → Terminal**. It ships **off**, so nothing changes until you ask for it.
+One option, **mouse event requires alt key**, in **Settings → Terminal**. It ships **off** (since v5.5.66), so nothing changes until you ask for it.
 
 Turn it on and selection stays enabled, while forwarding becomes conditional on the Alt key:
 
 | Gesture | Setting off (default) | Setting on |
 | --- | --- | --- |
 | plain drag | sent to the app, **no** local selection | **selects locally**, survives mouseup, `⌘C` copies |
-| wheel | sent to the app | **still sent to the app** |
+| wheel | sent to the app | **still sent to the app**, no modifier needed |
+| plain right click | a right-click report goes to the app (the context menu still opens) | handled locally — no report reaches the app |
 | Option+click | sent to the app | sent to the app |
 | Option+drag | sent to the app | sent to the app, no local selection |
 | no app asking for mouse events | local selection, nothing sent | identical — the option is inert |
@@ -47,13 +48,49 @@ While the setting is on and the app has mouse mode, the terminal cursor changes 
 
 The change resets when the window loses focus, so the arrow never gets stuck if you alt-tab away with the key held.
 
-The `Alt` key itself is **not** included in the report the app receives. tmux sees a plain left click exactly as it would without the modifier held — which is the point: you are not remapping anything, you are choosing when the pointer belongs to whom.
+The `Alt` key itself is **not** included in the click and drag reports the app receives. tmux sees a plain left click exactly as it would without the modifier held — which is the point: you are not remapping anything, you are choosing when the pointer belongs to whom.
 
-## Why a plain drag arrives as two events
+## How this compares to other terminals
 
-tmux asks for mouse reports in its default mode, which reports a press and a release but not the movement in between. That is why a plain drag in tmux reaches the application as press-then-release at two positions, with no drag events at all: the app never learns about the intermediate movement, it only sees where you pressed and where you let go.
+Most terminals solve this same conflict with the **opposite polarity**: the app keeps the mouse, and a modifier takes the pointer back for selection.
 
-It is worth knowing because it explains a few tmux oddities — a drag that seems to be ignored mid-way, or a selection that behaves differently in a TUI that asks for richer mouse reporting than tmux does.
+| Terminal | Who owns the mouse by default | Modifier gesture |
+| --- | --- | --- |
+| iTerm2 | the app | **Option** temporarily disables mouse reporting |
+| kitty | the app | **Shift** selects even when the mouse is grabbed |
+| WezTerm | the app | **Shift** bypasses mouse reporting (`bypass_mouse_reporting_modifiers`) |
+| xterm / GNOME Terminal / Konsole / Windows Terminal | the app | **Shift**+drag selects |
+| electerm, this option on | **you** | **Alt** hands the pointer over |
+
+Option/Alt is therefore already the established "give me my selection back" key elsewhere; this setting deliberately uses it in the opposite direction. It is opt-in for exactly that reason — for most people the established behaviour is the better trade, and the setting stays off unless you turn it on.
+
+## What you give up
+
+Two things, both only while an app actually holds the mouse:
+
+**Block (rectangular) selection.** Alt+drag normally starts a rectangular selection in xterm.js. While a program holds the mouse it is off the table either way — and with this option on, Alt is additionally reserved for forwarding. Use double/triple click plus Shift+arrow, or the program's own copy mode.
+
+**Alt+click as "move the shell prompt cursor".** xterm's `altClickMovesCursor` needs the mouse-down to have reached the selection handler, and it only fires on a click that selected nothing — while an app holds the mouse the mouse-down never gets there, so the gesture was already unreachable; with this option on, Alt+click goes to the app instead.
+
+Everything else — double-click for a word, triple-click for a line, `⌘C` — keeps working, including inside `vim` and `less`.
+
+## Other ways to get selection back
+
+Try these before you turn the setting on; they cost nothing:
+
+- Turn mouse reporting off in the app: `:set mouse=` in vim, `set -g mouse off` in tmux, `-m` in less.
+- Hold **Shift** while dragging. With the setting **off** and mouse mode on, Shift+drag forces a local selection on Linux and Windows. On macOS xterm's `macOptionClickForcesSelection` is off by default, so no gesture does this — which is the gap this setting fills.
+- Use the app's own copy mechanism: tmux copy mode (`prefix + [`), or `less` with `-m`.
+
+## What tmux is actually asking for
+
+tmux does not ask for the simplest mouse mode. `set -g mouse on` opts into button-event tracking — motion *while a button is held* — on top of the plain press/release reports, and asks for the extended coordinate format that survives past column 223.
+
+That is why a drag reaches tmux as a stream of press → motion → release rather than one press and one release, and why tmux can move a pane border under your cursor. It does **not** ask for button-less motion by default, so moving the pointer with nothing held costs no traffic.
+
+With the setting on, none of those reports is emitted for a plain drag — the terminal returns before encoding the event, so nothing at all reaches the pty. Your selection is local and no byte is spent.
+
+One asymmetry worth knowing: **the wheel keeps the real Alt bit.** Click and drag reports are sent with `alt` forced to false, because the modifier is only a local gate. The wheel is not gated at all, so its Alt bit is passed through unchanged. A program that treats Alt+wheel as a distinct gesture will see the difference.
 
 ## It applies without reconnecting
 
@@ -61,9 +98,9 @@ It is worth knowing because it explains a few tmux oddities — a drag that seem
 
 ## Numbers worth trusting
 
-- **Default is off.** This is an opt-in change of behaviour, never a silent one.
-- **No reconnect.** The option is re-read whenever the terminal re-renders.
-- **The alt bit is not sent.** Your app sees an unmodified report; the modifier is a local gate, not a protocol change.
+- **Default is off.** This is an opt-in change of behaviour, never a silent one. Shipped in v5.5.66.
+- **No reconnect.** The option is re-read whenever the terminal re-renders, then pushed into the live xterm options object.
+- **The alt bit is stripped from clicks and drags, but not from the wheel.** The modifier is a local gate, not a protocol change.
 - **Wheel is never gated.** It is not part of what Alt unlocks.
 - **Selection enable/disable follows mouse mode, not the setting alone.** With the setting off and mouse mode on, selection is genuinely switched off — the app owns the pointer.
 - **Setting precedence.** When **mouse event requires alt key** is active it takes precedence over xterm's own Option-click-forces-selection behaviour, so the two cannot fight over the same gesture.
@@ -72,7 +109,7 @@ It is worth knowing because it explains a few tmux oddities — a drag that seem
 
 - **On macOS, Alt is the Option key.** The setting is stored under one name for every platform; the physical key is Option on a Mac and Alt everywhere else.
 - **You are changing who gets the pointer, not what the app receives.** tmux cannot tell the difference between an Option click and a plain one. If a binding of yours relies on modifier bits from the mouse, it will see them stripped — that is xterm's documented behaviour, not an electerm choice.
-- **Plain drags inside a full-screen TUI stay unusable by design.** `vim`, `less` and `htop` are apps you interact with, not scrollbacks you read from. Option+drag is how you pan a selection inside them.
+- **If your day is mostly clicking buttons inside full-screen TUIs, leave it off.** You would be holding Alt for those, which is slower than the Shift/Option reclaim gesture the other terminals use. This option is built for reading and copying out of a program that grabbed the pointer, not for driving one.
 - **It applies per terminal session**, including local shells — but you will only notice it where something actually requests mouse events.
 
 ## Two minutes to try
@@ -86,4 +123,6 @@ $ tmux set -g mouse on
 
 Then **Settings → Terminal → mouse event requires alt key**. Drag across some output and let go: the selection stays, `⌘C` takes it. Scroll the wheel: history pages, no modifier held. Hold Option and click: tmux gets the click, and the cursor turns into an arrow to say so.
 
-That is the whole feature. It ships off by default, and it is the answer to a question that has been asked in every terminal that takes mouse mode seriously: how do I get both.
+That is the whole feature. It ships off by default, and it answers a question that has been asked in every terminal that takes mouse mode seriously: how do I get both.
+
+More detail — the full behaviour table, and the config key it is stored under — is in the wiki: [Mouse Event Requires Alt Key](https://github.com/electerm/electerm/wiki/Mouse-events-require-alt).
