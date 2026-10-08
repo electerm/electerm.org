@@ -58,9 +58,9 @@ export default [
     url: 'https://www.workbuddy.cn/events/invite?inviteCode=ly4ll4ob3'
   },
   {
-    id: 'fluxionai',
-    name: 'FluxionAI',
+    id: 'sidrune',
+    name: 'Sidrune',
     text: '70% off AI models',
-    url: 'https://fluxionai.world/register?source=github&campaign=electerm-20260923&promo=ELECTERM&aff=7H7DERHU3GFF'
+    url: 'https://fluxionai.space/register?source=github&campaign=electerm-20260923&promo=ELECTERM&aff=7H7DERHU3GFF'
   }
 ]

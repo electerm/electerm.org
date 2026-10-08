@@ -67,9 +67,9 @@ const tiers = [
       },
       {
         name: 'FluxionAI',
-        url: 'https://fluxionai.world/register?source=github&campaign=electerm-20260923&promo=ELECTERM&aff=7H7DERHU3GFF&utm_source=github&utm_medium=link&utm_campaign=electerm',
+        url: 'https://fluxionai.space/register?source=github&campaign=github-sidrune-electerm&promo=SDRELECTERM&aff=7H7DERHU3GFF',
         logo: {
-          src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/fluxionai.png',
+          src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/sidrune.png',
           w: 389,
           h: 197
         },
