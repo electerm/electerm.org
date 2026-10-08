@@ -24,12 +24,16 @@
   border-radius var(--radius-lg)
   box-shadow 0 1px 3px rgba(0,0,0,0.04)
 
+/* Size is per logo, not per tier: each sponsor carries its own box and
+   background crop as CSS vars (see src/data/sponsors.js), because the logo
+   files have very different amounts of padding baked in. The fallbacks here
+   only apply if a badge somehow arrives without them. */
 .sponsor-badge-link
   display inline-block
-  width 160px
-  height 72px
-  background-position center
-  background-size contain
+  width var(--badge-w, 160px)
+  height var(--badge-h, 72px)
+  background-position var(--badge-pos, center)
+  background-size var(--badge-size, contain)
   background-repeat no-repeat
   opacity 0.7
   transition opacity 0.2s
@@ -37,25 +41,8 @@
 .sponsor-badge-link:hover
   opacity 1
 
-/* Tier 1 — largest (Atlas Cloud) */
-.sponsor-tier-1-link
-  width 280px
-  height 100px
-
-/* Tier 1b — between Atlas Cloud and tier 2 (FluxionAI) */
-.sponsor-tier-1b-link
-  width 240px
-  height 96px
-
-/* Tier 2 — medium (APISmart) */
-.sponsor-tier-2-link
-  width 200px
-  height 88px
-
-/* Tier 3 — smallest (others) */
-.sponsor-tier-3 .sponsor-badge-link
-  width 150px
-  height 60px
+/* A tier is its own row; `.sponsor-tier-N` is set from the data for grouping
+   and has no size rules of its own. */
 
 .become-sponsor
   text-align center

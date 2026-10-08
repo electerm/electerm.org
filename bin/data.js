@@ -5,6 +5,7 @@ import fs from 'fs'
 import dayjs from 'dayjs'
 import { wikiLinks } from './wiki-links.js'
 import refs from '../src/data/data-refs.js'
+import sponsors from '../src/data/sponsors.js'
 
 config()
 
@@ -409,6 +410,7 @@ export default {
   ],
   langs: createLocaleData(),
   refs,
+  sponsors,
   ...createReleaseData(),
   links: [
     {
