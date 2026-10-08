@@ -40,7 +40,6 @@ electerm 一直擅长把**字符串变成会话**。把 `ssh://user@host` 粘进
 | ssh，标题叫 "core switch" | `ssh://admin@10.0.0.1?opts={"title":"core switch"}` |
 | ssh，关掉了 SFTP | `ssh://root@10.0.0.1?opts={"enableSftp":false}` |
 | ssh，字符集 `gbk` | `ssh://root@10.0.0.1?opts={"encode":"gbk"}` |
-| ssh，带一条隧道 | `ssh://root@10.0.0.1?opts={"sshTunnels":[{"from":"8080","to":"localhost:80"}]}` |
 | telnet，`admin@sw-01` | `telnet://admin:x@sw-01` |
 | vnc，`u@desk-01` | `vnc://u@desk-01` |
 | rdp，`desk-01` | `rdp://desk-01` |
@@ -58,7 +57,19 @@ electerm 一直擅长把**字符串变成会话**。把 `ssh://user@host` 粘进
 
 最后一条是这个格式**刻意**的性质，不是疏漏。点开的链接、粘进来的字符串、快捷方式文件走的是同一条路，所以这个格式拒绝携带任何能触达 shell 的东西。代价是：一行字符串是**一份连接配方，不是完整备份**。如果你的书签依赖某个触发器或连接后脚本，字符串复制不出它。
 
-其余的东西都以 JSON 的形式挂在 `opts` 里：标题、隧道、连接跳跃、keep-alive、字符集、终端类型、各种会话设置。这些能干净地来回。完整语法在[快速连接 wiki 页](https://github.com/electerm/electerm/wiki/quick-connect)。
+### 挂在 `opts` 里的东西
+
+其余的东西都以 JSON 的形式挂在 `opts` 里：标题、隧道、连接跳跃、keep-alive、字符集、终端类型、各种会话设置。这些能干净地来回。
+
+隧道是那一行会明显变长的情况，因为一条隧道本身就是一条记录，而不是一个单值：
+
+```
+ssh://root@10.0.0.1?opts={"sshTunnels":[{"sshTunnel":"forwardLocalToRemote","sshTunnelLocalPort":8080,"sshTunnelRemoteHost":"localhost","sshTunnelRemotePort":80}]}
+```
+
+这是一条「本地转发到远端」的隧道：连你自己机器上的 8080 端口，就能到远端主机上的 `localhost:80`。把它粘进快速连接，隧道一起带过去。书签里有好几条隧道的话，这一行就没法看了——那种情况该用 JSON 那一行。
+
+完整语法在[快速连接 wiki 页](https://github.com/electerm/electerm/wiki/quick-connect)。
 
 ## 格式二：整条记录导成 JSON
 
@@ -73,13 +84,14 @@ electerm 一直擅长把**字符串变成会话**。把 `ssh://user@host` 粘进
   "username": "admin",
   "authType": "password",
   "password": "simple",
+  "proxyCommand": "netbird ssh proxy %h %p",
   "encode": "gbk",
   "enableSftp": false,
   "term": "xterm-256color"
 }
 ```
 
-这里是节选——真正的记录里是表单持有的全部字段。
+这里是节选——真正的记录里是表单持有的全部字段。注意里面的 `proxyCommand`：它跟着书签一起存着，而它正好就是那一行字符串拒绝携带的那类字段。
 
 要**一份拷贝**而不是一条连接的时候用它：把书签挪到另一台机器、把某台难缠主机的配置原样记下来、比对两台"应该一样"的主机，或者提 bug 的时候把真实配置一起贴上。
 

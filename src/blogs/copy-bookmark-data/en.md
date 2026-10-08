@@ -40,7 +40,6 @@ Real examples, straight out of the button:
 | ssh titled "core switch" | `ssh://admin@10.0.0.1?opts={"title":"core switch"}` |
 | ssh with SFTP turned off | `ssh://root@10.0.0.1?opts={"enableSftp":false}` |
 | ssh with charset `gbk` | `ssh://root@10.0.0.1?opts={"encode":"gbk"}` |
-| ssh with a tunnel | `ssh://root@10.0.0.1?opts={"sshTunnels":[{"from":"8080","to":"localhost:80"}]}` |
 | telnet, `admin@sw-01` | `telnet://admin:x@sw-01` |
 | vnc, `u@desk-01` | `vnc://u@desk-01` |
 | rdp, `desk-01` | `rdp://desk-01` |
@@ -58,7 +57,19 @@ Real examples, straight out of the button:
 
 That last one is a deliberate property of the format, not an oversight. A clicked link, a pasted string and a shortcut file all travel the same road, so the format refuses to carry anything that could reach a shell. The cost is that a one-liner is a **connection recipe, not a full backup**: if your bookmark leans on a trigger or a run script, the string will not reproduce it.
 
-Everything else rides along in `opts` as JSON — title, tunnels, connection hopping, keep-alive, charset, terminal type, per-session settings. Those round-trip cleanly. The complete grammar is in the [Quick Connect wiki page](https://github.com/electerm/electerm/wiki/quick-connect).
+### What rides along in `opts`
+
+Everything else rides along as JSON — title, tunnels, connection hopping, keep-alive, charset, terminal type, per-session settings. Those round-trip cleanly.
+
+Tunnels are the case where the line gets visibly long, because a tunnel is a record of its own rather than a single value:
+
+```
+ssh://root@10.0.0.1?opts={"sshTunnels":[{"sshTunnel":"forwardLocalToRemote","sshTunnelLocalPort":8080,"sshTunnelRemoteHost":"localhost","sshTunnelRemotePort":80}]}
+```
+
+One forward-local-to-remote tunnel: connect to port 8080 on your own machine to reach `localhost:80` on the remote host. Paste that into Quick Connect and the tunnel comes with it. A bookmark with several tunnels makes the line unwieldy — which is the case for the JSON row.
+
+The complete grammar is in the [Quick Connect wiki page](https://github.com/electerm/electerm/wiki/quick-connect).
 
 ## Format two: the whole record as JSON
 
@@ -73,13 +84,14 @@ The second row gives you the bookmark as it is stored — pretty-printed JSON, e
   "username": "admin",
   "authType": "password",
   "password": "simple",
+  "proxyCommand": "netbird ssh proxy %h %p",
   "encode": "gbk",
   "enableSftp": false,
   "term": "xterm-256color"
 }
 ```
 
-Trimmed — the real record has every field the form holds.
+Trimmed — the real record has every field the form holds. Note `proxyCommand` in there: it is stored with the bookmark, and it is exactly the kind of field the one-liner refuses to carry.
 
 Reach for this one when you want a **copy**, not a connection: moving a bookmark to another machine, keeping a record of exactly how an awkward host was configured, diffing two hosts that "should be the same", or attaching the real config to a bug report.
 
