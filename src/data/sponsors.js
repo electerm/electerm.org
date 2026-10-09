@@ -73,7 +73,7 @@ const tiers = [
           w: 389,
           h: 197
         },
-        ink: { x: 17, y: 74, w: 357, h: 92 }
+        ink: { x: 14, y: 53, w: 361, h: 92 }
       },
       {
         name: 'ApiSmart',
