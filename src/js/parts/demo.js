@@ -16,4 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.demo-switch-btn').forEach(function (b) {
     b.addEventListener('click', function () { switchMode(this.getAttribute('data-mode')) })
   })
+  // Auto switch to mobile mode when viewport is narrow,
+  // and back to desktop when it becomes wide again.
+  // Manual clicks still work and persist until the next breakpoint crossing.
+  const mq = window.matchMedia('(max-width: 767px)')
+  const applyAutoMode = function () {
+    switchMode(mq.matches ? 'mobile' : 'desktop')
+  }
+  applyAutoMode()
+  if (typeof mq.addEventListener === 'function') {
+    mq.addEventListener('change', applyAutoMode)
+  } else if (typeof mq.addListener === 'function') {
+    mq.addListener(applyAutoMode)
+  }
 })
