@@ -9,9 +9,37 @@ bannerScript: banner.js
 
 # Keep tmux Scrolling and Get Your Selection Back
 
-You turned on tmux mouse mode because the wheel is how you read history now. `set -g mouse on`, and the pane scrolls properly for the first time in your life. Then you try to copy a command out of the scrollback: drag across it, the highlight appears for about a tenth of a second, and it is gone the moment you let go. `⌘C` copies whatever you last had in the clipboard, which is nothing. Turn mouse mode off and selection works again — and the wheel goes back to scrolling one screen at a time.
+You turned on tmux mouse mode because the wheel is how you read history now. `set -g mouse on`, and the pane scrolls properly for the first time in your life. Then you try to copy a command out of the scrollback: drag across it, the highlight appears for about a tenth of a second, and it is gone the moment you let go. `⌘C` copies whatever you last had in the clipboard, which is nothing. Turn mouse mode off and selection works again — and the wheel turns into something worse: with nothing local left to scroll, it starts sending arrow keys into your shell, so scrolling up walks through your command history and repaints the line you were trying to copy.
 
 That trade has no good answer, because both behaviours want the same gesture. Electerm now has a setting that splits them: **mouse event requires alt key**. Plain drags select locally again, the wheel still reaches tmux, and holding Option turns any click back into a mouse event.
+
+## First: is tmux actually taking the mouse?
+
+Everything below only matters once tmux has mouse mode on. Check that before you blame the setting:
+
+```bash
+$ tmux show -g mouse
+mouse on
+```
+
+If that says `mouse off`, the wheel is not scrolling anything at all — it is sending arrow keys into your shell. tmux keeps the terminal on its alternate screen, which has no scrollback of its own, so there is nothing for the wheel to scroll locally, and the wheel falls back to arrow keys. That is the "why does scrolling walk through my history" state, and no electerm setting can fix it from the outside: the wheel can only be forwarded once tmux asks for it.
+
+Three ways to turn it on, and they are not equivalent:
+
+| Where you run it | Command | Takes effect | Survives a tmux restart |
+| --- | --- | --- | --- |
+| inside tmux, at the command prompt | `Ctrl-b` (your prefix), `:`, `set -g mouse on` | right away, every session | no |
+| your shell | `tmux set -g mouse on` | right away, every session | no |
+| `~/.tmux.conf` | `set -g mouse on` | **only when the server reads the file** | yes |
+
+The third row is where the afternoon goes. **tmux reads `~/.tmux.conf` once, when the server starts.** If tmux is already running, adding the line changes nothing — not for the session you are in, and not for a new session you open. Make it apply with either:
+
+```bash
+$ tmux source-file ~/.tmux.conf   # reload into the running server
+$ tmux kill-server && tmux        # or restart the server (ends your sessions)
+```
+
+To go back: `set -g mouse off`, the same three ways.
 
 ## Why the selection dies at all
 
@@ -41,6 +69,26 @@ Two details in that table are worth reading twice, because they are the whole fe
 **The wheel is not affected.** Alt is required for clicks, drags and moves. The wheel report is forwarded either way, so `tmux` keeps paging history with the same two fingers you already use. You do not have to hold a modifier to scroll.
 
 **The option is inert when no application wants mouse events.** Electerm only consults it while an application actually has mouse mode on. In a plain shell the setting does nothing at all, so there is no state where you have "turned on alt-click" and cannot select text.
+
+## Scrolling and copying in tmux, step by step
+
+With mouse mode on, this is the whole workflow. Two of the five steps are not what a normal terminal does, which is why it feels broken the first time.
+
+**There is no scrollbar, and that is not a bug.** tmux keeps the terminal on its alternate screen, which has no scrollback of its own — the scrollbar you see in a plain shell belongs to the terminal, and inside tmux there is nothing there to show. tmux's history lives inside tmux, so only tmux can scroll it.
+
+| # | Do this | What happens |
+| --- | --- | --- |
+| 1 | scroll the wheel up | tmux enters copy mode and scrolls its own history. No modifier needed. |
+| 2 | press `q` or `Esc` | leaves copy mode, back to the live pane |
+| 3 | press and drag with the left button | tmux starts selecting. This is the selection that can span pages. |
+| 4 | keep the button down and scroll | tmux scrolls while the selection stays anchored, so you can keep dragging on the next screen |
+| 5 | release | tmux copies the whole span and hands it to the terminal, which puts it on your system clipboard. Paste anywhere. |
+
+Steps 3–5 are the answer to "copy something longer than one screen". A local selection cannot do it: there is no local scrollback inside tmux to select from, and once tmux redraws the pane the text under a local selection has moved anyway.
+
+If you only need what is on screen right now, you can skip copy mode entirely: with **mouse event requires alt key** on, a plain drag selects locally and `⌘C` (`Ctrl+C` / `Ctrl+Shift+C` elsewhere) copies it — see the table above.
+
+And if you would rather keep the mouse out of it: `Ctrl-b` then `[` enters copy mode by hand, `Space` starts the selection, the arrows or `PageUp` extend it, `Enter` copies it.
 
 ## Holding Option hands the pointer back to the app
 
@@ -78,7 +126,7 @@ Everything else — double-click for a word, triple-click for a line, `⌘C` —
 
 Try these before you turn the setting on; they cost nothing:
 
-- Turn mouse reporting off in the app: `:set mouse=` in vim, `set -g mouse off` in tmux, `-m` in less.
+- Turn mouse reporting off in the app: `:set mouse=` in vim, `set -g mouse off` in tmux, `-m` in less. In tmux this is a real trade rather than a free win: with the mouse off the wheel stops scrolling anything and starts sending arrow keys into your shell. It is the right call inside vim or less, where the wheel is not how you move; it is usually the wrong call for the tmux session itself.
 - Hold **Shift** while dragging. With the setting **off** and mouse mode on, Shift+drag forces a local selection on Linux and Windows. On macOS xterm's `macOptionClickForcesSelection` is off by default, so no gesture does this — which is the gap this setting fills.
 - Use the app's own copy mechanism: tmux copy mode (`prefix + [`), or `less` with `-m`.
 
@@ -119,9 +167,12 @@ Open a session, start tmux, and turn the mouse on:
 ```bash
 $ tmux new -s work
 $ tmux set -g mouse on
+$ tmux show -g mouse          # must print: mouse on
 ```
 
 Then **Settings → Terminal → mouse event requires alt key**. Drag across some output and let go: the selection stays, `⌘C` takes it. Scroll the wheel: history pages, no modifier held. Hold Option and click: tmux gets the click, and the cursor turns into an arrow to say so.
+
+To copy something longer than the screen, use tmux's own selection instead: hold the left button down, scroll with the wheel, keep dragging, release. If you would rather have that on a plain drag, turn the setting off — see the two tables above.
 
 That is the whole feature. It ships off by default, and it answers a question that has been asked in every terminal that takes mouse mode seriously: how do I get both.
 
