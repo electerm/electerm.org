@@ -1,7 +1,8 @@
 section.hero
   #hero-anim
   .container
-    img.hero-logo(src=host + '/electerm.png', alt='electerm', fetchpriority='high')
+    .hero-brand-stage
+      img.hero-logo(src=host + '/electerm.png', alt='electerm', fetchpriority='high')
     h1.hero-title= lang.lang.heroH1 || 'electerm'
     p.hero-tagline #{desc}
     if lang.lang.heroSupports

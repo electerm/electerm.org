@@ -20,17 +20,57 @@
 
 .hero .container
   position relative
-  z-index 1
+  z-index 3
   display flex
   flex-direction column
   align-items center
   text-align center
 
+// Stacking inside .hero-brand-stage, from back to front:
+//   1  .hero-connections-back   (impact halos, behind the wordmark)
+//   2  .hero-logo / .hero-logo-wrap
+//   3  .hero-connections-front  (packet trails + chips, over the wordmark)
+// The two canvases make a halo bleed out of a letter instead of sitting on it.
 .hero-logo
+  position relative
+  z-index 2
   max-height 100%
   height auto
   margin-bottom 5px
   margin-top -10px
+
+// Created by hero-3d-logo.js around the <img>; needs its own z-index or it
+// would sink below the back canvas.
+.hero-logo-wrap
+  position relative
+  z-index 2
+
+// Anchors the two connection canvases; sizes to the logo so canvas offsets are
+// measured against the wordmark itself.
+.hero-brand-stage
+  position relative
+  display inline-block
+  line-height 0
+  z-index 2
+
+.hero-connections-canvas
+  position absolute
+  display block
+  pointer-events none
+
+.hero-connections-back
+  z-index 1
+
+.hero-connections-front
+  z-index 3
+
+.hero-tagline,
+.hero-supports,
+.hero-version,
+.hero-cta,
+.hero-badges
+  position relative
+  z-index 4
 
 .hero h1
   position absolute

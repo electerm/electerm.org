@@ -3,6 +3,7 @@
 // so it is loaded as a dynamic import — if three.js fails to load, the PNG logo
 // stays and the rest of the page JS is unaffected.
 import HeroAnimate from './animate.js'
+import HeroConnections from './hero-connections.js'
 import './os-highlight.js'
 
 const heroEl = document.getElementById('hero-anim')
@@ -13,6 +14,10 @@ if (heroEl) {
 
 const logo = document.querySelector('.hero-logo')
 if (logo) {
+  const stage = logo.closest('.hero-brand-stage')
+  if (stage) {
+    try { stage.__heroConnections = new HeroConnections(stage, logo) } catch (e) { console.warn('[hero-connections] init failed', e) }
+  }
   import('./hero-3d-logo.js')
     .then(function (m) {
       const { default: Hero3DLogo } = m
