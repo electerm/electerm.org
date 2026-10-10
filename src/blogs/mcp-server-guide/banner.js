@@ -179,9 +179,6 @@ const CSS = `
 .eb-mcp[data-variant='card'] .eb-mcp-answer { font-size: 1.6em; }
 .eb-mcp[data-variant='card'] .eb-mcp-wire { font-size: 1.45em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-mcp-dots, .eb-mcp-live i, .eb-mcp-qcaret { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -366,13 +363,6 @@ function mount (host) {
     const pp = ((t % speed) / speed)
     if (el.pulse) el.pulse.style.left = (pp * 100 - 22).toFixed(2) + '%'
     if (el.wireCode) el.wireCode.textContent = hot ? '200 · event: message' : '200 · SSE'
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.sumTo + 200)
-    return
   }
 
   const state = { raf: null }

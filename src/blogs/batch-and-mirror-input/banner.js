@@ -693,9 +693,6 @@ const CSS = `
 .eb-bm[data-variant='card'] .eb-bm-ctl { font-size: 1.25em; }
 .eb-bm[data-variant='card'] .eb-bm-pane { font-size: 2.4em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-bm-dots, .eb-bm-spark, .eb-bm-app, .eb-bm-panel-caret { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -970,14 +967,6 @@ function mount (host) {
     const p3 = easeOut(seg(t, T.prompt2From, T.prompt2To))
     setOpacity(el.prompts3, p3 * vis)
     setOpacity(el.carets3, p3 * vis)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // settle on a frame that shows both features: four panes, four answers
-    frame(T.prompt2To + 200)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

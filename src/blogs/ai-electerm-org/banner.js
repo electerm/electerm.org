@@ -739,9 +739,6 @@ const CSS = `
   height: 47.45em;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-ai-dots { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -1216,14 +1213,6 @@ function mount (host) {
       line.style.opacity = p.toFixed(3)
       line.style.display = p > 0.01 ? '' : 'none'
     })
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // the settled frame: key saved, command run, output on screen
-    frame(T.outTo + 200)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

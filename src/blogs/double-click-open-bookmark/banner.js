@@ -770,9 +770,6 @@ const CSS = `
 .eb-dc[data-variant='card'] .eb-dc-screen { font-size: 2.2em; }
 .eb-dc[data-variant='card'] .eb-dc-chip { font-size: 1.15em; padding: 0.42em 0.7em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-dc-dots, .eb-dc-spark, .eb-dc-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -1104,16 +1101,6 @@ function mount (host) {
     el.chipSel.style.opacity = chip(t, T.chipSelFrom, T.chipSelTo, T.chipSelOutFrom, T.chipSelOutTo)
     el.chipOpen.style.opacity = chip(t, T.chipOpenFrom, T.chipOpenTo, T.chipOpenOutFrom, T.chipOpenOutTo)
     el.chipGroup.style.opacity = chip(t, T.chipGroupFrom, T.chipGroupTo, T.chipGroupOutFrom, T.chipGroupOutTo)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // The most representative single frame: the setting on, the second session
-    // opened, and the chip that says what a double click does.
-    frame(T.chipOpenFrom + 200)
-    el.chipOpen.style.opacity = '1'
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

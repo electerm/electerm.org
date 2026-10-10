@@ -618,9 +618,6 @@ const CSS = `
 .eb-bn[data-variant='card'] .eb-bn-toast { bottom: 6.4em; }
 .eb-bn[data-variant='card'] .eb-bn-toast-inner { font-size: 2em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-bn-dots, .eb-bn-spark, .eb-bn-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -833,18 +830,6 @@ function mount (host) {
     el.ripple.style.left = goodX.toFixed(3) + '%'
 
     el.chipSgr.style.opacity = chip(t, T.sgrFrom, T.sgrFrom + 260, T.sgrOutFrom, T.sgrOutTo)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // The most representative single frame: the setting on, the selection held,
-    // and Option down with the report on its way out.
-    frame(T.sgrFrom + 400)
-    el.chipAlt.style.opacity = '1'
-    el.chipSgr.style.opacity = '1'
-    root.classList.add('is-appmode')
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

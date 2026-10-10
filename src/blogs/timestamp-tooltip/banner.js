@@ -440,9 +440,6 @@ const CSS = `
    scales up until it nearly fills the card */
 .eb-bn[data-variant='card'] .eb-bn-term { font-size: 3.8em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-bn-dots, .eb-bn-spark, .eb-bn-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -648,13 +645,6 @@ function mount (host) {
     el.toast.style.opacity = toast.toFixed(3)
     el.toast.style.transform =
       'translateX(-50%) translateY(' + ((1 - inP) * -0.9).toFixed(3) + 'em)'
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.tipTo + 200)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

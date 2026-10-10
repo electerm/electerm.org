@@ -412,9 +412,6 @@ const CSS = `
 .eb-df[data-variant='card'] .eb-df-pane { font-size: 2.4em; }
 .eb-df[data-variant='card'] .eb-df-modal { font-size: 2em; }
 .eb-df[data-variant='card'] .eb-df-chip { font-size: 1.9em; }
-@media (prefers-reduced-motion: reduce) {
-  .eb-df-dots, .eb-df-spark, .eb-df-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -616,13 +613,6 @@ function mount (host) {
     const doneP = easeOut(seg(t, T.doneFrom, T.doneTo))
     el.done.style.opacity = (doneP * vis).toFixed(3)
     el.screen.style.transform = 'translateY(' + (-doneP * LINE * 0.9).toFixed(3) + 'em)'
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.doneTo + 200)
-    return
   }
 
   const state = { raf: null }

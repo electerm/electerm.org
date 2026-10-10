@@ -730,9 +730,6 @@ const CSS = `
    100em card, which lands the scale at 1.28. */
 .eb-mp[data-variant='card'] .eb-mp-app { font-size: 1.28em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-mp-dots, .eb-mp-spark-dot, .eb-mp-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -1131,15 +1128,6 @@ function mount (host) {
     el.iCpuHistory.style.clipPath = sparkP < 1
       ? `inset(0 ${((1 - sparkP) * 100).toFixed(1)}% 0 0)`
       : ''
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // a static frame: the bar with its values, the popover open on CPU
-    frame(T.clickAt - 300)
-    el.pointer.style.opacity = '0'
-    return
   }
 
   const state = { raf: null }

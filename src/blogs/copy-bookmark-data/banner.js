@@ -898,9 +898,6 @@ const CSS = `
 .eb-cb[data-variant='card'] .eb-cb-form { font-size: 1.5em; }
 .eb-cb[data-variant='card'] .eb-cb-toast-inner { font-size: 1.7em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-cb-dots, .eb-cb-spark, .eb-cb-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -1206,19 +1203,6 @@ function mount (host) {
     // ---- the annotation chip and the result card
     el.chipFmt.style.opacity = chip(t, T.fmtFrom, T.fmtTo, T.fmtOutFrom, T.fmtOutTo)
     el.res.style.opacity = chip(t, T.resFrom, T.resTo, T.resOutFrom, T.resOutTo)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // The most representative single frame: the menu closed, the row picked, the
-    // toast up and the result card showing what is on the clipboard.
-    frame(T.resTo)
-    el.ptr.style.opacity = '0'
-    el.chipFmt.style.opacity = '0'
-    el.toast.style.opacity = '1'
-    el.res.style.opacity = '1'
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

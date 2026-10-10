@@ -756,9 +756,6 @@ const CSS = `
 .eb-th[data-variant='card'] .eb-th-right { left: 41em; right: 2em; }
 .eb-th[data-variant='card'] .eb-th-term { font-size: 2.35em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-th-dots { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -1202,14 +1199,6 @@ function mount (host) {
       lastLike = like
       el.likes[0].textContent = String(like)
     }
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // the settled frame: the palette changed, the theme named, the board showing
-    frame(T.likeAt + 900)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

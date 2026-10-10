@@ -274,9 +274,6 @@ const CSS = `
 .eb-tb-fields { margin-top: 0; }
 .eb-tb-fields .eb-tb-field { margin-top: 0.7em; }
 .eb-tb-fields .eb-tb-field:first-child { margin-top: 0.8em; }
-@media (prefers-reduced-motion: reduce) {
-  .eb-tb-blob { filter: none; }
-}
 `
 
 function injectStyle () {
@@ -459,14 +456,6 @@ function mount (host) {
 
     // caret blinks off the timeline so a frozen frame is deterministic
     el.caret.style.opacity = (Math.floor(t / 530) % 2 === 0 ? 1 : 0)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // settled frame that shows the point: the wallpaper with the filters applied
-    frame(T.fHoldTo - 200)
-    return
   }
 
   const state = { raf: null }

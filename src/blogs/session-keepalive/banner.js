@@ -197,7 +197,6 @@ const CSS = `
 .eb-ka-ripple { position: absolute; width: 0.9em; height: 0.9em; border: 0.14em solid var(--eb-term-blue); border-radius: 50%; opacity: 0; z-index: 8; pointer-events: none; }
 .eb-ka[data-variant='card'] .eb-ka-app { bottom: auto; top: 50%; transform: translate(-50%,-50%); }
 .eb-ka[data-variant='card'] .eb-ka-term { font-size: 2.2em; min-height: 10.5em; }
-@media (prefers-reduced-motion: reduce) { .eb-ka-dots, .eb-ka-spark, .eb-ka-app { animation: none !important; } }
 `
 
 function injectStyle () {
@@ -473,13 +472,6 @@ function mount (host) {
     el.note.innerHTML = enabled
       ? '<span class="eb-ka-dim"># heartbeat on: idle 3 s → Enter → TMOUT resets</span>'
       : '<span class="eb-ka-dim"># idle… SSH keepalive (10 s) holds the socket, TMOUT still drains</span>'
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.beat2At + 700)
-    return
   }
 
   const state = { raf: null }

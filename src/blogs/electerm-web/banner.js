@@ -267,13 +267,6 @@ function mount (host) {
     }
   }
 
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.cursorTo)
-    return
-  }
-
   const state = { raf: null }
   const start = performance.now()
   const tick = (now) => {

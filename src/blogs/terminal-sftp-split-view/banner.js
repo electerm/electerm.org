@@ -533,9 +533,6 @@ const CSS = `
   width: 92em;
   transform: translate(-50%, -50%);
 }
-@media (prefers-reduced-motion: reduce) {
-  .eb-sv-dots, .eb-sv-spark, .eb-sv-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -771,13 +768,6 @@ function mount (host) {
     } else {
       el.ripple.style.opacity = 0
     }
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.badge1To + 200)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

@@ -212,7 +212,6 @@ const CSS = `
 .eb-i6[data-variant='card'] .eb-i6-rows { gap: 0.7em; padding: 1em 1.2em; }
 .eb-i6[data-variant='card'] .eb-i6-cap { display: none; }
 .eb-i6[data-variant='card'] .eb-i6-cli { font-size: 1.15em; }
-@media (prefers-reduced-motion: reduce) { .eb-i6-dots, .eb-i6-spark { animation: none !important; } }
 `
 
 function injectStyle () {
@@ -350,14 +349,6 @@ function mount (host) {
       d.style.opacity = 1
       d.style.left = (p * 100).toFixed(2) + '%'
     }
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // settle on the beat that shows the point: all three modes working
-    frame(SPEED * 0.5)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

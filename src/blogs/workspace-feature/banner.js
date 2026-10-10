@@ -308,7 +308,6 @@ const CSS = `
 
 /* ---- card variant: no headline, window centred ---- */
 .eb-ws[data-variant='card'] .eb-ws-app { bottom: auto; top: 50%; transform: translate(-50%, -50%); }
-@media (prefers-reduced-motion: reduce) { .eb-ws-dots, .eb-ws-spark, .eb-ws-app { animation: none !important; } }
 `
 
 function injectStyle () {
@@ -604,14 +603,6 @@ function mount (host) {
     const phase = t < PHASE_AT[0] ? 0 : (t < PHASE_AT[1] ? 1 : 2)
     if (el.mode.textContent !== captions[phase]) el.mode.textContent = captions[phase]
     if (el.hint.textContent !== hints[phase]) el.hint.textContent = hints[phase]
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // settle on the frame that shows the point: the saved entry in the list
-    frame(T.toast1[0] + 400)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

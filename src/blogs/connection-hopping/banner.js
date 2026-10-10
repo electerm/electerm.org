@@ -195,7 +195,6 @@ const CSS = `
 .eb-hop[data-variant='card'] .eb-hop-cli { font-size: 1.15em; }
 .eb-hop[data-variant='card'] .eb-hop-path { padding-bottom: 0.8em; }
 .eb-hop[data-variant='card'] .eb-hop-lane { padding-bottom: 0; }
-@media (prefers-reduced-motion: reduce) { .eb-hop-dots, .eb-hop-spark, .eb-hop-app { animation: none !important; } }
 `
 
 function injectStyle () {
@@ -351,13 +350,6 @@ function mount (host) {
       d.style.opacity = vis.toFixed(3)
       d.style.left = (p * 100).toFixed(2) + '%'
     }
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(MODE_DUR * 2 + MODE_DUR * 0.5)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.
