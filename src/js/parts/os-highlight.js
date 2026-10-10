@@ -161,13 +161,6 @@ function initOsHighlight () {
     })
   })
 
-  const reduceMotion = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduceMotion) {
-    // Stay as plain text, no cycling, no decoration
-    return
-  }
-
   let current = -1
   let timer = null
   let hover = false

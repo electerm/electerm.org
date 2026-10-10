@@ -67,7 +67,6 @@ export default class HeroConnections {
   constructor (stage, logo) {
     this.stage = stage
     this.logo = logo
-    this.reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     this.time = 0
     this.last = 0
     this.intro = 0
@@ -90,7 +89,7 @@ export default class HeroConnections {
     // once it lands, and once more after layout settles.
     if (!this.logo.complete) this.logo.addEventListener('load', () => this._measure(), { once: true })
     requestAnimationFrame(() => this._measure())
-    if (!this.reduceMotion) this._loop()
+    this._loop()
   }
 
   // --- setup ---------------------------------------------------------------
@@ -253,8 +252,7 @@ export default class HeroConnections {
       layer.ctx.setTransform(dpr, 0, 0, dpr, -box.x * dpr, -box.y * dpr)
     }
     this.ready = true
-    if (this.reduceMotion) this._drawStatic()
-    else this._draw()
+    this._draw()
   }
 
   // --- motion --------------------------------------------------------------
