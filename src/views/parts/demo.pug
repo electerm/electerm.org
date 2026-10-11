@@ -1,9 +1,10 @@
 section.demo-section#demo
   .container
-    .section-header
-      h2 #{lang.lang.demoTitle}
-      p #{lang.lang.demoSubtitle}
+    //- .section-header
+    //-   h2 #{lang.lang.demoTitle}
+    //-   p #{lang.lang.demoSubtitle}
     .demo-controls
+      span.mg1r #{lang.lang.demoTitle}
       .demo-switch(role='tablist', aria-label='device mode')
         button.demo-switch-btn.active(type='button', role='tab', aria-selected='true', data-mode='desktop') #{lang.lang.demoModeDesktop}
         button.demo-switch-btn(type='button', role='tab', aria-selected='false', data-mode='mobile') #{lang.lang.demoModeMobile}
