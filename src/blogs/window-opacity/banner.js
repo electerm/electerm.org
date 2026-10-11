@@ -249,9 +249,6 @@ const CSS = `
   opacity: 0;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.35);
 }
-@media (prefers-reduced-motion: reduce) {
-  .eb-op-dots { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -395,13 +392,6 @@ function mount (host) {
     const badgeP = seg(t, T.badgeFrom, T.badgeFrom + 350) * (1 - seg(t, T.badgeTo, T.badgeTo + 350))
     el.badge.style.opacity = (badgeP * (1 - gone)).toFixed(3)
     el.badge.style.transform = 'translateX(-50%) translateY(' + ((1 - badgeP) * -0.6).toFixed(3) + 'em)'
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.holdTo)
-    return
   }
 
   const state = { raf: null }

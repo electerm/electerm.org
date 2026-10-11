@@ -18,7 +18,6 @@ export default class Hero3DLogo {
   constructor (img, opts = {}) {
     this.img = img
     this.modelUrl = opts.modelUrl || img.dataset.glb || '/electerm.glb'
-    this.reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     this.mouse = { x: 0, y: 0 }
     this.entry = 0
     this.clock = new THREE.Clock()
@@ -121,7 +120,6 @@ export default class Hero3DLogo {
     // Entry pose
     this.group.scale.setScalar(0.7)
     this.group.rotation.set(0, -1.1, 0)
-    if (this.reduceMotion) this.entry = 1
   }
 
   // Frame the (very wide) wordmark to fit the logo box.
@@ -192,24 +190,21 @@ export default class Hero3DLogo {
       this.img.style.opacity = String(1 - e)
     }
 
-    const reduce = this.reduceMotion
     // Mouse-driven target orientation.
-    const yawT = this.mouse.x * (reduce ? 0.18 : 0.5)
-    const pitchT = -this.mouse.y * (reduce ? 0.1 : 0.32)
+    const yawT = this.mouse.x * 0.5
+    const pitchT = -this.mouse.y * 0.32
     const rollT = this.mouse.x * 0.06
     // Gentle idle motion blended in when the pointer is idle.
-    const idleY = reduce ? 0 : Math.sin(t * 0.3) * 0.1
-    const idleP = reduce ? 0 : Math.sin(t * 0.45 + 1.2) * 0.04
+    const idleY = Math.sin(t * 0.3) * 0.1
+    const idleP = Math.sin(t * 0.45 + 1.2) * 0.04
 
     const k = 0.08
     if (this.entry >= 1) {
       this.group.rotation.y += ((yawT + idleY) - this.group.rotation.y) * k
       this.group.rotation.x += ((pitchT + idleP) - this.group.rotation.x) * k
       this.group.rotation.z += (rollT - this.group.rotation.z) * k
-      if (!reduce) {
-        this.group.position.y = Math.sin(t * 0.9) * 0.04
-        this.group.position.x = -this.mouse.x * 0.12
-      }
+      this.group.position.y = Math.sin(t * 0.9) * 0.04
+      this.group.position.x = -this.mouse.x * 0.12
     }
 
     this.renderer.render(this.scene, this.camera)

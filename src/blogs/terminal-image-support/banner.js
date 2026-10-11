@@ -244,9 +244,6 @@ const CSS = `
   transform: translate(-50%, -50%);
 }
 .eb-bn-img[data-variant='card'] .eb-bn-img-term { font-size: 3em; }
-@media (prefers-reduced-motion: reduce) {
-  .eb-bn-img-dots, .eb-bn-img-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -384,13 +381,6 @@ function mount (host) {
     const gone = easeInOut(seg(t, T.fadeFrom, T.fadeTo))
     root.style.opacity = ''
     el.cmd.style.opacity = (1 - gone).toFixed(3)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.outTo + 100)
-    return
   }
 
   const state = { raf: null }

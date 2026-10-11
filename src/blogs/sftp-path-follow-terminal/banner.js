@@ -601,9 +601,6 @@ const CSS = `
 .eb-sf[data-variant='card'] .eb-sf-addr { font-size: 1.6em; }
 .eb-sf[data-variant='card'] .eb-sf-flist { font-size: 1.7em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-sf-dots, .eb-sf-spark, .eb-sf-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -891,13 +888,6 @@ function mount (host) {
     el.prompt3.style.opacity = (o2 * vis).toFixed(3)
     el.caret3.style.display = o2 > 0.3 ? '' : 'none'
     if (!showCmd2) el.cmd2txt.textContent = ''
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.out2To + 200)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

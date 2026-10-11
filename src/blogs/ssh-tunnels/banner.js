@@ -190,7 +190,6 @@ const CSS = `
 .eb-tn[data-variant='card'] .eb-tn-rows { gap: 0.7em; padding: 1em 1.2em; }
 .eb-tn[data-variant='card'] .eb-tn-cap { display: none; }
 .eb-tn[data-variant='card'] .eb-tn-cli { font-size: 1.15em; }
-@media (prefers-reduced-motion: reduce) { .eb-tn-dots, .eb-tn-spark, .eb-tn-app { animation: none !important; } }
 `
 
 function injectStyle () {
@@ -333,13 +332,6 @@ function mount (host) {
       d.style.opacity = vis.toFixed(3)
       d.style.left = (p * 100).toFixed(2) + '%'
     }
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(MODE_DUR * 0.5)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

@@ -620,9 +620,6 @@ const CSS = `
 .eb-cl[data-variant='card'] .eb-cl-phone-bar { font-size: 1.05em; }
 .eb-cl[data-variant='card'] .eb-cl-phone-term { font-size: 1.2em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-cl-dots, .eb-cl-spark { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -878,14 +875,6 @@ function mount (host) {
       const from = T.plineFrom + i * T.plineGap
       lineEl.style.opacity = easeOut(seg(t, from, from + T.plineDur)).toFixed(3)
     })
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // the settled frame: signed in, command run, phone in place
-    frame(T.plineFrom + T.plineGap + T.plineDur + 200)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.

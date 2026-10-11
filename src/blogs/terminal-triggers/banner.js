@@ -385,9 +385,6 @@ const CSS = `
 .eb-tr[data-variant='card'] .eb-tr-foot { font-size: 1.8em; }
 .eb-tr[data-variant='card'] .eb-tr-pane { font-size: 2.4em; }
 .eb-tr[data-variant='card'] .eb-tr-rule { font-size: 2em; }
-@media (prefers-reduced-motion: reduce) {
-  .eb-tr-dots, .eb-tr-spark, .eb-tr-app { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -554,13 +551,6 @@ function mount (host) {
 
     const p2 = easeOut(seg(t, T.promptFrom, T.promptTo))
     setOpacity(el.prompt2, p2 * vis)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    frame(T.promptTo + 200)
-    return
   }
 
   const state = { raf: null }

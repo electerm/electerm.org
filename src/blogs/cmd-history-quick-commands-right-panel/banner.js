@@ -503,9 +503,6 @@ const CSS = `
 .eb-rp[data-variant='card'] .eb-rp-app { font-size: 1.28em; }
 .eb-rp[data-variant='card'] .eb-rp-badge { right: 28.5em; }
 
-@media (prefers-reduced-motion: reduce) {
-  .eb-rp-dots { animation: none !important; }
-}
 `
 
 function injectStyle () {
@@ -815,15 +812,6 @@ function mount (host) {
     const badgeP = seg(t, T.badgeFrom, T.badgeFrom + 350) *
       (1 - seg(t, T.badgeTo, T.badgeTo + 350))
     el.badge.style.opacity = (badgeP * (1 - gone)).toFixed(3)
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // a static frame: history docked, quick commands about to follow
-    frame(T.qmFrom + 100)
-    el.pointer.style.opacity = '0'
-    return
   }
 
   const state = { raf: null }

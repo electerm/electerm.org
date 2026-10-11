@@ -254,7 +254,6 @@ const CSS = `
 /* ---- card variant: no headline, both boxes centred ---- */
 .eb-st[data-variant='card'] .eb-st-app { top: 50%; transform: translateY(-50%); }
 .eb-st[data-variant='card'] .eb-st-panel { top: 50%; transform: translateY(-50%); }
-@media (prefers-reduced-motion: reduce) { .eb-st-dots, .eb-st-spark, .eb-st-app { animation: none !important; } }
 `
 
 function injectStyle () {
@@ -561,14 +560,6 @@ function mount (host) {
     if (el.hint.textContent !== HINTS[phase]) el.hint.textContent = HINTS[phase]
     if (el.mode.textContent !== MODES[phase]) el.mode.textContent = MODES[phase]
     if (el.what.textContent !== WHATS[phase]) el.what.textContent = WHATS[phase]
-  }
-
-  const reduced = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (reduced) {
-    // settle on the frame that shows the point: the restored workspace
-    frame(T.tabs2[1] + 600)
-    return
   }
 
   // Pause the loop while the banner is scrolled out of view.
