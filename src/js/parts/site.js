@@ -22,6 +22,7 @@
   window.__countryPromise.then(function (cc) {
     const adWrapper = document.querySelector('.ethical-ad-wrapper')
     if (!adWrapper) return
+    if (adWrapper.classList.contains('ad-closed')) return
 
     const adUnit = adWrapper.querySelector('.ethical-ad-unit')
     if (!adUnit) return
@@ -41,6 +42,7 @@
     }
 
     function updateAd () {
+      if (adWrapper.classList.contains('ad-closed')) return
       const vw = window.innerWidth || document.documentElement.clientWidth
       const mode = getMode(vw)
 
@@ -95,6 +97,36 @@
     })
   });
 
+  // === Ad close button: dismiss the fixed ad bar/card ===
+  // Applies to whichever network wrapper is in the DOM. Hides the wrapper
+  // and clears the spacing reserved by the ad-spacing logic below.
+  // Dismissal is for the current page view only (not persisted).
+  (function () {
+    function resetAdSpacing () {
+      document.body.style.paddingBottom = ''
+      const footer = document.querySelector('footer.site-footer')
+      if (footer) {
+        footer.style.paddingBottom = ''
+        footer.style.setProperty('--watermark-height', '0px')
+        footer.style.setProperty('--watermark-bottom', '0px')
+        footer.style.setProperty('--watermark-bg-size', '0px')
+      }
+    }
+    function closeAd (wrapper) {
+      if (!wrapper || wrapper.classList.contains('ad-closed')) return
+      wrapper.classList.add('ad-closed')
+      wrapper.classList.remove('ethical-ad-active', 'carbon-ad-active')
+      resetAdSpacing()
+    }
+    document.addEventListener('click', function (e) {
+      const btn = e.target && e.target.closest ? e.target.closest('.ad-close-btn') : null
+      if (!btn) return
+      e.preventDefault()
+      e.stopPropagation()
+      const wrapper = btn.closest('.ethical-ad-wrapper, .carbon-ad-wrapper')
+      closeAd(wrapper)
+    })
+  })();
   // === Ad spacing: keep the fixed ad bar/card (EthicalAds or Carbon Ads) from covering footer content ===
   (function () {
     const wrapper = document.querySelector('.ethical-ad-wrapper, .carbon-ad-wrapper')
@@ -102,6 +134,16 @@
     if (!wrapper) return
     const BP = 1420
     function apply () {
+      if (wrapper.classList.contains('ad-closed')) {
+        document.body.style.paddingBottom = ''
+        if (footer) {
+          footer.style.paddingBottom = ''
+          footer.style.setProperty('--watermark-height', '0px')
+          footer.style.setProperty('--watermark-bottom', '0px')
+          footer.style.setProperty('--watermark-bg-size', '0px')
+        }
+        return
+      }
       const h = wrapper.offsetHeight || 0
       const vw = window.innerWidth || document.documentElement.clientWidth
       if (vw < BP) {
@@ -160,6 +202,7 @@
     const wrapper = document.querySelector('.carbon-ad-wrapper')
     if (!wrapper) return
     if (cc === 'CN') return
+    if (wrapper.classList.contains('ad-closed')) return
     wrapper.classList.add('carbon-ad-active')
     const s = document.createElement('script')
     s.async = true

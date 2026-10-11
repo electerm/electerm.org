@@ -49,3 +49,30 @@
 // Ad unit visibility — always visible; JS controls type/layout
 .ethical-ad-unit
   display block
+
+// Dismissed state — hides the fixed ad bar/card entirely (overrides active)
+.ethical-ad-wrapper.ad-closed,
+.carbon-ad-wrapper.ad-closed
+  display none !important
+
+// Shared close button for ad wrappers (EthicalAds + Carbon Ads)
+.ethical-ad-wrapper .ad-close-btn,
+.carbon-ad-wrapper .ad-close-btn
+  position absolute
+  top 4px
+  right 4px
+  z-index 1000
+  display flex
+  align-items center
+  justify-content center
+  width 22px
+  height 22px
+  padding 0
+  font-size 14px
+  line-height 1
+  color #666
+  cursor pointer
+  border none
+
+  &:hover
+    color #000
