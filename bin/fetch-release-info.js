@@ -84,6 +84,55 @@ async function fetchRepoInfo () {
   }
 }
 
+async function fetchAllReleases () {
+  const all = []
+  for (let page = 1; ; page++) {
+    const response = await axios.get('https://api.github.com/repos/electerm/electerm/releases', {
+      params: { per_page: 100, page },
+      headers: {
+        'User-Agent': 'electerm-website',
+        Authorization: `token ${token}`,
+        Accept: 'application/vnd.github.v3+json'
+      }
+    })
+    all.push(...response.data)
+    if (response.data.length < 100) {
+      break
+    }
+  }
+  return all
+}
+
+function sumDownloads (release) {
+  return (release.assets || []).reduce((s, a) => s + (a.download_count || 0), 0)
+}
+
+function formatCompact (n) {
+  if (n >= 1e6) {
+    return (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M'
+  }
+  if (n >= 1e3) {
+    return (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K'
+  }
+  return String(n)
+}
+
+async function writeDownloadCounts () {
+  console.log('Fetching all releases for download counts...')
+  const releases = await fetchAllReleases()
+  const cutoff = Date.now() - 30 * 24 * 3600 * 1000
+  const total = releases.reduce((s, r) => s + sumDownloads(r), 0)
+  // downloads of releases published in the last 30 days
+  const monthly = releases
+    .filter(r => new Date(r.published_at).getTime() >= cutoff)
+    .reduce((s, r) => s + sumDownloads(r), 0)
+
+  await fs.mkdir(outputDir, { recursive: true })
+  await fs.writeFile(resolve(outputDir, 'download-count-monthly.html'), `${monthly}/Month`)
+  await fs.writeFile(resolve(outputDir, 'download-count-all.html'), formatCompact(total))
+  console.log(`Download counts saved: monthly=${monthly}, all=${total}`)
+}
+
 async function main () {
   console.log('Fetching latest release info from GitHub...')
   const releaseInfo = await fetchReleaseInfo()
@@ -97,6 +146,7 @@ async function main () {
   await fs.mkdir(outputDir, { recursive: true })
   await fs.writeFile(outputPath, JSON.stringify(output, null, 2))
   console.log(`Release info saved to ${outputPath}`)
+  await writeDownloadCounts()
 }
 
 main()
