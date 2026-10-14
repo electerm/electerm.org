@@ -337,6 +337,7 @@ const CSS = `
   padding-right: 1.43em;
   font-size: 1.17em;
   color: var(--eb-text-dark);
+  overflow: hidden;
 }
 .eb-sv-type-tab.is-active { color: var(--eb-text-light); }
 .eb-sv-type-tab.is-active .eb-sv-type-tab-txt::after {
@@ -643,6 +644,7 @@ function mount (host) {
     seam: root.querySelector('.eb-sv-seam'),
     sftp: root.querySelector('.eb-sv-sftp'),
     flist: root.querySelector('.eb-sv-flist'),
+    tabTerm: root.querySelector('.eb-sv-type-ssh'),
     tabSftp: root.querySelector('.eb-sv-type-sftp'),
     flash: root.querySelector('.eb-sv-flash'),
     badge: root.querySelector('.eb-sv-badge'),
@@ -686,6 +688,21 @@ function mount (host) {
   // geometry depends on fonts/layout settling — re-measure shortly after mount
   setTimeout(() => { geom = iconGeom() }, 400)
 
+  // Natural width of each type tab in that tab's own em, so the collapse below
+  // is correct at any banner scale (hero 780px wide, card 418px). Measured
+  // while the tabs are still at their natural size — the first frame has not
+  // run yet, and the animation only reaches the collapse well after +400ms.
+  let tabNat = [0, 0]
+  const measureTabs = () => {
+    tabNat = [el.tabTerm, el.tabSftp].map(tab => {
+      const fs = parseFloat(window.getComputedStyle(tab).fontSize)
+      const w = tab.getBoundingClientRect().width
+      return fs > 0 ? w / fs : 0
+    })
+  }
+  measureTabs()
+  setTimeout(measureTabs, 400)
+
   function frame (t) {
     const gone = easeInOut(seg(t, T.fadeFrom, T.fadeTo))
     const vis = 1 - gone
@@ -707,9 +724,19 @@ function mount (host) {
     el.flist.style.opacity = (seg(t, T.sftpInFrom, T.sftpInTo) * (1 - easeInOut(seg(t, T.morph2From, T.morph2From + 350))) * vis).toFixed(3)
     el.flist.style.transform = 'translateX(' + ((1 - easeOut(seg(t, T.sftpInFrom, T.sftpInTo))) * 1.2).toFixed(3) + 'em)'
 
-    // the SFTP type-tab lights up once its pane exists; SSH stays lit.
-    const sftpActive = m > 0.5
-    el.tabSftp.classList.toggle('is-active', sftpActive || t < T.morph1From)
+    // The type tabs are a tab-mode affordance: the app drops them the moment
+    // both panes are on screen. So they collapse with the split (padding in
+    // lockstep — a border-box floors at its own padding) and the icon row
+    // slides left into their place. SSH keeps the underline throughout.
+    const hide = easeInOut(seg(t, T.morph1From, T.morph1From + 350))
+    const back = easeInOut(seg(t, T.morph2From, T.morph2From + 350))
+    const tp = Math.min(1, Math.max(0, 1 - hide + back))
+    const tabEls = [el.tabTerm, el.tabSftp]
+    for (let i = 0; i < 2; i++) {
+      tabEls[i].style.width = (tabNat[i] * tp).toFixed(3) + 'em'
+      tabEls[i].style.paddingRight = (1.43 * tp).toFixed(3) + 'em'
+      tabEls[i].style.opacity = tp.toFixed(3)
+    }
 
     // split icon: off -> on at click 1, back off at click 2.
     const isOn = t >= T.click1At && t < T.click2At
