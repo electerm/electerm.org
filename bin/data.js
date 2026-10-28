@@ -26,15 +26,17 @@ function getR2Url (url, isAndroid) {
   return 'https://r2.electerm.org' + prefix + url.split('/').pop()
 }
 
+// atomgit mirrors both repos: electerm/electerm for the desktop builds and
+// electerm/electerm-android for the APKs (synced by each repo's
+// sync-atomgit-release.yml right after a GitHub release is published). The
+// path below the domain is identical, so a mirror link is just a host swap.
 function getAtomGitUrl (url, isAndroid) {
-  if (isAndroid) {
+  const m = url.match(/\/releases\/download\/([^/]+)\/([^/?#]+)/)
+  if (!m) {
     return ''
   }
-  const m = url.match(/\/releases\/download\/([^/]+)\/([^/?#]+)/)
-  if (m) {
-    return `https://atomgit.com/electerm/electerm/releases/download/${m[1]}/${m[2]}`
-  }
-  return ''
+  const repo = isAndroid ? 'electerm-android' : 'electerm'
+  return `https://atomgit.com/electerm/${repo}/releases/download/${m[1]}/${m[2]}`
 }
 
 function isAndroidAsset (fileName, downloadUrl) {
