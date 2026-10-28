@@ -66,16 +66,6 @@ const tiers = [
         ink: { x: 50, y: 48, w: 302, h: 69 }
       },
       {
-        name: 'FluxionAI',
-        url: 'https://fluxionai.space/register?source=github&campaign=github-sidrune-electerm&promo=SDRELECTERM&aff=7H7DERHU3GFF',
-        logo: {
-          src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/sidrune.png',
-          w: 389,
-          h: 197
-        },
-        ink: { x: 14, y: 53, w: 361, h: 92 }
-      },
-      {
         name: 'ApiSmart',
         url: 'https://www.apismart.ai',
         logo: {
