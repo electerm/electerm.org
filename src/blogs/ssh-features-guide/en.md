@@ -1,6 +1,6 @@
 ---
 title: 'SSH in Electerm: Authentication, Jump Hosts, NetBird and Tunnels'
-description: Master SSH in electerm — password and public-key auth, ssh-agent, OpenSSH certificates, MFA keyboard-interactive prompts, connection hopping, NetBird and proxy-command, and local/remote/dynamic SSH tunnels.
+description: Master SSH in electerm — password and public-key auth, ssh-agent, OpenSSH certificates, MFA keyboard-interactive prompts, connection hopping, NetBird and proxy-command, and all four SSH tunnel modes — local, remote, dynamic SOCKS and reverse SOCKS.
 date: 2026-06-20
 tags: [ssh, authentication, tunnel, netbird, jump-host, security]
 videos: [electerm-connection-hop, electerm-connection-jump, electerm-local-to-remote-ssh-tunnel, electerm-remote-to-local-ssh-tunnel, electerm-dynamic-socks-proxy, electerm-view-ssh-server-info, electerm-batch-operations]
@@ -89,17 +89,18 @@ cloudflared access ssh --hostname %h
 
 Wiki: [SSH Proxy Command and NetBird Support](https://github.com/electerm/electerm/wiki/SSH-Proxy-Command-and-NetBird-Support). Generic SOCKS5/HTTP proxies go in the bookmark `proxy` field (`socks5://127.0.0.1:1080`); see [proxy format](https://github.com/electerm/electerm/wiki/proxy-format).
 
-## 8. SSH tunnels: -L, -R and -D in GUI form
+## 8. SSH tunnels: -L, -R, -D and reverse SOCKS in GUI form
 
-Bookmark → tunnel section. Three modes ([wiki](https://github.com/electerm/electerm/wiki/How-to-use-ssh-tunnel)):
+Bookmark → tunnel section. Four modes ([wiki](https://github.com/electerm/electerm/wiki/How-to-use-ssh-tunnel), [full guide](/blogs/ssh-tunnels/)):
 
 | Mode | CLI equivalent | Example |
 |---|---|---|
 | Forward local → remote | `ssh -L 5000:localhost:6000` | visit `http://127.0.0.1:5000`, get `remote:6000` |
 | Forward remote → local | `ssh -R 6000:localhost:5000` | visit `http://remote:6000`, get your local `:5000` |
-| Dynamic (SOCKS) | `ssh -D 1080` | point the browser at `socks5://127.0.0.1:1080` |
+| Dynamic (SOCKS) | `ssh -D 1080` | point the browser at `socks5://127.0.0.1:1080`, exits from the server |
+| Reverse SOCKS | `ssh -R 1080` | point apps **on the server** at `socks5://127.0.0.1:1080`, exits from your machine |
 
-Set local/remote host+port per tunnel, give it a name, save — tunnels come up with the session automatically. Videos:
+Set the host/port for the side that listens, give it a name, save — tunnels come up with the session automatically. Videos:
 
 - [Local to Remote SSH Tunnel](/videos/electerm-local-to-remote-ssh-tunnel/)
 - [Remote to Local SSH Tunnel](/videos/electerm-remote-to-local-ssh-tunnel/)

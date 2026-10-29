@@ -2,23 +2,26 @@
  * Animated banner for the "SSH tunnels" blog post.
  *
  * Everything you see is generated here — no image, no GIF, no canvas: the
- * background, the headline, the mock electerm window (tab bar + three tunnel
+ * background, the headline, the mock electerm window (tab bar + four tunnel
  * rows + footer) and the travelling packets are plain DOM + CSS driven by one
  * requestAnimationFrame timeline.
  *
- * One loop cycles through the three tunnel types in the order the article
+ * One loop cycles through the four tunnel types in the order the article
  * introduces them:
  *
  *   1. L→R (forwardLocalToRemote, ssh -L) — packets run
  *      laptop:5000 -> ssh server -> remote:6000.
  *   2. R→L (forwardRemoteToLocal, ssh -R) — packets run the other way,
  *      server:6000 -> ssh server -> laptop:5000.
- *   3. Dynamic (dynamicForward, ssh -D) — the laptop end becomes a SOCKS5
+ *   3. -D socks (dynamicForward, ssh -D) — the laptop end becomes a SOCKS5
  *      proxy and packets fan out to several destinations through the server.
+ *   4. -R socks (remoteDynamicForward, ssh -R port) — the server end is the
+ *      SOCKS5 proxy, but the destinations are dialled by the laptop, so the
+ *      packets exit into the viewer's own network.
  *
  * Modelled on the real electerm UI / code:
  *   tunnel form ...... src/client/components/bookmark-form/common/ssh-tunnel-form.jsx
- *                      (L→R / R→L radio + dynamicForward socks proxy,
+ *                      (L→R / R→L / -D socks / -R socks radio,
  *                       local/remote host+port, name, add/save button)
  *   tunnel list ...... src/client/components/bookmark-form/common/ssh-tunnels.jsx
  *                      (sshTunnels array, default 127.0.0.1:12200 -> 127.0.0.1:12300)
@@ -26,6 +29,8 @@
  *                      (forwardLocalToRemote: net.createServer + conn.forwardOut,
  *                       forwardRemoteToLocal: conn.forwardIn + net.connect,
  *                       dynamicForward: socksv5-server + conn.forwardOut,
+ *                       remoteDynamicForward: conn.forwardIn + socksv5-server on
+ *                       the forwarded channel + a local net.connect,
  *                       all torn down on conn close)
  *   UI theme ......... src/client/css/includes/theme.styl with the shipped dark
  *                      theme (src/client/common/theme-defaults.js, #121214)
@@ -43,13 +48,12 @@
 
 const STYLE_ID = 'eb-tn-style'
 
-// One full pass of the story (three modes), in ms.
-const PERIOD = 9000
-const MODE_DUR = PERIOD / 3
+// One full pass of the story (four modes), in ms.
+const PERIOD = 12000
 
 const T = {
-  fadeFrom: 8300,
-  fadeTo: 8850
+  fadeFrom: PERIOD - 700,
+  fadeTo: PERIOD - 150
 }
 
 const MODES = [
@@ -57,21 +61,45 @@ const MODES = [
     id: 'l2r',
     tag: 'L→R',
     cli: 'ssh -L 5000:localhost:6000',
-    caption: 'local :5000 reaches remote :6000'
+    caption: 'local :5000 reaches remote :6000',
+    left: 'laptop :5000',
+    right: 'remote :6000',
+    dir: 1,
+    dot: ''
   },
   {
     id: 'r2l',
     tag: 'R→L',
     cli: 'ssh -R 6000:localhost:5000',
-    caption: 'remote :6000 reaches back to local :5000'
+    caption: 'remote :6000 reaches back to local :5000',
+    left: 'server :6000',
+    right: 'laptop :5000',
+    dir: -1,
+    dot: ' rev'
   },
   {
     id: 'dyn',
-    tag: 'SOCKS',
+    tag: '-D socks',
     cli: 'ssh -D 1080',
-    caption: 'socks5://:1080 exits from the server'
+    caption: 'socks5://:1080 exits from the server',
+    left: 'browser',
+    right: 'any host',
+    dir: 1,
+    dot: ' socks'
+  },
+  {
+    id: 'rdyn',
+    tag: '-R socks',
+    cli: 'ssh -R 1080',
+    caption: 'socks5://server:1080 exits from you',
+    left: 'server :1080',
+    right: 'your network',
+    dir: 1,
+    dot: ' socks'
   }
 ]
+
+const MODE_DUR = PERIOD / MODES.length
 
 const CLOSE_PATH = 'M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z'
 const PLUS_PATH = 'M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z'
@@ -129,16 +157,16 @@ const CSS = `
 .eb-tn-spark-a { right: 7.5em; top: 4.6em; }
 .eb-tn-spark-b { right: 14.5em; top: 12em; width: 1.05em; height: 1.05em; background: #14b8a6; animation-delay: 0.9s; }
 @keyframes eb-tn-twinkle { 0%,100% { transform: scale(0.72) rotate(0deg); opacity: 0.5; } 50% { transform: scale(1.16) rotate(35deg); opacity: 1; } }
-.eb-tn-head { position: absolute; left: 5em; right: 5em; top: 3.2em; }
+.eb-tn-head { position: absolute; left: 5em; right: 5em; top: 2.7em; }
 .eb-tn-brand { display: inline-flex; align-items: center; gap: 0.45em; font-size: 1.4em; font-weight: 800; color: #2563eb; }
 .eb-tn-brand::before { content: ''; width: 1.05em; height: 1.05em; border-radius: 50%; background: #2563eb; box-shadow: inset 0 0 0 0.32em #fff; }
 .eb-tn-h1 { margin: 0.24em 0 0; font-size: 3.2em; font-weight: 800; line-height: 1.05; letter-spacing: -0.025em; color: #0f172a; }
 .eb-tn-h1 em { font-style: normal; background: linear-gradient(96deg, #2563eb, #7c3aed 52%, #ec4899); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-.eb-tn-sub { margin: 0.5em 0 0; max-width: 64em; font-size: 1.55em; line-height: 1.4; color: #475569; }
+.eb-tn-sub { margin: 0.45em 0 0; max-width: 84em; font-size: 1.42em; line-height: 1.35; color: #475569; }
 .eb-tn-sub b { color: #0f172a; }
 .eb-tn-sub code { font-family: Menlo, Monaco, monospace; font-size: 0.85em; background: rgba(37,99,235,0.1); border-radius: 0.3em; padding: 0.05em 0.35em; color: #1d4ed8; }
 .eb-tn-app {
-  position: absolute; left: 50%; bottom: 5.4%; transform: translateX(-50%);
+  position: absolute; left: 50%; bottom: 4.2%; transform: translateX(-50%);
   width: 92em; background: var(--eb-term-bg); border-radius: 0.8em; overflow: hidden; text-align: left;
   box-shadow: 0 1.3em 2.6em rgba(15,23,42,0.32), 0 0 2.2em rgba(37,99,235,0.2);
   animation: eb-tn-glow 4.4s ease-in-out infinite;
@@ -153,18 +181,18 @@ const CSS = `
 .eb-tn-tab-add, .eb-tn-tabbar-caret { display: inline-flex; align-items: center; align-self: center; height: 1.6em; color: var(--eb-text); }
 .eb-tn-tab-add { width: 1.5em; margin-left: 0.3em; } .eb-tn-tab-add svg { width: 0.95em; height: 0.95em; fill: currentColor; }
 .eb-tn-tabbar-caret { width: 1.4em; margin-left: auto; color: var(--eb-text-dark); } .eb-tn-tabbar-caret svg { width: 0.85em; height: 0.85em; fill: currentColor; }
-.eb-tn-rows { display: flex; flex-direction: column; gap: 0.9em; padding: 1.2em 1.4em 1.3em; background: var(--eb-term-bg); }
+.eb-tn-rows { display: flex; flex-direction: column; gap: 0.6em; padding: 1em 1.4em 1.1em; background: var(--eb-term-bg); }
 .eb-tn-row {
   position: relative;
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 0.7em;
   background: rgba(255,255,255,0.045);
-  padding: 0.8em 1em 0.85em;
+  padding: 0.6em 1em 0.65em;
   opacity: 0.42;
   transition: opacity 0.3s, border-color 0.3s, background 0.3s;
 }
 .eb-tn-row.is-active { opacity: 1; border-color: rgba(25,249,216,0.55); background: rgba(25,249,216,0.06); }
-.eb-tn-row-top { display: flex; align-items: center; gap: 0.7em; margin-bottom: 0.6em; }
+.eb-tn-row-top { display: flex; align-items: center; gap: 0.7em; margin-bottom: 0.42em; }
 .eb-tn-chip { flex: none; font-size: 1.25em; font-weight: 800; letter-spacing: 0.02em; color: #0f172a; background: #94a3b8; border-radius: 999px; padding: 0.18em 0.7em; }
 .eb-tn-row.is-active .eb-tn-chip { background: var(--eb-term-green); }
 .eb-tn-cli { font-family: Menlo, Monaco, monospace; font-size: 1.3em; color: var(--eb-term-fg); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -172,7 +200,7 @@ const CSS = `
 .eb-tn-cap { margin-left: auto; font-size: 1.2em; color: #8a8a92; white-space: nowrap; }
 .eb-tn-row.is-active .eb-tn-cap { color: var(--eb-term-blue); }
 .eb-tn-lane { position: relative; display: flex; align-items: center; gap: 0.6em; }
-.eb-tn-node { flex: none; font-size: 1.2em; font-weight: 700; color: var(--eb-term-fg); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 0.45em; padding: 0.3em 0.6em; white-space: nowrap; }
+.eb-tn-node { flex: none; font-size: 1.14em; font-weight: 700; color: var(--eb-term-fg); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 0.45em; padding: 0.3em 0.6em; white-space: nowrap; }
 .eb-tn-node.srv { color: var(--eb-term-green); border-color: rgba(25,249,216,0.4); }
 .eb-tn-row.is-active .eb-tn-node { color: #fff; }
 .eb-tn-row.is-active .eb-tn-node.srv { color: var(--eb-term-green); }
@@ -213,11 +241,8 @@ function easeInOut (p) {
 }
 
 function row (mode, index) {
-  const left = index === 1 ? 'server :6000' : index === 2 ? 'browser' : 'laptop :5000'
-  const right = index === 1 ? 'laptop :5000' : index === 2 ? 'any host' : 'remote :6000'
   const dots = [0, 1, 2].map((i) => {
-    const cls = index === 1 ? 'eb-tn-dot rev' : index === 2 ? 'eb-tn-dot socks' : 'eb-tn-dot'
-    return `<span class="${cls}" data-dot="${index}-${i}"></span>`
+    return `<span class="eb-tn-dot${mode.dot}" data-dot="${index}-${i}"></span>`
   }).join('')
   return `
     <div class="eb-tn-row" data-row="${index}">
@@ -227,11 +252,11 @@ function row (mode, index) {
         <span class="eb-tn-cap">${mode.caption}</span>
       </div>
       <div class="eb-tn-lane">
-        <span class="eb-tn-node">${left}</span>
+        <span class="eb-tn-node">${mode.left}</span>
         <span class="eb-tn-pipe ssh">${dots}</span>
         <span class="eb-tn-node srv">ssh server</span>
         <span class="eb-tn-pipe">${dots}</span>
-        <span class="eb-tn-node">${right}</span>
+        <span class="eb-tn-node">${mode.right}</span>
       </div>
     </div>`
 }
@@ -243,7 +268,7 @@ function markup (variant) {
       <div class="eb-tn-head">
         <span class="eb-tn-brand">electerm</span>
         <h2 class="eb-tn-h1">SSH tunnels, <em>minus the flags</em></h2>
-        <p class="eb-tn-sub"><b>L→R</b> reaches in · <b>R→L</b> reaches back · <b>SOCKS</b> exits anywhere — one loop, three modes, <code>ssh -L / -R / -D</code> in GUI form.</p>
+        <p class="eb-tn-sub"><b>L→R</b> reaches in · <b>R→L</b> reaches back · <b>-D</b> exits from the server · <b>-R</b> exits from you — four modes, <code>ssh -L / -R / -D</code> in GUI form.</p>
       </div>`
   return `
     <div class="eb-tn-deco">
@@ -294,7 +319,7 @@ function mount (host) {
     modeLabel: root.querySelector('.eb-tn-mode-label')
   }
 
-  const labels = ['L→R · ssh -L', 'R→L · ssh -R', 'SOCKS · ssh -D']
+  const labels = MODES.map((m) => `${m.tag} · ${m.cli}`)
 
   // 1em === 1% of the banner width, so the whole design scales with it.
   const fit = () => {
@@ -313,7 +338,7 @@ function mount (host) {
     const vis = 1 - gone
     root.style.opacity = vis.toFixed(3)
 
-    const active = Math.min(2, Math.floor(t / MODE_DUR))
+    const active = Math.min(MODES.length - 1, Math.floor(t / MODE_DUR))
     for (let i = 0; i < el.rows.length; i++) {
       el.rows[i].classList.toggle('is-active', i === active)
     }
@@ -328,7 +353,7 @@ function mount (host) {
       }
       const local = (t - active * MODE_DUR) / MODE_DUR
       let p = (local + di / 3) % 1
-      if (ri === 1) p = 1 - p // R→L flows backwards
+      if (MODES[ri].dir === -1) p = 1 - p // R→L flows backwards
       d.style.opacity = vis.toFixed(3)
       d.style.left = (p * 100).toFixed(2) + '%'
     }

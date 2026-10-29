@@ -1,46 +1,50 @@
 ---
-title: 'SSH Tunnels in Electerm: Local, Remote and Dynamic (SOCKS) Forwarding Without the Flags'
-description: Master all three SSH tunnel types in electerm — local (-L), remote (-R) and dynamic SOCKS (-D): what each one does, when to use it, and how to set it up click by click in the bookmark editor.
+title: 'SSH Tunnels in Electerm: Local, Remote, Dynamic (SOCKS) and Reverse SOCKS Without the Flags'
+description: Master all four SSH tunnel modes in electerm — local (-L), remote (-R), dynamic SOCKS (-D) and reverse SOCKS (-R port): what each one does, which side dials the destination, and how to set it up click by click in the bookmark editor.
 date: 2026-09-26
 tags: [ssh, tunnel, port-forwarding, socks, security, productivity]
 videos: [electerm-local-to-remote-ssh-tunnel, electerm-remote-to-local-ssh-tunnel, electerm-dynamic-socks-proxy]
 bannerScript: banner.js
 ---
 
-# SSH Tunnels in Electerm: Local, Remote and Dynamic (SOCKS) Forwarding Without the Flags
+# SSH Tunnels in Electerm: Local, Remote, Dynamic (SOCKS) and Reverse SOCKS Without the Flags
 
-`ssh -L`, `ssh -R` and `ssh -D` are three of the most useful flags in all of computing — and three of the easiest to mix up. Which side listens? Which side connects? Which direction does traffic flow?
+`ssh -L`, `ssh -R` and `ssh -D` are three of the most useful flags in all of computing — and three of the easiest to mix up. Which side listens? Which side connects? Which direction does traffic flow? Add the fourth form, `ssh -R 1080` (a SOCKS proxy that listens on the *server*), and the confusion doubles.
 
-Electerm puts all three in the bookmark editor as plain **L→R**, **R→L** and **dynamic (SOCKS proxy)** rows, with live tooltips that show your own host and port back at you. Watch the banner above — one loop cycles through all three modes. That loop is this whole article.
+Electerm puts all four in the bookmark editor as plain **L→R**, **R→L**, **-D socks** and **-R socks** rows, with live tooltips that show your own host and port back at you. Watch the banner above — one loop cycles through all four modes. That loop is this whole article.
 
 Base reference: [How to Use SSH Tunnel](https://github.com/electerm/electerm/wiki/How-to-use-ssh-tunnel). The SSH overview this post belongs to: [SSH in Electerm](/blogs/ssh-features-guide/).
 
 ## The 30-second mental model
 
-Every SSH tunnel rides inside an SSH connection you already have. The only questions are **who listens** and **who gets reached**:
+Every SSH tunnel rides inside an SSH connection you already have. Two questions settle everything: **who listens**, and **who dials the destination**:
 
-| Mode in electerm | CLI equivalent | Who listens | You get | Use it when |
+| Mode in electerm | CLI equivalent | Who listens | Who dials the destination | Use it when |
 |---|---|---|---|---|
-| **L→R** `forwardLocalToRemote` | `ssh -L [localHost:]localPort:remoteHost:remotePort` | your laptop | something on/near the server | remote DB, admin UI, internal API |
-| **R→L** `forwardRemoteToLocal` | `ssh -R [remoteHost:]remotePort:localHost:localPort` | the server | something on your laptop | show a teammate your local dev server, receive a webhook |
-| **Dynamic** `dynamicForward` (SOCKS proxy) | `ssh -D [localHost:]localPort` | your laptop (SOCKS5) | *any* host, resolved through the server | browse as the server, reach many internal hosts at once |
+| **L→R** `forwardLocalToRemote` | `ssh -L [localHost:]localPort:remoteHost:remotePort` | your laptop | the server | remote DB, admin UI, internal API |
+| **R→L** `forwardRemoteToLocal` | `ssh -R [remoteHost:]remotePort:localHost:localPort` | the server | your laptop | show a teammate your local dev server, receive a webhook |
+| **-D socks** `dynamicForward` | `ssh -D [localHost:]localPort` | your laptop (SOCKS5) | the server | browse as the server, reach many internal hosts at once |
+| **-R socks** `remoteDynamicForward` | `ssh -R [remoteHost:]remotePort` | the server (SOCKS5) | your laptop | let the server's users reach *your* network — VPN, intranet, licensed services |
 
 One sentence each:
 
 - **L→R:** "open an address on *my* machine that leads to an address on the *server's* side."
 - **R→L:** "open an address on the *server* that leads back to an address on *my* machine."
-- **Dynamic:** "open a SOCKS5 proxy on *my* machine; every connection I send through it exits from the *server*."
+- **-D socks:** "open a SOCKS5 proxy on *my* machine; every connection I send through it exits from the *server*."
+- **-R socks:** "open a SOCKS5 proxy on the *server*; every connection sent through it exits from *my* machine."
 
 > The `remoteHost` in a tunnel is resolved **from the server's point of view**. `127.0.0.1` as remote host means "the server itself", not your laptop. That single fact clears up most tunnel confusion.
+
+> The two socks modes are mirror images, and the one thing to remember is where the traffic *leaves*: `-D` leaves from the server, `-R socks` leaves from your machine. If you only remember "SOCKS means through the server", the second one will surprise you.
 
 ## Where tunnels live in electerm
 
 Open any SSH bookmark → scroll to the **SSH tunnel** section:
 
-1. Pick the type: **L→R**, **R→L**, or **dynamicForward (socks proxy)**. L→R is the default.
-2. Fill **local** host + port and (except dynamic) **remote** host + port. Defaults are `127.0.0.1:12200` local and `127.0.0.1:12300` remote — change them to your real ports.
+1. Pick the type: **L→R**, **R→L**, **-D socks** or **-R socks**. L→R is the default.
+2. Fill in the side that listens — L→R and R→L want both a local and a remote address, the socks modes want only the listening one. Defaults are `127.0.0.1:12200` local and `127.0.0.1:12300` remote — change them to your real ports.
 3. Give it a **name** (e.g. `pg-prod`, `webhook`, `socks-home`) so the list stays readable.
-4. Click the add button. The tunnel appears in the table as `→ local:… → remote:…` (or `socks5://…` for dynamic). Hover the `?` icons any time — the tooltip renders your *actual typed values* back as a flow diagram.
+4. Click the add button. The tunnel appears in the table as `→ local:… → remote:…` (or `socks5://…` for the socks modes). Hover the `?` icons any time — the tooltip renders your *actual typed values* back as a flow diagram.
 5. **Save the bookmark and connect.** Tunnels come up automatically with the session — no extra click, no background `ssh -fN` process to babysit.
 
 Need to change one later? Hit the edit pencil in the table row, or the minus icon to delete. A bookmark can hold **many tunnels** — e.g. Postgres + Redis + admin UI, all on one connection.
@@ -120,18 +124,18 @@ Video: [Remote to Local SSH Tunnel](/videos/electerm-remote-to-local-ssh-tunnel/
 
 ## 3. Dynamic (`-D`): a SOCKS5 proxy that exits from the server
 
-**The shape:** electerm listens on `localHost:localPort` speaking SOCKS5. Point any SOCKS-aware app at it; each connection is forwarded through the SSH connection to whatever destination the app asked for, resolved by the server.
+**The shape:** electerm listens on `localHost:localPort` speaking SOCKS5. Point any SOCKS-aware app at it; each connection is forwarded through the SSH connection to whatever destination the app asked for, dialled by the server.
 
 ```
 browser --SOCKS5--> 127.0.0.1:1080 (your laptop)
                         │  SSH connection
-                        ▼  exits from the server
+                        ▼  dialled by the server
 any host on the internet / VPC
 ```
 
 **Setup:**
 
-- Type: **dynamicForward (socks proxy)** — the remote host/port fields disappear, because there is no single destination.
+- Type: **-D socks** — the remote host/port fields disappear, because there is no single destination.
 - Local: `127.0.0.1`, `1080`
 - Name: `socks-prod`
 
@@ -139,28 +143,67 @@ Save, connect, then:
 
 - Firefox: Settings → Network → SOCKS5 `127.0.0.1:1080` (enable *proxy DNS* so names resolve through the server too).
 - Chrome: `chrome --proxy-server="socks5://127.0.0.1:1080"`.
-- curl: `curl --socks5 127.0.0.1:1080 https://ifconfig.me` — the returned IP is the *server's*, proving traffic exits there.
+- curl: `curl --socks5-hostname 127.0.0.1:1080 https://ifconfig.me` — the returned IP is the *server's*, proving traffic exits there.
 - CLI twin: `ssh -D 1080 user@server`.
 
 Why dynamic instead of three `-L` tunnels? When the destinations are many, unknown upfront, or DNS-only-resolvable inside the VPC, one SOCKS proxy replaces an endless list of static forwards.
 
 Video: [Dynamic SOCKS Proxy](/videos/electerm-dynamic-socks-proxy/).
 
+## 4. Reverse SOCKS (`-R port`): a SOCKS5 proxy on the server that exits from you
+
+**The shape:** the *server* listens on `remoteHost:remotePort` and speaks SOCKS5 to whoever connects there. But when a client asks for `db.internal:5432`, the connection is dialled by **your laptop**, not by the server. So the proxy sits on the server's side while the traffic leaves from yours.
+
+```
+apps on the server --SOCKS5--> server:1080
+                                  │  SSH connection (backwards)
+                                  ▼  dialled by your laptop
+                        anything your machine can reach
+```
+
+This is the mode for the case the other three cannot solve: **your machine has access the server does not.** Corporate VPN on your laptop, a licensed internal service, a database in your home lab, a subnet only your office IP can reach. The server's users get a single `socks5://127.0.0.1:1080` and reach all of it — no tunnel per port, no VPN client on the server.
+
+**Setup:**
+
+- Type: **-R socks** — the local fields disappear, because nothing listens on your machine.
+- Remote: `127.0.0.1`, `1080` (the bind address on the server; `0.0.0.0` plus `GatewayPorts yes` if other hosts must reach it)
+- Name: `vpn-for-server`
+
+Save, connect, then on the server:
+
+```bash
+curl --socks5-hostname 127.0.0.1:1080 https://ifconfig.me
+# the IP is yours, not the server's — that is the whole point
+```
+
+- CLI twin: `ssh -R 1080 user@server` (no `host:hostport` after the port).
+- It is not a VPN: only TCP through SOCKS5, and only while the session is open.
+
+**How it works under the hood**, if you want to be sure of the direction: the server's `sshd` binds the port and, for every connection, opens a `forwarded-tcpip` channel back to electerm. Electerm runs the SOCKS5 handshake on that channel, and then dials the requested destination with a plain local TCP connection. Nothing about the destination travels back to the server.
+
+Three gotchas:
+
+- **`AllowTcpForwarding no`** on the server blocks it, exactly like R→L.
+- **Loopback only by default.** Other machines on the server's network need `0.0.0.0` + `GatewayPorts yes`, and then you are exposing a proxy into your own network to them — think before you do it.
+- **SOCKS5 only.** No SOCKS4; if a legacy client needs it, use `ssh -R` itself.
+
 ## Troubleshooting checklist
 
 1. **"Port already in use" locally** — another app (or another tunnel) owns `localPort`. `lsof -i :5433` / `netstat -tlnp`, then pick a free port. Local ports under 1024 need root — stay above them.
-2. **Connection refused through the tunnel** — the tunnel is up but nothing listens at `remoteHost:remotePort` *from the server*. SSH into the server and try `curl remoteHost:remotePort` there first.
+2. **Connection refused through the tunnel** — the tunnel is up but nothing listens at `remoteHost:remotePort` *from the server*. SSH into the server and try `curl remoteHost:remotePort` there first. For `-R socks` the roles flip: check the destination from *your* machine.
 3. **Wrong `remoteHost` perspective** — `127.0.0.1` means the *server itself*. If the target is your laptop, you picked the wrong direction (you want R→L, not L→R).
-4. **R→L reachable only on the server** — expected without `GatewayPorts yes` + remote host `0.0.0.0`. That is a server-side `sshd_config` change, not an electerm bug.
+4. **R→L or -R socks reachable only on the server** — expected without `GatewayPorts yes` + remote host `0.0.0.0`. That is a server-side `sshd_config` change, not an electerm bug.
 5. **Tunnel dies with the session** — by design: tunnels are bound to the SSH connection lifecycle (`conn.on('close')` tears them down). Reconnect and they come back; for work that must survive the network, run the payload inside tmux as well.
-6. **Server forbids forwarding** — `AllowTcpForwarding no` (or `DisableForwarding`) on the server blocks all three modes. Needs a server admin to relax.
-7. **SOCKS app ignores the proxy** — many apps need per-app proxy settings *and* remote DNS enabled; a quick `curl --socks5` test separates "tunnel broken" from "app not using the tunnel".
+6. **Server forbids forwarding** — `AllowTcpForwarding no` (or `DisableForwarding`) on the server blocks all four modes. Needs a server admin to relax.
+7. **SOCKS app ignores the proxy** — many apps need per-app proxy settings *and* remote DNS enabled; a quick `curl --socks5-hostname` test separates "tunnel broken" from "app not using the tunnel".
+8. **`-D` and `-R socks` confused** — check where the traffic leaves. `-D` listens on your laptop and exits from the server; `-R socks` listens on the server and exits from your laptop. `curl https://ifconfig.me` through the proxy tells you which one you actually built.
 
 ## Cheat-sheet
 
 - Reach something near the server → **L→R** (`ssh -L localPort:remoteHost:remotePort`). Local port is yours, remote address is the server's view.
 - Let the server reach your laptop → **R→L** (`ssh -R remotePort:localHost:localPort`). Needs `GatewayPorts` for non-loopback exposure.
-- Reach *many* things as the server → **Dynamic SOCKS** (`ssh -D localPort`), point the app at `socks5://127.0.0.1:localPort`.
+- Reach *many* things as the server → **-D socks** (`ssh -D localPort`), point the app at `socks5://127.0.0.1:localPort`.
+- Let the server's users reach *your* network → **-R socks** (`ssh -R remotePort`), point their apps at `socks5://127.0.0.1:remotePort` **on the server**.
 - In electerm: bookmark → tunnel section → type + hosts + ports + name → add → save → connect. Edit with the pencil, delete with the minus. Many tunnels per bookmark are fine.
 - Tunnels start with the session and die with it — one connection, zero stray `ssh -fN` processes.
 

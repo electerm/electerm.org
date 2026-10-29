@@ -1,21 +1,21 @@
 ---
-title: 'SSH Tunnels Over IPv6 in Electerm — Yes to All Three Modes, No to [::1]'
-description: IPv6 works in every electerm tunnel mode — L→R, R→L and the dynamic SOCKS proxy. Here is which field takes the address, why a bracketed [::1] fails, and the routing bug IPv6 makes easy to hit.
+title: 'SSH Tunnels Over IPv6 in Electerm — Yes to All Four Modes, No to [::1]'
+description: IPv6 works in every electerm tunnel mode — L→R, R→L, the dynamic SOCKS proxy and reverse SOCKS. Here is which field takes the address, why a bracketed [::1] fails, and the routing bug IPv6 makes easy to hit.
 date: 2026-10-04
 tags: [ssh, tunnel, ipv6, port-forwarding, troubleshooting]
 videos: [electerm-local-to-remote-ssh-tunnel, electerm-remote-to-local-ssh-tunnel]
 bannerScript: banner.js
 ---
 
-# SSH Tunnels Over IPv6 in Electerm — Yes to All Three Modes, No to [::1]
+# SSH Tunnels Over IPv6 in Electerm — Yes to All Four Modes, No to [::1]
 
 More and more boxes are IPv6-only, or reachable only over IPv6 from where you happen to be sitting. So the question comes up: do electerm's SSH tunnels work over IPv6 at all?
 
-**Yes — all three modes, with a bare IPv6 literal in the host field.** Local→Remote, Remote→Local and the dynamic SOCKS proxy all handle it, and there is no IPv6-specific switch to go and find.
+**Yes — all four modes, with a bare IPv6 literal in the host field.** Local→Remote, Remote→Local, the dynamic SOCKS proxy and the reverse SOCKS proxy all handle it, and there is no IPv6-specific switch to go and find.
 
 Two things are worth knowing anyway. One is a formatting trap that looks like a broken tunnel. The other is a real routing bug that IPv6 makes easy to trip over.
 
-Base reference for the three modes: [SSH Tunnels in Electerm](/blogs/ssh-tunnels/). The SSH overview this belongs to: [SSH in Electerm](/blogs/ssh-features-guide/).
+Base reference for the four modes: [SSH Tunnels in Electerm](/blogs/ssh-tunnels/). The SSH overview this belongs to: [SSH in Electerm](/blogs/ssh-features-guide/).
 
 ## The short answer
 
@@ -24,10 +24,11 @@ Base reference for the three modes: [SSH Tunnels in Electerm](/blogs/ssh-tunnels
 | **L→R** local → remote | **remote** host | works |
 | **R→L** remote → local | **remote** host (the bind address) | works |
 | **Dynamic** (SOCKS proxy) | **local** host | works |
+| **-R socks** reverse SOCKS | **remote** host (the bind address) | works |
 
 A hostname whose AAAA record resolves somewhere also works — you do not need a literal at all. The literal is just the case people are unsure about, and it is the case that tells you whether anything in the stack is silently assuming IPv4.
 
-Each of the three was checked with a real byte round-trip through the tunnel, not just "no error thrown" — a tunnel that connects to the wrong target also throws no error.
+Each of the four was checked with a real byte round-trip through the tunnel, not just "no error thrown" — a tunnel that connects to the wrong target also throws no error. For reverse SOCKS the round-trip ran over `::1` on both ends with an IPv6 destination in the SOCKS request.
 
 ## Which field gets the IPv6 address
 
@@ -36,6 +37,7 @@ This is the part that is easy to get backwards, because it differs per mode.
 - **L→R** — the **remote** host. That address is resolved *by the server*, so `::1` means the server's own IPv6 loopback, and any other IPv6 is looked up in the server's network.
 - **R→L** — also the **remote** host, but here it is a *bind* address: the server opens a listener on it. `::1` means "only reachable from the server itself", exactly like `127.0.0.1` does for IPv4.
 - **Dynamic (SOCKS)** — the **local** host, because that is where the SOCKS5 listener binds on your machine. The remote host field disappears in this mode.
+- **-R socks** — the **remote** host, again a *bind* address on the server, exactly like R→L. The local fields disappear, because nothing listens on your machine; the destinations are dialled from your side once the SOCKS client asks for one, and those may be IPv6 too.
 
 Both fields default to `127.0.0.1`. Two substitutions cover almost everything:
 
@@ -94,6 +96,8 @@ The fix is to compare the destination address as well, and it is not in yet. **U
 
 **Expose your laptop on the server's IPv6.** R→L with remote host `::` (or a specific IPv6 the server owns) and `GatewayPorts yes` in the server's `sshd_config` if it must be reachable beyond the server itself.
 
+**Reverse SOCKS over IPv6.** -R socks with remote host `::1` and remote port `1080`; apps on the server then use `socks5://[::1]:1080`. Same binding rules as R→L: `::` plus `GatewayPorts yes` if other machines must reach it.
+
 **SOCKS over IPv6.** Dynamic mode, local host `::1`, local port `1080`. Point the app at `socks5://[::1]:1080` — brackets here, because it is a URL:
 
 ```bash
@@ -106,8 +110,8 @@ curl --socks5 '[::1]:1080' https://ifconfig.me
 
 These are the same for IPv6 as for IPv4, but they bite harder because they are easier to forget:
 
-- `AllowTcpForwarding no` (or `DisableForwarding`) on the server blocks all three modes.
-- For R→L, the address you ask the server to bind must actually exist there. `::1` needs IPv6 loopback on the server; a specific IPv6 needs that address assigned to one of its interfaces.
+- `AllowTcpForwarding no` (or `DisableForwarding`) on the server blocks all four modes.
+- For R→L and -R socks, the address you ask the server to bind must actually exist there. `::1` needs IPv6 loopback on the server; a specific IPv6 needs that address assigned to one of its interfaces.
 - Non-loopback R→L needs `GatewayPorts yes`, and for `::` the server needs IPv6 at all.
 - The remote port must be free on the server. Note that `127.0.0.1:8080` and `::1:8080` are different sockets, so a v4 bind does not block a v6 one — which is exactly how Trap 2 gets set up.
 
@@ -126,8 +130,8 @@ These are the same for IPv6 as for IPv4, but they bite harder because they are e
 
 - Address goes in **bare** — `::1`, `::`, `2001:db8::20`. Never `[::1]`.
 - Brackets belong in URLs (`socks5://[::1]:1080`) and on the `ssh` command line. Never in the host field.
-- L→R and R→L take it in the **remote** field. Dynamic takes it in the **local** field.
+- L→R, R→L and -R socks take it in the **remote** field. Dynamic takes it in the **local** field.
 - `::1` is the IPv6 `127.0.0.1`. `::` is the IPv6 `0.0.0.0`, and needs `GatewayPorts yes` for outside access.
-- Mixing families on one remote port hits the R→L routing bug — give each tunnel its own port for now.
+- Mixing families on one remote port hits the routing bug — give each tunnel its own port for now. It applies to -R socks as well, since it matches incoming connections the same way.
 
 Next: [SSH Tunnels in Electerm](/blogs/ssh-tunnels/) for what each mode is for in the first place, or [SSH in Electerm](/blogs/ssh-features-guide/) for auth, jump hosts and NetBird around them.

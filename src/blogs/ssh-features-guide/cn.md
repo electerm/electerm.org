@@ -1,6 +1,6 @@
 ---
 title: Electerm SSH 全解：认证、跳板机、NetBird 与隧道
-description: 玩透 electerm 的 SSH——密码与公钥认证、ssh-agent、OpenSSH 证书、MFA 二次验证、连接跳转、NetBird 与 proxy-command，以及本地/远端/动态 SSH 隧道。
+description: 玩透 electerm 的 SSH——密码与公钥认证、ssh-agent、OpenSSH 证书、MFA 二次验证、连接跳转、NetBird 与 proxy-command，以及本地/远端/动态/反向 SOCKS 四种 SSH 隧道。
 date: 2026-06-20
 tags: [ssh, 认证, 隧道, netbird, 跳板机, 安全]
 videos: [electerm-connection-hop, electerm-connection-jump, electerm-local-to-remote-ssh-tunnel, electerm-remote-to-local-ssh-tunnel, electerm-dynamic-socks-proxy, electerm-view-ssh-server-info, electerm-batch-operations]
@@ -89,17 +89,18 @@ cloudflared access ssh --hostname %h
 
 Wiki：[SSH Proxy Command and NetBird Support](https://github.com/electerm/electerm/wiki/SSH-Proxy-Command-and-NetBird-Support)。通用 SOCKS5/HTTP 代理填书签 `proxy` 字段（`socks5://127.0.0.1:1080`），见 [proxy format](https://github.com/electerm/electerm/wiki/proxy-format)。
 
-## 8. SSH 隧道：图形界面的 -L、-R、-D
+## 8. SSH 隧道：图形界面的 -L、-R、-D 与反向 SOCKS
 
-书签 → 隧道分区，三种模式（[wiki](https://github.com/electerm/electerm/wiki/How-to-use-ssh-tunnel)）：
+书签 → 隧道分区，四种模式（[wiki](https://github.com/electerm/electerm/wiki/How-to-use-ssh-tunnel)、[详细图解](/blogs/ssh-tunnels/cn/)）：
 
 | 模式 | CLI 对应 | 示例 |
 |---|---|---|
 | 本地 → 远端 | `ssh -L 5000:localhost:6000` | 访问 `http://127.0.0.1:5000`，拿到 `remote:6000` |
 | 远端 → 本地 | `ssh -R 6000:localhost:5000` | 访问 `http://remote:6000`，拿到你本地 `:5000` |
-| 动态（SOCKS） | `ssh -D 1080` | 浏览器挂 `socks5://127.0.0.1:1080` |
+| 动态（SOCKS） | `ssh -D 1080` | 浏览器挂 `socks5://127.0.0.1:1080`，从服务器出去 |
+| 反向 SOCKS | `ssh -R 1080` | 服务器上的程序挂 `socks5://127.0.0.1:1080`，从你这边出去 |
 
-每条隧道设本地/远端 host+port、起个名、保存——随会话自动建立。视频：
+每条隧道填**监听那一侧**的 host+port、起个名、保存——随会话自动建立。视频：
 
 - [本地到远端的 SSH 隧道](/videos/electerm-local-to-remote-ssh-tunnel/)
 - [远端到本地的 SSH 隧道](/videos/electerm-remote-to-local-ssh-tunnel/)

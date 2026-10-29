@@ -1,21 +1,21 @@
 ---
-title: 'Electerm 的 SSH 隧道支持 IPv6 吗——三种模式都支持，但别写 [::1]'
-description: electerm 的三种隧道模式（L→R、R→L、动态 SOCKS）都支持 IPv6。本文讲地址该填在哪个字段、为什么 [::1] 会失败，以及 IPv6 让它很容易踩到的那个路由 bug。
+title: 'Electerm 的 SSH 隧道支持 IPv6 吗——四种模式都支持，但别写 [::1]'
+description: electerm 的四种隧道模式（L→R、R→L、动态 SOCKS、反向 SOCKS）都支持 IPv6。本文讲地址该填在哪个字段、为什么 [::1] 会失败，以及 IPv6 让它很容易踩到的那个路由 bug。
 date: 2026-10-04
 tags: [ssh, 隧道, ipv6, 端口转发, 排错]
 videos: [electerm-local-to-remote-ssh-tunnel, electerm-remote-to-local-ssh-tunnel]
 bannerScript: banner.js
 ---
 
-# Electerm 的 SSH 隧道支持 IPv6 吗——三种模式都支持，但别写 [::1]
+# Electerm 的 SSH 隧道支持 IPv6 吗——四种模式都支持，但别写 [::1]
 
 越来越多的机器只有 IPv6，或者从你现在的位置只能走 IPv6 过去。于是问题就来了：electerm 的 SSH 隧道到底支不支持 IPv6？
 
-**支持——三种模式都支持，host 字段里填裸的 IPv6 地址就行。** 本地→远端、远端→本地、动态 SOCKS 代理都能用，也没有哪个 IPv6 专属开关需要你去翻。
+**支持——四种模式都支持，host 字段里填裸的 IPv6 地址就行。** 本地→远端、远端→本地、动态 SOCKS、反向 SOCKS 都能用，也没有哪个 IPv6 专属开关需要你去翻。
 
 不过有两件事值得先知道。一个是看起来像隧道坏了的格式坑；另一个是 IPv6 让它变得很容易触发的真实路由 bug。
 
-三种模式的基础说明看 [Electerm SSH 隧道](/blogs/ssh-tunnels/cn/)，总览篇看 [Electerm SSH 全解](/blogs/ssh-features-guide/cn/)。
+四种模式的基础说明看 [Electerm SSH 隧道](/blogs/ssh-tunnels/cn/)，总览篇看 [Electerm SSH 全解](/blogs/ssh-features-guide/cn/)。
 
 ## 直接回答
 
@@ -24,18 +24,20 @@ bannerScript: banner.js
 | **L→R** 本地→远端 | **远端** host | 可以 |
 | **R→L** 远端→本地 | **远端** host（绑定地址） | 可以 |
 | **动态**（SOCKS 代理） | **本地** host | 可以 |
+| **-R socks** 反向 SOCKS | **远端** host（绑定地址） | 可以 |
 
 域名只要 AAAA 记录指得对也一样能用——不是非写地址字面量不可。之所以专门说字面量，是因为它才最能暴露"链路上有没有哪一环偷偷假设了 IPv4"。
 
-三种模式都用真实字节往返验过，不是"没报错"就算数——连到错误目标的隧道同样不会报错。
+四种模式都用真实字节往返验过，不是"没报错"就算数——连到错误目标的隧道同样不会报错。反向 SOCKS 这条是两端都走 `::1`、SOCKS 请求里也放 IPv6 目标地址跑通的。
 
 ## 地址填在哪个字段
 
-这一段最容易记反，因为三种模式不一样。
+这一段最容易记反，因为四种模式不一样。
 
 - **L→R** —— 填 **远端** host。这个地址是*服务器*去解析的，所以 `::1` 指服务器自己的 IPv6 loopback，其他 IPv6 地址在服务器的网络里查。
 - **R→L** —— 也是 **远端** host，但这里它是*绑定*地址：服务器在它上面开监听。`::1` 表示"只有服务器自己能连"，跟 IPv4 里的 `127.0.0.1` 一模一样。
 - **动态（SOCKS）** —— 填 **本地** host，因为 SOCKS5 监听是开在你本机上的。这个模式下远端 host 字段会消失。
+- **-R socks** —— 填 **远端** host，同样是服务器上的*绑定*地址，和 R→L 一样。本地字段会消失，因为你机器上不监听任何东西；SOCKS 客户端要来某个目的地时，那条连接由你这边发起，目的地也可以是 IPv6。
 
 两个字段默认都是 `127.0.0.1`。绝大多数情况只需要换两个值：
 
@@ -94,6 +96,8 @@ host 字段就是个普通文本输入框，没有任何剥方括号的逻辑，
 
 **把笔记本暴露在服务器的 IPv6 上。** R→L，远端 host 填 `::`（或服务器确实拥有的某个 IPv6）；如果要求服务器以外的机器也能连，服务器 `sshd_config` 里要开 `GatewayPorts yes`。
 
+**反向 SOCKS 走 IPv6。** -R socks，远端 host `::1`、远端端口 `1080`，服务器上的程序再用 `socks5://[::1]:1080`。绑定规则和 R→L 一样：要让别的机器也能连，用 `::` 并开 `GatewayPorts yes`。
+
 **SOCKS 走 IPv6。** 动态模式，本地 host `::1`、本地端口 `1080`。应用指向 `socks5://[::1]:1080`——这里要方括号，因为这是 URL：
 
 ```bash
@@ -106,8 +110,8 @@ curl --socks5 '[::1]:1080' https://ifconfig.me
 
 这些要求 IPv6 和 IPv4 是一样的，只是因为更容易忘，所以踩得更疼：
 
-- 服务器上 `AllowTcpForwarding no`（或 `DisableForwarding`）会禁掉全部三种模式。
-- R→L 要服务器绑的那个地址必须真实存在：`::1` 要求服务器有 IPv6 loopback；指定某个 IPv6 要求它已经配在服务器某个接口上。
+- 服务器上 `AllowTcpForwarding no`（或 `DisableForwarding`）会禁掉全部四种模式。
+- R→L 和 -R socks 要服务器绑的那个地址必须真实存在：`::1` 要求服务器有 IPv6 loopback；指定某个 IPv6 要求它已经配在服务器某个接口上。
 - 非 loopback 的 R→L 需要 `GatewayPorts yes`；用 `::` 则服务器本身得有 IPv6。
 - 远端端口要在服务器上空闲。注意 `127.0.0.1:8080` 和 `::1:8080` 是两个不同的 socket，v4 上绑了不挡 v6——这正是坑二被搭起来的途径。
 
@@ -126,8 +130,8 @@ curl --socks5 '[::1]:1080' https://ifconfig.me
 
 - 地址写**裸的** —— `::1`、`::`、`2001:db8::20`。不要 `[::1]`。
 - 方括号属于 URL（`socks5://[::1]:1080`）和 `ssh` 命令行，永远不属于 host 字段。
-- L→R 和 R→L 填在**远端**字段；动态模式填在**本地**字段。
+- L→R、R→L 和 -R socks 填在**远端**字段；动态模式填在**本地**字段。
 - `::1` 是 IPv6 的 `127.0.0.1`；`::` 是 IPv6 的 `0.0.0.0`，对外暴露要配 `GatewayPorts yes`。
-- 同一远端端口上混用协议族会踩到 R→L 那个路由 bug——先给每条隧道独立端口。
+- 同一远端端口上混用协议族会踩到那个路由 bug——先给每条隧道独立端口；-R socks 用同样的匹配方式，一样中招。
 
-下一篇：[Electerm SSH 隧道](/blogs/ssh-tunnels/cn/)讲三种模式各自是干什么的，或者[Electerm SSH 全解](/blogs/ssh-features-guide/cn/)看认证、跳板机和 NetBird 怎么跟隧道组队。
+下一篇：[Electerm SSH 隧道](/blogs/ssh-tunnels/cn/)讲四种模式各自是干什么的，或者[Electerm SSH 全解](/blogs/ssh-features-guide/cn/)看认证、跳板机和 NetBird 怎么跟隧道组队。
