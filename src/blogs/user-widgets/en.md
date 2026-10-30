@@ -1,6 +1,6 @@
 ---
 title: User Widgets - Write Your Own Panel Without Forking electerm
-description: electerm user widgets are folders with a package.json that the app loads at runtime. Import one and you get a generated form or your own sandboxed HTML panel, with full Node privileges in the main process, no rebuild and no fork. Covers the manifest, config mode, instance widgets, the window.electerm bridge, real examples and the security model.
+description: electerm user widgets are folders with a package.json that the app loads at runtime. Paste a GitHub repository into Settings → Widgets → Import and you get a generated form or your own sandboxed HTML panel, with full Node privileges in the main process, no rebuild and no fork. Covers the manifest, config mode, instance widgets, the window.electerm bridge, real examples and the security model.
 date: 2026-10-22
 tags: [widgets, extensibility, automation, passbolt, docker, security]
 bannerScript: banner.js
@@ -19,14 +19,31 @@ with the same panel, the same instance log and the same start/stop behaviour. De
 is gone.
 
 Full reference: [User widget guide](https://github.com/electerm/electerm/wiki/User-widget-guide).
-Working code: [electerm/electerm-widget-examples](https://github.com/electerm/electerm-widget-examples).
+Working code: [passbolt-search](https://github.com/electerm/electerm-widget-passbolt-search) ·
+[docker-cockpit](https://github.com/electerm/electerm-widget-docker-cockpit) ·
+[rename-files](https://github.com/electerm/electerm-widget-rename-files) ·
+[static-server](https://github.com/electerm/electerm-widget-static-server) ·
+[ftp-server](https://github.com/electerm/electerm-widget-ftp-server).
 
-> **Status**: user widgets land after v5.6.x. Until a release contains them, run electerm from source
-> (`npm i --legacy-peer-deps && npm run b && npm run t`).
+> **Status**: user widgets shipped in v5.6.10. Importing one straight from a git repository, which is
+> what this post leads with, needs **v5.8.0** or newer.
 
-## 1. Import is the whole install
+## 1. Install is one line
 
-**Settings → Widgets → Import** (the button on its own row above the search box), pick a folder, done.
+**Settings → Widgets → Import** (the button on its own row above the search box), then paste
+`electerm/electerm-widget-rename-files`. That is the whole install: electerm downloads the repository,
+finds the folder whose `package.json` has an `electerm` field, validates it, and copies it into
+`<data dir>/widgets/<id>/`.
+
+The field takes what you would paste into a browser:
+
+| You paste | What you get |
+| --- | --- |
+| `owner/repo` | GitHub, default branch |
+| `https://github.com/owner/repo` | the repository page |
+| `https://github.com/owner/repo/tree/main/widgets/foo` | that folder of that ref |
+| `owner/repo#dev` | another branch or tag |
+| `https://atomgit.com/owner/repo` | AtomGit — no anonymous archive endpoint, so the tree is walked file by file instead |
 
 Three details matter more than they look:
 
@@ -39,6 +56,18 @@ Three details matter more than they look:
 - **A broken folder never becomes a broken install.** The manifest is validated before anything is
   copied: missing entry, bad JSON, id/folder mismatch. Metadata is read from `package.json` only —
   listing widgets never executes widget code, so a crashing widget cannot take the list down.
+
+Two more that only apply when the folder came from a repository:
+
+- **The manifest picks the folder, not the name.** A repo can be called anything and still hold a
+  widget. The search goes three levels deep and refuses a repo that holds two of them, listing both
+  paths — paste the folder link instead.
+- **Nothing is installed on your machine.** No `npm install` runs at any point, so a widget with
+  dependencies has to ship them committed in `node_modules/`. That is why `static-server` pulls ~4MB and
+  `passbolt-search` ~16MB, and why a repo that forgets to commit them dies at load with
+  `Cannot find module 'express'`.
+
+A folder you already have still works: the same dialog has an **Import folder** button.
 
 Uninstalling is the ✕ on the row: running instances stop first, then the folder goes, taking whatever
 state the widget kept next to `main.js`.
@@ -107,16 +136,20 @@ reload button, because the development loop is "edit, reload" — there is no HM
 
 ## 5. Real examples, not demos
 
-Five widgets in [electerm-widget-examples](https://github.com/electerm/electerm-widget-examples), each
-with a bilingual README:
+Five widgets, one repository each, every one importable by name — each with a bilingual README:
 
-| Folder | Shape | What it proves |
+| Repository | Shape | What it proves |
 | --- | --- | --- |
-| `passbolt-search` | config | a full OpenPGP + JWT client behind five fields; keys never leave the machine |
-| `docker-cockpit` | own UI | polling, a log pane, confirmations — what a form cannot express |
-| `rename-files` | config | a destructive action done safely: preview, then a row button applies it |
-| `static-server` | instance | form + start/stop + `serverInfo` + access log |
-| `ftp-server` | instance | the same contract with a vendored dependency |
+| `electerm/electerm-widget-passbolt-search` | config | a full OpenPGP + JWT client behind five fields; keys never leave the machine |
+| `electerm/electerm-widget-docker-cockpit` | own UI | polling, a log pane, confirmations — what a form cannot express |
+| `electerm/electerm-widget-rename-files` | config | a destructive action done safely: preview, then a row button applies it |
+| `electerm/electerm-widget-static-server` | instance | form + start/stop + `serverInfo` + access log |
+| `electerm/electerm-widget-ftp-server` | instance | the same contract with a vendored dependency |
+
+They started as folders in one repository; that one,
+[electerm-widget-examples](https://github.com/electerm/electerm-widget-examples), is now the index. The
+split is not tidiness: import downloads a repository and copies one folder out of it, so the repository
+*is* the download — one per widget keeps an install the size of that widget's dependencies.
 
 `passbolt-search` is the one to try first if you have a Passbolt server: paste the URL, your user
 UUID, an exported private key and its passphrase, then trust the server fingerprint once. Search by
@@ -124,8 +157,9 @@ hostname, IP or URI and open SSH/FTP/Telnet/RDP straight from the result rows �
 `from: widget:passbolt-search`, and tabs with a `from` value are never written to connection history,
 so decrypted credentials stay out of synced data.
 
-No server? `node scripts/passbolt-mock-and-run.js` starts a throwaway Passbolt-shaped server on
-`127.0.0.1`, generates keys, and walks connect → trust → search → details → openSsh → lock.
+No server? `node scripts/passbolt-mock-and-run.js` in that repository starts a throwaway
+Passbolt-shaped server on `127.0.0.1`, generates keys, and walks connect → trust → search → details →
+openSsh → lock. `scripts/` also brings up a real Passbolt CE in docker if you want to test against one.
 
 ## 6. Security: two trust levels in one folder
 
@@ -157,6 +191,7 @@ What the host does enforce:
 | No terminal typing API | `openTab` opens a connection, not a command; a local tab cannot take a `cwd` or a command. Widgets copy a command to the clipboard instead |
 | No push events | The bridge is request/response; poll for live data |
 | No dev server for widget UIs | Import copies; edit, re-import, overwrite |
+| No `npm install` | Files are copied, nothing is installed: a published widget carries its own `node_modules` or it fails at load |
 | Version coupling is yours | Assume the app's Node/Electron version, nothing else |
 
 ## 8. Try it in ten minutes
@@ -202,5 +237,10 @@ Import the folder, click **Hello**, type a name, press **Run**. That is the whol
 same loop the five examples use, at a larger scale.
 
 - Reference: [User widget guide](https://github.com/electerm/electerm/wiki/User-widget-guide)
-- Examples: [electerm/electerm-widget-examples](https://github.com/electerm/electerm-widget-examples)
+- Index of examples: [electerm/electerm-widget-examples](https://github.com/electerm/electerm-widget-examples)
+- Widgets: [passbolt-search](https://github.com/electerm/electerm-widget-passbolt-search) ·
+  [docker-cockpit](https://github.com/electerm/electerm-widget-docker-cockpit) ·
+  [rename-files](https://github.com/electerm/electerm-widget-rename-files) ·
+  [static-server](https://github.com/electerm/electerm-widget-static-server) ·
+  [ftp-server](https://github.com/electerm/electerm-widget-ftp-server)
 - Questions and widget showcases: [issues](https://github.com/electerm/electerm/issues)

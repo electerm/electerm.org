@@ -1,6 +1,6 @@
 ---
 title: 用户自定义 widget —— 不改 electerm 一行代码，加自己的面板
-description: electerm 的用户 widget 就是带 package.json 的文件夹，应用运行时加载。导入之后你要么得到一张自动生成的表单，要么得到一个跑在 sandbox iframe 里的自己的页面；主进程里是完整 Node 权限，不用重新编译、不用 fork。包含清单字段、config 模式、instance 生命周期、window.electerm 桥、真实示例与安全模型。
+description: electerm 的用户 widget 就是带 package.json 的文件夹，应用运行时加载。在 设置 → Widgets → Import 里粘一个 GitHub 仓库地址，你要么得到一张自动生成的表单，要么得到一个跑在 sandbox iframe 里的自己的页面；主进程里是完整 Node 权限，不用重新编译、不用 fork。包含清单字段、config 模式、instance 生命周期、window.electerm 桥、真实示例与安全模型。
 date: 2026-10-22
 tags: [widgets, extensibility, automation, passbolt, docker, security]
 bannerScript: banner.js
@@ -17,12 +17,29 @@ bannerScript: banner.js
 启停行为；把文件夹删掉，它就没了。
 
 完整参考：[User widget guide](https://github.com/electerm/electerm/wiki/User-widget-guide)。
-可运行代码：[electerm/electerm-widget-examples](https://github.com/electerm/electerm-widget-examples)。
+可运行代码：[passbolt-search](https://github.com/electerm/electerm-widget-passbolt-search) ·
+[docker-cockpit](https://github.com/electerm/electerm-widget-docker-cockpit) ·
+[rename-files](https://github.com/electerm/electerm-widget-rename-files) ·
+[static-server](https://github.com/electerm/electerm-widget-static-server) ·
+[ftp-server](https://github.com/electerm/electerm-widget-ftp-server)。
 
 
-## 1. 导入就是安装的全部
+## 1. 安装就是一行字
 
-**设置 → Widgets → Import**（搜索框上方独立那一行的按钮），选一个文件夹，结束。
+**设置 → Widgets → Import**（搜索框上方独立那一行的按钮），粘
+`electerm/electerm-widget-rename-files`，结束。electerm 会下载仓库、找到 `package.json` 里带
+`electerm` 字段的那个目录、校验通过后复制到 `<data dir>/widgets/<id>/`。从仓库导入需要
+**v5.8.0** 或更新版本（用户 widget 本身从 v5.6.10 起就有）。
+
+输入框认的就是你会粘进浏览器的那些东西：
+
+| 粘贴 | 装的是什么 |
+| --- | --- |
+| `owner/repo` | GitHub，默认分支 |
+| `https://github.com/owner/repo` | 仓库页面链接 |
+| `https://github.com/owner/repo/tree/main/widgets/foo` | 该 ref 下的那个目录 |
+| `owner/repo#dev` | 别的分支或标签 |
+| `https://atomgit.com/owner/repo` | AtomGit —— 没有匿名源码包接口，所以是逐个文件走一遍目录树 |
 
 三个细节比看上去重要：
 
@@ -32,6 +49,16 @@ bannerScript: banner.js
   `electerm-widget://<id>/` 这个 scheme 的 host。不一致会在导入时被拒，原因写在列表那一行。
 - **坏文件夹不会变成坏的安装。** 复制之前先校验清单：入口不存在、JSON 坏了、id 与目录名不一致。
   元数据只从 `package.json` 读 —— 列清单从不执行 widget 代码，所以一个会崩的 widget 拖不垮列表。
+
+来自仓库的导入还有两条：
+
+- **选哪个目录由清单决定，不由目录名决定。** 仓库可以叫任何名字，里面照样能放 widget。搜索最多往下
+  三层，遇到一个仓库里有两个 widget 会直接拒绝，并把两个路径都列出来 —— 改成粘目录链接。
+- **你机器上什么都不装。** 整个流程不会跑 `npm install`，所以有依赖的 widget 必须把依赖提交进
+  `node_modules/`。这就是 `static-server` 要拉 ~4MB、`passbolt-search` 要拉 ~16MB 的原因，也是忘了
+  提交依赖的仓库会在加载时挂掉、报 `Cannot find module 'express'` 的原因。
+
+本地已有的文件夹照样能装：同一个对话框里有个 **Import folder** 按钮。
 
 卸载是行上的 ✕：先停掉运行实例，再删文件夹，widget 写在 `main.js` 旁边的状态也一起走。
 
@@ -97,24 +124,29 @@ select 带 `choices`，file 带 `filters`。
 
 ## 5. 是真能用的例子，不是 demo
 
-[electerm-widget-examples](https://github.com/electerm/electerm-widget-examples) 里有五个 widget，
-每个都有中英双语 README：
+五个 widget，一个仓库一个，都能直接按名字导入，每个都有中英双语 README：
 
-| 目录 | 形态 | 证明了什么 |
+| 仓库 | 形态 | 证明了什么 |
 | --- | --- | --- |
-| `passbolt-search` | config | 完整的 OpenPGP + JWT 客户端藏在五个字段后面；私钥不出本机 |
-| `docker-cockpit` | 自带 UI | 轮询、日志面板、确认框 —— 表单表达不了的部分 |
-| `rename-files` | config | 破坏性操作怎么做得安全：先预览，行按钮才真改 |
-| `static-server` | instance | 表单 + 启停 + `serverInfo` + 访问日志 |
-| `ftp-server` | instance | 同一个契约，依赖 vendor 进来 |
+| `electerm/electerm-widget-passbolt-search` | config | 完整的 OpenPGP + JWT 客户端藏在五个字段后面；私钥不出本机 |
+| `electerm/electerm-widget-docker-cockpit` | 自带 UI | 轮询、日志面板、确认框 —— 表单表达不了的部分 |
+| `electerm/electerm-widget-rename-files` | config | 破坏性操作怎么做得安全：先预览，行按钮才真改 |
+| `electerm/electerm-widget-static-server` | instance | 表单 + 启停 + `serverInfo` + 访问日志 |
+| `electerm/electerm-widget-ftp-server` | instance | 同一个契约，依赖 vendor 进来 |
+
+它们本来是一个仓库里的五个文件夹；那个仓库
+[electerm-widget-examples](https://github.com/electerm/electerm-widget-examples) 现在是索引。拆分不是
+为了整齐：导入是「下载一个仓库、从里面复制一个文件夹出来」，仓库**就是**下载单位，一个 widget 一个
+仓库，一次安装就只有一个 widget 的依赖那么大。
 
 如果你有 Passbolt 服务器，先试 `passbolt-search`：填 URL、自己的 user UUID、导出的私钥和口令，
 首次连接确认一次服务器指纹。按主机名、IP 或 URI 搜索，直接从结果行开 SSH/FTP/Telnet/RDP —— 标签页
 会被标记 `from: widget:passbolt-search`，而带 `from` 的标签页不写连接历史，解出来的凭据不会进同步
 数据。
 
-没有服务器？`node scripts/passbolt-mock-and-run.js` 会在 `127.0.0.1` 起一个假 Passbolt、现场生成
-密钥，把 connect → trust → search → details → openSsh → lock 走一遍。
+没有服务器？在那个仓库里跑 `node scripts/passbolt-mock-and-run.js`，它会在 `127.0.0.1` 起一个假
+Passbolt、现场生成密钥，把 connect → trust → search → details → openSsh → lock 走一遍。想对着真
+服务器试，`scripts/` 还能用 docker 起一台一次性的 Passbolt CE。
 
 ## 6. 安全：一个文件夹里两个信任级别
 
@@ -188,5 +220,10 @@ module.exports = {
 循环，只是规模不同。
 
 - 参考：[User widget guide](https://github.com/electerm/electerm/wiki/User-widget-guide)
-- 例子：[electerm/electerm-widget-examples](https://github.com/electerm/electerm-widget-examples)
+- 例子索引：[electerm/electerm-widget-examples](https://github.com/electerm/electerm-widget-examples)
+- 各个 widget：[passbolt-search](https://github.com/electerm/electerm-widget-passbolt-search) ·
+  [docker-cockpit](https://github.com/electerm/electerm-widget-docker-cockpit) ·
+  [rename-files](https://github.com/electerm/electerm-widget-rename-files) ·
+  [static-server](https://github.com/electerm/electerm-widget-static-server) ·
+  [ftp-server](https://github.com/electerm/electerm-widget-ftp-server)
 - 问题与作品：[issues](https://github.com/electerm/electerm/issues)

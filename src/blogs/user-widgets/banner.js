@@ -5,7 +5,8 @@
  * dotted backdrop and one electerm window (settings tabs + widget list +
  * widget panel + status bar) with a pointer that drives the whole story:
  *
- *   1. the pointer hits **Import**, a folder lands in the list as a row;
+ *   1. the pointer hits **Import** (a repository was just pasted), and the
+ *      widget lands in the list as a row;
  *   2. it selects **Passbolt Search**, and the right panel fills with the form
  *      that `electerm.configs` generates — five fields, no HTML anywhere;
  *   3. it submits, the main process answers, and the result table lands with
@@ -16,8 +17,8 @@
  * banner still teaches something when the animation is frozen for a screenshot.
  *
  * Every number in the copy comes from the electerm source (user-widget.js,
- * custom-widget-form.jsx, widget-open-tab.js): the manifest key names, the
- * `from: widget:<id>` tag, "copy, .git skipped".
+ * custom-widget-form.jsx, widget-open-tab.js, widget-source.js): the manifest
+ * key names, the `from: widget:<id>` tag, "downloaded and copied".
  *
  * Mount points: any element carrying [data-eb-banner]:
  *   data-eb-banner="hero"  -> headline + window (post page)
@@ -93,7 +94,7 @@ const ROWS = [
 ]
 
 const STATUS = [
-  { at: 0, text: 'import  ./passbolt-search  →  <data dir>/widgets/passbolt-search/  (copied, .git skipped)' },
+  { at: 0, text: 'import  electerm/electerm-widget-passbolt-search  →  <data dir>/widgets/passbolt-search/  (downloaded, copied)' },
   { at: T.clickRow, text: 'config mode  ·  5 fields rendered from package.json  ·  no HTML, no build' },
   { at: T.clickSubmit, text: 'run(config)  ·  decrypted in the main process, keys never leave the machine' },
   { at: T.rowsFrom, text: 'row buttons  ·  details / SSH  ·  callWidgetFunc(row, values)' },
@@ -318,7 +319,7 @@ function markup (variant) {
     : '<div class="eb-uw-head">' +
       '<span class="eb-uw-badge">WIDGETS</span>' +
       '<h2 class="eb-uw-h1">Your terminal, <em>extensible</em></h2>' +
-      '<p class="eb-uw-sub">Drop a folder in, hit <b>Import</b>, and get a generated form or your own panel — <b>no rebuild, no fork</b>.</p>' +
+      '<p class="eb-uw-sub">Paste a repository, hit <b>Import</b>, and get a generated form or your own panel — <b>no rebuild, no fork</b>.</p>' +
       '</div>'
   const rows = WIDGETS.map((w, i) =>
     '<div class="eb-uw-row" data-row="' + i + '"><i></i><span>' + esc(w.name) + '</span></div>'
