@@ -1063,6 +1063,30 @@
       },
       "videoSlug": "electerm-introduction-video",
       "titleEn": "Electerm Introduction Video"
+    },
+    {
+      "aid": 117574629066706,
+      "bvid": "BV1zW4E6XEMf",
+      "title": "electerm新特性：给书签和目录设置图标",
+      "description": "electerm 新特性：给书签和目录设置图标\n\n使用 workbuddy+HY4 模型制作，音频使用 atlascloud 生成",
+      "link": "https://www.bilibili.com/video/BV1zW4E6XEMf",
+      "cover": "https://i2.hdslb.com/bfs/archive/932f6884d41fe272241c3aa17ef47029ca8fe21d.jpg",
+      "author": "zxdong262",
+      "authorMid": 14001525,
+      "duration": 55,
+      "pubdate": 1794046688,
+      "publishDate": "2026-11-07T10:18:08.000Z",
+      "stats": {
+        "view": 1,
+        "danmaku": 0,
+        "reply": 0,
+        "favorite": 0,
+        "coin": 0,
+        "share": 0,
+        "like": 0
+      },
+      "videoSlug": "electerm-bookmark-and-category-icons",
+      "titleEn": "Electerm Bookmark and Category Icons"
     }
   ]
 }
