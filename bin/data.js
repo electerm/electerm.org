@@ -444,7 +444,7 @@ export default {
       title: 'Snap Store'
     },
     {
-      url: 'https://apps.apple.com/cn/app/electerm/id6792971552',
+      url: 'https://apps.apple.com/us/app/electerm/id6792971552',
       title: 'Apple App Store'
     },
     {
@@ -529,7 +529,7 @@ export default {
         { title: 'electerm-harmony (HarmonyOS)', url: 'https://github.com/electerm/electerm-harmony', external: true },
         { title: 'electerm on AppGallery (HarmonyOS)', url: 'https://appgallery.huawei.com/app/detail?id=org.electerm.electerm', external: true },
         { title: 'electerm-ios (iOS)', url: 'https://github.com/electerm/electerm-ios', external: true },
-        { title: 'electerm on Apple App Store (iOS)', url: 'https://apps.apple.com/cn/app/electerm/id6792971552', external: true }
+        { title: 'electerm on Apple App Store (iOS)', url: 'https://apps.apple.com/us/app/electerm/id6792971552', external: true }
       ]
     },
     {
@@ -539,7 +539,7 @@ export default {
         { title: 'Video Guides', url: '/videos/' },
         { title: 'Windows Store', url: 'https://www.microsoft.com/store/apps/9NCN7272GTFF', external: true },
         { title: 'Snap Store', url: 'https://snapcraft.io/electerm', external: true },
-        { title: 'Apple App Store', url: 'https://apps.apple.com/cn/app/electerm/id6792971552', external: true }
+        { title: 'Apple App Store', url: 'https://apps.apple.com/us/app/electerm/id6792971552', external: true }
       ]
     }
   ]

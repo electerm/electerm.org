@@ -112,7 +112,7 @@ Arch cheat-sheet:
 
 - **Android**: download the APK for your ABI (`arm64-v8a` for most modern phones, `armeabi-v7a` for older ones, `x86_64` for emulators) from the homepage, or install from the release page. There is also [electerm-android](https://github.com/electerm/electerm-android) source.
 - **HarmonyOS**: via [AppGallery](https://appgallery.huawei.com/app/detail?id=org.electerm.electerm) or the `electerm-harmony` repo.
-- **iOS**: via the [Apple App Store](https://apps.apple.com/cn/app/electerm/id6792971552) or the `electerm-ios` repo.
+- **iOS**: via the [Apple App Store](https://apps.apple.com/us/app/electerm/id6792971552) or the `electerm-ios` repo.
 
 Mobile apps focus on SSH/SFTP on the go; workspaces and cloud sync make phone ↔ desktop handoff painless.
 

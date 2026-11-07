@@ -112,7 +112,7 @@ npm i -g electerm
 
 - **Android**：按 ABI 下 APK（多数新手机 `arm64-v8a`，老机器 `armeabi-v7a`，模拟器 `x86_64`），或去 release 页安装。源码见 [electerm-android](https://github.com/electerm/electerm-android)。
 - **鸿蒙**：经 [AppGallery](https://appgallery.huawei.com/app/detail?id=org.electerm.electerm) 或 `electerm-harmony` 仓库。
-- **iOS**：经 [Apple App Store](https://apps.apple.com/cn/app/electerm/id6792971552) 或 `electerm-ios` 仓库。
+- **iOS**：经 [Apple App Store](https://apps.apple.com/us/app/electerm/id6792971552) 或 `electerm-ios` 仓库。
 
 移动端主打随身 SSH/SFTP，配合工作区与云同步，手机 ↔ 电脑接力很顺滑。
 

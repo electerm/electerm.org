@@ -51,7 +51,7 @@ Besides the mainstream Windows / macOS / Linux / Android platforms, electerm als
 - Docker deployment: [https://github.com/electerm/electerm-web-docker](https://github.com/electerm/electerm-web-docker)
 - Locales: [https://github.com/electerm/electerm-locales](https://github.com/electerm/electerm-locales)
 - App stores
-  - Apple App Store: [https://apps.apple.com/cn/app/electerm/id6792971552](https://apps.apple.com/cn/app/electerm/id6792971552)
+  - Apple App Store: [https://apps.apple.com/us/app/electerm/id6792971552](https://apps.apple.com/us/app/electerm/id6792971552)
   - Huawei AppGallery: [https://appgallery.huawei.com/app/detail?id=org.electerm.electerm](https://appgallery.huawei.com/app/detail?id=org.electerm.electerm)
   - Microsoft Store: [https://www.microsoft.com/store/apps/9NCN7272GTFF](https://www.microsoft.com/store/apps/9NCN7272GTFF)
   - Snap Store: [https://snapcraft.io/electerm](https://snapcraft.io/electerm)
