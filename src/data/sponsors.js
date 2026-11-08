@@ -91,6 +91,16 @@ const tiers = [
     tier: 3,
     sponsors: [
       {
+        name: 'Infistar',
+        url: 'https://www.infistar.cc/register?aff=4R4JT29X&ref_source=link',
+        logo: {
+          src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/infistar-wordmark.png',
+          w: 856,
+          h: 256
+        },
+        ink: { x: 0, y: 0, w: 836, h: 256 }
+      },
+      {
         name: 'DigitalOcean',
         url: 'https://www.digitalocean.com/?refcode=c10bcb28b846&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge',
         logo: {
@@ -100,16 +110,6 @@ const tiers = [
         },
         // the SVG is a white card; ink is the artwork inside it
         ink: { x: 23, y: 16, w: 155, h: 34 }
-      },
-      {
-        name: 'Infistar',
-        url: 'https://www.infistar.cc/register?aff=4R4JT29X&ref_source=link',
-        logo: {
-          src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/infistar-wordmark.png',
-          w: 856,
-          h: 256
-        },
-        ink: { x: 0, y: 0, w: 836, h: 256 }
       }
     ]
   }
