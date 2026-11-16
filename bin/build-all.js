@@ -389,7 +389,7 @@ async function buildBlogPages () {
         inLanguage: isCn ? 'zh-CN' : 'en',
         datePublished: post.dateISO || data.releaseDateISO,
         author: { '@type': 'Person', name: 'ZHAO Xudong' },
-        ...(post.banner ? { image: `${h}${post.banner}` } : {}),
+        ...(post.banner ? { image: post.banner.startsWith('http') ? post.banner : `${h}${post.banner}` } : {}),
         mainEntityOfPage: isCn ? `${h}/blogs/${slug}/cn/` : `${h}/blogs/${slug}/`
       })
       await buildPug(detailFrom, resolve(dir, 'index.html'), {

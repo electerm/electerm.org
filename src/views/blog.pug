@@ -1,6 +1,6 @@
 doctype html
 - var isCn = typeof blogLang !== 'undefined' && blogLang === 'cn'
-- var ogImage = post.banner ? host + post.banner : ''
+- var ogImage = post.banner ? (post.banner.startsWith('http') ? post.banner : host + post.banner) : ''
 html(lang=isCn ? 'zh-CN' : langCode data-page-lang=isCn ? 'zh' : 'en')
   head
     title #{post.title} - electerm Blog
