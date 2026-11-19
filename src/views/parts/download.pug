@@ -193,6 +193,12 @@ section.downloads#downloads
     - if (assets.android && assets.android.items.length > 0)
       .download-panel(data-tab='android')
         .download-grid
+          .download-card
+            .download-card-top
+              .download-card-name Google Play
+              .download-card-desc Get electerm from Google Play.
+            .download-card-links
+              a.download-card-link.primary(href='https://play.google.com/store/apps/details?id=org.electerm.electerm', target='_blank', rel='noreferrer') Google Play
           each obj in assets.android.items
             +dlCard(obj)
 

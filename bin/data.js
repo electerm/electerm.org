@@ -526,6 +526,7 @@ export default {
         { title: 'electerm AI — Free AI for electerm users', url: 'https://ai.electerm.org', external: true },
         { title: 'electerm theme — Create/share theme site with live preview and AI creation', url: 'https://theme.electerm.org', external: true },
         { title: 'electerm-android', url: 'https://github.com/electerm/electerm-android', external: true },
+        { title: 'electerm on Google Play (Android)', url: 'https://play.google.com/store/apps/details?id=org.electerm.electerm', external: true },
         { title: 'electerm-harmony (HarmonyOS)', url: 'https://github.com/electerm/electerm-harmony', external: true },
         { title: 'electerm on AppGallery (HarmonyOS)', url: 'https://appgallery.huawei.com/app/detail?id=org.electerm.electerm', external: true },
         { title: 'electerm-ios (iOS)', url: 'https://github.com/electerm/electerm-ios', external: true },

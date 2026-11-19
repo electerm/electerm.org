@@ -51,6 +51,7 @@ electerm 是一款开源的终端 / SSH / SFTP / FTP / Telnet / 串口 / RDP / V
 - Docker 部署：[https://github.com/electerm/electerm-web-docker](https://github.com/electerm/electerm-web-docker)
 - 多语言包：[https://github.com/electerm/electerm-locales](https://github.com/electerm/electerm-locales)
 - 应用市场
+  - Google Play：[https://play.google.com/store/apps/details?id=org.electerm.electerm](https://play.google.com/store/apps/details?id=org.electerm.electerm)
   - Apple App Store：[https://apps.apple.com/us/app/electerm/id6792971552](https://apps.apple.com/us/app/electerm/id6792971552)
   - 华为应用市场：[https://appgallery.huawei.com/app/detail?id=org.electerm.electerm](https://appgallery.huawei.com/app/detail?id=org.electerm.electerm)
   - Microsoft Store：[https://www.microsoft.com/store/apps/9NCN7272GTFF](https://www.microsoft.com/store/apps/9NCN7272GTFF)
