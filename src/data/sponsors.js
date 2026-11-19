@@ -95,10 +95,10 @@ const tiers = [
         url: 'https://www.infistar.cc/register?aff=4R4JT29X&ref_source=link',
         logo: {
           src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/infistar-wordmark.png',
-          w: 856,
-          h: 256
+          w: 579,
+          h: 128
         },
-        ink: { x: 0, y: 0, w: 836, h: 256 }
+        ink: { x: 0, y: 0, w: 579, h: 128 }
       },
       {
         name: 'DigitalOcean',
@@ -110,6 +110,16 @@ const tiers = [
         },
         // the SVG is a white card; ink is the artwork inside it
         ink: { x: 23, y: 16, w: 155, h: 34 }
+      },
+      {
+        name: 'Vercel OSS Program',
+        url: 'https://oss-directory.vercel.app',
+        logo: {
+          src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/vercel-oss-2005.png',
+          w: 240,
+          h: 24
+        },
+        ink: { x: 0, y: 0, w: 240, h: 24 }
       }
     ]
   }
