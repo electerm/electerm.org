@@ -29,4 +29,15 @@ meta(name='twitter:card' content='summary_large_image')
 meta(name='twitter:image' content=socialImage)
 
 meta(name='theme-color' content='#ffffff')
+script.
+  (function () {
+    var theme = 'light'
+    try {
+      theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'
+    } catch (e) {}
+    document.documentElement.setAttribute('data-theme', theme)
+    document.documentElement.style.colorScheme = theme
+    var meta = document.querySelector('meta[name="theme-color"]')
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#0f172a' : '#ffffff')
+  })()
 link(rel='stylesheet', href=cssUrl)

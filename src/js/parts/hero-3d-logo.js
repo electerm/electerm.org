@@ -97,6 +97,25 @@ export default class Hero3DLogo {
     scene.add(new THREE.AmbientLight(0xffffff, 0.15))
   }
 
+  // The baked GLB material is pure black. Flip it to white in dark mode so
+  // the wordmark stays readable against the same page background.
+  _applyTheme (value) {
+    const theme = value || document.documentElement.dataset.theme || 'light'
+    const dark = theme === 'dark'
+    if (this.model) {
+      this.model.traverse(o => {
+        if (!o.isMesh || !o.material) return
+        const materials = Array.isArray(o.material) ? o.material : [o.material]
+        materials.forEach(m => {
+          if (!m.color) return
+          m.color.set(dark ? 0xffffff : 0x000000)
+          m.needsUpdate = true
+        })
+      })
+    }
+    if (this.renderer && this.entry >= 1) this._renderOnce()
+  }
+
   async _loadModel () {
     const gltf = await new GLTFLoader().loadAsync(this.modelUrl)
     const model = gltf.scene
@@ -105,7 +124,7 @@ export default class Hero3DLogo {
     this.size = box.getSize(new THREE.Vector3())
     model.position.sub(box.getCenter(new THREE.Vector3()))
 
-    // The baked material is pure black; lean on reflections so edges/bevels catch light.
+    // Lean on studio reflections so the wordmark's edges/bevels catch light.
     model.traverse(o => {
       if (o.isMesh && o.material) {
         const m = o.material
@@ -116,6 +135,7 @@ export default class Hero3DLogo {
 
     this.model = model
     this.group.add(model)
+    this._applyTheme()
 
     // Entry pose
     this.group.scale.setScalar(0.7)
@@ -162,6 +182,9 @@ export default class Hero3DLogo {
 
     this._onVis = () => { this._paused = document.hidden }
     document.addEventListener('visibilitychange', this._onVis)
+
+    this._onTheme = e => this._applyTheme(e.detail)
+    document.addEventListener('site:theme', this._onTheme)
 
     if (window.IntersectionObserver) {
       this._io = new IntersectionObserver(entries => {
@@ -219,6 +242,7 @@ export default class Hero3DLogo {
     if (this._raf) cancelAnimationFrame(this._raf)
     window.removeEventListener('pointermove', this._onMove)
     document.removeEventListener('visibilitychange', this._onVis)
+    document.removeEventListener('site:theme', this._onTheme)
     window.removeEventListener('resize', this._onResize)
     if (this._ro) this._ro.disconnect()
     if (this._io) this._io.disconnect()

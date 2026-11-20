@@ -17,6 +17,25 @@ header.site-header
             span= starCount >= 1000 ? (starCount / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : starCount
 
     .header-actions
+      button.theme-toggle(
+        type='button',
+        data-theme-toggle,
+        aria-label=lang.lang.themeToggle,
+        aria-pressed='false',
+        title=lang.lang.themeToggle
+      )
+        svg.theme-icon.theme-icon-moon(viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='1.8', aria-hidden='true', focusable='false')
+          path(d='M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z')
+        svg.theme-icon.theme-icon-sun(viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='1.8', aria-hidden='true', focusable='false')
+          circle(cx='12', cy='12', r='4')
+          line(x1='12', y1='2', x2='12', y2='4')
+          line(x1='12', y1='20', x2='12', y2='22')
+          line(x1='4.9', y1='4.9', x2='6.3', y2='6.3')
+          line(x1='17.7', y1='17.7', x2='19.1', y2='19.1')
+          line(x1='2', y1='12', x2='4', y2='12')
+          line(x1='20', y1='12', x2='22', y2='12')
+          line(x1='4.9', y1='19.1', x2='6.3', y2='17.7')
+          line(x1='17.7', y1='6.3', x2='19.1', y2='4.9')
       .lang-dropdown
         button.lang-toggle(type='button', onclick='this.parentElement.classList.toggle("open")')
           span #{lang.name}

@@ -1,7 +1,7 @@
 /* ===== Hero ===== */
 
 .hero
-  background #ffffff
+  background var(--color-bg)
   color var(--color-text)
   padding 50px 0 30px
   position relative
@@ -14,7 +14,7 @@
   left 0
   right 0
   bottom 0
-  background radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.03) 0%, transparent 70%)
+  background radial-gradient(ellipse at 50% 0%, var(--color-hero-glow) 0%, transparent 70%)
   pointer-events none
   z-index 0
 
@@ -33,6 +33,9 @@
   height auto
   margin-bottom 5px
   margin-top -10px
+
+:root[data-theme='dark'] .hero-logo
+  filter invert(1)
 
 // Created by hero-3d-logo.js around the <img>; needs its own z-index so the
 // three.js canvas stays above the hero background canvas.
@@ -128,14 +131,14 @@
 
 .hero-btn-primary
   background var(--color-primary)
-  color white
-  box-shadow 0 4px 14px rgba(37,99,235,0.3)
+  color var(--color-text-inverse)
+  box-shadow 0 4px 14px var(--color-primary-shadow)
 
 .hero-btn-primary:hover
   background var(--color-primary-dark)
-  color white
+  color var(--color-text-inverse)
   transform translateY(-1px)
-  box-shadow 0 6px 20px rgba(37,99,235,0.4)
+  box-shadow 0 6px 20px var(--color-primary-shadow-strong)
 
 .hero-btn-secondary
   background var(--color-bg)

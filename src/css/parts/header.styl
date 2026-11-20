@@ -4,7 +4,7 @@
   position sticky
   top 0
   z-index 100
-  background rgba(255,255,255,0.92)
+  background var(--color-header-bg)
   backdrop-filter blur(12px)
   -webkit-backdrop-filter blur(12px)
   border-bottom 1px solid var(--color-border)
@@ -31,6 +31,9 @@
 .header-logo img
   height 32px
   width auto
+
+:root[data-theme='dark'] .header-logo img
+  filter invert(1)
 
 .header-nav
   display none
@@ -64,8 +67,8 @@
   gap 3px
   padding 1px 7px
   border-radius 999px
-  background rgba(255, 196, 0, 0.12)
-  color #d4a300
+  background var(--color-star-bg)
+  color var(--color-star-text)
   font-size 0.75rem
   font-weight 600
   line-height 1.4
@@ -77,6 +80,41 @@
   display flex
   align-items center
   gap 8px
+
+.theme-toggle
+  position relative
+  display inline-flex
+  align-items center
+  justify-content center
+  width 30px
+  height 30px
+  padding 0
+  border none
+  background transparent
+  color var(--color-text-secondary)
+  cursor pointer
+  transition color 0.15s
+
+.theme-toggle:hover
+  color var(--color-primary)
+
+.theme-toggle:focus-visible
+  outline 2px solid var(--color-primary)
+  outline-offset 2px
+
+.theme-icon
+  position absolute
+  width 18px
+  height 18px
+
+.theme-icon-sun
+  display none
+
+:root[data-theme='dark'] .theme-icon-sun
+  display block
+
+:root[data-theme='dark'] .theme-icon-moon
+  display none
 
 .lang-dropdown
   position relative
@@ -184,7 +222,7 @@
 .lang-switcher > a.active,
 .lang-switcher > button.active
   background var(--color-primary)
-  color #fff
+  color var(--color-text-inverse)
 
 .mobile-menu-btn
   display flex
