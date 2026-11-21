@@ -2,7 +2,7 @@ doctype html
 - var isCn = typeof blogLang !== 'undefined' && blogLang === 'cn'
 //- live banner modules referenced by the posts, loaded once each
 - var bannerScripts = posts.map(function (p) { return p.bannerScript }).filter(function (s, i, a) { return s && a.indexOf(s) === i })
-html(lang=isCn ? 'zh-CN' : langCode data-page-lang=isCn ? 'zh' : 'en')
+html(lang=isCn ? 'zh-CN' : langCode data-page-lang=isCn ? 'zh' : 'en' data-theme='dark')
   head
     title= isCn ? 'Electerm 博客 - 教程、指南与更新' : 'Electerm Blog - Tutorials, Guides and Updates'
     meta(name='description', content=desc)

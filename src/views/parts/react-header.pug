@@ -28,12 +28,14 @@ if socialImage === host + '/android-chrome-512x512.png'
 meta(name='twitter:card' content='summary_large_image')
 meta(name='twitter:image' content=socialImage)
 
-meta(name='theme-color' content='#ffffff')
+meta(name='theme-color' content='#0f172a')
 script.
   (function () {
-    var theme = 'light'
+    // Dark is the default; only an explicit stored 'light' choice overrides it.
+    // Kept in sync with DEFAULT_THEME in src/js/parts/theme.js.
+    var theme = 'dark'
     try {
-      theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'
+      if (localStorage.getItem('theme') === 'light') theme = 'light'
     } catch (e) {}
     document.documentElement.setAttribute('data-theme', theme)
     document.documentElement.style.colorScheme = theme

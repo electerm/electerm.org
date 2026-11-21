@@ -30,15 +30,35 @@
    only apply if a badge somehow arrives without them. */
 .sponsor-badge-link
   display inline-block
+  padding 0
+  border-radius var(--radius-sm)
+  background-color var(--color-sponsor-plate)
+  opacity 0.7
+  transition opacity 0.2s, background-color 0.2s
+
+.sponsor-badge-mark
+  display block
   width var(--badge-w, 160px)
   height var(--badge-h, 72px)
   background-position var(--badge-pos, center)
   background-size var(--badge-size, contain)
   background-repeat no-repeat
-  opacity 0.7
-  transition opacity 0.2s
 
 .sponsor-badge-link:hover
+  opacity 1
+
+/* Dark mode. These logos are drawn for white paper, and they fail in two
+   different ways on #0f172a: atlas-cloud / vercel / infistar are ink on
+   transparency and simply vanish, while packy-api / apismart / apimart carry
+   their own pale #f0f0f0 rectangle and would float as stray bright tiles.
+   A plate the same tone as that rectangle fixes both at once — and keeps every
+   brand colour intact, which inverting or whitening the mark would not. */
+:root[data-theme='dark'] .sponsor-badge-link
+  padding 10px 15px
+  opacity 0.92
+
+:root[data-theme='dark'] .sponsor-badge-link:hover
+  background-color var(--color-sponsor-plate-hover)
   opacity 1
 
 /* A tier is its own row; `.sponsor-tier-N` is set from the data for grouping

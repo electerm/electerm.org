@@ -2,6 +2,10 @@
 //- Data comes from src/data/sponsors.js, injected as `sponsors` (see bin/data.js).
 //- The badge box and its background crop are computed per logo there, because
 //- each logo file carries a different amount of padding.
+//-
+//- The logo lives on an inner element: in dark mode the link turns into a light
+//- plate around the mark, and `background-size` percentages are resolved against
+//- the padding box — padding on the same element would break every crop above.
 section.sponsors-section
   .container
     .section-header
@@ -14,9 +18,11 @@ section.sponsors-section
               href=sponsor.url,
               target='_blank',
               rel='nofollow sponsored noreferrer',
-              title=sponsor.name,
-              style=`--badge-w: ${sponsor.width}px; --badge-h: ${sponsor.height}px; --badge-size: ${sponsor.bgSizeW}% ${sponsor.bgSizeH}%; --badge-pos: ${sponsor.bgPosX}% ${sponsor.bgPosY}%; background-image: url('${sponsor.logo.src}')`
+              title=sponsor.name
             )
+              span.sponsor-badge-mark(
+                style=`--badge-w: ${sponsor.width}px; --badge-h: ${sponsor.height}px; --badge-size: ${sponsor.bgSizeW}% ${sponsor.bgSizeH}%; --badge-pos: ${sponsor.bgPosX}% ${sponsor.bgPosY}%; background-image: url('${sponsor.logo.src}')`
+              )
     .become-sponsor
       p #{lang.lang.sponsorsInterested}
       a.sponsor-contact-link(href='mailto:zxdong@gmail.com?subject=Sponsorship%20Inquiry') #{lang.lang.sponsorsContact}

@@ -14,6 +14,42 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js'
 const easeOutCubic = t => 1 - Math.pow(1 - t, 3)
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v))
 
+/**
+ * The GLB is one flat mesh (metalness 0, roughness 0.42) lit mostly by a
+ * RoomEnvironment IBL — a white studio box. Light mode can afford that: the
+ * baked black material swallows the ambient term and only the key/rim lights
+ * shape it. Dark mode inverts the material to white, and there the very same
+ * IBL drives every face to saturation, so the wordmark renders as one flat
+ * #f3f3f3 slab with no readable bevels.
+ *
+ * So dark mode trades the environment for the directionals: ambient drops to
+ * almost nothing (faces separate again), the key stays bright enough to keep
+ * the front face white rather than grey, and the exposure comes down a touch
+ * so the white stops short of clipping.
+ */
+const LOOK = {
+  light: {
+    color: 0x000000,
+    roughness: 0.42,
+    exposure: 1.1,
+    envIntensity: 1,
+    key: 2.4,
+    rim: 2,
+    fill: 0.5,
+    ambient: 0.15
+  },
+  dark: {
+    color: 0xffffff,
+    roughness: 0.42,
+    exposure: 1,
+    envIntensity: 0.15,
+    key: 2,
+    rim: 1.2,
+    fill: 0.08,
+    ambient: 0.01
+  }
+}
+
 export default class Hero3DLogo {
   constructor (img, opts = {}) {
     this.img = img
@@ -64,7 +100,7 @@ export default class Hero3DLogo {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2))
     renderer.outputColorSpace = THREE.SRGBColorSpace
     renderer.toneMapping = THREE.ACESFilmicToneMapping
-    renderer.toneMappingExposure = 1.1
+    renderer.toneMappingExposure = LOOK.light.exposure
     this.renderer = renderer
 
     const scene = new THREE.Scene()
@@ -85,34 +121,48 @@ export default class Hero3DLogo {
 
   _setupLights () {
     const scene = this.scene
-    const key = new THREE.DirectionalLight(0xffffff, 2.4)
+    const key = new THREE.DirectionalLight(0xffffff, LOOK.light.key)
     key.position.set(3, 4, 6)
     scene.add(key)
-    const rim = new THREE.DirectionalLight(0x99bbff, 2.0)
+    const rim = new THREE.DirectionalLight(0x99bbff, LOOK.light.rim)
     rim.position.set(-5, -1, -5)
     scene.add(rim)
-    const fill = new THREE.DirectionalLight(0xffffff, 0.5)
+    const fill = new THREE.DirectionalLight(0xffffff, LOOK.light.fill)
     fill.position.set(-3, 2, 4)
     scene.add(fill)
-    scene.add(new THREE.AmbientLight(0xffffff, 0.15))
+    const ambient = new THREE.AmbientLight(0xffffff, LOOK.light.ambient)
+    scene.add(ambient)
+    this.lights = { key, rim, fill, ambient }
   }
 
-  // The baked GLB material is pure black. Flip it to white in dark mode so
-  // the wordmark stays readable against the same page background.
+  // Light mode shows the baked black material, dark mode flips it to white.
+  // The lights travel with the material — see LOOK at the top for why.
   _applyTheme (value) {
     const theme = value || document.documentElement.dataset.theme || 'light'
-    const dark = theme === 'dark'
+    const look = LOOK[theme === 'dark' ? 'dark' : 'light']
+
     if (this.model) {
       this.model.traverse(o => {
         if (!o.isMesh || !o.material) return
         const materials = Array.isArray(o.material) ? o.material : [o.material]
         materials.forEach(m => {
           if (!m.color) return
-          m.color.set(dark ? 0xffffff : 0x000000)
+          m.color.set(look.color)
+          m.roughness = look.roughness
           m.needsUpdate = true
         })
       })
     }
+
+    if (this.lights) {
+      this.lights.key.intensity = look.key
+      this.lights.rim.intensity = look.rim
+      this.lights.fill.intensity = look.fill
+      this.lights.ambient.intensity = look.ambient
+    }
+    if (this.scene) this.scene.environmentIntensity = look.envIntensity
+    if (this.renderer) this.renderer.toneMappingExposure = look.exposure
+
     if (this.renderer && this.entry >= 1) this._renderOnce()
   }
 
