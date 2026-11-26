@@ -56,6 +56,16 @@ const tiers = [
     tier: 2,
     sponsors: [
       {
+        name: 'Shengsuanyun (胜算云)',
+        url: 'https://www.shengsuanyun.com/zh/?from=Electerm',
+        logo: {
+          src: 'https://cdn.jsdelivr.net/gh/electerm/electerm-resource@master/static/images/shengsuanyun.png',
+          w: 400,
+          h: 160
+        },
+        ink: { x: 48, y: 28, w: 309, h: 104 }
+      },
+      {
         name: 'PackyCode',
         url: 'https://www.packyapi.ai/register?aff=LO2c',
         logo: {
