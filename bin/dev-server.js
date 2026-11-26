@@ -335,6 +335,8 @@ function createServer () {
   app.get('/blogs/:slug', handleBlog)
   app.get('/blogs/:slug/', handleBlog)
 
+  app.use('/sha256', express.static(resolve(cwd, 'public/sha256')))
+
   // Release archive now lives on https://history.electerm.org/releases/ (301'd
   // at the edge/worker). Dev server just 301s there to mirror production.
   app.get(['/releases', '/releases/', '/releases/:version', '/releases/:version/'], (req, res) => {

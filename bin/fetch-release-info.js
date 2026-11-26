@@ -117,9 +117,7 @@ function formatCompact (n) {
   return String(n)
 }
 
-async function writeDownloadCounts () {
-  console.log('Fetching all releases for download counts...')
-  const releases = await fetchAllReleases()
+async function writeDownloadCounts (releases) {
   const cutoff = Date.now() - 30 * 24 * 3600 * 1000
   const total = releases.reduce((s, r) => s + sumDownloads(r), 0)
   // downloads of releases published in the last 30 days
@@ -146,7 +144,38 @@ async function main () {
   await fs.mkdir(outputDir, { recursive: true })
   await fs.writeFile(outputPath, JSON.stringify(output, null, 2))
   console.log(`Release info saved to ${outputPath}`)
-  await writeDownloadCounts()
+  console.log('Fetching release history for download counts and checksums...')
+  const releases = await fetchAllReleases()
+  await writeDownloadCounts(releases)
+  const checksums = Object.create(null)
+  for (const { draft, tag_name: tag, assets } of releases) {
+    if (draft) continue
+    for (const { name, digest } of assets) {
+      // GitHub has no digest for some historical uploads.
+      if (digest == null && tag !== releaseInfo.release.tag_name) continue
+      if (!/^[A-Za-z0-9_+-][A-Za-z0-9_.+-]*$/.test(name) || !/^sha256:[a-f0-9]{64}$/.test(digest)) {
+        throw new Error(`Missing or invalid SHA-256 for ${tag}/${name}`)
+      }
+      const hex = digest.slice('sha256:'.length)
+      if (checksums[name] && checksums[name] !== hex) {
+        throw new Error(`Conflicting release checksums for ${name}`)
+      }
+      checksums[name] = hex
+    }
+  }
+  const entries = Object.entries(checksums)
+  if (!entries.length) throw new Error('No release checksums found')
+  const cache = resolve(cwd, 'temp/sha256')
+  await fs.mkdir(cache, { recursive: true })
+  for (const [name, hex] of entries) {
+    await fs.writeFile(resolve(cache, name + '.checksum'), `${hex}  ${name}\n`)
+  }
+  for (const file of await fs.readdir(cache)) {
+    if (file.endsWith('.checksum') && !Object.hasOwn(checksums, file.slice(0, -9))) {
+      await fs.unlink(resolve(cache, file))
+    }
+  }
+  console.log(`Cached ${entries.length} release asset checksums`)
 }
 
 main()
